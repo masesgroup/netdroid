@@ -1,0 +1,1923 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class MbmsDownloadSession | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MbmsDownloadSession | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Telephony_MbmsDownloadSession.md&amp;value=---%0Auid%3A%20Android.Telephony.MbmsDownloadSession%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Telephony.MbmsDownloadSession">
+
+
+
+  <h1 id="Android_Telephony_MbmsDownloadSession" data-uid="Android.Telephony.MbmsDownloadSession" class="text-break">
+Class MbmsDownloadSession  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Telephony.html">Telephony</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MbmsDownloadSession : AutoCloseable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IAutoCloseable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a>&gt;</div>
+      <div><a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a></div>
+      <div><span class="xref">MbmsDownloadSession</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;AutoCloseable&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Telephony_MbmsDownloadSession__ctor_" data-uid="Android.Telephony.MbmsDownloadSession.#ctor*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession__ctor" data-uid="Android.Telephony.MbmsDownloadSession.#ctor">
+  MbmsDownloadSession()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L2313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MbmsDownloadSession()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession__ctor_" data-uid="Android.Telephony.MbmsDownloadSession.#ctor*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession__ctor_System_Object___" data-uid="Android.Telephony.MbmsDownloadSession.#ctor(System.Object[])">
+  MbmsDownloadSession(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L2317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MbmsDownloadSession(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_BridgeClassName_" data-uid="Android.Telephony.MbmsDownloadSession.BridgeClassName*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_BridgeClassName" data-uid="Android.Telephony.MbmsDownloadSession.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L2324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_DEFAULT_TOP_LEVEL_TEMP_DIRECTORY_" data-uid="Android.Telephony.MbmsDownloadSession.DEFAULT_TOP_LEVEL_TEMP_DIRECTORY*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_DEFAULT_TOP_LEVEL_TEMP_DIRECTORY" data-uid="Android.Telephony.MbmsDownloadSession.DEFAULT_TOP_LEVEL_TEMP_DIRECTORY">
+  DEFAULT_TOP_LEVEL_TEMP_DIRECTORY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#DEFAULT_TOP_LEVEL_TEMP_DIRECTORY">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#DEFAULT_TOP_LEVEL_TEMP_DIRECTORY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DEFAULT_TOP_LEVEL_TEMP_DIRECTORY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_EXTRA_MBMS_COMPLETED_FILE_URI_" data-uid="Android.Telephony.MbmsDownloadSession.EXTRA_MBMS_COMPLETED_FILE_URI*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_EXTRA_MBMS_COMPLETED_FILE_URI" data-uid="Android.Telephony.MbmsDownloadSession.EXTRA_MBMS_COMPLETED_FILE_URI">
+  EXTRA_MBMS_COMPLETED_FILE_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#EXTRA_MBMS_COMPLETED_FILE_URI">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#EXTRA_MBMS_COMPLETED_FILE_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_MBMS_COMPLETED_FILE_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_EXTRA_MBMS_DOWNLOAD_REQUEST_" data-uid="Android.Telephony.MbmsDownloadSession.EXTRA_MBMS_DOWNLOAD_REQUEST*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_EXTRA_MBMS_DOWNLOAD_REQUEST" data-uid="Android.Telephony.MbmsDownloadSession.EXTRA_MBMS_DOWNLOAD_REQUEST">
+  EXTRA_MBMS_DOWNLOAD_REQUEST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#EXTRA_MBMS_DOWNLOAD_REQUEST">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#EXTRA_MBMS_DOWNLOAD_REQUEST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_MBMS_DOWNLOAD_REQUEST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_EXTRA_MBMS_DOWNLOAD_RESULT_" data-uid="Android.Telephony.MbmsDownloadSession.EXTRA_MBMS_DOWNLOAD_RESULT*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_EXTRA_MBMS_DOWNLOAD_RESULT" data-uid="Android.Telephony.MbmsDownloadSession.EXTRA_MBMS_DOWNLOAD_RESULT">
+  EXTRA_MBMS_DOWNLOAD_RESULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#EXTRA_MBMS_DOWNLOAD_RESULT">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#EXTRA_MBMS_DOWNLOAD_RESULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_MBMS_DOWNLOAD_RESULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_EXTRA_MBMS_FILE_INFO_" data-uid="Android.Telephony.MbmsDownloadSession.EXTRA_MBMS_FILE_INFO*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_EXTRA_MBMS_FILE_INFO" data-uid="Android.Telephony.MbmsDownloadSession.EXTRA_MBMS_FILE_INFO">
+  EXTRA_MBMS_FILE_INFO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#EXTRA_MBMS_FILE_INFO">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#EXTRA_MBMS_FILE_INFO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_MBMS_FILE_INFO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_IsBridgeAbstract_" data-uid="Android.Telephony.MbmsDownloadSession.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_IsBridgeAbstract" data-uid="Android.Telephony.MbmsDownloadSession.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L2328"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_IsBridgeCloseable_" data-uid="Android.Telephony.MbmsDownloadSession.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_IsBridgeCloseable" data-uid="Android.Telephony.MbmsDownloadSession.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L2332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_IsBridgeInterface_" data-uid="Android.Telephony.MbmsDownloadSession.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_IsBridgeInterface" data-uid="Android.Telephony.MbmsDownloadSession.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L2336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_IsBridgeStatic_" data-uid="Android.Telephony.MbmsDownloadSession.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_IsBridgeStatic" data-uid="Android.Telephony.MbmsDownloadSession.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L2340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_RESULT_CANCELLED_" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_CANCELLED*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_RESULT_CANCELLED" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_CANCELLED">
+  RESULT_CANCELLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_CANCELLED">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_CANCELLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RESULT_CANCELLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_RESULT_DOWNLOAD_FAILURE_" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_DOWNLOAD_FAILURE*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_RESULT_DOWNLOAD_FAILURE" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_DOWNLOAD_FAILURE">
+  RESULT_DOWNLOAD_FAILURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_DOWNLOAD_FAILURE">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_DOWNLOAD_FAILURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RESULT_DOWNLOAD_FAILURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_RESULT_EXPIRED_" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_EXPIRED*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_RESULT_EXPIRED" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_EXPIRED">
+  RESULT_EXPIRED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_EXPIRED">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_EXPIRED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RESULT_EXPIRED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_RESULT_FILE_ROOT_UNREACHABLE_" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_FILE_ROOT_UNREACHABLE*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_RESULT_FILE_ROOT_UNREACHABLE" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_FILE_ROOT_UNREACHABLE">
+  RESULT_FILE_ROOT_UNREACHABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_FILE_ROOT_UNREACHABLE">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_FILE_ROOT_UNREACHABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RESULT_FILE_ROOT_UNREACHABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_RESULT_IO_ERROR_" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_IO_ERROR*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_RESULT_IO_ERROR" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_IO_ERROR">
+  RESULT_IO_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_IO_ERROR">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_IO_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RESULT_IO_ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_RESULT_OUT_OF_STORAGE_" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_OUT_OF_STORAGE*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_RESULT_OUT_OF_STORAGE" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_OUT_OF_STORAGE">
+  RESULT_OUT_OF_STORAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_OUT_OF_STORAGE">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_OUT_OF_STORAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RESULT_OUT_OF_STORAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_RESULT_SERVICE_ID_NOT_DEFINED_" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_SERVICE_ID_NOT_DEFINED*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_RESULT_SERVICE_ID_NOT_DEFINED" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_SERVICE_ID_NOT_DEFINED">
+  RESULT_SERVICE_ID_NOT_DEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_SERVICE_ID_NOT_DEFINED">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_SERVICE_ID_NOT_DEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RESULT_SERVICE_ID_NOT_DEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_RESULT_SUCCESSFUL_" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_SUCCESSFUL*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_RESULT_SUCCESSFUL" data-uid="Android.Telephony.MbmsDownloadSession.RESULT_SUCCESSFUL">
+  RESULT_SUCCESSFUL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_SUCCESSFUL">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#RESULT_SUCCESSFUL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RESULT_SUCCESSFUL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_STATUS_ACTIVELY_DOWNLOADING_" data-uid="Android.Telephony.MbmsDownloadSession.STATUS_ACTIVELY_DOWNLOADING*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_STATUS_ACTIVELY_DOWNLOADING" data-uid="Android.Telephony.MbmsDownloadSession.STATUS_ACTIVELY_DOWNLOADING">
+  STATUS_ACTIVELY_DOWNLOADING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#STATUS_ACTIVELY_DOWNLOADING">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#STATUS_ACTIVELY_DOWNLOADING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATUS_ACTIVELY_DOWNLOADING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_STATUS_PENDING_DOWNLOAD_" data-uid="Android.Telephony.MbmsDownloadSession.STATUS_PENDING_DOWNLOAD*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_STATUS_PENDING_DOWNLOAD" data-uid="Android.Telephony.MbmsDownloadSession.STATUS_PENDING_DOWNLOAD">
+  STATUS_PENDING_DOWNLOAD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#STATUS_PENDING_DOWNLOAD">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#STATUS_PENDING_DOWNLOAD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATUS_PENDING_DOWNLOAD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_STATUS_PENDING_DOWNLOAD_WINDOW_" data-uid="Android.Telephony.MbmsDownloadSession.STATUS_PENDING_DOWNLOAD_WINDOW*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_STATUS_PENDING_DOWNLOAD_WINDOW" data-uid="Android.Telephony.MbmsDownloadSession.STATUS_PENDING_DOWNLOAD_WINDOW">
+  STATUS_PENDING_DOWNLOAD_WINDOW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#STATUS_PENDING_DOWNLOAD_WINDOW">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#STATUS_PENDING_DOWNLOAD_WINDOW</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATUS_PENDING_DOWNLOAD_WINDOW { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_STATUS_PENDING_REPAIR_" data-uid="Android.Telephony.MbmsDownloadSession.STATUS_PENDING_REPAIR*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_STATUS_PENDING_REPAIR" data-uid="Android.Telephony.MbmsDownloadSession.STATUS_PENDING_REPAIR">
+  STATUS_PENDING_REPAIR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#STATUS_PENDING_REPAIR">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#STATUS_PENDING_REPAIR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATUS_PENDING_REPAIR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_STATUS_UNKNOWN_" data-uid="Android.Telephony.MbmsDownloadSession.STATUS_UNKNOWN*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_STATUS_UNKNOWN" data-uid="Android.Telephony.MbmsDownloadSession.STATUS_UNKNOWN">
+  STATUS_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#STATUS_UNKNOWN">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#STATUS_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATUS_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_AddProgressListener_" data-uid="Android.Telephony.MbmsDownloadSession.AddProgressListener*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_AddProgressListener_Android_Telephony_Mbms_DownloadRequest_Java_Util_Concurrent_Executor_Android_Telephony_Mbms_DownloadProgressListener_" data-uid="Android.Telephony.MbmsDownloadSession.AddProgressListener(Android.Telephony.Mbms.DownloadRequest,Java.Util.Concurrent.Executor,Android.Telephony.Mbms.DownloadProgressListener)">
+  AddProgressListener(DownloadRequest, Executor, DownloadProgressListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#addProgressListener(android.telephony.mbms.DownloadRequest,java.util.concurrent.Executor,android.telephony.mbms.DownloadProgressListener)">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#addProgressListener(android.telephony.mbms.DownloadRequest,java.util.concurrent.Executor,android.telephony.mbms.DownloadProgressListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddProgressListener(DownloadRequest arg0, Executor arg1, DownloadProgressListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Telephony.Mbms.DownloadProgressListener.html">DownloadProgressListener</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.DownloadProgressListener.html">DownloadProgressListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_AddServiceAnnouncement_" data-uid="Android.Telephony.MbmsDownloadSession.AddServiceAnnouncement*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_AddServiceAnnouncement_System_Byte___" data-uid="Android.Telephony.MbmsDownloadSession.AddServiceAnnouncement(System.Byte[])">
+  AddServiceAnnouncement(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#addServiceAnnouncement(byte[])">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#addServiceAnnouncement(byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddServiceAnnouncement(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_AddStatusListener_" data-uid="Android.Telephony.MbmsDownloadSession.AddStatusListener*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_AddStatusListener_Android_Telephony_Mbms_DownloadRequest_Java_Util_Concurrent_Executor_Android_Telephony_Mbms_DownloadStatusListener_" data-uid="Android.Telephony.MbmsDownloadSession.AddStatusListener(Android.Telephony.Mbms.DownloadRequest,Java.Util.Concurrent.Executor,Android.Telephony.Mbms.DownloadStatusListener)">
+  AddStatusListener(DownloadRequest, Executor, DownloadStatusListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#addStatusListener(android.telephony.mbms.DownloadRequest,java.util.concurrent.Executor,android.telephony.mbms.DownloadStatusListener)">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#addStatusListener(android.telephony.mbms.DownloadRequest,java.util.concurrent.Executor,android.telephony.mbms.DownloadStatusListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddStatusListener(DownloadRequest arg0, Executor arg1, DownloadStatusListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Telephony.Mbms.DownloadStatusListener.html">DownloadStatusListener</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.DownloadStatusListener.html">DownloadStatusListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_CancelDownload_" data-uid="Android.Telephony.MbmsDownloadSession.CancelDownload*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_CancelDownload_Android_Telephony_Mbms_DownloadRequest_" data-uid="Android.Telephony.MbmsDownloadSession.CancelDownload(Android.Telephony.Mbms.DownloadRequest)">
+  CancelDownload(DownloadRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#cancelDownload(android.telephony.mbms.DownloadRequest)">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#cancelDownload(android.telephony.mbms.DownloadRequest)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelDownload(DownloadRequest arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_Close_" data-uid="Android.Telephony.MbmsDownloadSession.Close*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_Close" data-uid="Android.Telephony.MbmsDownloadSession.Close">
+  Close()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#close()">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#close()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_Create_" data-uid="Android.Telephony.MbmsDownloadSession.Create*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_Create_Android_Content_Context_Java_Util_Concurrent_Executor_Android_Telephony_Mbms_MbmsDownloadSessionCallback_" data-uid="Android.Telephony.MbmsDownloadSession.Create(Android.Content.Context,Java.Util.Concurrent.Executor,Android.Telephony.Mbms.MbmsDownloadSessionCallback)">
+  Create(Context, Executor, MbmsDownloadSessionCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#create(android.content.Context,java.util.concurrent.Executor,android.telephony.mbms.MbmsDownloadSessionCallback)">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#create(android.content.Context,java.util.concurrent.Executor,android.telephony.mbms.MbmsDownloadSessionCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbmsDownloadSession Create(Context arg0, Executor arg1, MbmsDownloadSessionCallback arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Telephony.Mbms.MbmsDownloadSessionCallback.html">MbmsDownloadSessionCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.MbmsDownloadSessionCallback.html">MbmsDownloadSessionCallback</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Telephony.MbmsDownloadSession.html">MbmsDownloadSession</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.MbmsDownloadSession.html">MbmsDownloadSession</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_Create_" data-uid="Android.Telephony.MbmsDownloadSession.Create*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_Create_Android_Content_Context_Java_Util_Concurrent_Executor_System_Int32_Android_Telephony_Mbms_MbmsDownloadSessionCallback_" data-uid="Android.Telephony.MbmsDownloadSession.Create(Android.Content.Context,Java.Util.Concurrent.Executor,System.Int32,Android.Telephony.Mbms.MbmsDownloadSessionCallback)">
+  Create(Context, Executor, int, MbmsDownloadSessionCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#create(android.content.Context,java.util.concurrent.Executor,int,android.telephony.mbms.MbmsDownloadSessionCallback)">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#create(android.content.Context,java.util.concurrent.Executor,int,android.telephony.mbms.MbmsDownloadSessionCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MbmsDownloadSession Create(Context arg0, Executor arg1, int arg2, MbmsDownloadSessionCallback arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Telephony.Mbms.MbmsDownloadSessionCallback.html">MbmsDownloadSessionCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.MbmsDownloadSessionCallback.html">MbmsDownloadSessionCallback</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Telephony.MbmsDownloadSession.html">MbmsDownloadSession</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.MbmsDownloadSession.html">MbmsDownloadSession</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_Download_" data-uid="Android.Telephony.MbmsDownloadSession.Download*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_Download_Android_Telephony_Mbms_DownloadRequest_" data-uid="Android.Telephony.MbmsDownloadSession.Download(Android.Telephony.Mbms.DownloadRequest)">
+  Download(DownloadRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#download(android.telephony.mbms.DownloadRequest)">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#download(android.telephony.mbms.DownloadRequest)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Download(DownloadRequest arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_GetMaximumServiceAnnouncementSize_" data-uid="Android.Telephony.MbmsDownloadSession.GetMaximumServiceAnnouncementSize*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_GetMaximumServiceAnnouncementSize" data-uid="Android.Telephony.MbmsDownloadSession.GetMaximumServiceAnnouncementSize">
+  GetMaximumServiceAnnouncementSize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#getMaximumServiceAnnouncementSize()">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#getMaximumServiceAnnouncementSize()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetMaximumServiceAnnouncementSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_GetTempFileRootDirectory_" data-uid="Android.Telephony.MbmsDownloadSession.GetTempFileRootDirectory*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_GetTempFileRootDirectory" data-uid="Android.Telephony.MbmsDownloadSession.GetTempFileRootDirectory">
+  GetTempFileRootDirectory()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#getTempFileRootDirectory()">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#getTempFileRootDirectory()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public File GetTempFileRootDirectory()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.File.html">File</a></dt>
+    <dd><p><a class="xref" href="Java.Io.File.html">File</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_ListPendingDownloads_" data-uid="Android.Telephony.MbmsDownloadSession.ListPendingDownloads*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_ListPendingDownloads" data-uid="Android.Telephony.MbmsDownloadSession.ListPendingDownloads">
+  ListPendingDownloads()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#listPendingDownloads()">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#listPendingDownloads()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;DownloadRequest&gt; ListPendingDownloads()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_RemoveProgressListener_" data-uid="Android.Telephony.MbmsDownloadSession.RemoveProgressListener*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_RemoveProgressListener_Android_Telephony_Mbms_DownloadRequest_Android_Telephony_Mbms_DownloadProgressListener_" data-uid="Android.Telephony.MbmsDownloadSession.RemoveProgressListener(Android.Telephony.Mbms.DownloadRequest,Android.Telephony.Mbms.DownloadProgressListener)">
+  RemoveProgressListener(DownloadRequest, DownloadProgressListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#removeProgressListener(android.telephony.mbms.DownloadRequest,android.telephony.mbms.DownloadProgressListener)">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#removeProgressListener(android.telephony.mbms.DownloadRequest,android.telephony.mbms.DownloadProgressListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveProgressListener(DownloadRequest arg0, DownloadProgressListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Telephony.Mbms.DownloadProgressListener.html">DownloadProgressListener</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.DownloadProgressListener.html">DownloadProgressListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_RemoveStatusListener_" data-uid="Android.Telephony.MbmsDownloadSession.RemoveStatusListener*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_RemoveStatusListener_Android_Telephony_Mbms_DownloadRequest_Android_Telephony_Mbms_DownloadStatusListener_" data-uid="Android.Telephony.MbmsDownloadSession.RemoveStatusListener(Android.Telephony.Mbms.DownloadRequest,Android.Telephony.Mbms.DownloadStatusListener)">
+  RemoveStatusListener(DownloadRequest, DownloadStatusListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#removeStatusListener(android.telephony.mbms.DownloadRequest,android.telephony.mbms.DownloadStatusListener)">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#removeStatusListener(android.telephony.mbms.DownloadRequest,android.telephony.mbms.DownloadStatusListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveStatusListener(DownloadRequest arg0, DownloadStatusListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Telephony.Mbms.DownloadStatusListener.html">DownloadStatusListener</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.DownloadStatusListener.html">DownloadStatusListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_RequestDownloadState_" data-uid="Android.Telephony.MbmsDownloadSession.RequestDownloadState*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_RequestDownloadState_Android_Telephony_Mbms_DownloadRequest_Android_Telephony_Mbms_FileInfo_" data-uid="Android.Telephony.MbmsDownloadSession.RequestDownloadState(Android.Telephony.Mbms.DownloadRequest,Android.Telephony.Mbms.FileInfo)">
+  RequestDownloadState(DownloadRequest, FileInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#requestDownloadState(android.telephony.mbms.DownloadRequest,android.telephony.mbms.FileInfo)">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#requestDownloadState(android.telephony.mbms.DownloadRequest,android.telephony.mbms.FileInfo)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestDownloadState(DownloadRequest arg0, FileInfo arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Telephony.Mbms.FileInfo.html">FileInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.FileInfo.html">FileInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_RequestUpdateFileServices_" data-uid="Android.Telephony.MbmsDownloadSession.RequestUpdateFileServices*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_RequestUpdateFileServices_Java_Util_List_Java_Lang_String__" data-uid="Android.Telephony.MbmsDownloadSession.RequestUpdateFileServices(Java.Util.List{Java.Lang.String})">
+  RequestUpdateFileServices(List&lt;String&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#requestUpdateFileServices(java.util.List)">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#requestUpdateFileServices(java.util.List)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestUpdateFileServices(List&lt;String&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_ResetDownloadKnowledge_" data-uid="Android.Telephony.MbmsDownloadSession.ResetDownloadKnowledge*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_ResetDownloadKnowledge_Android_Telephony_Mbms_DownloadRequest_" data-uid="Android.Telephony.MbmsDownloadSession.ResetDownloadKnowledge(Android.Telephony.Mbms.DownloadRequest)">
+  ResetDownloadKnowledge(DownloadRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#resetDownloadKnowledge(android.telephony.mbms.DownloadRequest)">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#resetDownloadKnowledge(android.telephony.mbms.DownloadRequest)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetDownloadKnowledge(DownloadRequest arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_MbmsDownloadSession_SetTempFileRootDirectory_" data-uid="Android.Telephony.MbmsDownloadSession.SetTempFileRootDirectory*"></a>
+
+  <h3 id="Android_Telephony_MbmsDownloadSession_SetTempFileRootDirectory_Java_Io_File_" data-uid="Android.Telephony.MbmsDownloadSession.SetTempFileRootDirectory(Java.Io.File)">
+  SetTempFileRootDirectory(File)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#setTempFileRootDirectory(java.io.File)">https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#setTempFileRootDirectory(java.io.File)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTempFileRootDirectory(File arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Io.File.html">File</a></dt>
+    <dd><p><a class="xref" href="Java.Io.File.html">File</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/MbmsDownloadSession.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

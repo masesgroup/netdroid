@@ -1,0 +1,3253 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class PreparedStatement | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PreparedStatement | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/java/sql/PreparedStatement.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Java_Sql_PreparedStatement.md&amp;value=---%0Auid%3A%20Java.Sql.PreparedStatement%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Java.Sql.PreparedStatement">
+
+
+
+  <h1 id="Java_Sql_PreparedStatement" data-uid="Java.Sql.PreparedStatement" class="text-break">
+Class PreparedStatement  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Java.html">Java</a>.<a class="xref" href="Java.Sql.html">Sql</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html">https://developer.android.com/reference/java/sql/PreparedStatement.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PreparedStatement : Statement, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IWrapper, IAutoCloseable, IPreparedStatement, IStatement</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Sql.Statement.html">Statement</a>&gt;</div>
+      <div><a class="xref" href="Java.Sql.Statement.html">Statement</a></div>
+      <div><span class="xref">PreparedStatement</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Sql.IWrapper.html">IWrapper</a></div>
+      <div><a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a></div>
+      <div><a class="xref" href="Java.Sql.IPreparedStatement.html">IPreparedStatement</a></div>
+      <div><a class="xref" href="Java.Sql.IStatement.html">IStatement</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Java.Sql.CallableStatement.html">CallableStatement</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_CLOSE_ALL_RESULTS">Statement.CLOSE_ALL_RESULTS</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_CLOSE_CURRENT_RESULT">Statement.CLOSE_CURRENT_RESULT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_EXECUTE_FAILED">Statement.EXECUTE_FAILED</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_KEEP_CURRENT_RESULT">Statement.KEEP_CURRENT_RESULT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_NO_GENERATED_KEYS">Statement.NO_GENERATED_KEYS</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_RETURN_GENERATED_KEYS">Statement.RETURN_GENERATED_KEYS</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_SUCCESS_NO_INFO">Statement.SUCCESS_NO_INFO</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_Execute_Java_Lang_String_System_Int32_">Statement.Execute(String, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_Execute_Java_Lang_String_System_Int32___">Statement.Execute(String, int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_Execute_Java_Lang_String_Java_Lang_String___">Statement.Execute(String, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_Execute_Java_Lang_String_">Statement.Execute(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetMoreResults">Statement.GetMoreResults()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetMoreResults_System_Int32_">Statement.GetMoreResults(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_IsClosed">Statement.IsClosed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_IsCloseOnCompletion">Statement.IsCloseOnCompletion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_IsPoolable">Statement.IsPoolable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_ExecuteUpdate_Java_Lang_String_System_Int32_">Statement.ExecuteUpdate(String, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_ExecuteUpdate_Java_Lang_String_System_Int32___">Statement.ExecuteUpdate(String, int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_ExecuteUpdate_Java_Lang_String_Java_Lang_String___">Statement.ExecuteUpdate(String, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_ExecuteUpdate_Java_Lang_String_">Statement.ExecuteUpdate(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetFetchDirection">Statement.GetFetchDirection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetFetchSize">Statement.GetFetchSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetMaxFieldSize">Statement.GetMaxFieldSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetMaxRows">Statement.GetMaxRows()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetQueryTimeout">Statement.GetQueryTimeout()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetResultSetConcurrency">Statement.GetResultSetConcurrency()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetResultSetHoldability">Statement.GetResultSetHoldability()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetResultSetType">Statement.GetResultSetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetUpdateCount">Statement.GetUpdateCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_ExecuteBatch">Statement.ExecuteBatch()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetConnection">Statement.GetConnection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_ExecuteQuery_Java_Lang_String_">Statement.ExecuteQuery(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetGeneratedKeys">Statement.GetGeneratedKeys()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetResultSet">Statement.GetResultSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetWarnings">Statement.GetWarnings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_AddBatch_Java_Lang_String_">Statement.AddBatch(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_Cancel">Statement.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_ClearBatch">Statement.ClearBatch()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_ClearWarnings">Statement.ClearWarnings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_Close">Statement.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_CloseOnCompletion">Statement.CloseOnCompletion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_SetCursorName_Java_Lang_String_">Statement.SetCursorName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_SetEscapeProcessing_System_Boolean_">Statement.SetEscapeProcessing(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_SetFetchDirection_System_Int32_">Statement.SetFetchDirection(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_SetFetchSize_System_Int32_">Statement.SetFetchSize(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_SetMaxFieldSize_System_Int32_">Statement.SetMaxFieldSize(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_SetMaxRows_System_Int32_">Statement.SetMaxRows(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_SetPoolable_System_Boolean_">Statement.SetPoolable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_SetQueryTimeout_System_Int32_">Statement.SetQueryTimeout(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_IsSimpleIdentifier_Java_Lang_String_">Statement.IsSimpleIdentifier(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_EnquoteIdentifier_Java_Lang_String_System_Boolean_">Statement.EnquoteIdentifier(String, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_EnquoteLiteral_Java_Lang_String_">Statement.EnquoteLiteral(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_EnquoteNCharLiteral_Java_Lang_String_">Statement.EnquoteNCharLiteral(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_ExecuteLargeUpdate_Java_Lang_String_System_Int32_">Statement.ExecuteLargeUpdate(String, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_ExecuteLargeUpdate_Java_Lang_String_System_Int32___">Statement.ExecuteLargeUpdate(String, int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_ExecuteLargeUpdate_Java_Lang_String_Java_Lang_String___">Statement.ExecuteLargeUpdate(String, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_ExecuteLargeUpdate_Java_Lang_String_">Statement.ExecuteLargeUpdate(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetLargeMaxRows">Statement.GetLargeMaxRows()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_GetLargeUpdateCount">Statement.GetLargeUpdateCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_ExecuteLargeBatch">Statement.ExecuteLargeBatch()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Sql.Statement.html#Java_Sql_Statement_SetLargeMaxRows_System_Int64_">Statement.SetLargeMaxRows(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Statement&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Statement&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Statement&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Statement&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Statement&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Statement&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Statement&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Statement&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Statement&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Statement&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Statement&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Statement&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Statement&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Java_Sql_PreparedStatement__ctor_" data-uid="Java.Sql.PreparedStatement.#ctor*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement__ctor" data-uid="Java.Sql.PreparedStatement.#ctor">
+  PreparedStatement()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/AllPackageClasses.cs/#L663"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;PreparedStatement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public PreparedStatement()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Sql_PreparedStatement__ctor_" data-uid="Java.Sql.PreparedStatement.#ctor*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement__ctor_System_Object___" data-uid="Java.Sql.PreparedStatement.#ctor(System.Object[])">
+  PreparedStatement(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/AllPackageClasses.cs/#L668"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;PreparedStatement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public PreparedStatement(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Java_Sql_PreparedStatement_BridgeClassName_" data-uid="Java.Sql.PreparedStatement.BridgeClassName*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_BridgeClassName" data-uid="Java.Sql.PreparedStatement.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/AllPackageClasses.cs/#L676"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Sql_PreparedStatement_IsBridgeAbstract_" data-uid="Java.Sql.PreparedStatement.IsBridgeAbstract*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_IsBridgeAbstract" data-uid="Java.Sql.PreparedStatement.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/AllPackageClasses.cs/#L680"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Sql_PreparedStatement_IsBridgeCloseable_" data-uid="Java.Sql.PreparedStatement.IsBridgeCloseable*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_IsBridgeCloseable" data-uid="Java.Sql.PreparedStatement.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/AllPackageClasses.cs/#L684"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Sql_PreparedStatement_IsBridgeInterface_" data-uid="Java.Sql.PreparedStatement.IsBridgeInterface*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_IsBridgeInterface" data-uid="Java.Sql.PreparedStatement.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/AllPackageClasses.cs/#L688"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Sql_PreparedStatement_IsBridgeStatic_" data-uid="Java.Sql.PreparedStatement.IsBridgeStatic*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_IsBridgeStatic" data-uid="Java.Sql.PreparedStatement.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/AllPackageClasses.cs/#L692"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Java_Sql_PreparedStatement_AddBatch_" data-uid="Java.Sql.PreparedStatement.AddBatch*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_AddBatch" data-uid="Java.Sql.PreparedStatement.AddBatch">
+  AddBatch()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#addBatch()">https://developer.android.com/reference/java/sql/PreparedStatement.html#addBatch()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddBatch()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_ClearParameters_" data-uid="Java.Sql.PreparedStatement.ClearParameters*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_ClearParameters" data-uid="Java.Sql.PreparedStatement.ClearParameters">
+  ClearParameters()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#clearParameters()">https://developer.android.com/reference/java/sql/PreparedStatement.html#clearParameters()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearParameters()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_Execute_" data-uid="Java.Sql.PreparedStatement.Execute*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_Execute" data-uid="Java.Sql.PreparedStatement.Execute">
+  Execute()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#execute()">https://developer.android.com/reference/java/sql/PreparedStatement.html#execute()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Execute()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_ExecuteLargeUpdate_" data-uid="Java.Sql.PreparedStatement.ExecuteLargeUpdate*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_ExecuteLargeUpdate" data-uid="Java.Sql.PreparedStatement.ExecuteLargeUpdate">
+  ExecuteLargeUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L631"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#executeLargeUpdate()">https://developer.android.com/reference/java/sql/PreparedStatement.html#executeLargeUpdate()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ExecuteLargeUpdate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_ExecuteQuery_" data-uid="Java.Sql.PreparedStatement.ExecuteQuery*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_ExecuteQuery" data-uid="Java.Sql.PreparedStatement.ExecuteQuery">
+  ExecuteQuery()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#executeQuery()">https://developer.android.com/reference/java/sql/PreparedStatement.html#executeQuery()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResultSet ExecuteQuery()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.ResultSet.html">ResultSet</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.ResultSet.html">ResultSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_ExecuteUpdate_" data-uid="Java.Sql.PreparedStatement.ExecuteUpdate*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_ExecuteUpdate" data-uid="Java.Sql.PreparedStatement.ExecuteUpdate">
+  ExecuteUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#executeUpdate()">https://developer.android.com/reference/java/sql/PreparedStatement.html#executeUpdate()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ExecuteUpdate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_GetMetaData_" data-uid="Java.Sql.PreparedStatement.GetMetaData*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_GetMetaData" data-uid="Java.Sql.PreparedStatement.GetMetaData">
+  GetMetaData()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#getMetaData()">https://developer.android.com/reference/java/sql/PreparedStatement.html#getMetaData()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResultSetMetaData GetMetaData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.ResultSetMetaData.html">ResultSetMetaData</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.ResultSetMetaData.html">ResultSetMetaData</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_GetParameterMetaData_" data-uid="Java.Sql.PreparedStatement.GetParameterMetaData*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_GetParameterMetaData" data-uid="Java.Sql.PreparedStatement.GetParameterMetaData">
+  GetParameterMetaData()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#getParameterMetaData()">https://developer.android.com/reference/java/sql/PreparedStatement.html#getParameterMetaData()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParameterMetaData GetParameterMetaData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.ParameterMetaData.html">ParameterMetaData</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.ParameterMetaData.html">ParameterMetaData</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetArray_" data-uid="Java.Sql.PreparedStatement.SetArray*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetArray_System_Int32_Java_Sql_Array_" data-uid="Java.Sql.PreparedStatement.SetArray(System.Int32,Java.Sql.Array)">
+  SetArray(int, Array)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setArray(int,java.sql.Array)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setArray(int,java.sql.Array)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetArray(int arg0, Array arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Sql.Array.html">Array</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.Array.html">Array</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetAsciiStream_" data-uid="Java.Sql.PreparedStatement.SetAsciiStream*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetAsciiStream_System_Int32_Java_Io_InputStream_" data-uid="Java.Sql.PreparedStatement.SetAsciiStream(System.Int32,Java.Io.InputStream)">
+  SetAsciiStream(int, InputStream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setAsciiStream(int,java.io.InputStream)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setAsciiStream(int,java.io.InputStream)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAsciiStream(int arg0, InputStream arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.InputStream.html">InputStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.InputStream.html">InputStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetAsciiStream_" data-uid="Java.Sql.PreparedStatement.SetAsciiStream*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetAsciiStream_System_Int32_Java_Io_InputStream_System_Int32_" data-uid="Java.Sql.PreparedStatement.SetAsciiStream(System.Int32,Java.Io.InputStream,System.Int32)">
+  SetAsciiStream(int, InputStream, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setAsciiStream(int,java.io.InputStream,int)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setAsciiStream(int,java.io.InputStream,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAsciiStream(int arg0, InputStream arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.InputStream.html">InputStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.InputStream.html">InputStream</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetAsciiStream_" data-uid="Java.Sql.PreparedStatement.SetAsciiStream*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetAsciiStream_System_Int32_Java_Io_InputStream_System_Int64_" data-uid="Java.Sql.PreparedStatement.SetAsciiStream(System.Int32,Java.Io.InputStream,System.Int64)">
+  SetAsciiStream(int, InputStream, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setAsciiStream(int,java.io.InputStream,long)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setAsciiStream(int,java.io.InputStream,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAsciiStream(int arg0, InputStream arg1, long arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.InputStream.html">InputStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.InputStream.html">InputStream</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetBigDecimal_" data-uid="Java.Sql.PreparedStatement.SetBigDecimal*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetBigDecimal_System_Int32_Java_Math_BigDecimal_" data-uid="Java.Sql.PreparedStatement.SetBigDecimal(System.Int32,Java.Math.BigDecimal)">
+  SetBigDecimal(int, BigDecimal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setBigDecimal(int,java.math.BigDecimal)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setBigDecimal(int,java.math.BigDecimal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBigDecimal(int arg0, BigDecimal arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd><p><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetBinaryStream_" data-uid="Java.Sql.PreparedStatement.SetBinaryStream*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetBinaryStream_System_Int32_Java_Io_InputStream_" data-uid="Java.Sql.PreparedStatement.SetBinaryStream(System.Int32,Java.Io.InputStream)">
+  SetBinaryStream(int, InputStream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setBinaryStream(int,java.io.InputStream)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setBinaryStream(int,java.io.InputStream)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBinaryStream(int arg0, InputStream arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.InputStream.html">InputStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.InputStream.html">InputStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetBinaryStream_" data-uid="Java.Sql.PreparedStatement.SetBinaryStream*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetBinaryStream_System_Int32_Java_Io_InputStream_System_Int32_" data-uid="Java.Sql.PreparedStatement.SetBinaryStream(System.Int32,Java.Io.InputStream,System.Int32)">
+  SetBinaryStream(int, InputStream, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setBinaryStream(int,java.io.InputStream,int)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setBinaryStream(int,java.io.InputStream,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBinaryStream(int arg0, InputStream arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.InputStream.html">InputStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.InputStream.html">InputStream</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetBinaryStream_" data-uid="Java.Sql.PreparedStatement.SetBinaryStream*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetBinaryStream_System_Int32_Java_Io_InputStream_System_Int64_" data-uid="Java.Sql.PreparedStatement.SetBinaryStream(System.Int32,Java.Io.InputStream,System.Int64)">
+  SetBinaryStream(int, InputStream, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setBinaryStream(int,java.io.InputStream,long)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setBinaryStream(int,java.io.InputStream,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBinaryStream(int arg0, InputStream arg1, long arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.InputStream.html">InputStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.InputStream.html">InputStream</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetBlob_" data-uid="Java.Sql.PreparedStatement.SetBlob*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetBlob_System_Int32_Java_Io_InputStream_" data-uid="Java.Sql.PreparedStatement.SetBlob(System.Int32,Java.Io.InputStream)">
+  SetBlob(int, InputStream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setBlob(int,java.io.InputStream)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setBlob(int,java.io.InputStream)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBlob(int arg0, InputStream arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.InputStream.html">InputStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.InputStream.html">InputStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetBlob_" data-uid="Java.Sql.PreparedStatement.SetBlob*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetBlob_System_Int32_Java_Io_InputStream_System_Int64_" data-uid="Java.Sql.PreparedStatement.SetBlob(System.Int32,Java.Io.InputStream,System.Int64)">
+  SetBlob(int, InputStream, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setBlob(int,java.io.InputStream,long)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setBlob(int,java.io.InputStream,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBlob(int arg0, InputStream arg1, long arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.InputStream.html">InputStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.InputStream.html">InputStream</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetBlob_" data-uid="Java.Sql.PreparedStatement.SetBlob*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetBlob_System_Int32_Java_Sql_Blob_" data-uid="Java.Sql.PreparedStatement.SetBlob(System.Int32,Java.Sql.Blob)">
+  SetBlob(int, Blob)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setBlob(int,java.sql.Blob)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setBlob(int,java.sql.Blob)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBlob(int arg0, Blob arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Sql.Blob.html">Blob</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.Blob.html">Blob</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetBoolean_" data-uid="Java.Sql.PreparedStatement.SetBoolean*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetBoolean_System_Int32_System_Boolean_" data-uid="Java.Sql.PreparedStatement.SetBoolean(System.Int32,System.Boolean)">
+  SetBoolean(int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setBoolean(int,boolean)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setBoolean(int,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBoolean(int arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetByte_" data-uid="Java.Sql.PreparedStatement.SetByte*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetByte_System_Int32_System_Byte_" data-uid="Java.Sql.PreparedStatement.SetByte(System.Int32,System.Byte)">
+  SetByte(int, byte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setByte(int,byte)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setByte(int,byte)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetByte(int arg0, byte arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetBytes_" data-uid="Java.Sql.PreparedStatement.SetBytes*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetBytes_System_Int32_System_Byte___" data-uid="Java.Sql.PreparedStatement.SetBytes(System.Int32,System.Byte[])">
+  SetBytes(int, byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setBytes(int,byte[])">https://developer.android.com/reference/java/sql/PreparedStatement.html#setBytes(int,byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBytes(int arg0, byte[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetCharacterStream_" data-uid="Java.Sql.PreparedStatement.SetCharacterStream*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetCharacterStream_System_Int32_Java_Io_Reader_" data-uid="Java.Sql.PreparedStatement.SetCharacterStream(System.Int32,Java.Io.Reader)">
+  SetCharacterStream(int, Reader)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setCharacterStream(int,java.io.Reader)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setCharacterStream(int,java.io.Reader)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCharacterStream(int arg0, Reader arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.Reader.html">Reader</a></dt>
+    <dd><p><a class="xref" href="Java.Io.Reader.html">Reader</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetCharacterStream_" data-uid="Java.Sql.PreparedStatement.SetCharacterStream*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetCharacterStream_System_Int32_Java_Io_Reader_System_Int32_" data-uid="Java.Sql.PreparedStatement.SetCharacterStream(System.Int32,Java.Io.Reader,System.Int32)">
+  SetCharacterStream(int, Reader, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setCharacterStream(int,java.io.Reader,int)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setCharacterStream(int,java.io.Reader,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCharacterStream(int arg0, Reader arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.Reader.html">Reader</a></dt>
+    <dd><p><a class="xref" href="Java.Io.Reader.html">Reader</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetCharacterStream_" data-uid="Java.Sql.PreparedStatement.SetCharacterStream*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetCharacterStream_System_Int32_Java_Io_Reader_System_Int64_" data-uid="Java.Sql.PreparedStatement.SetCharacterStream(System.Int32,Java.Io.Reader,System.Int64)">
+  SetCharacterStream(int, Reader, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setCharacterStream(int,java.io.Reader,long)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setCharacterStream(int,java.io.Reader,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCharacterStream(int arg0, Reader arg1, long arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.Reader.html">Reader</a></dt>
+    <dd><p><a class="xref" href="Java.Io.Reader.html">Reader</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetClob_" data-uid="Java.Sql.PreparedStatement.SetClob*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetClob_System_Int32_Java_Io_Reader_" data-uid="Java.Sql.PreparedStatement.SetClob(System.Int32,Java.Io.Reader)">
+  SetClob(int, Reader)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setClob(int,java.io.Reader)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setClob(int,java.io.Reader)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClob(int arg0, Reader arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.Reader.html">Reader</a></dt>
+    <dd><p><a class="xref" href="Java.Io.Reader.html">Reader</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetClob_" data-uid="Java.Sql.PreparedStatement.SetClob*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetClob_System_Int32_Java_Io_Reader_System_Int64_" data-uid="Java.Sql.PreparedStatement.SetClob(System.Int32,Java.Io.Reader,System.Int64)">
+  SetClob(int, Reader, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setClob(int,java.io.Reader,long)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setClob(int,java.io.Reader,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClob(int arg0, Reader arg1, long arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.Reader.html">Reader</a></dt>
+    <dd><p><a class="xref" href="Java.Io.Reader.html">Reader</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetClob_" data-uid="Java.Sql.PreparedStatement.SetClob*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetClob_System_Int32_Java_Sql_Clob_" data-uid="Java.Sql.PreparedStatement.SetClob(System.Int32,Java.Sql.Clob)">
+  SetClob(int, Clob)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setClob(int,java.sql.Clob)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setClob(int,java.sql.Clob)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClob(int arg0, Clob arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Sql.Clob.html">Clob</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.Clob.html">Clob</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetDate_" data-uid="Java.Sql.PreparedStatement.SetDate*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetDate_System_Int32_Java_Sql_Date_" data-uid="Java.Sql.PreparedStatement.SetDate(System.Int32,Java.Sql.Date)">
+  SetDate(int, Date)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setDate(int,java.sql.Date)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setDate(int,java.sql.Date)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDate(int arg0, Date arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Sql.Date.html">Date</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.Date.html">Date</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetDate_" data-uid="Java.Sql.PreparedStatement.SetDate*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetDate_System_Int32_Java_Sql_Date_Java_Util_Calendar_" data-uid="Java.Sql.PreparedStatement.SetDate(System.Int32,Java.Sql.Date,Java.Util.Calendar)">
+  SetDate(int, Date, Calendar)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setDate(int,java.sql.Date,java.util.Calendar)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setDate(int,java.sql.Date,java.util.Calendar)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDate(int arg0, Date arg1, Calendar arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Sql.Date.html">Date</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.Date.html">Date</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Calendar.html">Calendar</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Calendar.html">Calendar</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetDouble_" data-uid="Java.Sql.PreparedStatement.SetDouble*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetDouble_System_Int32_System_Double_" data-uid="Java.Sql.PreparedStatement.SetDouble(System.Int32,System.Double)">
+  SetDouble(int, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setDouble(int,double)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setDouble(int,double)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDouble(int arg0, double arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetFloat_" data-uid="Java.Sql.PreparedStatement.SetFloat*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetFloat_System_Int32_System_Single_" data-uid="Java.Sql.PreparedStatement.SetFloat(System.Int32,System.Single)">
+  SetFloat(int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setFloat(int,float)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setFloat(int,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFloat(int arg0, float arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetInt_" data-uid="Java.Sql.PreparedStatement.SetInt*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetInt_System_Int32_System_Int32_" data-uid="Java.Sql.PreparedStatement.SetInt(System.Int32,System.Int32)">
+  SetInt(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setInt(int,int)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setInt(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInt(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetLong_" data-uid="Java.Sql.PreparedStatement.SetLong*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetLong_System_Int32_System_Int64_" data-uid="Java.Sql.PreparedStatement.SetLong(System.Int32,System.Int64)">
+  SetLong(int, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setLong(int,long)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setLong(int,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLong(int arg0, long arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetNCharacterStream_" data-uid="Java.Sql.PreparedStatement.SetNCharacterStream*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetNCharacterStream_System_Int32_Java_Io_Reader_" data-uid="Java.Sql.PreparedStatement.SetNCharacterStream(System.Int32,Java.Io.Reader)">
+  SetNCharacterStream(int, Reader)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setNCharacterStream(int,java.io.Reader)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setNCharacterStream(int,java.io.Reader)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNCharacterStream(int arg0, Reader arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.Reader.html">Reader</a></dt>
+    <dd><p><a class="xref" href="Java.Io.Reader.html">Reader</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetNCharacterStream_" data-uid="Java.Sql.PreparedStatement.SetNCharacterStream*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetNCharacterStream_System_Int32_Java_Io_Reader_System_Int64_" data-uid="Java.Sql.PreparedStatement.SetNCharacterStream(System.Int32,Java.Io.Reader,System.Int64)">
+  SetNCharacterStream(int, Reader, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setNCharacterStream(int,java.io.Reader,long)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setNCharacterStream(int,java.io.Reader,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNCharacterStream(int arg0, Reader arg1, long arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.Reader.html">Reader</a></dt>
+    <dd><p><a class="xref" href="Java.Io.Reader.html">Reader</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetNClob_" data-uid="Java.Sql.PreparedStatement.SetNClob*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetNClob_System_Int32_Java_Io_Reader_" data-uid="Java.Sql.PreparedStatement.SetNClob(System.Int32,Java.Io.Reader)">
+  SetNClob(int, Reader)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setNClob(int,java.io.Reader)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setNClob(int,java.io.Reader)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNClob(int arg0, Reader arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.Reader.html">Reader</a></dt>
+    <dd><p><a class="xref" href="Java.Io.Reader.html">Reader</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetNClob_" data-uid="Java.Sql.PreparedStatement.SetNClob*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetNClob_System_Int32_Java_Io_Reader_System_Int64_" data-uid="Java.Sql.PreparedStatement.SetNClob(System.Int32,Java.Io.Reader,System.Int64)">
+  SetNClob(int, Reader, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L424"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setNClob(int,java.io.Reader,long)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setNClob(int,java.io.Reader,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNClob(int arg0, Reader arg1, long arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.Reader.html">Reader</a></dt>
+    <dd><p><a class="xref" href="Java.Io.Reader.html">Reader</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetNClob_" data-uid="Java.Sql.PreparedStatement.SetNClob*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetNClob_System_Int32_Java_Sql_NClob_" data-uid="Java.Sql.PreparedStatement.SetNClob(System.Int32,Java.Sql.NClob)">
+  SetNClob(int, NClob)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setNClob(int,java.sql.NClob)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setNClob(int,java.sql.NClob)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNClob(int arg0, NClob arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Sql.NClob.html">NClob</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.NClob.html">NClob</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetNString_" data-uid="Java.Sql.PreparedStatement.SetNString*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetNString_System_Int32_Java_Lang_String_" data-uid="Java.Sql.PreparedStatement.SetNString(System.Int32,Java.Lang.String)">
+  SetNString(int, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L454"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setNString(int,java.lang.String)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setNString(int,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNString(int arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetNull_" data-uid="Java.Sql.PreparedStatement.SetNull*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetNull_System_Int32_System_Int32_" data-uid="Java.Sql.PreparedStatement.SetNull(System.Int32,System.Int32)">
+  SetNull(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setNull(int,int)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setNull(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNull(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetNull_" data-uid="Java.Sql.PreparedStatement.SetNull*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetNull_System_Int32_System_Int32_Java_Lang_String_" data-uid="Java.Sql.PreparedStatement.SetNull(System.Int32,System.Int32,Java.Lang.String)">
+  SetNull(int, int, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L465"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setNull(int,int,java.lang.String)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setNull(int,int,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNull(int arg0, int arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetObject_" data-uid="Java.Sql.PreparedStatement.SetObject*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetObject_System_Int32_System_Object_" data-uid="Java.Sql.PreparedStatement.SetObject(System.Int32,System.Object)">
+  SetObject(int, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setObject(int,java.lang.Object)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setObject(int,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetObject(int arg0, object arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetObject_" data-uid="Java.Sql.PreparedStatement.SetObject*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetObject_System_Int32_System_Object_System_Int32_" data-uid="Java.Sql.PreparedStatement.SetObject(System.Int32,System.Object,System.Int32)">
+  SetObject(int, object, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setObject(int,java.lang.Object,int)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setObject(int,java.lang.Object,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetObject(int arg0, object arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetObject_" data-uid="Java.Sql.PreparedStatement.SetObject*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetObject_System_Int32_System_Object_System_Int32_System_Int32_" data-uid="Java.Sql.PreparedStatement.SetObject(System.Int32,System.Object,System.Int32,System.Int32)">
+  SetObject(int, object, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setObject(int,java.lang.Object,int,int)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setObject(int,java.lang.Object,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetObject(int arg0, object arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetRef_" data-uid="Java.Sql.PreparedStatement.SetRef*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetRef_System_Int32_Java_Sql_Ref_" data-uid="Java.Sql.PreparedStatement.SetRef(System.Int32,Java.Sql.Ref)">
+  SetRef(int, Ref)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setRef(int,java.sql.Ref)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setRef(int,java.sql.Ref)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRef(int arg0, Ref arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Sql.Ref.html">Ref</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.Ref.html">Ref</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetRowId_" data-uid="Java.Sql.PreparedStatement.SetRowId*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetRowId_System_Int32_Java_Sql_RowId_" data-uid="Java.Sql.PreparedStatement.SetRowId(System.Int32,Java.Sql.RowId)">
+  SetRowId(int, RowId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L528"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setRowId(int,java.sql.RowId)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setRowId(int,java.sql.RowId)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRowId(int arg0, RowId arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Sql.RowId.html">RowId</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.RowId.html">RowId</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetSQLXML_" data-uid="Java.Sql.PreparedStatement.SetSQLXML*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetSQLXML_System_Int32_Java_Sql_SQLXML_" data-uid="Java.Sql.PreparedStatement.SetSQLXML(System.Int32,Java.Sql.SQLXML)">
+  SetSQLXML(int, SQLXML)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setSQLXML(int,java.sql.SQLXML)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setSQLXML(int,java.sql.SQLXML)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSQLXML(int arg0, SQLXML arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Sql.SQLXML.html">SQLXML</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.SQLXML.html">SQLXML</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetShort_" data-uid="Java.Sql.PreparedStatement.SetShort*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetShort_System_Int32_System_Int16_" data-uid="Java.Sql.PreparedStatement.SetShort(System.Int32,System.Int16)">
+  SetShort(int, short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setShort(int,short)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setShort(int,short)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetShort(int arg0, short arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetString_" data-uid="Java.Sql.PreparedStatement.SetString*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetString_System_Int32_Java_Lang_String_" data-uid="Java.Sql.PreparedStatement.SetString(System.Int32,Java.Lang.String)">
+  SetString(int, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L558"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setString(int,java.lang.String)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setString(int,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetString(int arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetTime_" data-uid="Java.Sql.PreparedStatement.SetTime*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetTime_System_Int32_Java_Sql_Time_" data-uid="Java.Sql.PreparedStatement.SetTime(System.Int32,Java.Sql.Time)">
+  SetTime(int, Time)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L579"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setTime(int,java.sql.Time)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setTime(int,java.sql.Time)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTime(int arg0, Time arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Sql.Time.html">Time</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.Time.html">Time</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetTime_" data-uid="Java.Sql.PreparedStatement.SetTime*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetTime_System_Int32_Java_Sql_Time_Java_Util_Calendar_" data-uid="Java.Sql.PreparedStatement.SetTime(System.Int32,Java.Sql.Time,Java.Util.Calendar)">
+  SetTime(int, Time, Calendar)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L569"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setTime(int,java.sql.Time,java.util.Calendar)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setTime(int,java.sql.Time,java.util.Calendar)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTime(int arg0, Time arg1, Calendar arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Sql.Time.html">Time</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.Time.html">Time</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Calendar.html">Calendar</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Calendar.html">Calendar</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetTimestamp_" data-uid="Java.Sql.PreparedStatement.SetTimestamp*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetTimestamp_System_Int32_Java_Sql_Timestamp_" data-uid="Java.Sql.PreparedStatement.SetTimestamp(System.Int32,Java.Sql.Timestamp)">
+  SetTimestamp(int, Timestamp)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L600"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setTimestamp(int,java.sql.Timestamp)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setTimestamp(int,java.sql.Timestamp)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTimestamp(int arg0, Timestamp arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Sql.Timestamp.html">Timestamp</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.Timestamp.html">Timestamp</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetTimestamp_" data-uid="Java.Sql.PreparedStatement.SetTimestamp*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetTimestamp_System_Int32_Java_Sql_Timestamp_Java_Util_Calendar_" data-uid="Java.Sql.PreparedStatement.SetTimestamp(System.Int32,Java.Sql.Timestamp,Java.Util.Calendar)">
+  SetTimestamp(int, Timestamp, Calendar)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L590"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setTimestamp(int,java.sql.Timestamp,java.util.Calendar)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setTimestamp(int,java.sql.Timestamp,java.util.Calendar)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTimestamp(int arg0, Timestamp arg1, Calendar arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Sql.Timestamp.html">Timestamp</a></dt>
+    <dd><p><a class="xref" href="Java.Sql.Timestamp.html">Timestamp</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Calendar.html">Calendar</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Calendar.html">Calendar</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetURL_" data-uid="Java.Sql.PreparedStatement.SetURL*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetURL_System_Int32_Java_Net_URL_" data-uid="Java.Sql.PreparedStatement.SetURL(System.Int32,Java.Net.URL)">
+  SetURL(int, URL)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L622"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setURL(int,java.net.URL)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setURL(int,java.net.URL)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetURL(int arg0, URL arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Net.URL.html">URL</a></dt>
+    <dd><p><a class="xref" href="Java.Net.URL.html">URL</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Sql_PreparedStatement_SetUnicodeStream_" data-uid="Java.Sql.PreparedStatement.SetUnicodeStream*"></a>
+
+  <h3 id="Java_Sql_PreparedStatement_SetUnicodeStream_System_Int32_Java_Io_InputStream_System_Int32_" data-uid="Java.Sql.PreparedStatement.SetUnicodeStream(System.Int32,Java.Io.InputStream,System.Int32)">
+  SetUnicodeStream(int, InputStream, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L611"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/sql/PreparedStatement.html#setUnicodeStream(int,java.io.InputStream,int)">https://developer.android.com/reference/java/sql/PreparedStatement.html#setUnicodeStream(int,java.io.InputStream,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetUnicodeStream(int arg0, InputStream arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.InputStream.html">InputStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.InputStream.html">InputStream</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Sql/PreparedStatement.cs/#L47" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

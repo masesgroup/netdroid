@@ -1,0 +1,1628 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class ViewTreeObserver | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ViewTreeObserver | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/view/ViewTreeObserver.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_View_ViewTreeObserver.md&amp;value=---%0Auid%3A%20Android.View.ViewTreeObserver%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.View.ViewTreeObserver">
+
+
+
+  <h1 id="Android_View_ViewTreeObserver" data-uid="Android.View.ViewTreeObserver" class="text-break">
+Class ViewTreeObserver  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.View.html">View</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html">https://developer.android.com/reference/android/view/ViewTreeObserver.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ViewTreeObserver : JVMBridgeBase&lt;ViewTreeObserver&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>&gt;</div>
+      <div><span class="xref">ViewTreeObserver</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ViewTreeObserver&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ViewTreeObserver&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;ViewTreeObserver&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ViewTreeObserver&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ViewTreeObserver&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ViewTreeObserver&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ViewTreeObserver&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_View_ViewTreeObserver__ctor_" data-uid="Android.View.ViewTreeObserver.#ctor*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver__ctor" data-uid="Android.View.ViewTreeObserver.#ctor">
+  ViewTreeObserver()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L7328"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewTreeObserver()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver__ctor_" data-uid="Android.View.ViewTreeObserver.#ctor*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver__ctor_System_Object___" data-uid="Android.View.ViewTreeObserver.#ctor(System.Object[])">
+  ViewTreeObserver(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L7332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewTreeObserver(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_View_ViewTreeObserver_BridgeClassName_" data-uid="Android.View.ViewTreeObserver.BridgeClassName*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_BridgeClassName" data-uid="Android.View.ViewTreeObserver.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L7339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_IsBridgeAbstract_" data-uid="Android.View.ViewTreeObserver.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_IsBridgeAbstract" data-uid="Android.View.ViewTreeObserver.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L7343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_IsBridgeCloseable_" data-uid="Android.View.ViewTreeObserver.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_IsBridgeCloseable" data-uid="Android.View.ViewTreeObserver.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L7347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_IsBridgeInterface_" data-uid="Android.View.ViewTreeObserver.IsBridgeInterface*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_IsBridgeInterface" data-uid="Android.View.ViewTreeObserver.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L7351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_IsBridgeStatic_" data-uid="Android.View.ViewTreeObserver.IsBridgeStatic*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_IsBridgeStatic" data-uid="Android.View.ViewTreeObserver.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L7355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_View_ViewTreeObserver_AddOnDrawListener_" data-uid="Android.View.ViewTreeObserver.AddOnDrawListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_AddOnDrawListener_Android_View_ViewTreeObserver_OnDrawListener_" data-uid="Android.View.ViewTreeObserver.AddOnDrawListener(Android.View.ViewTreeObserver.OnDrawListener)">
+  AddOnDrawListener(OnDrawListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnDrawListener(android.view.ViewTreeObserver.OnDrawListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnDrawListener(android.view.ViewTreeObserver.OnDrawListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOnDrawListener(ViewTreeObserver.OnDrawListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnDrawListener.html">OnDrawListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnDrawListener.html">ViewTreeObserver.OnDrawListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_AddOnGlobalFocusChangeListener_" data-uid="Android.View.ViewTreeObserver.AddOnGlobalFocusChangeListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_AddOnGlobalFocusChangeListener_Android_View_ViewTreeObserver_OnGlobalFocusChangeListener_" data-uid="Android.View.ViewTreeObserver.AddOnGlobalFocusChangeListener(Android.View.ViewTreeObserver.OnGlobalFocusChangeListener)">
+  AddOnGlobalFocusChangeListener(OnGlobalFocusChangeListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnGlobalFocusChangeListener(android.view.ViewTreeObserver.OnGlobalFocusChangeListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnGlobalFocusChangeListener(android.view.ViewTreeObserver.OnGlobalFocusChangeListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOnGlobalFocusChangeListener(ViewTreeObserver.OnGlobalFocusChangeListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnGlobalFocusChangeListener.html">OnGlobalFocusChangeListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnGlobalFocusChangeListener.html">ViewTreeObserver.OnGlobalFocusChangeListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_AddOnGlobalLayoutListener_" data-uid="Android.View.ViewTreeObserver.AddOnGlobalLayoutListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_AddOnGlobalLayoutListener_Android_View_ViewTreeObserver_OnGlobalLayoutListener_" data-uid="Android.View.ViewTreeObserver.AddOnGlobalLayoutListener(Android.View.ViewTreeObserver.OnGlobalLayoutListener)">
+  AddOnGlobalLayoutListener(OnGlobalLayoutListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnGlobalLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnGlobalLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOnGlobalLayoutListener(ViewTreeObserver.OnGlobalLayoutListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnGlobalLayoutListener.html">OnGlobalLayoutListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnGlobalLayoutListener.html">ViewTreeObserver.OnGlobalLayoutListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_AddOnPreDrawListener_" data-uid="Android.View.ViewTreeObserver.AddOnPreDrawListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_AddOnPreDrawListener_Android_View_ViewTreeObserver_OnPreDrawListener_" data-uid="Android.View.ViewTreeObserver.AddOnPreDrawListener(Android.View.ViewTreeObserver.OnPreDrawListener)">
+  AddOnPreDrawListener(OnPreDrawListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnPreDrawListener(android.view.ViewTreeObserver.OnPreDrawListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnPreDrawListener(android.view.ViewTreeObserver.OnPreDrawListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOnPreDrawListener(ViewTreeObserver.OnPreDrawListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnPreDrawListener.html">OnPreDrawListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnPreDrawListener.html">ViewTreeObserver.OnPreDrawListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_AddOnScrollChangedListener_" data-uid="Android.View.ViewTreeObserver.AddOnScrollChangedListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_AddOnScrollChangedListener_Android_View_ViewTreeObserver_OnScrollChangedListener_" data-uid="Android.View.ViewTreeObserver.AddOnScrollChangedListener(Android.View.ViewTreeObserver.OnScrollChangedListener)">
+  AddOnScrollChangedListener(OnScrollChangedListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnScrollChangedListener(android.view.ViewTreeObserver.OnScrollChangedListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnScrollChangedListener(android.view.ViewTreeObserver.OnScrollChangedListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOnScrollChangedListener(ViewTreeObserver.OnScrollChangedListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnScrollChangedListener.html">OnScrollChangedListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnScrollChangedListener.html">ViewTreeObserver.OnScrollChangedListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_AddOnSystemGestureExclusionRectsChangedListener_" data-uid="Android.View.ViewTreeObserver.AddOnSystemGestureExclusionRectsChangedListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_AddOnSystemGestureExclusionRectsChangedListener_Java_Util_Function_Consumer_Java_Util_List_Android_Graphics_Rect___" data-uid="Android.View.ViewTreeObserver.AddOnSystemGestureExclusionRectsChangedListener(Java.Util.Function.Consumer{Java.Util.List{Android.Graphics.Rect}})">
+  AddOnSystemGestureExclusionRectsChangedListener(Consumer&lt;List&lt;Rect&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnSystemGestureExclusionRectsChangedListener(java.util.function.Consumer)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnSystemGestureExclusionRectsChangedListener(java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOnSystemGestureExclusionRectsChangedListener(Consumer&lt;List&lt;Rect&gt;&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;<a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Graphics.Rect.html">Rect</a>&gt;&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_AddOnTouchModeChangeListener_" data-uid="Android.View.ViewTreeObserver.AddOnTouchModeChangeListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_AddOnTouchModeChangeListener_Android_View_ViewTreeObserver_OnTouchModeChangeListener_" data-uid="Android.View.ViewTreeObserver.AddOnTouchModeChangeListener(Android.View.ViewTreeObserver.OnTouchModeChangeListener)">
+  AddOnTouchModeChangeListener(OnTouchModeChangeListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnTouchModeChangeListener(android.view.ViewTreeObserver.OnTouchModeChangeListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnTouchModeChangeListener(android.view.ViewTreeObserver.OnTouchModeChangeListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOnTouchModeChangeListener(ViewTreeObserver.OnTouchModeChangeListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnTouchModeChangeListener.html">OnTouchModeChangeListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnTouchModeChangeListener.html">ViewTreeObserver.OnTouchModeChangeListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_AddOnWindowAttachListener_" data-uid="Android.View.ViewTreeObserver.AddOnWindowAttachListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_AddOnWindowAttachListener_Android_View_ViewTreeObserver_OnWindowAttachListener_" data-uid="Android.View.ViewTreeObserver.AddOnWindowAttachListener(Android.View.ViewTreeObserver.OnWindowAttachListener)">
+  AddOnWindowAttachListener(OnWindowAttachListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnWindowAttachListener(android.view.ViewTreeObserver.OnWindowAttachListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnWindowAttachListener(android.view.ViewTreeObserver.OnWindowAttachListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOnWindowAttachListener(ViewTreeObserver.OnWindowAttachListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnWindowAttachListener.html">OnWindowAttachListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnWindowAttachListener.html">ViewTreeObserver.OnWindowAttachListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_AddOnWindowFocusChangeListener_" data-uid="Android.View.ViewTreeObserver.AddOnWindowFocusChangeListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_AddOnWindowFocusChangeListener_Android_View_ViewTreeObserver_OnWindowFocusChangeListener_" data-uid="Android.View.ViewTreeObserver.AddOnWindowFocusChangeListener(Android.View.ViewTreeObserver.OnWindowFocusChangeListener)">
+  AddOnWindowFocusChangeListener(OnWindowFocusChangeListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnWindowFocusChangeListener(android.view.ViewTreeObserver.OnWindowFocusChangeListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnWindowFocusChangeListener(android.view.ViewTreeObserver.OnWindowFocusChangeListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOnWindowFocusChangeListener(ViewTreeObserver.OnWindowFocusChangeListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnWindowFocusChangeListener.html">OnWindowFocusChangeListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnWindowFocusChangeListener.html">ViewTreeObserver.OnWindowFocusChangeListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_AddOnWindowVisibilityChangeListener_" data-uid="Android.View.ViewTreeObserver.AddOnWindowVisibilityChangeListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_AddOnWindowVisibilityChangeListener_Android_View_ViewTreeObserver_OnWindowVisibilityChangeListener_" data-uid="Android.View.ViewTreeObserver.AddOnWindowVisibilityChangeListener(Android.View.ViewTreeObserver.OnWindowVisibilityChangeListener)">
+  AddOnWindowVisibilityChangeListener(OnWindowVisibilityChangeListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnWindowVisibilityChangeListener(android.view.ViewTreeObserver.OnWindowVisibilityChangeListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#addOnWindowVisibilityChangeListener(android.view.ViewTreeObserver.OnWindowVisibilityChangeListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOnWindowVisibilityChangeListener(ViewTreeObserver.OnWindowVisibilityChangeListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnWindowVisibilityChangeListener.html">OnWindowVisibilityChangeListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnWindowVisibilityChangeListener.html">ViewTreeObserver.OnWindowVisibilityChangeListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_DispatchOnDraw_" data-uid="Android.View.ViewTreeObserver.DispatchOnDraw*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_DispatchOnDraw" data-uid="Android.View.ViewTreeObserver.DispatchOnDraw">
+  DispatchOnDraw()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#dispatchOnDraw()">https://developer.android.com/reference/android/view/ViewTreeObserver.html#dispatchOnDraw()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DispatchOnDraw()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_DispatchOnGlobalLayout_" data-uid="Android.View.ViewTreeObserver.DispatchOnGlobalLayout*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_DispatchOnGlobalLayout" data-uid="Android.View.ViewTreeObserver.DispatchOnGlobalLayout">
+  DispatchOnGlobalLayout()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#dispatchOnGlobalLayout()">https://developer.android.com/reference/android/view/ViewTreeObserver.html#dispatchOnGlobalLayout()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DispatchOnGlobalLayout()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_DispatchOnPreDraw_" data-uid="Android.View.ViewTreeObserver.DispatchOnPreDraw*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_DispatchOnPreDraw" data-uid="Android.View.ViewTreeObserver.DispatchOnPreDraw">
+  DispatchOnPreDraw()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#dispatchOnPreDraw()">https://developer.android.com/reference/android/view/ViewTreeObserver.html#dispatchOnPreDraw()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DispatchOnPreDraw()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_IsAlive_" data-uid="Android.View.ViewTreeObserver.IsAlive*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_IsAlive" data-uid="Android.View.ViewTreeObserver.IsAlive">
+  IsAlive()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#isAlive()">https://developer.android.com/reference/android/view/ViewTreeObserver.html#isAlive()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAlive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_RegisterFrameCommitCallback_" data-uid="Android.View.ViewTreeObserver.RegisterFrameCommitCallback*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_RegisterFrameCommitCallback_Java_Lang_Runnable_" data-uid="Android.View.ViewTreeObserver.RegisterFrameCommitCallback(Java.Lang.Runnable)">
+  RegisterFrameCommitCallback(Runnable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#registerFrameCommitCallback(java.lang.Runnable)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#registerFrameCommitCallback(java.lang.Runnable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterFrameCommitCallback(Runnable arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_RemoveGlobalOnLayoutListener_" data-uid="Android.View.ViewTreeObserver.RemoveGlobalOnLayoutListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_RemoveGlobalOnLayoutListener_Android_View_ViewTreeObserver_OnGlobalLayoutListener_" data-uid="Android.View.ViewTreeObserver.RemoveGlobalOnLayoutListener(Android.View.ViewTreeObserver.OnGlobalLayoutListener)">
+  RemoveGlobalOnLayoutListener(OnGlobalLayoutListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeGlobalOnLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeGlobalOnLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void RemoveGlobalOnLayoutListener(ViewTreeObserver.OnGlobalLayoutListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnGlobalLayoutListener.html">OnGlobalLayoutListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnGlobalLayoutListener.html">ViewTreeObserver.OnGlobalLayoutListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_RemoveOnDrawListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnDrawListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_RemoveOnDrawListener_Android_View_ViewTreeObserver_OnDrawListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnDrawListener(Android.View.ViewTreeObserver.OnDrawListener)">
+  RemoveOnDrawListener(OnDrawListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnDrawListener(android.view.ViewTreeObserver.OnDrawListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnDrawListener(android.view.ViewTreeObserver.OnDrawListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveOnDrawListener(ViewTreeObserver.OnDrawListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnDrawListener.html">OnDrawListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnDrawListener.html">ViewTreeObserver.OnDrawListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_RemoveOnGlobalFocusChangeListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnGlobalFocusChangeListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_RemoveOnGlobalFocusChangeListener_Android_View_ViewTreeObserver_OnGlobalFocusChangeListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnGlobalFocusChangeListener(Android.View.ViewTreeObserver.OnGlobalFocusChangeListener)">
+  RemoveOnGlobalFocusChangeListener(OnGlobalFocusChangeListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnGlobalFocusChangeListener(android.view.ViewTreeObserver.OnGlobalFocusChangeListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnGlobalFocusChangeListener(android.view.ViewTreeObserver.OnGlobalFocusChangeListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveOnGlobalFocusChangeListener(ViewTreeObserver.OnGlobalFocusChangeListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnGlobalFocusChangeListener.html">OnGlobalFocusChangeListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnGlobalFocusChangeListener.html">ViewTreeObserver.OnGlobalFocusChangeListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_RemoveOnGlobalLayoutListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnGlobalLayoutListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_RemoveOnGlobalLayoutListener_Android_View_ViewTreeObserver_OnGlobalLayoutListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnGlobalLayoutListener(Android.View.ViewTreeObserver.OnGlobalLayoutListener)">
+  RemoveOnGlobalLayoutListener(OnGlobalLayoutListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnGlobalLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnGlobalLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveOnGlobalLayoutListener(ViewTreeObserver.OnGlobalLayoutListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnGlobalLayoutListener.html">OnGlobalLayoutListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnGlobalLayoutListener.html">ViewTreeObserver.OnGlobalLayoutListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_RemoveOnPreDrawListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnPreDrawListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_RemoveOnPreDrawListener_Android_View_ViewTreeObserver_OnPreDrawListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnPreDrawListener(Android.View.ViewTreeObserver.OnPreDrawListener)">
+  RemoveOnPreDrawListener(OnPreDrawListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnPreDrawListener(android.view.ViewTreeObserver.OnPreDrawListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnPreDrawListener(android.view.ViewTreeObserver.OnPreDrawListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveOnPreDrawListener(ViewTreeObserver.OnPreDrawListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnPreDrawListener.html">OnPreDrawListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnPreDrawListener.html">ViewTreeObserver.OnPreDrawListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_RemoveOnScrollChangedListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnScrollChangedListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_RemoveOnScrollChangedListener_Android_View_ViewTreeObserver_OnScrollChangedListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnScrollChangedListener(Android.View.ViewTreeObserver.OnScrollChangedListener)">
+  RemoveOnScrollChangedListener(OnScrollChangedListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnScrollChangedListener(android.view.ViewTreeObserver.OnScrollChangedListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnScrollChangedListener(android.view.ViewTreeObserver.OnScrollChangedListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveOnScrollChangedListener(ViewTreeObserver.OnScrollChangedListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnScrollChangedListener.html">OnScrollChangedListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnScrollChangedListener.html">ViewTreeObserver.OnScrollChangedListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_RemoveOnSystemGestureExclusionRectsChangedListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnSystemGestureExclusionRectsChangedListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_RemoveOnSystemGestureExclusionRectsChangedListener_Java_Util_Function_Consumer_Java_Util_List_Android_Graphics_Rect___" data-uid="Android.View.ViewTreeObserver.RemoveOnSystemGestureExclusionRectsChangedListener(Java.Util.Function.Consumer{Java.Util.List{Android.Graphics.Rect}})">
+  RemoveOnSystemGestureExclusionRectsChangedListener(Consumer&lt;List&lt;Rect&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnSystemGestureExclusionRectsChangedListener(java.util.function.Consumer)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnSystemGestureExclusionRectsChangedListener(java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveOnSystemGestureExclusionRectsChangedListener(Consumer&lt;List&lt;Rect&gt;&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;<a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Graphics.Rect.html">Rect</a>&gt;&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_RemoveOnTouchModeChangeListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnTouchModeChangeListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_RemoveOnTouchModeChangeListener_Android_View_ViewTreeObserver_OnTouchModeChangeListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnTouchModeChangeListener(Android.View.ViewTreeObserver.OnTouchModeChangeListener)">
+  RemoveOnTouchModeChangeListener(OnTouchModeChangeListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnTouchModeChangeListener(android.view.ViewTreeObserver.OnTouchModeChangeListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnTouchModeChangeListener(android.view.ViewTreeObserver.OnTouchModeChangeListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveOnTouchModeChangeListener(ViewTreeObserver.OnTouchModeChangeListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnTouchModeChangeListener.html">OnTouchModeChangeListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnTouchModeChangeListener.html">ViewTreeObserver.OnTouchModeChangeListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_RemoveOnWindowAttachListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnWindowAttachListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_RemoveOnWindowAttachListener_Android_View_ViewTreeObserver_OnWindowAttachListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnWindowAttachListener(Android.View.ViewTreeObserver.OnWindowAttachListener)">
+  RemoveOnWindowAttachListener(OnWindowAttachListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnWindowAttachListener(android.view.ViewTreeObserver.OnWindowAttachListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnWindowAttachListener(android.view.ViewTreeObserver.OnWindowAttachListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveOnWindowAttachListener(ViewTreeObserver.OnWindowAttachListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnWindowAttachListener.html">OnWindowAttachListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnWindowAttachListener.html">ViewTreeObserver.OnWindowAttachListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_RemoveOnWindowFocusChangeListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnWindowFocusChangeListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_RemoveOnWindowFocusChangeListener_Android_View_ViewTreeObserver_OnWindowFocusChangeListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnWindowFocusChangeListener(Android.View.ViewTreeObserver.OnWindowFocusChangeListener)">
+  RemoveOnWindowFocusChangeListener(OnWindowFocusChangeListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnWindowFocusChangeListener(android.view.ViewTreeObserver.OnWindowFocusChangeListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnWindowFocusChangeListener(android.view.ViewTreeObserver.OnWindowFocusChangeListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveOnWindowFocusChangeListener(ViewTreeObserver.OnWindowFocusChangeListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnWindowFocusChangeListener.html">OnWindowFocusChangeListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnWindowFocusChangeListener.html">ViewTreeObserver.OnWindowFocusChangeListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_RemoveOnWindowVisibilityChangeListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnWindowVisibilityChangeListener*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_RemoveOnWindowVisibilityChangeListener_Android_View_ViewTreeObserver_OnWindowVisibilityChangeListener_" data-uid="Android.View.ViewTreeObserver.RemoveOnWindowVisibilityChangeListener(Android.View.ViewTreeObserver.OnWindowVisibilityChangeListener)">
+  RemoveOnWindowVisibilityChangeListener(OnWindowVisibilityChangeListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnWindowVisibilityChangeListener(android.view.ViewTreeObserver.OnWindowVisibilityChangeListener)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnWindowVisibilityChangeListener(android.view.ViewTreeObserver.OnWindowVisibilityChangeListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveOnWindowVisibilityChangeListener(ViewTreeObserver.OnWindowVisibilityChangeListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.ViewTreeObserver.html">ViewTreeObserver</a>.<a class="xref" href="Android.View.ViewTreeObserver.OnWindowVisibilityChangeListener.html">OnWindowVisibilityChangeListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewTreeObserver.OnWindowVisibilityChangeListener.html">ViewTreeObserver.OnWindowVisibilityChangeListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_ViewTreeObserver_UnregisterFrameCommitCallback_" data-uid="Android.View.ViewTreeObserver.UnregisterFrameCommitCallback*"></a>
+
+  <h3 id="Android_View_ViewTreeObserver_UnregisterFrameCommitCallback_Java_Lang_Runnable_" data-uid="Android.View.ViewTreeObserver.UnregisterFrameCommitCallback(Java.Lang.Runnable)">
+  UnregisterFrameCommitCallback(Runnable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#unregisterFrameCommitCallback(java.lang.Runnable)">https://developer.android.com/reference/android/view/ViewTreeObserver.html#unregisterFrameCommitCallback(java.lang.Runnable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UnregisterFrameCommitCallback(Runnable arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/ViewTreeObserver.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

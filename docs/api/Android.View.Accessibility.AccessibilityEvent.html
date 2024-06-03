@@ -1,0 +1,3814 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class AccessibilityEvent | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AccessibilityEvent | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_View_Accessibility_AccessibilityEvent.md&amp;value=---%0Auid%3A%20Android.View.Accessibility.AccessibilityEvent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.View.Accessibility.AccessibilityEvent">
+
+
+
+  <h1 id="Android_View_Accessibility_AccessibilityEvent" data-uid="Android.View.Accessibility.AccessibilityEvent" class="text-break">
+Class AccessibilityEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AllPackageClasses.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.View.html">View</a>.<a class="xref" href="Android.View.Accessibility.html">Accessibility</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AccessibilityEvent : AccessibilityRecord, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html">AccessibilityRecord</a>&gt;</div>
+      <div><a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html">AccessibilityRecord</a></div>
+      <div><span class="xref">AccessibilityEvent</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_Obtain">AccessibilityRecord.Obtain()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_Obtain_Android_View_Accessibility_AccessibilityRecord_">AccessibilityRecord.Obtain(AccessibilityRecord)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetParcelableData">AccessibilityRecord.GetParcelableData()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetSource">AccessibilityRecord.GetSource()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetSource_System_Int32_">AccessibilityRecord.GetSource(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_IsChecked">AccessibilityRecord.IsChecked()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_IsEnabled">AccessibilityRecord.IsEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_IsFullScreen">AccessibilityRecord.IsFullScreen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_IsPassword">AccessibilityRecord.IsPassword()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_IsScrollable">AccessibilityRecord.IsScrollable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetAddedCount">AccessibilityRecord.GetAddedCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetCurrentItemIndex">AccessibilityRecord.GetCurrentItemIndex()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetDisplayId">AccessibilityRecord.GetDisplayId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetFromIndex">AccessibilityRecord.GetFromIndex()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetItemCount">AccessibilityRecord.GetItemCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetMaxScrollX">AccessibilityRecord.GetMaxScrollX()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetMaxScrollY">AccessibilityRecord.GetMaxScrollY()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetRemovedCount">AccessibilityRecord.GetRemovedCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetScrollDeltaX">AccessibilityRecord.GetScrollDeltaX()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetScrollDeltaY">AccessibilityRecord.GetScrollDeltaY()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetScrollX">AccessibilityRecord.GetScrollX()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetScrollY">AccessibilityRecord.GetScrollY()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetToIndex">AccessibilityRecord.GetToIndex()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetWindowId">AccessibilityRecord.GetWindowId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetBeforeText">AccessibilityRecord.GetBeforeText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetClassName">AccessibilityRecord.GetClassName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetContentDescription">AccessibilityRecord.GetContentDescription()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_GetText">AccessibilityRecord.GetText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_Recycle">AccessibilityRecord.Recycle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetAddedCount_System_Int32_">AccessibilityRecord.SetAddedCount(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetBeforeText_Java_Lang_CharSequence_">AccessibilityRecord.SetBeforeText(CharSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetChecked_System_Boolean_">AccessibilityRecord.SetChecked(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetClassName_Java_Lang_CharSequence_">AccessibilityRecord.SetClassName(CharSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetContentDescription_Java_Lang_CharSequence_">AccessibilityRecord.SetContentDescription(CharSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetCurrentItemIndex_System_Int32_">AccessibilityRecord.SetCurrentItemIndex(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetEnabled_System_Boolean_">AccessibilityRecord.SetEnabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetFromIndex_System_Int32_">AccessibilityRecord.SetFromIndex(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetFullScreen_System_Boolean_">AccessibilityRecord.SetFullScreen(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetItemCount_System_Int32_">AccessibilityRecord.SetItemCount(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetMaxScrollX_System_Int32_">AccessibilityRecord.SetMaxScrollX(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetMaxScrollY_System_Int32_">AccessibilityRecord.SetMaxScrollY(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetParcelableData_Android_Os_Parcelable_">AccessibilityRecord.SetParcelableData(Parcelable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetPassword_System_Boolean_">AccessibilityRecord.SetPassword(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetRemovedCount_System_Int32_">AccessibilityRecord.SetRemovedCount(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetScrollable_System_Boolean_">AccessibilityRecord.SetScrollable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetScrollDeltaX_System_Int32_">AccessibilityRecord.SetScrollDeltaX(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetScrollDeltaY_System_Int32_">AccessibilityRecord.SetScrollDeltaY(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetScrollX_System_Int32_">AccessibilityRecord.SetScrollX(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetScrollY_System_Int32_">AccessibilityRecord.SetScrollY(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetSource_Android_View_View_System_Int32_">AccessibilityRecord.SetSource(View, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetSource_Android_View_View_">AccessibilityRecord.SetSource(View)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetToIndex_System_Int32_">AccessibilityRecord.SetToIndex(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AccessibilityRecord&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AccessibilityRecord&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;AccessibilityRecord&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AccessibilityRecord&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AccessibilityRecord&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AccessibilityRecord&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent__ctor_" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent__ctor" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor">
+  AccessibilityEvent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AllPackageClasses.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessibilityEvent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent__ctor_" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent__ctor_Android_View_Accessibility_AccessibilityEvent_" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor(Android.View.Accessibility.AccessibilityEvent)">
+  AccessibilityEvent(AccessibilityEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#%3Cinit%3E(android.view.accessibility.AccessibilityEvent)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#%3Cinit%3E(android.view.accessibility.AccessibilityEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessibilityEvent(AccessibilityEvent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent__ctor_" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent__ctor_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor(System.Int32)">
+  AccessibilityEvent(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#%3Cinit%3E(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#%3Cinit%3E(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessibilityEvent(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent__ctor_" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent__ctor_System_Object___" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor(System.Object[])">
+  AccessibilityEvent(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AllPackageClasses.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessibilityEvent(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_BridgeClassName_" data-uid="Android.View.Accessibility.AccessibilityEvent.BridgeClassName*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_BridgeClassName" data-uid="Android.View.Accessibility.AccessibilityEvent.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AllPackageClasses.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION">
+  CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_CONTENT_INVALID_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_CONTENT_INVALID*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_CONTENT_INVALID" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_CONTENT_INVALID">
+  CONTENT_CHANGE_TYPE_CONTENT_INVALID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_CONTENT_INVALID">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_CONTENT_INVALID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_CONTENT_INVALID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_DRAG_CANCELLED_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_CANCELLED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_DRAG_CANCELLED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_CANCELLED">
+  CONTENT_CHANGE_TYPE_DRAG_CANCELLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_DRAG_CANCELLED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_DRAG_CANCELLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_DRAG_CANCELLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_DRAG_DROPPED_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_DROPPED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_DRAG_DROPPED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_DROPPED">
+  CONTENT_CHANGE_TYPE_DRAG_DROPPED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_DRAG_DROPPED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_DRAG_DROPPED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_DRAG_DROPPED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_DRAG_STARTED_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_STARTED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_DRAG_STARTED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_STARTED">
+  CONTENT_CHANGE_TYPE_DRAG_STARTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_DRAG_STARTED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_DRAG_STARTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_DRAG_STARTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_ENABLED_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_ENABLED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_ENABLED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_ENABLED">
+  CONTENT_CHANGE_TYPE_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_ENABLED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_ERROR_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_ERROR*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_ERROR" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_ERROR">
+  CONTENT_CHANGE_TYPE_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_ERROR">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_PANE_APPEARED_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_PANE_APPEARED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_PANE_APPEARED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_PANE_APPEARED">
+  CONTENT_CHANGE_TYPE_PANE_APPEARED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_PANE_APPEARED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_PANE_APPEARED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_PANE_APPEARED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_PANE_DISAPPEARED_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_PANE_DISAPPEARED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_PANE_DISAPPEARED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_PANE_DISAPPEARED">
+  CONTENT_CHANGE_TYPE_PANE_DISAPPEARED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_PANE_DISAPPEARED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_PANE_DISAPPEARED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_PANE_DISAPPEARED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_PANE_TITLE_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_PANE_TITLE*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_PANE_TITLE" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_PANE_TITLE">
+  CONTENT_CHANGE_TYPE_PANE_TITLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_PANE_TITLE">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_PANE_TITLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_PANE_TITLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_STATE_DESCRIPTION_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_STATE_DESCRIPTION*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_STATE_DESCRIPTION" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_STATE_DESCRIPTION">
+  CONTENT_CHANGE_TYPE_STATE_DESCRIPTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_STATE_DESCRIPTION">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_STATE_DESCRIPTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_STATE_DESCRIPTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_SUBTREE_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_SUBTREE*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_SUBTREE" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_SUBTREE">
+  CONTENT_CHANGE_TYPE_SUBTREE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_SUBTREE">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_SUBTREE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_SUBTREE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_TEXT_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_TEXT*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_TEXT" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_TEXT">
+  CONTENT_CHANGE_TYPE_TEXT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_TEXT">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_TEXT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_TEXT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_UNDEFINED_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_UNDEFINED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_UNDEFINED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_UNDEFINED">
+  CONTENT_CHANGE_TYPE_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_UNDEFINED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CREATOR_" data-uid="Android.View.Accessibility.AccessibilityEvent.CREATOR*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CREATOR" data-uid="Android.View.Accessibility.AccessibilityEvent.CREATOR">
+  CREATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CREATOR">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CREATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>.<a class="xref" href="Android.Os.Parcelable.Creator.html">Creator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_INVALID_POSITION_" data-uid="Android.View.Accessibility.AccessibilityEvent.INVALID_POSITION*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_INVALID_POSITION" data-uid="Android.View.Accessibility.AccessibilityEvent.INVALID_POSITION">
+  INVALID_POSITION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#INVALID_POSITION">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#INVALID_POSITION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INVALID_POSITION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_IsBridgeAbstract_" data-uid="Android.View.Accessibility.AccessibilityEvent.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_IsBridgeAbstract" data-uid="Android.View.Accessibility.AccessibilityEvent.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AllPackageClasses.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_IsBridgeCloseable_" data-uid="Android.View.Accessibility.AccessibilityEvent.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_IsBridgeCloseable" data-uid="Android.View.Accessibility.AccessibilityEvent.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AllPackageClasses.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_IsBridgeInterface_" data-uid="Android.View.Accessibility.AccessibilityEvent.IsBridgeInterface*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_IsBridgeInterface" data-uid="Android.View.Accessibility.AccessibilityEvent.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AllPackageClasses.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_IsBridgeStatic_" data-uid="Android.View.Accessibility.AccessibilityEvent.IsBridgeStatic*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_IsBridgeStatic" data-uid="Android.View.Accessibility.AccessibilityEvent.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AllPackageClasses.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_MAX_TEXT_LENGTH_" data-uid="Android.View.Accessibility.AccessibilityEvent.MAX_TEXT_LENGTH*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_MAX_TEXT_LENGTH" data-uid="Android.View.Accessibility.AccessibilityEvent.MAX_TEXT_LENGTH">
+  MAX_TEXT_LENGTH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#MAX_TEXT_LENGTH">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#MAX_TEXT_LENGTH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int MAX_TEXT_LENGTH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_SPEECH_STATE_LISTENING_END_" data-uid="Android.View.Accessibility.AccessibilityEvent.SPEECH_STATE_LISTENING_END*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_SPEECH_STATE_LISTENING_END" data-uid="Android.View.Accessibility.AccessibilityEvent.SPEECH_STATE_LISTENING_END">
+  SPEECH_STATE_LISTENING_END
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_LISTENING_END">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_LISTENING_END</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SPEECH_STATE_LISTENING_END { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_SPEECH_STATE_LISTENING_START_" data-uid="Android.View.Accessibility.AccessibilityEvent.SPEECH_STATE_LISTENING_START*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_SPEECH_STATE_LISTENING_START" data-uid="Android.View.Accessibility.AccessibilityEvent.SPEECH_STATE_LISTENING_START">
+  SPEECH_STATE_LISTENING_START
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_LISTENING_START">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_LISTENING_START</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SPEECH_STATE_LISTENING_START { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_SPEECH_STATE_SPEAKING_END_" data-uid="Android.View.Accessibility.AccessibilityEvent.SPEECH_STATE_SPEAKING_END*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_SPEECH_STATE_SPEAKING_END" data-uid="Android.View.Accessibility.AccessibilityEvent.SPEECH_STATE_SPEAKING_END">
+  SPEECH_STATE_SPEAKING_END
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_SPEAKING_END">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_SPEAKING_END</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SPEECH_STATE_SPEAKING_END { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_SPEECH_STATE_SPEAKING_START_" data-uid="Android.View.Accessibility.AccessibilityEvent.SPEECH_STATE_SPEAKING_START*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_SPEECH_STATE_SPEAKING_START" data-uid="Android.View.Accessibility.AccessibilityEvent.SPEECH_STATE_SPEAKING_START">
+  SPEECH_STATE_SPEAKING_START
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_SPEAKING_START">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_SPEAKING_START</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SPEECH_STATE_SPEAKING_START { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPES_ALL_MASK_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPES_ALL_MASK*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPES_ALL_MASK" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPES_ALL_MASK">
+  TYPES_ALL_MASK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPES_ALL_MASK">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPES_ALL_MASK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPES_ALL_MASK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_ANNOUNCEMENT_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_ANNOUNCEMENT*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_ANNOUNCEMENT" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_ANNOUNCEMENT">
+  TYPE_ANNOUNCEMENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_ANNOUNCEMENT">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_ANNOUNCEMENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_ANNOUNCEMENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_ASSIST_READING_CONTEXT_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_ASSIST_READING_CONTEXT*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_ASSIST_READING_CONTEXT" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_ASSIST_READING_CONTEXT">
+  TYPE_ASSIST_READING_CONTEXT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_ASSIST_READING_CONTEXT">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_ASSIST_READING_CONTEXT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_ASSIST_READING_CONTEXT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_GESTURE_DETECTION_END_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_GESTURE_DETECTION_END*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_GESTURE_DETECTION_END" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_GESTURE_DETECTION_END">
+  TYPE_GESTURE_DETECTION_END
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_GESTURE_DETECTION_END">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_GESTURE_DETECTION_END</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_GESTURE_DETECTION_END { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_GESTURE_DETECTION_START_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_GESTURE_DETECTION_START*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_GESTURE_DETECTION_START" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_GESTURE_DETECTION_START">
+  TYPE_GESTURE_DETECTION_START
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_GESTURE_DETECTION_START">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_GESTURE_DETECTION_START</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_GESTURE_DETECTION_START { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_NOTIFICATION_STATE_CHANGED_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_NOTIFICATION_STATE_CHANGED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_NOTIFICATION_STATE_CHANGED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_NOTIFICATION_STATE_CHANGED">
+  TYPE_NOTIFICATION_STATE_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_NOTIFICATION_STATE_CHANGED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_NOTIFICATION_STATE_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_NOTIFICATION_STATE_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_SPEECH_STATE_CHANGE_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_SPEECH_STATE_CHANGE*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_SPEECH_STATE_CHANGE" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_SPEECH_STATE_CHANGE">
+  TYPE_SPEECH_STATE_CHANGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_SPEECH_STATE_CHANGE">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_SPEECH_STATE_CHANGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_SPEECH_STATE_CHANGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_TOUCH_EXPLORATION_GESTURE_END_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_TOUCH_EXPLORATION_GESTURE_END*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_TOUCH_EXPLORATION_GESTURE_END" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_TOUCH_EXPLORATION_GESTURE_END">
+  TYPE_TOUCH_EXPLORATION_GESTURE_END
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_EXPLORATION_GESTURE_END">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_EXPLORATION_GESTURE_END</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_TOUCH_EXPLORATION_GESTURE_END { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_TOUCH_EXPLORATION_GESTURE_START_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_TOUCH_EXPLORATION_GESTURE_START*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_TOUCH_EXPLORATION_GESTURE_START" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_TOUCH_EXPLORATION_GESTURE_START">
+  TYPE_TOUCH_EXPLORATION_GESTURE_START
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_EXPLORATION_GESTURE_START">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_EXPLORATION_GESTURE_START</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_TOUCH_EXPLORATION_GESTURE_START { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_TOUCH_INTERACTION_END_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_TOUCH_INTERACTION_END*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_TOUCH_INTERACTION_END" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_TOUCH_INTERACTION_END">
+  TYPE_TOUCH_INTERACTION_END
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_INTERACTION_END">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_INTERACTION_END</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_TOUCH_INTERACTION_END { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_TOUCH_INTERACTION_START_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_TOUCH_INTERACTION_START*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_TOUCH_INTERACTION_START" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_TOUCH_INTERACTION_START">
+  TYPE_TOUCH_INTERACTION_START
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_INTERACTION_START">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_INTERACTION_START</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_TOUCH_INTERACTION_START { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_ACCESSIBILITY_FOCUSED_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUSED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_ACCESSIBILITY_FOCUSED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUSED">
+  TYPE_VIEW_ACCESSIBILITY_FOCUSED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_ACCESSIBILITY_FOCUSED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_ACCESSIBILITY_FOCUSED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_ACCESSIBILITY_FOCUSED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED">
+  TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_CLICKED_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_CLICKED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_CLICKED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_CLICKED">
+  TYPE_VIEW_CLICKED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_CLICKED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_CLICKED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_CLICKED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_CONTEXT_CLICKED_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_CONTEXT_CLICKED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_CONTEXT_CLICKED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_CONTEXT_CLICKED">
+  TYPE_VIEW_CONTEXT_CLICKED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_CONTEXT_CLICKED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_CONTEXT_CLICKED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_CONTEXT_CLICKED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_FOCUSED_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_FOCUSED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_FOCUSED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_FOCUSED">
+  TYPE_VIEW_FOCUSED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_FOCUSED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_FOCUSED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_FOCUSED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_HOVER_ENTER_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_HOVER_ENTER*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_HOVER_ENTER" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_HOVER_ENTER">
+  TYPE_VIEW_HOVER_ENTER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_HOVER_ENTER">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_HOVER_ENTER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_HOVER_ENTER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_HOVER_EXIT_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_HOVER_EXIT*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_HOVER_EXIT" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_HOVER_EXIT">
+  TYPE_VIEW_HOVER_EXIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_HOVER_EXIT">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_HOVER_EXIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_HOVER_EXIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_LONG_CLICKED_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_LONG_CLICKED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_LONG_CLICKED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_LONG_CLICKED">
+  TYPE_VIEW_LONG_CLICKED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_LONG_CLICKED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_LONG_CLICKED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_LONG_CLICKED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_SCROLLED_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_SCROLLED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_SCROLLED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_SCROLLED">
+  TYPE_VIEW_SCROLLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_SCROLLED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_SCROLLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_SCROLLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_SELECTED_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_SELECTED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_SELECTED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_SELECTED">
+  TYPE_VIEW_SELECTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_SELECTED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_SELECTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_SELECTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_TARGETED_BY_SCROLL_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_TARGETED_BY_SCROLL*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_TARGETED_BY_SCROLL" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_TARGETED_BY_SCROLL">
+  TYPE_VIEW_TARGETED_BY_SCROLL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TARGETED_BY_SCROLL">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TARGETED_BY_SCROLL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_TARGETED_BY_SCROLL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_TEXT_CHANGED_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_TEXT_CHANGED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_TEXT_CHANGED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_TEXT_CHANGED">
+  TYPE_VIEW_TEXT_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_CHANGED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_TEXT_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_TEXT_SELECTION_CHANGED_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_TEXT_SELECTION_CHANGED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_TEXT_SELECTION_CHANGED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_TEXT_SELECTION_CHANGED">
+  TYPE_VIEW_TEXT_SELECTION_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_SELECTION_CHANGED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_SELECTION_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_TEXT_SELECTION_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY">
+  TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_WINDOWS_CHANGED_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_WINDOWS_CHANGED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_WINDOWS_CHANGED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_WINDOWS_CHANGED">
+  TYPE_WINDOWS_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOWS_CHANGED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOWS_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_WINDOWS_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_WINDOW_CONTENT_CHANGED_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_WINDOW_CONTENT_CHANGED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED">
+  TYPE_WINDOW_CONTENT_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOW_CONTENT_CHANGED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOW_CONTENT_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_WINDOW_CONTENT_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_TYPE_WINDOW_STATE_CHANGED_" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_WINDOW_STATE_CHANGED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED">
+  TYPE_WINDOW_STATE_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOW_STATE_CHANGED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOW_STATE_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_WINDOW_STATE_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED_" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED">
+  WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_ACTIVE_" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_ACTIVE*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_ACTIVE" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_ACTIVE">
+  WINDOWS_CHANGE_ACTIVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_ACTIVE">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_ACTIVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_ACTIVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_ADDED_" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_ADDED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_ADDED" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_ADDED">
+  WINDOWS_CHANGE_ADDED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_ADDED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_ADDED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_ADDED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_BOUNDS_" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_BOUNDS*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_BOUNDS" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_BOUNDS">
+  WINDOWS_CHANGE_BOUNDS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_BOUNDS">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_BOUNDS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_BOUNDS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_CHILDREN_" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_CHILDREN*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_CHILDREN" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_CHILDREN">
+  WINDOWS_CHANGE_CHILDREN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_CHILDREN">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_CHILDREN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_CHILDREN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_FOCUSED_" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_FOCUSED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_FOCUSED" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_FOCUSED">
+  WINDOWS_CHANGE_FOCUSED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_FOCUSED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_FOCUSED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_FOCUSED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_LAYER_" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_LAYER*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_LAYER" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_LAYER">
+  WINDOWS_CHANGE_LAYER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_LAYER">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_LAYER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_LAYER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_PARENT_" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_PARENT*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_PARENT" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_PARENT">
+  WINDOWS_CHANGE_PARENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_PARENT">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_PARENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_PARENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_PIP_" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_PIP*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_PIP" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_PIP">
+  WINDOWS_CHANGE_PIP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_PIP">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_PIP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_PIP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_REMOVED_" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_REMOVED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_REMOVED" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_REMOVED">
+  WINDOWS_CHANGE_REMOVED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_REMOVED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_REMOVED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_REMOVED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_TITLE_" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_TITLE*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_TITLE" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_TITLE">
+  WINDOWS_CHANGE_TITLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_TITLE">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_TITLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_TITLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_AppendRecord_" data-uid="Android.View.Accessibility.AccessibilityEvent.AppendRecord*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_AppendRecord_Android_View_Accessibility_AccessibilityRecord_" data-uid="Android.View.Accessibility.AccessibilityEvent.AppendRecord(Android.View.Accessibility.AccessibilityRecord)">
+  AppendRecord(AccessibilityRecord)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#appendRecord(android.view.accessibility.AccessibilityRecord)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#appendRecord(android.view.accessibility.AccessibilityRecord)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AppendRecord(AccessibilityRecord arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html">AccessibilityRecord</a></dt>
+    <dd><p><a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html">AccessibilityRecord</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_DescribeContents_" data-uid="Android.View.Accessibility.AccessibilityEvent.DescribeContents*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_DescribeContents" data-uid="Android.View.Accessibility.AccessibilityEvent.DescribeContents">
+  DescribeContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L479"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#describeContents()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#describeContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_EventTypeToString_" data-uid="Android.View.Accessibility.AccessibilityEvent.EventTypeToString*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_EventTypeToString_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.EventTypeToString(System.Int32)">
+  EventTypeToString(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#eventTypeToString(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#eventTypeToString(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EventTypeToString(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_GetAction_" data-uid="Android.View.Accessibility.AccessibilityEvent.GetAction*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_GetAction" data-uid="Android.View.Accessibility.AccessibilityEvent.GetAction">
+  GetAction()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getAction()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getAction()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAction()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_GetContentChangeTypes_" data-uid="Android.View.Accessibility.AccessibilityEvent.GetContentChangeTypes*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_GetContentChangeTypes" data-uid="Android.View.Accessibility.AccessibilityEvent.GetContentChangeTypes">
+  GetContentChangeTypes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L495"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getContentChangeTypes()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getContentChangeTypes()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetContentChangeTypes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_GetEventTime_" data-uid="Android.View.Accessibility.AccessibilityEvent.GetEventTime*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_GetEventTime" data-uid="Android.View.Accessibility.AccessibilityEvent.GetEventTime">
+  GetEventTime()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L551"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getEventTime()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getEventTime()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetEventTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_GetEventType_" data-uid="Android.View.Accessibility.AccessibilityEvent.GetEventType*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_GetEventType" data-uid="Android.View.Accessibility.AccessibilityEvent.GetEventType">
+  GetEventType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L503"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getEventType()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getEventType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetEventType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_GetMovementGranularity_" data-uid="Android.View.Accessibility.AccessibilityEvent.GetMovementGranularity*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_GetMovementGranularity" data-uid="Android.View.Accessibility.AccessibilityEvent.GetMovementGranularity">
+  GetMovementGranularity()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getMovementGranularity()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getMovementGranularity()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMovementGranularity()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_GetPackageName_" data-uid="Android.View.Accessibility.AccessibilityEvent.GetPackageName*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_GetPackageName" data-uid="Android.View.Accessibility.AccessibilityEvent.GetPackageName">
+  GetPackageName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getPackageName()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getPackageName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence GetPackageName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_GetRecord_" data-uid="Android.View.Accessibility.AccessibilityEvent.GetRecord*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_GetRecord_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.GetRecord(System.Int32)">
+  GetRecord(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getRecord(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getRecord(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessibilityRecord GetRecord(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html">AccessibilityRecord</a></dt>
+    <dd><p><a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html">AccessibilityRecord</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_GetRecordCount_" data-uid="Android.View.Accessibility.AccessibilityEvent.GetRecordCount*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_GetRecordCount" data-uid="Android.View.Accessibility.AccessibilityEvent.GetRecordCount">
+  GetRecordCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getRecordCount()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getRecordCount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetRecordCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_GetSpeechStateChangeTypes_" data-uid="Android.View.Accessibility.AccessibilityEvent.GetSpeechStateChangeTypes*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_GetSpeechStateChangeTypes" data-uid="Android.View.Accessibility.AccessibilityEvent.GetSpeechStateChangeTypes">
+  GetSpeechStateChangeTypes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L527"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getSpeechStateChangeTypes()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getSpeechStateChangeTypes()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSpeechStateChangeTypes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_GetWindowChanges_" data-uid="Android.View.Accessibility.AccessibilityEvent.GetWindowChanges*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_GetWindowChanges" data-uid="Android.View.Accessibility.AccessibilityEvent.GetWindowChanges">
+  GetWindowChanges()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getWindowChanges()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getWindowChanges()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetWindowChanges()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_InitFromParcel_" data-uid="Android.View.Accessibility.AccessibilityEvent.InitFromParcel*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_InitFromParcel_Android_Os_Parcel_" data-uid="Android.View.Accessibility.AccessibilityEvent.InitFromParcel(Android.Os.Parcel)">
+  InitFromParcel(Parcel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L567"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#initFromParcel(android.os.Parcel)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#initFromParcel(android.os.Parcel)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitFromParcel(Parcel arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_IsAccessibilityDataSensitive_" data-uid="Android.View.Accessibility.AccessibilityEvent.IsAccessibilityDataSensitive*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_IsAccessibilityDataSensitive" data-uid="Android.View.Accessibility.AccessibilityEvent.IsAccessibilityDataSensitive">
+  IsAccessibilityDataSensitive()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L471"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#isAccessibilityDataSensitive()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#isAccessibilityDataSensitive()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAccessibilityDataSensitive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_Obtain_" data-uid="Android.View.Accessibility.AccessibilityEvent.Obtain*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_Obtain_Android_View_Accessibility_AccessibilityEvent_" data-uid="Android.View.Accessibility.AccessibilityEvent.Obtain(Android.View.Accessibility.AccessibilityEvent)">
+  Obtain(AccessibilityEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#obtain(android.view.accessibility.AccessibilityEvent)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#obtain(android.view.accessibility.AccessibilityEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static AccessibilityEvent Obtain(AccessibilityEvent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_Obtain_" data-uid="Android.View.Accessibility.AccessibilityEvent.Obtain*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_Obtain_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.Obtain(System.Int32)">
+  Obtain(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#obtain(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#obtain(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static AccessibilityEvent Obtain(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_SetAccessibilityDataSensitive_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetAccessibilityDataSensitive*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_SetAccessibilityDataSensitive_System_Boolean_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetAccessibilityDataSensitive(System.Boolean)">
+  SetAccessibilityDataSensitive(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L575"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setAccessibilityDataSensitive(boolean)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setAccessibilityDataSensitive(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAccessibilityDataSensitive(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_SetAction_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetAction*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_SetAction_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetAction(System.Int32)">
+  SetAction(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setAction(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setAction(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAction(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_SetContentChangeTypes_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetContentChangeTypes*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_SetContentChangeTypes_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetContentChangeTypes(System.Int32)">
+  SetContentChangeTypes(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L591"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setContentChangeTypes(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setContentChangeTypes(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetContentChangeTypes(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_SetEventTime_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetEventTime*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_SetEventTime_System_Int64_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetEventTime(System.Int64)">
+  SetEventTime(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L599"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setEventTime(long)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setEventTime(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEventTime(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_SetEventType_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetEventType*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_SetEventType_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetEventType(System.Int32)">
+  SetEventType(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L607"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setEventType(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setEventType(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEventType(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_SetMovementGranularity_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetMovementGranularity*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_SetMovementGranularity_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetMovementGranularity(System.Int32)">
+  SetMovementGranularity(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L615"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setMovementGranularity(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setMovementGranularity(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMovementGranularity(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_SetPackageName_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetPackageName*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_SetPackageName_Java_Lang_CharSequence_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetPackageName(Java.Lang.CharSequence)">
+  SetPackageName(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L623"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setPackageName(java.lang.CharSequence)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setPackageName(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPackageName(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_SetSpeechStateChangeTypes_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetSpeechStateChangeTypes*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_SetSpeechStateChangeTypes_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetSpeechStateChangeTypes(System.Int32)">
+  SetSpeechStateChangeTypes(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L631"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setSpeechStateChangeTypes(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setSpeechStateChangeTypes(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSpeechStateChangeTypes(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_WriteToParcel_" data-uid="Android.View.Accessibility.AccessibilityEvent.WriteToParcel*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.WriteToParcel(Android.Os.Parcel,System.Int32)">
+  WriteToParcel(Parcel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L640"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#writeToParcel(android.os.Parcel,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_op_Implicit_" data-uid="Android.View.Accessibility.AccessibilityEvent.op_Implicit*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_op_Implicit_Android_View_Accessibility_AccessibilityEvent__Android_Os_Parcelable" data-uid="Android.View.Accessibility.AccessibilityEvent.op_Implicit(Android.View.Accessibility.AccessibilityEvent)~Android.Os.Parcelable">
+  implicit operator Parcelable(AccessibilityEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a> to <a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Parcelable(AccessibilityEvent t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AllPackageClasses.cs/#L33" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

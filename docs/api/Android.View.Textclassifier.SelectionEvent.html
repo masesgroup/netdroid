@@ -1,0 +1,2293 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class SelectionEvent | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SelectionEvent | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_View_Textclassifier_SelectionEvent.md&amp;value=---%0Auid%3A%20Android.View.Textclassifier.SelectionEvent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.View.Textclassifier.SelectionEvent">
+
+
+
+  <h1 id="Android_View_Textclassifier_SelectionEvent" data-uid="Android.View.Textclassifier.SelectionEvent" class="text-break">
+Class SelectionEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.View.html">View</a>.<a class="xref" href="Android.View.Textclassifier.html">Textclassifier</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SelectionEvent : Parcelable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IParcelable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>&gt;</div>
+      <div><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></div>
+      <div><span class="xref">SelectionEvent</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Os.IParcelable.html">IParcelable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Os.Parcelable.html#Android_Os_Parcelable_CONTENTS_FILE_DESCRIPTOR">Parcelable.CONTENTS_FILE_DESCRIPTOR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.Parcelable.html#Android_Os_Parcelable_PARCELABLE_WRITE_RETURN_VALUE">Parcelable.PARCELABLE_WRITE_RETURN_VALUE</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Parcelable&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent__ctor_" data-uid="Android.View.Textclassifier.SelectionEvent.#ctor*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent__ctor" data-uid="Android.View.Textclassifier.SelectionEvent.#ctor">
+  SelectionEvent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/AllPackageClasses.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectionEvent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent__ctor_" data-uid="Android.View.Textclassifier.SelectionEvent.#ctor*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent__ctor_System_Object___" data-uid="Android.View.Textclassifier.SelectionEvent.#ctor(System.Object[])">
+  SelectionEvent(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/AllPackageClasses.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectionEvent(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_ACTION_ABANDON_" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_ABANDON*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_ACTION_ABANDON" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_ABANDON">
+  ACTION_ABANDON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_ABANDON">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_ABANDON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ACTION_ABANDON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_ACTION_COPY_" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_COPY*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_ACTION_COPY" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_COPY">
+  ACTION_COPY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_COPY">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_COPY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ACTION_COPY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_ACTION_CUT_" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_CUT*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_ACTION_CUT" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_CUT">
+  ACTION_CUT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_CUT">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_CUT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ACTION_CUT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_ACTION_DRAG_" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_DRAG*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_ACTION_DRAG" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_DRAG">
+  ACTION_DRAG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_DRAG">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_DRAG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ACTION_DRAG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_ACTION_OTHER_" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_OTHER*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_ACTION_OTHER" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_OTHER">
+  ACTION_OTHER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_OTHER">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_OTHER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ACTION_OTHER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_ACTION_OVERTYPE_" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_OVERTYPE*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_ACTION_OVERTYPE" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_OVERTYPE">
+  ACTION_OVERTYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_OVERTYPE">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_OVERTYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ACTION_OVERTYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_ACTION_PASTE_" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_PASTE*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_ACTION_PASTE" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_PASTE">
+  ACTION_PASTE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_PASTE">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_PASTE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ACTION_PASTE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_ACTION_RESET_" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_RESET*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_ACTION_RESET" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_RESET">
+  ACTION_RESET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_RESET">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_RESET</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ACTION_RESET { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_ACTION_SELECT_ALL_" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_SELECT_ALL*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_ACTION_SELECT_ALL" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_SELECT_ALL">
+  ACTION_SELECT_ALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_SELECT_ALL">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_SELECT_ALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ACTION_SELECT_ALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_ACTION_SHARE_" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_SHARE*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_ACTION_SHARE" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_SHARE">
+  ACTION_SHARE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_SHARE">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_SHARE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ACTION_SHARE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_ACTION_SMART_SHARE_" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_SMART_SHARE*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_ACTION_SMART_SHARE" data-uid="Android.View.Textclassifier.SelectionEvent.ACTION_SMART_SHARE">
+  ACTION_SMART_SHARE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_SMART_SHARE">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#ACTION_SMART_SHARE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ACTION_SMART_SHARE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_BridgeClassName_" data-uid="Android.View.Textclassifier.SelectionEvent.BridgeClassName*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_BridgeClassName" data-uid="Android.View.Textclassifier.SelectionEvent.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/AllPackageClasses.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_CREATOR_" data-uid="Android.View.Textclassifier.SelectionEvent.CREATOR*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_CREATOR" data-uid="Android.View.Textclassifier.SelectionEvent.CREATOR">
+  CREATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#CREATOR">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#CREATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>.<a class="xref" href="Android.Os.Parcelable.Creator.html">Creator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_EVENT_AUTO_SELECTION_" data-uid="Android.View.Textclassifier.SelectionEvent.EVENT_AUTO_SELECTION*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_EVENT_AUTO_SELECTION" data-uid="Android.View.Textclassifier.SelectionEvent.EVENT_AUTO_SELECTION">
+  EVENT_AUTO_SELECTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#EVENT_AUTO_SELECTION">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#EVENT_AUTO_SELECTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EVENT_AUTO_SELECTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_EVENT_SELECTION_MODIFIED_" data-uid="Android.View.Textclassifier.SelectionEvent.EVENT_SELECTION_MODIFIED*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_EVENT_SELECTION_MODIFIED" data-uid="Android.View.Textclassifier.SelectionEvent.EVENT_SELECTION_MODIFIED">
+  EVENT_SELECTION_MODIFIED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#EVENT_SELECTION_MODIFIED">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#EVENT_SELECTION_MODIFIED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EVENT_SELECTION_MODIFIED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_EVENT_SELECTION_STARTED_" data-uid="Android.View.Textclassifier.SelectionEvent.EVENT_SELECTION_STARTED*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_EVENT_SELECTION_STARTED" data-uid="Android.View.Textclassifier.SelectionEvent.EVENT_SELECTION_STARTED">
+  EVENT_SELECTION_STARTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#EVENT_SELECTION_STARTED">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#EVENT_SELECTION_STARTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EVENT_SELECTION_STARTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_EVENT_SMART_SELECTION_MULTI_" data-uid="Android.View.Textclassifier.SelectionEvent.EVENT_SMART_SELECTION_MULTI*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_EVENT_SMART_SELECTION_MULTI" data-uid="Android.View.Textclassifier.SelectionEvent.EVENT_SMART_SELECTION_MULTI">
+  EVENT_SMART_SELECTION_MULTI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#EVENT_SMART_SELECTION_MULTI">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#EVENT_SMART_SELECTION_MULTI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EVENT_SMART_SELECTION_MULTI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_EVENT_SMART_SELECTION_SINGLE_" data-uid="Android.View.Textclassifier.SelectionEvent.EVENT_SMART_SELECTION_SINGLE*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_EVENT_SMART_SELECTION_SINGLE" data-uid="Android.View.Textclassifier.SelectionEvent.EVENT_SMART_SELECTION_SINGLE">
+  EVENT_SMART_SELECTION_SINGLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#EVENT_SMART_SELECTION_SINGLE">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#EVENT_SMART_SELECTION_SINGLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EVENT_SMART_SELECTION_SINGLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_INVOCATION_LINK_" data-uid="Android.View.Textclassifier.SelectionEvent.INVOCATION_LINK*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_INVOCATION_LINK" data-uid="Android.View.Textclassifier.SelectionEvent.INVOCATION_LINK">
+  INVOCATION_LINK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#INVOCATION_LINK">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#INVOCATION_LINK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INVOCATION_LINK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_INVOCATION_MANUAL_" data-uid="Android.View.Textclassifier.SelectionEvent.INVOCATION_MANUAL*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_INVOCATION_MANUAL" data-uid="Android.View.Textclassifier.SelectionEvent.INVOCATION_MANUAL">
+  INVOCATION_MANUAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#INVOCATION_MANUAL">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#INVOCATION_MANUAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INVOCATION_MANUAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_INVOCATION_UNKNOWN_" data-uid="Android.View.Textclassifier.SelectionEvent.INVOCATION_UNKNOWN*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_INVOCATION_UNKNOWN" data-uid="Android.View.Textclassifier.SelectionEvent.INVOCATION_UNKNOWN">
+  INVOCATION_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#INVOCATION_UNKNOWN">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#INVOCATION_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INVOCATION_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_IsBridgeAbstract_" data-uid="Android.View.Textclassifier.SelectionEvent.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_IsBridgeAbstract" data-uid="Android.View.Textclassifier.SelectionEvent.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/AllPackageClasses.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_IsBridgeCloseable_" data-uid="Android.View.Textclassifier.SelectionEvent.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_IsBridgeCloseable" data-uid="Android.View.Textclassifier.SelectionEvent.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/AllPackageClasses.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_IsBridgeInterface_" data-uid="Android.View.Textclassifier.SelectionEvent.IsBridgeInterface*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_IsBridgeInterface" data-uid="Android.View.Textclassifier.SelectionEvent.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/AllPackageClasses.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_IsBridgeStatic_" data-uid="Android.View.Textclassifier.SelectionEvent.IsBridgeStatic*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_IsBridgeStatic" data-uid="Android.View.Textclassifier.SelectionEvent.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/AllPackageClasses.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_CreateSelectionActionEvent_" data-uid="Android.View.Textclassifier.SelectionEvent.CreateSelectionActionEvent*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_CreateSelectionActionEvent_System_Int32_System_Int32_System_Int32_" data-uid="Android.View.Textclassifier.SelectionEvent.CreateSelectionActionEvent(System.Int32,System.Int32,System.Int32)">
+  CreateSelectionActionEvent(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#createSelectionActionEvent(int,int,int)">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#createSelectionActionEvent(int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SelectionEvent CreateSelectionActionEvent(int arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Textclassifier.SelectionEvent.html">SelectionEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.Textclassifier.SelectionEvent.html">SelectionEvent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_CreateSelectionActionEvent_" data-uid="Android.View.Textclassifier.SelectionEvent.CreateSelectionActionEvent*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_CreateSelectionActionEvent_System_Int32_System_Int32_System_Int32_Android_View_Textclassifier_TextClassification_" data-uid="Android.View.Textclassifier.SelectionEvent.CreateSelectionActionEvent(System.Int32,System.Int32,System.Int32,Android.View.Textclassifier.TextClassification)">
+  CreateSelectionActionEvent(int, int, int, TextClassification)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#createSelectionActionEvent(int,int,int,android.view.textclassifier.TextClassification)">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#createSelectionActionEvent(int,int,int,android.view.textclassifier.TextClassification)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SelectionEvent CreateSelectionActionEvent(int arg0, int arg1, int arg2, TextClassification arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.View.Textclassifier.TextClassification.html">TextClassification</a></dt>
+    <dd><p><a class="xref" href="Android.View.Textclassifier.TextClassification.html">TextClassification</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Textclassifier.SelectionEvent.html">SelectionEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.Textclassifier.SelectionEvent.html">SelectionEvent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_CreateSelectionModifiedEvent_" data-uid="Android.View.Textclassifier.SelectionEvent.CreateSelectionModifiedEvent*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_CreateSelectionModifiedEvent_System_Int32_System_Int32_" data-uid="Android.View.Textclassifier.SelectionEvent.CreateSelectionModifiedEvent(System.Int32,System.Int32)">
+  CreateSelectionModifiedEvent(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#createSelectionModifiedEvent(int,int)">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#createSelectionModifiedEvent(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SelectionEvent CreateSelectionModifiedEvent(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Textclassifier.SelectionEvent.html">SelectionEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.Textclassifier.SelectionEvent.html">SelectionEvent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_CreateSelectionModifiedEvent_" data-uid="Android.View.Textclassifier.SelectionEvent.CreateSelectionModifiedEvent*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_CreateSelectionModifiedEvent_System_Int32_System_Int32_Android_View_Textclassifier_TextClassification_" data-uid="Android.View.Textclassifier.SelectionEvent.CreateSelectionModifiedEvent(System.Int32,System.Int32,Android.View.Textclassifier.TextClassification)">
+  CreateSelectionModifiedEvent(int, int, TextClassification)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#createSelectionModifiedEvent(int,int,android.view.textclassifier.TextClassification)">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#createSelectionModifiedEvent(int,int,android.view.textclassifier.TextClassification)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SelectionEvent CreateSelectionModifiedEvent(int arg0, int arg1, TextClassification arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.View.Textclassifier.TextClassification.html">TextClassification</a></dt>
+    <dd><p><a class="xref" href="Android.View.Textclassifier.TextClassification.html">TextClassification</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Textclassifier.SelectionEvent.html">SelectionEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.Textclassifier.SelectionEvent.html">SelectionEvent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_CreateSelectionModifiedEvent_" data-uid="Android.View.Textclassifier.SelectionEvent.CreateSelectionModifiedEvent*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_CreateSelectionModifiedEvent_System_Int32_System_Int32_Android_View_Textclassifier_TextSelection_" data-uid="Android.View.Textclassifier.SelectionEvent.CreateSelectionModifiedEvent(System.Int32,System.Int32,Android.View.Textclassifier.TextSelection)">
+  CreateSelectionModifiedEvent(int, int, TextSelection)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#createSelectionModifiedEvent(int,int,android.view.textclassifier.TextSelection)">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#createSelectionModifiedEvent(int,int,android.view.textclassifier.TextSelection)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SelectionEvent CreateSelectionModifiedEvent(int arg0, int arg1, TextSelection arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.View.Textclassifier.TextSelection.html">TextSelection</a></dt>
+    <dd><p><a class="xref" href="Android.View.Textclassifier.TextSelection.html">TextSelection</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Textclassifier.SelectionEvent.html">SelectionEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.Textclassifier.SelectionEvent.html">SelectionEvent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_CreateSelectionStartedEvent_" data-uid="Android.View.Textclassifier.SelectionEvent.CreateSelectionStartedEvent*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_CreateSelectionStartedEvent_System_Int32_System_Int32_" data-uid="Android.View.Textclassifier.SelectionEvent.CreateSelectionStartedEvent(System.Int32,System.Int32)">
+  CreateSelectionStartedEvent(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#createSelectionStartedEvent(int,int)">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#createSelectionStartedEvent(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SelectionEvent CreateSelectionStartedEvent(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Textclassifier.SelectionEvent.html">SelectionEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.Textclassifier.SelectionEvent.html">SelectionEvent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_DescribeContents_" data-uid="Android.View.Textclassifier.SelectionEvent.DescribeContents*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_DescribeContents" data-uid="Android.View.Textclassifier.SelectionEvent.DescribeContents">
+  DescribeContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#describeContents()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#describeContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetDurationSincePreviousEvent_" data-uid="Android.View.Textclassifier.SelectionEvent.GetDurationSincePreviousEvent*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetDurationSincePreviousEvent" data-uid="Android.View.Textclassifier.SelectionEvent.GetDurationSincePreviousEvent">
+  GetDurationSincePreviousEvent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getDurationSincePreviousEvent()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getDurationSincePreviousEvent()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetDurationSincePreviousEvent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetDurationSinceSessionStart_" data-uid="Android.View.Textclassifier.SelectionEvent.GetDurationSinceSessionStart*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetDurationSinceSessionStart" data-uid="Android.View.Textclassifier.SelectionEvent.GetDurationSinceSessionStart">
+  GetDurationSinceSessionStart()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getDurationSinceSessionStart()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getDurationSinceSessionStart()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetDurationSinceSessionStart()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetEnd_" data-uid="Android.View.Textclassifier.SelectionEvent.GetEnd*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetEnd" data-uid="Android.View.Textclassifier.SelectionEvent.GetEnd">
+  GetEnd()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEnd()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEnd()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetEnd()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetEntityType_" data-uid="Android.View.Textclassifier.SelectionEvent.GetEntityType*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetEntityType" data-uid="Android.View.Textclassifier.SelectionEvent.GetEntityType">
+  GetEntityType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L318"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEntityType()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEntityType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetEntityType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetEventIndex_" data-uid="Android.View.Textclassifier.SelectionEvent.GetEventIndex*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetEventIndex" data-uid="Android.View.Textclassifier.SelectionEvent.GetEventIndex">
+  GetEventIndex()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEventIndex()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEventIndex()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetEventIndex()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetEventTime_" data-uid="Android.View.Textclassifier.SelectionEvent.GetEventTime*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetEventTime" data-uid="Android.View.Textclassifier.SelectionEvent.GetEventTime">
+  GetEventTime()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEventTime()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEventTime()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetEventTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetEventType_" data-uid="Android.View.Textclassifier.SelectionEvent.GetEventType*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetEventType" data-uid="Android.View.Textclassifier.SelectionEvent.GetEventType">
+  GetEventType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEventType()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEventType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetEventType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetInvocationMethod_" data-uid="Android.View.Textclassifier.SelectionEvent.GetInvocationMethod*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetInvocationMethod" data-uid="Android.View.Textclassifier.SelectionEvent.GetInvocationMethod">
+  GetInvocationMethod()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getInvocationMethod()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getInvocationMethod()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInvocationMethod()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetPackageName_" data-uid="Android.View.Textclassifier.SelectionEvent.GetPackageName*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetPackageName" data-uid="Android.View.Textclassifier.SelectionEvent.GetPackageName">
+  GetPackageName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getPackageName()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getPackageName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetPackageName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetResultId_" data-uid="Android.View.Textclassifier.SelectionEvent.GetResultId*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetResultId" data-uid="Android.View.Textclassifier.SelectionEvent.GetResultId">
+  GetResultId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getResultId()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getResultId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetResultId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetSessionId_" data-uid="Android.View.Textclassifier.SelectionEvent.GetSessionId*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetSessionId" data-uid="Android.View.Textclassifier.SelectionEvent.GetSessionId">
+  GetSessionId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getSessionId()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getSessionId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextClassificationSessionId GetSessionId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Textclassifier.TextClassificationSessionId.html">TextClassificationSessionId</a></dt>
+    <dd><p><a class="xref" href="Android.View.Textclassifier.TextClassificationSessionId.html">TextClassificationSessionId</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetSmartEnd_" data-uid="Android.View.Textclassifier.SelectionEvent.GetSmartEnd*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetSmartEnd" data-uid="Android.View.Textclassifier.SelectionEvent.GetSmartEnd">
+  GetSmartEnd()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getSmartEnd()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getSmartEnd()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSmartEnd()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetSmartStart_" data-uid="Android.View.Textclassifier.SelectionEvent.GetSmartStart*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetSmartStart" data-uid="Android.View.Textclassifier.SelectionEvent.GetSmartStart">
+  GetSmartStart()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getSmartStart()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getSmartStart()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSmartStart()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetStart_" data-uid="Android.View.Textclassifier.SelectionEvent.GetStart*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetStart" data-uid="Android.View.Textclassifier.SelectionEvent.GetStart">
+  GetStart()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getStart()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getStart()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetStart()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetWidgetType_" data-uid="Android.View.Textclassifier.SelectionEvent.GetWidgetType*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetWidgetType" data-uid="Android.View.Textclassifier.SelectionEvent.GetWidgetType">
+  GetWidgetType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getWidgetType()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getWidgetType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetWidgetType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_GetWidgetVersion_" data-uid="Android.View.Textclassifier.SelectionEvent.GetWidgetVersion*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_GetWidgetVersion" data-uid="Android.View.Textclassifier.SelectionEvent.GetWidgetVersion">
+  GetWidgetVersion()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getWidgetVersion()">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getWidgetVersion()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetWidgetVersion()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_IsTerminal_" data-uid="Android.View.Textclassifier.SelectionEvent.IsTerminal*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_IsTerminal_System_Int32_" data-uid="Android.View.Textclassifier.SelectionEvent.IsTerminal(System.Int32)">
+  IsTerminal(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#isTerminal(int)">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#isTerminal(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTerminal(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Textclassifier_SelectionEvent_WriteToParcel_" data-uid="Android.View.Textclassifier.SelectionEvent.WriteToParcel*"></a>
+
+  <h3 id="Android_View_Textclassifier_SelectionEvent_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.View.Textclassifier.SelectionEvent.WriteToParcel(Android.Os.Parcel,System.Int32)">
+  WriteToParcel(Parcel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#writeToParcel(android.os.Parcel,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Textclassifier/SelectionEvent.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

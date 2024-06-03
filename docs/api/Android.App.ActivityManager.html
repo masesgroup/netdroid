@@ -1,0 +1,2388 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class ActivityManager | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ActivityManager | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/app/ActivityManager.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_App_ActivityManager.md&amp;value=---%0Auid%3A%20Android.App.ActivityManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.App.ActivityManager">
+
+
+
+  <h1 id="Android_App_ActivityManager" data-uid="Android.App.ActivityManager" class="text-break">
+Class ActivityManager  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.App.html">App</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html">https://developer.android.com/reference/android/app/ActivityManager.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ActivityManager : JVMBridgeBase&lt;ActivityManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.App.ActivityManager.html">ActivityManager</a>&gt;</div>
+      <div><span class="xref">ActivityManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ActivityManager&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ActivityManager&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ActivityManager&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ActivityManager&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ActivityManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ActivityManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ActivityManager&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ActivityManager&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;ActivityManager&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ActivityManager&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ActivityManager&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ActivityManager&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ActivityManager&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_App_ActivityManager__ctor_" data-uid="Android.App.ActivityManager.#ctor*"></a>
+
+  <h3 id="Android_App_ActivityManager__ctor" data-uid="Android.App.ActivityManager.#ctor">
+  ActivityManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActivityManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager__ctor_" data-uid="Android.App.ActivityManager.#ctor*"></a>
+
+  <h3 id="Android_App_ActivityManager__ctor_System_Object___" data-uid="Android.App.ActivityManager.#ctor(System.Object[])">
+  ActivityManager(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L512"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActivityManager(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_App_ActivityManager_ACTION_REPORT_HEAP_LIMIT_" data-uid="Android.App.ActivityManager.ACTION_REPORT_HEAP_LIMIT*"></a>
+
+  <h3 id="Android_App_ActivityManager_ACTION_REPORT_HEAP_LIMIT" data-uid="Android.App.ActivityManager.ACTION_REPORT_HEAP_LIMIT">
+  ACTION_REPORT_HEAP_LIMIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#ACTION_REPORT_HEAP_LIMIT">https://developer.android.com/reference/android/app/ActivityManager.html#ACTION_REPORT_HEAP_LIMIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_REPORT_HEAP_LIMIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_BridgeClassName_" data-uid="Android.App.ActivityManager.BridgeClassName*"></a>
+
+  <h3 id="Android_App_ActivityManager_BridgeClassName" data-uid="Android.App.ActivityManager.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_IsBridgeAbstract_" data-uid="Android.App.ActivityManager.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_App_ActivityManager_IsBridgeAbstract" data-uid="Android.App.ActivityManager.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_IsBridgeCloseable_" data-uid="Android.App.ActivityManager.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_App_ActivityManager_IsBridgeCloseable" data-uid="Android.App.ActivityManager.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L527"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_IsBridgeInterface_" data-uid="Android.App.ActivityManager.IsBridgeInterface*"></a>
+
+  <h3 id="Android_App_ActivityManager_IsBridgeInterface" data-uid="Android.App.ActivityManager.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L531"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_IsBridgeStatic_" data-uid="Android.App.ActivityManager.IsBridgeStatic*"></a>
+
+  <h3 id="Android_App_ActivityManager_IsBridgeStatic" data-uid="Android.App.ActivityManager.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_LOCK_TASK_MODE_LOCKED_" data-uid="Android.App.ActivityManager.LOCK_TASK_MODE_LOCKED*"></a>
+
+  <h3 id="Android_App_ActivityManager_LOCK_TASK_MODE_LOCKED" data-uid="Android.App.ActivityManager.LOCK_TASK_MODE_LOCKED">
+  LOCK_TASK_MODE_LOCKED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#LOCK_TASK_MODE_LOCKED">https://developer.android.com/reference/android/app/ActivityManager.html#LOCK_TASK_MODE_LOCKED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LOCK_TASK_MODE_LOCKED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_LOCK_TASK_MODE_NONE_" data-uid="Android.App.ActivityManager.LOCK_TASK_MODE_NONE*"></a>
+
+  <h3 id="Android_App_ActivityManager_LOCK_TASK_MODE_NONE" data-uid="Android.App.ActivityManager.LOCK_TASK_MODE_NONE">
+  LOCK_TASK_MODE_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#LOCK_TASK_MODE_NONE">https://developer.android.com/reference/android/app/ActivityManager.html#LOCK_TASK_MODE_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LOCK_TASK_MODE_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_LOCK_TASK_MODE_PINNED_" data-uid="Android.App.ActivityManager.LOCK_TASK_MODE_PINNED*"></a>
+
+  <h3 id="Android_App_ActivityManager_LOCK_TASK_MODE_PINNED" data-uid="Android.App.ActivityManager.LOCK_TASK_MODE_PINNED">
+  LOCK_TASK_MODE_PINNED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#LOCK_TASK_MODE_PINNED">https://developer.android.com/reference/android/app/ActivityManager.html#LOCK_TASK_MODE_PINNED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LOCK_TASK_MODE_PINNED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_META_HOME_ALTERNATE_" data-uid="Android.App.ActivityManager.META_HOME_ALTERNATE*"></a>
+
+  <h3 id="Android_App_ActivityManager_META_HOME_ALTERNATE" data-uid="Android.App.ActivityManager.META_HOME_ALTERNATE">
+  META_HOME_ALTERNATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#META_HOME_ALTERNATE">https://developer.android.com/reference/android/app/ActivityManager.html#META_HOME_ALTERNATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String META_HOME_ALTERNATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_MOVE_TASK_NO_USER_ACTION_" data-uid="Android.App.ActivityManager.MOVE_TASK_NO_USER_ACTION*"></a>
+
+  <h3 id="Android_App_ActivityManager_MOVE_TASK_NO_USER_ACTION" data-uid="Android.App.ActivityManager.MOVE_TASK_NO_USER_ACTION">
+  MOVE_TASK_NO_USER_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#MOVE_TASK_NO_USER_ACTION">https://developer.android.com/reference/android/app/ActivityManager.html#MOVE_TASK_NO_USER_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MOVE_TASK_NO_USER_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_MOVE_TASK_WITH_HOME_" data-uid="Android.App.ActivityManager.MOVE_TASK_WITH_HOME*"></a>
+
+  <h3 id="Android_App_ActivityManager_MOVE_TASK_WITH_HOME" data-uid="Android.App.ActivityManager.MOVE_TASK_WITH_HOME">
+  MOVE_TASK_WITH_HOME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#MOVE_TASK_WITH_HOME">https://developer.android.com/reference/android/app/ActivityManager.html#MOVE_TASK_WITH_HOME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MOVE_TASK_WITH_HOME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_RECENT_IGNORE_UNAVAILABLE_" data-uid="Android.App.ActivityManager.RECENT_IGNORE_UNAVAILABLE*"></a>
+
+  <h3 id="Android_App_ActivityManager_RECENT_IGNORE_UNAVAILABLE" data-uid="Android.App.ActivityManager.RECENT_IGNORE_UNAVAILABLE">
+  RECENT_IGNORE_UNAVAILABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#RECENT_IGNORE_UNAVAILABLE">https://developer.android.com/reference/android/app/ActivityManager.html#RECENT_IGNORE_UNAVAILABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RECENT_IGNORE_UNAVAILABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_RECENT_WITH_EXCLUDED_" data-uid="Android.App.ActivityManager.RECENT_WITH_EXCLUDED*"></a>
+
+  <h3 id="Android_App_ActivityManager_RECENT_WITH_EXCLUDED" data-uid="Android.App.ActivityManager.RECENT_WITH_EXCLUDED">
+  RECENT_WITH_EXCLUDED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#RECENT_WITH_EXCLUDED">https://developer.android.com/reference/android/app/ActivityManager.html#RECENT_WITH_EXCLUDED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RECENT_WITH_EXCLUDED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_App_ActivityManager_AddAppTask_" data-uid="Android.App.ActivityManager.AddAppTask*"></a>
+
+  <h3 id="Android_App_ActivityManager_AddAppTask_Android_App_Activity_Android_Content_Intent_Android_App_ActivityManager_TaskDescription_Android_Graphics_Bitmap_" data-uid="Android.App.ActivityManager.AddAppTask(Android.App.Activity,Android.Content.Intent,Android.App.ActivityManager.TaskDescription,Android.Graphics.Bitmap)">
+  AddAppTask(Activity, Intent, TaskDescription, Bitmap)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#addAppTask(android.app.Activity,android.content.Intent,android.app.ActivityManager.TaskDescription,android.graphics.Bitmap)">https://developer.android.com/reference/android/app/ActivityManager.html#addAppTask(android.app.Activity,android.content.Intent,android.app.ActivityManager.TaskDescription,android.graphics.Bitmap)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddAppTask(Activity arg0, Intent arg1, ActivityManager.TaskDescription arg2, Bitmap arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.App.ActivityManager.html">ActivityManager</a>.<a class="xref" href="Android.App.ActivityManager.TaskDescription.html">TaskDescription</a></dt>
+    <dd><p><a class="xref" href="Android.App.ActivityManager.TaskDescription.html">ActivityManager.TaskDescription</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Graphics.Bitmap.html">Bitmap</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Bitmap.html">Bitmap</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_AppNotResponding_" data-uid="Android.App.ActivityManager.AppNotResponding*"></a>
+
+  <h3 id="Android_App_ActivityManager_AppNotResponding_Java_Lang_String_" data-uid="Android.App.ActivityManager.AppNotResponding(Java.Lang.String)">
+  AppNotResponding(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#appNotResponding(java.lang.String)">https://developer.android.com/reference/android/app/ActivityManager.html#appNotResponding(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AppNotResponding(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_ClearApplicationUserData_" data-uid="Android.App.ActivityManager.ClearApplicationUserData*"></a>
+
+  <h3 id="Android_App_ActivityManager_ClearApplicationUserData" data-uid="Android.App.ActivityManager.ClearApplicationUserData">
+  ClearApplicationUserData()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#clearApplicationUserData()">https://developer.android.com/reference/android/app/ActivityManager.html#clearApplicationUserData()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ClearApplicationUserData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_ClearWatchHeapLimit_" data-uid="Android.App.ActivityManager.ClearWatchHeapLimit*"></a>
+
+  <h3 id="Android_App_ActivityManager_ClearWatchHeapLimit" data-uid="Android.App.ActivityManager.ClearWatchHeapLimit">
+  ClearWatchHeapLimit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#clearWatchHeapLimit()">https://developer.android.com/reference/android/app/ActivityManager.html#clearWatchHeapLimit()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearWatchHeapLimit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_DumpPackageState_" data-uid="Android.App.ActivityManager.DumpPackageState*"></a>
+
+  <h3 id="Android_App_ActivityManager_DumpPackageState_Java_Io_FileDescriptor_Java_Lang_String_" data-uid="Android.App.ActivityManager.DumpPackageState(Java.Io.FileDescriptor,Java.Lang.String)">
+  DumpPackageState(FileDescriptor, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#dumpPackageState(java.io.FileDescriptor,java.lang.String)">https://developer.android.com/reference/android/app/ActivityManager.html#dumpPackageState(java.io.FileDescriptor,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DumpPackageState(FileDescriptor arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Io.FileDescriptor.html">FileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Java.Io.FileDescriptor.html">FileDescriptor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetAppTaskThumbnailSize_" data-uid="Android.App.ActivityManager.GetAppTaskThumbnailSize*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetAppTaskThumbnailSize" data-uid="Android.App.ActivityManager.GetAppTaskThumbnailSize">
+  GetAppTaskThumbnailSize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getAppTaskThumbnailSize()">https://developer.android.com/reference/android/app/ActivityManager.html#getAppTaskThumbnailSize()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Size GetAppTaskThumbnailSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Util.Size.html">Size</a></dt>
+    <dd><p><a class="xref" href="Android.Util.Size.html">Size</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetAppTasks_" data-uid="Android.App.ActivityManager.GetAppTasks*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetAppTasks" data-uid="Android.App.ActivityManager.GetAppTasks">
+  GetAppTasks()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getAppTasks()">https://developer.android.com/reference/android/app/ActivityManager.html#getAppTasks()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ActivityManager.AppTask&gt; GetAppTasks()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.App.ActivityManager.html">ActivityManager</a>.<a class="xref" href="Android.App.ActivityManager.AppTask.html">AppTask</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetDeviceConfigurationInfo_" data-uid="Android.App.ActivityManager.GetDeviceConfigurationInfo*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetDeviceConfigurationInfo" data-uid="Android.App.ActivityManager.GetDeviceConfigurationInfo">
+  GetDeviceConfigurationInfo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getDeviceConfigurationInfo()">https://developer.android.com/reference/android/app/ActivityManager.html#getDeviceConfigurationInfo()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigurationInfo GetDeviceConfigurationInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Pm.ConfigurationInfo.html">ConfigurationInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Pm.ConfigurationInfo.html">ConfigurationInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetHistoricalProcessExitReasons_" data-uid="Android.App.ActivityManager.GetHistoricalProcessExitReasons*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetHistoricalProcessExitReasons_Java_Lang_String_System_Int32_System_Int32_" data-uid="Android.App.ActivityManager.GetHistoricalProcessExitReasons(Java.Lang.String,System.Int32,System.Int32)">
+  GetHistoricalProcessExitReasons(String, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getHistoricalProcessExitReasons(java.lang.String,int,int)">https://developer.android.com/reference/android/app/ActivityManager.html#getHistoricalProcessExitReasons(java.lang.String,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ApplicationExitInfo&gt; GetHistoricalProcessExitReasons(String arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.App.ApplicationExitInfo.html">ApplicationExitInfo</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetLargeMemoryClass_" data-uid="Android.App.ActivityManager.GetLargeMemoryClass*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetLargeMemoryClass" data-uid="Android.App.ActivityManager.GetLargeMemoryClass">
+  GetLargeMemoryClass()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getLargeMemoryClass()">https://developer.android.com/reference/android/app/ActivityManager.html#getLargeMemoryClass()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLargeMemoryClass()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetLauncherLargeIconDensity_" data-uid="Android.App.ActivityManager.GetLauncherLargeIconDensity*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetLauncherLargeIconDensity" data-uid="Android.App.ActivityManager.GetLauncherLargeIconDensity">
+  GetLauncherLargeIconDensity()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getLauncherLargeIconDensity()">https://developer.android.com/reference/android/app/ActivityManager.html#getLauncherLargeIconDensity()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLauncherLargeIconDensity()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetLauncherLargeIconSize_" data-uid="Android.App.ActivityManager.GetLauncherLargeIconSize*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetLauncherLargeIconSize" data-uid="Android.App.ActivityManager.GetLauncherLargeIconSize">
+  GetLauncherLargeIconSize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getLauncherLargeIconSize()">https://developer.android.com/reference/android/app/ActivityManager.html#getLauncherLargeIconSize()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLauncherLargeIconSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetLockTaskModeState_" data-uid="Android.App.ActivityManager.GetLockTaskModeState*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetLockTaskModeState" data-uid="Android.App.ActivityManager.GetLockTaskModeState">
+  GetLockTaskModeState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getLockTaskModeState()">https://developer.android.com/reference/android/app/ActivityManager.html#getLockTaskModeState()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLockTaskModeState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetMemoryClass_" data-uid="Android.App.ActivityManager.GetMemoryClass*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetMemoryClass" data-uid="Android.App.ActivityManager.GetMemoryClass">
+  GetMemoryClass()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getMemoryClass()">https://developer.android.com/reference/android/app/ActivityManager.html#getMemoryClass()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMemoryClass()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetMemoryInfo_" data-uid="Android.App.ActivityManager.GetMemoryInfo*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetMemoryInfo_Android_App_ActivityManager_MemoryInfo_" data-uid="Android.App.ActivityManager.GetMemoryInfo(Android.App.ActivityManager.MemoryInfo)">
+  GetMemoryInfo(MemoryInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getMemoryInfo(android.app.ActivityManager.MemoryInfo)">https://developer.android.com/reference/android/app/ActivityManager.html#getMemoryInfo(android.app.ActivityManager.MemoryInfo)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetMemoryInfo(ActivityManager.MemoryInfo arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.ActivityManager.html">ActivityManager</a>.<a class="xref" href="Android.App.ActivityManager.MemoryInfo.html">MemoryInfo</a></dt>
+    <dd><p><a class="xref" href="Android.App.ActivityManager.MemoryInfo.html">ActivityManager.MemoryInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetMyMemoryState_" data-uid="Android.App.ActivityManager.GetMyMemoryState*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetMyMemoryState_Android_App_ActivityManager_RunningAppProcessInfo_" data-uid="Android.App.ActivityManager.GetMyMemoryState(Android.App.ActivityManager.RunningAppProcessInfo)">
+  GetMyMemoryState(RunningAppProcessInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getMyMemoryState(android.app.ActivityManager.RunningAppProcessInfo)">https://developer.android.com/reference/android/app/ActivityManager.html#getMyMemoryState(android.app.ActivityManager.RunningAppProcessInfo)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetMyMemoryState(ActivityManager.RunningAppProcessInfo arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.ActivityManager.html">ActivityManager</a>.<a class="xref" href="Android.App.ActivityManager.RunningAppProcessInfo.html">RunningAppProcessInfo</a></dt>
+    <dd><p><a class="xref" href="Android.App.ActivityManager.RunningAppProcessInfo.html">ActivityManager.RunningAppProcessInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetProcessMemoryInfo_" data-uid="Android.App.ActivityManager.GetProcessMemoryInfo*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetProcessMemoryInfo_System_Int32___" data-uid="Android.App.ActivityManager.GetProcessMemoryInfo(System.Int32[])">
+  GetProcessMemoryInfo(int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getProcessMemoryInfo(int[])">https://developer.android.com/reference/android/app/ActivityManager.html#getProcessMemoryInfo(int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Debug.MemoryInfo[] GetProcessMemoryInfo(int[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Debug.MemoryInfo.html">MemoryInfo</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Os.Debug.MemoryInfo.html">Debug.MemoryInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetProcessesInErrorState_" data-uid="Android.App.ActivityManager.GetProcessesInErrorState*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetProcessesInErrorState" data-uid="Android.App.ActivityManager.GetProcessesInErrorState">
+  GetProcessesInErrorState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getProcessesInErrorState()">https://developer.android.com/reference/android/app/ActivityManager.html#getProcessesInErrorState()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ActivityManager.ProcessErrorStateInfo&gt; GetProcessesInErrorState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.App.ActivityManager.html">ActivityManager</a>.<a class="xref" href="Android.App.ActivityManager.ProcessErrorStateInfo.html">ProcessErrorStateInfo</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetRecentTasks_" data-uid="Android.App.ActivityManager.GetRecentTasks*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetRecentTasks_System_Int32_System_Int32_" data-uid="Android.App.ActivityManager.GetRecentTasks(System.Int32,System.Int32)">
+  GetRecentTasks(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getRecentTasks(int,int)">https://developer.android.com/reference/android/app/ActivityManager.html#getRecentTasks(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public List&lt;ActivityManager.RecentTaskInfo&gt; GetRecentTasks(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.App.ActivityManager.html">ActivityManager</a>.<a class="xref" href="Android.App.ActivityManager.RecentTaskInfo.html">RecentTaskInfo</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_App_ActivityManager_GetRunningAppProcesses_" data-uid="Android.App.ActivityManager.GetRunningAppProcesses*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetRunningAppProcesses" data-uid="Android.App.ActivityManager.GetRunningAppProcesses">
+  GetRunningAppProcesses()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getRunningAppProcesses()">https://developer.android.com/reference/android/app/ActivityManager.html#getRunningAppProcesses()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ActivityManager.RunningAppProcessInfo&gt; GetRunningAppProcesses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.App.ActivityManager.html">ActivityManager</a>.<a class="xref" href="Android.App.ActivityManager.RunningAppProcessInfo.html">RunningAppProcessInfo</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_GetRunningServiceControlPanel_" data-uid="Android.App.ActivityManager.GetRunningServiceControlPanel*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetRunningServiceControlPanel_Android_Content_ComponentName_" data-uid="Android.App.ActivityManager.GetRunningServiceControlPanel(Android.Content.ComponentName)">
+  GetRunningServiceControlPanel(ComponentName)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getRunningServiceControlPanel(android.content.ComponentName)">https://developer.android.com/reference/android/app/ActivityManager.html#getRunningServiceControlPanel(android.content.ComponentName)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PendingIntent GetRunningServiceControlPanel(ComponentName arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_App_ActivityManager_GetRunningServices_" data-uid="Android.App.ActivityManager.GetRunningServices*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetRunningServices_System_Int32_" data-uid="Android.App.ActivityManager.GetRunningServices(System.Int32)">
+  GetRunningServices(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getRunningServices(int)">https://developer.android.com/reference/android/app/ActivityManager.html#getRunningServices(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public List&lt;ActivityManager.RunningServiceInfo&gt; GetRunningServices(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.App.ActivityManager.html">ActivityManager</a>.<a class="xref" href="Android.App.ActivityManager.RunningServiceInfo.html">RunningServiceInfo</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_App_ActivityManager_GetRunningTasks_" data-uid="Android.App.ActivityManager.GetRunningTasks*"></a>
+
+  <h3 id="Android_App_ActivityManager_GetRunningTasks_System_Int32_" data-uid="Android.App.ActivityManager.GetRunningTasks(System.Int32)">
+  GetRunningTasks(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#getRunningTasks(int)">https://developer.android.com/reference/android/app/ActivityManager.html#getRunningTasks(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public List&lt;ActivityManager.RunningTaskInfo&gt; GetRunningTasks(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.App.ActivityManager.html">ActivityManager</a>.<a class="xref" href="Android.App.ActivityManager.RunningTaskInfo.html">RunningTaskInfo</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_App_ActivityManager_IsActivityStartAllowedOnDisplay_" data-uid="Android.App.ActivityManager.IsActivityStartAllowedOnDisplay*"></a>
+
+  <h3 id="Android_App_ActivityManager_IsActivityStartAllowedOnDisplay_Android_Content_Context_System_Int32_Android_Content_Intent_" data-uid="Android.App.ActivityManager.IsActivityStartAllowedOnDisplay(Android.Content.Context,System.Int32,Android.Content.Intent)">
+  IsActivityStartAllowedOnDisplay(Context, int, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#isActivityStartAllowedOnDisplay(android.content.Context,int,android.content.Intent)">https://developer.android.com/reference/android/app/ActivityManager.html#isActivityStartAllowedOnDisplay(android.content.Context,int,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActivityStartAllowedOnDisplay(Context arg0, int arg1, Intent arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_IsBackgroundRestricted_" data-uid="Android.App.ActivityManager.IsBackgroundRestricted*"></a>
+
+  <h3 id="Android_App_ActivityManager_IsBackgroundRestricted" data-uid="Android.App.ActivityManager.IsBackgroundRestricted">
+  IsBackgroundRestricted()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#isBackgroundRestricted()">https://developer.android.com/reference/android/app/ActivityManager.html#isBackgroundRestricted()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBackgroundRestricted()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_IsInLockTaskMode_" data-uid="Android.App.ActivityManager.IsInLockTaskMode*"></a>
+
+  <h3 id="Android_App_ActivityManager_IsInLockTaskMode" data-uid="Android.App.ActivityManager.IsInLockTaskMode">
+  IsInLockTaskMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#isInLockTaskMode()">https://developer.android.com/reference/android/app/ActivityManager.html#isInLockTaskMode()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool IsInLockTaskMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_IsLowMemoryKillReportSupported_" data-uid="Android.App.ActivityManager.IsLowMemoryKillReportSupported*"></a>
+
+  <h3 id="Android_App_ActivityManager_IsLowMemoryKillReportSupported" data-uid="Android.App.ActivityManager.IsLowMemoryKillReportSupported">
+  IsLowMemoryKillReportSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#isLowMemoryKillReportSupported()">https://developer.android.com/reference/android/app/ActivityManager.html#isLowMemoryKillReportSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLowMemoryKillReportSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_IsLowRamDevice_" data-uid="Android.App.ActivityManager.IsLowRamDevice*"></a>
+
+  <h3 id="Android_App_ActivityManager_IsLowRamDevice" data-uid="Android.App.ActivityManager.IsLowRamDevice">
+  IsLowRamDevice()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#isLowRamDevice()">https://developer.android.com/reference/android/app/ActivityManager.html#isLowRamDevice()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLowRamDevice()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_IsRunningInTestHarness_" data-uid="Android.App.ActivityManager.IsRunningInTestHarness*"></a>
+
+  <h3 id="Android_App_ActivityManager_IsRunningInTestHarness" data-uid="Android.App.ActivityManager.IsRunningInTestHarness">
+  IsRunningInTestHarness()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#isRunningInTestHarness()">https://developer.android.com/reference/android/app/ActivityManager.html#isRunningInTestHarness()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static bool IsRunningInTestHarness()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_IsRunningInUserTestHarness_" data-uid="Android.App.ActivityManager.IsRunningInUserTestHarness*"></a>
+
+  <h3 id="Android_App_ActivityManager_IsRunningInUserTestHarness" data-uid="Android.App.ActivityManager.IsRunningInUserTestHarness">
+  IsRunningInUserTestHarness()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#isRunningInUserTestHarness()">https://developer.android.com/reference/android/app/ActivityManager.html#isRunningInUserTestHarness()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsRunningInUserTestHarness()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_IsUserAMonkey_" data-uid="Android.App.ActivityManager.IsUserAMonkey*"></a>
+
+  <h3 id="Android_App_ActivityManager_IsUserAMonkey" data-uid="Android.App.ActivityManager.IsUserAMonkey">
+  IsUserAMonkey()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#isUserAMonkey()">https://developer.android.com/reference/android/app/ActivityManager.html#isUserAMonkey()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsUserAMonkey()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_KillBackgroundProcesses_" data-uid="Android.App.ActivityManager.KillBackgroundProcesses*"></a>
+
+  <h3 id="Android_App_ActivityManager_KillBackgroundProcesses_Java_Lang_String_" data-uid="Android.App.ActivityManager.KillBackgroundProcesses(Java.Lang.String)">
+  KillBackgroundProcesses(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#killBackgroundProcesses(java.lang.String)">https://developer.android.com/reference/android/app/ActivityManager.html#killBackgroundProcesses(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void KillBackgroundProcesses(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_MoveTaskToFront_" data-uid="Android.App.ActivityManager.MoveTaskToFront*"></a>
+
+  <h3 id="Android_App_ActivityManager_MoveTaskToFront_System_Int32_System_Int32_" data-uid="Android.App.ActivityManager.MoveTaskToFront(System.Int32,System.Int32)">
+  MoveTaskToFront(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#moveTaskToFront(int,int)">https://developer.android.com/reference/android/app/ActivityManager.html#moveTaskToFront(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveTaskToFront(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_MoveTaskToFront_" data-uid="Android.App.ActivityManager.MoveTaskToFront*"></a>
+
+  <h3 id="Android_App_ActivityManager_MoveTaskToFront_System_Int32_System_Int32_Android_Os_Bundle_" data-uid="Android.App.ActivityManager.MoveTaskToFront(System.Int32,System.Int32,Android.Os.Bundle)">
+  MoveTaskToFront(int, int, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#moveTaskToFront(int,int,android.os.Bundle)">https://developer.android.com/reference/android/app/ActivityManager.html#moveTaskToFront(int,int,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveTaskToFront(int arg0, int arg1, Bundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_RestartPackage_" data-uid="Android.App.ActivityManager.RestartPackage*"></a>
+
+  <h3 id="Android_App_ActivityManager_RestartPackage_Java_Lang_String_" data-uid="Android.App.ActivityManager.RestartPackage(Java.Lang.String)">
+  RestartPackage(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#restartPackage(java.lang.String)">https://developer.android.com/reference/android/app/ActivityManager.html#restartPackage(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void RestartPackage(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_SetProcessStateSummary_" data-uid="Android.App.ActivityManager.SetProcessStateSummary*"></a>
+
+  <h3 id="Android_App_ActivityManager_SetProcessStateSummary_System_Byte___" data-uid="Android.App.ActivityManager.SetProcessStateSummary(System.Byte[])">
+  SetProcessStateSummary(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#setProcessStateSummary(byte[])">https://developer.android.com/reference/android/app/ActivityManager.html#setProcessStateSummary(byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProcessStateSummary(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_SetVrThread_" data-uid="Android.App.ActivityManager.SetVrThread*"></a>
+
+  <h3 id="Android_App_ActivityManager_SetVrThread_System_Int32_" data-uid="Android.App.ActivityManager.SetVrThread(System.Int32)">
+  SetVrThread(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#setVrThread(int)">https://developer.android.com/reference/android/app/ActivityManager.html#setVrThread(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetVrThread(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_ActivityManager_SetWatchHeapLimit_" data-uid="Android.App.ActivityManager.SetWatchHeapLimit*"></a>
+
+  <h3 id="Android_App_ActivityManager_SetWatchHeapLimit_System_Int64_" data-uid="Android.App.ActivityManager.SetWatchHeapLimit(System.Int64)">
+  SetWatchHeapLimit(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/ActivityManager.cs/#L431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/ActivityManager.html#setWatchHeapLimit(long)">https://developer.android.com/reference/android/app/ActivityManager.html#setWatchHeapLimit(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWatchHeapLimit(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L502" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

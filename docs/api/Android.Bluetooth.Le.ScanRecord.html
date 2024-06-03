@@ -1,0 +1,2621 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class ScanRecord | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ScanRecord | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Bluetooth_Le_ScanRecord.md&amp;value=---%0Auid%3A%20Android.Bluetooth.Le.ScanRecord%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Bluetooth.Le.ScanRecord">
+
+
+
+  <h1 id="Android_Bluetooth_Le_ScanRecord" data-uid="Android.Bluetooth.Le.ScanRecord" class="text-break">
+Class ScanRecord  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Bluetooth.html">Bluetooth</a>.<a class="xref" href="Android.Bluetooth.Le.html">Le</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ScanRecord : JVMBridgeBase&lt;ScanRecord&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Bluetooth.Le.ScanRecord.html">ScanRecord</a>&gt;</div>
+      <div><span class="xref">ScanRecord</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ScanRecord&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ScanRecord&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ScanRecord&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ScanRecord&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ScanRecord&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ScanRecord&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ScanRecord&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ScanRecord&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;ScanRecord&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ScanRecord&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ScanRecord&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ScanRecord&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ScanRecord&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord__ctor_" data-uid="Android.Bluetooth.Le.ScanRecord.#ctor*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord__ctor" data-uid="Android.Bluetooth.Le.ScanRecord.#ctor">
+  ScanRecord()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/AllPackageClasses.cs/#L749"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScanRecord()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord__ctor_" data-uid="Android.Bluetooth.Le.ScanRecord.#ctor*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord__ctor_System_Object___" data-uid="Android.Bluetooth.Le.ScanRecord.#ctor(System.Object[])">
+  ScanRecord(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/AllPackageClasses.cs/#L753"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScanRecord(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_BridgeClassName_" data-uid="Android.Bluetooth.Le.ScanRecord.BridgeClassName*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_BridgeClassName" data-uid="Android.Bluetooth.Le.ScanRecord.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/AllPackageClasses.cs/#L760"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_3D_INFORMATION_DATA_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_3D_INFORMATION_DATA*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_3D_INFORMATION_DATA" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_3D_INFORMATION_DATA">
+  DATA_TYPE_3D_INFORMATION_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_3D_INFORMATION_DATA">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_3D_INFORMATION_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_3D_INFORMATION_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_ADVERTISING_INTERVAL_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_ADVERTISING_INTERVAL*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_ADVERTISING_INTERVAL" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_ADVERTISING_INTERVAL">
+  DATA_TYPE_ADVERTISING_INTERVAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_ADVERTISING_INTERVAL">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_ADVERTISING_INTERVAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_ADVERTISING_INTERVAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_ADVERTISING_INTERVAL_LONG_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_ADVERTISING_INTERVAL_LONG*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_ADVERTISING_INTERVAL_LONG" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_ADVERTISING_INTERVAL_LONG">
+  DATA_TYPE_ADVERTISING_INTERVAL_LONG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_ADVERTISING_INTERVAL_LONG">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_ADVERTISING_INTERVAL_LONG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_ADVERTISING_INTERVAL_LONG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_APPEARANCE_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_APPEARANCE*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_APPEARANCE" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_APPEARANCE">
+  DATA_TYPE_APPEARANCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_APPEARANCE">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_APPEARANCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_APPEARANCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_BIG_INFO_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_BIG_INFO*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_BIG_INFO" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_BIG_INFO">
+  DATA_TYPE_BIG_INFO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_BIG_INFO">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_BIG_INFO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_BIG_INFO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_BROADCAST_CODE_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_BROADCAST_CODE*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_BROADCAST_CODE" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_BROADCAST_CODE">
+  DATA_TYPE_BROADCAST_CODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_BROADCAST_CODE">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_BROADCAST_CODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_BROADCAST_CODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_CHANNEL_MAP_UPDATE_INDICATION_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_CHANNEL_MAP_UPDATE_INDICATION*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_CHANNEL_MAP_UPDATE_INDICATION" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_CHANNEL_MAP_UPDATE_INDICATION">
+  DATA_TYPE_CHANNEL_MAP_UPDATE_INDICATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_CHANNEL_MAP_UPDATE_INDICATION">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_CHANNEL_MAP_UPDATE_INDICATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_CHANNEL_MAP_UPDATE_INDICATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_CLASS_OF_DEVICE_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_CLASS_OF_DEVICE*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_CLASS_OF_DEVICE" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_CLASS_OF_DEVICE">
+  DATA_TYPE_CLASS_OF_DEVICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_CLASS_OF_DEVICE">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_CLASS_OF_DEVICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_CLASS_OF_DEVICE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_DEVICE_ID_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_DEVICE_ID*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_DEVICE_ID" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_DEVICE_ID">
+  DATA_TYPE_DEVICE_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_DEVICE_ID">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_DEVICE_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_DEVICE_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_FLAGS_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_FLAGS*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_FLAGS" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_FLAGS">
+  DATA_TYPE_FLAGS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_FLAGS">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_FLAGS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_FLAGS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_INDOOR_POSITIONING_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_INDOOR_POSITIONING*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_INDOOR_POSITIONING" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_INDOOR_POSITIONING">
+  DATA_TYPE_INDOOR_POSITIONING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_INDOOR_POSITIONING">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_INDOOR_POSITIONING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_INDOOR_POSITIONING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_LE_BLUETOOTH_DEVICE_ADDRESS_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_LE_BLUETOOTH_DEVICE_ADDRESS*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_LE_BLUETOOTH_DEVICE_ADDRESS" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_LE_BLUETOOTH_DEVICE_ADDRESS">
+  DATA_TYPE_LE_BLUETOOTH_DEVICE_ADDRESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_LE_BLUETOOTH_DEVICE_ADDRESS">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_LE_BLUETOOTH_DEVICE_ADDRESS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_LE_BLUETOOTH_DEVICE_ADDRESS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_LE_ROLE_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_LE_ROLE*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_LE_ROLE" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_LE_ROLE">
+  DATA_TYPE_LE_ROLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_LE_ROLE">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_LE_ROLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_LE_ROLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_LE_SECURE_CONNECTIONS_CONFIRMATION_VALUE_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_LE_SECURE_CONNECTIONS_CONFIRMATION_VALUE*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_LE_SECURE_CONNECTIONS_CONFIRMATION_VALUE" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_LE_SECURE_CONNECTIONS_CONFIRMATION_VALUE">
+  DATA_TYPE_LE_SECURE_CONNECTIONS_CONFIRMATION_VALUE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_LE_SECURE_CONNECTIONS_CONFIRMATION_VALUE">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_LE_SECURE_CONNECTIONS_CONFIRMATION_VALUE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_LE_SECURE_CONNECTIONS_CONFIRMATION_VALUE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_LE_SECURE_CONNECTIONS_RANDOM_VALUE_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_LE_SECURE_CONNECTIONS_RANDOM_VALUE*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_LE_SECURE_CONNECTIONS_RANDOM_VALUE" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_LE_SECURE_CONNECTIONS_RANDOM_VALUE">
+  DATA_TYPE_LE_SECURE_CONNECTIONS_RANDOM_VALUE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_LE_SECURE_CONNECTIONS_RANDOM_VALUE">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_LE_SECURE_CONNECTIONS_RANDOM_VALUE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_LE_SECURE_CONNECTIONS_RANDOM_VALUE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_LE_SUPPORTED_FEATURES_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_LE_SUPPORTED_FEATURES*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_LE_SUPPORTED_FEATURES" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_LE_SUPPORTED_FEATURES">
+  DATA_TYPE_LE_SUPPORTED_FEATURES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_LE_SUPPORTED_FEATURES">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_LE_SUPPORTED_FEATURES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_LE_SUPPORTED_FEATURES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_LOCAL_NAME_COMPLETE_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_LOCAL_NAME_COMPLETE*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_LOCAL_NAME_COMPLETE" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_LOCAL_NAME_COMPLETE">
+  DATA_TYPE_LOCAL_NAME_COMPLETE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_LOCAL_NAME_COMPLETE">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_LOCAL_NAME_COMPLETE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_LOCAL_NAME_COMPLETE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_LOCAL_NAME_SHORT_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_LOCAL_NAME_SHORT*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_LOCAL_NAME_SHORT" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_LOCAL_NAME_SHORT">
+  DATA_TYPE_LOCAL_NAME_SHORT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_LOCAL_NAME_SHORT">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_LOCAL_NAME_SHORT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_LOCAL_NAME_SHORT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_MANUFACTURER_SPECIFIC_DATA_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_MANUFACTURER_SPECIFIC_DATA*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_MANUFACTURER_SPECIFIC_DATA" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_MANUFACTURER_SPECIFIC_DATA">
+  DATA_TYPE_MANUFACTURER_SPECIFIC_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_MANUFACTURER_SPECIFIC_DATA">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_MANUFACTURER_SPECIFIC_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_MANUFACTURER_SPECIFIC_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_MESH_BEACON_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_MESH_BEACON*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_MESH_BEACON" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_MESH_BEACON">
+  DATA_TYPE_MESH_BEACON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_MESH_BEACON">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_MESH_BEACON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_MESH_BEACON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_MESH_MESSAGE_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_MESH_MESSAGE*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_MESH_MESSAGE" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_MESH_MESSAGE">
+  DATA_TYPE_MESH_MESSAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_MESH_MESSAGE">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_MESH_MESSAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_MESH_MESSAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_NONE_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_NONE*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_NONE" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_NONE">
+  DATA_TYPE_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_NONE">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_PB_ADV_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_PB_ADV*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_PB_ADV" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_PB_ADV">
+  DATA_TYPE_PB_ADV
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_PB_ADV">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_PB_ADV</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_PB_ADV { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_PUBLIC_TARGET_ADDRESS_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_PUBLIC_TARGET_ADDRESS*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_PUBLIC_TARGET_ADDRESS" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_PUBLIC_TARGET_ADDRESS">
+  DATA_TYPE_PUBLIC_TARGET_ADDRESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_PUBLIC_TARGET_ADDRESS">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_PUBLIC_TARGET_ADDRESS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_PUBLIC_TARGET_ADDRESS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_RANDOM_TARGET_ADDRESS_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_RANDOM_TARGET_ADDRESS*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_RANDOM_TARGET_ADDRESS" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_RANDOM_TARGET_ADDRESS">
+  DATA_TYPE_RANDOM_TARGET_ADDRESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_RANDOM_TARGET_ADDRESS">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_RANDOM_TARGET_ADDRESS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_RANDOM_TARGET_ADDRESS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_RESOLVABLE_SET_IDENTIFIER_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_RESOLVABLE_SET_IDENTIFIER*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_RESOLVABLE_SET_IDENTIFIER" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_RESOLVABLE_SET_IDENTIFIER">
+  DATA_TYPE_RESOLVABLE_SET_IDENTIFIER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_RESOLVABLE_SET_IDENTIFIER">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_RESOLVABLE_SET_IDENTIFIER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_RESOLVABLE_SET_IDENTIFIER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SECURITY_MANAGER_OUT_OF_BAND_FLAGS_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SECURITY_MANAGER_OUT_OF_BAND_FLAGS*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SECURITY_MANAGER_OUT_OF_BAND_FLAGS" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SECURITY_MANAGER_OUT_OF_BAND_FLAGS">
+  DATA_TYPE_SECURITY_MANAGER_OUT_OF_BAND_FLAGS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SECURITY_MANAGER_OUT_OF_BAND_FLAGS">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SECURITY_MANAGER_OUT_OF_BAND_FLAGS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SECURITY_MANAGER_OUT_OF_BAND_FLAGS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_DATA_128_BIT_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_DATA_128_BIT*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_DATA_128_BIT" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_DATA_128_BIT">
+  DATA_TYPE_SERVICE_DATA_128_BIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_DATA_128_BIT">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_DATA_128_BIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SERVICE_DATA_128_BIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_DATA_16_BIT_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_DATA_16_BIT*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_DATA_16_BIT" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_DATA_16_BIT">
+  DATA_TYPE_SERVICE_DATA_16_BIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_DATA_16_BIT">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_DATA_16_BIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SERVICE_DATA_16_BIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_DATA_32_BIT_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_DATA_32_BIT*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_DATA_32_BIT" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_DATA_32_BIT">
+  DATA_TYPE_SERVICE_DATA_32_BIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_DATA_32_BIT">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_DATA_32_BIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SERVICE_DATA_32_BIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_SOLICITATION_UUIDS_128_BIT_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_SOLICITATION_UUIDS_128_BIT*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_SOLICITATION_UUIDS_128_BIT" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_SOLICITATION_UUIDS_128_BIT">
+  DATA_TYPE_SERVICE_SOLICITATION_UUIDS_128_BIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_SOLICITATION_UUIDS_128_BIT">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_SOLICITATION_UUIDS_128_BIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SERVICE_SOLICITATION_UUIDS_128_BIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_SOLICITATION_UUIDS_16_BIT_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_SOLICITATION_UUIDS_16_BIT*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_SOLICITATION_UUIDS_16_BIT" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_SOLICITATION_UUIDS_16_BIT">
+  DATA_TYPE_SERVICE_SOLICITATION_UUIDS_16_BIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_SOLICITATION_UUIDS_16_BIT">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_SOLICITATION_UUIDS_16_BIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SERVICE_SOLICITATION_UUIDS_16_BIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_SOLICITATION_UUIDS_32_BIT_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_SOLICITATION_UUIDS_32_BIT*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_SOLICITATION_UUIDS_32_BIT" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_SOLICITATION_UUIDS_32_BIT">
+  DATA_TYPE_SERVICE_SOLICITATION_UUIDS_32_BIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_SOLICITATION_UUIDS_32_BIT">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_SOLICITATION_UUIDS_32_BIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SERVICE_SOLICITATION_UUIDS_32_BIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_UUIDS_128_BIT_COMPLETE_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_UUIDS_128_BIT_COMPLETE*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_UUIDS_128_BIT_COMPLETE" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_UUIDS_128_BIT_COMPLETE">
+  DATA_TYPE_SERVICE_UUIDS_128_BIT_COMPLETE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_UUIDS_128_BIT_COMPLETE">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_UUIDS_128_BIT_COMPLETE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SERVICE_UUIDS_128_BIT_COMPLETE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_UUIDS_128_BIT_PARTIAL_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_UUIDS_128_BIT_PARTIAL*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_UUIDS_128_BIT_PARTIAL" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_UUIDS_128_BIT_PARTIAL">
+  DATA_TYPE_SERVICE_UUIDS_128_BIT_PARTIAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_UUIDS_128_BIT_PARTIAL">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_UUIDS_128_BIT_PARTIAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SERVICE_UUIDS_128_BIT_PARTIAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_UUIDS_16_BIT_COMPLETE_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_UUIDS_16_BIT_COMPLETE*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_UUIDS_16_BIT_COMPLETE" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_UUIDS_16_BIT_COMPLETE">
+  DATA_TYPE_SERVICE_UUIDS_16_BIT_COMPLETE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_UUIDS_16_BIT_COMPLETE">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_UUIDS_16_BIT_COMPLETE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SERVICE_UUIDS_16_BIT_COMPLETE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_UUIDS_16_BIT_PARTIAL_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_UUIDS_16_BIT_PARTIAL*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_UUIDS_16_BIT_PARTIAL" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_UUIDS_16_BIT_PARTIAL">
+  DATA_TYPE_SERVICE_UUIDS_16_BIT_PARTIAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_UUIDS_16_BIT_PARTIAL">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_UUIDS_16_BIT_PARTIAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SERVICE_UUIDS_16_BIT_PARTIAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_UUIDS_32_BIT_COMPLETE_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_UUIDS_32_BIT_COMPLETE*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_UUIDS_32_BIT_COMPLETE" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_UUIDS_32_BIT_COMPLETE">
+  DATA_TYPE_SERVICE_UUIDS_32_BIT_COMPLETE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_UUIDS_32_BIT_COMPLETE">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_UUIDS_32_BIT_COMPLETE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SERVICE_UUIDS_32_BIT_COMPLETE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_UUIDS_32_BIT_PARTIAL_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_UUIDS_32_BIT_PARTIAL*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SERVICE_UUIDS_32_BIT_PARTIAL" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SERVICE_UUIDS_32_BIT_PARTIAL">
+  DATA_TYPE_SERVICE_UUIDS_32_BIT_PARTIAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_UUIDS_32_BIT_PARTIAL">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SERVICE_UUIDS_32_BIT_PARTIAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SERVICE_UUIDS_32_BIT_PARTIAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SIMPLE_PAIRING_HASH_C_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SIMPLE_PAIRING_HASH_C*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SIMPLE_PAIRING_HASH_C" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SIMPLE_PAIRING_HASH_C">
+  DATA_TYPE_SIMPLE_PAIRING_HASH_C
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SIMPLE_PAIRING_HASH_C">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SIMPLE_PAIRING_HASH_C</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SIMPLE_PAIRING_HASH_C { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SIMPLE_PAIRING_HASH_C_256_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SIMPLE_PAIRING_HASH_C_256*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SIMPLE_PAIRING_HASH_C_256" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SIMPLE_PAIRING_HASH_C_256">
+  DATA_TYPE_SIMPLE_PAIRING_HASH_C_256
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SIMPLE_PAIRING_HASH_C_256">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SIMPLE_PAIRING_HASH_C_256</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SIMPLE_PAIRING_HASH_C_256 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R">
+  DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R_256_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R_256*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R_256" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R_256">
+  DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R_256
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R_256">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R_256</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SIMPLE_PAIRING_RANDOMIZER_R_256 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SLAVE_CONNECTION_INTERVAL_RANGE_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SLAVE_CONNECTION_INTERVAL_RANGE*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_SLAVE_CONNECTION_INTERVAL_RANGE" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_SLAVE_CONNECTION_INTERVAL_RANGE">
+  DATA_TYPE_SLAVE_CONNECTION_INTERVAL_RANGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SLAVE_CONNECTION_INTERVAL_RANGE">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_SLAVE_CONNECTION_INTERVAL_RANGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_SLAVE_CONNECTION_INTERVAL_RANGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_TRANSPORT_DISCOVERY_DATA_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_TRANSPORT_DISCOVERY_DATA*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_TRANSPORT_DISCOVERY_DATA" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_TRANSPORT_DISCOVERY_DATA">
+  DATA_TYPE_TRANSPORT_DISCOVERY_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_TRANSPORT_DISCOVERY_DATA">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_TRANSPORT_DISCOVERY_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_TRANSPORT_DISCOVERY_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_TX_POWER_LEVEL_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_TX_POWER_LEVEL*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_TX_POWER_LEVEL" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_TX_POWER_LEVEL">
+  DATA_TYPE_TX_POWER_LEVEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_TX_POWER_LEVEL">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_TX_POWER_LEVEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_TX_POWER_LEVEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_URI_" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_URI*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_DATA_TYPE_URI" data-uid="Android.Bluetooth.Le.ScanRecord.DATA_TYPE_URI">
+  DATA_TYPE_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_URI">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#DATA_TYPE_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DATA_TYPE_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_IsBridgeAbstract_" data-uid="Android.Bluetooth.Le.ScanRecord.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_IsBridgeAbstract" data-uid="Android.Bluetooth.Le.ScanRecord.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/AllPackageClasses.cs/#L764"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_IsBridgeCloseable_" data-uid="Android.Bluetooth.Le.ScanRecord.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_IsBridgeCloseable" data-uid="Android.Bluetooth.Le.ScanRecord.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/AllPackageClasses.cs/#L768"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_IsBridgeInterface_" data-uid="Android.Bluetooth.Le.ScanRecord.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_IsBridgeInterface" data-uid="Android.Bluetooth.Le.ScanRecord.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/AllPackageClasses.cs/#L772"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_IsBridgeStatic_" data-uid="Android.Bluetooth.Le.ScanRecord.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_IsBridgeStatic" data-uid="Android.Bluetooth.Le.ScanRecord.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/AllPackageClasses.cs/#L776"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_GetAdvertiseFlags_" data-uid="Android.Bluetooth.Le.ScanRecord.GetAdvertiseFlags*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_GetAdvertiseFlags" data-uid="Android.Bluetooth.Le.ScanRecord.GetAdvertiseFlags">
+  GetAdvertiseFlags()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getAdvertiseFlags()">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getAdvertiseFlags()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAdvertiseFlags()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_GetAdvertisingDataMap_" data-uid="Android.Bluetooth.Le.ScanRecord.GetAdvertisingDataMap*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_GetAdvertisingDataMap" data-uid="Android.Bluetooth.Le.ScanRecord.GetAdvertisingDataMap">
+  GetAdvertisingDataMap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L416"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getAdvertisingDataMap()">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getAdvertisingDataMap()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map&lt;Integer, byte[]&gt; GetAdvertisingDataMap()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="Java.Lang.Integer.html">Integer</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_GetBytes_" data-uid="Android.Bluetooth.Le.ScanRecord.GetBytes*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_GetBytes" data-uid="Android.Bluetooth.Le.ScanRecord.GetBytes">
+  GetBytes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getBytes()">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getBytes()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetBytes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_GetDeviceName_" data-uid="Android.Bluetooth.Le.ScanRecord.GetDeviceName*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_GetDeviceName" data-uid="Android.Bluetooth.Le.ScanRecord.GetDeviceName">
+  GetDeviceName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getDeviceName()">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getDeviceName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetDeviceName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_GetManufacturerSpecificData_" data-uid="Android.Bluetooth.Le.ScanRecord.GetManufacturerSpecificData*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_GetManufacturerSpecificData" data-uid="Android.Bluetooth.Le.ScanRecord.GetManufacturerSpecificData">
+  GetManufacturerSpecificData()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getManufacturerSpecificData()">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getManufacturerSpecificData()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SparseArray&lt;byte[]&gt; GetManufacturerSpecificData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Util.SparseArray-1.html">SparseArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
+    <dd><p><a class="xref" href="Android.Util.SparseArray.html">SparseArray</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_GetManufacturerSpecificData_" data-uid="Android.Bluetooth.Le.ScanRecord.GetManufacturerSpecificData*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_GetManufacturerSpecificData_System_Int32_" data-uid="Android.Bluetooth.Le.ScanRecord.GetManufacturerSpecificData(System.Int32)">
+  GetManufacturerSpecificData(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getManufacturerSpecificData(int)">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getManufacturerSpecificData(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetManufacturerSpecificData(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_GetServiceData_" data-uid="Android.Bluetooth.Le.ScanRecord.GetServiceData*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_GetServiceData" data-uid="Android.Bluetooth.Le.ScanRecord.GetServiceData">
+  GetServiceData()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L408"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getServiceData()">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getServiceData()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map&lt;ParcelUuid, byte[]&gt; GetServiceData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="Android.Os.ParcelUuid.html">ParcelUuid</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_GetServiceData_" data-uid="Android.Bluetooth.Le.ScanRecord.GetServiceData*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_GetServiceData_Android_Os_ParcelUuid_" data-uid="Android.Bluetooth.Le.ScanRecord.GetServiceData(Android.Os.ParcelUuid)">
+  GetServiceData(ParcelUuid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getServiceData(android.os.ParcelUuid)">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getServiceData(android.os.ParcelUuid)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetServiceData(ParcelUuid arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.ParcelUuid.html">ParcelUuid</a></dt>
+    <dd><p><a class="xref" href="Android.Os.ParcelUuid.html">ParcelUuid</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_GetServiceSolicitationUuids_" data-uid="Android.Bluetooth.Le.ScanRecord.GetServiceSolicitationUuids*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_GetServiceSolicitationUuids" data-uid="Android.Bluetooth.Le.ScanRecord.GetServiceSolicitationUuids">
+  GetServiceSolicitationUuids()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getServiceSolicitationUuids()">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getServiceSolicitationUuids()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ParcelUuid&gt; GetServiceSolicitationUuids()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Os.ParcelUuid.html">ParcelUuid</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_GetServiceUuids_" data-uid="Android.Bluetooth.Le.ScanRecord.GetServiceUuids*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_GetServiceUuids" data-uid="Android.Bluetooth.Le.ScanRecord.GetServiceUuids">
+  GetServiceUuids()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getServiceUuids()">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getServiceUuids()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ParcelUuid&gt; GetServiceUuids()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Os.ParcelUuid.html">ParcelUuid</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_Le_ScanRecord_GetTxPowerLevel_" data-uid="Android.Bluetooth.Le.ScanRecord.GetTxPowerLevel*"></a>
+
+  <h3 id="Android_Bluetooth_Le_ScanRecord_GetTxPowerLevel" data-uid="Android.Bluetooth.Le.ScanRecord.GetTxPowerLevel">
+  GetTxPowerLevel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getTxPowerLevel()">https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getTxPowerLevel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTxPowerLevel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/Le/ScanRecord.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

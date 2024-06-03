@@ -1,0 +1,2937 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class AudioRecord | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AudioRecord | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/media/AudioRecord.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_AudioRecord.md&amp;value=---%0Auid%3A%20Android.Media.AudioRecord%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.AudioRecord">
+
+
+
+  <h1 id="Android_Media_AudioRecord" data-uid="Android.Media.AudioRecord" class="text-break">
+Class AudioRecord  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html">https://developer.android.com/reference/android/media/AudioRecord.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AudioRecord : JVMBridgeBase&lt;AudioRecord&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IAudioRouting, IMicrophoneDirection, IAudioRecordingMonitor</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Media.AudioRecord.html">AudioRecord</a>&gt;</div>
+      <div><span class="xref">AudioRecord</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Media.IAudioRouting.html">IAudioRouting</a></div>
+      <div><a class="xref" href="Android.Media.IMicrophoneDirection.html">IMicrophoneDirection</a></div>
+      <div><a class="xref" href="Android.Media.IAudioRecordingMonitor.html">IAudioRecordingMonitor</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioRecord&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioRecord&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioRecord&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioRecord&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioRecord&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioRecord&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioRecord&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioRecord&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;AudioRecord&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioRecord&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioRecord&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioRecord&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioRecord&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_AudioRecord__ctor_" data-uid="Android.Media.AudioRecord.#ctor*"></a>
+
+  <h3 id="Android_Media_AudioRecord__ctor" data-uid="Android.Media.AudioRecord.#ctor">
+  AudioRecord()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L1590"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioRecord()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord__ctor_" data-uid="Android.Media.AudioRecord.#ctor*"></a>
+
+  <h3 id="Android_Media_AudioRecord__ctor_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.Media.AudioRecord.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+  AudioRecord(int, int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#%3Cinit%3E(int,int,int,int,int)">https://developer.android.com/reference/android/media/AudioRecord.html#%3Cinit%3E(int,int,int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioRecord(int arg0, int arg1, int arg2, int arg3, int arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_AudioRecord__ctor_" data-uid="Android.Media.AudioRecord.#ctor*"></a>
+
+  <h3 id="Android_Media_AudioRecord__ctor_System_Object___" data-uid="Android.Media.AudioRecord.#ctor(System.Object[])">
+  AudioRecord(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L1594"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioRecord(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_AudioRecord_BridgeClassName_" data-uid="Android.Media.AudioRecord.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_AudioRecord_BridgeClassName" data-uid="Android.Media.AudioRecord.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L1601"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_ERROR_" data-uid="Android.Media.AudioRecord.ERROR*"></a>
+
+  <h3 id="Android_Media_AudioRecord_ERROR" data-uid="Android.Media.AudioRecord.ERROR">
+  ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#ERROR">https://developer.android.com/reference/android/media/AudioRecord.html#ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_ERROR_BAD_VALUE_" data-uid="Android.Media.AudioRecord.ERROR_BAD_VALUE*"></a>
+
+  <h3 id="Android_Media_AudioRecord_ERROR_BAD_VALUE" data-uid="Android.Media.AudioRecord.ERROR_BAD_VALUE">
+  ERROR_BAD_VALUE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#ERROR_BAD_VALUE">https://developer.android.com/reference/android/media/AudioRecord.html#ERROR_BAD_VALUE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_BAD_VALUE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_ERROR_DEAD_OBJECT_" data-uid="Android.Media.AudioRecord.ERROR_DEAD_OBJECT*"></a>
+
+  <h3 id="Android_Media_AudioRecord_ERROR_DEAD_OBJECT" data-uid="Android.Media.AudioRecord.ERROR_DEAD_OBJECT">
+  ERROR_DEAD_OBJECT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#ERROR_DEAD_OBJECT">https://developer.android.com/reference/android/media/AudioRecord.html#ERROR_DEAD_OBJECT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_DEAD_OBJECT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_ERROR_INVALID_OPERATION_" data-uid="Android.Media.AudioRecord.ERROR_INVALID_OPERATION*"></a>
+
+  <h3 id="Android_Media_AudioRecord_ERROR_INVALID_OPERATION" data-uid="Android.Media.AudioRecord.ERROR_INVALID_OPERATION">
+  ERROR_INVALID_OPERATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#ERROR_INVALID_OPERATION">https://developer.android.com/reference/android/media/AudioRecord.html#ERROR_INVALID_OPERATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_INVALID_OPERATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_IsBridgeAbstract_" data-uid="Android.Media.AudioRecord.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_AudioRecord_IsBridgeAbstract" data-uid="Android.Media.AudioRecord.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L1605"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_IsBridgeCloseable_" data-uid="Android.Media.AudioRecord.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_AudioRecord_IsBridgeCloseable" data-uid="Android.Media.AudioRecord.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L1609"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_IsBridgeInterface_" data-uid="Android.Media.AudioRecord.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_AudioRecord_IsBridgeInterface" data-uid="Android.Media.AudioRecord.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L1613"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_IsBridgeStatic_" data-uid="Android.Media.AudioRecord.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_AudioRecord_IsBridgeStatic" data-uid="Android.Media.AudioRecord.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L1617"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_READ_BLOCKING_" data-uid="Android.Media.AudioRecord.READ_BLOCKING*"></a>
+
+  <h3 id="Android_Media_AudioRecord_READ_BLOCKING" data-uid="Android.Media.AudioRecord.READ_BLOCKING">
+  READ_BLOCKING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#READ_BLOCKING">https://developer.android.com/reference/android/media/AudioRecord.html#READ_BLOCKING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int READ_BLOCKING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_READ_NON_BLOCKING_" data-uid="Android.Media.AudioRecord.READ_NON_BLOCKING*"></a>
+
+  <h3 id="Android_Media_AudioRecord_READ_NON_BLOCKING" data-uid="Android.Media.AudioRecord.READ_NON_BLOCKING">
+  READ_NON_BLOCKING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#READ_NON_BLOCKING">https://developer.android.com/reference/android/media/AudioRecord.html#READ_NON_BLOCKING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int READ_NON_BLOCKING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_RECORDSTATE_RECORDING_" data-uid="Android.Media.AudioRecord.RECORDSTATE_RECORDING*"></a>
+
+  <h3 id="Android_Media_AudioRecord_RECORDSTATE_RECORDING" data-uid="Android.Media.AudioRecord.RECORDSTATE_RECORDING">
+  RECORDSTATE_RECORDING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#RECORDSTATE_RECORDING">https://developer.android.com/reference/android/media/AudioRecord.html#RECORDSTATE_RECORDING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RECORDSTATE_RECORDING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_RECORDSTATE_STOPPED_" data-uid="Android.Media.AudioRecord.RECORDSTATE_STOPPED*"></a>
+
+  <h3 id="Android_Media_AudioRecord_RECORDSTATE_STOPPED" data-uid="Android.Media.AudioRecord.RECORDSTATE_STOPPED">
+  RECORDSTATE_STOPPED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#RECORDSTATE_STOPPED">https://developer.android.com/reference/android/media/AudioRecord.html#RECORDSTATE_STOPPED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RECORDSTATE_STOPPED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_STATE_INITIALIZED_" data-uid="Android.Media.AudioRecord.STATE_INITIALIZED*"></a>
+
+  <h3 id="Android_Media_AudioRecord_STATE_INITIALIZED" data-uid="Android.Media.AudioRecord.STATE_INITIALIZED">
+  STATE_INITIALIZED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#STATE_INITIALIZED">https://developer.android.com/reference/android/media/AudioRecord.html#STATE_INITIALIZED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATE_INITIALIZED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_STATE_UNINITIALIZED_" data-uid="Android.Media.AudioRecord.STATE_UNINITIALIZED*"></a>
+
+  <h3 id="Android_Media_AudioRecord_STATE_UNINITIALIZED" data-uid="Android.Media.AudioRecord.STATE_UNINITIALIZED">
+  STATE_UNINITIALIZED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#STATE_UNINITIALIZED">https://developer.android.com/reference/android/media/AudioRecord.html#STATE_UNINITIALIZED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATE_UNINITIALIZED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_SUCCESS_" data-uid="Android.Media.AudioRecord.SUCCESS*"></a>
+
+  <h3 id="Android_Media_AudioRecord_SUCCESS" data-uid="Android.Media.AudioRecord.SUCCESS">
+  SUCCESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#SUCCESS">https://developer.android.com/reference/android/media/AudioRecord.html#SUCCESS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SUCCESS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Media_AudioRecord_AddOnRoutingChangedListener_" data-uid="Android.Media.AudioRecord.AddOnRoutingChangedListener*"></a>
+
+  <h3 id="Android_Media_AudioRecord_AddOnRoutingChangedListener_Android_Media_AudioRecord_OnRoutingChangedListener_Android_Os_Handler_" data-uid="Android.Media.AudioRecord.AddOnRoutingChangedListener(Android.Media.AudioRecord.OnRoutingChangedListener,Android.Os.Handler)">
+  AddOnRoutingChangedListener(OnRoutingChangedListener, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#addOnRoutingChangedListener(android.media.AudioRecord.OnRoutingChangedListener,android.os.Handler)">https://developer.android.com/reference/android/media/AudioRecord.html#addOnRoutingChangedListener(android.media.AudioRecord.OnRoutingChangedListener,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void AddOnRoutingChangedListener(AudioRecord.OnRoutingChangedListener arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.AudioRecord.html">AudioRecord</a>.<a class="xref" href="Android.Media.AudioRecord.OnRoutingChangedListener.html">OnRoutingChangedListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioRecord.OnRoutingChangedListener.html">AudioRecord.OnRoutingChangedListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_AddOnRoutingChangedListener_" data-uid="Android.Media.AudioRecord.AddOnRoutingChangedListener*"></a>
+
+  <h3 id="Android_Media_AudioRecord_AddOnRoutingChangedListener_Android_Media_AudioRouting_OnRoutingChangedListener_Android_Os_Handler_" data-uid="Android.Media.AudioRecord.AddOnRoutingChangedListener(Android.Media.AudioRouting.OnRoutingChangedListener,Android.Os.Handler)">
+  AddOnRoutingChangedListener(OnRoutingChangedListener, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L452"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#addOnRoutingChangedListener(android.media.AudioRouting.OnRoutingChangedListener,android.os.Handler)">https://developer.android.com/reference/android/media/AudioRecord.html#addOnRoutingChangedListener(android.media.AudioRouting.OnRoutingChangedListener,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOnRoutingChangedListener(AudioRouting.OnRoutingChangedListener arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.AudioRouting.html">AudioRouting</a>.<a class="xref" href="Android.Media.AudioRouting.OnRoutingChangedListener.html">OnRoutingChangedListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioRouting.OnRoutingChangedListener.html">AudioRouting.OnRoutingChangedListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetActiveMicrophones_" data-uid="Android.Media.AudioRecord.GetActiveMicrophones*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetActiveMicrophones" data-uid="Android.Media.AudioRecord.GetActiveMicrophones">
+  GetActiveMicrophones()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getActiveMicrophones()">https://developer.android.com/reference/android/media/AudioRecord.html#getActiveMicrophones()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MicrophoneInfo&gt; GetActiveMicrophones()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Media.MicrophoneInfo.html">MicrophoneInfo</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_AudioRecord_GetActiveRecordingConfiguration_" data-uid="Android.Media.AudioRecord.GetActiveRecordingConfiguration*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetActiveRecordingConfiguration" data-uid="Android.Media.AudioRecord.GetActiveRecordingConfiguration">
+  GetActiveRecordingConfiguration()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getActiveRecordingConfiguration()">https://developer.android.com/reference/android/media/AudioRecord.html#getActiveRecordingConfiguration()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioRecordingConfiguration GetActiveRecordingConfiguration()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.AudioRecordingConfiguration.html">AudioRecordingConfiguration</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioRecordingConfiguration.html">AudioRecordingConfiguration</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetAudioFormat_" data-uid="Android.Media.AudioRecord.GetAudioFormat*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetAudioFormat" data-uid="Android.Media.AudioRecord.GetAudioFormat">
+  GetAudioFormat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getAudioFormat()">https://developer.android.com/reference/android/media/AudioRecord.html#getAudioFormat()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAudioFormat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetAudioSessionId_" data-uid="Android.Media.AudioRecord.GetAudioSessionId*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetAudioSessionId" data-uid="Android.Media.AudioRecord.GetAudioSessionId">
+  GetAudioSessionId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getAudioSessionId()">https://developer.android.com/reference/android/media/AudioRecord.html#getAudioSessionId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAudioSessionId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetAudioSource_" data-uid="Android.Media.AudioRecord.GetAudioSource*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetAudioSource" data-uid="Android.Media.AudioRecord.GetAudioSource">
+  GetAudioSource()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getAudioSource()">https://developer.android.com/reference/android/media/AudioRecord.html#getAudioSource()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAudioSource()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetBufferSizeInFrames_" data-uid="Android.Media.AudioRecord.GetBufferSizeInFrames*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetBufferSizeInFrames" data-uid="Android.Media.AudioRecord.GetBufferSizeInFrames">
+  GetBufferSizeInFrames()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getBufferSizeInFrames()">https://developer.android.com/reference/android/media/AudioRecord.html#getBufferSizeInFrames()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetBufferSizeInFrames()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetChannelConfiguration_" data-uid="Android.Media.AudioRecord.GetChannelConfiguration*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetChannelConfiguration" data-uid="Android.Media.AudioRecord.GetChannelConfiguration">
+  GetChannelConfiguration()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getChannelConfiguration()">https://developer.android.com/reference/android/media/AudioRecord.html#getChannelConfiguration()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetChannelConfiguration()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetChannelCount_" data-uid="Android.Media.AudioRecord.GetChannelCount*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetChannelCount" data-uid="Android.Media.AudioRecord.GetChannelCount">
+  GetChannelCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getChannelCount()">https://developer.android.com/reference/android/media/AudioRecord.html#getChannelCount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetChannelCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetFormat_" data-uid="Android.Media.AudioRecord.GetFormat*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetFormat" data-uid="Android.Media.AudioRecord.GetFormat">
+  GetFormat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getFormat()">https://developer.android.com/reference/android/media/AudioRecord.html#getFormat()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioFormat GetFormat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.AudioFormat.html">AudioFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioFormat.html">AudioFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetLogSessionId_" data-uid="Android.Media.AudioRecord.GetLogSessionId*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetLogSessionId" data-uid="Android.Media.AudioRecord.GetLogSessionId">
+  GetLogSessionId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getLogSessionId()">https://developer.android.com/reference/android/media/AudioRecord.html#getLogSessionId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LogSessionId GetLogSessionId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Metrics.LogSessionId.html">LogSessionId</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Metrics.LogSessionId.html">LogSessionId</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetMetrics_" data-uid="Android.Media.AudioRecord.GetMetrics*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetMetrics" data-uid="Android.Media.AudioRecord.GetMetrics">
+  GetMetrics()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getMetrics()">https://developer.android.com/reference/android/media/AudioRecord.html#getMetrics()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PersistableBundle GetMetrics()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetMinBufferSize_" data-uid="Android.Media.AudioRecord.GetMinBufferSize*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetMinBufferSize_System_Int32_System_Int32_System_Int32_" data-uid="Android.Media.AudioRecord.GetMinBufferSize(System.Int32,System.Int32,System.Int32)">
+  GetMinBufferSize(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getMinBufferSize(int,int,int)">https://developer.android.com/reference/android/media/AudioRecord.html#getMinBufferSize(int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetMinBufferSize(int arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetNotificationMarkerPosition_" data-uid="Android.Media.AudioRecord.GetNotificationMarkerPosition*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetNotificationMarkerPosition" data-uid="Android.Media.AudioRecord.GetNotificationMarkerPosition">
+  GetNotificationMarkerPosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getNotificationMarkerPosition()">https://developer.android.com/reference/android/media/AudioRecord.html#getNotificationMarkerPosition()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNotificationMarkerPosition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetPositionNotificationPeriod_" data-uid="Android.Media.AudioRecord.GetPositionNotificationPeriod*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetPositionNotificationPeriod" data-uid="Android.Media.AudioRecord.GetPositionNotificationPeriod">
+  GetPositionNotificationPeriod()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getPositionNotificationPeriod()">https://developer.android.com/reference/android/media/AudioRecord.html#getPositionNotificationPeriod()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPositionNotificationPeriod()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetPreferredDevice_" data-uid="Android.Media.AudioRecord.GetPreferredDevice*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetPreferredDevice" data-uid="Android.Media.AudioRecord.GetPreferredDevice">
+  GetPreferredDevice()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getPreferredDevice()">https://developer.android.com/reference/android/media/AudioRecord.html#getPreferredDevice()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioDeviceInfo GetPreferredDevice()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.AudioDeviceInfo.html">AudioDeviceInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioDeviceInfo.html">AudioDeviceInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetRecordingState_" data-uid="Android.Media.AudioRecord.GetRecordingState*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetRecordingState" data-uid="Android.Media.AudioRecord.GetRecordingState">
+  GetRecordingState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getRecordingState()">https://developer.android.com/reference/android/media/AudioRecord.html#getRecordingState()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetRecordingState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetRoutedDevice_" data-uid="Android.Media.AudioRecord.GetRoutedDevice*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetRoutedDevice" data-uid="Android.Media.AudioRecord.GetRoutedDevice">
+  GetRoutedDevice()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getRoutedDevice()">https://developer.android.com/reference/android/media/AudioRecord.html#getRoutedDevice()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioDeviceInfo GetRoutedDevice()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.AudioDeviceInfo.html">AudioDeviceInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioDeviceInfo.html">AudioDeviceInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetSampleRate_" data-uid="Android.Media.AudioRecord.GetSampleRate*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetSampleRate" data-uid="Android.Media.AudioRecord.GetSampleRate">
+  GetSampleRate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getSampleRate()">https://developer.android.com/reference/android/media/AudioRecord.html#getSampleRate()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSampleRate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetState_" data-uid="Android.Media.AudioRecord.GetState*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetState" data-uid="Android.Media.AudioRecord.GetState">
+  GetState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getState()">https://developer.android.com/reference/android/media/AudioRecord.html#getState()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_GetTimestamp_" data-uid="Android.Media.AudioRecord.GetTimestamp*"></a>
+
+  <h3 id="Android_Media_AudioRecord_GetTimestamp_Android_Media_AudioTimestamp_System_Int32_" data-uid="Android.Media.AudioRecord.GetTimestamp(Android.Media.AudioTimestamp,System.Int32)">
+  GetTimestamp(AudioTimestamp, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#getTimestamp(android.media.AudioTimestamp,int)">https://developer.android.com/reference/android/media/AudioRecord.html#getTimestamp(android.media.AudioTimestamp,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTimestamp(AudioTimestamp arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.AudioTimestamp.html">AudioTimestamp</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioTimestamp.html">AudioTimestamp</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_IsPrivacySensitive_" data-uid="Android.Media.AudioRecord.IsPrivacySensitive*"></a>
+
+  <h3 id="Android_Media_AudioRecord_IsPrivacySensitive" data-uid="Android.Media.AudioRecord.IsPrivacySensitive">
+  IsPrivacySensitive()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#isPrivacySensitive()">https://developer.android.com/reference/android/media/AudioRecord.html#isPrivacySensitive()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPrivacySensitive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_Read_" data-uid="Android.Media.AudioRecord.Read*"></a>
+
+  <h3 id="Android_Media_AudioRecord_Read_Java_Nio_ByteBuffer_System_Int32_" data-uid="Android.Media.AudioRecord.Read(Java.Nio.ByteBuffer,System.Int32)">
+  Read(ByteBuffer, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#read(java.nio.ByteBuffer,int)">https://developer.android.com/reference/android/media/AudioRecord.html#read(java.nio.ByteBuffer,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Read(ByteBuffer arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_Read_" data-uid="Android.Media.AudioRecord.Read*"></a>
+
+  <h3 id="Android_Media_AudioRecord_Read_Java_Nio_ByteBuffer_System_Int32_System_Int32_" data-uid="Android.Media.AudioRecord.Read(Java.Nio.ByteBuffer,System.Int32,System.Int32)">
+  Read(ByteBuffer, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#read(java.nio.ByteBuffer,int,int)">https://developer.android.com/reference/android/media/AudioRecord.html#read(java.nio.ByteBuffer,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Read(ByteBuffer arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_Read_" data-uid="Android.Media.AudioRecord.Read*"></a>
+
+  <h3 id="Android_Media_AudioRecord_Read_System_Byte___System_Int32_System_Int32_" data-uid="Android.Media.AudioRecord.Read(System.Byte[],System.Int32,System.Int32)">
+  Read(byte[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#read(byte[],int,int)">https://developer.android.com/reference/android/media/AudioRecord.html#read(byte[],int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Read(byte[] arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_Read_" data-uid="Android.Media.AudioRecord.Read*"></a>
+
+  <h3 id="Android_Media_AudioRecord_Read_System_Byte___System_Int32_System_Int32_System_Int32_" data-uid="Android.Media.AudioRecord.Read(System.Byte[],System.Int32,System.Int32,System.Int32)">
+  Read(byte[], int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#read(byte[],int,int,int)">https://developer.android.com/reference/android/media/AudioRecord.html#read(byte[],int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Read(byte[] arg0, int arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_Read_" data-uid="Android.Media.AudioRecord.Read*"></a>
+
+  <h3 id="Android_Media_AudioRecord_Read_System_Int16___System_Int32_System_Int32_" data-uid="Android.Media.AudioRecord.Read(System.Int16[],System.Int32,System.Int32)">
+  Read(short[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#read(short[],int,int)">https://developer.android.com/reference/android/media/AudioRecord.html#read(short[],int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Read(short[] arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_Read_" data-uid="Android.Media.AudioRecord.Read*"></a>
+
+  <h3 id="Android_Media_AudioRecord_Read_System_Int16___System_Int32_System_Int32_System_Int32_" data-uid="Android.Media.AudioRecord.Read(System.Int16[],System.Int32,System.Int32,System.Int32)">
+  Read(short[], int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#read(short[],int,int,int)">https://developer.android.com/reference/android/media/AudioRecord.html#read(short[],int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Read(short[] arg0, int arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_Read_" data-uid="Android.Media.AudioRecord.Read*"></a>
+
+  <h3 id="Android_Media_AudioRecord_Read_System_Single___System_Int32_System_Int32_System_Int32_" data-uid="Android.Media.AudioRecord.Read(System.Single[],System.Int32,System.Int32,System.Int32)">
+  Read(float[], int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#read(float[],int,int,int)">https://developer.android.com/reference/android/media/AudioRecord.html#read(float[],int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Read(float[] arg0, int arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_RegisterAudioRecordingCallback_" data-uid="Android.Media.AudioRecord.RegisterAudioRecordingCallback*"></a>
+
+  <h3 id="Android_Media_AudioRecord_RegisterAudioRecordingCallback_Java_Util_Concurrent_Executor_Android_Media_AudioManager_AudioRecordingCallback_" data-uid="Android.Media.AudioRecord.RegisterAudioRecordingCallback(Java.Util.Concurrent.Executor,Android.Media.AudioManager.AudioRecordingCallback)">
+  RegisterAudioRecordingCallback(Executor, AudioRecordingCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#registerAudioRecordingCallback(java.util.concurrent.Executor,android.media.AudioManager.AudioRecordingCallback)">https://developer.android.com/reference/android/media/AudioRecord.html#registerAudioRecordingCallback(java.util.concurrent.Executor,android.media.AudioManager.AudioRecordingCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterAudioRecordingCallback(Executor arg0, AudioManager.AudioRecordingCallback arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.AudioManager.html">AudioManager</a>.<a class="xref" href="Android.Media.AudioManager.AudioRecordingCallback.html">AudioRecordingCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioManager.AudioRecordingCallback.html">AudioManager.AudioRecordingCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_Release_" data-uid="Android.Media.AudioRecord.Release*"></a>
+
+  <h3 id="Android_Media_AudioRecord_Release" data-uid="Android.Media.AudioRecord.Release">
+  Release()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L468"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#release()">https://developer.android.com/reference/android/media/AudioRecord.html#release()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Release()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_RemoveOnRoutingChangedListener_" data-uid="Android.Media.AudioRecord.RemoveOnRoutingChangedListener*"></a>
+
+  <h3 id="Android_Media_AudioRecord_RemoveOnRoutingChangedListener_Android_Media_AudioRecord_OnRoutingChangedListener_" data-uid="Android.Media.AudioRecord.RemoveOnRoutingChangedListener(Android.Media.AudioRecord.OnRoutingChangedListener)">
+  RemoveOnRoutingChangedListener(OnRoutingChangedListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#removeOnRoutingChangedListener(android.media.AudioRecord.OnRoutingChangedListener)">https://developer.android.com/reference/android/media/AudioRecord.html#removeOnRoutingChangedListener(android.media.AudioRecord.OnRoutingChangedListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void RemoveOnRoutingChangedListener(AudioRecord.OnRoutingChangedListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.AudioRecord.html">AudioRecord</a>.<a class="xref" href="Android.Media.AudioRecord.OnRoutingChangedListener.html">OnRoutingChangedListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioRecord.OnRoutingChangedListener.html">AudioRecord.OnRoutingChangedListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_RemoveOnRoutingChangedListener_" data-uid="Android.Media.AudioRecord.RemoveOnRoutingChangedListener*"></a>
+
+  <h3 id="Android_Media_AudioRecord_RemoveOnRoutingChangedListener_Android_Media_AudioRouting_OnRoutingChangedListener_" data-uid="Android.Media.AudioRecord.RemoveOnRoutingChangedListener(Android.Media.AudioRouting.OnRoutingChangedListener)">
+  RemoveOnRoutingChangedListener(OnRoutingChangedListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#removeOnRoutingChangedListener(android.media.AudioRouting.OnRoutingChangedListener)">https://developer.android.com/reference/android/media/AudioRecord.html#removeOnRoutingChangedListener(android.media.AudioRouting.OnRoutingChangedListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveOnRoutingChangedListener(AudioRouting.OnRoutingChangedListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.AudioRouting.html">AudioRouting</a>.<a class="xref" href="Android.Media.AudioRouting.OnRoutingChangedListener.html">OnRoutingChangedListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioRouting.OnRoutingChangedListener.html">AudioRouting.OnRoutingChangedListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_SetLogSessionId_" data-uid="Android.Media.AudioRecord.SetLogSessionId*"></a>
+
+  <h3 id="Android_Media_AudioRecord_SetLogSessionId_Android_Media_Metrics_LogSessionId_" data-uid="Android.Media.AudioRecord.SetLogSessionId(Android.Media.Metrics.LogSessionId)">
+  SetLogSessionId(LogSessionId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#setLogSessionId(android.media.metrics.LogSessionId)">https://developer.android.com/reference/android/media/AudioRecord.html#setLogSessionId(android.media.metrics.LogSessionId)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLogSessionId(LogSessionId arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Metrics.LogSessionId.html">LogSessionId</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Metrics.LogSessionId.html">LogSessionId</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_SetNotificationMarkerPosition_" data-uid="Android.Media.AudioRecord.SetNotificationMarkerPosition*"></a>
+
+  <h3 id="Android_Media_AudioRecord_SetNotificationMarkerPosition_System_Int32_" data-uid="Android.Media.AudioRecord.SetNotificationMarkerPosition(System.Int32)">
+  SetNotificationMarkerPosition(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#setNotificationMarkerPosition(int)">https://developer.android.com/reference/android/media/AudioRecord.html#setNotificationMarkerPosition(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SetNotificationMarkerPosition(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_SetPositionNotificationPeriod_" data-uid="Android.Media.AudioRecord.SetPositionNotificationPeriod*"></a>
+
+  <h3 id="Android_Media_AudioRecord_SetPositionNotificationPeriod_System_Int32_" data-uid="Android.Media.AudioRecord.SetPositionNotificationPeriod(System.Int32)">
+  SetPositionNotificationPeriod(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L424"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#setPositionNotificationPeriod(int)">https://developer.android.com/reference/android/media/AudioRecord.html#setPositionNotificationPeriod(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SetPositionNotificationPeriod(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_SetPreferredDevice_" data-uid="Android.Media.AudioRecord.SetPreferredDevice*"></a>
+
+  <h3 id="Android_Media_AudioRecord_SetPreferredDevice_Android_Media_AudioDeviceInfo_" data-uid="Android.Media.AudioRecord.SetPreferredDevice(Android.Media.AudioDeviceInfo)">
+  SetPreferredDevice(AudioDeviceInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#setPreferredDevice(android.media.AudioDeviceInfo)">https://developer.android.com/reference/android/media/AudioRecord.html#setPreferredDevice(android.media.AudioDeviceInfo)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetPreferredDevice(AudioDeviceInfo arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.AudioDeviceInfo.html">AudioDeviceInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioDeviceInfo.html">AudioDeviceInfo</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_SetPreferredMicrophoneDirection_" data-uid="Android.Media.AudioRecord.SetPreferredMicrophoneDirection*"></a>
+
+  <h3 id="Android_Media_AudioRecord_SetPreferredMicrophoneDirection_System_Int32_" data-uid="Android.Media.AudioRecord.SetPreferredMicrophoneDirection(System.Int32)">
+  SetPreferredMicrophoneDirection(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#setPreferredMicrophoneDirection(int)">https://developer.android.com/reference/android/media/AudioRecord.html#setPreferredMicrophoneDirection(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetPreferredMicrophoneDirection(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_SetPreferredMicrophoneFieldDimension_" data-uid="Android.Media.AudioRecord.SetPreferredMicrophoneFieldDimension*"></a>
+
+  <h3 id="Android_Media_AudioRecord_SetPreferredMicrophoneFieldDimension_System_Single_" data-uid="Android.Media.AudioRecord.SetPreferredMicrophoneFieldDimension(System.Single)">
+  SetPreferredMicrophoneFieldDimension(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#setPreferredMicrophoneFieldDimension(float)">https://developer.android.com/reference/android/media/AudioRecord.html#setPreferredMicrophoneFieldDimension(float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetPreferredMicrophoneFieldDimension(float arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_SetRecordPositionUpdateListener_" data-uid="Android.Media.AudioRecord.SetRecordPositionUpdateListener*"></a>
+
+  <h3 id="Android_Media_AudioRecord_SetRecordPositionUpdateListener_Android_Media_AudioRecord_OnRecordPositionUpdateListener_" data-uid="Android.Media.AudioRecord.SetRecordPositionUpdateListener(Android.Media.AudioRecord.OnRecordPositionUpdateListener)">
+  SetRecordPositionUpdateListener(OnRecordPositionUpdateListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#setRecordPositionUpdateListener(android.media.AudioRecord.OnRecordPositionUpdateListener)">https://developer.android.com/reference/android/media/AudioRecord.html#setRecordPositionUpdateListener(android.media.AudioRecord.OnRecordPositionUpdateListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRecordPositionUpdateListener(AudioRecord.OnRecordPositionUpdateListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.AudioRecord.html">AudioRecord</a>.<a class="xref" href="Android.Media.AudioRecord.OnRecordPositionUpdateListener.html">OnRecordPositionUpdateListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioRecord.OnRecordPositionUpdateListener.html">AudioRecord.OnRecordPositionUpdateListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_SetRecordPositionUpdateListener_" data-uid="Android.Media.AudioRecord.SetRecordPositionUpdateListener*"></a>
+
+  <h3 id="Android_Media_AudioRecord_SetRecordPositionUpdateListener_Android_Media_AudioRecord_OnRecordPositionUpdateListener_Android_Os_Handler_" data-uid="Android.Media.AudioRecord.SetRecordPositionUpdateListener(Android.Media.AudioRecord.OnRecordPositionUpdateListener,Android.Os.Handler)">
+  SetRecordPositionUpdateListener(OnRecordPositionUpdateListener, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#setRecordPositionUpdateListener(android.media.AudioRecord.OnRecordPositionUpdateListener,android.os.Handler)">https://developer.android.com/reference/android/media/AudioRecord.html#setRecordPositionUpdateListener(android.media.AudioRecord.OnRecordPositionUpdateListener,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRecordPositionUpdateListener(AudioRecord.OnRecordPositionUpdateListener arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.AudioRecord.html">AudioRecord</a>.<a class="xref" href="Android.Media.AudioRecord.OnRecordPositionUpdateListener.html">OnRecordPositionUpdateListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioRecord.OnRecordPositionUpdateListener.html">AudioRecord.OnRecordPositionUpdateListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_StartRecording_" data-uid="Android.Media.AudioRecord.StartRecording*"></a>
+
+  <h3 id="Android_Media_AudioRecord_StartRecording" data-uid="Android.Media.AudioRecord.StartRecording">
+  StartRecording()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#startRecording()">https://developer.android.com/reference/android/media/AudioRecord.html#startRecording()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartRecording()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_AudioRecord_StartRecording_" data-uid="Android.Media.AudioRecord.StartRecording*"></a>
+
+  <h3 id="Android_Media_AudioRecord_StartRecording_Android_Media_MediaSyncEvent_" data-uid="Android.Media.AudioRecord.StartRecording(Android.Media.MediaSyncEvent)">
+  StartRecording(MediaSyncEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L527"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#startRecording(android.media.MediaSyncEvent)">https://developer.android.com/reference/android/media/AudioRecord.html#startRecording(android.media.MediaSyncEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartRecording(MediaSyncEvent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaSyncEvent.html">MediaSyncEvent</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaSyncEvent.html">MediaSyncEvent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_AudioRecord_Stop_" data-uid="Android.Media.AudioRecord.Stop*"></a>
+
+  <h3 id="Android_Media_AudioRecord_Stop" data-uid="Android.Media.AudioRecord.Stop">
+  Stop()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#stop()">https://developer.android.com/reference/android/media/AudioRecord.html#stop()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_AudioRecord_UnregisterAudioRecordingCallback_" data-uid="Android.Media.AudioRecord.UnregisterAudioRecordingCallback*"></a>
+
+  <h3 id="Android_Media_AudioRecord_UnregisterAudioRecordingCallback_Android_Media_AudioManager_AudioRecordingCallback_" data-uid="Android.Media.AudioRecord.UnregisterAudioRecordingCallback(Android.Media.AudioManager.AudioRecordingCallback)">
+  UnregisterAudioRecordingCallback(AudioRecordingCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioRecord.html#unregisterAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback)">https://developer.android.com/reference/android/media/AudioRecord.html#unregisterAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterAudioRecordingCallback(AudioManager.AudioRecordingCallback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.AudioManager.html">AudioManager</a>.<a class="xref" href="Android.Media.AudioManager.AudioRecordingCallback.html">AudioRecordingCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioManager.AudioRecordingCallback.html">AudioManager.AudioRecordingCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Android_Media_AudioRecord_op_Implicit_" data-uid="Android.Media.AudioRecord.op_Implicit*"></a>
+
+  <h3 id="Android_Media_AudioRecord_op_Implicit_Android_Media_AudioRecord__Android_Media_AudioRecordingMonitor" data-uid="Android.Media.AudioRecord.op_Implicit(Android.Media.AudioRecord)~Android.Media.AudioRecordingMonitor">
+  implicit operator AudioRecordingMonitor(AudioRecord)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Media.AudioRecord.html">AudioRecord</a> to <a class="xref" href="Android.Media.AudioRecordingMonitor.html">AudioRecordingMonitor</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator AudioRecordingMonitor(AudioRecord t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Media.AudioRecord.html">AudioRecord</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.AudioRecordingMonitor.html">AudioRecordingMonitor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_op_Implicit_" data-uid="Android.Media.AudioRecord.op_Implicit*"></a>
+
+  <h3 id="Android_Media_AudioRecord_op_Implicit_Android_Media_AudioRecord__Android_Media_AudioRouting" data-uid="Android.Media.AudioRecord.op_Implicit(Android.Media.AudioRecord)~Android.Media.AudioRouting">
+  implicit operator AudioRouting(AudioRecord)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Media.AudioRecord.html">AudioRecord</a> to <a class="xref" href="Android.Media.AudioRouting.html">AudioRouting</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator AudioRouting(AudioRecord t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Media.AudioRecord.html">AudioRecord</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.AudioRouting.html">AudioRouting</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioRecord_op_Implicit_" data-uid="Android.Media.AudioRecord.op_Implicit*"></a>
+
+  <h3 id="Android_Media_AudioRecord_op_Implicit_Android_Media_AudioRecord__Android_Media_MicrophoneDirection" data-uid="Android.Media.AudioRecord.op_Implicit(Android.Media.AudioRecord)~Android.Media.MicrophoneDirection">
+  implicit operator MicrophoneDirection(AudioRecord)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Media.AudioRecord.html">AudioRecord</a> to <a class="xref" href="Android.Media.MicrophoneDirection.html">MicrophoneDirection</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator MicrophoneDirection(AudioRecord t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Media.AudioRecord.html">AudioRecord</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MicrophoneDirection.html">MicrophoneDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioRecord.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

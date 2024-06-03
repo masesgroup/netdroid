@@ -1,0 +1,3972 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class TelecomManager | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TelecomManager | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/telecom/TelecomManager.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Telecom_TelecomManager.md&amp;value=---%0Auid%3A%20Android.Telecom.TelecomManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Telecom.TelecomManager">
+
+
+
+  <h1 id="Android_Telecom_TelecomManager" data-uid="Android.Telecom.TelecomManager" class="text-break">
+Class TelecomManager  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Telecom.html">Telecom</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html">https://developer.android.com/reference/android/telecom/TelecomManager.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TelecomManager : JVMBridgeBase&lt;TelecomManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Telecom.TelecomManager.html">TelecomManager</a>&gt;</div>
+      <div><span class="xref">TelecomManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TelecomManager&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TelecomManager&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TelecomManager&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TelecomManager&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TelecomManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TelecomManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TelecomManager&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TelecomManager&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;TelecomManager&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TelecomManager&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TelecomManager&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TelecomManager&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TelecomManager&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Telecom_TelecomManager__ctor_" data-uid="Android.Telecom.TelecomManager.#ctor*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager__ctor" data-uid="Android.Telecom.TelecomManager.#ctor">
+  TelecomManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L1838"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TelecomManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager__ctor_" data-uid="Android.Telecom.TelecomManager.#ctor*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager__ctor_System_Object___" data-uid="Android.Telecom.TelecomManager.#ctor(System.Object[])">
+  TelecomManager(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L1842"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TelecomManager(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Telecom_TelecomManager_ACTION_CHANGE_DEFAULT_DIALER_" data-uid="Android.Telecom.TelecomManager.ACTION_CHANGE_DEFAULT_DIALER*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_ACTION_CHANGE_DEFAULT_DIALER" data-uid="Android.Telecom.TelecomManager.ACTION_CHANGE_DEFAULT_DIALER">
+  ACTION_CHANGE_DEFAULT_DIALER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_CHANGE_DEFAULT_DIALER">https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_CHANGE_DEFAULT_DIALER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_CHANGE_DEFAULT_DIALER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_ACTION_CHANGE_PHONE_ACCOUNTS_" data-uid="Android.Telecom.TelecomManager.ACTION_CHANGE_PHONE_ACCOUNTS*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_ACTION_CHANGE_PHONE_ACCOUNTS" data-uid="Android.Telecom.TelecomManager.ACTION_CHANGE_PHONE_ACCOUNTS">
+  ACTION_CHANGE_PHONE_ACCOUNTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_CHANGE_PHONE_ACCOUNTS">https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_CHANGE_PHONE_ACCOUNTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_CHANGE_PHONE_ACCOUNTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_ACTION_CONFIGURE_PHONE_ACCOUNT_" data-uid="Android.Telecom.TelecomManager.ACTION_CONFIGURE_PHONE_ACCOUNT*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_ACTION_CONFIGURE_PHONE_ACCOUNT" data-uid="Android.Telecom.TelecomManager.ACTION_CONFIGURE_PHONE_ACCOUNT">
+  ACTION_CONFIGURE_PHONE_ACCOUNT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_CONFIGURE_PHONE_ACCOUNT">https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_CONFIGURE_PHONE_ACCOUNT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_CONFIGURE_PHONE_ACCOUNT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_ACTION_DEFAULT_CALL_SCREENING_APP_CHANGED_" data-uid="Android.Telecom.TelecomManager.ACTION_DEFAULT_CALL_SCREENING_APP_CHANGED*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_ACTION_DEFAULT_CALL_SCREENING_APP_CHANGED" data-uid="Android.Telecom.TelecomManager.ACTION_DEFAULT_CALL_SCREENING_APP_CHANGED">
+  ACTION_DEFAULT_CALL_SCREENING_APP_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_DEFAULT_CALL_SCREENING_APP_CHANGED">https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_DEFAULT_CALL_SCREENING_APP_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_DEFAULT_CALL_SCREENING_APP_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_ACTION_DEFAULT_DIALER_CHANGED_" data-uid="Android.Telecom.TelecomManager.ACTION_DEFAULT_DIALER_CHANGED*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_ACTION_DEFAULT_DIALER_CHANGED" data-uid="Android.Telecom.TelecomManager.ACTION_DEFAULT_DIALER_CHANGED">
+  ACTION_DEFAULT_DIALER_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_DEFAULT_DIALER_CHANGED">https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_DEFAULT_DIALER_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_DEFAULT_DIALER_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_ACTION_INCOMING_CALL_" data-uid="Android.Telecom.TelecomManager.ACTION_INCOMING_CALL*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_ACTION_INCOMING_CALL" data-uid="Android.Telecom.TelecomManager.ACTION_INCOMING_CALL">
+  ACTION_INCOMING_CALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_INCOMING_CALL">https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_INCOMING_CALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String ACTION_INCOMING_CALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_ACTION_PHONE_ACCOUNT_REGISTERED_" data-uid="Android.Telecom.TelecomManager.ACTION_PHONE_ACCOUNT_REGISTERED*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_ACTION_PHONE_ACCOUNT_REGISTERED" data-uid="Android.Telecom.TelecomManager.ACTION_PHONE_ACCOUNT_REGISTERED">
+  ACTION_PHONE_ACCOUNT_REGISTERED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_PHONE_ACCOUNT_REGISTERED">https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_PHONE_ACCOUNT_REGISTERED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_PHONE_ACCOUNT_REGISTERED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_ACTION_PHONE_ACCOUNT_UNREGISTERED_" data-uid="Android.Telecom.TelecomManager.ACTION_PHONE_ACCOUNT_UNREGISTERED*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_ACTION_PHONE_ACCOUNT_UNREGISTERED" data-uid="Android.Telecom.TelecomManager.ACTION_PHONE_ACCOUNT_UNREGISTERED">
+  ACTION_PHONE_ACCOUNT_UNREGISTERED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_PHONE_ACCOUNT_UNREGISTERED">https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_PHONE_ACCOUNT_UNREGISTERED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_PHONE_ACCOUNT_UNREGISTERED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_ACTION_POST_CALL_" data-uid="Android.Telecom.TelecomManager.ACTION_POST_CALL*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_ACTION_POST_CALL" data-uid="Android.Telecom.TelecomManager.ACTION_POST_CALL">
+  ACTION_POST_CALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_POST_CALL">https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_POST_CALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_POST_CALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_ACTION_SHOW_CALL_ACCESSIBILITY_SETTINGS_" data-uid="Android.Telecom.TelecomManager.ACTION_SHOW_CALL_ACCESSIBILITY_SETTINGS*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_ACTION_SHOW_CALL_ACCESSIBILITY_SETTINGS" data-uid="Android.Telecom.TelecomManager.ACTION_SHOW_CALL_ACCESSIBILITY_SETTINGS">
+  ACTION_SHOW_CALL_ACCESSIBILITY_SETTINGS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_SHOW_CALL_ACCESSIBILITY_SETTINGS">https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_SHOW_CALL_ACCESSIBILITY_SETTINGS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_SHOW_CALL_ACCESSIBILITY_SETTINGS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_ACTION_SHOW_CALL_SETTINGS_" data-uid="Android.Telecom.TelecomManager.ACTION_SHOW_CALL_SETTINGS*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_ACTION_SHOW_CALL_SETTINGS" data-uid="Android.Telecom.TelecomManager.ACTION_SHOW_CALL_SETTINGS">
+  ACTION_SHOW_CALL_SETTINGS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_SHOW_CALL_SETTINGS">https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_SHOW_CALL_SETTINGS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_SHOW_CALL_SETTINGS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_ACTION_SHOW_MISSED_CALLS_NOTIFICATION_" data-uid="Android.Telecom.TelecomManager.ACTION_SHOW_MISSED_CALLS_NOTIFICATION*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_ACTION_SHOW_MISSED_CALLS_NOTIFICATION" data-uid="Android.Telecom.TelecomManager.ACTION_SHOW_MISSED_CALLS_NOTIFICATION">
+  ACTION_SHOW_MISSED_CALLS_NOTIFICATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_SHOW_MISSED_CALLS_NOTIFICATION">https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_SHOW_MISSED_CALLS_NOTIFICATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_SHOW_MISSED_CALLS_NOTIFICATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_ACTION_SHOW_RESPOND_VIA_SMS_SETTINGS_" data-uid="Android.Telecom.TelecomManager.ACTION_SHOW_RESPOND_VIA_SMS_SETTINGS*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_ACTION_SHOW_RESPOND_VIA_SMS_SETTINGS" data-uid="Android.Telecom.TelecomManager.ACTION_SHOW_RESPOND_VIA_SMS_SETTINGS">
+  ACTION_SHOW_RESPOND_VIA_SMS_SETTINGS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_SHOW_RESPOND_VIA_SMS_SETTINGS">https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_SHOW_RESPOND_VIA_SMS_SETTINGS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_SHOW_RESPOND_VIA_SMS_SETTINGS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_BridgeClassName_" data-uid="Android.Telecom.TelecomManager.BridgeClassName*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_BridgeClassName" data-uid="Android.Telecom.TelecomManager.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L1849"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_DTMF_CHARACTER_PAUSE_" data-uid="Android.Telecom.TelecomManager.DTMF_CHARACTER_PAUSE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_DTMF_CHARACTER_PAUSE" data-uid="Android.Telecom.TelecomManager.DTMF_CHARACTER_PAUSE">
+  DTMF_CHARACTER_PAUSE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#DTMF_CHARACTER_PAUSE">https://developer.android.com/reference/android/telecom/TelecomManager.html#DTMF_CHARACTER_PAUSE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static char DTMF_CHARACTER_PAUSE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_DTMF_CHARACTER_WAIT_" data-uid="Android.Telecom.TelecomManager.DTMF_CHARACTER_WAIT*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_DTMF_CHARACTER_WAIT" data-uid="Android.Telecom.TelecomManager.DTMF_CHARACTER_WAIT">
+  DTMF_CHARACTER_WAIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#DTMF_CHARACTER_WAIT">https://developer.android.com/reference/android/telecom/TelecomManager.html#DTMF_CHARACTER_WAIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static char DTMF_CHARACTER_WAIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_DURATION_LONG_" data-uid="Android.Telecom.TelecomManager.DURATION_LONG*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_DURATION_LONG" data-uid="Android.Telecom.TelecomManager.DURATION_LONG">
+  DURATION_LONG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#DURATION_LONG">https://developer.android.com/reference/android/telecom/TelecomManager.html#DURATION_LONG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DURATION_LONG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_DURATION_MEDIUM_" data-uid="Android.Telecom.TelecomManager.DURATION_MEDIUM*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_DURATION_MEDIUM" data-uid="Android.Telecom.TelecomManager.DURATION_MEDIUM">
+  DURATION_MEDIUM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#DURATION_MEDIUM">https://developer.android.com/reference/android/telecom/TelecomManager.html#DURATION_MEDIUM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DURATION_MEDIUM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_DURATION_SHORT_" data-uid="Android.Telecom.TelecomManager.DURATION_SHORT*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_DURATION_SHORT" data-uid="Android.Telecom.TelecomManager.DURATION_SHORT">
+  DURATION_SHORT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#DURATION_SHORT">https://developer.android.com/reference/android/telecom/TelecomManager.html#DURATION_SHORT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DURATION_SHORT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_DURATION_VERY_SHORT_" data-uid="Android.Telecom.TelecomManager.DURATION_VERY_SHORT*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_DURATION_VERY_SHORT" data-uid="Android.Telecom.TelecomManager.DURATION_VERY_SHORT">
+  DURATION_VERY_SHORT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#DURATION_VERY_SHORT">https://developer.android.com/reference/android/telecom/TelecomManager.html#DURATION_VERY_SHORT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DURATION_VERY_SHORT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_CALL_BACK_NUMBER_" data-uid="Android.Telecom.TelecomManager.EXTRA_CALL_BACK_NUMBER*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_CALL_BACK_NUMBER" data-uid="Android.Telecom.TelecomManager.EXTRA_CALL_BACK_NUMBER">
+  EXTRA_CALL_BACK_NUMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CALL_BACK_NUMBER">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CALL_BACK_NUMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_CALL_BACK_NUMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_CALL_DISCONNECT_CAUSE_" data-uid="Android.Telecom.TelecomManager.EXTRA_CALL_DISCONNECT_CAUSE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_CALL_DISCONNECT_CAUSE" data-uid="Android.Telecom.TelecomManager.EXTRA_CALL_DISCONNECT_CAUSE">
+  EXTRA_CALL_DISCONNECT_CAUSE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CALL_DISCONNECT_CAUSE">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CALL_DISCONNECT_CAUSE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_CALL_DISCONNECT_CAUSE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_CALL_DISCONNECT_MESSAGE_" data-uid="Android.Telecom.TelecomManager.EXTRA_CALL_DISCONNECT_MESSAGE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_CALL_DISCONNECT_MESSAGE" data-uid="Android.Telecom.TelecomManager.EXTRA_CALL_DISCONNECT_MESSAGE">
+  EXTRA_CALL_DISCONNECT_MESSAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CALL_DISCONNECT_MESSAGE">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CALL_DISCONNECT_MESSAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_CALL_DISCONNECT_MESSAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_CALL_DURATION_" data-uid="Android.Telecom.TelecomManager.EXTRA_CALL_DURATION*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_CALL_DURATION" data-uid="Android.Telecom.TelecomManager.EXTRA_CALL_DURATION">
+  EXTRA_CALL_DURATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CALL_DURATION">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CALL_DURATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_CALL_DURATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_CALL_NETWORK_TYPE_" data-uid="Android.Telecom.TelecomManager.EXTRA_CALL_NETWORK_TYPE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_CALL_NETWORK_TYPE" data-uid="Android.Telecom.TelecomManager.EXTRA_CALL_NETWORK_TYPE">
+  EXTRA_CALL_NETWORK_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CALL_NETWORK_TYPE">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CALL_NETWORK_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_CALL_NETWORK_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_CALL_SUBJECT_" data-uid="Android.Telecom.TelecomManager.EXTRA_CALL_SUBJECT*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_CALL_SUBJECT" data-uid="Android.Telecom.TelecomManager.EXTRA_CALL_SUBJECT">
+  EXTRA_CALL_SUBJECT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CALL_SUBJECT">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CALL_SUBJECT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_CALL_SUBJECT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_CHANGE_DEFAULT_DIALER_PACKAGE_NAME_" data-uid="Android.Telecom.TelecomManager.EXTRA_CHANGE_DEFAULT_DIALER_PACKAGE_NAME*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_CHANGE_DEFAULT_DIALER_PACKAGE_NAME" data-uid="Android.Telecom.TelecomManager.EXTRA_CHANGE_DEFAULT_DIALER_PACKAGE_NAME">
+  EXTRA_CHANGE_DEFAULT_DIALER_PACKAGE_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CHANGE_DEFAULT_DIALER_PACKAGE_NAME">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CHANGE_DEFAULT_DIALER_PACKAGE_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_CHANGE_DEFAULT_DIALER_PACKAGE_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_DEFAULT_CALL_SCREENING_APP_COMPONENT_NAME_" data-uid="Android.Telecom.TelecomManager.EXTRA_DEFAULT_CALL_SCREENING_APP_COMPONENT_NAME*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_DEFAULT_CALL_SCREENING_APP_COMPONENT_NAME" data-uid="Android.Telecom.TelecomManager.EXTRA_DEFAULT_CALL_SCREENING_APP_COMPONENT_NAME">
+  EXTRA_DEFAULT_CALL_SCREENING_APP_COMPONENT_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_DEFAULT_CALL_SCREENING_APP_COMPONENT_NAME">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_DEFAULT_CALL_SCREENING_APP_COMPONENT_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_DEFAULT_CALL_SCREENING_APP_COMPONENT_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_DISCONNECT_CAUSE_" data-uid="Android.Telecom.TelecomManager.EXTRA_DISCONNECT_CAUSE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_DISCONNECT_CAUSE" data-uid="Android.Telecom.TelecomManager.EXTRA_DISCONNECT_CAUSE">
+  EXTRA_DISCONNECT_CAUSE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_DISCONNECT_CAUSE">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_DISCONNECT_CAUSE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_DISCONNECT_CAUSE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_HANDLE_" data-uid="Android.Telecom.TelecomManager.EXTRA_HANDLE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_HANDLE" data-uid="Android.Telecom.TelecomManager.EXTRA_HANDLE">
+  EXTRA_HANDLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_HANDLE">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_HANDLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_HANDLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_HAS_PICTURE_" data-uid="Android.Telecom.TelecomManager.EXTRA_HAS_PICTURE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_HAS_PICTURE" data-uid="Android.Telecom.TelecomManager.EXTRA_HAS_PICTURE">
+  EXTRA_HAS_PICTURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_HAS_PICTURE">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_HAS_PICTURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_HAS_PICTURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_INCOMING_CALL_ADDRESS_" data-uid="Android.Telecom.TelecomManager.EXTRA_INCOMING_CALL_ADDRESS*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_INCOMING_CALL_ADDRESS" data-uid="Android.Telecom.TelecomManager.EXTRA_INCOMING_CALL_ADDRESS">
+  EXTRA_INCOMING_CALL_ADDRESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_INCOMING_CALL_ADDRESS">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_INCOMING_CALL_ADDRESS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_INCOMING_CALL_ADDRESS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_INCOMING_CALL_EXTRAS_" data-uid="Android.Telecom.TelecomManager.EXTRA_INCOMING_CALL_EXTRAS*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_INCOMING_CALL_EXTRAS" data-uid="Android.Telecom.TelecomManager.EXTRA_INCOMING_CALL_EXTRAS">
+  EXTRA_INCOMING_CALL_EXTRAS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_INCOMING_CALL_EXTRAS">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_INCOMING_CALL_EXTRAS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_INCOMING_CALL_EXTRAS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_INCOMING_VIDEO_STATE_" data-uid="Android.Telecom.TelecomManager.EXTRA_INCOMING_VIDEO_STATE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_INCOMING_VIDEO_STATE" data-uid="Android.Telecom.TelecomManager.EXTRA_INCOMING_VIDEO_STATE">
+  EXTRA_INCOMING_VIDEO_STATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_INCOMING_VIDEO_STATE">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_INCOMING_VIDEO_STATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_INCOMING_VIDEO_STATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_IS_DEFAULT_CALL_SCREENING_APP_" data-uid="Android.Telecom.TelecomManager.EXTRA_IS_DEFAULT_CALL_SCREENING_APP*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_IS_DEFAULT_CALL_SCREENING_APP" data-uid="Android.Telecom.TelecomManager.EXTRA_IS_DEFAULT_CALL_SCREENING_APP">
+  EXTRA_IS_DEFAULT_CALL_SCREENING_APP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_IS_DEFAULT_CALL_SCREENING_APP">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_IS_DEFAULT_CALL_SCREENING_APP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_IS_DEFAULT_CALL_SCREENING_APP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_LOCATION_" data-uid="Android.Telecom.TelecomManager.EXTRA_LOCATION*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_LOCATION" data-uid="Android.Telecom.TelecomManager.EXTRA_LOCATION">
+  EXTRA_LOCATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_LOCATION">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_LOCATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_LOCATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_NOTIFICATION_COUNT_" data-uid="Android.Telecom.TelecomManager.EXTRA_NOTIFICATION_COUNT*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_NOTIFICATION_COUNT" data-uid="Android.Telecom.TelecomManager.EXTRA_NOTIFICATION_COUNT">
+  EXTRA_NOTIFICATION_COUNT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_NOTIFICATION_COUNT">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_NOTIFICATION_COUNT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_NOTIFICATION_COUNT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_NOTIFICATION_PHONE_NUMBER_" data-uid="Android.Telecom.TelecomManager.EXTRA_NOTIFICATION_PHONE_NUMBER*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_NOTIFICATION_PHONE_NUMBER" data-uid="Android.Telecom.TelecomManager.EXTRA_NOTIFICATION_PHONE_NUMBER">
+  EXTRA_NOTIFICATION_PHONE_NUMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_NOTIFICATION_PHONE_NUMBER">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_NOTIFICATION_PHONE_NUMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_NOTIFICATION_PHONE_NUMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_OUTGOING_CALL_EXTRAS_" data-uid="Android.Telecom.TelecomManager.EXTRA_OUTGOING_CALL_EXTRAS*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_OUTGOING_CALL_EXTRAS" data-uid="Android.Telecom.TelecomManager.EXTRA_OUTGOING_CALL_EXTRAS">
+  EXTRA_OUTGOING_CALL_EXTRAS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_OUTGOING_CALL_EXTRAS">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_OUTGOING_CALL_EXTRAS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_OUTGOING_CALL_EXTRAS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_OUTGOING_PICTURE_" data-uid="Android.Telecom.TelecomManager.EXTRA_OUTGOING_PICTURE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_OUTGOING_PICTURE" data-uid="Android.Telecom.TelecomManager.EXTRA_OUTGOING_PICTURE">
+  EXTRA_OUTGOING_PICTURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_OUTGOING_PICTURE">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_OUTGOING_PICTURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_OUTGOING_PICTURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_PHONE_ACCOUNT_HANDLE_" data-uid="Android.Telecom.TelecomManager.EXTRA_PHONE_ACCOUNT_HANDLE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_PHONE_ACCOUNT_HANDLE" data-uid="Android.Telecom.TelecomManager.EXTRA_PHONE_ACCOUNT_HANDLE">
+  EXTRA_PHONE_ACCOUNT_HANDLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_PHONE_ACCOUNT_HANDLE">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_PHONE_ACCOUNT_HANDLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_PHONE_ACCOUNT_HANDLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_PICTURE_URI_" data-uid="Android.Telecom.TelecomManager.EXTRA_PICTURE_URI*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_PICTURE_URI" data-uid="Android.Telecom.TelecomManager.EXTRA_PICTURE_URI">
+  EXTRA_PICTURE_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_PICTURE_URI">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_PICTURE_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_PICTURE_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_PRIORITY_" data-uid="Android.Telecom.TelecomManager.EXTRA_PRIORITY*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_PRIORITY" data-uid="Android.Telecom.TelecomManager.EXTRA_PRIORITY">
+  EXTRA_PRIORITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_PRIORITY">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_PRIORITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_PRIORITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_START_CALL_WITH_RTT_" data-uid="Android.Telecom.TelecomManager.EXTRA_START_CALL_WITH_RTT*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_START_CALL_WITH_RTT" data-uid="Android.Telecom.TelecomManager.EXTRA_START_CALL_WITH_RTT">
+  EXTRA_START_CALL_WITH_RTT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_START_CALL_WITH_RTT">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_START_CALL_WITH_RTT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_START_CALL_WITH_RTT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_START_CALL_WITH_SPEAKERPHONE_" data-uid="Android.Telecom.TelecomManager.EXTRA_START_CALL_WITH_SPEAKERPHONE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_START_CALL_WITH_SPEAKERPHONE" data-uid="Android.Telecom.TelecomManager.EXTRA_START_CALL_WITH_SPEAKERPHONE">
+  EXTRA_START_CALL_WITH_SPEAKERPHONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_START_CALL_WITH_SPEAKERPHONE">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_START_CALL_WITH_SPEAKERPHONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_START_CALL_WITH_SPEAKERPHONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_START_CALL_WITH_VIDEO_STATE_" data-uid="Android.Telecom.TelecomManager.EXTRA_START_CALL_WITH_VIDEO_STATE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_START_CALL_WITH_VIDEO_STATE" data-uid="Android.Telecom.TelecomManager.EXTRA_START_CALL_WITH_VIDEO_STATE">
+  EXTRA_START_CALL_WITH_VIDEO_STATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_START_CALL_WITH_VIDEO_STATE">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_START_CALL_WITH_VIDEO_STATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_START_CALL_WITH_VIDEO_STATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EXTRA_USE_ASSISTED_DIALING_" data-uid="Android.Telecom.TelecomManager.EXTRA_USE_ASSISTED_DIALING*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EXTRA_USE_ASSISTED_DIALING" data-uid="Android.Telecom.TelecomManager.EXTRA_USE_ASSISTED_DIALING">
+  EXTRA_USE_ASSISTED_DIALING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_USE_ASSISTED_DIALING">https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_USE_ASSISTED_DIALING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_USE_ASSISTED_DIALING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GATEWAY_ORIGINAL_ADDRESS_" data-uid="Android.Telecom.TelecomManager.GATEWAY_ORIGINAL_ADDRESS*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GATEWAY_ORIGINAL_ADDRESS" data-uid="Android.Telecom.TelecomManager.GATEWAY_ORIGINAL_ADDRESS">
+  GATEWAY_ORIGINAL_ADDRESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#GATEWAY_ORIGINAL_ADDRESS">https://developer.android.com/reference/android/telecom/TelecomManager.html#GATEWAY_ORIGINAL_ADDRESS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GATEWAY_ORIGINAL_ADDRESS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GATEWAY_PROVIDER_PACKAGE_" data-uid="Android.Telecom.TelecomManager.GATEWAY_PROVIDER_PACKAGE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GATEWAY_PROVIDER_PACKAGE" data-uid="Android.Telecom.TelecomManager.GATEWAY_PROVIDER_PACKAGE">
+  GATEWAY_PROVIDER_PACKAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#GATEWAY_PROVIDER_PACKAGE">https://developer.android.com/reference/android/telecom/TelecomManager.html#GATEWAY_PROVIDER_PACKAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GATEWAY_PROVIDER_PACKAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_IsBridgeAbstract_" data-uid="Android.Telecom.TelecomManager.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_IsBridgeAbstract" data-uid="Android.Telecom.TelecomManager.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L1853"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_IsBridgeCloseable_" data-uid="Android.Telecom.TelecomManager.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_IsBridgeCloseable" data-uid="Android.Telecom.TelecomManager.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L1857"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_IsBridgeInterface_" data-uid="Android.Telecom.TelecomManager.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_IsBridgeInterface" data-uid="Android.Telecom.TelecomManager.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L1861"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_IsBridgeStatic_" data-uid="Android.Telecom.TelecomManager.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_IsBridgeStatic" data-uid="Android.Telecom.TelecomManager.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L1865"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_METADATA_INCLUDE_EXTERNAL_CALLS_" data-uid="Android.Telecom.TelecomManager.METADATA_INCLUDE_EXTERNAL_CALLS*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_METADATA_INCLUDE_EXTERNAL_CALLS" data-uid="Android.Telecom.TelecomManager.METADATA_INCLUDE_EXTERNAL_CALLS">
+  METADATA_INCLUDE_EXTERNAL_CALLS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#METADATA_INCLUDE_EXTERNAL_CALLS">https://developer.android.com/reference/android/telecom/TelecomManager.html#METADATA_INCLUDE_EXTERNAL_CALLS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String METADATA_INCLUDE_EXTERNAL_CALLS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_METADATA_INCLUDE_SELF_MANAGED_CALLS_" data-uid="Android.Telecom.TelecomManager.METADATA_INCLUDE_SELF_MANAGED_CALLS*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_METADATA_INCLUDE_SELF_MANAGED_CALLS" data-uid="Android.Telecom.TelecomManager.METADATA_INCLUDE_SELF_MANAGED_CALLS">
+  METADATA_INCLUDE_SELF_MANAGED_CALLS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#METADATA_INCLUDE_SELF_MANAGED_CALLS">https://developer.android.com/reference/android/telecom/TelecomManager.html#METADATA_INCLUDE_SELF_MANAGED_CALLS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String METADATA_INCLUDE_SELF_MANAGED_CALLS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_METADATA_IN_CALL_SERVICE_CAR_MODE_UI_" data-uid="Android.Telecom.TelecomManager.METADATA_IN_CALL_SERVICE_CAR_MODE_UI*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_METADATA_IN_CALL_SERVICE_CAR_MODE_UI" data-uid="Android.Telecom.TelecomManager.METADATA_IN_CALL_SERVICE_CAR_MODE_UI">
+  METADATA_IN_CALL_SERVICE_CAR_MODE_UI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#METADATA_IN_CALL_SERVICE_CAR_MODE_UI">https://developer.android.com/reference/android/telecom/TelecomManager.html#METADATA_IN_CALL_SERVICE_CAR_MODE_UI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String METADATA_IN_CALL_SERVICE_CAR_MODE_UI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_METADATA_IN_CALL_SERVICE_RINGING_" data-uid="Android.Telecom.TelecomManager.METADATA_IN_CALL_SERVICE_RINGING*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_METADATA_IN_CALL_SERVICE_RINGING" data-uid="Android.Telecom.TelecomManager.METADATA_IN_CALL_SERVICE_RINGING">
+  METADATA_IN_CALL_SERVICE_RINGING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#METADATA_IN_CALL_SERVICE_RINGING">https://developer.android.com/reference/android/telecom/TelecomManager.html#METADATA_IN_CALL_SERVICE_RINGING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String METADATA_IN_CALL_SERVICE_RINGING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_METADATA_IN_CALL_SERVICE_UI_" data-uid="Android.Telecom.TelecomManager.METADATA_IN_CALL_SERVICE_UI*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_METADATA_IN_CALL_SERVICE_UI" data-uid="Android.Telecom.TelecomManager.METADATA_IN_CALL_SERVICE_UI">
+  METADATA_IN_CALL_SERVICE_UI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#METADATA_IN_CALL_SERVICE_UI">https://developer.android.com/reference/android/telecom/TelecomManager.html#METADATA_IN_CALL_SERVICE_UI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String METADATA_IN_CALL_SERVICE_UI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_PRESENTATION_ALLOWED_" data-uid="Android.Telecom.TelecomManager.PRESENTATION_ALLOWED*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_PRESENTATION_ALLOWED" data-uid="Android.Telecom.TelecomManager.PRESENTATION_ALLOWED">
+  PRESENTATION_ALLOWED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#PRESENTATION_ALLOWED">https://developer.android.com/reference/android/telecom/TelecomManager.html#PRESENTATION_ALLOWED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRESENTATION_ALLOWED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_PRESENTATION_PAYPHONE_" data-uid="Android.Telecom.TelecomManager.PRESENTATION_PAYPHONE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_PRESENTATION_PAYPHONE" data-uid="Android.Telecom.TelecomManager.PRESENTATION_PAYPHONE">
+  PRESENTATION_PAYPHONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#PRESENTATION_PAYPHONE">https://developer.android.com/reference/android/telecom/TelecomManager.html#PRESENTATION_PAYPHONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRESENTATION_PAYPHONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_PRESENTATION_RESTRICTED_" data-uid="Android.Telecom.TelecomManager.PRESENTATION_RESTRICTED*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_PRESENTATION_RESTRICTED" data-uid="Android.Telecom.TelecomManager.PRESENTATION_RESTRICTED">
+  PRESENTATION_RESTRICTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#PRESENTATION_RESTRICTED">https://developer.android.com/reference/android/telecom/TelecomManager.html#PRESENTATION_RESTRICTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRESENTATION_RESTRICTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_PRESENTATION_UNAVAILABLE_" data-uid="Android.Telecom.TelecomManager.PRESENTATION_UNAVAILABLE*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_PRESENTATION_UNAVAILABLE" data-uid="Android.Telecom.TelecomManager.PRESENTATION_UNAVAILABLE">
+  PRESENTATION_UNAVAILABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#PRESENTATION_UNAVAILABLE">https://developer.android.com/reference/android/telecom/TelecomManager.html#PRESENTATION_UNAVAILABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRESENTATION_UNAVAILABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_PRESENTATION_UNKNOWN_" data-uid="Android.Telecom.TelecomManager.PRESENTATION_UNKNOWN*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_PRESENTATION_UNKNOWN" data-uid="Android.Telecom.TelecomManager.PRESENTATION_UNKNOWN">
+  PRESENTATION_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#PRESENTATION_UNKNOWN">https://developer.android.com/reference/android/telecom/TelecomManager.html#PRESENTATION_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRESENTATION_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_PRIORITY_NORMAL_" data-uid="Android.Telecom.TelecomManager.PRIORITY_NORMAL*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_PRIORITY_NORMAL" data-uid="Android.Telecom.TelecomManager.PRIORITY_NORMAL">
+  PRIORITY_NORMAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#PRIORITY_NORMAL">https://developer.android.com/reference/android/telecom/TelecomManager.html#PRIORITY_NORMAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRIORITY_NORMAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_PRIORITY_URGENT_" data-uid="Android.Telecom.TelecomManager.PRIORITY_URGENT*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_PRIORITY_URGENT" data-uid="Android.Telecom.TelecomManager.PRIORITY_URGENT">
+  PRIORITY_URGENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#PRIORITY_URGENT">https://developer.android.com/reference/android/telecom/TelecomManager.html#PRIORITY_URGENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRIORITY_URGENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Telecom_TelecomManager_AcceptHandover_" data-uid="Android.Telecom.TelecomManager.AcceptHandover*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_AcceptHandover_Android_Net_Uri_System_Int32_Android_Telecom_PhoneAccountHandle_" data-uid="Android.Telecom.TelecomManager.AcceptHandover(Android.Net.Uri,System.Int32,Android.Telecom.PhoneAccountHandle)">
+  AcceptHandover(Uri, int, PhoneAccountHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L622"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#acceptHandover(android.net.Uri,int,android.telecom.PhoneAccountHandle)">https://developer.android.com/reference/android/telecom/TelecomManager.html#acceptHandover(android.net.Uri,int,android.telecom.PhoneAccountHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AcceptHandover(Uri arg0, int arg1, PhoneAccountHandle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_AcceptRingingCall_" data-uid="Android.Telecom.TelecomManager.AcceptRingingCall*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_AcceptRingingCall" data-uid="Android.Telecom.TelecomManager.AcceptRingingCall">
+  AcceptRingingCall()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L629"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#acceptRingingCall()">https://developer.android.com/reference/android/telecom/TelecomManager.html#acceptRingingCall()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void AcceptRingingCall()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_AcceptRingingCall_" data-uid="Android.Telecom.TelecomManager.AcceptRingingCall*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_AcceptRingingCall_System_Int32_" data-uid="Android.Telecom.TelecomManager.AcceptRingingCall(System.Int32)">
+  AcceptRingingCall(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L638"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#acceptRingingCall(int)">https://developer.android.com/reference/android/telecom/TelecomManager.html#acceptRingingCall(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void AcceptRingingCall(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_AddCall_" data-uid="Android.Telecom.TelecomManager.AddCall*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_AddCall_Android_Telecom_CallAttributes_Java_Util_Concurrent_Executor_Android_Os_OutcomeReceiver_Android_Telecom_CallControl_Android_Telecom_CallException__Android_Telecom_CallControlCallback_Android_Telecom_CallEventCallback_" data-uid="Android.Telecom.TelecomManager.AddCall(Android.Telecom.CallAttributes,Java.Util.Concurrent.Executor,Android.Os.OutcomeReceiver{Android.Telecom.CallControl,Android.Telecom.CallException},Android.Telecom.CallControlCallback,Android.Telecom.CallEventCallback)">
+  AddCall(CallAttributes, Executor, OutcomeReceiver&lt;CallControl, CallException&gt;, CallControlCallback, CallEventCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L651"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#addCall(android.telecom.CallAttributes,java.util.concurrent.Executor,android.os.OutcomeReceiver,android.telecom.CallControlCallback,android.telecom.CallEventCallback)">https://developer.android.com/reference/android/telecom/TelecomManager.html#addCall(android.telecom.CallAttributes,java.util.concurrent.Executor,android.os.OutcomeReceiver,android.telecom.CallControlCallback,android.telecom.CallEventCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddCall(CallAttributes arg0, Executor arg1, OutcomeReceiver&lt;CallControl, CallException&gt; arg2, CallControlCallback arg3, CallEventCallback arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.CallAttributes.html">CallAttributes</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.CallAttributes.html">CallAttributes</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.OutcomeReceiver-2.html">OutcomeReceiver</a>&lt;<a class="xref" href="Android.Telecom.CallControl.html">CallControl</a>, <a class="xref" href="Android.Telecom.CallException.html">CallException</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Os.OutcomeReceiver.html">OutcomeReceiver</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Telecom.CallControlCallback.html">CallControlCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.CallControlCallback.html">CallControlCallback</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Telecom.CallEventCallback.html">CallEventCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.CallEventCallback.html">CallEventCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_AddNewIncomingCall_" data-uid="Android.Telecom.TelecomManager.AddNewIncomingCall*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_AddNewIncomingCall_Android_Telecom_PhoneAccountHandle_Android_Os_Bundle_" data-uid="Android.Telecom.TelecomManager.AddNewIncomingCall(Android.Telecom.PhoneAccountHandle,Android.Os.Bundle)">
+  AddNewIncomingCall(PhoneAccountHandle, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L660"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#addNewIncomingCall(android.telecom.PhoneAccountHandle,android.os.Bundle)">https://developer.android.com/reference/android/telecom/TelecomManager.html#addNewIncomingCall(android.telecom.PhoneAccountHandle,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNewIncomingCall(PhoneAccountHandle arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_AddNewIncomingConference_" data-uid="Android.Telecom.TelecomManager.AddNewIncomingConference*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_AddNewIncomingConference_Android_Telecom_PhoneAccountHandle_Android_Os_Bundle_" data-uid="Android.Telecom.TelecomManager.AddNewIncomingConference(Android.Telecom.PhoneAccountHandle,Android.Os.Bundle)">
+  AddNewIncomingConference(PhoneAccountHandle, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L669"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#addNewIncomingConference(android.telecom.PhoneAccountHandle,android.os.Bundle)">https://developer.android.com/reference/android/telecom/TelecomManager.html#addNewIncomingConference(android.telecom.PhoneAccountHandle,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNewIncomingConference(PhoneAccountHandle arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_CancelMissedCallsNotification_" data-uid="Android.Telecom.TelecomManager.CancelMissedCallsNotification*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_CancelMissedCallsNotification" data-uid="Android.Telecom.TelecomManager.CancelMissedCallsNotification">
+  CancelMissedCallsNotification()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L676"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#cancelMissedCallsNotification()">https://developer.android.com/reference/android/telecom/TelecomManager.html#cancelMissedCallsNotification()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelMissedCallsNotification()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_CreateManageBlockedNumbersIntent_" data-uid="Android.Telecom.TelecomManager.CreateManageBlockedNumbersIntent*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_CreateManageBlockedNumbersIntent" data-uid="Android.Telecom.TelecomManager.CreateManageBlockedNumbersIntent">
+  CreateManageBlockedNumbersIntent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#createManageBlockedNumbersIntent()">https://developer.android.com/reference/android/telecom/TelecomManager.html#createManageBlockedNumbersIntent()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Intent CreateManageBlockedNumbersIntent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_EndCall_" data-uid="Android.Telecom.TelecomManager.EndCall*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_EndCall" data-uid="Android.Telecom.TelecomManager.EndCall">
+  EndCall()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#endCall()">https://developer.android.com/reference/android/telecom/TelecomManager.html#endCall()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool EndCall()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GetAdnUriForPhoneAccount_" data-uid="Android.Telecom.TelecomManager.GetAdnUriForPhoneAccount*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GetAdnUriForPhoneAccount_Android_Telecom_PhoneAccountHandle_" data-uid="Android.Telecom.TelecomManager.GetAdnUriForPhoneAccount(Android.Telecom.PhoneAccountHandle)">
+  GetAdnUriForPhoneAccount(PhoneAccountHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getAdnUriForPhoneAccount(android.telecom.PhoneAccountHandle)">https://developer.android.com/reference/android/telecom/TelecomManager.html#getAdnUriForPhoneAccount(android.telecom.PhoneAccountHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri GetAdnUriForPhoneAccount(PhoneAccountHandle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GetCallCapablePhoneAccounts_" data-uid="Android.Telecom.TelecomManager.GetCallCapablePhoneAccounts*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GetCallCapablePhoneAccounts" data-uid="Android.Telecom.TelecomManager.GetCallCapablePhoneAccounts">
+  GetCallCapablePhoneAccounts()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getCallCapablePhoneAccounts()">https://developer.android.com/reference/android/telecom/TelecomManager.html#getCallCapablePhoneAccounts()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PhoneAccountHandle&gt; GetCallCapablePhoneAccounts()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GetDefaultDialerPackage_" data-uid="Android.Telecom.TelecomManager.GetDefaultDialerPackage*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GetDefaultDialerPackage" data-uid="Android.Telecom.TelecomManager.GetDefaultDialerPackage">
+  GetDefaultDialerPackage()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L561"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getDefaultDialerPackage()">https://developer.android.com/reference/android/telecom/TelecomManager.html#getDefaultDialerPackage()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetDefaultDialerPackage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GetDefaultOutgoingPhoneAccount_" data-uid="Android.Telecom.TelecomManager.GetDefaultOutgoingPhoneAccount*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GetDefaultOutgoingPhoneAccount_Java_Lang_String_" data-uid="Android.Telecom.TelecomManager.GetDefaultOutgoingPhoneAccount(Java.Lang.String)">
+  GetDefaultOutgoingPhoneAccount(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getDefaultOutgoingPhoneAccount(java.lang.String)">https://developer.android.com/reference/android/telecom/TelecomManager.html#getDefaultOutgoingPhoneAccount(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhoneAccountHandle GetDefaultOutgoingPhoneAccount(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GetLine1Number_" data-uid="Android.Telecom.TelecomManager.GetLine1Number*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GetLine1Number_Android_Telecom_PhoneAccountHandle_" data-uid="Android.Telecom.TelecomManager.GetLine1Number(Android.Telecom.PhoneAccountHandle)">
+  GetLine1Number(PhoneAccountHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L570"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getLine1Number(android.telecom.PhoneAccountHandle)">https://developer.android.com/reference/android/telecom/TelecomManager.html#getLine1Number(android.telecom.PhoneAccountHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public String GetLine1Number(PhoneAccountHandle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GetOwnSelfManagedPhoneAccounts_" data-uid="Android.Telecom.TelecomManager.GetOwnSelfManagedPhoneAccounts*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GetOwnSelfManagedPhoneAccounts" data-uid="Android.Telecom.TelecomManager.GetOwnSelfManagedPhoneAccounts">
+  GetOwnSelfManagedPhoneAccounts()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L604"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getOwnSelfManagedPhoneAccounts()">https://developer.android.com/reference/android/telecom/TelecomManager.html#getOwnSelfManagedPhoneAccounts()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PhoneAccountHandle&gt; GetOwnSelfManagedPhoneAccounts()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GetPhoneAccount_" data-uid="Android.Telecom.TelecomManager.GetPhoneAccount*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GetPhoneAccount_Android_Telecom_PhoneAccountHandle_" data-uid="Android.Telecom.TelecomManager.GetPhoneAccount(Android.Telecom.PhoneAccountHandle)">
+  GetPhoneAccount(PhoneAccountHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getPhoneAccount(android.telecom.PhoneAccountHandle)">https://developer.android.com/reference/android/telecom/TelecomManager.html#getPhoneAccount(android.telecom.PhoneAccountHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhoneAccount GetPhoneAccount(PhoneAccountHandle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Telecom.PhoneAccount.html">PhoneAccount</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccount.html">PhoneAccount</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GetSelfManagedPhoneAccounts_" data-uid="Android.Telecom.TelecomManager.GetSelfManagedPhoneAccounts*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GetSelfManagedPhoneAccounts" data-uid="Android.Telecom.TelecomManager.GetSelfManagedPhoneAccounts">
+  GetSelfManagedPhoneAccounts()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L612"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getSelfManagedPhoneAccounts()">https://developer.android.com/reference/android/telecom/TelecomManager.html#getSelfManagedPhoneAccounts()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PhoneAccountHandle&gt; GetSelfManagedPhoneAccounts()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GetSimCallManager_" data-uid="Android.Telecom.TelecomManager.GetSimCallManager*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GetSimCallManager" data-uid="Android.Telecom.TelecomManager.GetSimCallManager">
+  GetSimCallManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getSimCallManager()">https://developer.android.com/reference/android/telecom/TelecomManager.html#getSimCallManager()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhoneAccountHandle GetSimCallManager()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GetSimCallManagerForSubscription_" data-uid="Android.Telecom.TelecomManager.GetSimCallManagerForSubscription*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GetSimCallManagerForSubscription_System_Int32_" data-uid="Android.Telecom.TelecomManager.GetSimCallManagerForSubscription(System.Int32)">
+  GetSimCallManagerForSubscription(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getSimCallManagerForSubscription(int)">https://developer.android.com/reference/android/telecom/TelecomManager.html#getSimCallManagerForSubscription(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhoneAccountHandle GetSimCallManagerForSubscription(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GetSystemDialerPackage_" data-uid="Android.Telecom.TelecomManager.GetSystemDialerPackage*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GetSystemDialerPackage" data-uid="Android.Telecom.TelecomManager.GetSystemDialerPackage">
+  GetSystemDialerPackage()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L579"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getSystemDialerPackage()">https://developer.android.com/reference/android/telecom/TelecomManager.html#getSystemDialerPackage()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetSystemDialerPackage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GetUserSelectedOutgoingPhoneAccount_" data-uid="Android.Telecom.TelecomManager.GetUserSelectedOutgoingPhoneAccount*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GetUserSelectedOutgoingPhoneAccount" data-uid="Android.Telecom.TelecomManager.GetUserSelectedOutgoingPhoneAccount">
+  GetUserSelectedOutgoingPhoneAccount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L465"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getUserSelectedOutgoingPhoneAccount()">https://developer.android.com/reference/android/telecom/TelecomManager.html#getUserSelectedOutgoingPhoneAccount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhoneAccountHandle GetUserSelectedOutgoingPhoneAccount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_GetVoiceMailNumber_" data-uid="Android.Telecom.TelecomManager.GetVoiceMailNumber*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_GetVoiceMailNumber_Android_Telecom_PhoneAccountHandle_" data-uid="Android.Telecom.TelecomManager.GetVoiceMailNumber(Android.Telecom.PhoneAccountHandle)">
+  GetVoiceMailNumber(PhoneAccountHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getVoiceMailNumber(android.telecom.PhoneAccountHandle)">https://developer.android.com/reference/android/telecom/TelecomManager.html#getVoiceMailNumber(android.telecom.PhoneAccountHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetVoiceMailNumber(PhoneAccountHandle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_HandleMmi_" data-uid="Android.Telecom.TelecomManager.HandleMmi*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_HandleMmi_Java_Lang_String_" data-uid="Android.Telecom.TelecomManager.HandleMmi(Java.Lang.String)">
+  HandleMmi(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#handleMmi(java.lang.String)">https://developer.android.com/reference/android/telecom/TelecomManager.html#handleMmi(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HandleMmi(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_HandleMmi_" data-uid="Android.Telecom.TelecomManager.HandleMmi*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_HandleMmi_Java_Lang_String_Android_Telecom_PhoneAccountHandle_" data-uid="Android.Telecom.TelecomManager.HandleMmi(Java.Lang.String,Android.Telecom.PhoneAccountHandle)">
+  HandleMmi(String, PhoneAccountHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L484"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#handleMmi(java.lang.String,android.telecom.PhoneAccountHandle)">https://developer.android.com/reference/android/telecom/TelecomManager.html#handleMmi(java.lang.String,android.telecom.PhoneAccountHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HandleMmi(String arg0, PhoneAccountHandle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_HasManageOngoingCallsPermission_" data-uid="Android.Telecom.TelecomManager.HasManageOngoingCallsPermission*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_HasManageOngoingCallsPermission" data-uid="Android.Telecom.TelecomManager.HasManageOngoingCallsPermission">
+  HasManageOngoingCallsPermission()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#hasManageOngoingCallsPermission()">https://developer.android.com/reference/android/telecom/TelecomManager.html#hasManageOngoingCallsPermission()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasManageOngoingCallsPermission()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_IsInCall_" data-uid="Android.Telecom.TelecomManager.IsInCall*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_IsInCall" data-uid="Android.Telecom.TelecomManager.IsInCall">
+  IsInCall()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L509"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#isInCall()">https://developer.android.com/reference/android/telecom/TelecomManager.html#isInCall()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInCall()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_IsInManagedCall_" data-uid="Android.Telecom.TelecomManager.IsInManagedCall*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_IsInManagedCall" data-uid="Android.Telecom.TelecomManager.IsInManagedCall">
+  IsInManagedCall()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#isInManagedCall()">https://developer.android.com/reference/android/telecom/TelecomManager.html#isInManagedCall()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInManagedCall()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_IsIncomingCallPermitted_" data-uid="Android.Telecom.TelecomManager.IsIncomingCallPermitted*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_IsIncomingCallPermitted_Android_Telecom_PhoneAccountHandle_" data-uid="Android.Telecom.TelecomManager.IsIncomingCallPermitted(Android.Telecom.PhoneAccountHandle)">
+  IsIncomingCallPermitted(PhoneAccountHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#isIncomingCallPermitted(android.telecom.PhoneAccountHandle)">https://developer.android.com/reference/android/telecom/TelecomManager.html#isIncomingCallPermitted(android.telecom.PhoneAccountHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIncomingCallPermitted(PhoneAccountHandle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_IsOutgoingCallPermitted_" data-uid="Android.Telecom.TelecomManager.IsOutgoingCallPermitted*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_IsOutgoingCallPermitted_Android_Telecom_PhoneAccountHandle_" data-uid="Android.Telecom.TelecomManager.IsOutgoingCallPermitted(Android.Telecom.PhoneAccountHandle)">
+  IsOutgoingCallPermitted(PhoneAccountHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#isOutgoingCallPermitted(android.telecom.PhoneAccountHandle)">https://developer.android.com/reference/android/telecom/TelecomManager.html#isOutgoingCallPermitted(android.telecom.PhoneAccountHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOutgoingCallPermitted(PhoneAccountHandle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_IsTtySupported_" data-uid="Android.Telecom.TelecomManager.IsTtySupported*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_IsTtySupported" data-uid="Android.Telecom.TelecomManager.IsTtySupported">
+  IsTtySupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#isTtySupported()">https://developer.android.com/reference/android/telecom/TelecomManager.html#isTtySupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTtySupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_IsVoiceMailNumber_" data-uid="Android.Telecom.TelecomManager.IsVoiceMailNumber*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_IsVoiceMailNumber_Android_Telecom_PhoneAccountHandle_Java_Lang_String_" data-uid="Android.Telecom.TelecomManager.IsVoiceMailNumber(Android.Telecom.PhoneAccountHandle,Java.Lang.String)">
+  IsVoiceMailNumber(PhoneAccountHandle, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L553"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#isVoiceMailNumber(android.telecom.PhoneAccountHandle,java.lang.String)">https://developer.android.com/reference/android/telecom/TelecomManager.html#isVoiceMailNumber(android.telecom.PhoneAccountHandle,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVoiceMailNumber(PhoneAccountHandle arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_PlaceCall_" data-uid="Android.Telecom.TelecomManager.PlaceCall*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_PlaceCall_Android_Net_Uri_Android_Os_Bundle_" data-uid="Android.Telecom.TelecomManager.PlaceCall(Android.Net.Uri,Android.Os.Bundle)">
+  PlaceCall(Uri, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L685"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#placeCall(android.net.Uri,android.os.Bundle)">https://developer.android.com/reference/android/telecom/TelecomManager.html#placeCall(android.net.Uri,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaceCall(Uri arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_RegisterPhoneAccount_" data-uid="Android.Telecom.TelecomManager.RegisterPhoneAccount*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_RegisterPhoneAccount_Android_Telecom_PhoneAccount_" data-uid="Android.Telecom.TelecomManager.RegisterPhoneAccount(Android.Telecom.PhoneAccount)">
+  RegisterPhoneAccount(PhoneAccount)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L693"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#registerPhoneAccount(android.telecom.PhoneAccount)">https://developer.android.com/reference/android/telecom/TelecomManager.html#registerPhoneAccount(android.telecom.PhoneAccount)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterPhoneAccount(PhoneAccount arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.PhoneAccount.html">PhoneAccount</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccount.html">PhoneAccount</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_ShowInCallScreen_" data-uid="Android.Telecom.TelecomManager.ShowInCallScreen*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_ShowInCallScreen_System_Boolean_" data-uid="Android.Telecom.TelecomManager.ShowInCallScreen(System.Boolean)">
+  ShowInCallScreen(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L701"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#showInCallScreen(boolean)">https://developer.android.com/reference/android/telecom/TelecomManager.html#showInCallScreen(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowInCallScreen(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_SilenceRinger_" data-uid="Android.Telecom.TelecomManager.SilenceRinger*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_SilenceRinger" data-uid="Android.Telecom.TelecomManager.SilenceRinger">
+  SilenceRinger()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L708"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#silenceRinger()">https://developer.android.com/reference/android/telecom/TelecomManager.html#silenceRinger()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SilenceRinger()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_StartConference_" data-uid="Android.Telecom.TelecomManager.StartConference*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_StartConference_Java_Util_List_Android_Net_Uri__Android_Os_Bundle_" data-uid="Android.Telecom.TelecomManager.StartConference(Java.Util.List{Android.Net.Uri},Android.Os.Bundle)">
+  StartConference(List&lt;Uri&gt;, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L717"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#startConference(java.util.List,android.os.Bundle)">https://developer.android.com/reference/android/telecom/TelecomManager.html#startConference(java.util.List,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartConference(List&lt;Uri&gt; arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Net.Uri.html">Uri</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_TelecomManager_UnregisterPhoneAccount_" data-uid="Android.Telecom.TelecomManager.UnregisterPhoneAccount*"></a>
+
+  <h3 id="Android_Telecom_TelecomManager_UnregisterPhoneAccount_Android_Telecom_PhoneAccountHandle_" data-uid="Android.Telecom.TelecomManager.UnregisterPhoneAccount(Android.Telecom.PhoneAccountHandle)">
+  UnregisterPhoneAccount(PhoneAccountHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L725"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/TelecomManager.html#unregisterPhoneAccount(android.telecom.PhoneAccountHandle)">https://developer.android.com/reference/android/telecom/TelecomManager.html#unregisterPhoneAccount(android.telecom.PhoneAccountHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterPhoneAccount(PhoneAccountHandle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/TelecomManager.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

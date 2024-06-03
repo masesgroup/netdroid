@@ -1,0 +1,2679 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class DeviceAdminReceiver | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DeviceAdminReceiver | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_App_Admin_DeviceAdminReceiver.md&amp;value=---%0Auid%3A%20Android.App.Admin.DeviceAdminReceiver%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.App.Admin.DeviceAdminReceiver">
+
+
+
+  <h1 id="Android_App_Admin_DeviceAdminReceiver" data-uid="Android.App.Admin.DeviceAdminReceiver" class="text-break">
+Class DeviceAdminReceiver  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.App.html">App</a>.<a class="xref" href="Android.App.Admin.html">Admin</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DeviceAdminReceiver : BroadcastReceiver, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Content.BroadcastReceiver.html">BroadcastReceiver</a>&gt;</div>
+      <div><a class="xref" href="Android.Content.BroadcastReceiver.html">BroadcastReceiver</a></div>
+      <div><span class="xref">DeviceAdminReceiver</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_OnReceive_Android_Content_Context_Android_Content_Intent_">BroadcastReceiver.OnReceive(Context, Intent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_PeekService_Android_Content_Context_Android_Content_Intent_">BroadcastReceiver.PeekService(Context, Intent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_GoAsync">BroadcastReceiver.GoAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_GetResultExtras_System_Boolean_">BroadcastReceiver.GetResultExtras(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_GetAbortBroadcast">BroadcastReceiver.GetAbortBroadcast()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_GetDebugUnregister">BroadcastReceiver.GetDebugUnregister()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_IsInitialStickyBroadcast">BroadcastReceiver.IsInitialStickyBroadcast()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_IsOrderedBroadcast">BroadcastReceiver.IsOrderedBroadcast()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_GetResultCode">BroadcastReceiver.GetResultCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_GetResultData">BroadcastReceiver.GetResultData()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_AbortBroadcast">BroadcastReceiver.AbortBroadcast()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_ClearAbortBroadcast">BroadcastReceiver.ClearAbortBroadcast()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_SetDebugUnregister_System_Boolean_">BroadcastReceiver.SetDebugUnregister(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_SetOrderedHint_System_Boolean_">BroadcastReceiver.SetOrderedHint(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_SetResult_System_Int32_Java_Lang_String_Android_Os_Bundle_">BroadcastReceiver.SetResult(int, String, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_SetResultCode_System_Int32_">BroadcastReceiver.SetResultCode(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_SetResultData_Java_Lang_String_">BroadcastReceiver.SetResultData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_SetResultExtras_Android_Os_Bundle_">BroadcastReceiver.SetResultExtras(Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_GetSentFromUid">BroadcastReceiver.GetSentFromUid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.BroadcastReceiver.html#Android_Content_BroadcastReceiver_GetSentFromPackage">BroadcastReceiver.GetSentFromPackage()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BroadcastReceiver&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BroadcastReceiver&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;BroadcastReceiver&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BroadcastReceiver&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BroadcastReceiver&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BroadcastReceiver&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BroadcastReceiver&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver__ctor_" data-uid="Android.App.Admin.DeviceAdminReceiver.#ctor*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver__ctor" data-uid="Android.App.Admin.DeviceAdminReceiver.#ctor">
+  DeviceAdminReceiver()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeviceAdminReceiver()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver__ctor_" data-uid="Android.App.Admin.DeviceAdminReceiver.#ctor*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver__ctor_System_Object___" data-uid="Android.App.Admin.DeviceAdminReceiver.#ctor(System.Object[])">
+  DeviceAdminReceiver(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeviceAdminReceiver(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_ACTION_CHOOSE_PRIVATE_KEY_ALIAS_" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_CHOOSE_PRIVATE_KEY_ALIAS*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_ACTION_CHOOSE_PRIVATE_KEY_ALIAS" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_CHOOSE_PRIVATE_KEY_ALIAS">
+  ACTION_CHOOSE_PRIVATE_KEY_ALIAS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_CHOOSE_PRIVATE_KEY_ALIAS">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_CHOOSE_PRIVATE_KEY_ALIAS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_CHOOSE_PRIVATE_KEY_ALIAS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_ACTION_DEVICE_ADMIN_DISABLED_" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_DEVICE_ADMIN_DISABLED*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_ACTION_DEVICE_ADMIN_DISABLED" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_DEVICE_ADMIN_DISABLED">
+  ACTION_DEVICE_ADMIN_DISABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_DEVICE_ADMIN_DISABLED">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_DEVICE_ADMIN_DISABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_DEVICE_ADMIN_DISABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_ACTION_DEVICE_ADMIN_DISABLE_REQUESTED_" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_DEVICE_ADMIN_DISABLE_REQUESTED*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_ACTION_DEVICE_ADMIN_DISABLE_REQUESTED" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_DEVICE_ADMIN_DISABLE_REQUESTED">
+  ACTION_DEVICE_ADMIN_DISABLE_REQUESTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_DEVICE_ADMIN_DISABLE_REQUESTED">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_DEVICE_ADMIN_DISABLE_REQUESTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_DEVICE_ADMIN_DISABLE_REQUESTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_ACTION_DEVICE_ADMIN_ENABLED_" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_DEVICE_ADMIN_ENABLED*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_ACTION_DEVICE_ADMIN_ENABLED" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_DEVICE_ADMIN_ENABLED">
+  ACTION_DEVICE_ADMIN_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_DEVICE_ADMIN_ENABLED">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_DEVICE_ADMIN_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_DEVICE_ADMIN_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_ACTION_LOCK_TASK_ENTERING_" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_LOCK_TASK_ENTERING*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_ACTION_LOCK_TASK_ENTERING" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_LOCK_TASK_ENTERING">
+  ACTION_LOCK_TASK_ENTERING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_LOCK_TASK_ENTERING">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_LOCK_TASK_ENTERING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_LOCK_TASK_ENTERING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_ACTION_LOCK_TASK_EXITING_" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_LOCK_TASK_EXITING*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_ACTION_LOCK_TASK_EXITING" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_LOCK_TASK_EXITING">
+  ACTION_LOCK_TASK_EXITING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_LOCK_TASK_EXITING">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_LOCK_TASK_EXITING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_LOCK_TASK_EXITING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_ACTION_NETWORK_LOGS_AVAILABLE_" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_NETWORK_LOGS_AVAILABLE*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_ACTION_NETWORK_LOGS_AVAILABLE" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_NETWORK_LOGS_AVAILABLE">
+  ACTION_NETWORK_LOGS_AVAILABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_NETWORK_LOGS_AVAILABLE">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_NETWORK_LOGS_AVAILABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_NETWORK_LOGS_AVAILABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_ACTION_PASSWORD_CHANGED_" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_PASSWORD_CHANGED*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_ACTION_PASSWORD_CHANGED" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_PASSWORD_CHANGED">
+  ACTION_PASSWORD_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_PASSWORD_CHANGED">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_PASSWORD_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_PASSWORD_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_ACTION_PASSWORD_EXPIRING_" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_PASSWORD_EXPIRING*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_ACTION_PASSWORD_EXPIRING" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_PASSWORD_EXPIRING">
+  ACTION_PASSWORD_EXPIRING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_PASSWORD_EXPIRING">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_PASSWORD_EXPIRING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_PASSWORD_EXPIRING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_ACTION_PASSWORD_FAILED_" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_PASSWORD_FAILED*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_ACTION_PASSWORD_FAILED" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_PASSWORD_FAILED">
+  ACTION_PASSWORD_FAILED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_PASSWORD_FAILED">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_PASSWORD_FAILED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_PASSWORD_FAILED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_ACTION_PASSWORD_SUCCEEDED_" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_PASSWORD_SUCCEEDED*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_ACTION_PASSWORD_SUCCEEDED" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_PASSWORD_SUCCEEDED">
+  ACTION_PASSWORD_SUCCEEDED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_PASSWORD_SUCCEEDED">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_PASSWORD_SUCCEEDED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_PASSWORD_SUCCEEDED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_ACTION_PROFILE_PROVISIONING_COMPLETE_" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_PROFILE_PROVISIONING_COMPLETE*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_ACTION_PROFILE_PROVISIONING_COMPLETE" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_PROFILE_PROVISIONING_COMPLETE">
+  ACTION_PROFILE_PROVISIONING_COMPLETE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_PROFILE_PROVISIONING_COMPLETE">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_PROFILE_PROVISIONING_COMPLETE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_PROFILE_PROVISIONING_COMPLETE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_ACTION_SECURITY_LOGS_AVAILABLE_" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_SECURITY_LOGS_AVAILABLE*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_ACTION_SECURITY_LOGS_AVAILABLE" data-uid="Android.App.Admin.DeviceAdminReceiver.ACTION_SECURITY_LOGS_AVAILABLE">
+  ACTION_SECURITY_LOGS_AVAILABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_SECURITY_LOGS_AVAILABLE">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#ACTION_SECURITY_LOGS_AVAILABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_SECURITY_LOGS_AVAILABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_BUGREPORT_FAILURE_FAILED_COMPLETING_" data-uid="Android.App.Admin.DeviceAdminReceiver.BUGREPORT_FAILURE_FAILED_COMPLETING*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_BUGREPORT_FAILURE_FAILED_COMPLETING" data-uid="Android.App.Admin.DeviceAdminReceiver.BUGREPORT_FAILURE_FAILED_COMPLETING">
+  BUGREPORT_FAILURE_FAILED_COMPLETING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#BUGREPORT_FAILURE_FAILED_COMPLETING">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#BUGREPORT_FAILURE_FAILED_COMPLETING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BUGREPORT_FAILURE_FAILED_COMPLETING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_BUGREPORT_FAILURE_FILE_NO_LONGER_AVAILABLE_" data-uid="Android.App.Admin.DeviceAdminReceiver.BUGREPORT_FAILURE_FILE_NO_LONGER_AVAILABLE*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_BUGREPORT_FAILURE_FILE_NO_LONGER_AVAILABLE" data-uid="Android.App.Admin.DeviceAdminReceiver.BUGREPORT_FAILURE_FILE_NO_LONGER_AVAILABLE">
+  BUGREPORT_FAILURE_FILE_NO_LONGER_AVAILABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#BUGREPORT_FAILURE_FILE_NO_LONGER_AVAILABLE">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#BUGREPORT_FAILURE_FILE_NO_LONGER_AVAILABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BUGREPORT_FAILURE_FILE_NO_LONGER_AVAILABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_BridgeClassName_" data-uid="Android.App.Admin.DeviceAdminReceiver.BridgeClassName*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_BridgeClassName" data-uid="Android.App.Admin.DeviceAdminReceiver.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_DEVICE_ADMIN_META_DATA_" data-uid="Android.App.Admin.DeviceAdminReceiver.DEVICE_ADMIN_META_DATA*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_DEVICE_ADMIN_META_DATA" data-uid="Android.App.Admin.DeviceAdminReceiver.DEVICE_ADMIN_META_DATA">
+  DEVICE_ADMIN_META_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#DEVICE_ADMIN_META_DATA">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#DEVICE_ADMIN_META_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DEVICE_ADMIN_META_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_EXTRA_DISABLE_WARNING_" data-uid="Android.App.Admin.DeviceAdminReceiver.EXTRA_DISABLE_WARNING*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_EXTRA_DISABLE_WARNING" data-uid="Android.App.Admin.DeviceAdminReceiver.EXTRA_DISABLE_WARNING">
+  EXTRA_DISABLE_WARNING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#EXTRA_DISABLE_WARNING">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#EXTRA_DISABLE_WARNING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_DISABLE_WARNING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_EXTRA_LOCK_TASK_PACKAGE_" data-uid="Android.App.Admin.DeviceAdminReceiver.EXTRA_LOCK_TASK_PACKAGE*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_EXTRA_LOCK_TASK_PACKAGE" data-uid="Android.App.Admin.DeviceAdminReceiver.EXTRA_LOCK_TASK_PACKAGE">
+  EXTRA_LOCK_TASK_PACKAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#EXTRA_LOCK_TASK_PACKAGE">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#EXTRA_LOCK_TASK_PACKAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_LOCK_TASK_PACKAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLE_" data-uid="Android.App.Admin.DeviceAdminReceiver.EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLE*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLE" data-uid="Android.App.Admin.DeviceAdminReceiver.EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLE">
+  EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLE">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_IsBridgeAbstract_" data-uid="Android.App.Admin.DeviceAdminReceiver.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_IsBridgeAbstract" data-uid="Android.App.Admin.DeviceAdminReceiver.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_IsBridgeCloseable_" data-uid="Android.App.Admin.DeviceAdminReceiver.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_IsBridgeCloseable" data-uid="Android.App.Admin.DeviceAdminReceiver.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_IsBridgeInterface_" data-uid="Android.App.Admin.DeviceAdminReceiver.IsBridgeInterface*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_IsBridgeInterface" data-uid="Android.App.Admin.DeviceAdminReceiver.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_IsBridgeStatic_" data-uid="Android.App.Admin.DeviceAdminReceiver.IsBridgeStatic*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_IsBridgeStatic" data-uid="Android.App.Admin.DeviceAdminReceiver.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_GetManager_" data-uid="Android.App.Admin.DeviceAdminReceiver.GetManager*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_GetManager_Android_Content_Context_" data-uid="Android.App.Admin.DeviceAdminReceiver.GetManager(Android.Content.Context)">
+  GetManager(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#getManager(android.content.Context)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#getManager(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DevicePolicyManager GetManager(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Admin.DevicePolicyManager.html">DevicePolicyManager</a></dt>
+    <dd><p><a class="xref" href="Android.App.Admin.DevicePolicyManager.html">DevicePolicyManager</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_GetWho_" data-uid="Android.App.Admin.DeviceAdminReceiver.GetWho*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_GetWho_Android_Content_Context_" data-uid="Android.App.Admin.DeviceAdminReceiver.GetWho(Android.Content.Context)">
+  GetWho(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#getWho(android.content.Context)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#getWho(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ComponentName GetWho(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnBugreportFailed_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnBugreportFailed*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnBugreportFailed_Android_Content_Context_Android_Content_Intent_System_Int32_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnBugreportFailed(Android.Content.Context,Android.Content.Intent,System.Int32)">
+  OnBugreportFailed(Context, Intent, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onBugreportFailed(android.content.Context,android.content.Intent,int)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onBugreportFailed(android.content.Context,android.content.Intent,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBugreportFailed(Context arg0, Intent arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnBugreportShared_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnBugreportShared*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnBugreportShared_Android_Content_Context_Android_Content_Intent_Java_Lang_String_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnBugreportShared(Android.Content.Context,Android.Content.Intent,Java.Lang.String)">
+  OnBugreportShared(Context, Intent, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onBugreportShared(android.content.Context,android.content.Intent,java.lang.String)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onBugreportShared(android.content.Context,android.content.Intent,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBugreportShared(Context arg0, Intent arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnBugreportSharingDeclined_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnBugreportSharingDeclined*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnBugreportSharingDeclined_Android_Content_Context_Android_Content_Intent_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnBugreportSharingDeclined(Android.Content.Context,Android.Content.Intent)">
+  OnBugreportSharingDeclined(Context, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onBugreportSharingDeclined(android.content.Context,android.content.Intent)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onBugreportSharingDeclined(android.content.Context,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBugreportSharingDeclined(Context arg0, Intent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnChoosePrivateKeyAlias_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnChoosePrivateKeyAlias*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnChoosePrivateKeyAlias_Android_Content_Context_Android_Content_Intent_System_Int32_Android_Net_Uri_Java_Lang_String_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnChoosePrivateKeyAlias(Android.Content.Context,Android.Content.Intent,System.Int32,Android.Net.Uri,Java.Lang.String)">
+  OnChoosePrivateKeyAlias(Context, Intent, int, Uri, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onChoosePrivateKeyAlias(android.content.Context,android.content.Intent,int,android.net.Uri,java.lang.String)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onChoosePrivateKeyAlias(android.content.Context,android.content.Intent,int,android.net.Uri,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String OnChoosePrivateKeyAlias(Context arg0, Intent arg1, int arg2, Uri arg3, String arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnComplianceAcknowledgementRequired_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnComplianceAcknowledgementRequired*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnComplianceAcknowledgementRequired_Android_Content_Context_Android_Content_Intent_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnComplianceAcknowledgementRequired(Android.Content.Context,Android.Content.Intent)">
+  OnComplianceAcknowledgementRequired(Context, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onComplianceAcknowledgementRequired(android.content.Context,android.content.Intent)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onComplianceAcknowledgementRequired(android.content.Context,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnComplianceAcknowledgementRequired(Context arg0, Intent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnDisableRequested_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnDisableRequested*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnDisableRequested_Android_Content_Context_Android_Content_Intent_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnDisableRequested(Android.Content.Context,Android.Content.Intent)">
+  OnDisableRequested(Context, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onDisableRequested(android.content.Context,android.content.Intent)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onDisableRequested(android.content.Context,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence OnDisableRequested(Context arg0, Intent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnDisabled_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnDisabled*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnDisabled_Android_Content_Context_Android_Content_Intent_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnDisabled(Android.Content.Context,Android.Content.Intent)">
+  OnDisabled(Context, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onDisabled(android.content.Context,android.content.Intent)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onDisabled(android.content.Context,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDisabled(Context arg0, Intent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnEnabled_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnEnabled*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnEnabled_Android_Content_Context_Android_Content_Intent_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnEnabled(Android.Content.Context,Android.Content.Intent)">
+  OnEnabled(Context, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onEnabled(android.content.Context,android.content.Intent)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onEnabled(android.content.Context,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnEnabled(Context arg0, Intent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnLockTaskModeEntering_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnLockTaskModeEntering*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnLockTaskModeEntering_Android_Content_Context_Android_Content_Intent_Java_Lang_String_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnLockTaskModeEntering(Android.Content.Context,Android.Content.Intent,Java.Lang.String)">
+  OnLockTaskModeEntering(Context, Intent, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onLockTaskModeEntering(android.content.Context,android.content.Intent,java.lang.String)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onLockTaskModeEntering(android.content.Context,android.content.Intent,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLockTaskModeEntering(Context arg0, Intent arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnLockTaskModeExiting_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnLockTaskModeExiting*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnLockTaskModeExiting_Android_Content_Context_Android_Content_Intent_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnLockTaskModeExiting(Android.Content.Context,Android.Content.Intent)">
+  OnLockTaskModeExiting(Context, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onLockTaskModeExiting(android.content.Context,android.content.Intent)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onLockTaskModeExiting(android.content.Context,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLockTaskModeExiting(Context arg0, Intent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnNetworkLogsAvailable_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnNetworkLogsAvailable*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnNetworkLogsAvailable_Android_Content_Context_Android_Content_Intent_System_Int64_System_Int32_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnNetworkLogsAvailable(Android.Content.Context,Android.Content.Intent,System.Int64,System.Int32)">
+  OnNetworkLogsAvailable(Context, Intent, long, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onNetworkLogsAvailable(android.content.Context,android.content.Intent,long,int)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onNetworkLogsAvailable(android.content.Context,android.content.Intent,long,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnNetworkLogsAvailable(Context arg0, Intent arg1, long arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnOperationSafetyStateChanged_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnOperationSafetyStateChanged*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnOperationSafetyStateChanged_Android_Content_Context_System_Int32_System_Boolean_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnOperationSafetyStateChanged(Android.Content.Context,System.Int32,System.Boolean)">
+  OnOperationSafetyStateChanged(Context, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onOperationSafetyStateChanged(android.content.Context,int,boolean)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onOperationSafetyStateChanged(android.content.Context,int,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnOperationSafetyStateChanged(Context arg0, int arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnPasswordChanged_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordChanged*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnPasswordChanged_Android_Content_Context_Android_Content_Intent_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordChanged(Android.Content.Context,Android.Content.Intent)">
+  OnPasswordChanged(Context, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordChanged(android.content.Context,android.content.Intent)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordChanged(android.content.Context,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void OnPasswordChanged(Context arg0, Intent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnPasswordChanged_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordChanged*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnPasswordChanged_Android_Content_Context_Android_Content_Intent_Android_Os_UserHandle_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordChanged(Android.Content.Context,Android.Content.Intent,Android.Os.UserHandle)">
+  OnPasswordChanged(Context, Intent, UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordChanged(android.content.Context,android.content.Intent,android.os.UserHandle)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordChanged(android.content.Context,android.content.Intent,android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPasswordChanged(Context arg0, Intent arg1, UserHandle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnPasswordExpiring_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordExpiring*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnPasswordExpiring_Android_Content_Context_Android_Content_Intent_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordExpiring(Android.Content.Context,Android.Content.Intent)">
+  OnPasswordExpiring(Context, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordExpiring(android.content.Context,android.content.Intent)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordExpiring(android.content.Context,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void OnPasswordExpiring(Context arg0, Intent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnPasswordExpiring_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordExpiring*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnPasswordExpiring_Android_Content_Context_Android_Content_Intent_Android_Os_UserHandle_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordExpiring(Android.Content.Context,Android.Content.Intent,Android.Os.UserHandle)">
+  OnPasswordExpiring(Context, Intent, UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordExpiring(android.content.Context,android.content.Intent,android.os.UserHandle)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordExpiring(android.content.Context,android.content.Intent,android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPasswordExpiring(Context arg0, Intent arg1, UserHandle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnPasswordFailed_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordFailed*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnPasswordFailed_Android_Content_Context_Android_Content_Intent_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordFailed(Android.Content.Context,Android.Content.Intent)">
+  OnPasswordFailed(Context, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordFailed(android.content.Context,android.content.Intent)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordFailed(android.content.Context,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void OnPasswordFailed(Context arg0, Intent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnPasswordFailed_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordFailed*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnPasswordFailed_Android_Content_Context_Android_Content_Intent_Android_Os_UserHandle_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordFailed(Android.Content.Context,Android.Content.Intent,Android.Os.UserHandle)">
+  OnPasswordFailed(Context, Intent, UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordFailed(android.content.Context,android.content.Intent,android.os.UserHandle)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordFailed(android.content.Context,android.content.Intent,android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPasswordFailed(Context arg0, Intent arg1, UserHandle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnPasswordSucceeded_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordSucceeded*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnPasswordSucceeded_Android_Content_Context_Android_Content_Intent_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordSucceeded(Android.Content.Context,Android.Content.Intent)">
+  OnPasswordSucceeded(Context, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordSucceeded(android.content.Context,android.content.Intent)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordSucceeded(android.content.Context,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void OnPasswordSucceeded(Context arg0, Intent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnPasswordSucceeded_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordSucceeded*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnPasswordSucceeded_Android_Content_Context_Android_Content_Intent_Android_Os_UserHandle_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnPasswordSucceeded(Android.Content.Context,Android.Content.Intent,Android.Os.UserHandle)">
+  OnPasswordSucceeded(Context, Intent, UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordSucceeded(android.content.Context,android.content.Intent,android.os.UserHandle)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordSucceeded(android.content.Context,android.content.Intent,android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPasswordSucceeded(Context arg0, Intent arg1, UserHandle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnProfileProvisioningComplete_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnProfileProvisioningComplete*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnProfileProvisioningComplete_Android_Content_Context_Android_Content_Intent_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnProfileProvisioningComplete(Android.Content.Context,Android.Content.Intent)">
+  OnProfileProvisioningComplete(Context, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onProfileProvisioningComplete(android.content.Context,android.content.Intent)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onProfileProvisioningComplete(android.content.Context,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnProfileProvisioningComplete(Context arg0, Intent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnReadyForUserInitialization_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnReadyForUserInitialization*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnReadyForUserInitialization_Android_Content_Context_Android_Content_Intent_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnReadyForUserInitialization(Android.Content.Context,Android.Content.Intent)">
+  OnReadyForUserInitialization(Context, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onReadyForUserInitialization(android.content.Context,android.content.Intent)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onReadyForUserInitialization(android.content.Context,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void OnReadyForUserInitialization(Context arg0, Intent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnSecurityLogsAvailable_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnSecurityLogsAvailable*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnSecurityLogsAvailable_Android_Content_Context_Android_Content_Intent_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnSecurityLogsAvailable(Android.Content.Context,Android.Content.Intent)">
+  OnSecurityLogsAvailable(Context, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onSecurityLogsAvailable(android.content.Context,android.content.Intent)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onSecurityLogsAvailable(android.content.Context,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSecurityLogsAvailable(Context arg0, Intent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnSystemUpdatePending_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnSystemUpdatePending*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnSystemUpdatePending_Android_Content_Context_Android_Content_Intent_System_Int64_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnSystemUpdatePending(Android.Content.Context,Android.Content.Intent,System.Int64)">
+  OnSystemUpdatePending(Context, Intent, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onSystemUpdatePending(android.content.Context,android.content.Intent,long)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onSystemUpdatePending(android.content.Context,android.content.Intent,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSystemUpdatePending(Context arg0, Intent arg1, long arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnTransferAffiliatedProfileOwnershipComplete_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnTransferAffiliatedProfileOwnershipComplete*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnTransferAffiliatedProfileOwnershipComplete_Android_Content_Context_Android_Os_UserHandle_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnTransferAffiliatedProfileOwnershipComplete(Android.Content.Context,Android.Os.UserHandle)">
+  OnTransferAffiliatedProfileOwnershipComplete(Context, UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onTransferAffiliatedProfileOwnershipComplete(android.content.Context,android.os.UserHandle)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onTransferAffiliatedProfileOwnershipComplete(android.content.Context,android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTransferAffiliatedProfileOwnershipComplete(Context arg0, UserHandle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnTransferOwnershipComplete_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnTransferOwnershipComplete*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnTransferOwnershipComplete_Android_Content_Context_Android_Os_PersistableBundle_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnTransferOwnershipComplete(Android.Content.Context,Android.Os.PersistableBundle)">
+  OnTransferOwnershipComplete(Context, PersistableBundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onTransferOwnershipComplete(android.content.Context,android.os.PersistableBundle)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onTransferOwnershipComplete(android.content.Context,android.os.PersistableBundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTransferOwnershipComplete(Context arg0, PersistableBundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnUserAdded_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnUserAdded*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnUserAdded_Android_Content_Context_Android_Content_Intent_Android_Os_UserHandle_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnUserAdded(Android.Content.Context,Android.Content.Intent,Android.Os.UserHandle)">
+  OnUserAdded(Context, Intent, UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserAdded(android.content.Context,android.content.Intent,android.os.UserHandle)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserAdded(android.content.Context,android.content.Intent,android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnUserAdded(Context arg0, Intent arg1, UserHandle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnUserRemoved_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnUserRemoved*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnUserRemoved_Android_Content_Context_Android_Content_Intent_Android_Os_UserHandle_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnUserRemoved(Android.Content.Context,Android.Content.Intent,Android.Os.UserHandle)">
+  OnUserRemoved(Context, Intent, UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserRemoved(android.content.Context,android.content.Intent,android.os.UserHandle)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserRemoved(android.content.Context,android.content.Intent,android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnUserRemoved(Context arg0, Intent arg1, UserHandle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnUserStarted_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnUserStarted*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnUserStarted_Android_Content_Context_Android_Content_Intent_Android_Os_UserHandle_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnUserStarted(Android.Content.Context,Android.Content.Intent,Android.Os.UserHandle)">
+  OnUserStarted(Context, Intent, UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserStarted(android.content.Context,android.content.Intent,android.os.UserHandle)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserStarted(android.content.Context,android.content.Intent,android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnUserStarted(Context arg0, Intent arg1, UserHandle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnUserStopped_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnUserStopped*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnUserStopped_Android_Content_Context_Android_Content_Intent_Android_Os_UserHandle_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnUserStopped(Android.Content.Context,Android.Content.Intent,Android.Os.UserHandle)">
+  OnUserStopped(Context, Intent, UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L471"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserStopped(android.content.Context,android.content.Intent,android.os.UserHandle)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserStopped(android.content.Context,android.content.Intent,android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnUserStopped(Context arg0, Intent arg1, UserHandle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_DeviceAdminReceiver_OnUserSwitched_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnUserSwitched*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminReceiver_OnUserSwitched_Android_Content_Context_Android_Content_Intent_Android_Os_UserHandle_" data-uid="Android.App.Admin.DeviceAdminReceiver.OnUserSwitched(Android.Content.Context,Android.Content.Intent,Android.Os.UserHandle)">
+  OnUserSwitched(Context, Intent, UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserSwitched(android.content.Context,android.content.Intent,android.os.UserHandle)">https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserSwitched(android.content.Context,android.content.Intent,android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnUserSwitched(Context arg0, Intent arg1, UserHandle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminReceiver.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

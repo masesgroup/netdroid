@@ -1,0 +1,2756 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class SearchManager | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SearchManager | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/app/SearchManager.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_App_SearchManager.md&amp;value=---%0Auid%3A%20Android.App.SearchManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.App.SearchManager">
+
+
+
+  <h1 id="Android_App_SearchManager" data-uid="Android.App.SearchManager" class="text-break">
+Class SearchManager  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.App.html">App</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html">https://developer.android.com/reference/android/app/SearchManager.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SearchManager : JVMBridgeBase&lt;SearchManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.App.SearchManager.html">SearchManager</a>&gt;</div>
+      <div><span class="xref">SearchManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SearchManager&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SearchManager&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SearchManager&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SearchManager&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SearchManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SearchManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SearchManager&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SearchManager&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;SearchManager&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SearchManager&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SearchManager&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SearchManager&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SearchManager&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_App_SearchManager__ctor_" data-uid="Android.App.SearchManager.#ctor*"></a>
+
+  <h3 id="Android_App_SearchManager__ctor" data-uid="Android.App.SearchManager.#ctor">
+  SearchManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L6358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SearchManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager__ctor_" data-uid="Android.App.SearchManager.#ctor*"></a>
+
+  <h3 id="Android_App_SearchManager__ctor_System_Object___" data-uid="Android.App.SearchManager.#ctor(System.Object[])">
+  SearchManager(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L6362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SearchManager(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_App_SearchManager_ACTION_KEY_" data-uid="Android.App.SearchManager.ACTION_KEY*"></a>
+
+  <h3 id="Android_App_SearchManager_ACTION_KEY" data-uid="Android.App.SearchManager.ACTION_KEY">
+  ACTION_KEY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#ACTION_KEY">https://developer.android.com/reference/android/app/SearchManager.html#ACTION_KEY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_KEY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_ACTION_MSG_" data-uid="Android.App.SearchManager.ACTION_MSG*"></a>
+
+  <h3 id="Android_App_SearchManager_ACTION_MSG" data-uid="Android.App.SearchManager.ACTION_MSG">
+  ACTION_MSG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#ACTION_MSG">https://developer.android.com/reference/android/app/SearchManager.html#ACTION_MSG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_MSG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_APP_DATA_" data-uid="Android.App.SearchManager.APP_DATA*"></a>
+
+  <h3 id="Android_App_SearchManager_APP_DATA" data-uid="Android.App.SearchManager.APP_DATA">
+  APP_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#APP_DATA">https://developer.android.com/reference/android/app/SearchManager.html#APP_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String APP_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_BridgeClassName_" data-uid="Android.App.SearchManager.BridgeClassName*"></a>
+
+  <h3 id="Android_App_SearchManager_BridgeClassName" data-uid="Android.App.SearchManager.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L6369"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_CURSOR_EXTRA_KEY_IN_PROGRESS_" data-uid="Android.App.SearchManager.CURSOR_EXTRA_KEY_IN_PROGRESS*"></a>
+
+  <h3 id="Android_App_SearchManager_CURSOR_EXTRA_KEY_IN_PROGRESS" data-uid="Android.App.SearchManager.CURSOR_EXTRA_KEY_IN_PROGRESS">
+  CURSOR_EXTRA_KEY_IN_PROGRESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#CURSOR_EXTRA_KEY_IN_PROGRESS">https://developer.android.com/reference/android/app/SearchManager.html#CURSOR_EXTRA_KEY_IN_PROGRESS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CURSOR_EXTRA_KEY_IN_PROGRESS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_EXTRA_DATA_KEY_" data-uid="Android.App.SearchManager.EXTRA_DATA_KEY*"></a>
+
+  <h3 id="Android_App_SearchManager_EXTRA_DATA_KEY" data-uid="Android.App.SearchManager.EXTRA_DATA_KEY">
+  EXTRA_DATA_KEY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#EXTRA_DATA_KEY">https://developer.android.com/reference/android/app/SearchManager.html#EXTRA_DATA_KEY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_DATA_KEY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_EXTRA_NEW_SEARCH_" data-uid="Android.App.SearchManager.EXTRA_NEW_SEARCH*"></a>
+
+  <h3 id="Android_App_SearchManager_EXTRA_NEW_SEARCH" data-uid="Android.App.SearchManager.EXTRA_NEW_SEARCH">
+  EXTRA_NEW_SEARCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#EXTRA_NEW_SEARCH">https://developer.android.com/reference/android/app/SearchManager.html#EXTRA_NEW_SEARCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_NEW_SEARCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_EXTRA_SELECT_QUERY_" data-uid="Android.App.SearchManager.EXTRA_SELECT_QUERY*"></a>
+
+  <h3 id="Android_App_SearchManager_EXTRA_SELECT_QUERY" data-uid="Android.App.SearchManager.EXTRA_SELECT_QUERY">
+  EXTRA_SELECT_QUERY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#EXTRA_SELECT_QUERY">https://developer.android.com/reference/android/app/SearchManager.html#EXTRA_SELECT_QUERY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_SELECT_QUERY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_EXTRA_WEB_SEARCH_PENDINGINTENT_" data-uid="Android.App.SearchManager.EXTRA_WEB_SEARCH_PENDINGINTENT*"></a>
+
+  <h3 id="Android_App_SearchManager_EXTRA_WEB_SEARCH_PENDINGINTENT" data-uid="Android.App.SearchManager.EXTRA_WEB_SEARCH_PENDINGINTENT">
+  EXTRA_WEB_SEARCH_PENDINGINTENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#EXTRA_WEB_SEARCH_PENDINGINTENT">https://developer.android.com/reference/android/app/SearchManager.html#EXTRA_WEB_SEARCH_PENDINGINTENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_WEB_SEARCH_PENDINGINTENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_FLAG_QUERY_REFINEMENT_" data-uid="Android.App.SearchManager.FLAG_QUERY_REFINEMENT*"></a>
+
+  <h3 id="Android_App_SearchManager_FLAG_QUERY_REFINEMENT" data-uid="Android.App.SearchManager.FLAG_QUERY_REFINEMENT">
+  FLAG_QUERY_REFINEMENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#FLAG_QUERY_REFINEMENT">https://developer.android.com/reference/android/app/SearchManager.html#FLAG_QUERY_REFINEMENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_QUERY_REFINEMENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_INTENT_ACTION_GLOBAL_SEARCH_" data-uid="Android.App.SearchManager.INTENT_ACTION_GLOBAL_SEARCH*"></a>
+
+  <h3 id="Android_App_SearchManager_INTENT_ACTION_GLOBAL_SEARCH" data-uid="Android.App.SearchManager.INTENT_ACTION_GLOBAL_SEARCH">
+  INTENT_ACTION_GLOBAL_SEARCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#INTENT_ACTION_GLOBAL_SEARCH">https://developer.android.com/reference/android/app/SearchManager.html#INTENT_ACTION_GLOBAL_SEARCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_ACTION_GLOBAL_SEARCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_INTENT_ACTION_SEARCHABLES_CHANGED_" data-uid="Android.App.SearchManager.INTENT_ACTION_SEARCHABLES_CHANGED*"></a>
+
+  <h3 id="Android_App_SearchManager_INTENT_ACTION_SEARCHABLES_CHANGED" data-uid="Android.App.SearchManager.INTENT_ACTION_SEARCHABLES_CHANGED">
+  INTENT_ACTION_SEARCHABLES_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#INTENT_ACTION_SEARCHABLES_CHANGED">https://developer.android.com/reference/android/app/SearchManager.html#INTENT_ACTION_SEARCHABLES_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_ACTION_SEARCHABLES_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_INTENT_ACTION_SEARCH_SETTINGS_" data-uid="Android.App.SearchManager.INTENT_ACTION_SEARCH_SETTINGS*"></a>
+
+  <h3 id="Android_App_SearchManager_INTENT_ACTION_SEARCH_SETTINGS" data-uid="Android.App.SearchManager.INTENT_ACTION_SEARCH_SETTINGS">
+  INTENT_ACTION_SEARCH_SETTINGS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#INTENT_ACTION_SEARCH_SETTINGS">https://developer.android.com/reference/android/app/SearchManager.html#INTENT_ACTION_SEARCH_SETTINGS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_ACTION_SEARCH_SETTINGS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_INTENT_ACTION_SEARCH_SETTINGS_CHANGED_" data-uid="Android.App.SearchManager.INTENT_ACTION_SEARCH_SETTINGS_CHANGED*"></a>
+
+  <h3 id="Android_App_SearchManager_INTENT_ACTION_SEARCH_SETTINGS_CHANGED" data-uid="Android.App.SearchManager.INTENT_ACTION_SEARCH_SETTINGS_CHANGED">
+  INTENT_ACTION_SEARCH_SETTINGS_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#INTENT_ACTION_SEARCH_SETTINGS_CHANGED">https://developer.android.com/reference/android/app/SearchManager.html#INTENT_ACTION_SEARCH_SETTINGS_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_ACTION_SEARCH_SETTINGS_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_INTENT_ACTION_WEB_SEARCH_SETTINGS_" data-uid="Android.App.SearchManager.INTENT_ACTION_WEB_SEARCH_SETTINGS*"></a>
+
+  <h3 id="Android_App_SearchManager_INTENT_ACTION_WEB_SEARCH_SETTINGS" data-uid="Android.App.SearchManager.INTENT_ACTION_WEB_SEARCH_SETTINGS">
+  INTENT_ACTION_WEB_SEARCH_SETTINGS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#INTENT_ACTION_WEB_SEARCH_SETTINGS">https://developer.android.com/reference/android/app/SearchManager.html#INTENT_ACTION_WEB_SEARCH_SETTINGS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_ACTION_WEB_SEARCH_SETTINGS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_INTENT_GLOBAL_SEARCH_ACTIVITY_CHANGED_" data-uid="Android.App.SearchManager.INTENT_GLOBAL_SEARCH_ACTIVITY_CHANGED*"></a>
+
+  <h3 id="Android_App_SearchManager_INTENT_GLOBAL_SEARCH_ACTIVITY_CHANGED" data-uid="Android.App.SearchManager.INTENT_GLOBAL_SEARCH_ACTIVITY_CHANGED">
+  INTENT_GLOBAL_SEARCH_ACTIVITY_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#INTENT_GLOBAL_SEARCH_ACTIVITY_CHANGED">https://developer.android.com/reference/android/app/SearchManager.html#INTENT_GLOBAL_SEARCH_ACTIVITY_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_GLOBAL_SEARCH_ACTIVITY_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_IsBridgeAbstract_" data-uid="Android.App.SearchManager.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_App_SearchManager_IsBridgeAbstract" data-uid="Android.App.SearchManager.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L6373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_IsBridgeCloseable_" data-uid="Android.App.SearchManager.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_App_SearchManager_IsBridgeCloseable" data-uid="Android.App.SearchManager.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L6377"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_IsBridgeInterface_" data-uid="Android.App.SearchManager.IsBridgeInterface*"></a>
+
+  <h3 id="Android_App_SearchManager_IsBridgeInterface" data-uid="Android.App.SearchManager.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L6381"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_IsBridgeStatic_" data-uid="Android.App.SearchManager.IsBridgeStatic*"></a>
+
+  <h3 id="Android_App_SearchManager_IsBridgeStatic" data-uid="Android.App.SearchManager.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L6385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_MENU_KEY_" data-uid="Android.App.SearchManager.MENU_KEY*"></a>
+
+  <h3 id="Android_App_SearchManager_MENU_KEY" data-uid="Android.App.SearchManager.MENU_KEY">
+  MENU_KEY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#MENU_KEY">https://developer.android.com/reference/android/app/SearchManager.html#MENU_KEY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static char MENU_KEY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_MENU_KEYCODE_" data-uid="Android.App.SearchManager.MENU_KEYCODE*"></a>
+
+  <h3 id="Android_App_SearchManager_MENU_KEYCODE" data-uid="Android.App.SearchManager.MENU_KEYCODE">
+  MENU_KEYCODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#MENU_KEYCODE">https://developer.android.com/reference/android/app/SearchManager.html#MENU_KEYCODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MENU_KEYCODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_QUERY_" data-uid="Android.App.SearchManager.QUERY*"></a>
+
+  <h3 id="Android_App_SearchManager_QUERY" data-uid="Android.App.SearchManager.QUERY">
+  QUERY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#QUERY">https://developer.android.com/reference/android/app/SearchManager.html#QUERY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String QUERY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SHORTCUT_MIME_TYPE_" data-uid="Android.App.SearchManager.SHORTCUT_MIME_TYPE*"></a>
+
+  <h3 id="Android_App_SearchManager_SHORTCUT_MIME_TYPE" data-uid="Android.App.SearchManager.SHORTCUT_MIME_TYPE">
+  SHORTCUT_MIME_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SHORTCUT_MIME_TYPE">https://developer.android.com/reference/android/app/SearchManager.html#SHORTCUT_MIME_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SHORTCUT_MIME_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_AUDIO_CHANNEL_CONFIG_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_AUDIO_CHANNEL_CONFIG*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_AUDIO_CHANNEL_CONFIG" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_AUDIO_CHANNEL_CONFIG">
+  SUGGEST_COLUMN_AUDIO_CHANNEL_CONFIG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_AUDIO_CHANNEL_CONFIG">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_AUDIO_CHANNEL_CONFIG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_AUDIO_CHANNEL_CONFIG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_CONTENT_TYPE_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_CONTENT_TYPE*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_CONTENT_TYPE" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_CONTENT_TYPE">
+  SUGGEST_COLUMN_CONTENT_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_CONTENT_TYPE">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_CONTENT_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_CONTENT_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_DURATION_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_DURATION*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_DURATION" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_DURATION">
+  SUGGEST_COLUMN_DURATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_DURATION">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_DURATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_DURATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_FLAGS_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_FLAGS*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_FLAGS" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_FLAGS">
+  SUGGEST_COLUMN_FLAGS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_FLAGS">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_FLAGS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_FLAGS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_FORMAT_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_FORMAT*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_FORMAT" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_FORMAT">
+  SUGGEST_COLUMN_FORMAT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_FORMAT">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_FORMAT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_FORMAT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_ICON_1_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_ICON_1*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_ICON_1" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_ICON_1">
+  SUGGEST_COLUMN_ICON_1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_ICON_1">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_ICON_1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_ICON_1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_ICON_2_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_ICON_2*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_ICON_2" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_ICON_2">
+  SUGGEST_COLUMN_ICON_2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_ICON_2">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_ICON_2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_ICON_2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_INTENT_ACTION_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_INTENT_ACTION*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_INTENT_ACTION" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_INTENT_ACTION">
+  SUGGEST_COLUMN_INTENT_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_INTENT_ACTION">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_INTENT_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_INTENT_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_INTENT_DATA_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_INTENT_DATA*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_INTENT_DATA" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_INTENT_DATA">
+  SUGGEST_COLUMN_INTENT_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_INTENT_DATA">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_INTENT_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_INTENT_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_INTENT_DATA_ID_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_INTENT_DATA_ID*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_INTENT_DATA_ID" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_INTENT_DATA_ID">
+  SUGGEST_COLUMN_INTENT_DATA_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_INTENT_DATA_ID">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_INTENT_DATA_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_INTENT_DATA_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_INTENT_EXTRA_DATA_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_INTENT_EXTRA_DATA*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_INTENT_EXTRA_DATA" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_INTENT_EXTRA_DATA">
+  SUGGEST_COLUMN_INTENT_EXTRA_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_INTENT_EXTRA_DATA">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_INTENT_EXTRA_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_INTENT_EXTRA_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_IS_LIVE_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_IS_LIVE*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_IS_LIVE" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_IS_LIVE">
+  SUGGEST_COLUMN_IS_LIVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_IS_LIVE">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_IS_LIVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_IS_LIVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_LAST_ACCESS_HINT_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_LAST_ACCESS_HINT*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_LAST_ACCESS_HINT" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_LAST_ACCESS_HINT">
+  SUGGEST_COLUMN_LAST_ACCESS_HINT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_LAST_ACCESS_HINT">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_LAST_ACCESS_HINT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_LAST_ACCESS_HINT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_PRODUCTION_YEAR_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_PRODUCTION_YEAR*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_PRODUCTION_YEAR" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_PRODUCTION_YEAR">
+  SUGGEST_COLUMN_PRODUCTION_YEAR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_PRODUCTION_YEAR">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_PRODUCTION_YEAR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_PRODUCTION_YEAR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_PURCHASE_PRICE_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_PURCHASE_PRICE*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_PURCHASE_PRICE" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_PURCHASE_PRICE">
+  SUGGEST_COLUMN_PURCHASE_PRICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_PURCHASE_PRICE">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_PURCHASE_PRICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_PURCHASE_PRICE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_QUERY_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_QUERY*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_QUERY" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_QUERY">
+  SUGGEST_COLUMN_QUERY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_QUERY">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_QUERY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_QUERY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_RATING_SCORE_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_RATING_SCORE*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_RATING_SCORE" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_RATING_SCORE">
+  SUGGEST_COLUMN_RATING_SCORE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_RATING_SCORE">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_RATING_SCORE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_RATING_SCORE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_RATING_STYLE_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_RATING_STYLE*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_RATING_STYLE" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_RATING_STYLE">
+  SUGGEST_COLUMN_RATING_STYLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_RATING_STYLE">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_RATING_STYLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_RATING_STYLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_RENTAL_PRICE_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_RENTAL_PRICE*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_RENTAL_PRICE" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_RENTAL_PRICE">
+  SUGGEST_COLUMN_RENTAL_PRICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_RENTAL_PRICE">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_RENTAL_PRICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_RENTAL_PRICE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_RESULT_CARD_IMAGE_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_RESULT_CARD_IMAGE*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_RESULT_CARD_IMAGE" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_RESULT_CARD_IMAGE">
+  SUGGEST_COLUMN_RESULT_CARD_IMAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_RESULT_CARD_IMAGE">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_RESULT_CARD_IMAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_RESULT_CARD_IMAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_SHORTCUT_ID_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_SHORTCUT_ID*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_SHORTCUT_ID" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_SHORTCUT_ID">
+  SUGGEST_COLUMN_SHORTCUT_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_SHORTCUT_ID">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_SHORTCUT_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_SHORTCUT_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_SPINNER_WHILE_REFRESHING_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_SPINNER_WHILE_REFRESHING*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_SPINNER_WHILE_REFRESHING" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_SPINNER_WHILE_REFRESHING">
+  SUGGEST_COLUMN_SPINNER_WHILE_REFRESHING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_SPINNER_WHILE_REFRESHING">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_SPINNER_WHILE_REFRESHING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_SPINNER_WHILE_REFRESHING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_TEXT_1_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_TEXT_1*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_TEXT_1" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_TEXT_1">
+  SUGGEST_COLUMN_TEXT_1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_TEXT_1">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_TEXT_1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_TEXT_1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_TEXT_2_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_TEXT_2*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_TEXT_2" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_TEXT_2">
+  SUGGEST_COLUMN_TEXT_2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_TEXT_2">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_TEXT_2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_TEXT_2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_TEXT_2_URL_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_TEXT_2_URL*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_TEXT_2_URL" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_TEXT_2_URL">
+  SUGGEST_COLUMN_TEXT_2_URL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_TEXT_2_URL">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_TEXT_2_URL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_TEXT_2_URL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_VIDEO_HEIGHT_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_VIDEO_HEIGHT*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_VIDEO_HEIGHT" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_VIDEO_HEIGHT">
+  SUGGEST_COLUMN_VIDEO_HEIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_VIDEO_HEIGHT">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_VIDEO_HEIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_VIDEO_HEIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_COLUMN_VIDEO_WIDTH_" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_VIDEO_WIDTH*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_COLUMN_VIDEO_WIDTH" data-uid="Android.App.SearchManager.SUGGEST_COLUMN_VIDEO_WIDTH">
+  SUGGEST_COLUMN_VIDEO_WIDTH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_VIDEO_WIDTH">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_COLUMN_VIDEO_WIDTH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_COLUMN_VIDEO_WIDTH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_MIME_TYPE_" data-uid="Android.App.SearchManager.SUGGEST_MIME_TYPE*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_MIME_TYPE" data-uid="Android.App.SearchManager.SUGGEST_MIME_TYPE">
+  SUGGEST_MIME_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_MIME_TYPE">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_MIME_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_MIME_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_NEVER_MAKE_SHORTCUT_" data-uid="Android.App.SearchManager.SUGGEST_NEVER_MAKE_SHORTCUT*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_NEVER_MAKE_SHORTCUT" data-uid="Android.App.SearchManager.SUGGEST_NEVER_MAKE_SHORTCUT">
+  SUGGEST_NEVER_MAKE_SHORTCUT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_NEVER_MAKE_SHORTCUT">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_NEVER_MAKE_SHORTCUT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_NEVER_MAKE_SHORTCUT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_PARAMETER_LIMIT_" data-uid="Android.App.SearchManager.SUGGEST_PARAMETER_LIMIT*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_PARAMETER_LIMIT" data-uid="Android.App.SearchManager.SUGGEST_PARAMETER_LIMIT">
+  SUGGEST_PARAMETER_LIMIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_PARAMETER_LIMIT">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_PARAMETER_LIMIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_PARAMETER_LIMIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_URI_PATH_QUERY_" data-uid="Android.App.SearchManager.SUGGEST_URI_PATH_QUERY*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_URI_PATH_QUERY" data-uid="Android.App.SearchManager.SUGGEST_URI_PATH_QUERY">
+  SUGGEST_URI_PATH_QUERY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_URI_PATH_QUERY">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_URI_PATH_QUERY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_URI_PATH_QUERY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SUGGEST_URI_PATH_SHORTCUT_" data-uid="Android.App.SearchManager.SUGGEST_URI_PATH_SHORTCUT*"></a>
+
+  <h3 id="Android_App_SearchManager_SUGGEST_URI_PATH_SHORTCUT" data-uid="Android.App.SearchManager.SUGGEST_URI_PATH_SHORTCUT">
+  SUGGEST_URI_PATH_SHORTCUT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_URI_PATH_SHORTCUT">https://developer.android.com/reference/android/app/SearchManager.html#SUGGEST_URI_PATH_SHORTCUT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUGGEST_URI_PATH_SHORTCUT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_USER_QUERY_" data-uid="Android.App.SearchManager.USER_QUERY*"></a>
+
+  <h3 id="Android_App_SearchManager_USER_QUERY" data-uid="Android.App.SearchManager.USER_QUERY">
+  USER_QUERY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#USER_QUERY">https://developer.android.com/reference/android/app/SearchManager.html#USER_QUERY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String USER_QUERY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_App_SearchManager_GetGlobalSearchActivity_" data-uid="Android.App.SearchManager.GetGlobalSearchActivity*"></a>
+
+  <h3 id="Android_App_SearchManager_GetGlobalSearchActivity" data-uid="Android.App.SearchManager.GetGlobalSearchActivity">
+  GetGlobalSearchActivity()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#getGlobalSearchActivity()">https://developer.android.com/reference/android/app/SearchManager.html#getGlobalSearchActivity()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ComponentName GetGlobalSearchActivity()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_GetSearchableInfo_" data-uid="Android.App.SearchManager.GetSearchableInfo*"></a>
+
+  <h3 id="Android_App_SearchManager_GetSearchableInfo_Android_Content_ComponentName_" data-uid="Android.App.SearchManager.GetSearchableInfo(Android.Content.ComponentName)">
+  GetSearchableInfo(ComponentName)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#getSearchableInfo(android.content.ComponentName)">https://developer.android.com/reference/android/app/SearchManager.html#getSearchableInfo(android.content.ComponentName)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SearchableInfo GetSearchableInfo(ComponentName arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.SearchableInfo.html">SearchableInfo</a></dt>
+    <dd><p><a class="xref" href="Android.App.SearchableInfo.html">SearchableInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_GetSearchablesInGlobalSearch_" data-uid="Android.App.SearchManager.GetSearchablesInGlobalSearch*"></a>
+
+  <h3 id="Android_App_SearchManager_GetSearchablesInGlobalSearch" data-uid="Android.App.SearchManager.GetSearchablesInGlobalSearch">
+  GetSearchablesInGlobalSearch()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#getSearchablesInGlobalSearch()">https://developer.android.com/reference/android/app/SearchManager.html#getSearchablesInGlobalSearch()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SearchableInfo&gt; GetSearchablesInGlobalSearch()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.App.SearchableInfo.html">SearchableInfo</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_OnCancel_" data-uid="Android.App.SearchManager.OnCancel*"></a>
+
+  <h3 id="Android_App_SearchManager_OnCancel_Android_Content_DialogInterface_" data-uid="Android.App.SearchManager.OnCancel(Android.Content.DialogInterface)">
+  OnCancel(DialogInterface)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#onCancel(android.content.DialogInterface)">https://developer.android.com/reference/android/app/SearchManager.html#onCancel(android.content.DialogInterface)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void OnCancel(DialogInterface arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.DialogInterface.html">DialogInterface</a></dt>
+    <dd><p><a class="xref" href="Android.Content.DialogInterface.html">DialogInterface</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_OnDismiss_" data-uid="Android.App.SearchManager.OnDismiss*"></a>
+
+  <h3 id="Android_App_SearchManager_OnDismiss_Android_Content_DialogInterface_" data-uid="Android.App.SearchManager.OnDismiss(Android.Content.DialogInterface)">
+  OnDismiss(DialogInterface)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#onDismiss(android.content.DialogInterface)">https://developer.android.com/reference/android/app/SearchManager.html#onDismiss(android.content.DialogInterface)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void OnDismiss(DialogInterface arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.DialogInterface.html">DialogInterface</a></dt>
+    <dd><p><a class="xref" href="Android.Content.DialogInterface.html">DialogInterface</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SetOnCancelListener_" data-uid="Android.App.SearchManager.SetOnCancelListener*"></a>
+
+  <h3 id="Android_App_SearchManager_SetOnCancelListener_Android_App_SearchManager_OnCancelListener_" data-uid="Android.App.SearchManager.SetOnCancelListener(Android.App.SearchManager.OnCancelListener)">
+  SetOnCancelListener(OnCancelListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#setOnCancelListener(android.app.SearchManager.OnCancelListener)">https://developer.android.com/reference/android/app/SearchManager.html#setOnCancelListener(android.app.SearchManager.OnCancelListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOnCancelListener(SearchManager.OnCancelListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.SearchManager.html">SearchManager</a>.<a class="xref" href="Android.App.SearchManager.OnCancelListener.html">OnCancelListener</a></dt>
+    <dd><p><a class="xref" href="Android.App.SearchManager.OnCancelListener.html">SearchManager.OnCancelListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_SetOnDismissListener_" data-uid="Android.App.SearchManager.SetOnDismissListener*"></a>
+
+  <h3 id="Android_App_SearchManager_SetOnDismissListener_Android_App_SearchManager_OnDismissListener_" data-uid="Android.App.SearchManager.SetOnDismissListener(Android.App.SearchManager.OnDismissListener)">
+  SetOnDismissListener(OnDismissListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#setOnDismissListener(android.app.SearchManager.OnDismissListener)">https://developer.android.com/reference/android/app/SearchManager.html#setOnDismissListener(android.app.SearchManager.OnDismissListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOnDismissListener(SearchManager.OnDismissListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.SearchManager.html">SearchManager</a>.<a class="xref" href="Android.App.SearchManager.OnDismissListener.html">OnDismissListener</a></dt>
+    <dd><p><a class="xref" href="Android.App.SearchManager.OnDismissListener.html">SearchManager.OnDismissListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_StartSearch_" data-uid="Android.App.SearchManager.StartSearch*"></a>
+
+  <h3 id="Android_App_SearchManager_StartSearch_Java_Lang_String_System_Boolean_Android_Content_ComponentName_Android_Os_Bundle_System_Boolean_" data-uid="Android.App.SearchManager.StartSearch(Java.Lang.String,System.Boolean,Android.Content.ComponentName,Android.Os.Bundle,System.Boolean)">
+  StartSearch(String, bool, ComponentName, Bundle, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#startSearch(java.lang.String,boolean,android.content.ComponentName,android.os.Bundle,boolean)">https://developer.android.com/reference/android/app/SearchManager.html#startSearch(java.lang.String,boolean,android.content.ComponentName,android.os.Bundle,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartSearch(String arg0, bool arg1, ComponentName arg2, Bundle arg3, bool arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_StopSearch_" data-uid="Android.App.SearchManager.StopSearch*"></a>
+
+  <h3 id="Android_App_SearchManager_StopSearch" data-uid="Android.App.SearchManager.StopSearch">
+  StopSearch()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#stopSearch()">https://developer.android.com/reference/android/app/SearchManager.html#stopSearch()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopSearch()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_SearchManager_TriggerSearch_" data-uid="Android.App.SearchManager.TriggerSearch*"></a>
+
+  <h3 id="Android_App_SearchManager_TriggerSearch_Java_Lang_String_Android_Content_ComponentName_Android_Os_Bundle_" data-uid="Android.App.SearchManager.TriggerSearch(Java.Lang.String,Android.Content.ComponentName,Android.Os.Bundle)">
+  TriggerSearch(String, ComponentName, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/SearchManager.html#triggerSearch(java.lang.String,android.content.ComponentName,android.os.Bundle)">https://developer.android.com/reference/android/app/SearchManager.html#triggerSearch(java.lang.String,android.content.ComponentName,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerSearch(String arg0, ComponentName arg1, Bundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/SearchManager.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

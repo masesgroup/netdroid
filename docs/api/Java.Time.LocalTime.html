@@ -1,0 +1,3096 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class LocalTime | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LocalTime | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/java/time/LocalTime.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Java_Time_LocalTime.md&amp;value=---%0Auid%3A%20Java.Time.LocalTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Java.Time.LocalTime">
+
+
+
+  <h1 id="Java_Time_LocalTime" data-uid="Java.Time.LocalTime" class="text-break">
+Class LocalTime  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Java.html">Java</a>.<a class="xref" href="Java.Time.html">Time</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html">https://developer.android.com/reference/java/time/LocalTime.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LocalTime : JVMBridgeBase&lt;LocalTime&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ITemporal, ITemporalAccessor, ITemporalAdjuster, IComparable&lt;LocalTime&gt;, ISerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Time.LocalTime.html">LocalTime</a>&gt;</div>
+      <div><span class="xref">LocalTime</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Time.Temporal.ITemporal.html">ITemporal</a></div>
+      <div><a class="xref" href="Java.Time.Temporal.ITemporalAccessor.html">ITemporalAccessor</a></div>
+      <div><a class="xref" href="Java.Time.Temporal.ITemporalAdjuster.html">ITemporalAdjuster</a></div>
+      <div><a class="xref" href="Java.Lang.IComparable-1.html">IComparable</a>&lt;<a class="xref" href="Java.Time.LocalTime.html">LocalTime</a>&gt;</div>
+      <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocalTime&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocalTime&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocalTime&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocalTime&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocalTime&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocalTime&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;LocalTime&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;LocalTime&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;LocalTime&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocalTime&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;LocalTime&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;LocalTime&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;LocalTime&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Java_Time_LocalTime__ctor_" data-uid="Java.Time.LocalTime.#ctor*"></a>
+
+  <h3 id="Java_Time_LocalTime__ctor" data-uid="Java.Time.LocalTime.#ctor">
+  LocalTime()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/AllPackageClasses.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime__ctor_" data-uid="Java.Time.LocalTime.#ctor*"></a>
+
+  <h3 id="Java_Time_LocalTime__ctor_System_Object___" data-uid="Java.Time.LocalTime.#ctor(System.Object[])">
+  LocalTime(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/AllPackageClasses.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Java_Time_LocalTime_BridgeClassName_" data-uid="Java.Time.LocalTime.BridgeClassName*"></a>
+
+  <h3 id="Java_Time_LocalTime_BridgeClassName" data-uid="Java.Time.LocalTime.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/AllPackageClasses.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_IsBridgeAbstract_" data-uid="Java.Time.LocalTime.IsBridgeAbstract*"></a>
+
+  <h3 id="Java_Time_LocalTime_IsBridgeAbstract" data-uid="Java.Time.LocalTime.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/AllPackageClasses.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_IsBridgeCloseable_" data-uid="Java.Time.LocalTime.IsBridgeCloseable*"></a>
+
+  <h3 id="Java_Time_LocalTime_IsBridgeCloseable" data-uid="Java.Time.LocalTime.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/AllPackageClasses.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_IsBridgeInterface_" data-uid="Java.Time.LocalTime.IsBridgeInterface*"></a>
+
+  <h3 id="Java_Time_LocalTime_IsBridgeInterface" data-uid="Java.Time.LocalTime.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/AllPackageClasses.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_IsBridgeStatic_" data-uid="Java.Time.LocalTime.IsBridgeStatic*"></a>
+
+  <h3 id="Java_Time_LocalTime_IsBridgeStatic" data-uid="Java.Time.LocalTime.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/AllPackageClasses.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_MAX_" data-uid="Java.Time.LocalTime.MAX*"></a>
+
+  <h3 id="Java_Time_LocalTime_MAX" data-uid="Java.Time.LocalTime.MAX">
+  MAX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#MAX">https://developer.android.com/reference/java/time/LocalTime.html#MAX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime MAX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_MIDNIGHT_" data-uid="Java.Time.LocalTime.MIDNIGHT*"></a>
+
+  <h3 id="Java_Time_LocalTime_MIDNIGHT" data-uid="Java.Time.LocalTime.MIDNIGHT">
+  MIDNIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#MIDNIGHT">https://developer.android.com/reference/java/time/LocalTime.html#MIDNIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime MIDNIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_MIN_" data-uid="Java.Time.LocalTime.MIN*"></a>
+
+  <h3 id="Java_Time_LocalTime_MIN" data-uid="Java.Time.LocalTime.MIN">
+  MIN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#MIN">https://developer.android.com/reference/java/time/LocalTime.html#MIN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime MIN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_NOON_" data-uid="Java.Time.LocalTime.NOON*"></a>
+
+  <h3 id="Java_Time_LocalTime_NOON" data-uid="Java.Time.LocalTime.NOON">
+  NOON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#NOON">https://developer.android.com/reference/java/time/LocalTime.html#NOON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime NOON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Java_Time_LocalTime_AdjustInto_" data-uid="Java.Time.LocalTime.AdjustInto*"></a>
+
+  <h3 id="Java_Time_LocalTime_AdjustInto_Java_Time_Temporal_Temporal_" data-uid="Java.Time.LocalTime.AdjustInto(Java.Time.Temporal.Temporal)">
+  AdjustInto(Temporal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L465"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#adjustInto(java.time.temporal.Temporal)">https://developer.android.com/reference/java/time/LocalTime.html#adjustInto(java.time.temporal.Temporal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temporal AdjustInto(Temporal arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_AtDate_" data-uid="Java.Time.LocalTime.AtDate*"></a>
+
+  <h3 id="Java_Time_LocalTime_AtDate_Java_Time_LocalDate_" data-uid="Java.Time.LocalTime.AtDate(Java.Time.LocalDate)">
+  AtDate(LocalDate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#atDate(java.time.LocalDate)">https://developer.android.com/reference/java/time/LocalTime.html#atDate(java.time.LocalDate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalDateTime AtDate(LocalDate arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.LocalDate.html">LocalDate</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalDate.html">LocalDate</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalDateTime.html">LocalDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalDateTime.html">LocalDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_AtOffset_" data-uid="Java.Time.LocalTime.AtOffset*"></a>
+
+  <h3 id="Java_Time_LocalTime_AtOffset_Java_Time_ZoneOffset_" data-uid="Java.Time.LocalTime.AtOffset(Java.Time.ZoneOffset)">
+  AtOffset(ZoneOffset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L456"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#atOffset(java.time.ZoneOffset)">https://developer.android.com/reference/java/time/LocalTime.html#atOffset(java.time.ZoneOffset)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetTime AtOffset(ZoneOffset arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetTime.html">OffsetTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetTime.html">OffsetTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_CompareTo_" data-uid="Java.Time.LocalTime.CompareTo*"></a>
+
+  <h3 id="Java_Time_LocalTime_CompareTo_Java_Time_LocalTime_" data-uid="Java.Time.LocalTime.CompareTo(Java.Time.LocalTime)">
+  CompareTo(LocalTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#compareTo(java.time.LocalTime)">https://developer.android.com/reference/java/time/LocalTime.html#compareTo(java.time.LocalTime)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(LocalTime arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_CompareTo_" data-uid="Java.Time.LocalTime.CompareTo*"></a>
+
+  <h3 id="Java_Time_LocalTime_CompareTo_System_Object_" data-uid="Java.Time.LocalTime.CompareTo(System.Object)">
+  CompareTo(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#compareTo(java.lang.Object)">https://developer.android.com/reference/java/time/LocalTime.html#compareTo(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(object arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Format_" data-uid="Java.Time.LocalTime.Format*"></a>
+
+  <h3 id="Java_Time_LocalTime_Format_Java_Time_Format_DateTimeFormatter_" data-uid="Java.Time.LocalTime.Format(Java.Time.Format.DateTimeFormatter)">
+  Format(DateTimeFormatter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#format(java.time.format.DateTimeFormatter)">https://developer.android.com/reference/java/time/LocalTime.html#format(java.time.format.DateTimeFormatter)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String Format(DateTimeFormatter arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_From_" data-uid="Java.Time.LocalTime.From*"></a>
+
+  <h3 id="Java_Time_LocalTime_From_Java_Time_Temporal_TemporalAccessor_" data-uid="Java.Time.LocalTime.From(Java.Time.Temporal.TemporalAccessor)">
+  From(TemporalAccessor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#from(java.time.temporal.TemporalAccessor)">https://developer.android.com/reference/java/time/LocalTime.html#from(java.time.temporal.TemporalAccessor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime From(TemporalAccessor arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalAccessor.html">TemporalAccessor</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalAccessor.html">TemporalAccessor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Get_" data-uid="Java.Time.LocalTime.Get*"></a>
+
+  <h3 id="Java_Time_LocalTime_Get_Java_Time_Temporal_TemporalField_" data-uid="Java.Time.LocalTime.Get(Java.Time.Temporal.TemporalField)">
+  Get(TemporalField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#get(java.time.temporal.TemporalField)">https://developer.android.com/reference/java/time/LocalTime.html#get(java.time.temporal.TemporalField)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Get(TemporalField arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_GetHour_" data-uid="Java.Time.LocalTime.GetHour*"></a>
+
+  <h3 id="Java_Time_LocalTime_GetHour" data-uid="Java.Time.LocalTime.GetHour">
+  GetHour()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#getHour()">https://developer.android.com/reference/java/time/LocalTime.html#getHour()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetHour()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_GetLong_" data-uid="Java.Time.LocalTime.GetLong*"></a>
+
+  <h3 id="Java_Time_LocalTime_GetLong_Java_Time_Temporal_TemporalField_" data-uid="Java.Time.LocalTime.GetLong(Java.Time.Temporal.TemporalField)">
+  GetLong(TemporalField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L540"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#getLong(java.time.temporal.TemporalField)">https://developer.android.com/reference/java/time/LocalTime.html#getLong(java.time.temporal.TemporalField)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetLong(TemporalField arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_GetMinute_" data-uid="Java.Time.LocalTime.GetMinute*"></a>
+
+  <h3 id="Java_Time_LocalTime_GetMinute" data-uid="Java.Time.LocalTime.GetMinute">
+  GetMinute()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#getMinute()">https://developer.android.com/reference/java/time/LocalTime.html#getMinute()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMinute()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_GetNano_" data-uid="Java.Time.LocalTime.GetNano*"></a>
+
+  <h3 id="Java_Time_LocalTime_GetNano" data-uid="Java.Time.LocalTime.GetNano">
+  GetNano()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#getNano()">https://developer.android.com/reference/java/time/LocalTime.html#getNano()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNano()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_GetSecond_" data-uid="Java.Time.LocalTime.GetSecond*"></a>
+
+  <h3 id="Java_Time_LocalTime_GetSecond" data-uid="Java.Time.LocalTime.GetSecond">
+  GetSecond()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#getSecond()">https://developer.android.com/reference/java/time/LocalTime.html#getSecond()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSecond()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_IsAfter_" data-uid="Java.Time.LocalTime.IsAfter*"></a>
+
+  <h3 id="Java_Time_LocalTime_IsAfter_Java_Time_LocalTime_" data-uid="Java.Time.LocalTime.IsAfter(Java.Time.LocalTime)">
+  IsAfter(LocalTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#isAfter(java.time.LocalTime)">https://developer.android.com/reference/java/time/LocalTime.html#isAfter(java.time.LocalTime)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAfter(LocalTime arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_IsBefore_" data-uid="Java.Time.LocalTime.IsBefore*"></a>
+
+  <h3 id="Java_Time_LocalTime_IsBefore_Java_Time_LocalTime_" data-uid="Java.Time.LocalTime.IsBefore(Java.Time.LocalTime)">
+  IsBefore(LocalTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#isBefore(java.time.LocalTime)">https://developer.android.com/reference/java/time/LocalTime.html#isBefore(java.time.LocalTime)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBefore(LocalTime arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_IsSupported_" data-uid="Java.Time.LocalTime.IsSupported*"></a>
+
+  <h3 id="Java_Time_LocalTime_IsSupported_Java_Time_Temporal_TemporalField_" data-uid="Java.Time.LocalTime.IsSupported(Java.Time.Temporal.TemporalField)">
+  IsSupported(TemporalField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#isSupported(java.time.temporal.TemporalField)">https://developer.android.com/reference/java/time/LocalTime.html#isSupported(java.time.temporal.TemporalField)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSupported(TemporalField arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_IsSupported_" data-uid="Java.Time.LocalTime.IsSupported*"></a>
+
+  <h3 id="Java_Time_LocalTime_IsSupported_Java_Time_Temporal_TemporalUnit_" data-uid="Java.Time.LocalTime.IsSupported(Java.Time.Temporal.TemporalUnit)">
+  IsSupported(TemporalUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#isSupported(java.time.temporal.TemporalUnit)">https://developer.android.com/reference/java/time/LocalTime.html#isSupported(java.time.temporal.TemporalUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSupported(TemporalUnit arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Minus_" data-uid="Java.Time.LocalTime.Minus*"></a>
+
+  <h3 id="Java_Time_LocalTime_Minus_Java_Time_Temporal_TemporalAmount_" data-uid="Java.Time.LocalTime.Minus(Java.Time.Temporal.TemporalAmount)">
+  Minus(TemporalAmount)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#minus(java.time.temporal.TemporalAmount)">https://developer.android.com/reference/java/time/LocalTime.html#minus(java.time.temporal.TemporalAmount)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temporal Minus(TemporalAmount arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalAmount.html">TemporalAmount</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalAmount.html">TemporalAmount</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Minus_" data-uid="Java.Time.LocalTime.Minus*"></a>
+
+  <h3 id="Java_Time_LocalTime_Minus_System_Int64_Java_Time_Temporal_TemporalUnit_" data-uid="Java.Time.LocalTime.Minus(System.Int64,Java.Time.Temporal.TemporalUnit)">
+  Minus(long, TemporalUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L484"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#minus(long,java.time.temporal.TemporalUnit)">https://developer.android.com/reference/java/time/LocalTime.html#minus(long,java.time.temporal.TemporalUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temporal Minus(long arg0, TemporalUnit arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_MinusHours_" data-uid="Java.Time.LocalTime.MinusHours*"></a>
+
+  <h3 id="Java_Time_LocalTime_MinusHours_System_Int64_" data-uid="Java.Time.LocalTime.MinusHours(System.Int64)">
+  MinusHours(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#minusHours(long)">https://developer.android.com/reference/java/time/LocalTime.html#minusHours(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime MinusHours(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_MinusMinutes_" data-uid="Java.Time.LocalTime.MinusMinutes*"></a>
+
+  <h3 id="Java_Time_LocalTime_MinusMinutes_System_Int64_" data-uid="Java.Time.LocalTime.MinusMinutes(System.Int64)">
+  MinusMinutes(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#minusMinutes(long)">https://developer.android.com/reference/java/time/LocalTime.html#minusMinutes(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime MinusMinutes(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_MinusNanos_" data-uid="Java.Time.LocalTime.MinusNanos*"></a>
+
+  <h3 id="Java_Time_LocalTime_MinusNanos_System_Int64_" data-uid="Java.Time.LocalTime.MinusNanos(System.Int64)">
+  MinusNanos(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#minusNanos(long)">https://developer.android.com/reference/java/time/LocalTime.html#minusNanos(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime MinusNanos(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_MinusSeconds_" data-uid="Java.Time.LocalTime.MinusSeconds*"></a>
+
+  <h3 id="Java_Time_LocalTime_MinusSeconds_System_Int64_" data-uid="Java.Time.LocalTime.MinusSeconds(System.Int64)">
+  MinusSeconds(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#minusSeconds(long)">https://developer.android.com/reference/java/time/LocalTime.html#minusSeconds(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime MinusSeconds(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Now_" data-uid="Java.Time.LocalTime.Now*"></a>
+
+  <h3 id="Java_Time_LocalTime_Now" data-uid="Java.Time.LocalTime.Now">
+  Now()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#now()">https://developer.android.com/reference/java/time/LocalTime.html#now()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime Now()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Now_" data-uid="Java.Time.LocalTime.Now*"></a>
+
+  <h3 id="Java_Time_LocalTime_Now_Java_Time_Clock_" data-uid="Java.Time.LocalTime.Now(Java.Time.Clock)">
+  Now(Clock)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#now(java.time.Clock)">https://developer.android.com/reference/java/time/LocalTime.html#now(java.time.Clock)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime Now(Clock arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Clock.html">Clock</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Clock.html">Clock</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Now_" data-uid="Java.Time.LocalTime.Now*"></a>
+
+  <h3 id="Java_Time_LocalTime_Now_Java_Time_ZoneId_" data-uid="Java.Time.LocalTime.Now(Java.Time.ZoneId)">
+  Now(ZoneId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#now(java.time.ZoneId)">https://developer.android.com/reference/java/time/LocalTime.html#now(java.time.ZoneId)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime Now(ZoneId arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.ZoneId.html">ZoneId</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZoneId.html">ZoneId</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Of_" data-uid="Java.Time.LocalTime.Of*"></a>
+
+  <h3 id="Java_Time_LocalTime_Of_System_Int32_System_Int32_" data-uid="Java.Time.LocalTime.Of(System.Int32,System.Int32)">
+  Of(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#of(int,int)">https://developer.android.com/reference/java/time/LocalTime.html#of(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime Of(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Of_" data-uid="Java.Time.LocalTime.Of*"></a>
+
+  <h3 id="Java_Time_LocalTime_Of_System_Int32_System_Int32_System_Int32_" data-uid="Java.Time.LocalTime.Of(System.Int32,System.Int32,System.Int32)">
+  Of(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#of(int,int,int)">https://developer.android.com/reference/java/time/LocalTime.html#of(int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime Of(int arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Of_" data-uid="Java.Time.LocalTime.Of*"></a>
+
+  <h3 id="Java_Time_LocalTime_Of_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Java.Time.LocalTime.Of(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Of(int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#of(int,int,int,int)">https://developer.android.com/reference/java/time/LocalTime.html#of(int,int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime Of(int arg0, int arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_OfInstant_" data-uid="Java.Time.LocalTime.OfInstant*"></a>
+
+  <h3 id="Java_Time_LocalTime_OfInstant_Java_Time_Instant_Java_Time_ZoneId_" data-uid="Java.Time.LocalTime.OfInstant(Java.Time.Instant,Java.Time.ZoneId)">
+  OfInstant(Instant, ZoneId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#ofInstant(java.time.Instant,java.time.ZoneId)">https://developer.android.com/reference/java/time/LocalTime.html#ofInstant(java.time.Instant,java.time.ZoneId)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime OfInstant(Instant arg0, ZoneId arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Instant.html">Instant</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Instant.html">Instant</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.ZoneId.html">ZoneId</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZoneId.html">ZoneId</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_OfNanoOfDay_" data-uid="Java.Time.LocalTime.OfNanoOfDay*"></a>
+
+  <h3 id="Java_Time_LocalTime_OfNanoOfDay_System_Int64_" data-uid="Java.Time.LocalTime.OfNanoOfDay(System.Int64)">
+  OfNanoOfDay(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#ofNanoOfDay(long)">https://developer.android.com/reference/java/time/LocalTime.html#ofNanoOfDay(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime OfNanoOfDay(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_OfSecondOfDay_" data-uid="Java.Time.LocalTime.OfSecondOfDay*"></a>
+
+  <h3 id="Java_Time_LocalTime_OfSecondOfDay_System_Int64_" data-uid="Java.Time.LocalTime.OfSecondOfDay(System.Int64)">
+  OfSecondOfDay(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#ofSecondOfDay(long)">https://developer.android.com/reference/java/time/LocalTime.html#ofSecondOfDay(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime OfSecondOfDay(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Parse_" data-uid="Java.Time.LocalTime.Parse*"></a>
+
+  <h3 id="Java_Time_LocalTime_Parse_Java_Lang_CharSequence_" data-uid="Java.Time.LocalTime.Parse(Java.Lang.CharSequence)">
+  Parse(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#parse(java.lang.CharSequence)">https://developer.android.com/reference/java/time/LocalTime.html#parse(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime Parse(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Parse_" data-uid="Java.Time.LocalTime.Parse*"></a>
+
+  <h3 id="Java_Time_LocalTime_Parse_Java_Lang_CharSequence_Java_Time_Format_DateTimeFormatter_" data-uid="Java.Time.LocalTime.Parse(Java.Lang.CharSequence,Java.Time.Format.DateTimeFormatter)">
+  Parse(CharSequence, DateTimeFormatter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)">https://developer.android.com/reference/java/time/LocalTime.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalTime Parse(CharSequence arg0, DateTimeFormatter arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Plus_" data-uid="Java.Time.LocalTime.Plus*"></a>
+
+  <h3 id="Java_Time_LocalTime_Plus_Java_Time_Temporal_TemporalAmount_" data-uid="Java.Time.LocalTime.Plus(Java.Time.Temporal.TemporalAmount)">
+  Plus(TemporalAmount)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#plus(java.time.temporal.TemporalAmount)">https://developer.android.com/reference/java/time/LocalTime.html#plus(java.time.temporal.TemporalAmount)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temporal Plus(TemporalAmount arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalAmount.html">TemporalAmount</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalAmount.html">TemporalAmount</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Plus_" data-uid="Java.Time.LocalTime.Plus*"></a>
+
+  <h3 id="Java_Time_LocalTime_Plus_System_Int64_Java_Time_Temporal_TemporalUnit_" data-uid="Java.Time.LocalTime.Plus(System.Int64,Java.Time.Temporal.TemporalUnit)">
+  Plus(long, TemporalUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L503"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#plus(long,java.time.temporal.TemporalUnit)">https://developer.android.com/reference/java/time/LocalTime.html#plus(long,java.time.temporal.TemporalUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temporal Plus(long arg0, TemporalUnit arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_PlusHours_" data-uid="Java.Time.LocalTime.PlusHours*"></a>
+
+  <h3 id="Java_Time_LocalTime_PlusHours_System_Int64_" data-uid="Java.Time.LocalTime.PlusHours(System.Int64)">
+  PlusHours(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#plusHours(long)">https://developer.android.com/reference/java/time/LocalTime.html#plusHours(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime PlusHours(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_PlusMinutes_" data-uid="Java.Time.LocalTime.PlusMinutes*"></a>
+
+  <h3 id="Java_Time_LocalTime_PlusMinutes_System_Int64_" data-uid="Java.Time.LocalTime.PlusMinutes(System.Int64)">
+  PlusMinutes(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#plusMinutes(long)">https://developer.android.com/reference/java/time/LocalTime.html#plusMinutes(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime PlusMinutes(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_PlusNanos_" data-uid="Java.Time.LocalTime.PlusNanos*"></a>
+
+  <h3 id="Java_Time_LocalTime_PlusNanos_System_Int64_" data-uid="Java.Time.LocalTime.PlusNanos(System.Int64)">
+  PlusNanos(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#plusNanos(long)">https://developer.android.com/reference/java/time/LocalTime.html#plusNanos(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime PlusNanos(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_PlusSeconds_" data-uid="Java.Time.LocalTime.PlusSeconds*"></a>
+
+  <h3 id="Java_Time_LocalTime_PlusSeconds_System_Int64_" data-uid="Java.Time.LocalTime.PlusSeconds(System.Int64)">
+  PlusSeconds(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#plusSeconds(long)">https://developer.android.com/reference/java/time/LocalTime.html#plusSeconds(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime PlusSeconds(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Query_" data-uid="Java.Time.LocalTime.Query*"></a>
+
+  <h3 id="Java_Time_LocalTime_Query__1_Java_Time_Temporal_TemporalQuery___0__" data-uid="Java.Time.LocalTime.Query``1(Java.Time.Temporal.TemporalQuery{``0})">
+  Query&lt;R&gt;(TemporalQuery&lt;R&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#query(java.time.temporal.TemporalQuery)">https://developer.android.com/reference/java/time/LocalTime.html#query(java.time.temporal.TemporalQuery)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public R Query&lt;R&gt;(TemporalQuery&lt;R&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalQuery-1.html">TemporalQuery</a>&lt;R&gt;</dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalQuery.html">TemporalQuery</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>R</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Range_" data-uid="Java.Time.LocalTime.Range*"></a>
+
+  <h3 id="Java_Time_LocalTime_Range_Java_Time_Temporal_TemporalField_" data-uid="Java.Time.LocalTime.Range(Java.Time.Temporal.TemporalField)">
+  Range(TemporalField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L531"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#range(java.time.temporal.TemporalField)">https://developer.android.com/reference/java/time/LocalTime.html#range(java.time.temporal.TemporalField)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueRange Range(TemporalField arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.ValueRange.html">ValueRange</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.ValueRange.html">ValueRange</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_ToEpochSecond_" data-uid="Java.Time.LocalTime.ToEpochSecond*"></a>
+
+  <h3 id="Java_Time_LocalTime_ToEpochSecond_Java_Time_LocalDate_Java_Time_ZoneOffset_" data-uid="Java.Time.LocalTime.ToEpochSecond(Java.Time.LocalDate,Java.Time.ZoneOffset)">
+  ToEpochSecond(LocalDate, ZoneOffset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L550"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#toEpochSecond(java.time.LocalDate,java.time.ZoneOffset)">https://developer.android.com/reference/java/time/LocalTime.html#toEpochSecond(java.time.LocalDate,java.time.ZoneOffset)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ToEpochSecond(LocalDate arg0, ZoneOffset arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.LocalDate.html">LocalDate</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalDate.html">LocalDate</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_ToNanoOfDay_" data-uid="Java.Time.LocalTime.ToNanoOfDay*"></a>
+
+  <h3 id="Java_Time_LocalTime_ToNanoOfDay" data-uid="Java.Time.LocalTime.ToNanoOfDay">
+  ToNanoOfDay()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L558"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#toNanoOfDay()">https://developer.android.com/reference/java/time/LocalTime.html#toNanoOfDay()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ToNanoOfDay()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_ToSecondOfDay_" data-uid="Java.Time.LocalTime.ToSecondOfDay*"></a>
+
+  <h3 id="Java_Time_LocalTime_ToSecondOfDay" data-uid="Java.Time.LocalTime.ToSecondOfDay">
+  ToSecondOfDay()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#toSecondOfDay()">https://developer.android.com/reference/java/time/LocalTime.html#toSecondOfDay()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ToSecondOfDay()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_TruncatedTo_" data-uid="Java.Time.LocalTime.TruncatedTo*"></a>
+
+  <h3 id="Java_Time_LocalTime_TruncatedTo_Java_Time_Temporal_TemporalUnit_" data-uid="Java.Time.LocalTime.TruncatedTo(Java.Time.Temporal.TemporalUnit)">
+  TruncatedTo(TemporalUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#truncatedTo(java.time.temporal.TemporalUnit)">https://developer.android.com/reference/java/time/LocalTime.html#truncatedTo(java.time.temporal.TemporalUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime TruncatedTo(TemporalUnit arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_Until_" data-uid="Java.Time.LocalTime.Until*"></a>
+
+  <h3 id="Java_Time_LocalTime_Until_Java_Time_Temporal_Temporal_Java_Time_Temporal_TemporalUnit_" data-uid="Java.Time.LocalTime.Until(Java.Time.Temporal.Temporal,Java.Time.Temporal.TemporalUnit)">
+  Until(Temporal, TemporalUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L568"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)">https://developer.android.com/reference/java/time/LocalTime.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Until(Temporal arg0, TemporalUnit arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_With_" data-uid="Java.Time.LocalTime.With*"></a>
+
+  <h3 id="Java_Time_LocalTime_With_Java_Time_Temporal_TemporalAdjuster_" data-uid="Java.Time.LocalTime.With(Java.Time.Temporal.TemporalAdjuster)">
+  With(TemporalAdjuster)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L512"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#with(java.time.temporal.TemporalAdjuster)">https://developer.android.com/reference/java/time/LocalTime.html#with(java.time.temporal.TemporalAdjuster)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temporal With(TemporalAdjuster arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalAdjuster.html">TemporalAdjuster</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalAdjuster.html">TemporalAdjuster</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_With_" data-uid="Java.Time.LocalTime.With*"></a>
+
+  <h3 id="Java_Time_LocalTime_With_Java_Time_Temporal_TemporalField_System_Int64_" data-uid="Java.Time.LocalTime.With(Java.Time.Temporal.TemporalField,System.Int64)">
+  With(TemporalField, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L522"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#with(java.time.temporal.TemporalField,long)">https://developer.android.com/reference/java/time/LocalTime.html#with(java.time.temporal.TemporalField,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temporal With(TemporalField arg0, long arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_WithHour_" data-uid="Java.Time.LocalTime.WithHour*"></a>
+
+  <h3 id="Java_Time_LocalTime_WithHour_System_Int32_" data-uid="Java.Time.LocalTime.WithHour(System.Int32)">
+  WithHour(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L420"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#withHour(int)">https://developer.android.com/reference/java/time/LocalTime.html#withHour(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime WithHour(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_WithMinute_" data-uid="Java.Time.LocalTime.WithMinute*"></a>
+
+  <h3 id="Java_Time_LocalTime_WithMinute_System_Int32_" data-uid="Java.Time.LocalTime.WithMinute(System.Int32)">
+  WithMinute(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#withMinute(int)">https://developer.android.com/reference/java/time/LocalTime.html#withMinute(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime WithMinute(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_WithNano_" data-uid="Java.Time.LocalTime.WithNano*"></a>
+
+  <h3 id="Java_Time_LocalTime_WithNano_System_Int32_" data-uid="Java.Time.LocalTime.WithNano(System.Int32)">
+  WithNano(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L438"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#withNano(int)">https://developer.android.com/reference/java/time/LocalTime.html#withNano(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime WithNano(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_WithSecond_" data-uid="Java.Time.LocalTime.WithSecond*"></a>
+
+  <h3 id="Java_Time_LocalTime_WithSecond_System_Int32_" data-uid="Java.Time.LocalTime.WithSecond(System.Int32)">
+  WithSecond(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/LocalTime.html#withSecond(int)">https://developer.android.com/reference/java/time/LocalTime.html#withSecond(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime WithSecond(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Java_Time_LocalTime_op_Implicit_" data-uid="Java.Time.LocalTime.op_Implicit*"></a>
+
+  <h3 id="Java_Time_LocalTime_op_Implicit_Java_Time_LocalTime__Java_Io_Serializable" data-uid="Java.Time.LocalTime.op_Implicit(Java.Time.LocalTime)~Java.Io.Serializable">
+  implicit operator Serializable(LocalTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Time.LocalTime.html">LocalTime</a> to <a class="xref" href="Java.Io.Serializable.html">Serializable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Serializable(LocalTime t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.Serializable.html">Serializable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_op_Implicit_" data-uid="Java.Time.LocalTime.op_Implicit*"></a>
+
+  <h3 id="Java_Time_LocalTime_op_Implicit_Java_Time_LocalTime__Java_Lang_Comparable" data-uid="Java.Time.LocalTime.op_Implicit(Java.Time.LocalTime)~Java.Lang.Comparable">
+  implicit operator Comparable(LocalTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Time.LocalTime.html">LocalTime</a> to <a class="xref" href="Java.Lang.Comparable.html">Comparable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Comparable(LocalTime t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Comparable.html">Comparable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_op_Implicit_" data-uid="Java.Time.LocalTime.op_Implicit*"></a>
+
+  <h3 id="Java_Time_LocalTime_op_Implicit_Java_Time_LocalTime__Java_Time_Temporal_Temporal" data-uid="Java.Time.LocalTime.op_Implicit(Java.Time.LocalTime)~Java.Time.Temporal.Temporal">
+  implicit operator Temporal(LocalTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Time.LocalTime.html">LocalTime</a> to <a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Temporal(LocalTime t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_LocalTime_op_Implicit_" data-uid="Java.Time.LocalTime.op_Implicit*"></a>
+
+  <h3 id="Java_Time_LocalTime_op_Implicit_Java_Time_LocalTime__Java_Time_Temporal_TemporalAdjuster" data-uid="Java.Time.LocalTime.op_Implicit(Java.Time.LocalTime)~Java.Time.Temporal.TemporalAdjuster">
+  implicit operator TemporalAdjuster(LocalTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Time.LocalTime.html">LocalTime</a> to <a class="xref" href="Java.Time.Temporal.TemporalAdjuster.html">TemporalAdjuster</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator TemporalAdjuster(LocalTime t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.TemporalAdjuster.html">TemporalAdjuster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/LocalTime.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

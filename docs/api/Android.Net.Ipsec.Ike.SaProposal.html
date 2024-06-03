@@ -1,0 +1,1875 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class SaProposal | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SaProposal | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Net_Ipsec_Ike_SaProposal.md&amp;value=---%0Auid%3A%20Android.Net.Ipsec.Ike.SaProposal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Net.Ipsec.Ike.SaProposal">
+
+
+
+  <h1 id="Android_Net_Ipsec_Ike_SaProposal" data-uid="Android.Net.Ipsec.Ike.SaProposal" class="text-break">
+Class SaProposal  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Net.html">Net</a>.<a class="xref" href="Android.Net.Ipsec.html">Ipsec</a>.<a class="xref" href="Android.Net.Ipsec.Ike.html">Ike</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SaProposal : JVMBridgeBase&lt;SaProposal&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Net.Ipsec.Ike.SaProposal.html">SaProposal</a>&gt;</div>
+      <div><span class="xref">SaProposal</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Android.Net.Ipsec.Ike.ChildSaProposal.html">ChildSaProposal</a></div>
+      <div><a class="xref" href="Android.Net.Ipsec.Ike.IkeSaProposal.html">IkeSaProposal</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SaProposal&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SaProposal&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SaProposal&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SaProposal&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SaProposal&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SaProposal&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SaProposal&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SaProposal&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;SaProposal&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SaProposal&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SaProposal&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SaProposal&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SaProposal&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal__ctor_" data-uid="Android.Net.Ipsec.Ike.SaProposal.#ctor*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal__ctor" data-uid="Android.Net.Ipsec.Ike.SaProposal.#ctor">
+  SaProposal()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L1325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;SaProposal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public SaProposal()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal__ctor_" data-uid="Android.Net.Ipsec.Ike.SaProposal.#ctor*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal__ctor_System_Object___" data-uid="Android.Net.Ipsec.Ike.SaProposal.#ctor(System.Object[])">
+  SaProposal(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L1330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;SaProposal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public SaProposal(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_BridgeClassName_" data-uid="Android.Net.Ipsec.Ike.SaProposal.BridgeClassName*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_BridgeClassName" data-uid="Android.Net.Ipsec.Ike.SaProposal.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L1338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_DH_GROUP_1024_BIT_MODP_" data-uid="Android.Net.Ipsec.Ike.SaProposal.DH_GROUP_1024_BIT_MODP*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_DH_GROUP_1024_BIT_MODP" data-uid="Android.Net.Ipsec.Ike.SaProposal.DH_GROUP_1024_BIT_MODP">
+  DH_GROUP_1024_BIT_MODP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_1024_BIT_MODP">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_1024_BIT_MODP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DH_GROUP_1024_BIT_MODP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_DH_GROUP_1536_BIT_MODP_" data-uid="Android.Net.Ipsec.Ike.SaProposal.DH_GROUP_1536_BIT_MODP*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_DH_GROUP_1536_BIT_MODP" data-uid="Android.Net.Ipsec.Ike.SaProposal.DH_GROUP_1536_BIT_MODP">
+  DH_GROUP_1536_BIT_MODP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_1536_BIT_MODP">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_1536_BIT_MODP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DH_GROUP_1536_BIT_MODP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_DH_GROUP_2048_BIT_MODP_" data-uid="Android.Net.Ipsec.Ike.SaProposal.DH_GROUP_2048_BIT_MODP*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_DH_GROUP_2048_BIT_MODP" data-uid="Android.Net.Ipsec.Ike.SaProposal.DH_GROUP_2048_BIT_MODP">
+  DH_GROUP_2048_BIT_MODP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_2048_BIT_MODP">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_2048_BIT_MODP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DH_GROUP_2048_BIT_MODP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_DH_GROUP_3072_BIT_MODP_" data-uid="Android.Net.Ipsec.Ike.SaProposal.DH_GROUP_3072_BIT_MODP*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_DH_GROUP_3072_BIT_MODP" data-uid="Android.Net.Ipsec.Ike.SaProposal.DH_GROUP_3072_BIT_MODP">
+  DH_GROUP_3072_BIT_MODP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_3072_BIT_MODP">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_3072_BIT_MODP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DH_GROUP_3072_BIT_MODP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_DH_GROUP_4096_BIT_MODP_" data-uid="Android.Net.Ipsec.Ike.SaProposal.DH_GROUP_4096_BIT_MODP*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_DH_GROUP_4096_BIT_MODP" data-uid="Android.Net.Ipsec.Ike.SaProposal.DH_GROUP_4096_BIT_MODP">
+  DH_GROUP_4096_BIT_MODP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_4096_BIT_MODP">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_4096_BIT_MODP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DH_GROUP_4096_BIT_MODP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_DH_GROUP_CURVE_25519_" data-uid="Android.Net.Ipsec.Ike.SaProposal.DH_GROUP_CURVE_25519*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_DH_GROUP_CURVE_25519" data-uid="Android.Net.Ipsec.Ike.SaProposal.DH_GROUP_CURVE_25519">
+  DH_GROUP_CURVE_25519
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_CURVE_25519">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_CURVE_25519</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DH_GROUP_CURVE_25519 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_DH_GROUP_NONE_" data-uid="Android.Net.Ipsec.Ike.SaProposal.DH_GROUP_NONE*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_DH_GROUP_NONE" data-uid="Android.Net.Ipsec.Ike.SaProposal.DH_GROUP_NONE">
+  DH_GROUP_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_NONE">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DH_GROUP_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_ENCRYPTION_ALGORITHM_3DES_" data-uid="Android.Net.Ipsec.Ike.SaProposal.ENCRYPTION_ALGORITHM_3DES*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_ENCRYPTION_ALGORITHM_3DES" data-uid="Android.Net.Ipsec.Ike.SaProposal.ENCRYPTION_ALGORITHM_3DES">
+  ENCRYPTION_ALGORITHM_3DES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#ENCRYPTION_ALGORITHM_3DES">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#ENCRYPTION_ALGORITHM_3DES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCRYPTION_ALGORITHM_3DES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_ENCRYPTION_ALGORITHM_AES_CBC_" data-uid="Android.Net.Ipsec.Ike.SaProposal.ENCRYPTION_ALGORITHM_AES_CBC*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_ENCRYPTION_ALGORITHM_AES_CBC" data-uid="Android.Net.Ipsec.Ike.SaProposal.ENCRYPTION_ALGORITHM_AES_CBC">
+  ENCRYPTION_ALGORITHM_AES_CBC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#ENCRYPTION_ALGORITHM_AES_CBC">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#ENCRYPTION_ALGORITHM_AES_CBC</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCRYPTION_ALGORITHM_AES_CBC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_ENCRYPTION_ALGORITHM_AES_CTR_" data-uid="Android.Net.Ipsec.Ike.SaProposal.ENCRYPTION_ALGORITHM_AES_CTR*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_ENCRYPTION_ALGORITHM_AES_CTR" data-uid="Android.Net.Ipsec.Ike.SaProposal.ENCRYPTION_ALGORITHM_AES_CTR">
+  ENCRYPTION_ALGORITHM_AES_CTR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#ENCRYPTION_ALGORITHM_AES_CTR">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#ENCRYPTION_ALGORITHM_AES_CTR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCRYPTION_ALGORITHM_AES_CTR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_ENCRYPTION_ALGORITHM_AES_GCM_12_" data-uid="Android.Net.Ipsec.Ike.SaProposal.ENCRYPTION_ALGORITHM_AES_GCM_12*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_ENCRYPTION_ALGORITHM_AES_GCM_12" data-uid="Android.Net.Ipsec.Ike.SaProposal.ENCRYPTION_ALGORITHM_AES_GCM_12">
+  ENCRYPTION_ALGORITHM_AES_GCM_12
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#ENCRYPTION_ALGORITHM_AES_GCM_12">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#ENCRYPTION_ALGORITHM_AES_GCM_12</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCRYPTION_ALGORITHM_AES_GCM_12 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_ENCRYPTION_ALGORITHM_AES_GCM_16_" data-uid="Android.Net.Ipsec.Ike.SaProposal.ENCRYPTION_ALGORITHM_AES_GCM_16*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_ENCRYPTION_ALGORITHM_AES_GCM_16" data-uid="Android.Net.Ipsec.Ike.SaProposal.ENCRYPTION_ALGORITHM_AES_GCM_16">
+  ENCRYPTION_ALGORITHM_AES_GCM_16
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#ENCRYPTION_ALGORITHM_AES_GCM_16">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#ENCRYPTION_ALGORITHM_AES_GCM_16</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCRYPTION_ALGORITHM_AES_GCM_16 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_ENCRYPTION_ALGORITHM_AES_GCM_8_" data-uid="Android.Net.Ipsec.Ike.SaProposal.ENCRYPTION_ALGORITHM_AES_GCM_8*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_ENCRYPTION_ALGORITHM_AES_GCM_8" data-uid="Android.Net.Ipsec.Ike.SaProposal.ENCRYPTION_ALGORITHM_AES_GCM_8">
+  ENCRYPTION_ALGORITHM_AES_GCM_8
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#ENCRYPTION_ALGORITHM_AES_GCM_8">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#ENCRYPTION_ALGORITHM_AES_GCM_8</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCRYPTION_ALGORITHM_AES_GCM_8 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_ENCRYPTION_ALGORITHM_CHACHA20_POLY1305_" data-uid="Android.Net.Ipsec.Ike.SaProposal.ENCRYPTION_ALGORITHM_CHACHA20_POLY1305*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_ENCRYPTION_ALGORITHM_CHACHA20_POLY1305" data-uid="Android.Net.Ipsec.Ike.SaProposal.ENCRYPTION_ALGORITHM_CHACHA20_POLY1305">
+  ENCRYPTION_ALGORITHM_CHACHA20_POLY1305
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#ENCRYPTION_ALGORITHM_CHACHA20_POLY1305">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#ENCRYPTION_ALGORITHM_CHACHA20_POLY1305</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCRYPTION_ALGORITHM_CHACHA20_POLY1305 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_INTEGRITY_ALGORITHM_AES_CMAC_96_" data-uid="Android.Net.Ipsec.Ike.SaProposal.INTEGRITY_ALGORITHM_AES_CMAC_96*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_INTEGRITY_ALGORITHM_AES_CMAC_96" data-uid="Android.Net.Ipsec.Ike.SaProposal.INTEGRITY_ALGORITHM_AES_CMAC_96">
+  INTEGRITY_ALGORITHM_AES_CMAC_96
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#INTEGRITY_ALGORITHM_AES_CMAC_96">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#INTEGRITY_ALGORITHM_AES_CMAC_96</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTEGRITY_ALGORITHM_AES_CMAC_96 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_INTEGRITY_ALGORITHM_AES_XCBC_96_" data-uid="Android.Net.Ipsec.Ike.SaProposal.INTEGRITY_ALGORITHM_AES_XCBC_96*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_INTEGRITY_ALGORITHM_AES_XCBC_96" data-uid="Android.Net.Ipsec.Ike.SaProposal.INTEGRITY_ALGORITHM_AES_XCBC_96">
+  INTEGRITY_ALGORITHM_AES_XCBC_96
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#INTEGRITY_ALGORITHM_AES_XCBC_96">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#INTEGRITY_ALGORITHM_AES_XCBC_96</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTEGRITY_ALGORITHM_AES_XCBC_96 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_INTEGRITY_ALGORITHM_HMAC_SHA1_96_" data-uid="Android.Net.Ipsec.Ike.SaProposal.INTEGRITY_ALGORITHM_HMAC_SHA1_96*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_INTEGRITY_ALGORITHM_HMAC_SHA1_96" data-uid="Android.Net.Ipsec.Ike.SaProposal.INTEGRITY_ALGORITHM_HMAC_SHA1_96">
+  INTEGRITY_ALGORITHM_HMAC_SHA1_96
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#INTEGRITY_ALGORITHM_HMAC_SHA1_96">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#INTEGRITY_ALGORITHM_HMAC_SHA1_96</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTEGRITY_ALGORITHM_HMAC_SHA1_96 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_INTEGRITY_ALGORITHM_HMAC_SHA2_256_128_" data-uid="Android.Net.Ipsec.Ike.SaProposal.INTEGRITY_ALGORITHM_HMAC_SHA2_256_128*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_INTEGRITY_ALGORITHM_HMAC_SHA2_256_128" data-uid="Android.Net.Ipsec.Ike.SaProposal.INTEGRITY_ALGORITHM_HMAC_SHA2_256_128">
+  INTEGRITY_ALGORITHM_HMAC_SHA2_256_128
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#INTEGRITY_ALGORITHM_HMAC_SHA2_256_128">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#INTEGRITY_ALGORITHM_HMAC_SHA2_256_128</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTEGRITY_ALGORITHM_HMAC_SHA2_256_128 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_INTEGRITY_ALGORITHM_HMAC_SHA2_384_192_" data-uid="Android.Net.Ipsec.Ike.SaProposal.INTEGRITY_ALGORITHM_HMAC_SHA2_384_192*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_INTEGRITY_ALGORITHM_HMAC_SHA2_384_192" data-uid="Android.Net.Ipsec.Ike.SaProposal.INTEGRITY_ALGORITHM_HMAC_SHA2_384_192">
+  INTEGRITY_ALGORITHM_HMAC_SHA2_384_192
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#INTEGRITY_ALGORITHM_HMAC_SHA2_384_192">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#INTEGRITY_ALGORITHM_HMAC_SHA2_384_192</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTEGRITY_ALGORITHM_HMAC_SHA2_384_192 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_INTEGRITY_ALGORITHM_HMAC_SHA2_512_256_" data-uid="Android.Net.Ipsec.Ike.SaProposal.INTEGRITY_ALGORITHM_HMAC_SHA2_512_256*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_INTEGRITY_ALGORITHM_HMAC_SHA2_512_256" data-uid="Android.Net.Ipsec.Ike.SaProposal.INTEGRITY_ALGORITHM_HMAC_SHA2_512_256">
+  INTEGRITY_ALGORITHM_HMAC_SHA2_512_256
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#INTEGRITY_ALGORITHM_HMAC_SHA2_512_256">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#INTEGRITY_ALGORITHM_HMAC_SHA2_512_256</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTEGRITY_ALGORITHM_HMAC_SHA2_512_256 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_INTEGRITY_ALGORITHM_NONE_" data-uid="Android.Net.Ipsec.Ike.SaProposal.INTEGRITY_ALGORITHM_NONE*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_INTEGRITY_ALGORITHM_NONE" data-uid="Android.Net.Ipsec.Ike.SaProposal.INTEGRITY_ALGORITHM_NONE">
+  INTEGRITY_ALGORITHM_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#INTEGRITY_ALGORITHM_NONE">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#INTEGRITY_ALGORITHM_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTEGRITY_ALGORITHM_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_IsBridgeAbstract_" data-uid="Android.Net.Ipsec.Ike.SaProposal.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_IsBridgeAbstract" data-uid="Android.Net.Ipsec.Ike.SaProposal.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L1342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_IsBridgeCloseable_" data-uid="Android.Net.Ipsec.Ike.SaProposal.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_IsBridgeCloseable" data-uid="Android.Net.Ipsec.Ike.SaProposal.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L1346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_IsBridgeInterface_" data-uid="Android.Net.Ipsec.Ike.SaProposal.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_IsBridgeInterface" data-uid="Android.Net.Ipsec.Ike.SaProposal.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L1350"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_IsBridgeStatic_" data-uid="Android.Net.Ipsec.Ike.SaProposal.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_IsBridgeStatic" data-uid="Android.Net.Ipsec.Ike.SaProposal.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L1354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_KEY_LEN_AES_128_" data-uid="Android.Net.Ipsec.Ike.SaProposal.KEY_LEN_AES_128*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_KEY_LEN_AES_128" data-uid="Android.Net.Ipsec.Ike.SaProposal.KEY_LEN_AES_128">
+  KEY_LEN_AES_128
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#KEY_LEN_AES_128">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#KEY_LEN_AES_128</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEY_LEN_AES_128 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_KEY_LEN_AES_192_" data-uid="Android.Net.Ipsec.Ike.SaProposal.KEY_LEN_AES_192*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_KEY_LEN_AES_192" data-uid="Android.Net.Ipsec.Ike.SaProposal.KEY_LEN_AES_192">
+  KEY_LEN_AES_192
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#KEY_LEN_AES_192">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#KEY_LEN_AES_192</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEY_LEN_AES_192 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_KEY_LEN_AES_256_" data-uid="Android.Net.Ipsec.Ike.SaProposal.KEY_LEN_AES_256*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_KEY_LEN_AES_256" data-uid="Android.Net.Ipsec.Ike.SaProposal.KEY_LEN_AES_256">
+  KEY_LEN_AES_256
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#KEY_LEN_AES_256">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#KEY_LEN_AES_256</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEY_LEN_AES_256 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_KEY_LEN_UNUSED_" data-uid="Android.Net.Ipsec.Ike.SaProposal.KEY_LEN_UNUSED*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_KEY_LEN_UNUSED" data-uid="Android.Net.Ipsec.Ike.SaProposal.KEY_LEN_UNUSED">
+  KEY_LEN_UNUSED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#KEY_LEN_UNUSED">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#KEY_LEN_UNUSED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEY_LEN_UNUSED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_PSEUDORANDOM_FUNCTION_AES128_CMAC_" data-uid="Android.Net.Ipsec.Ike.SaProposal.PSEUDORANDOM_FUNCTION_AES128_CMAC*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_PSEUDORANDOM_FUNCTION_AES128_CMAC" data-uid="Android.Net.Ipsec.Ike.SaProposal.PSEUDORANDOM_FUNCTION_AES128_CMAC">
+  PSEUDORANDOM_FUNCTION_AES128_CMAC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#PSEUDORANDOM_FUNCTION_AES128_CMAC">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#PSEUDORANDOM_FUNCTION_AES128_CMAC</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PSEUDORANDOM_FUNCTION_AES128_CMAC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_PSEUDORANDOM_FUNCTION_AES128_XCBC_" data-uid="Android.Net.Ipsec.Ike.SaProposal.PSEUDORANDOM_FUNCTION_AES128_XCBC*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_PSEUDORANDOM_FUNCTION_AES128_XCBC" data-uid="Android.Net.Ipsec.Ike.SaProposal.PSEUDORANDOM_FUNCTION_AES128_XCBC">
+  PSEUDORANDOM_FUNCTION_AES128_XCBC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#PSEUDORANDOM_FUNCTION_AES128_XCBC">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#PSEUDORANDOM_FUNCTION_AES128_XCBC</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PSEUDORANDOM_FUNCTION_AES128_XCBC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_PSEUDORANDOM_FUNCTION_HMAC_SHA1_" data-uid="Android.Net.Ipsec.Ike.SaProposal.PSEUDORANDOM_FUNCTION_HMAC_SHA1*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_PSEUDORANDOM_FUNCTION_HMAC_SHA1" data-uid="Android.Net.Ipsec.Ike.SaProposal.PSEUDORANDOM_FUNCTION_HMAC_SHA1">
+  PSEUDORANDOM_FUNCTION_HMAC_SHA1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#PSEUDORANDOM_FUNCTION_HMAC_SHA1">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#PSEUDORANDOM_FUNCTION_HMAC_SHA1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PSEUDORANDOM_FUNCTION_HMAC_SHA1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_PSEUDORANDOM_FUNCTION_SHA2_256_" data-uid="Android.Net.Ipsec.Ike.SaProposal.PSEUDORANDOM_FUNCTION_SHA2_256*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_PSEUDORANDOM_FUNCTION_SHA2_256" data-uid="Android.Net.Ipsec.Ike.SaProposal.PSEUDORANDOM_FUNCTION_SHA2_256">
+  PSEUDORANDOM_FUNCTION_SHA2_256
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#PSEUDORANDOM_FUNCTION_SHA2_256">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#PSEUDORANDOM_FUNCTION_SHA2_256</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PSEUDORANDOM_FUNCTION_SHA2_256 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_PSEUDORANDOM_FUNCTION_SHA2_384_" data-uid="Android.Net.Ipsec.Ike.SaProposal.PSEUDORANDOM_FUNCTION_SHA2_384*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_PSEUDORANDOM_FUNCTION_SHA2_384" data-uid="Android.Net.Ipsec.Ike.SaProposal.PSEUDORANDOM_FUNCTION_SHA2_384">
+  PSEUDORANDOM_FUNCTION_SHA2_384
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#PSEUDORANDOM_FUNCTION_SHA2_384">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#PSEUDORANDOM_FUNCTION_SHA2_384</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PSEUDORANDOM_FUNCTION_SHA2_384 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_PSEUDORANDOM_FUNCTION_SHA2_512_" data-uid="Android.Net.Ipsec.Ike.SaProposal.PSEUDORANDOM_FUNCTION_SHA2_512*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_PSEUDORANDOM_FUNCTION_SHA2_512" data-uid="Android.Net.Ipsec.Ike.SaProposal.PSEUDORANDOM_FUNCTION_SHA2_512">
+  PSEUDORANDOM_FUNCTION_SHA2_512
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#PSEUDORANDOM_FUNCTION_SHA2_512">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#PSEUDORANDOM_FUNCTION_SHA2_512</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PSEUDORANDOM_FUNCTION_SHA2_512 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_GetDhGroups_" data-uid="Android.Net.Ipsec.Ike.SaProposal.GetDhGroups*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_GetDhGroups" data-uid="Android.Net.Ipsec.Ike.SaProposal.GetDhGroups">
+  GetDhGroups()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getDhGroups()">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getDhGroups()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Integer&gt; GetDhGroups()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_GetEncryptionAlgorithms_" data-uid="Android.Net.Ipsec.Ike.SaProposal.GetEncryptionAlgorithms*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_GetEncryptionAlgorithms" data-uid="Android.Net.Ipsec.Ike.SaProposal.GetEncryptionAlgorithms">
+  GetEncryptionAlgorithms()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getEncryptionAlgorithms()">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getEncryptionAlgorithms()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Pair&lt;Integer, Integer&gt;&gt; GetEncryptionAlgorithms()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Util.Pair-2.html">Pair</a>&lt;<a class="xref" href="Java.Lang.Integer.html">Integer</a>, <a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_GetIntegrityAlgorithms_" data-uid="Android.Net.Ipsec.Ike.SaProposal.GetIntegrityAlgorithms*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_GetIntegrityAlgorithms" data-uid="Android.Net.Ipsec.Ike.SaProposal.GetIntegrityAlgorithms">
+  GetIntegrityAlgorithms()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getIntegrityAlgorithms()">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getIntegrityAlgorithms()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Integer&gt; GetIntegrityAlgorithms()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Ipsec_Ike_SaProposal_GetSupportedDhGroups_" data-uid="Android.Net.Ipsec.Ike.SaProposal.GetSupportedDhGroups*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_SaProposal_GetSupportedDhGroups" data-uid="Android.Net.Ipsec.Ike.SaProposal.GetSupportedDhGroups">
+  GetSupportedDhGroups()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getSupportedDhGroups()">https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getSupportedDhGroups()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;Integer&gt; GetSupportedDhGroups()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/SaProposal.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

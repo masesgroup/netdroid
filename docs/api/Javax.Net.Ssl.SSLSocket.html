@@ -1,0 +1,1738 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class SSLSocket | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SSLSocket | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Javax_Net_Ssl_SSLSocket.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.SSLSocket%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Javax.Net.Ssl.SSLSocket">
+
+
+
+  <h1 id="Javax_Net_Ssl_SSLSocket" data-uid="Javax.Net.Ssl.SSLSocket" class="text-break">
+Class SSLSocket  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Javax.html">Javax</a>.<a class="xref" href="Javax.Net.html">Net</a>.<a class="xref" href="Javax.Net.Ssl.html">Ssl</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SSLSocket : Socket, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ICloseable, IAutoCloseable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a>&gt;</div>
+      <div><a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a></div>
+      <div><a class="xref" href="Java.Io.Closeable.html">Closeable</a></div>
+      <div><a class="xref" href="Java.Net.Socket.html">Socket</a></div>
+      <div><span class="xref">SSLSocket</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Io.ICloseable.html">ICloseable</a></div>
+      <div><a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SetSocketImplFactory_Java_Net_SocketImplFactory_">Socket.SetSocketImplFactory(SocketImplFactory)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SetOption__1_Java_Net_SocketOption___0____0_">Socket.SetOption&lt;T&gt;(SocketOption&lt;T&gt;, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetOption__1_Java_Net_SocketOption___0__">Socket.GetOption&lt;T&gt;(SocketOption&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetKeepAlive">Socket.GetKeepAlive()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetOOBInline">Socket.GetOOBInline()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetReuseAddress">Socket.GetReuseAddress()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetTcpNoDelay">Socket.GetTcpNoDelay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_IsBound">Socket.IsBound()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_IsClosed">Socket.IsClosed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_IsConnected">Socket.IsConnected()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_IsInputShutdown">Socket.IsInputShutdown()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_IsOutputShutdown">Socket.IsOutputShutdown()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetLocalPort">Socket.GetLocalPort()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetPort">Socket.GetPort()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetSoLinger">Socket.GetSoLinger()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetTrafficClass">Socket.GetTrafficClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetInputStream">Socket.GetInputStream()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetOutputStream">Socket.GetOutputStream()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetInetAddress">Socket.GetInetAddress()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetLocalAddress">Socket.GetLocalAddress()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetLocalSocketAddress">Socket.GetLocalSocketAddress()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetRemoteSocketAddress">Socket.GetRemoteSocketAddress()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetChannel">Socket.GetChannel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SupportedOptions">Socket.SupportedOptions()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetReceiveBufferSize">Socket.GetReceiveBufferSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetSendBufferSize">Socket.GetSendBufferSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetSoTimeout">Socket.GetSoTimeout()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_Close">Socket.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SetReceiveBufferSize_System_Int32_">Socket.SetReceiveBufferSize(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SetSendBufferSize_System_Int32_">Socket.SetSendBufferSize(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SetSoTimeout_System_Int32_">Socket.SetSoTimeout(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_Bind_Java_Net_SocketAddress_">Socket.Bind(SocketAddress)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_Connect_Java_Net_SocketAddress_System_Int32_">Socket.Connect(SocketAddress, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_Connect_Java_Net_SocketAddress_">Socket.Connect(SocketAddress)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SendUrgentData_System_Int32_">Socket.SendUrgentData(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SetKeepAlive_System_Boolean_">Socket.SetKeepAlive(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SetOOBInline_System_Boolean_">Socket.SetOOBInline(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SetPerformancePreferences_System_Int32_System_Int32_System_Int32_">Socket.SetPerformancePreferences(int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SetReuseAddress_System_Boolean_">Socket.SetReuseAddress(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SetSoLinger_System_Boolean_System_Int32_">Socket.SetSoLinger(bool, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SetTcpNoDelay_System_Boolean_">Socket.SetTcpNoDelay(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SetTrafficClass_System_Int32_">Socket.SetTrafficClass(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_ShutdownInput">Socket.ShutdownInput()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_ShutdownOutput">Socket.ShutdownOutput()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;AutoCloseable&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Javax_Net_Ssl_SSLSocket__ctor_" data-uid="Javax.Net.Ssl.SSLSocket.#ctor*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket__ctor" data-uid="Javax.Net.Ssl.SSLSocket.#ctor">
+  SSLSocket()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/AllPackageClasses.cs/#L1426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;SSLSocket class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public SSLSocket()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket__ctor_" data-uid="Javax.Net.Ssl.SSLSocket.#ctor*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket__ctor_System_Object___" data-uid="Javax.Net.Ssl.SSLSocket.#ctor(System.Object[])">
+  SSLSocket(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/AllPackageClasses.cs/#L1431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;SSLSocket class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public SSLSocket(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_BridgeClassName_" data-uid="Javax.Net.Ssl.SSLSocket.BridgeClassName*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_BridgeClassName" data-uid="Javax.Net.Ssl.SSLSocket.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/AllPackageClasses.cs/#L1439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_IsBridgeAbstract_" data-uid="Javax.Net.Ssl.SSLSocket.IsBridgeAbstract*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_IsBridgeAbstract" data-uid="Javax.Net.Ssl.SSLSocket.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/AllPackageClasses.cs/#L1443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_IsBridgeCloseable_" data-uid="Javax.Net.Ssl.SSLSocket.IsBridgeCloseable*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_IsBridgeCloseable" data-uid="Javax.Net.Ssl.SSLSocket.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/AllPackageClasses.cs/#L1447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_IsBridgeInterface_" data-uid="Javax.Net.Ssl.SSLSocket.IsBridgeInterface*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_IsBridgeInterface" data-uid="Javax.Net.Ssl.SSLSocket.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/AllPackageClasses.cs/#L1451"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_IsBridgeStatic_" data-uid="Javax.Net.Ssl.SSLSocket.IsBridgeStatic*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_IsBridgeStatic" data-uid="Javax.Net.Ssl.SSLSocket.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/AllPackageClasses.cs/#L1455"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_AddHandshakeCompletedListener_" data-uid="Javax.Net.Ssl.SSLSocket.AddHandshakeCompletedListener*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_AddHandshakeCompletedListener_Javax_Net_Ssl_HandshakeCompletedListener_" data-uid="Javax.Net.Ssl.SSLSocket.AddHandshakeCompletedListener(Javax.Net.Ssl.HandshakeCompletedListener)">
+  AddHandshakeCompletedListener(HandshakeCompletedListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#addHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#addHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddHandshakeCompletedListener(HandshakeCompletedListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Net.Ssl.HandshakeCompletedListener.html">HandshakeCompletedListener</a></dt>
+    <dd><p><a class="xref" href="Javax.Net.Ssl.HandshakeCompletedListener.html">HandshakeCompletedListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetApplicationProtocol_" data-uid="Javax.Net.Ssl.SSLSocket.GetApplicationProtocol*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetApplicationProtocol" data-uid="Javax.Net.Ssl.SSLSocket.GetApplicationProtocol">
+  GetApplicationProtocol()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getApplicationProtocol()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getApplicationProtocol()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetApplicationProtocol()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetEnableSessionCreation_" data-uid="Javax.Net.Ssl.SSLSocket.GetEnableSessionCreation*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetEnableSessionCreation" data-uid="Javax.Net.Ssl.SSLSocket.GetEnableSessionCreation">
+  GetEnableSessionCreation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getEnableSessionCreation()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getEnableSessionCreation()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetEnableSessionCreation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetEnabledCipherSuites_" data-uid="Javax.Net.Ssl.SSLSocket.GetEnabledCipherSuites*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetEnabledCipherSuites" data-uid="Javax.Net.Ssl.SSLSocket.GetEnabledCipherSuites">
+  GetEnabledCipherSuites()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getEnabledCipherSuites()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getEnabledCipherSuites()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String[] GetEnabledCipherSuites()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetEnabledProtocols_" data-uid="Javax.Net.Ssl.SSLSocket.GetEnabledProtocols*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetEnabledProtocols" data-uid="Javax.Net.Ssl.SSLSocket.GetEnabledProtocols">
+  GetEnabledProtocols()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getEnabledProtocols()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getEnabledProtocols()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String[] GetEnabledProtocols()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetHandshakeApplicationProtocol_" data-uid="Javax.Net.Ssl.SSLSocket.GetHandshakeApplicationProtocol*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetHandshakeApplicationProtocol" data-uid="Javax.Net.Ssl.SSLSocket.GetHandshakeApplicationProtocol">
+  GetHandshakeApplicationProtocol()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocol()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocol()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetHandshakeApplicationProtocol()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetHandshakeApplicationProtocolSelector_" data-uid="Javax.Net.Ssl.SSLSocket.GetHandshakeApplicationProtocolSelector*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetHandshakeApplicationProtocolSelector" data-uid="Javax.Net.Ssl.SSLSocket.GetHandshakeApplicationProtocolSelector">
+  GetHandshakeApplicationProtocolSelector()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocolSelector()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocolSelector()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BiFunction&lt;SSLSocket, List&lt;String&gt;, String&gt; GetHandshakeApplicationProtocolSelector()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Function.BiFunction-3.html">BiFunction</a>&lt;<a class="xref" href="Javax.Net.Ssl.SSLSocket.html">SSLSocket</a>, <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;, <a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiFunction.html">BiFunction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetHandshakeApplicationProtocolSelectorDirect_" data-uid="Javax.Net.Ssl.SSLSocket.GetHandshakeApplicationProtocolSelectorDirect*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetHandshakeApplicationProtocolSelectorDirect" data-uid="Javax.Net.Ssl.SSLSocket.GetHandshakeApplicationProtocolSelectorDirect">
+  GetHandshakeApplicationProtocolSelectorDirect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocolSelector()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocolSelector()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BiFunction&lt;SSLSocket, List&lt;String&gt;, String&gt; GetHandshakeApplicationProtocolSelectorDirect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Function.BiFunction-3.html">BiFunction</a>&lt;<a class="xref" href="Javax.Net.Ssl.SSLSocket.html">SSLSocket</a>, <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;, <a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiFunction.html">BiFunction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetHandshakeSession_" data-uid="Javax.Net.Ssl.SSLSocket.GetHandshakeSession*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetHandshakeSession" data-uid="Javax.Net.Ssl.SSLSocket.GetHandshakeSession">
+  GetHandshakeSession()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getHandshakeSession()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getHandshakeSession()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SSLSession GetHandshakeSession()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Net.Ssl.SSLSession.html">SSLSession</a></dt>
+    <dd><p><a class="xref" href="Javax.Net.Ssl.SSLSession.html">SSLSession</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetNeedClientAuth_" data-uid="Javax.Net.Ssl.SSLSocket.GetNeedClientAuth*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetNeedClientAuth" data-uid="Javax.Net.Ssl.SSLSocket.GetNeedClientAuth">
+  GetNeedClientAuth()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getNeedClientAuth()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getNeedClientAuth()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetNeedClientAuth()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetSSLParameters_" data-uid="Javax.Net.Ssl.SSLSocket.GetSSLParameters*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetSSLParameters" data-uid="Javax.Net.Ssl.SSLSocket.GetSSLParameters">
+  GetSSLParameters()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getSSLParameters()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getSSLParameters()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SSLParameters GetSSLParameters()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Net.Ssl.SSLParameters.html">SSLParameters</a></dt>
+    <dd><p><a class="xref" href="Javax.Net.Ssl.SSLParameters.html">SSLParameters</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetSession_" data-uid="Javax.Net.Ssl.SSLSocket.GetSession*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetSession" data-uid="Javax.Net.Ssl.SSLSocket.GetSession">
+  GetSession()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getSession()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getSession()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SSLSession GetSession()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Net.Ssl.SSLSession.html">SSLSession</a></dt>
+    <dd><p><a class="xref" href="Javax.Net.Ssl.SSLSession.html">SSLSession</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetSupportedCipherSuites_" data-uid="Javax.Net.Ssl.SSLSocket.GetSupportedCipherSuites*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetSupportedCipherSuites" data-uid="Javax.Net.Ssl.SSLSocket.GetSupportedCipherSuites">
+  GetSupportedCipherSuites()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getSupportedCipherSuites()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getSupportedCipherSuites()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String[] GetSupportedCipherSuites()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetSupportedProtocols_" data-uid="Javax.Net.Ssl.SSLSocket.GetSupportedProtocols*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetSupportedProtocols" data-uid="Javax.Net.Ssl.SSLSocket.GetSupportedProtocols">
+  GetSupportedProtocols()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getSupportedProtocols()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getSupportedProtocols()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String[] GetSupportedProtocols()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetUseClientMode_" data-uid="Javax.Net.Ssl.SSLSocket.GetUseClientMode*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetUseClientMode" data-uid="Javax.Net.Ssl.SSLSocket.GetUseClientMode">
+  GetUseClientMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getUseClientMode()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getUseClientMode()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetUseClientMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_GetWantClientAuth_" data-uid="Javax.Net.Ssl.SSLSocket.GetWantClientAuth*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_GetWantClientAuth" data-uid="Javax.Net.Ssl.SSLSocket.GetWantClientAuth">
+  GetWantClientAuth()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getWantClientAuth()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getWantClientAuth()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetWantClientAuth()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_RemoveHandshakeCompletedListener_" data-uid="Javax.Net.Ssl.SSLSocket.RemoveHandshakeCompletedListener*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_RemoveHandshakeCompletedListener_Javax_Net_Ssl_HandshakeCompletedListener_" data-uid="Javax.Net.Ssl.SSLSocket.RemoveHandshakeCompletedListener(Javax.Net.Ssl.HandshakeCompletedListener)">
+  RemoveHandshakeCompletedListener(HandshakeCompletedListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#removeHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#removeHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveHandshakeCompletedListener(HandshakeCompletedListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Net.Ssl.HandshakeCompletedListener.html">HandshakeCompletedListener</a></dt>
+    <dd><p><a class="xref" href="Javax.Net.Ssl.HandshakeCompletedListener.html">HandshakeCompletedListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_SetEnableSessionCreation_" data-uid="Javax.Net.Ssl.SSLSocket.SetEnableSessionCreation*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_SetEnableSessionCreation_System_Boolean_" data-uid="Javax.Net.Ssl.SSLSocket.SetEnableSessionCreation(System.Boolean)">
+  SetEnableSessionCreation(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setEnableSessionCreation(boolean)">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setEnableSessionCreation(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEnableSessionCreation(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_SetEnabledCipherSuites_" data-uid="Javax.Net.Ssl.SSLSocket.SetEnabledCipherSuites*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_SetEnabledCipherSuites_Java_Lang_String___" data-uid="Javax.Net.Ssl.SSLSocket.SetEnabledCipherSuites(Java.Lang.String[])">
+  SetEnabledCipherSuites(String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setEnabledCipherSuites(java.lang.String[])">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setEnabledCipherSuites(java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEnabledCipherSuites(String[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_SetEnabledProtocols_" data-uid="Javax.Net.Ssl.SSLSocket.SetEnabledProtocols*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_SetEnabledProtocols_Java_Lang_String___" data-uid="Javax.Net.Ssl.SSLSocket.SetEnabledProtocols(Java.Lang.String[])">
+  SetEnabledProtocols(String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setEnabledProtocols(java.lang.String[])">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setEnabledProtocols(java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEnabledProtocols(String[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_SetHandshakeApplicationProtocolSelector_" data-uid="Javax.Net.Ssl.SSLSocket.SetHandshakeApplicationProtocolSelector*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_SetHandshakeApplicationProtocolSelector_Java_Util_Function_BiFunction_Javax_Net_Ssl_SSLSocket_Java_Util_List_Java_Lang_String__Java_Lang_String__" data-uid="Javax.Net.Ssl.SSLSocket.SetHandshakeApplicationProtocolSelector(Java.Util.Function.BiFunction{Javax.Net.Ssl.SSLSocket,Java.Util.List{Java.Lang.String},Java.Lang.String})">
+  SetHandshakeApplicationProtocolSelector(BiFunction&lt;SSLSocket, List&lt;String&gt;, String&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHandshakeApplicationProtocolSelector(BiFunction&lt;SSLSocket, List&lt;String&gt;, String&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.BiFunction-3.html">BiFunction</a>&lt;<a class="xref" href="Javax.Net.Ssl.SSLSocket.html">SSLSocket</a>, <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;, <a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiFunction.html">BiFunction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_SetNeedClientAuth_" data-uid="Javax.Net.Ssl.SSLSocket.SetNeedClientAuth*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_SetNeedClientAuth_System_Boolean_" data-uid="Javax.Net.Ssl.SSLSocket.SetNeedClientAuth(System.Boolean)">
+  SetNeedClientAuth(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setNeedClientAuth(boolean)">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setNeedClientAuth(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNeedClientAuth(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_SetSSLParameters_" data-uid="Javax.Net.Ssl.SSLSocket.SetSSLParameters*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_SetSSLParameters_Javax_Net_Ssl_SSLParameters_" data-uid="Javax.Net.Ssl.SSLSocket.SetSSLParameters(Javax.Net.Ssl.SSLParameters)">
+  SetSSLParameters(SSLParameters)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setSSLParameters(javax.net.ssl.SSLParameters)">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setSSLParameters(javax.net.ssl.SSLParameters)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSSLParameters(SSLParameters arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Net.Ssl.SSLParameters.html">SSLParameters</a></dt>
+    <dd><p><a class="xref" href="Javax.Net.Ssl.SSLParameters.html">SSLParameters</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_SetUseClientMode_" data-uid="Javax.Net.Ssl.SSLSocket.SetUseClientMode*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_SetUseClientMode_System_Boolean_" data-uid="Javax.Net.Ssl.SSLSocket.SetUseClientMode(System.Boolean)">
+  SetUseClientMode(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setUseClientMode(boolean)">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setUseClientMode(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUseClientMode(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_SetWantClientAuth_" data-uid="Javax.Net.Ssl.SSLSocket.SetWantClientAuth*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_SetWantClientAuth_System_Boolean_" data-uid="Javax.Net.Ssl.SSLSocket.SetWantClientAuth(System.Boolean)">
+  SetWantClientAuth(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setWantClientAuth(boolean)">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setWantClientAuth(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWantClientAuth(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_SSLSocket_StartHandshake_" data-uid="Javax.Net.Ssl.SSLSocket.StartHandshake*"></a>
+
+  <h3 id="Javax_Net_Ssl_SSLSocket_StartHandshake" data-uid="Javax.Net.Ssl.SSLSocket.StartHandshake">
+  StartHandshake()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#startHandshake()">https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#startHandshake()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartHandshake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/SSLSocket.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,3634 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class Class&lt;T&gt; | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Class&lt;T&gt; | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/java/lang/Class.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Java_Lang_Class_1.md&amp;value=---%0Auid%3A%20Java.Lang.Class%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Java.Lang.Class`1">
+
+
+
+  <h1 id="Java_Lang_Class_1" data-uid="Java.Lang.Class`1" class="text-break">
+Class Class&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L712"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Java.html">Java</a>.<a class="xref" href="Java.Lang.html">Lang</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html">https://developer.android.com/reference/java/lang/Class.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Class&lt;T&gt; : JVMBridgeBase&lt;Class&lt;T&gt;&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ISerializable, IGenericDeclaration, IType, IAnnotatedElement</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.Class-1.html">Class</a>&lt;T&gt;&gt;</div>
+      <div><span class="xref">Class&lt;T&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
+      <div><a class="xref" href="Java.Lang.Reflect.IGenericDeclaration.html">IGenericDeclaration</a></div>
+      <div><a class="xref" href="Java.Lang.Reflect.IType.html">IType</a></div>
+      <div><a class="xref" href="Java.Lang.Reflect.IAnnotatedElement.html">IAnnotatedElement</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Class&lt;T&gt;&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Java_Lang_Class_1__ctor_" data-uid="Java.Lang.Class`1.#ctor*"></a>
+
+  <h3 id="Java_Lang_Class_1__ctor" data-uid="Java.Lang.Class`1.#ctor">
+  Class()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/AllPackageClasses.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1__ctor_" data-uid="Java.Lang.Class`1.#ctor*"></a>
+
+  <h3 id="Java_Lang_Class_1__ctor_System_Object___" data-uid="Java.Lang.Class`1.#ctor(System.Object[])">
+  Class(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/AllPackageClasses.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Java_Lang_Class_1_BridgeClassName_" data-uid="Java.Lang.Class`1.BridgeClassName*"></a>
+
+  <h3 id="Java_Lang_Class_1_BridgeClassName" data-uid="Java.Lang.Class`1.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/AllPackageClasses.cs/#L497"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsBridgeAbstract_" data-uid="Java.Lang.Class`1.IsBridgeAbstract*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsBridgeAbstract" data-uid="Java.Lang.Class`1.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/AllPackageClasses.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsBridgeCloseable_" data-uid="Java.Lang.Class`1.IsBridgeCloseable*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsBridgeCloseable" data-uid="Java.Lang.Class`1.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/AllPackageClasses.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsBridgeInterface_" data-uid="Java.Lang.Class`1.IsBridgeInterface*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsBridgeInterface" data-uid="Java.Lang.Class`1.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/AllPackageClasses.cs/#L509"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsBridgeStatic_" data-uid="Java.Lang.Class`1.IsBridgeStatic*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsBridgeStatic" data-uid="Java.Lang.Class`1.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/AllPackageClasses.cs/#L513"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Java_Lang_Class_1_ArrayType_" data-uid="Java.Lang.Class`1.ArrayType*"></a>
+
+  <h3 id="Java_Lang_Class_1_ArrayType" data-uid="Java.Lang.Class`1.ArrayType">
+  ArrayType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1026"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#arrayType()">https://developer.android.com/reference/java/lang/Class.html#arrayType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeDescriptor.OfField ArrayType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Invoke.TypeDescriptor.html">TypeDescriptor</a>.<a class="xref" href="Java.Lang.Invoke.TypeDescriptor.OfField.html">OfField</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Invoke.TypeDescriptor.OfField.html">TypeDescriptor.OfField</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_AsSubclass_" data-uid="Java.Lang.Class`1.AsSubclass*"></a>
+
+  <h3 id="Java_Lang_Class_1_AsSubclass__2_Java_Lang_Class_" data-uid="Java.Lang.Class`1.AsSubclass``2(Java.Lang.Class)">
+  AsSubclass&lt;ReturnExtendsU, U&gt;(Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L820"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#asSubclass(java.lang.Class)">https://developer.android.com/reference/java/lang/Class.html#asSubclass(java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class AsSubclass&lt;ReturnExtendsU, U&gt;(Class arg0) where ReturnExtendsU : U</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ReturnExtendsU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+    <dt><code>U</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_Cast_" data-uid="Java.Lang.Class`1.Cast*"></a>
+
+  <h3 id="Java_Lang_Class_1_Cast_System_Object_" data-uid="Java.Lang.Class`1.Cast(System.Object)">
+  Cast(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#cast(java.lang.Object)">https://developer.android.com/reference/java/lang/Class.html#cast(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Cast(object arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_ComponentType_" data-uid="Java.Lang.Class`1.ComponentType*"></a>
+
+  <h3 id="Java_Lang_Class_1_ComponentType" data-uid="Java.Lang.Class`1.ComponentType">
+  ComponentType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1034"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#componentType()">https://developer.android.com/reference/java/lang/Class.html#componentType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeDescriptor.OfField ComponentType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Invoke.TypeDescriptor.html">TypeDescriptor</a>.<a class="xref" href="Java.Lang.Invoke.TypeDescriptor.OfField.html">OfField</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Invoke.TypeDescriptor.OfField.html">TypeDescriptor.OfField</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_DescriptorString_" data-uid="Java.Lang.Class`1.DescriptorString*"></a>
+
+  <h3 id="Java_Lang_Class_1_DescriptorString" data-uid="Java.Lang.Class`1.DescriptorString">
+  DescriptorString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#descriptorString()">https://developer.android.com/reference/java/lang/Class.html#descriptorString()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String DescriptorString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_DesiredAssertionStatus_" data-uid="Java.Lang.Class`1.DesiredAssertionStatus*"></a>
+
+  <h3 id="Java_Lang_Class_1_DesiredAssertionStatus" data-uid="Java.Lang.Class`1.DesiredAssertionStatus">
+  DesiredAssertionStatus()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L828"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#desiredAssertionStatus()">https://developer.android.com/reference/java/lang/Class.html#desiredAssertionStatus()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DesiredAssertionStatus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_ForName_" data-uid="Java.Lang.Class`1.ForName*"></a>
+
+  <h3 id="Java_Lang_Class_1_ForName_Java_Lang_String_" data-uid="Java.Lang.Class`1.ForName(Java.Lang.String)">
+  ForName(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L765"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#forName(java.lang.String)">https://developer.android.com/reference/java/lang/Class.html#forName(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class ForName(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.ClassNotFoundException.html">ClassNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_ForName_" data-uid="Java.Lang.Class`1.ForName*"></a>
+
+  <h3 id="Java_Lang_Class_1_ForName_Java_Lang_String_System_Boolean_Java_Lang_ClassLoader_" data-uid="Java.Lang.Class`1.ForName(Java.Lang.String,System.Boolean,Java.Lang.ClassLoader)">
+  ForName(String, bool, ClassLoader)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L755"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#forName(java.lang.String,boolean,java.lang.ClassLoader)">https://developer.android.com/reference/java/lang/Class.html#forName(java.lang.String,boolean,java.lang.ClassLoader)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class ForName(String arg0, bool arg1, ClassLoader arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.ClassNotFoundException.html">ClassNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetAnnotation_" data-uid="Java.Lang.Class`1.GetAnnotation*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetAnnotation__1_Java_Lang_Class_" data-uid="Java.Lang.Class`1.GetAnnotation``1(Java.Lang.Class)">
+  GetAnnotation&lt;A&gt;(Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L779"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getAnnotation(java.lang.Class)">https://developer.android.com/reference/java/lang/Class.html#getAnnotation(java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public A GetAnnotation&lt;A&gt;(Class arg0) where A : IAnnotation, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">A</span></dt>
+    <dd><p><code class="typeparamref">A</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code></dt>
+    <dd><p><a class="xref" href="Java.Lang.Annotation.IAnnotation.html">IAnnotation</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetAnnotations_" data-uid="Java.Lang.Class`1.GetAnnotations*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetAnnotations" data-uid="Java.Lang.Class`1.GetAnnotations">
+  GetAnnotations()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L927"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getAnnotations()">https://developer.android.com/reference/java/lang/Class.html#getAnnotations()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Annotation[] GetAnnotations()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Annotation.Annotation.html">Annotation</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Annotation.Annotation.html">Annotation</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetAnnotationsByType_" data-uid="Java.Lang.Class`1.GetAnnotationsByType*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetAnnotationsByType__1_Java_Lang_Class_" data-uid="Java.Lang.Class`1.GetAnnotationsByType``1(Java.Lang.Class)">
+  GetAnnotationsByType&lt;A&gt;(Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L799"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getAnnotationsByType(java.lang.Class)">https://developer.android.com/reference/java/lang/Class.html#getAnnotationsByType(java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public A[] GetAnnotationsByType&lt;A&gt;(Class arg0) where A : IAnnotation, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>A[]</dt>
+    <dd><p><code class="typeparamref">A</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code></dt>
+    <dd><p><a class="xref" href="Java.Lang.Annotation.IAnnotation.html">IAnnotation</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetCanonicalName_" data-uid="Java.Lang.Class`1.GetCanonicalName*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetCanonicalName" data-uid="Java.Lang.Class`1.GetCanonicalName">
+  GetCanonicalName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getCanonicalName()">https://developer.android.com/reference/java/lang/Class.html#getCanonicalName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetCanonicalName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetClassLoader_" data-uid="Java.Lang.Class`1.GetClassLoader*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetClassLoader" data-uid="Java.Lang.Class`1.GetClassLoader">
+  GetClassLoader()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1018"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getClassLoader()">https://developer.android.com/reference/java/lang/Class.html#getClassLoader()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClassLoader GetClassLoader()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetClasses_" data-uid="Java.Lang.Class`1.GetClasses*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetClasses" data-uid="Java.Lang.Class`1.GetClasses">
+  GetClasses()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L977"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getClasses()">https://developer.android.com/reference/java/lang/Class.html#getClasses()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class[] GetClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetComponentType_" data-uid="Java.Lang.Class`1.GetComponentType*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetComponentType" data-uid="Java.Lang.Class`1.GetComponentType">
+  GetComponentType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L943"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getComponentType()">https://developer.android.com/reference/java/lang/Class.html#getComponentType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class GetComponentType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetConstructor_" data-uid="Java.Lang.Class`1.GetConstructor*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetConstructor_Java_Lang_Class___" data-uid="Java.Lang.Class`1.GetConstructor(Java.Lang.Class[])">
+  GetConstructor(params Class[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1080"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getConstructor(java.lang.Class[])">https://developer.android.com/reference/java/lang/Class.html#getConstructor(java.lang.Class[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Constructor&lt;T&gt; GetConstructor(params Class[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Constructor-1.html">Constructor</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Constructor.html">Constructor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.NoSuchMethodException.html">NoSuchMethodException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetConstructors_" data-uid="Java.Lang.Class`1.GetConstructors*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetConstructors" data-uid="Java.Lang.Class`1.GetConstructors">
+  GetConstructors()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1060"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getConstructors()">https://developer.android.com/reference/java/lang/Class.html#getConstructors()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Constructor&lt;object&gt;[] GetConstructors()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Constructor-1.html">Constructor</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Constructor.html">Constructor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetDeclaredAnnotation_" data-uid="Java.Lang.Class`1.GetDeclaredAnnotation*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetDeclaredAnnotation__1_Java_Lang_Class_" data-uid="Java.Lang.Class`1.GetDeclaredAnnotation``1(Java.Lang.Class)">
+  GetDeclaredAnnotation&lt;A&gt;(Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L789"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredAnnotation(java.lang.Class)">https://developer.android.com/reference/java/lang/Class.html#getDeclaredAnnotation(java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public A GetDeclaredAnnotation&lt;A&gt;(Class arg0) where A : IAnnotation, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">A</span></dt>
+    <dd><p><code class="typeparamref">A</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code></dt>
+    <dd><p><a class="xref" href="Java.Lang.Annotation.IAnnotation.html">IAnnotation</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetDeclaredAnnotations_" data-uid="Java.Lang.Class`1.GetDeclaredAnnotations*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetDeclaredAnnotations" data-uid="Java.Lang.Class`1.GetDeclaredAnnotations">
+  GetDeclaredAnnotations()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L935"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredAnnotations()">https://developer.android.com/reference/java/lang/Class.html#getDeclaredAnnotations()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Annotation[] GetDeclaredAnnotations()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Annotation.Annotation.html">Annotation</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Annotation.Annotation.html">Annotation</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetDeclaredAnnotationsByType_" data-uid="Java.Lang.Class`1.GetDeclaredAnnotationsByType*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetDeclaredAnnotationsByType__1_Java_Lang_Class_" data-uid="Java.Lang.Class`1.GetDeclaredAnnotationsByType``1(Java.Lang.Class)">
+  GetDeclaredAnnotationsByType&lt;A&gt;(Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L809"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredAnnotationsByType(java.lang.Class)">https://developer.android.com/reference/java/lang/Class.html#getDeclaredAnnotationsByType(java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public A[] GetDeclaredAnnotationsByType&lt;A&gt;(Class arg0) where A : IAnnotation, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>A[]</dt>
+    <dd><p><code class="typeparamref">A</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code></dt>
+    <dd><p><a class="xref" href="Java.Lang.Annotation.IAnnotation.html">IAnnotation</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetDeclaredClasses_" data-uid="Java.Lang.Class`1.GetDeclaredClasses*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetDeclaredClasses" data-uid="Java.Lang.Class`1.GetDeclaredClasses">
+  GetDeclaredClasses()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L986"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredClasses()">https://developer.android.com/reference/java/lang/Class.html#getDeclaredClasses()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class[] GetDeclaredClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetDeclaredConstructor_" data-uid="Java.Lang.Class`1.GetDeclaredConstructor*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetDeclaredConstructor_Java_Lang_Class___" data-uid="Java.Lang.Class`1.GetDeclaredConstructor(Java.Lang.Class[])">
+  GetDeclaredConstructor(params Class[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1091"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredConstructor(java.lang.Class[])">https://developer.android.com/reference/java/lang/Class.html#getDeclaredConstructor(java.lang.Class[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Constructor&lt;T&gt; GetDeclaredConstructor(params Class[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Constructor-1.html">Constructor</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Constructor.html">Constructor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.NoSuchMethodException.html">NoSuchMethodException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetDeclaredConstructors_" data-uid="Java.Lang.Class`1.GetDeclaredConstructors*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetDeclaredConstructors" data-uid="Java.Lang.Class`1.GetDeclaredConstructors">
+  GetDeclaredConstructors()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1069"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredConstructors()">https://developer.android.com/reference/java/lang/Class.html#getDeclaredConstructors()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Constructor&lt;object&gt;[] GetDeclaredConstructors()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Constructor-1.html">Constructor</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Constructor.html">Constructor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetDeclaredField_" data-uid="Java.Lang.Class`1.GetDeclaredField*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetDeclaredField_Java_Lang_String_" data-uid="Java.Lang.Class`1.GetDeclaredField(Java.Lang.String)">
+  GetDeclaredField(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredField(java.lang.String)">https://developer.android.com/reference/java/lang/Class.html#getDeclaredField(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Field GetDeclaredField(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Field.html">Field</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Field.html">Field</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.NoSuchFieldException.html">NoSuchFieldException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetDeclaredFields_" data-uid="Java.Lang.Class`1.GetDeclaredFields*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetDeclaredFields" data-uid="Java.Lang.Class`1.GetDeclaredFields">
+  GetDeclaredFields()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredFields()">https://developer.android.com/reference/java/lang/Class.html#getDeclaredFields()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Field[] GetDeclaredFields()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Field.html">Field</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Field.html">Field</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetDeclaredMethod_" data-uid="Java.Lang.Class`1.GetDeclaredMethod*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetDeclaredMethod_Java_Lang_String_Java_Lang_Class___" data-uid="Java.Lang.Class`1.GetDeclaredMethod(Java.Lang.String,Java.Lang.Class[])">
+  GetDeclaredMethod(String, params Class[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class[])">https://developer.android.com/reference/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Method GetDeclaredMethod(String arg0, params Class[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Class.html">Class</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Method.html">Method</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Method.html">Method</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.NoSuchMethodException.html">NoSuchMethodException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetDeclaredMethods_" data-uid="Java.Lang.Class`1.GetDeclaredMethods*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetDeclaredMethods" data-uid="Java.Lang.Class`1.GetDeclaredMethods">
+  GetDeclaredMethods()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getDeclaredMethods()">https://developer.android.com/reference/java/lang/Class.html#getDeclaredMethods()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Method[] GetDeclaredMethods()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Method.html">Method</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Method.html">Method</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetDeclaringClass_" data-uid="Java.Lang.Class`1.GetDeclaringClass*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetDeclaringClass" data-uid="Java.Lang.Class`1.GetDeclaringClass">
+  GetDeclaringClass()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L952"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getDeclaringClass()">https://developer.android.com/reference/java/lang/Class.html#getDeclaringClass()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class GetDeclaringClass()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetEnclosingClass_" data-uid="Java.Lang.Class`1.GetEnclosingClass*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetEnclosingClass" data-uid="Java.Lang.Class`1.GetEnclosingClass">
+  GetEnclosingClass()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L961"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getEnclosingClass()">https://developer.android.com/reference/java/lang/Class.html#getEnclosingClass()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class GetEnclosingClass()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetEnclosingConstructor_" data-uid="Java.Lang.Class`1.GetEnclosingConstructor*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetEnclosingConstructor" data-uid="Java.Lang.Class`1.GetEnclosingConstructor">
+  GetEnclosingConstructor()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1051"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getEnclosingConstructor()">https://developer.android.com/reference/java/lang/Class.html#getEnclosingConstructor()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Constructor&lt;object&gt; GetEnclosingConstructor()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Constructor-1.html">Constructor</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Constructor.html">Constructor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetEnclosingMethod_" data-uid="Java.Lang.Class`1.GetEnclosingMethod*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetEnclosingMethod" data-uid="Java.Lang.Class`1.GetEnclosingMethod">
+  GetEnclosingMethod()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getEnclosingMethod()">https://developer.android.com/reference/java/lang/Class.html#getEnclosingMethod()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Method GetEnclosingMethod()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Method.html">Method</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Method.html">Method</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetEnumConstants_" data-uid="Java.Lang.Class`1.GetEnumConstants*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetEnumConstants" data-uid="Java.Lang.Class`1.GetEnumConstants">
+  GetEnumConstants()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1390"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getEnumConstants()">https://developer.android.com/reference/java/lang/Class.html#getEnumConstants()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] GetEnumConstants()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetField_" data-uid="Java.Lang.Class`1.GetField*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetField_Java_Lang_String_" data-uid="Java.Lang.Class`1.GetField(Java.Lang.String)">
+  GetField(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getField(java.lang.String)">https://developer.android.com/reference/java/lang/Class.html#getField(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Field GetField(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Field.html">Field</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Field.html">Field</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.NoSuchFieldException.html">NoSuchFieldException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetFields_" data-uid="Java.Lang.Class`1.GetFields*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetFields" data-uid="Java.Lang.Class`1.GetFields">
+  GetFields()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getFields()">https://developer.android.com/reference/java/lang/Class.html#getFields()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Field[] GetFields()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Field.html">Field</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Field.html">Field</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetGenericInterfaces_" data-uid="Java.Lang.Class`1.GetGenericInterfaces*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetGenericInterfaces" data-uid="Java.Lang.Class`1.GetGenericInterfaces">
+  GetGenericInterfaces()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getGenericInterfaces()">https://developer.android.com/reference/java/lang/Class.html#getGenericInterfaces()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type[] GetGenericInterfaces()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Type.html">Type</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Type.html">Type</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetGenericSuperclass_" data-uid="Java.Lang.Class`1.GetGenericSuperclass*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetGenericSuperclass" data-uid="Java.Lang.Class`1.GetGenericSuperclass">
+  GetGenericSuperclass()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getGenericSuperclass()">https://developer.android.com/reference/java/lang/Class.html#getGenericSuperclass()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type GetGenericSuperclass()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Type.html">Type</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Type.html">Type</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetInterfaces_" data-uid="Java.Lang.Class`1.GetInterfaces*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetInterfaces" data-uid="Java.Lang.Class`1.GetInterfaces">
+  GetInterfaces()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L994"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getInterfaces()">https://developer.android.com/reference/java/lang/Class.html#getInterfaces()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class[] GetInterfaces()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetMethod_" data-uid="Java.Lang.Class`1.GetMethod*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetMethod_Java_Lang_String_Java_Lang_Class___" data-uid="Java.Lang.Class`1.GetMethod(Java.Lang.String,Java.Lang.Class[])">
+  GetMethod(String, params Class[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class[])">https://developer.android.com/reference/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Method GetMethod(String arg0, params Class[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Class.html">Class</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Method.html">Method</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Method.html">Method</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.NoSuchMethodException.html">NoSuchMethodException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetMethods_" data-uid="Java.Lang.Class`1.GetMethods*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetMethods" data-uid="Java.Lang.Class`1.GetMethods">
+  GetMethods()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getMethods()">https://developer.android.com/reference/java/lang/Class.html#getMethods()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Method[] GetMethods()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Method.html">Method</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.Method.html">Method</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_GetModifiers_" data-uid="Java.Lang.Class`1.GetModifiers*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetModifiers" data-uid="Java.Lang.Class`1.GetModifiers">
+  GetModifiers()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1345"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getModifiers()">https://developer.android.com/reference/java/lang/Class.html#getModifiers()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetModifiers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetName_" data-uid="Java.Lang.Class`1.GetName*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetName" data-uid="Java.Lang.Class`1.GetName">
+  GetName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getName()">https://developer.android.com/reference/java/lang/Class.html#getName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetNestHost_" data-uid="Java.Lang.Class`1.GetNestHost*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetNestHost" data-uid="Java.Lang.Class`1.GetNestHost">
+  GetNestHost()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L969"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getNestHost()">https://developer.android.com/reference/java/lang/Class.html#getNestHost()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class GetNestHost()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetNestMembers_" data-uid="Java.Lang.Class`1.GetNestMembers*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetNestMembers" data-uid="Java.Lang.Class`1.GetNestMembers">
+  GetNestMembers()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1002"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getNestMembers()">https://developer.android.com/reference/java/lang/Class.html#getNestMembers()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class[] GetNestMembers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetPackage_" data-uid="Java.Lang.Class`1.GetPackage*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetPackage" data-uid="Java.Lang.Class`1.GetPackage">
+  GetPackage()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1042"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getPackage()">https://developer.android.com/reference/java/lang/Class.html#getPackage()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Package GetPackage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Package.html">Package</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Package.html">Package</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetPackageName_" data-uid="Java.Lang.Class`1.GetPackageName*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetPackageName" data-uid="Java.Lang.Class`1.GetPackageName">
+  GetPackageName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getPackageName()">https://developer.android.com/reference/java/lang/Class.html#getPackageName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetPackageName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetPermittedSubclasses_" data-uid="Java.Lang.Class`1.GetPermittedSubclasses*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetPermittedSubclasses" data-uid="Java.Lang.Class`1.GetPermittedSubclasses">
+  GetPermittedSubclasses()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1010"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getPermittedSubclasses()">https://developer.android.com/reference/java/lang/Class.html#getPermittedSubclasses()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class[] GetPermittedSubclasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetProtectionDomain_" data-uid="Java.Lang.Class`1.GetProtectionDomain*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetProtectionDomain" data-uid="Java.Lang.Class`1.GetProtectionDomain">
+  GetProtectionDomain()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getProtectionDomain()">https://developer.android.com/reference/java/lang/Class.html#getProtectionDomain()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProtectionDomain GetProtectionDomain()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Security.ProtectionDomain.html">ProtectionDomain</a></dt>
+    <dd><p><a class="xref" href="Java.Security.ProtectionDomain.html">ProtectionDomain</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetRecordComponents_" data-uid="Java.Lang.Class`1.GetRecordComponents*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetRecordComponents" data-uid="Java.Lang.Class`1.GetRecordComponents">
+  GetRecordComponents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getRecordComponents()">https://developer.android.com/reference/java/lang/Class.html#getRecordComponents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RecordComponent[] GetRecordComponents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.RecordComponent.html">RecordComponent</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.RecordComponent.html">RecordComponent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetResource_" data-uid="Java.Lang.Class`1.GetResource*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetResource_Java_Lang_String_" data-uid="Java.Lang.Class`1.GetResource(Java.Lang.String)">
+  GetResource(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1279"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getResource(java.lang.String)">https://developer.android.com/reference/java/lang/Class.html#getResource(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public URL GetResource(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Net.URL.html">URL</a></dt>
+    <dd><p><a class="xref" href="Java.Net.URL.html">URL</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetResourceAsStream_" data-uid="Java.Lang.Class`1.GetResourceAsStream*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetResourceAsStream_Java_Lang_String_" data-uid="Java.Lang.Class`1.GetResourceAsStream(Java.Lang.String)">
+  GetResourceAsStream(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L919"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getResourceAsStream(java.lang.String)">https://developer.android.com/reference/java/lang/Class.html#getResourceAsStream(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputStream GetResourceAsStream(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.InputStream.html">InputStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.InputStream.html">InputStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetSigners_" data-uid="Java.Lang.Class`1.GetSigners*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetSigners" data-uid="Java.Lang.Class`1.GetSigners">
+  GetSigners()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getSigners()">https://developer.android.com/reference/java/lang/Class.html#getSigners()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object[] GetSigners()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetSimpleName_" data-uid="Java.Lang.Class`1.GetSimpleName*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetSimpleName" data-uid="Java.Lang.Class`1.GetSimpleName">
+  GetSimpleName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getSimpleName()">https://developer.android.com/reference/java/lang/Class.html#getSimpleName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetSimpleName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetSuperclass_" data-uid="Java.Lang.Class`1.GetSuperclass*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetSuperclass__1" data-uid="Java.Lang.Class`1.GetSuperclass``1">
+  GetSuperclass&lt;ReturnobjectSuperT&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getSuperclass()">https://developer.android.com/reference/java/lang/Class.html#getSuperclass()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class GetSuperclass&lt;ReturnobjectSuperT&gt;() where ReturnobjectSuperT : T</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ReturnobjectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetTypeName_" data-uid="Java.Lang.Class`1.GetTypeName*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetTypeName" data-uid="Java.Lang.Class`1.GetTypeName">
+  GetTypeName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getTypeName()">https://developer.android.com/reference/java/lang/Class.html#getTypeName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetTypeName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_GetTypeParameters_" data-uid="Java.Lang.Class`1.GetTypeParameters*"></a>
+
+  <h3 id="Java_Lang_Class_1_GetTypeParameters" data-uid="Java.Lang.Class`1.GetTypeParameters">
+  GetTypeParameters()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#getTypeParameters()">https://developer.android.com/reference/java/lang/Class.html#getTypeParameters()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeVariable&lt;Class&gt;[] GetTypeParameters()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.TypeVariable-1.html">TypeVariable</a>&lt;<a class="xref" href="Java.Lang.Class.html">Class</a>&gt;[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Reflect.TypeVariable.html">TypeVariable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsAnnotation_" data-uid="Java.Lang.Class`1.IsAnnotation*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsAnnotation" data-uid="Java.Lang.Class`1.IsAnnotation">
+  IsAnnotation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L836"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isAnnotation()">https://developer.android.com/reference/java/lang/Class.html#isAnnotation()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAnnotation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsAnnotationPresent_" data-uid="Java.Lang.Class`1.IsAnnotationPresent*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsAnnotationPresent_Java_Lang_Class_" data-uid="Java.Lang.Class`1.IsAnnotationPresent(Java.Lang.Class)">
+  IsAnnotationPresent(Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L845"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isAnnotationPresent(java.lang.Class)">https://developer.android.com/reference/java/lang/Class.html#isAnnotationPresent(java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAnnotationPresent(Class arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsAnonymousClass_" data-uid="Java.Lang.Class`1.IsAnonymousClass*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsAnonymousClass" data-uid="Java.Lang.Class`1.IsAnonymousClass">
+  IsAnonymousClass()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L853"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isAnonymousClass()">https://developer.android.com/reference/java/lang/Class.html#isAnonymousClass()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAnonymousClass()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsArray_" data-uid="Java.Lang.Class`1.IsArray*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsArray" data-uid="Java.Lang.Class`1.IsArray">
+  IsArray()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isArray()">https://developer.android.com/reference/java/lang/Class.html#isArray()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsAssignableFrom_" data-uid="Java.Lang.Class`1.IsAssignableFrom*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsAssignableFrom_Java_Lang_Class_" data-uid="Java.Lang.Class`1.IsAssignableFrom(Java.Lang.Class)">
+  IsAssignableFrom(Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isAssignableFrom(java.lang.Class)">https://developer.android.com/reference/java/lang/Class.html#isAssignableFrom(java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAssignableFrom(Class arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsEnum_" data-uid="Java.Lang.Class`1.IsEnum*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsEnum" data-uid="Java.Lang.Class`1.IsEnum">
+  IsEnum()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L861"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isEnum()">https://developer.android.com/reference/java/lang/Class.html#isEnum()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnum()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsHidden_" data-uid="Java.Lang.Class`1.IsHidden*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsHidden" data-uid="Java.Lang.Class`1.IsHidden">
+  IsHidden()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isHidden()">https://developer.android.com/reference/java/lang/Class.html#isHidden()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHidden()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsInstance_" data-uid="Java.Lang.Class`1.IsInstance*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsInstance_System_Object_" data-uid="Java.Lang.Class`1.IsInstance(System.Object)">
+  IsInstance(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isInstance(java.lang.Object)">https://developer.android.com/reference/java/lang/Class.html#isInstance(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInstance(object arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsInterface_" data-uid="Java.Lang.Class`1.IsInterface*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsInterface" data-uid="Java.Lang.Class`1.IsInterface">
+  IsInterface()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isInterface()">https://developer.android.com/reference/java/lang/Class.html#isInterface()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInterface()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsLocalClass_" data-uid="Java.Lang.Class`1.IsLocalClass*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsLocalClass" data-uid="Java.Lang.Class`1.IsLocalClass">
+  IsLocalClass()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L869"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isLocalClass()">https://developer.android.com/reference/java/lang/Class.html#isLocalClass()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLocalClass()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsMemberClass_" data-uid="Java.Lang.Class`1.IsMemberClass*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsMemberClass" data-uid="Java.Lang.Class`1.IsMemberClass">
+  IsMemberClass()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L877"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isMemberClass()">https://developer.android.com/reference/java/lang/Class.html#isMemberClass()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMemberClass()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsNestmateOf_" data-uid="Java.Lang.Class`1.IsNestmateOf*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsNestmateOf_Java_Lang_Class_" data-uid="Java.Lang.Class`1.IsNestmateOf(Java.Lang.Class)">
+  IsNestmateOf(Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L886"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isNestmateOf(java.lang.Class)">https://developer.android.com/reference/java/lang/Class.html#isNestmateOf(java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNestmateOf(Class arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsPrimitive_" data-uid="Java.Lang.Class`1.IsPrimitive*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsPrimitive" data-uid="Java.Lang.Class`1.IsPrimitive">
+  IsPrimitive()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isPrimitive()">https://developer.android.com/reference/java/lang/Class.html#isPrimitive()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPrimitive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsRecord_" data-uid="Java.Lang.Class`1.IsRecord*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsRecord" data-uid="Java.Lang.Class`1.IsRecord">
+  IsRecord()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L894"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isRecord()">https://developer.android.com/reference/java/lang/Class.html#isRecord()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRecord()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsSealed_" data-uid="Java.Lang.Class`1.IsSealed*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsSealed" data-uid="Java.Lang.Class`1.IsSealed">
+  IsSealed()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L902"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isSealed()">https://developer.android.com/reference/java/lang/Class.html#isSealed()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSealed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_IsSynthetic_" data-uid="Java.Lang.Class`1.IsSynthetic*"></a>
+
+  <h3 id="Java_Lang_Class_1_IsSynthetic" data-uid="Java.Lang.Class`1.IsSynthetic">
+  IsSynthetic()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L910"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#isSynthetic()">https://developer.android.com/reference/java/lang/Class.html#isSynthetic()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSynthetic()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_NewInstance_" data-uid="Java.Lang.Class`1.NewInstance*"></a>
+
+  <h3 id="Java_Lang_Class_1_NewInstance" data-uid="Java.Lang.Class`1.NewInstance">
+  NewInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1381"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#newInstance()">https://developer.android.com/reference/java/lang/Class.html#newInstance()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public T NewInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.InstantiationException.html">InstantiationException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalAccessException.html">IllegalAccessException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Class_1_ToGenericString_" data-uid="Java.Lang.Class`1.ToGenericString*"></a>
+
+  <h3 id="Java_Lang_Class_1_ToGenericString" data-uid="Java.Lang.Class`1.ToGenericString">
+  ToGenericString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L1270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Class.html#toGenericString()">https://developer.android.com/reference/java/lang/Class.html#toGenericString()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String ToGenericString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Java_Lang_Class_1_op_Implicit_" data-uid="Java.Lang.Class`1.op_Implicit*"></a>
+
+  <h3 id="Java_Lang_Class_1_op_Implicit_Java_Lang_Class__0___Java_Io_Serializable" data-uid="Java.Lang.Class`1.op_Implicit(Java.Lang.Class{`0})~Java.Io.Serializable">
+  implicit operator Serializable(Class&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L722"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Lang.Class-1.html">Class&lt;T&gt;</a> to <a class="xref" href="Java.Io.Serializable.html">Serializable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Serializable(Class&lt;T&gt; t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Lang.Class-1.html">Class</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.Serializable.html">Serializable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_op_Implicit_" data-uid="Java.Lang.Class`1.op_Implicit*"></a>
+
+  <h3 id="Java_Lang_Class_1_op_Implicit_Java_Lang_Class__0___Java_Lang_Class" data-uid="Java.Lang.Class`1.op_Implicit(Java.Lang.Class{`0})~Java.Lang.Class">
+  implicit operator Class(Class&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L738"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Lang.Class-1.html">Class&lt;T&gt;</a> to <a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Class(Class&lt;T&gt; t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Lang.Class-1.html">Class</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_op_Implicit_" data-uid="Java.Lang.Class`1.op_Implicit*"></a>
+
+  <h3 id="Java_Lang_Class_1_op_Implicit_Java_Lang_Class__0___Java_Lang_Reflect_AnnotatedElement" data-uid="Java.Lang.Class`1.op_Implicit(Java.Lang.Class{`0})~Java.Lang.Reflect.AnnotatedElement">
+  implicit operator AnnotatedElement(Class&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L734"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Lang.Class-1.html">Class&lt;T&gt;</a> to <a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html">AnnotatedElement</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator AnnotatedElement(Class&lt;T&gt; t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Lang.Class-1.html">Class</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html">AnnotatedElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_op_Implicit_" data-uid="Java.Lang.Class`1.op_Implicit*"></a>
+
+  <h3 id="Java_Lang_Class_1_op_Implicit_Java_Lang_Class__0___Java_Lang_Reflect_GenericDeclaration" data-uid="Java.Lang.Class`1.op_Implicit(Java.Lang.Class{`0})~Java.Lang.Reflect.GenericDeclaration">
+  implicit operator GenericDeclaration(Class&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L726"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Lang.Class-1.html">Class&lt;T&gt;</a> to <a class="xref" href="Java.Lang.Reflect.GenericDeclaration.html">GenericDeclaration</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator GenericDeclaration(Class&lt;T&gt; t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Lang.Class-1.html">Class</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.GenericDeclaration.html">GenericDeclaration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Class_1_op_Implicit_" data-uid="Java.Lang.Class`1.op_Implicit*"></a>
+
+  <h3 id="Java_Lang_Class_1_op_Implicit_Java_Lang_Class__0___Java_Lang_Reflect_Type" data-uid="Java.Lang.Class`1.op_Implicit(Java.Lang.Class{`0})~Java.Lang.Reflect.Type">
+  implicit operator Type(Class&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L730"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Lang.Class-1.html">Class&lt;T&gt;</a> to <a class="xref" href="Java.Lang.Reflect.Type.html">Type</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Type(Class&lt;T&gt; t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Lang.Class-1.html">Class</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Reflect.Type.html">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Class.cs/#L712" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

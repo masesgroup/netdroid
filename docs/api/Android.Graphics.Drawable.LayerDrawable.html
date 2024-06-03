@@ -1,0 +1,2724 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class LayerDrawable | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LayerDrawable | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Graphics_Drawable_LayerDrawable.md&amp;value=---%0Auid%3A%20Android.Graphics.Drawable.LayerDrawable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Graphics.Drawable.LayerDrawable">
+
+
+
+  <h1 id="Android_Graphics_Drawable_LayerDrawable" data-uid="Android.Graphics.Drawable.LayerDrawable" class="text-break">
+Class LayerDrawable  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Graphics.html">Graphics</a>.<a class="xref" href="Android.Graphics.Drawable.html">Drawable</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LayerDrawable : Drawable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a>&gt;</div>
+      <div><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></div>
+      <div><span class="xref">LayerDrawable</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Android.Graphics.Drawable.RippleDrawable.html">RippleDrawable</a></div>
+      <div><a class="xref" href="Android.Graphics.Drawable.TransitionDrawable.html">TransitionDrawable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromPath_Java_Lang_String_">Drawable.CreateFromPath(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromResourceStream_Android_Content_Res_Resources_Android_Util_TypedValue_Java_Io_InputStream_Java_Lang_String_Android_Graphics_BitmapFactory_Options_">Drawable.CreateFromResourceStream(Resources, TypedValue, InputStream, String, BitmapFactory.Options)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromResourceStream_Android_Content_Res_Resources_Android_Util_TypedValue_Java_Io_InputStream_Java_Lang_String_">Drawable.CreateFromResourceStream(Resources, TypedValue, InputStream, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromStream_Java_Io_InputStream_Java_Lang_String_">Drawable.CreateFromStream(InputStream, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromXml_Android_Content_Res_Resources_Org_Xmlpull_V1_XmlPullParser_Android_Content_Res_Resources_Theme_">Drawable.CreateFromXml(Resources, XmlPullParser, Resources.Theme)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromXml_Android_Content_Res_Resources_Org_Xmlpull_V1_XmlPullParser_">Drawable.CreateFromXml(Resources, XmlPullParser)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromXmlInner_Android_Content_Res_Resources_Org_Xmlpull_V1_XmlPullParser_Android_Util_AttributeSet_Android_Content_Res_Resources_Theme_">Drawable.CreateFromXmlInner(Resources, XmlPullParser, AttributeSet, Resources.Theme)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromXmlInner_Android_Content_Res_Resources_Org_Xmlpull_V1_XmlPullParser_Android_Util_AttributeSet_">Drawable.CreateFromXmlInner(Resources, XmlPullParser, AttributeSet)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_ResolveOpacity_System_Int32_System_Int32_">Drawable.ResolveOpacity(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetOpacity">Drawable.GetOpacity()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_Draw_Android_Graphics_Canvas_">Drawable.Draw(Canvas)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetAlpha_System_Int32_">Drawable.SetAlpha(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetColorFilter_Android_Graphics_ColorFilter_">Drawable.SetColorFilter(ColorFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetColorFilter">Drawable.GetColorFilter()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetCurrent">Drawable.GetCurrent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_Mutate">Drawable.Mutate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetCallback">Drawable.GetCallback()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetConstantState">Drawable.GetConstantState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetOpticalInsets">Drawable.GetOpticalInsets()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetDirtyBounds">Drawable.GetDirtyBounds()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetTransparentRegion">Drawable.GetTransparentRegion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CanApplyTheme">Drawable.CanApplyTheme()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetPadding_Android_Graphics_Rect_">Drawable.GetPadding(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_HasFocusStateSpecified">Drawable.HasFocusStateSpecified()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_IsAutoMirrored">Drawable.IsAutoMirrored()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_IsFilterBitmap">Drawable.IsFilterBitmap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_IsProjected">Drawable.IsProjected()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_IsStateful">Drawable.IsStateful()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_OnLayoutDirectionChanged_System_Int32_">Drawable.OnLayoutDirectionChanged(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetState_System_Int32___">Drawable.SetState(int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetVisible_System_Boolean_System_Boolean_">Drawable.SetVisible(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CopyBounds">Drawable.CopyBounds()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetBounds">Drawable.GetBounds()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_IsVisible">Drawable.IsVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetLayoutDirection_System_Int32_">Drawable.SetLayoutDirection(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetLevel_System_Int32_">Drawable.SetLevel(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetLevel">Drawable.GetLevel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CopyBounds_Android_Graphics_Rect_">Drawable.CopyBounds(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetCallback_Android_Graphics_Drawable_Drawable_Callback_">Drawable.SetCallback(Drawable.Callback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetAlpha">Drawable.GetAlpha()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetChangingConfigurations">Drawable.GetChangingConfigurations()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetIntrinsicHeight">Drawable.GetIntrinsicHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetIntrinsicWidth">Drawable.GetIntrinsicWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetLayoutDirection">Drawable.GetLayoutDirection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetMinimumHeight">Drawable.GetMinimumHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetMinimumWidth">Drawable.GetMinimumWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetState">Drawable.GetState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_ApplyTheme_Android_Content_Res_Resources_Theme_">Drawable.ApplyTheme(Resources.Theme)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_ClearColorFilter">Drawable.ClearColorFilter()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetHotspotBounds_Android_Graphics_Rect_">Drawable.GetHotspotBounds(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetOutline_Android_Graphics_Outline_">Drawable.GetOutline(Outline)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_Inflate_Android_Content_Res_Resources_Org_Xmlpull_V1_XmlPullParser_Android_Util_AttributeSet_Android_Content_Res_Resources_Theme_">Drawable.Inflate(Resources, XmlPullParser, AttributeSet, Resources.Theme)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_Inflate_Android_Content_Res_Resources_Org_Xmlpull_V1_XmlPullParser_Android_Util_AttributeSet_">Drawable.Inflate(Resources, XmlPullParser, AttributeSet)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_InvalidateSelf">Drawable.InvalidateSelf()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_JumpToCurrentState">Drawable.JumpToCurrentState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_ScheduleSelf_Java_Lang_Runnable_System_Int64_">Drawable.ScheduleSelf(Runnable, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetAutoMirrored_System_Boolean_">Drawable.SetAutoMirrored(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetBounds_Android_Graphics_Rect_">Drawable.SetBounds(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetBounds_System_Int32_System_Int32_System_Int32_System_Int32_">Drawable.SetBounds(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetChangingConfigurations_System_Int32_">Drawable.SetChangingConfigurations(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetColorFilter_System_Int32_Android_Graphics_PorterDuff_Mode_">Drawable.SetColorFilter(int, PorterDuff.Mode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetDither_System_Boolean_">Drawable.SetDither(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetFilterBitmap_System_Boolean_">Drawable.SetFilterBitmap(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetHotspot_System_Single_System_Single_">Drawable.SetHotspot(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetHotspotBounds_System_Int32_System_Int32_System_Int32_System_Int32_">Drawable.SetHotspotBounds(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetTint_System_Int32_">Drawable.SetTint(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetTintBlendMode_Android_Graphics_BlendMode_">Drawable.SetTintBlendMode(BlendMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetTintList_Android_Content_Res_ColorStateList_">Drawable.SetTintList(ColorStateList)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetTintMode_Android_Graphics_PorterDuff_Mode_">Drawable.SetTintMode(PorterDuff.Mode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_UnscheduleSelf_Java_Lang_Runnable_">Drawable.UnscheduleSelf(Runnable)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Drawable&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Drawable&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Drawable&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Drawable&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Drawable&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Drawable&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable__ctor_" data-uid="Android.Graphics.Drawable.LayerDrawable.#ctor*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable__ctor" data-uid="Android.Graphics.Drawable.LayerDrawable.#ctor">
+  LayerDrawable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/AllPackageClasses.cs/#L1088"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerDrawable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable__ctor_" data-uid="Android.Graphics.Drawable.LayerDrawable.#ctor*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable__ctor_Android_Graphics_Drawable_Drawable___" data-uid="Android.Graphics.Drawable.LayerDrawable.#ctor(Android.Graphics.Drawable.Drawable[])">
+  LayerDrawable(Drawable[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#%3Cinit%3E(android.graphics.drawable.Drawable[])">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#%3Cinit%3E(android.graphics.drawable.Drawable[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerDrawable(Drawable[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable__ctor_" data-uid="Android.Graphics.Drawable.LayerDrawable.#ctor*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable__ctor_System_Object___" data-uid="Android.Graphics.Drawable.LayerDrawable.#ctor(System.Object[])">
+  LayerDrawable(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/AllPackageClasses.cs/#L1092"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerDrawable(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_BridgeClassName_" data-uid="Android.Graphics.Drawable.LayerDrawable.BridgeClassName*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_BridgeClassName" data-uid="Android.Graphics.Drawable.LayerDrawable.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/AllPackageClasses.cs/#L1099"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_INSET_UNDEFINED_" data-uid="Android.Graphics.Drawable.LayerDrawable.INSET_UNDEFINED*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_INSET_UNDEFINED" data-uid="Android.Graphics.Drawable.LayerDrawable.INSET_UNDEFINED">
+  INSET_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#INSET_UNDEFINED">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#INSET_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INSET_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_IsBridgeAbstract_" data-uid="Android.Graphics.Drawable.LayerDrawable.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_IsBridgeAbstract" data-uid="Android.Graphics.Drawable.LayerDrawable.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/AllPackageClasses.cs/#L1103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_IsBridgeCloseable_" data-uid="Android.Graphics.Drawable.LayerDrawable.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_IsBridgeCloseable" data-uid="Android.Graphics.Drawable.LayerDrawable.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/AllPackageClasses.cs/#L1107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_IsBridgeInterface_" data-uid="Android.Graphics.Drawable.LayerDrawable.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_IsBridgeInterface" data-uid="Android.Graphics.Drawable.LayerDrawable.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/AllPackageClasses.cs/#L1111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_IsBridgeStatic_" data-uid="Android.Graphics.Drawable.LayerDrawable.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_IsBridgeStatic" data-uid="Android.Graphics.Drawable.LayerDrawable.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/AllPackageClasses.cs/#L1115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_PADDING_MODE_NEST_" data-uid="Android.Graphics.Drawable.LayerDrawable.PADDING_MODE_NEST*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_PADDING_MODE_NEST" data-uid="Android.Graphics.Drawable.LayerDrawable.PADDING_MODE_NEST">
+  PADDING_MODE_NEST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#PADDING_MODE_NEST">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#PADDING_MODE_NEST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PADDING_MODE_NEST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_PADDING_MODE_STACK_" data-uid="Android.Graphics.Drawable.LayerDrawable.PADDING_MODE_STACK*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_PADDING_MODE_STACK" data-uid="Android.Graphics.Drawable.LayerDrawable.PADDING_MODE_STACK">
+  PADDING_MODE_STACK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#PADDING_MODE_STACK">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#PADDING_MODE_STACK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PADDING_MODE_STACK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_AddLayer_" data-uid="Android.Graphics.Drawable.LayerDrawable.AddLayer*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_AddLayer_Android_Graphics_Drawable_Drawable_" data-uid="Android.Graphics.Drawable.LayerDrawable.AddLayer(Android.Graphics.Drawable.Drawable)">
+  AddLayer(Drawable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#addLayer(android.graphics.drawable.Drawable)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#addLayer(android.graphics.drawable.Drawable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddLayer(Drawable arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_FindDrawableByLayerId_" data-uid="Android.Graphics.Drawable.LayerDrawable.FindDrawableByLayerId*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_FindDrawableByLayerId_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.FindDrawableByLayerId(System.Int32)">
+  FindDrawableByLayerId(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#findDrawableByLayerId(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#findDrawableByLayerId(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Drawable FindDrawableByLayerId(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_FindIndexByLayerId_" data-uid="Android.Graphics.Drawable.LayerDrawable.FindIndexByLayerId*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_FindIndexByLayerId_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.FindIndexByLayerId(System.Int32)">
+  FindIndexByLayerId(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#findIndexByLayerId(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#findIndexByLayerId(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndexByLayerId(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetBottomPadding_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetBottomPadding*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetBottomPadding" data-uid="Android.Graphics.Drawable.LayerDrawable.GetBottomPadding">
+  GetBottomPadding()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getBottomPadding()">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getBottomPadding()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetBottomPadding()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetDrawable_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetDrawable*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetDrawable_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetDrawable(System.Int32)">
+  GetDrawable(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getDrawable(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getDrawable(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Drawable GetDrawable(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetEndPadding_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetEndPadding*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetEndPadding" data-uid="Android.Graphics.Drawable.LayerDrawable.GetEndPadding">
+  GetEndPadding()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getEndPadding()">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getEndPadding()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetEndPadding()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetId_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetId*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetId_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetId(System.Int32)">
+  GetId(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getId(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getId(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetId(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetLayerGravity_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerGravity*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetLayerGravity_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerGravity(System.Int32)">
+  GetLayerGravity(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerGravity(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerGravity(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLayerGravity(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetLayerHeight_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerHeight*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetLayerHeight_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerHeight(System.Int32)">
+  GetLayerHeight(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerHeight(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerHeight(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLayerHeight(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetLayerInsetBottom_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerInsetBottom*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetLayerInsetBottom_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerInsetBottom(System.Int32)">
+  GetLayerInsetBottom(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerInsetBottom(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerInsetBottom(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLayerInsetBottom(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetLayerInsetEnd_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerInsetEnd*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetLayerInsetEnd_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerInsetEnd(System.Int32)">
+  GetLayerInsetEnd(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerInsetEnd(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerInsetEnd(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLayerInsetEnd(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetLayerInsetLeft_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerInsetLeft*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetLayerInsetLeft_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerInsetLeft(System.Int32)">
+  GetLayerInsetLeft(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerInsetLeft(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerInsetLeft(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLayerInsetLeft(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetLayerInsetRight_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerInsetRight*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetLayerInsetRight_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerInsetRight(System.Int32)">
+  GetLayerInsetRight(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerInsetRight(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerInsetRight(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLayerInsetRight(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetLayerInsetStart_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerInsetStart*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetLayerInsetStart_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerInsetStart(System.Int32)">
+  GetLayerInsetStart(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerInsetStart(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerInsetStart(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLayerInsetStart(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetLayerInsetTop_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerInsetTop*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetLayerInsetTop_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerInsetTop(System.Int32)">
+  GetLayerInsetTop(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerInsetTop(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerInsetTop(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLayerInsetTop(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetLayerWidth_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerWidth*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetLayerWidth_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLayerWidth(System.Int32)">
+  GetLayerWidth(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerWidth(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLayerWidth(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLayerWidth(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetLeftPadding_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLeftPadding*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetLeftPadding" data-uid="Android.Graphics.Drawable.LayerDrawable.GetLeftPadding">
+  GetLeftPadding()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLeftPadding()">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getLeftPadding()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLeftPadding()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetNumberOfLayers_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetNumberOfLayers*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetNumberOfLayers" data-uid="Android.Graphics.Drawable.LayerDrawable.GetNumberOfLayers">
+  GetNumberOfLayers()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getNumberOfLayers()">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getNumberOfLayers()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumberOfLayers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetPaddingMode_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetPaddingMode*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetPaddingMode" data-uid="Android.Graphics.Drawable.LayerDrawable.GetPaddingMode">
+  GetPaddingMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getPaddingMode()">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getPaddingMode()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPaddingMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetRightPadding_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetRightPadding*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetRightPadding" data-uid="Android.Graphics.Drawable.LayerDrawable.GetRightPadding">
+  GetRightPadding()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getRightPadding()">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getRightPadding()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetRightPadding()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetStartPadding_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetStartPadding*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetStartPadding" data-uid="Android.Graphics.Drawable.LayerDrawable.GetStartPadding">
+  GetStartPadding()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getStartPadding()">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getStartPadding()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetStartPadding()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_GetTopPadding_" data-uid="Android.Graphics.Drawable.LayerDrawable.GetTopPadding*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_GetTopPadding" data-uid="Android.Graphics.Drawable.LayerDrawable.GetTopPadding">
+  GetTopPadding()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getTopPadding()">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#getTopPadding()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTopPadding()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_InvalidateDrawable_" data-uid="Android.Graphics.Drawable.LayerDrawable.InvalidateDrawable*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_InvalidateDrawable_Android_Graphics_Drawable_Drawable_" data-uid="Android.Graphics.Drawable.LayerDrawable.InvalidateDrawable(Android.Graphics.Drawable.Drawable)">
+  InvalidateDrawable(Drawable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#invalidateDrawable(android.graphics.drawable.Drawable)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#invalidateDrawable(android.graphics.drawable.Drawable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvalidateDrawable(Drawable arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_ScheduleDrawable_" data-uid="Android.Graphics.Drawable.LayerDrawable.ScheduleDrawable*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_ScheduleDrawable_Android_Graphics_Drawable_Drawable_Java_Lang_Runnable_System_Int64_" data-uid="Android.Graphics.Drawable.LayerDrawable.ScheduleDrawable(Android.Graphics.Drawable.Drawable,Java.Lang.Runnable,System.Int64)">
+  ScheduleDrawable(Drawable, Runnable, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#scheduleDrawable(android.graphics.drawable.Drawable,java.lang.Runnable,long)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#scheduleDrawable(android.graphics.drawable.Drawable,java.lang.Runnable,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScheduleDrawable(Drawable arg0, Runnable arg1, long arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetDrawable_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetDrawable*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetDrawable_System_Int32_Android_Graphics_Drawable_Drawable_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetDrawable(System.Int32,Android.Graphics.Drawable.Drawable)">
+  SetDrawable(int, Drawable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setDrawable(int,android.graphics.drawable.Drawable)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setDrawable(int,android.graphics.drawable.Drawable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDrawable(int arg0, Drawable arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetDrawableByLayerId_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetDrawableByLayerId*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetDrawableByLayerId_System_Int32_Android_Graphics_Drawable_Drawable_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetDrawableByLayerId(System.Int32,Android.Graphics.Drawable.Drawable)">
+  SetDrawableByLayerId(int, Drawable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setDrawableByLayerId(int,android.graphics.drawable.Drawable)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setDrawableByLayerId(int,android.graphics.drawable.Drawable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetDrawableByLayerId(int arg0, Drawable arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetId_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetId*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetId_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetId(System.Int32,System.Int32)">
+  SetId(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setId(int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setId(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetId(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetLayerGravity_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerGravity*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetLayerGravity_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerGravity(System.Int32,System.Int32)">
+  SetLayerGravity(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerGravity(int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerGravity(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerGravity(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetLayerHeight_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerHeight*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetLayerHeight_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerHeight(System.Int32,System.Int32)">
+  SetLayerHeight(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerHeight(int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerHeight(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerHeight(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetLayerInset_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInset*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetLayerInset_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInset(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+  SetLayerInset(int, int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInset(int,int,int,int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInset(int,int,int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerInset(int arg0, int arg1, int arg2, int arg3, int arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetLayerInsetBottom_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInsetBottom*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetLayerInsetBottom_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInsetBottom(System.Int32,System.Int32)">
+  SetLayerInsetBottom(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetBottom(int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetBottom(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerInsetBottom(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetLayerInsetEnd_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInsetEnd*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetLayerInsetEnd_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInsetEnd(System.Int32,System.Int32)">
+  SetLayerInsetEnd(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetEnd(int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetEnd(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerInsetEnd(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetLayerInsetLeft_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInsetLeft*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetLayerInsetLeft_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInsetLeft(System.Int32,System.Int32)">
+  SetLayerInsetLeft(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetLeft(int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetLeft(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerInsetLeft(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetLayerInsetRelative_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInsetRelative*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetLayerInsetRelative_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInsetRelative(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+  SetLayerInsetRelative(int, int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetRelative(int,int,int,int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetRelative(int,int,int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerInsetRelative(int arg0, int arg1, int arg2, int arg3, int arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetLayerInsetRight_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInsetRight*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetLayerInsetRight_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInsetRight(System.Int32,System.Int32)">
+  SetLayerInsetRight(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetRight(int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetRight(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerInsetRight(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetLayerInsetStart_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInsetStart*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetLayerInsetStart_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInsetStart(System.Int32,System.Int32)">
+  SetLayerInsetStart(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetStart(int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetStart(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerInsetStart(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetLayerInsetTop_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInsetTop*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetLayerInsetTop_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerInsetTop(System.Int32,System.Int32)">
+  SetLayerInsetTop(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetTop(int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetTop(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerInsetTop(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetLayerSize_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerSize*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetLayerSize_System_Int32_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerSize(System.Int32,System.Int32,System.Int32)">
+  SetLayerSize(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerSize(int,int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerSize(int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerSize(int arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetLayerWidth_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerWidth*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetLayerWidth_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetLayerWidth(System.Int32,System.Int32)">
+  SetLayerWidth(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerWidth(int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerWidth(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerWidth(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetOpacity_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetOpacity*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetOpacity_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetOpacity(System.Int32)">
+  SetOpacity(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setOpacity(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setOpacity(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOpacity(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetPadding_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetPadding*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetPadding_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetPadding(System.Int32,System.Int32,System.Int32,System.Int32)">
+  SetPadding(int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setPadding(int,int,int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setPadding(int,int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPadding(int arg0, int arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetPaddingMode_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetPaddingMode*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetPaddingMode_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetPaddingMode(System.Int32)">
+  SetPaddingMode(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setPaddingMode(int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setPaddingMode(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPaddingMode(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_SetPaddingRelative_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetPaddingRelative*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_SetPaddingRelative_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.LayerDrawable.SetPaddingRelative(System.Int32,System.Int32,System.Int32,System.Int32)">
+  SetPaddingRelative(int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setPaddingRelative(int,int,int,int)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setPaddingRelative(int,int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPaddingRelative(int arg0, int arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_LayerDrawable_UnscheduleDrawable_" data-uid="Android.Graphics.Drawable.LayerDrawable.UnscheduleDrawable*"></a>
+
+  <h3 id="Android_Graphics_Drawable_LayerDrawable_UnscheduleDrawable_Android_Graphics_Drawable_Drawable_Java_Lang_Runnable_" data-uid="Android.Graphics.Drawable.LayerDrawable.UnscheduleDrawable(Android.Graphics.Drawable.Drawable,Java.Lang.Runnable)">
+  UnscheduleDrawable(Drawable, Runnable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L468"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#unscheduleDrawable(android.graphics.drawable.Drawable,java.lang.Runnable)">https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#unscheduleDrawable(android.graphics.drawable.Drawable,java.lang.Runnable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnscheduleDrawable(Drawable arg0, Runnable arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/LayerDrawable.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2076 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class SimpleAdapter | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SimpleAdapter | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/widget/SimpleAdapter.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Widget_SimpleAdapter.md&amp;value=---%0Auid%3A%20Android.Widget.SimpleAdapter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Widget.SimpleAdapter">
+
+
+
+  <h1 id="Android_Widget_SimpleAdapter" data-uid="Android.Widget.SimpleAdapter" class="text-break">
+Class SimpleAdapter  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Widget.html">Widget</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html">https://developer.android.com/reference/android/widget/SimpleAdapter.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SimpleAdapter : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IFilterable, IThemedSpinnerAdapter</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<span class="xref">JVMBridgeListener</span>&gt;</div>
+      <div><span class="xref">JVMBridgeListener</span></div>
+      <div><span class="xref">SimpleAdapter</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Widget.IFilterable.html">IFilterable</a></div>
+      <div><a class="xref" href="Android.Widget.IThemedSpinnerAdapter.html">IThemedSpinnerAdapter</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Android.Widget.SimpleAdapterDirect.html">SimpleAdapterDirect</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler(string, EventHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler&lt;TDataClass&gt;(string, EventHandler&lt;CLRListenerEventArgs&lt;TDataClass&gt;&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeListener.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeListener.AutoInit</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeListener.IsBridgeStatic</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeListener.IsBridgeCloseable</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeListener.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;JVMBridgeListener&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeInterface</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeAbstract</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Widget_SimpleAdapter__ctor_" data-uid="Android.Widget.SimpleAdapter.#ctor*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter__ctor" data-uid="Android.Widget.SimpleAdapter.#ctor">
+  SimpleAdapter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L6615"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleAdapter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Widget_SimpleAdapter_BridgeClassName_" data-uid="Android.Widget.SimpleAdapter.BridgeClassName*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_BridgeClassName" data-uid="Android.Widget.SimpleAdapter.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L6623"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnAreAllItemsEnabled_" data-uid="Android.Widget.SimpleAdapter.OnAreAllItemsEnabled*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnAreAllItemsEnabled" data-uid="Android.Widget.SimpleAdapter.OnAreAllItemsEnabled">
+  OnAreAllItemsEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#areAllItemsEnabled()">https://developer.android.com/reference/android/widget/BaseAdapter.html#areAllItemsEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;bool&gt; OnAreAllItemsEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnAreAllItemsEnabled_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnAreAllItemsEnabled">OnAreAllItemsEnabled</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnGetAutofillOptions_" data-uid="Android.Widget.SimpleAdapter.OnGetAutofillOptions*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnGetAutofillOptions" data-uid="Android.Widget.SimpleAdapter.OnGetAutofillOptions">
+  OnGetAutofillOptions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getAutofillOptions()">https://developer.android.com/reference/android/widget/BaseAdapter.html#getAutofillOptions()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;CharSequence[]&gt; OnGetAutofillOptions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a>[]&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnGetAutofillOptions_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnGetAutofillOptions">OnGetAutofillOptions</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnGetDropDownViewTheme_" data-uid="Android.Widget.SimpleAdapter.OnGetDropDownViewTheme*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnGetDropDownViewTheme" data-uid="Android.Widget.SimpleAdapter.OnGetDropDownViewTheme">
+  OnGetDropDownViewTheme
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#getDropDownViewTheme()">https://developer.android.com/reference/android/widget/SimpleAdapter.html#getDropDownViewTheme()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;Resources.Theme&gt; OnGetDropDownViewTheme { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.Theme.html">Theme</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnGetDropDownViewTheme_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnGetDropDownViewTheme">OnGetDropDownViewTheme</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnGetFilter_" data-uid="Android.Widget.SimpleAdapter.OnGetFilter*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnGetFilter" data-uid="Android.Widget.SimpleAdapter.OnGetFilter">
+  OnGetFilter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#getFilter()">https://developer.android.com/reference/android/widget/SimpleAdapter.html#getFilter()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;Filter&gt; OnGetFilter { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="Android.Widget.Filter.html">Filter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnGetFilter_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnGetFilter">OnGetFilter</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnGetItemViewType_" data-uid="Android.Widget.SimpleAdapter.OnGetItemViewType*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnGetItemViewType" data-uid="Android.Widget.SimpleAdapter.OnGetItemViewType">
+  OnGetItemViewType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getItemViewType(int)">https://developer.android.com/reference/android/widget/BaseAdapter.html#getItemViewType(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;int, int&gt; OnGetItemViewType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnGetItemViewType_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnGetItemViewType">OnGetItemViewType</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnGetViewBinder_" data-uid="Android.Widget.SimpleAdapter.OnGetViewBinder*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnGetViewBinder" data-uid="Android.Widget.SimpleAdapter.OnGetViewBinder">
+  OnGetViewBinder
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#getViewBinder()">https://developer.android.com/reference/android/widget/SimpleAdapter.html#getViewBinder()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;SimpleAdapter.ViewBinder&gt; OnGetViewBinder { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="Android.Widget.SimpleAdapter.html">SimpleAdapter</a>.<a class="xref" href="Android.Widget.SimpleAdapter.ViewBinder.html">ViewBinder</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnGetViewBinder_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnGetViewBinder">OnGetViewBinder</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnGetViewTypeCount_" data-uid="Android.Widget.SimpleAdapter.OnGetViewTypeCount*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnGetViewTypeCount" data-uid="Android.Widget.SimpleAdapter.OnGetViewTypeCount">
+  OnGetViewTypeCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getViewTypeCount()">https://developer.android.com/reference/android/widget/BaseAdapter.html#getViewTypeCount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;int&gt; OnGetViewTypeCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnGetViewTypeCount_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnGetViewTypeCount">OnGetViewTypeCount</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnHasStableIds_" data-uid="Android.Widget.SimpleAdapter.OnHasStableIds*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnHasStableIds" data-uid="Android.Widget.SimpleAdapter.OnHasStableIds">
+  OnHasStableIds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#hasStableIds()">https://developer.android.com/reference/android/widget/BaseAdapter.html#hasStableIds()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;bool&gt; OnHasStableIds { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnHasStableIds_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnHasStableIds">OnHasStableIds</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnIsEmpty_" data-uid="Android.Widget.SimpleAdapter.OnIsEmpty*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnIsEmpty" data-uid="Android.Widget.SimpleAdapter.OnIsEmpty">
+  OnIsEmpty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#isEmpty()">https://developer.android.com/reference/android/widget/BaseAdapter.html#isEmpty()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;bool&gt; OnIsEmpty { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnIsEmpty_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnIsEmpty">OnIsEmpty</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnIsEnabled_" data-uid="Android.Widget.SimpleAdapter.OnIsEnabled*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnIsEnabled" data-uid="Android.Widget.SimpleAdapter.OnIsEnabled">
+  OnIsEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#isEnabled(int)">https://developer.android.com/reference/android/widget/BaseAdapter.html#isEnabled(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;int, bool&gt; OnIsEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnIsEnabled_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnIsEnabled">OnIsEnabled</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnNotifyDataSetChanged_" data-uid="Android.Widget.SimpleAdapter.OnNotifyDataSetChanged*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnNotifyDataSetChanged" data-uid="Android.Widget.SimpleAdapter.OnNotifyDataSetChanged">
+  OnNotifyDataSetChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetChanged()">https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetChanged()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action OnNotifyDataSetChanged { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnNotifyDataSetChanged_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnNotifyDataSetChanged">OnNotifyDataSetChanged</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnNotifyDataSetInvalidated_" data-uid="Android.Widget.SimpleAdapter.OnNotifyDataSetInvalidated*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnNotifyDataSetInvalidated" data-uid="Android.Widget.SimpleAdapter.OnNotifyDataSetInvalidated">
+  OnNotifyDataSetInvalidated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetInvalidated()">https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetInvalidated()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action OnNotifyDataSetInvalidated { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnNotifyDataSetInvalidated_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnNotifyDataSetInvalidated">OnNotifyDataSetInvalidated</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnRegisterDataSetObserver_" data-uid="Android.Widget.SimpleAdapter.OnRegisterDataSetObserver*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnRegisterDataSetObserver" data-uid="Android.Widget.SimpleAdapter.OnRegisterDataSetObserver">
+  OnRegisterDataSetObserver
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#registerDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/BaseAdapter.html#registerDataSetObserver(android.database.DataSetObserver)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;DataSetObserver&gt; OnRegisterDataSetObserver { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Android.Database.DataSetObserver.html">DataSetObserver</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnRegisterDataSetObserver_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnRegisterDataSetObserver">OnRegisterDataSetObserver</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnSetAutofillOptions_" data-uid="Android.Widget.SimpleAdapter.OnSetAutofillOptions*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnSetAutofillOptions" data-uid="Android.Widget.SimpleAdapter.OnSetAutofillOptions">
+  OnSetAutofillOptions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#setAutofillOptions(java.lang.CharSequence[])">https://developer.android.com/reference/android/widget/BaseAdapter.html#setAutofillOptions(java.lang.CharSequence[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;CharSequence[]&gt; OnSetAutofillOptions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a>[]&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnSetAutofillOptions_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnSetAutofillOptions">OnSetAutofillOptions</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnSetDropDownViewResource_" data-uid="Android.Widget.SimpleAdapter.OnSetDropDownViewResource*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnSetDropDownViewResource" data-uid="Android.Widget.SimpleAdapter.OnSetDropDownViewResource">
+  OnSetDropDownViewResource
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#setDropDownViewResource(int)">https://developer.android.com/reference/android/widget/SimpleAdapter.html#setDropDownViewResource(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;int&gt; OnSetDropDownViewResource { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnSetDropDownViewResource_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnSetDropDownViewResource">OnSetDropDownViewResource</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnSetDropDownViewTheme_" data-uid="Android.Widget.SimpleAdapter.OnSetDropDownViewTheme*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnSetDropDownViewTheme" data-uid="Android.Widget.SimpleAdapter.OnSetDropDownViewTheme">
+  OnSetDropDownViewTheme
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#setDropDownViewTheme(android.content.res.Resources.Theme)">https://developer.android.com/reference/android/widget/SimpleAdapter.html#setDropDownViewTheme(android.content.res.Resources.Theme)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;Resources.Theme&gt; OnSetDropDownViewTheme { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.Theme.html">Theme</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnSetDropDownViewTheme_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnSetDropDownViewTheme">OnSetDropDownViewTheme</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnSetViewBinder_" data-uid="Android.Widget.SimpleAdapter.OnSetViewBinder*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnSetViewBinder" data-uid="Android.Widget.SimpleAdapter.OnSetViewBinder">
+  OnSetViewBinder
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewBinder(android.widget.SimpleAdapter.ViewBinder)">https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewBinder(android.widget.SimpleAdapter.ViewBinder)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;SimpleAdapter.ViewBinder&gt; OnSetViewBinder { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Android.Widget.SimpleAdapter.html">SimpleAdapter</a>.<a class="xref" href="Android.Widget.SimpleAdapter.ViewBinder.html">ViewBinder</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnSetViewBinder_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnSetViewBinder">OnSetViewBinder</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnSetViewImage_" data-uid="Android.Widget.SimpleAdapter.OnSetViewImage*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnSetViewImage" data-uid="Android.Widget.SimpleAdapter.OnSetViewImage">
+  OnSetViewImage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewImage(android.widget.ImageView,int)">https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewImage(android.widget.ImageView,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;ImageView, int&gt; OnSetViewImage { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Android.Widget.ImageView.html">ImageView</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnSetViewImage_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnSetViewImage">OnSetViewImage</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnSetViewImage2_" data-uid="Android.Widget.SimpleAdapter.OnSetViewImage2*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnSetViewImage2" data-uid="Android.Widget.SimpleAdapter.OnSetViewImage2">
+  OnSetViewImage2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L491"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewImage(android.widget.ImageView,java.lang.String)">https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewImage(android.widget.ImageView,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;ImageView, String&gt; OnSetViewImage2 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Android.Widget.ImageView.html">ImageView</a>, <a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnSetViewImage2_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnSetViewImage2">OnSetViewImage2</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnSetViewText_" data-uid="Android.Widget.SimpleAdapter.OnSetViewText*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnSetViewText" data-uid="Android.Widget.SimpleAdapter.OnSetViewText">
+  OnSetViewText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L513"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewText(android.widget.TextView,java.lang.String)">https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewText(android.widget.TextView,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;TextView, String&gt; OnSetViewText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Android.Widget.TextView.html">TextView</a>, <a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnSetViewText_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnSetViewText">OnSetViewText</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_OnUnregisterDataSetObserver_" data-uid="Android.Widget.SimpleAdapter.OnUnregisterDataSetObserver*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_OnUnregisterDataSetObserver" data-uid="Android.Widget.SimpleAdapter.OnUnregisterDataSetObserver">
+  OnUnregisterDataSetObserver
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/BaseAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;DataSetObserver&gt; OnUnregisterDataSetObserver { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Android.Database.DataSetObserver.html">DataSetObserver</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_SimpleAdapter_OnUnregisterDataSetObserver_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.SimpleAdapter.html#Android_Widget_SimpleAdapter_OnUnregisterDataSetObserver">OnUnregisterDataSetObserver</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Widget_SimpleAdapter_AreAllItemsEnabled_" data-uid="Android.Widget.SimpleAdapter.AreAllItemsEnabled*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_AreAllItemsEnabled" data-uid="Android.Widget.SimpleAdapter.AreAllItemsEnabled">
+  AreAllItemsEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#areAllItemsEnabled()">https://developer.android.com/reference/android/widget/BaseAdapter.html#areAllItemsEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AreAllItemsEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_GetAutofillOptions_" data-uid="Android.Widget.SimpleAdapter.GetAutofillOptions*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_GetAutofillOptions" data-uid="Android.Widget.SimpleAdapter.GetAutofillOptions">
+  GetAutofillOptions()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getAutofillOptions()">https://developer.android.com/reference/android/widget/BaseAdapter.html#getAutofillOptions()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CharSequence[] GetAutofillOptions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_GetDropDownViewTheme_" data-uid="Android.Widget.SimpleAdapter.GetDropDownViewTheme*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_GetDropDownViewTheme" data-uid="Android.Widget.SimpleAdapter.GetDropDownViewTheme">
+  GetDropDownViewTheme()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#getDropDownViewTheme()">https://developer.android.com/reference/android/widget/SimpleAdapter.html#getDropDownViewTheme()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Resources.Theme GetDropDownViewTheme()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.Theme.html">Theme</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Resources.Theme.html">Resources.Theme</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_GetFilter_" data-uid="Android.Widget.SimpleAdapter.GetFilter*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_GetFilter" data-uid="Android.Widget.SimpleAdapter.GetFilter">
+  GetFilter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#getFilter()">https://developer.android.com/reference/android/widget/SimpleAdapter.html#getFilter()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Filter GetFilter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.Filter.html">Filter</a></dt>
+    <dd><p><a class="xref" href="Android.Widget.Filter.html">Filter</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_GetItemViewType_" data-uid="Android.Widget.SimpleAdapter.GetItemViewType*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_GetItemViewType_System_Int32_" data-uid="Android.Widget.SimpleAdapter.GetItemViewType(System.Int32)">
+  GetItemViewType(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getItemViewType(int)">https://developer.android.com/reference/android/widget/BaseAdapter.html#getItemViewType(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetItemViewType(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_GetViewBinder_" data-uid="Android.Widget.SimpleAdapter.GetViewBinder*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_GetViewBinder" data-uid="Android.Widget.SimpleAdapter.GetViewBinder">
+  GetViewBinder()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#getViewBinder()">https://developer.android.com/reference/android/widget/SimpleAdapter.html#getViewBinder()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual SimpleAdapter.ViewBinder GetViewBinder()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.SimpleAdapter.html">SimpleAdapter</a>.<a class="xref" href="Android.Widget.SimpleAdapter.ViewBinder.html">ViewBinder</a></dt>
+    <dd><p><a class="xref" href="Android.Widget.SimpleAdapter.ViewBinder.html">SimpleAdapter.ViewBinder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_GetViewTypeCount_" data-uid="Android.Widget.SimpleAdapter.GetViewTypeCount*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_GetViewTypeCount" data-uid="Android.Widget.SimpleAdapter.GetViewTypeCount">
+  GetViewTypeCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getViewTypeCount()">https://developer.android.com/reference/android/widget/BaseAdapter.html#getViewTypeCount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetViewTypeCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_HasStableIds_" data-uid="Android.Widget.SimpleAdapter.HasStableIds*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_HasStableIds" data-uid="Android.Widget.SimpleAdapter.HasStableIds">
+  HasStableIds()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#hasStableIds()">https://developer.android.com/reference/android/widget/BaseAdapter.html#hasStableIds()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HasStableIds()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_InitializeHandlers_" data-uid="Android.Widget.SimpleAdapter.InitializeHandlers*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_InitializeHandlers" data-uid="Android.Widget.SimpleAdapter.InitializeHandlers">
+  InitializeHandlers()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handlers initializer for <a class="xref" href="Android.Widget.SimpleAdapter.html">SimpleAdapter</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeHandlers()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_IsEmpty_" data-uid="Android.Widget.SimpleAdapter.IsEmpty*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_IsEmpty" data-uid="Android.Widget.SimpleAdapter.IsEmpty">
+  IsEmpty()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#isEmpty()">https://developer.android.com/reference/android/widget/BaseAdapter.html#isEmpty()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsEmpty()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_IsEnabled_" data-uid="Android.Widget.SimpleAdapter.IsEnabled*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_IsEnabled_System_Int32_" data-uid="Android.Widget.SimpleAdapter.IsEnabled(System.Int32)">
+  IsEnabled(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#isEnabled(int)">https://developer.android.com/reference/android/widget/BaseAdapter.html#isEnabled(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsEnabled(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_NotifyDataSetChanged_" data-uid="Android.Widget.SimpleAdapter.NotifyDataSetChanged*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_NotifyDataSetChanged" data-uid="Android.Widget.SimpleAdapter.NotifyDataSetChanged">
+  NotifyDataSetChanged()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetChanged()">https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetChanged()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void NotifyDataSetChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_NotifyDataSetInvalidated_" data-uid="Android.Widget.SimpleAdapter.NotifyDataSetInvalidated*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_NotifyDataSetInvalidated" data-uid="Android.Widget.SimpleAdapter.NotifyDataSetInvalidated">
+  NotifyDataSetInvalidated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetInvalidated()">https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetInvalidated()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void NotifyDataSetInvalidated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_RegisterDataSetObserver_" data-uid="Android.Widget.SimpleAdapter.RegisterDataSetObserver*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_RegisterDataSetObserver_Android_Database_DataSetObserver_" data-uid="Android.Widget.SimpleAdapter.RegisterDataSetObserver(Android.Database.DataSetObserver)">
+  RegisterDataSetObserver(DataSetObserver)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#registerDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/BaseAdapter.html#registerDataSetObserver(android.database.DataSetObserver)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RegisterDataSetObserver(DataSetObserver arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.DataSetObserver.html">DataSetObserver</a></dt>
+    <dd><p><a class="xref" href="Android.Database.DataSetObserver.html">DataSetObserver</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_SetAutofillOptions_" data-uid="Android.Widget.SimpleAdapter.SetAutofillOptions*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_SetAutofillOptions_Java_Lang_CharSequence___" data-uid="Android.Widget.SimpleAdapter.SetAutofillOptions(Java.Lang.CharSequence[])">
+  SetAutofillOptions(params CharSequence[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#setAutofillOptions(java.lang.CharSequence[])">https://developer.android.com/reference/android/widget/BaseAdapter.html#setAutofillOptions(java.lang.CharSequence[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetAutofillOptions(params CharSequence[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_SetDropDownViewResource_" data-uid="Android.Widget.SimpleAdapter.SetDropDownViewResource*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_SetDropDownViewResource_System_Int32_" data-uid="Android.Widget.SimpleAdapter.SetDropDownViewResource(System.Int32)">
+  SetDropDownViewResource(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#setDropDownViewResource(int)">https://developer.android.com/reference/android/widget/SimpleAdapter.html#setDropDownViewResource(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetDropDownViewResource(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_SetDropDownViewTheme_" data-uid="Android.Widget.SimpleAdapter.SetDropDownViewTheme*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_SetDropDownViewTheme_Android_Content_Res_Resources_Theme_" data-uid="Android.Widget.SimpleAdapter.SetDropDownViewTheme(Android.Content.Res.Resources.Theme)">
+  SetDropDownViewTheme(Theme)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#setDropDownViewTheme(android.content.res.Resources.Theme)">https://developer.android.com/reference/android/widget/SimpleAdapter.html#setDropDownViewTheme(android.content.res.Resources.Theme)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetDropDownViewTheme(Resources.Theme arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.Theme.html">Theme</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Resources.Theme.html">Resources.Theme</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_SetViewBinder_" data-uid="Android.Widget.SimpleAdapter.SetViewBinder*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_SetViewBinder_Android_Widget_SimpleAdapter_ViewBinder_" data-uid="Android.Widget.SimpleAdapter.SetViewBinder(Android.Widget.SimpleAdapter.ViewBinder)">
+  SetViewBinder(ViewBinder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L460"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewBinder(android.widget.SimpleAdapter.ViewBinder)">https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewBinder(android.widget.SimpleAdapter.ViewBinder)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetViewBinder(SimpleAdapter.ViewBinder arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Widget.SimpleAdapter.html">SimpleAdapter</a>.<a class="xref" href="Android.Widget.SimpleAdapter.ViewBinder.html">ViewBinder</a></dt>
+    <dd><p><a class="xref" href="Android.Widget.SimpleAdapter.ViewBinder.html">SimpleAdapter.ViewBinder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_SetViewImage_" data-uid="Android.Widget.SimpleAdapter.SetViewImage*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_SetViewImage_Android_Widget_ImageView_Java_Lang_String_" data-uid="Android.Widget.SimpleAdapter.SetViewImage(Android.Widget.ImageView,Java.Lang.String)">
+  SetViewImage(ImageView, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewImage(android.widget.ImageView,java.lang.String)">https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewImage(android.widget.ImageView,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetViewImage(ImageView arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Widget.ImageView.html">ImageView</a></dt>
+    <dd><p><a class="xref" href="Android.Widget.ImageView.html">ImageView</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_SetViewImage_" data-uid="Android.Widget.SimpleAdapter.SetViewImage*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_SetViewImage_Android_Widget_ImageView_System_Int32_" data-uid="Android.Widget.SimpleAdapter.SetViewImage(Android.Widget.ImageView,System.Int32)">
+  SetViewImage(ImageView, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewImage(android.widget.ImageView,int)">https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewImage(android.widget.ImageView,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetViewImage(ImageView arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Widget.ImageView.html">ImageView</a></dt>
+    <dd><p><a class="xref" href="Android.Widget.ImageView.html">ImageView</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_SetViewText_" data-uid="Android.Widget.SimpleAdapter.SetViewText*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_SetViewText_Android_Widget_TextView_Java_Lang_String_" data-uid="Android.Widget.SimpleAdapter.SetViewText(Android.Widget.TextView,Java.Lang.String)">
+  SetViewText(TextView, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewText(android.widget.TextView,java.lang.String)">https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewText(android.widget.TextView,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetViewText(TextView arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Widget.TextView.html">TextView</a></dt>
+    <dd><p><a class="xref" href="Android.Widget.TextView.html">TextView</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_SimpleAdapter_UnregisterDataSetObserver_" data-uid="Android.Widget.SimpleAdapter.UnregisterDataSetObserver*"></a>
+
+  <h3 id="Android_Widget_SimpleAdapter_UnregisterDataSetObserver_Android_Database_DataSetObserver_" data-uid="Android.Widget.SimpleAdapter.UnregisterDataSetObserver(Android.Database.DataSetObserver)">
+  UnregisterDataSetObserver(DataSetObserver)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/BaseAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/BaseAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UnregisterDataSetObserver(DataSetObserver arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.DataSetObserver.html">DataSetObserver</a></dt>
+    <dd><p><a class="xref" href="Android.Database.DataSetObserver.html">DataSetObserver</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/SimpleAdapter.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

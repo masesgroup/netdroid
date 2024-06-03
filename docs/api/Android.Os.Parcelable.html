@@ -1,0 +1,1417 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class Parcelable | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Parcelable | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/os/Parcelable.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Os_Parcelable.md&amp;value=---%0Auid%3A%20Android.Os.Parcelable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Os.Parcelable">
+
+
+
+  <h1 id="Android_Os_Parcelable" data-uid="Android.Os.Parcelable" class="text-break">
+Class Parcelable  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Parcelable.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Os.html">Os</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/os/Parcelable.html">https://developer.android.com/reference/android/os/Parcelable.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Parcelable : JVMBridgeBase&lt;Parcelable&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IParcelable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>&gt;</div>
+      <div><span class="xref">Parcelable</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Os.IParcelable.html">IParcelable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Android.Accessibilityservice.AccessibilityGestureEvent.html">AccessibilityGestureEvent</a></div>
+      <div><a class="xref" href="Android.Accessibilityservice.AccessibilityServiceInfo.html">AccessibilityServiceInfo</a></div>
+      <div><a class="xref" href="Android.Accessibilityservice.MagnificationConfig.html">MagnificationConfig</a></div>
+      <div><a class="xref" href="Android.Accounts.Account.html">Account</a></div>
+      <div><a class="xref" href="Android.Accounts.AccountAuthenticatorResponse.html">AccountAuthenticatorResponse</a></div>
+      <div><a class="xref" href="Android.Accounts.AuthenticatorDescription.html">AuthenticatorDescription</a></div>
+      <div><a class="xref" href="Android.Adservices.Adselection.AdSelectionConfig.html">AdSelectionConfig</a></div>
+      <div><a class="xref" href="Android.Adservices.Common.AdData.html">AdData</a></div>
+      <div><a class="xref" href="Android.Adservices.Common.AdFilters.html">AdFilters</a></div>
+      <div><a class="xref" href="Android.Adservices.Common.AdSelectionSignals.html">AdSelectionSignals</a></div>
+      <div><a class="xref" href="Android.Adservices.Common.AdTechIdentifier.html">AdTechIdentifier</a></div>
+      <div><a class="xref" href="Android.Adservices.Common.FrequencyCapFilters.html">FrequencyCapFilters</a></div>
+      <div><a class="xref" href="Android.Adservices.Common.KeyedFrequencyCap.html">KeyedFrequencyCap</a></div>
+      <div><a class="xref" href="Android.Adservices.Customaudience.CustomAudience.html">CustomAudience</a></div>
+      <div><a class="xref" href="Android.Adservices.Customaudience.TrustedBiddingData.html">TrustedBiddingData</a></div>
+      <div><a class="xref" href="Android.Adservices.Measurement.WebSourceParams.html">WebSourceParams</a></div>
+      <div><a class="xref" href="Android.Adservices.Measurement.WebSourceRegistrationRequest.html">WebSourceRegistrationRequest</a></div>
+      <div><a class="xref" href="Android.Adservices.Measurement.WebTriggerParams.html">WebTriggerParams</a></div>
+      <div><a class="xref" href="Android.Adservices.Measurement.WebTriggerRegistrationRequest.html">WebTriggerRegistrationRequest</a></div>
+      <div><a class="xref" href="Android.App.ActivityManager.MemoryInfo.html">ActivityManager.MemoryInfo</a></div>
+      <div><a class="xref" href="Android.App.ActivityManager.ProcessErrorStateInfo.html">ActivityManager.ProcessErrorStateInfo</a></div>
+      <div><a class="xref" href="Android.App.ActivityManager.RunningAppProcessInfo.html">ActivityManager.RunningAppProcessInfo</a></div>
+      <div><a class="xref" href="Android.App.ActivityManager.RunningServiceInfo.html">ActivityManager.RunningServiceInfo</a></div>
+      <div><a class="xref" href="Android.App.ActivityManager.TaskDescription.html">ActivityManager.TaskDescription</a></div>
+      <div><a class="xref" href="Android.App.Admin.DeviceAdminInfo.html">DeviceAdminInfo</a></div>
+      <div><a class="xref" href="Android.App.Admin.FactoryResetProtectionPolicy.html">FactoryResetProtectionPolicy</a></div>
+      <div><a class="xref" href="Android.App.Admin.ManagedSubscriptionsPolicy.html">ManagedSubscriptionsPolicy</a></div>
+      <div><a class="xref" href="Android.App.Admin.NetworkEvent.html">NetworkEvent</a></div>
+      <div><a class="xref" href="Android.App.Admin.PackagePolicy.html">PackagePolicy</a></div>
+      <div><a class="xref" href="Android.App.Admin.PreferentialNetworkServiceConfig.html">PreferentialNetworkServiceConfig</a></div>
+      <div><a class="xref" href="Android.App.Admin.SecurityLog.SecurityEvent.html">SecurityLog.SecurityEvent</a></div>
+      <div><a class="xref" href="Android.App.Admin.SystemUpdateInfo.html">SystemUpdateInfo</a></div>
+      <div><a class="xref" href="Android.App.Admin.SystemUpdatePolicy.html">SystemUpdatePolicy</a></div>
+      <div><a class="xref" href="Android.App.Admin.WifiSsidPolicy.html">WifiSsidPolicy</a></div>
+      <div><a class="xref" href="Android.App.AlarmManager.AlarmClockInfo.html">AlarmManager.AlarmClockInfo</a></div>
+      <div><a class="xref" href="Android.App.ApplicationErrorReport.html">ApplicationErrorReport</a></div>
+      <div><a class="xref" href="Android.App.ApplicationExitInfo.html">ApplicationExitInfo</a></div>
+      <div><a class="xref" href="Android.App.Assist.AssistContent.html">AssistContent</a></div>
+      <div><a class="xref" href="Android.App.Assist.AssistStructure.html">AssistStructure</a></div>
+      <div><a class="xref" href="Android.App.AsyncNotedAppOp.html">AsyncNotedAppOp</a></div>
+      <div><a class="xref" href="Android.App.AutomaticZenRule.html">AutomaticZenRule</a></div>
+      <div><a class="xref" href="Android.App.Blob.BlobHandle.html">BlobHandle</a></div>
+      <div><a class="xref" href="Android.App.DirectAction.html">DirectAction</a></div>
+      <div><a class="xref" href="Android.App.Fragment.SavedState.html">Fragment.SavedState</a></div>
+      <div><a class="xref" href="Android.App.GameState.html">GameState</a></div>
+      <div><a class="xref" href="Android.App.Job.JobInfo.html">JobInfo</a></div>
+      <div><a class="xref" href="Android.App.Job.JobInfo.TriggerContentUri.html">JobInfo.TriggerContentUri</a></div>
+      <div><a class="xref" href="Android.App.Job.JobParameters.html">JobParameters</a></div>
+      <div><a class="xref" href="Android.App.Job.JobWorkItem.html">JobWorkItem</a></div>
+      <div><a class="xref" href="Android.App.LocaleConfig.html">LocaleConfig</a></div>
+      <div><a class="xref" href="Android.App.Notification.html">Notification</a></div>
+      <div><a class="xref" href="Android.App.Notification.Action.html">Notification.Action</a></div>
+      <div><a class="xref" href="Android.App.Notification.BubbleMetadata.html">Notification.BubbleMetadata</a></div>
+      <div><a class="xref" href="Android.App.NotificationChannel.html">NotificationChannel</a></div>
+      <div><a class="xref" href="Android.App.NotificationChannelGroup.html">NotificationChannelGroup</a></div>
+      <div><a class="xref" href="Android.App.NotificationManager.Policy.html">NotificationManager.Policy</a></div>
+      <div><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></div>
+      <div><a class="xref" href="Android.App.People.ConversationStatus.html">ConversationStatus</a></div>
+      <div><a class="xref" href="Android.App.Person.html">Person</a></div>
+      <div><a class="xref" href="Android.App.PictureInPictureParams.html">PictureInPictureParams</a></div>
+      <div><a class="xref" href="Android.App.PictureInPictureUiState.html">PictureInPictureUiState</a></div>
+      <div><a class="xref" href="Android.App.RemoteAction.html">RemoteAction</a></div>
+      <div><a class="xref" href="Android.App.RemoteInput.html">RemoteInput</a></div>
+      <div><a class="xref" href="Android.App.Sdksandbox.AppOwnedSdkSandboxInterface.html">AppOwnedSdkSandboxInterface</a></div>
+      <div><a class="xref" href="Android.App.Sdksandbox.SandboxedSdk.html">SandboxedSdk</a></div>
+      <div><a class="xref" href="Android.App.SearchableInfo.html">SearchableInfo</a></div>
+      <div><a class="xref" href="Android.App.Slice.Slice.html">Slice</a></div>
+      <div><a class="xref" href="Android.App.Slice.SliceItem.html">SliceItem</a></div>
+      <div><a class="xref" href="Android.App.Slice.SliceSpec.html">SliceSpec</a></div>
+      <div><a class="xref" href="Android.App.SyncNotedAppOp.html">SyncNotedAppOp</a></div>
+      <div><a class="xref" href="Android.App.Usage.ConfigurationStats.html">ConfigurationStats</a></div>
+      <div><a class="xref" href="Android.App.Usage.EventStats.html">EventStats</a></div>
+      <div><a class="xref" href="Android.App.Usage.ExternalStorageStats.html">ExternalStorageStats</a></div>
+      <div><a class="xref" href="Android.App.Usage.StorageStats.html">StorageStats</a></div>
+      <div><a class="xref" href="Android.App.Usage.UsageEvents.html">UsageEvents</a></div>
+      <div><a class="xref" href="Android.App.Usage.UsageStats.html">UsageStats</a></div>
+      <div><a class="xref" href="Android.App.VoiceInteractor.PickOptionRequest.Option.html">VoiceInteractor.PickOptionRequest.Option</a></div>
+      <div><a class="xref" href="Android.App.VoiceInteractor.Prompt.html">VoiceInteractor.Prompt</a></div>
+      <div><a class="xref" href="Android.App.WallpaperColors.html">WallpaperColors</a></div>
+      <div><a class="xref" href="Android.App.WallpaperInfo.html">WallpaperInfo</a></div>
+      <div><a class="xref" href="Android.Appwidget.AppWidgetProviderInfo.html">AppWidgetProviderInfo</a></div>
+      <div><a class="xref" href="Android.Bluetooth.BluetoothClass.html">BluetoothClass</a></div>
+      <div><a class="xref" href="Android.Bluetooth.BluetoothCodecConfig.html">BluetoothCodecConfig</a></div>
+      <div><a class="xref" href="Android.Bluetooth.BluetoothCodecStatus.html">BluetoothCodecStatus</a></div>
+      <div><a class="xref" href="Android.Bluetooth.BluetoothDevice.html">BluetoothDevice</a></div>
+      <div><a class="xref" href="Android.Bluetooth.BluetoothGattCharacteristic.html">BluetoothGattCharacteristic</a></div>
+      <div><a class="xref" href="Android.Bluetooth.BluetoothGattDescriptor.html">BluetoothGattDescriptor</a></div>
+      <div><a class="xref" href="Android.Bluetooth.BluetoothGattService.html">BluetoothGattService</a></div>
+      <div><a class="xref" href="Android.Bluetooth.BluetoothHealthAppConfiguration.html">BluetoothHealthAppConfiguration</a></div>
+      <div><a class="xref" href="Android.Bluetooth.BluetoothHidDeviceAppQosSettings.html">BluetoothHidDeviceAppQosSettings</a></div>
+      <div><a class="xref" href="Android.Bluetooth.BluetoothHidDeviceAppSdpSettings.html">BluetoothHidDeviceAppSdpSettings</a></div>
+      <div><a class="xref" href="Android.Bluetooth.BluetoothLeAudioCodecConfig.html">BluetoothLeAudioCodecConfig</a></div>
+      <div><a class="xref" href="Android.Bluetooth.BluetoothLeAudioCodecStatus.html">BluetoothLeAudioCodecStatus</a></div>
+      <div><a class="xref" href="Android.Bluetooth.Le.AdvertiseData.html">AdvertiseData</a></div>
+      <div><a class="xref" href="Android.Bluetooth.Le.AdvertiseSettings.html">AdvertiseSettings</a></div>
+      <div><a class="xref" href="Android.Bluetooth.Le.AdvertisingSetParameters.html">AdvertisingSetParameters</a></div>
+      <div><a class="xref" href="Android.Bluetooth.Le.PeriodicAdvertisingParameters.html">PeriodicAdvertisingParameters</a></div>
+      <div><a class="xref" href="Android.Bluetooth.Le.ScanFilter.html">ScanFilter</a></div>
+      <div><a class="xref" href="Android.Bluetooth.Le.ScanResult.html">ScanResult</a></div>
+      <div><a class="xref" href="Android.Bluetooth.Le.ScanSettings.html">ScanSettings</a></div>
+      <div><a class="xref" href="Android.Bluetooth.Le.TransportBlock.html">TransportBlock</a></div>
+      <div><a class="xref" href="Android.Bluetooth.Le.TransportDiscoveryData.html">TransportDiscoveryData</a></div>
+      <div><a class="xref" href="Android.Companion.AssociatedDevice.html">AssociatedDevice</a></div>
+      <div><a class="xref" href="Android.Companion.AssociationInfo.html">AssociationInfo</a></div>
+      <div><a class="xref" href="Android.Companion.AssociationRequest.html">AssociationRequest</a></div>
+      <div><a class="xref" href="Android.Companion.DeviceFilter.html">DeviceFilter</a></div>
+      <div><a class="xref" href="Android.Companion.DeviceFilter-1.html">DeviceFilter&lt;D&gt;</a></div>
+      <div><a class="xref" href="Android.Companion.Virtual.VirtualDevice.html">VirtualDevice</a></div>
+      <div><a class="xref" href="Android.Content.AttributionSource.html">AttributionSource</a></div>
+      <div><a class="xref" href="Android.Content.ClipData.html">ClipData</a></div>
+      <div><a class="xref" href="Android.Content.ClipDescription.html">ClipDescription</a></div>
+      <div><a class="xref" href="Android.Content.ContentProviderOperation.html">ContentProviderOperation</a></div>
+      <div><a class="xref" href="Android.Content.ContentProviderResult.html">ContentProviderResult</a></div>
+      <div><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></div>
+      <div><a class="xref" href="Android.Content.Intent.ShortcutIconResource.html">Intent.ShortcutIconResource</a></div>
+      <div><a class="xref" href="Android.Content.IntentFilter.html">IntentFilter</a></div>
+      <div><a class="xref" href="Android.Content.IntentSender.html">IntentSender</a></div>
+      <div><a class="xref" href="Android.Content.LocusId.html">LocusId</a></div>
+      <div><a class="xref" href="Android.Content.Om.OverlayIdentifier.html">OverlayIdentifier</a></div>
+      <div><a class="xref" href="Android.Content.Om.OverlayInfo.html">OverlayInfo</a></div>
+      <div><a class="xref" href="Android.Content.Om.OverlayManagerTransaction.html">OverlayManagerTransaction</a></div>
+      <div><a class="xref" href="Android.Content.PeriodicSync.html">PeriodicSync</a></div>
+      <div><a class="xref" href="Android.Content.Pm.ApkChecksum.html">ApkChecksum</a></div>
+      <div><a class="xref" href="Android.Content.Pm.Attribution.html">Attribution</a></div>
+      <div><a class="xref" href="Android.Content.Pm.Capability.html">Capability</a></div>
+      <div><a class="xref" href="Android.Content.Pm.CapabilityParams.html">CapabilityParams</a></div>
+      <div><a class="xref" href="Android.Content.Pm.ChangedPackages.html">ChangedPackages</a></div>
+      <div><a class="xref" href="Android.Content.Pm.Checksum.html">Checksum</a></div>
+      <div><a class="xref" href="Android.Content.Pm.ConfigurationInfo.html">ConfigurationInfo</a></div>
+      <div><a class="xref" href="Android.Content.Pm.FeatureGroupInfo.html">FeatureGroupInfo</a></div>
+      <div><a class="xref" href="Android.Content.Pm.FeatureInfo.html">FeatureInfo</a></div>
+      <div><a class="xref" href="Android.Content.Pm.InstallSourceInfo.html">InstallSourceInfo</a></div>
+      <div><a class="xref" href="Android.Content.Pm.LauncherApps.PinItemRequest.html">LauncherApps.PinItemRequest</a></div>
+      <div><a class="xref" href="Android.Content.Pm.ModuleInfo.html">ModuleInfo</a></div>
+      <div><a class="xref" href="Android.Content.Pm.PackageInfo.html">PackageInfo</a></div>
+      <div><a class="xref" href="Android.Content.Pm.PackageInstaller.InstallConstraints.html">PackageInstaller.InstallConstraints</a></div>
+      <div><a class="xref" href="Android.Content.Pm.PackageInstaller.InstallConstraintsResult.html">PackageInstaller.InstallConstraintsResult</a></div>
+      <div><a class="xref" href="Android.Content.Pm.PackageInstaller.PreapprovalDetails.html">PackageInstaller.PreapprovalDetails</a></div>
+      <div><a class="xref" href="Android.Content.Pm.PackageInstaller.SessionInfo.html">PackageInstaller.SessionInfo</a></div>
+      <div><a class="xref" href="Android.Content.Pm.PackageInstaller.SessionParams.html">PackageInstaller.SessionParams</a></div>
+      <div><a class="xref" href="Android.Content.Pm.PackageManager.ComponentEnabledSetting.html">PackageManager.ComponentEnabledSetting</a></div>
+      <div><a class="xref" href="Android.Content.Pm.PackageManager.Property.html">PackageManager.Property</a></div>
+      <div><a class="xref" href="Android.Content.Pm.PackageStats.html">PackageStats</a></div>
+      <div><a class="xref" href="Android.Content.Pm.ResolveInfo.html">ResolveInfo</a></div>
+      <div><a class="xref" href="Android.Content.Pm.SharedLibraryInfo.html">SharedLibraryInfo</a></div>
+      <div><a class="xref" href="Android.Content.Pm.ShortcutInfo.html">ShortcutInfo</a></div>
+      <div><a class="xref" href="Android.Content.Pm.Signature.html">Signature</a></div>
+      <div><a class="xref" href="Android.Content.Pm.SigningInfo.html">SigningInfo</a></div>
+      <div><a class="xref" href="Android.Content.Pm.Verify.Domain.DomainVerificationUserState.html">DomainVerificationUserState</a></div>
+      <div><a class="xref" href="Android.Content.Pm.VersionedPackage.html">VersionedPackage</a></div>
+      <div><a class="xref" href="Android.Content.Res.ColorStateList.html">ColorStateList</a></div>
+      <div><a class="xref" href="Android.Content.Res.ObbInfo.html">ObbInfo</a></div>
+      <div><a class="xref" href="Android.Content.RestrictionEntry.html">RestrictionEntry</a></div>
+      <div><a class="xref" href="Android.Content.SyncAdapterType.html">SyncAdapterType</a></div>
+      <div><a class="xref" href="Android.Content.SyncInfo.html">SyncInfo</a></div>
+      <div><a class="xref" href="Android.Content.SyncRequest.html">SyncRequest</a></div>
+      <div><a class="xref" href="Android.Content.SyncResult.html">SyncResult</a></div>
+      <div><a class="xref" href="Android.Content.SyncStats.html">SyncStats</a></div>
+      <div><a class="xref" href="Android.Content.UriPermission.html">UriPermission</a></div>
+      <div><a class="xref" href="Android.Credentials.ClearCredentialStateRequest.html">ClearCredentialStateRequest</a></div>
+      <div><a class="xref" href="Android.Credentials.CreateCredentialRequest.html">CreateCredentialRequest</a></div>
+      <div><a class="xref" href="Android.Credentials.CreateCredentialResponse.html">CreateCredentialResponse</a></div>
+      <div><a class="xref" href="Android.Credentials.Credential.html">Credential</a></div>
+      <div><a class="xref" href="Android.Credentials.CredentialDescription.html">CredentialDescription</a></div>
+      <div><a class="xref" href="Android.Credentials.CredentialOption.html">CredentialOption</a></div>
+      <div><a class="xref" href="Android.Credentials.GetCredentialRequest.html">GetCredentialRequest</a></div>
+      <div><a class="xref" href="Android.Credentials.GetCredentialResponse.html">GetCredentialResponse</a></div>
+      <div><a class="xref" href="Android.Credentials.RegisterCredentialDescriptionRequest.html">RegisterCredentialDescriptionRequest</a></div>
+      <div><a class="xref" href="Android.Credentials.UnregisterCredentialDescriptionRequest.html">UnregisterCredentialDescriptionRequest</a></div>
+      <div><a class="xref" href="Android.Gesture.Gesture.html">Gesture</a></div>
+      <div><a class="xref" href="Android.Graphics.Bitmap.html">Bitmap</a></div>
+      <div><a class="xref" href="Android.Graphics.Drawable.Icon.html">Icon</a></div>
+      <div><a class="xref" href="Android.Graphics.Gainmap.html">Gainmap</a></div>
+      <div><a class="xref" href="Android.Graphics.Insets.html">Insets</a></div>
+      <div><a class="xref" href="Android.Graphics.ParcelableColorSpace.html">ParcelableColorSpace</a></div>
+      <div><a class="xref" href="Android.Graphics.Point.html">Point</a></div>
+      <div><a class="xref" href="Android.Graphics.PointF.html">PointF</a></div>
+      <div><a class="xref" href="Android.Graphics.Rect.html">Rect</a></div>
+      <div><a class="xref" href="Android.Graphics.RectF.html">RectF</a></div>
+      <div><a class="xref" href="Android.Graphics.Region.html">Region</a></div>
+      <div><a class="xref" href="Android.Hardware.Camera2.Params.OutputConfiguration.html">OutputConfiguration</a></div>
+      <div><a class="xref" href="Android.Hardware.Camera2.Params.SessionConfiguration.html">SessionConfiguration</a></div>
+      <div><a class="xref" href="Android.Hardware.Display.DeviceProductInfo.html">DeviceProductInfo</a></div>
+      <div><a class="xref" href="Android.Hardware.Display.HdrConversionMode.html">HdrConversionMode</a></div>
+      <div><a class="xref" href="Android.Hardware.Display.VirtualDisplayConfig.html">VirtualDisplayConfig</a></div>
+      <div><a class="xref" href="Android.Hardware.Input.HostUsiVersion.html">HostUsiVersion</a></div>
+      <div><a class="xref" href="Android.Hardware.Lights.Light.html">Light</a></div>
+      <div><a class="xref" href="Android.Hardware.Lights.LightState.html">LightState</a></div>
+      <div><a class="xref" href="Android.Hardware.Usb.UsbAccessory.html">UsbAccessory</a></div>
+      <div><a class="xref" href="Android.Hardware.Usb.UsbConfiguration.html">UsbConfiguration</a></div>
+      <div><a class="xref" href="Android.Hardware.Usb.UsbDevice.html">UsbDevice</a></div>
+      <div><a class="xref" href="Android.Hardware.Usb.UsbEndpoint.html">UsbEndpoint</a></div>
+      <div><a class="xref" href="Android.Hardware.Usb.UsbInterface.html">UsbInterface</a></div>
+      <div><a class="xref" href="Android.Health.Connect.Changelog.ChangeLogTokenRequest.html">ChangeLogTokenRequest</a></div>
+      <div><a class="xref" href="Android.Health.Connect.Changelog.ChangeLogTokenResponse.html">ChangeLogTokenResponse</a></div>
+      <div><a class="xref" href="Android.Health.Connect.Changelog.ChangeLogsRequest.html">ChangeLogsRequest</a></div>
+      <div><a class="xref" href="Android.Health.Connect.Changelog.ChangeLogsResponse.html">ChangeLogsResponse</a></div>
+      <div><a class="xref" href="Android.Health.Connect.Datatypes.ExerciseRoute.html">ExerciseRoute</a></div>
+      <div><a class="xref" href="Android.Health.Connect.Datatypes.ExerciseRoute.Location.html">ExerciseRoute.Location</a></div>
+      <div><a class="xref" href="Android.Location.Address.html">Address</a></div>
+      <div><a class="xref" href="Android.Location.Criteria.html">Criteria</a></div>
+      <div><a class="xref" href="Android.Location.GnssAntennaInfo.html">GnssAntennaInfo</a></div>
+      <div><a class="xref" href="Android.Location.GnssAntennaInfo.PhaseCenterOffset.html">GnssAntennaInfo.PhaseCenterOffset</a></div>
+      <div><a class="xref" href="Android.Location.GnssAntennaInfo.SphericalCorrections.html">GnssAntennaInfo.SphericalCorrections</a></div>
+      <div><a class="xref" href="Android.Location.GnssAutomaticGainControl.html">GnssAutomaticGainControl</a></div>
+      <div><a class="xref" href="Android.Location.GnssCapabilities.html">GnssCapabilities</a></div>
+      <div><a class="xref" href="Android.Location.GnssClock.html">GnssClock</a></div>
+      <div><a class="xref" href="Android.Location.GnssMeasurement.html">GnssMeasurement</a></div>
+      <div><a class="xref" href="Android.Location.GnssMeasurementRequest.html">GnssMeasurementRequest</a></div>
+      <div><a class="xref" href="Android.Location.GnssMeasurementsEvent.html">GnssMeasurementsEvent</a></div>
+      <div><a class="xref" href="Android.Location.GnssNavigationMessage.html">GnssNavigationMessage</a></div>
+      <div><a class="xref" href="Android.Location.GnssSignalType.html">GnssSignalType</a></div>
+      <div><a class="xref" href="Android.Location.GnssStatus.html">GnssStatus</a></div>
+      <div><a class="xref" href="Android.Location.Location.html">Location</a></div>
+      <div><a class="xref" href="Android.Location.LocationRequest.html">LocationRequest</a></div>
+      <div><a class="xref" href="Android.Location.Provider.ProviderProperties.html">ProviderProperties</a></div>
+      <div><a class="xref" href="Android.Media.ApplicationMediaCapabilities.html">ApplicationMediaCapabilities</a></div>
+      <div><a class="xref" href="Android.Media.AudioAttributes.html">AudioAttributes</a></div>
+      <div><a class="xref" href="Android.Media.AudioDescriptor.html">AudioDescriptor</a></div>
+      <div><a class="xref" href="Android.Media.AudioFormat.html">AudioFormat</a></div>
+      <div><a class="xref" href="Android.Media.AudioMixerAttributes.html">AudioMixerAttributes</a></div>
+      <div><a class="xref" href="Android.Media.AudioPlaybackConfiguration.html">AudioPlaybackConfiguration</a></div>
+      <div><a class="xref" href="Android.Media.AudioPresentation.html">AudioPresentation</a></div>
+      <div><a class="xref" href="Android.Media.AudioProfile.html">AudioProfile</a></div>
+      <div><a class="xref" href="Android.Media.AudioRecordingConfiguration.html">AudioRecordingConfiguration</a></div>
+      <div><a class="xref" href="Android.Media.AudioTimestamp.html">AudioTimestamp</a></div>
+      <div><a class="xref" href="Android.Media.Browse.MediaBrowser.MediaItem.html">MediaBrowser.MediaItem</a></div>
+      <div><a class="xref" href="Android.Media.MediaDescription.html">MediaDescription</a></div>
+      <div><a class="xref" href="Android.Media.MediaMetadata.html">MediaMetadata</a></div>
+      <div><a class="xref" href="Android.Media.MediaPlayer.TrackInfo.html">MediaPlayer.TrackInfo</a></div>
+      <div><a class="xref" href="Android.Media.MediaRoute2Info.html">MediaRoute2Info</a></div>
+      <div><a class="xref" href="Android.Media.MediaSyncEvent.html">MediaSyncEvent</a></div>
+      <div><a class="xref" href="Android.Media.Metrics.PlaybackMetrics.html">PlaybackMetrics</a></div>
+      <div><a class="xref" href="Android.Media.Midi.MidiDeviceInfo.html">MidiDeviceInfo</a></div>
+      <div><a class="xref" href="Android.Media.Midi.MidiDeviceStatus.html">MidiDeviceStatus</a></div>
+      <div><a class="xref" href="Android.Media.PlaybackParams.html">PlaybackParams</a></div>
+      <div><a class="xref" href="Android.Media.Projection.MediaProjectionConfig.html">MediaProjectionConfig</a></div>
+      <div><a class="xref" href="Android.Media.Rating.html">Rating</a></div>
+      <div><a class="xref" href="Android.Media.RouteDiscoveryPreference.html">RouteDiscoveryPreference</a></div>
+      <div><a class="xref" href="Android.Media.RouteListingPreference.html">RouteListingPreference</a></div>
+      <div><a class="xref" href="Android.Media.RouteListingPreference.Item.html">RouteListingPreference.Item</a></div>
+      <div><a class="xref" href="Android.Media.RoutingSessionInfo.html">RoutingSessionInfo</a></div>
+      <div><a class="xref" href="Android.Media.Session.MediaController.PlaybackInfo.html">MediaController.PlaybackInfo</a></div>
+      <div><a class="xref" href="Android.Media.Session.MediaSession.QueueItem.html">MediaSession.QueueItem</a></div>
+      <div><a class="xref" href="Android.Media.Session.MediaSession.Token.html">MediaSession.Token</a></div>
+      <div><a class="xref" href="Android.Media.Session.PlaybackState.html">PlaybackState</a></div>
+      <div><a class="xref" href="Android.Media.Session.PlaybackState.CustomAction.html">PlaybackState.CustomAction</a></div>
+      <div><a class="xref" href="Android.Media.Session2Command.html">Session2Command</a></div>
+      <div><a class="xref" href="Android.Media.Session2CommandGroup.html">Session2CommandGroup</a></div>
+      <div><a class="xref" href="Android.Media.Session2Token.html">Session2Token</a></div>
+      <div><a class="xref" href="Android.Media.Tv.AdBuffer.html">AdBuffer</a></div>
+      <div><a class="xref" href="Android.Media.Tv.AdRequest.html">AdRequest</a></div>
+      <div><a class="xref" href="Android.Media.Tv.AdResponse.html">AdResponse</a></div>
+      <div><a class="xref" href="Android.Media.Tv.AitInfo.html">AitInfo</a></div>
+      <div><a class="xref" href="Android.Media.Tv.BroadcastInfoRequest.html">BroadcastInfoRequest</a></div>
+      <div><a class="xref" href="Android.Media.Tv.BroadcastInfoResponse.html">BroadcastInfoResponse</a></div>
+      <div><a class="xref" href="Android.Media.Tv.Interactive.AppLinkInfo.html">AppLinkInfo</a></div>
+      <div><a class="xref" href="Android.Media.Tv.Interactive.TvInteractiveAppServiceInfo.html">TvInteractiveAppServiceInfo</a></div>
+      <div><a class="xref" href="Android.Media.Tv.TvInputInfo.html">TvInputInfo</a></div>
+      <div><a class="xref" href="Android.Media.Tv.TvRecordingInfo.html">TvRecordingInfo</a></div>
+      <div><a class="xref" href="Android.Media.Tv.TvTrackInfo.html">TvTrackInfo</a></div>
+      <div><a class="xref" href="Android.Media.VolumeShaper.Configuration.html">VolumeShaper.Configuration</a></div>
+      <div><a class="xref" href="Android.Media.VolumeShaper.Operation.html">VolumeShaper.Operation</a></div>
+      <div><a class="xref" href="Android.Net.CaptivePortal.html">CaptivePortal</a></div>
+      <div><a class="xref" href="Android.Net.ConnectivityDiagnosticsManager.ConnectivityReport.html">ConnectivityDiagnosticsManager.ConnectivityReport</a></div>
+      <div><a class="xref" href="Android.Net.ConnectivityDiagnosticsManager.DataStallReport.html">ConnectivityDiagnosticsManager.DataStallReport</a></div>
+      <div><a class="xref" href="Android.Net.DhcpInfo.html">DhcpInfo</a></div>
+      <div><a class="xref" href="Android.Net.IpConfiguration.html">IpConfiguration</a></div>
+      <div><a class="xref" href="Android.Net.IpPrefix.html">IpPrefix</a></div>
+      <div><a class="xref" href="Android.Net.IpSecAlgorithm.html">IpSecAlgorithm</a></div>
+      <div><a class="xref" href="Android.Net.LinkAddress.html">LinkAddress</a></div>
+      <div><a class="xref" href="Android.Net.LinkProperties.html">LinkProperties</a></div>
+      <div><a class="xref" href="Android.Net.MacAddress.html">MacAddress</a></div>
+      <div><a class="xref" href="Android.Net.Network.html">Network</a></div>
+      <div><a class="xref" href="Android.Net.NetworkCapabilities.html">NetworkCapabilities</a></div>
+      <div><a class="xref" href="Android.Net.NetworkInfo.html">NetworkInfo</a></div>
+      <div><a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></div>
+      <div><a class="xref" href="Android.Net.Nsd.NsdServiceInfo.html">NsdServiceInfo</a></div>
+      <div><a class="xref" href="Android.Net.ProxyInfo.html">ProxyInfo</a></div>
+      <div><a class="xref" href="Android.Net.RouteInfo.html">RouteInfo</a></div>
+      <div><a class="xref" href="Android.Net.StaticIpConfiguration.html">StaticIpConfiguration</a></div>
+      <div><a class="xref" href="Android.Net.Vcn.VcnConfig.html">VcnConfig</a></div>
+      <div><a class="xref" href="Android.Net.VpnProfileState.html">VpnProfileState</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Aware.AwarePairingConfig.html">AwarePairingConfig</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Aware.AwareResources.html">AwareResources</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Aware.Characteristics.html">Characteristics</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Aware.PublishConfig.html">PublishConfig</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Aware.SubscribeConfig.html">SubscribeConfig</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Aware.WifiAwareChannelInfo.html">WifiAwareChannelInfo</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Aware.WifiAwareDataPathSecurityConfig.html">WifiAwareDataPathSecurityConfig</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Hotspot2.PasspointConfiguration.html">PasspointConfiguration</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Hotspot2.Pps.Credential.html">Credential</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Hotspot2.Pps.Credential.CertificateCredential.html">Credential.CertificateCredential</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Hotspot2.Pps.Credential.SimCredential.html">Credential.SimCredential</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Hotspot2.Pps.Credential.UserCredential.html">Credential.UserCredential</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Hotspot2.Pps.HomeSp.html">HomeSp</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.MloLink.html">MloLink</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.P2p.Nsd.WifiP2pServiceInfo.html">WifiP2pServiceInfo</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.P2p.Nsd.WifiP2pServiceRequest.html">WifiP2pServiceRequest</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pConfig.html">WifiP2pConfig</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pDevice.html">WifiP2pDevice</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pDeviceList.html">WifiP2pDeviceList</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pGroup.html">WifiP2pGroup</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pInfo.html">WifiP2pInfo</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pWfdInfo.html">WifiP2pWfdInfo</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Rtt.RangingRequest.html">RangingRequest</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Rtt.RangingResult.html">RangingResult</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Rtt.ResponderConfig.html">ResponderConfig</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.Rtt.ResponderLocation.html">ResponderLocation</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.ScanResult.html">ScanResult</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.ScanResult.InformationElement.html">ScanResult.InformationElement</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.SoftApConfiguration.html">SoftApConfiguration</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.WifiAvailableChannel.html">WifiAvailableChannel</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.WifiConfiguration.html">WifiConfiguration</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.WifiEnterpriseConfig.html">WifiEnterpriseConfig</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.WifiManager.AddNetworkResult.html">WifiManager.AddNetworkResult</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.WifiNetworkSuggestion.html">WifiNetworkSuggestion</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.WifiSsid.html">WifiSsid</a></div>
+      <div><a class="xref" href="Android.Net.Wifi.WpsInfo.html">WpsInfo</a></div>
+      <div><a class="xref" href="Android.Nfc.AvailableNfcAntenna.html">AvailableNfcAntenna</a></div>
+      <div><a class="xref" href="Android.Nfc.NdefMessage.html">NdefMessage</a></div>
+      <div><a class="xref" href="Android.Nfc.NdefRecord.html">NdefRecord</a></div>
+      <div><a class="xref" href="Android.Nfc.NfcAntennaInfo.html">NfcAntennaInfo</a></div>
+      <div><a class="xref" href="Android.Nfc.Tag.html">Tag</a></div>
+      <div><a class="xref" href="Android.Os.CombinedVibration.html">CombinedVibration</a></div>
+      <div><a class="xref" href="Android.Os.CpuUsageInfo.html">CpuUsageInfo</a></div>
+      <div><a class="xref" href="Android.Os.Debug.MemoryInfo.html">Debug.MemoryInfo</a></div>
+      <div><a class="xref" href="Android.Os.Health.TimerStat.html">TimerStat</a></div>
+      <div><a class="xref" href="Android.Os.LocaleList.html">LocaleList</a></div>
+      <div><a class="xref" href="Android.Os.Message.html">Message</a></div>
+      <div><a class="xref" href="Android.Os.Messenger.html">Messenger</a></div>
+      <div><a class="xref" href="Android.Os.ParcelUuid.html">ParcelUuid</a></div>
+      <div><a class="xref" href="Android.Os.PatternMatcher.html">PatternMatcher</a></div>
+      <div><a class="xref" href="Android.Os.ResultReceiver.html">ResultReceiver</a></div>
+      <div><a class="xref" href="Android.Os.Storage.StorageVolume.html">StorageVolume</a></div>
+      <div><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></div>
+      <div><a class="xref" href="Android.Os.VibrationAttributes.html">VibrationAttributes</a></div>
+      <div><a class="xref" href="Android.Os.VibrationEffect.html">VibrationEffect</a></div>
+      <div><a class="xref" href="Android.Os.WorkSource.html">WorkSource</a></div>
+      <div><a class="xref" href="Android.Preference.PreferenceActivity.Header.html">PreferenceActivity.Header</a></div>
+      <div><a class="xref" href="Android.Print.PageRange.html">PageRange</a></div>
+      <div><a class="xref" href="Android.Print.PrintAttributes.html">PrintAttributes</a></div>
+      <div><a class="xref" href="Android.Print.PrintDocumentInfo.html">PrintDocumentInfo</a></div>
+      <div><a class="xref" href="Android.Print.PrintJobId.html">PrintJobId</a></div>
+      <div><a class="xref" href="Android.Print.PrintJobInfo.html">PrintJobInfo</a></div>
+      <div><a class="xref" href="Android.Print.PrinterCapabilitiesInfo.html">PrinterCapabilitiesInfo</a></div>
+      <div><a class="xref" href="Android.Print.PrinterId.html">PrinterId</a></div>
+      <div><a class="xref" href="Android.Print.PrinterInfo.html">PrinterInfo</a></div>
+      <div><a class="xref" href="Android.Provider.ContactsContract.SimAccount.html">ContactsContract.SimAccount</a></div>
+      <div><a class="xref" href="Android.Provider.DocumentsContract.Path.html">DocumentsContract.Path</a></div>
+      <div><a class="xref" href="Android.Security.AppUriAuthenticationPolicy.html">AppUriAuthenticationPolicy</a></div>
+      <div><a class="xref" href="Android.Service.Assist.Classification.FieldClassification.html">FieldClassification</a></div>
+      <div><a class="xref" href="Android.Service.Autofill.BatchUpdates.html">BatchUpdates</a></div>
+      <div><a class="xref" href="Android.Service.Autofill.CustomDescription.html">CustomDescription</a></div>
+      <div><a class="xref" href="Android.Service.Autofill.Dataset.html">Dataset</a></div>
+      <div><a class="xref" href="Android.Service.Autofill.FillContext.html">FillContext</a></div>
+      <div><a class="xref" href="Android.Service.Autofill.FillEventHistory.html">FillEventHistory</a></div>
+      <div><a class="xref" href="Android.Service.Autofill.FillRequest.html">FillRequest</a></div>
+      <div><a class="xref" href="Android.Service.Autofill.FillResponse.html">FillResponse</a></div>
+      <div><a class="xref" href="Android.Service.Autofill.InlinePresentation.html">InlinePresentation</a></div>
+      <div><a class="xref" href="Android.Service.Autofill.SaveInfo.html">SaveInfo</a></div>
+      <div><a class="xref" href="Android.Service.Autofill.SaveRequest.html">SaveRequest</a></div>
+      <div><a class="xref" href="Android.Service.Autofill.UserData.html">UserData</a></div>
+      <div><a class="xref" href="Android.Service.Carrier.CarrierIdentifier.html">CarrierIdentifier</a></div>
+      <div><a class="xref" href="Android.Service.Carrier.MessagePdu.html">MessagePdu</a></div>
+      <div><a class="xref" href="Android.Service.Chooser.ChooserAction.html">ChooserAction</a></div>
+      <div><a class="xref" href="Android.Service.Chooser.ChooserTarget.html">ChooserTarget</a></div>
+      <div><a class="xref" href="Android.Service.Controls.Control.html">Control</a></div>
+      <div><a class="xref" href="Android.Service.Controls.Templates.ControlButton.html">ControlButton</a></div>
+      <div><a class="xref" href="Android.Service.Credentials.Action.html">Action</a></div>
+      <div><a class="xref" href="Android.Service.Credentials.BeginCreateCredentialRequest.html">BeginCreateCredentialRequest</a></div>
+      <div><a class="xref" href="Android.Service.Credentials.BeginCreateCredentialResponse.html">BeginCreateCredentialResponse</a></div>
+      <div><a class="xref" href="Android.Service.Credentials.BeginGetCredentialOption.html">BeginGetCredentialOption</a></div>
+      <div><a class="xref" href="Android.Service.Credentials.BeginGetCredentialRequest.html">BeginGetCredentialRequest</a></div>
+      <div><a class="xref" href="Android.Service.Credentials.BeginGetCredentialResponse.html">BeginGetCredentialResponse</a></div>
+      <div><a class="xref" href="Android.Service.Credentials.CallingAppInfo.html">CallingAppInfo</a></div>
+      <div><a class="xref" href="Android.Service.Credentials.ClearCredentialStateRequest.html">ClearCredentialStateRequest</a></div>
+      <div><a class="xref" href="Android.Service.Credentials.CreateCredentialRequest.html">CreateCredentialRequest</a></div>
+      <div><a class="xref" href="Android.Service.Credentials.CreateEntry.html">CreateEntry</a></div>
+      <div><a class="xref" href="Android.Service.Credentials.CredentialEntry.html">CredentialEntry</a></div>
+      <div><a class="xref" href="Android.Service.Credentials.GetCredentialRequest.html">GetCredentialRequest</a></div>
+      <div><a class="xref" href="Android.Service.Credentials.RemoteEntry.html">RemoteEntry</a></div>
+      <div><a class="xref" href="Android.Service.Notification.Condition.html">Condition</a></div>
+      <div><a class="xref" href="Android.Service.Notification.NotificationListenerService.RankingMap.html">NotificationListenerService.RankingMap</a></div>
+      <div><a class="xref" href="Android.Service.Notification.StatusBarNotification.html">StatusBarNotification</a></div>
+      <div><a class="xref" href="Android.Service.Notification.ZenPolicy.html">ZenPolicy</a></div>
+      <div><a class="xref" href="Android.Service.Quickaccesswallet.GetWalletCardsError.html">GetWalletCardsError</a></div>
+      <div><a class="xref" href="Android.Service.Quickaccesswallet.GetWalletCardsRequest.html">GetWalletCardsRequest</a></div>
+      <div><a class="xref" href="Android.Service.Quickaccesswallet.GetWalletCardsResponse.html">GetWalletCardsResponse</a></div>
+      <div><a class="xref" href="Android.Service.Quickaccesswallet.SelectWalletCardRequest.html">SelectWalletCardRequest</a></div>
+      <div><a class="xref" href="Android.Service.Quickaccesswallet.WalletCard.html">WalletCard</a></div>
+      <div><a class="xref" href="Android.Service.Quickaccesswallet.WalletServiceEvent.html">WalletServiceEvent</a></div>
+      <div><a class="xref" href="Android.Service.Quicksettings.Tile.html">Tile</a></div>
+      <div><a class="xref" href="Android.Service.Voice.VisibleActivityInfo.html">VisibleActivityInfo</a></div>
+      <div><a class="xref" href="Android.Speech.AlternativeSpan.html">AlternativeSpan</a></div>
+      <div><a class="xref" href="Android.Speech.AlternativeSpans.html">AlternativeSpans</a></div>
+      <div><a class="xref" href="Android.Speech.RecognitionPart.html">RecognitionPart</a></div>
+      <div><a class="xref" href="Android.Speech.RecognitionSupport.html">RecognitionSupport</a></div>
+      <div><a class="xref" href="Android.Speech.Tts.Voice.html">Voice</a></div>
+      <div><a class="xref" href="Android.Telecom.CallAttributes.html">CallAttributes</a></div>
+      <div><a class="xref" href="Android.Telecom.CallAudioState.html">CallAudioState</a></div>
+      <div><a class="xref" href="Android.Telecom.CallEndpoint.html">CallEndpoint</a></div>
+      <div><a class="xref" href="Android.Telecom.ConnectionRequest.html">ConnectionRequest</a></div>
+      <div><a class="xref" href="Android.Telecom.DisconnectCause.html">DisconnectCause</a></div>
+      <div><a class="xref" href="Android.Telecom.GatewayInfo.html">GatewayInfo</a></div>
+      <div><a class="xref" href="Android.Telecom.PhoneAccount.html">PhoneAccount</a></div>
+      <div><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></div>
+      <div><a class="xref" href="Android.Telecom.PhoneAccountSuggestion.html">PhoneAccountSuggestion</a></div>
+      <div><a class="xref" href="Android.Telecom.StatusHints.html">StatusHints</a></div>
+      <div><a class="xref" href="Android.Telecom.VideoProfile.html">VideoProfile</a></div>
+      <div><a class="xref" href="Android.Telecom.VideoProfile.CameraCapabilities.html">VideoProfile.CameraCapabilities</a></div>
+      <div><a class="xref" href="Android.Telephony.AvailableNetworkInfo.html">AvailableNetworkInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.BarringInfo.html">BarringInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.BarringInfo.BarringServiceInfo.html">BarringInfo.BarringServiceInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.CellIdentity.html">CellIdentity</a></div>
+      <div><a class="xref" href="Android.Telephony.CellInfo.html">CellInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.ClosedSubscriberGroupInfo.html">ClosedSubscriberGroupInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.Data.ApnSetting.html">ApnSetting</a></div>
+      <div><a class="xref" href="Android.Telephony.Data.NetworkSliceInfo.html">NetworkSliceInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.Data.NetworkSlicingConfig.html">NetworkSlicingConfig</a></div>
+      <div><a class="xref" href="Android.Telephony.Data.RouteSelectionDescriptor.html">RouteSelectionDescriptor</a></div>
+      <div><a class="xref" href="Android.Telephony.Data.TrafficDescriptor.html">TrafficDescriptor</a></div>
+      <div><a class="xref" href="Android.Telephony.Data.UrspRule.html">UrspRule</a></div>
+      <div><a class="xref" href="Android.Telephony.Euicc.DownloadableSubscription.html">DownloadableSubscription</a></div>
+      <div><a class="xref" href="Android.Telephony.Euicc.EuiccInfo.html">EuiccInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.IccOpenLogicalChannelResponse.html">IccOpenLogicalChannelResponse</a></div>
+      <div><a class="xref" href="Android.Telephony.Ims.ImsReasonInfo.html">ImsReasonInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.Ims.ImsRegistrationAttributes.html">ImsRegistrationAttributes</a></div>
+      <div><a class="xref" href="Android.Telephony.Ims.SipDetails.html">SipDetails</a></div>
+      <div><a class="xref" href="Android.Telephony.Mbms.DownloadRequest.html">DownloadRequest</a></div>
+      <div><a class="xref" href="Android.Telephony.Mbms.FileInfo.html">FileInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.NeighboringCellInfo.html">NeighboringCellInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.NetworkRegistrationInfo.html">NetworkRegistrationInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.NetworkScanRequest.html">NetworkScanRequest</a></div>
+      <div><a class="xref" href="Android.Telephony.PhysicalChannelConfig.html">PhysicalChannelConfig</a></div>
+      <div><a class="xref" href="Android.Telephony.PreciseDataConnectionState.html">PreciseDataConnectionState</a></div>
+      <div><a class="xref" href="Android.Telephony.RadioAccessSpecifier.html">RadioAccessSpecifier</a></div>
+      <div><a class="xref" href="Android.Telephony.ServiceState.html">ServiceState</a></div>
+      <div><a class="xref" href="Android.Telephony.SignalStrength.html">SignalStrength</a></div>
+      <div><a class="xref" href="Android.Telephony.SignalStrengthUpdateRequest.html">SignalStrengthUpdateRequest</a></div>
+      <div><a class="xref" href="Android.Telephony.SignalThresholdInfo.html">SignalThresholdInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.SubscriptionInfo.html">SubscriptionInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.SubscriptionPlan.html">SubscriptionPlan</a></div>
+      <div><a class="xref" href="Android.Telephony.TelephonyDisplayInfo.html">TelephonyDisplayInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.UiccCardInfo.html">UiccCardInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.UiccPortInfo.html">UiccPortInfo</a></div>
+      <div><a class="xref" href="Android.Telephony.VisualVoicemailSms.html">VisualVoicemailSms</a></div>
+      <div><a class="xref" href="Android.Telephony.VisualVoicemailSmsFilterSettings.html">VisualVoicemailSmsFilterSettings</a></div>
+      <div><a class="xref" href="Android.Text.ParcelableSpan.html">ParcelableSpan</a></div>
+      <div><a class="xref" href="Android.Util.SizeF.html">SizeF</a></div>
+      <div><a class="xref" href="Android.View.AbsSavedState.html">AbsSavedState</a></div>
+      <div><a class="xref" href="Android.View.Accessibility.AccessibilityNodeInfo.html">AccessibilityNodeInfo</a></div>
+      <div><a class="xref" href="Android.View.Accessibility.AccessibilityNodeInfo.AccessibilityAction.html">AccessibilityNodeInfo.AccessibilityAction</a></div>
+      <div><a class="xref" href="Android.View.Accessibility.AccessibilityNodeInfo.TouchDelegateInfo.html">AccessibilityNodeInfo.TouchDelegateInfo</a></div>
+      <div><a class="xref" href="Android.View.Accessibility.AccessibilityWindowInfo.html">AccessibilityWindowInfo</a></div>
+      <div><a class="xref" href="Android.View.Autofill.AutofillId.html">AutofillId</a></div>
+      <div><a class="xref" href="Android.View.Autofill.AutofillValue.html">AutofillValue</a></div>
+      <div><a class="xref" href="Android.View.ContentInfo.html">ContentInfo</a></div>
+      <div><a class="xref" href="Android.View.Contentcapture.ContentCaptureCondition.html">ContentCaptureCondition</a></div>
+      <div><a class="xref" href="Android.View.Contentcapture.ContentCaptureContext.html">ContentCaptureContext</a></div>
+      <div><a class="xref" href="Android.View.Contentcapture.ContentCaptureSessionId.html">ContentCaptureSessionId</a></div>
+      <div><a class="xref" href="Android.View.Contentcapture.DataRemovalRequest.html">DataRemovalRequest</a></div>
+      <div><a class="xref" href="Android.View.Contentcapture.DataShareRequest.html">DataShareRequest</a></div>
+      <div><a class="xref" href="Android.View.Display.HdrCapabilities.html">Display.HdrCapabilities</a></div>
+      <div><a class="xref" href="Android.View.Display.Mode.html">Display.Mode</a></div>
+      <div><a class="xref" href="Android.View.DisplayShape.html">DisplayShape</a></div>
+      <div><a class="xref" href="Android.View.Displayhash.DisplayHash.html">DisplayHash</a></div>
+      <div><a class="xref" href="Android.View.Displayhash.VerifiedDisplayHash.html">VerifiedDisplayHash</a></div>
+      <div><a class="xref" href="Android.View.DragAndDropPermissions.html">DragAndDropPermissions</a></div>
+      <div><a class="xref" href="Android.View.DragEvent.html">DragEvent</a></div>
+      <div><a class="xref" href="Android.View.InputDevice.html">InputDevice</a></div>
+      <div><a class="xref" href="Android.View.InputEvent.html">InputEvent</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.CompletionInfo.html">CompletionInfo</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.CorrectionInfo.html">CorrectionInfo</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.CursorAnchorInfo.html">CursorAnchorInfo</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.EditorBoundsInfo.html">EditorBoundsInfo</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.ExtractedText.html">ExtractedText</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.ExtractedTextRequest.html">ExtractedTextRequest</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.InlineSuggestion.html">InlineSuggestion</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.InlineSuggestionInfo.html">InlineSuggestionInfo</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.InlineSuggestionsRequest.html">InlineSuggestionsRequest</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.InlineSuggestionsResponse.html">InlineSuggestionsResponse</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.InputBinding.html">InputBinding</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.InputContentInfo.html">InputContentInfo</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.InputMethodInfo.html">InputMethodInfo</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.InputMethodSubtype.html">InputMethodSubtype</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.SurroundingText.html">SurroundingText</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.TextAppearanceInfo.html">TextAppearanceInfo</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.TextAttribute.html">TextAttribute</a></div>
+      <div><a class="xref" href="Android.View.Inputmethod.TextBoundsInfo.html">TextBoundsInfo</a></div>
+      <div><a class="xref" href="Android.View.KeyCharacterMap.html">KeyCharacterMap</a></div>
+      <div><a class="xref" href="Android.View.KeyboardShortcutGroup.html">KeyboardShortcutGroup</a></div>
+      <div><a class="xref" href="Android.View.KeyboardShortcutInfo.html">KeyboardShortcutInfo</a></div>
+      <div><a class="xref" href="Android.View.PointerIcon.html">PointerIcon</a></div>
+      <div><a class="xref" href="Android.View.RoundedCorner.html">RoundedCorner</a></div>
+      <div><a class="xref" href="Android.View.Surface.html">Surface</a></div>
+      <div><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></div>
+      <div><a class="xref" href="Android.View.SurfaceControlViewHost.SurfacePackage.html">SurfaceControlViewHost.SurfacePackage</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.ConversationAction.html">ConversationAction</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.ConversationActions.html">ConversationActions</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.ConversationActions.Message.html">ConversationActions.Message</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.ConversationActions.Request.html">ConversationActions.Request</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.SelectionEvent.html">SelectionEvent</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.TextClassification.html">TextClassification</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.TextClassification.Request.html">TextClassification.Request</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.TextClassificationContext.html">TextClassificationContext</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.TextClassificationSessionId.html">TextClassificationSessionId</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.TextClassifier.EntityConfig.html">TextClassifier.EntityConfig</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.TextClassifierEvent.html">TextClassifierEvent</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.TextLanguage.html">TextLanguage</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.TextLanguage.Request.html">TextLanguage.Request</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.TextLinks.html">TextLinks</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.TextLinks.Request.html">TextLinks.Request</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.TextLinks.TextLink.html">TextLinks.TextLink</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.TextSelection.html">TextSelection</a></div>
+      <div><a class="xref" href="Android.View.Textclassifier.TextSelection.Request.html">TextSelection.Request</a></div>
+      <div><a class="xref" href="Android.View.Textservice.SentenceSuggestionsInfo.html">SentenceSuggestionsInfo</a></div>
+      <div><a class="xref" href="Android.View.Textservice.SpellCheckerInfo.html">SpellCheckerInfo</a></div>
+      <div><a class="xref" href="Android.View.Textservice.SpellCheckerSubtype.html">SpellCheckerSubtype</a></div>
+      <div><a class="xref" href="Android.View.Textservice.SuggestionsInfo.html">SuggestionsInfo</a></div>
+      <div><a class="xref" href="Android.View.Textservice.TextInfo.html">TextInfo</a></div>
+      <div><a class="xref" href="Android.View.Translation.TranslationCapability.html">TranslationCapability</a></div>
+      <div><a class="xref" href="Android.View.Translation.TranslationContext.html">TranslationContext</a></div>
+      <div><a class="xref" href="Android.View.Translation.TranslationRequest.html">TranslationRequest</a></div>
+      <div><a class="xref" href="Android.View.Translation.TranslationRequestValue.html">TranslationRequestValue</a></div>
+      <div><a class="xref" href="Android.View.Translation.TranslationResponse.html">TranslationResponse</a></div>
+      <div><a class="xref" href="Android.View.Translation.TranslationResponseValue.html">TranslationResponseValue</a></div>
+      <div><a class="xref" href="Android.View.Translation.TranslationSpec.html">TranslationSpec</a></div>
+      <div><a class="xref" href="Android.View.Translation.ViewTranslationRequest.html">ViewTranslationRequest</a></div>
+      <div><a class="xref" href="Android.View.Translation.ViewTranslationResponse.html">ViewTranslationResponse</a></div>
+      <div><a class="xref" href="Android.View.VerifiedInputEvent.html">VerifiedInputEvent</a></div>
+      <div><a class="xref" href="Android.View.WindowId.html">WindowId</a></div>
+      <div><a class="xref" href="Android.Widget.Inline.InlinePresentationSpec.html">InlinePresentationSpec</a></div>
+      <div><a class="xref" href="Android.Widget.RemoteViews.RemoteCollectionItems.html">RemoteViews.RemoteCollectionItems</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Parcelable&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Os_Parcelable__ctor_" data-uid="Android.Os.Parcelable.#ctor*"></a>
+
+  <h3 id="Android_Os_Parcelable__ctor" data-uid="Android.Os.Parcelable.#ctor">
+  Parcelable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L2324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Parcelable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public Parcelable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Parcelable__ctor_" data-uid="Android.Os.Parcelable.#ctor*"></a>
+
+  <h3 id="Android_Os_Parcelable__ctor_System_Object___" data-uid="Android.Os.Parcelable.#ctor(System.Object[])">
+  Parcelable(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L2329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Parcelable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public Parcelable(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Os_Parcelable_BridgeClassName_" data-uid="Android.Os.Parcelable.BridgeClassName*"></a>
+
+  <h3 id="Android_Os_Parcelable_BridgeClassName" data-uid="Android.Os.Parcelable.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L2337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Parcelable_CONTENTS_FILE_DESCRIPTOR_" data-uid="Android.Os.Parcelable.CONTENTS_FILE_DESCRIPTOR*"></a>
+
+  <h3 id="Android_Os_Parcelable_CONTENTS_FILE_DESCRIPTOR" data-uid="Android.Os.Parcelable.CONTENTS_FILE_DESCRIPTOR">
+  CONTENTS_FILE_DESCRIPTOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Parcelable.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR">https://developer.android.com/reference/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENTS_FILE_DESCRIPTOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Parcelable_IsBridgeAbstract_" data-uid="Android.Os.Parcelable.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Os_Parcelable_IsBridgeAbstract" data-uid="Android.Os.Parcelable.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L2341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Parcelable_IsBridgeCloseable_" data-uid="Android.Os.Parcelable.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Os_Parcelable_IsBridgeCloseable" data-uid="Android.Os.Parcelable.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L2345"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Parcelable_IsBridgeInterface_" data-uid="Android.Os.Parcelable.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Os_Parcelable_IsBridgeInterface" data-uid="Android.Os.Parcelable.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L2349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Parcelable_IsBridgeStatic_" data-uid="Android.Os.Parcelable.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Os_Parcelable_IsBridgeStatic" data-uid="Android.Os.Parcelable.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L2353"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Parcelable_PARCELABLE_WRITE_RETURN_VALUE_" data-uid="Android.Os.Parcelable.PARCELABLE_WRITE_RETURN_VALUE*"></a>
+
+  <h3 id="Android_Os_Parcelable_PARCELABLE_WRITE_RETURN_VALUE" data-uid="Android.Os.Parcelable.PARCELABLE_WRITE_RETURN_VALUE">
+  PARCELABLE_WRITE_RETURN_VALUE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Parcelable.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE">https://developer.android.com/reference/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PARCELABLE_WRITE_RETURN_VALUE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Os_Parcelable_DescribeContents_" data-uid="Android.Os.Parcelable.DescribeContents*"></a>
+
+  <h3 id="Android_Os_Parcelable_DescribeContents" data-uid="Android.Os.Parcelable.DescribeContents">
+  DescribeContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Parcelable.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Parcelable.html#describeContents()">https://developer.android.com/reference/android/os/Parcelable.html#describeContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Parcelable_WriteToParcel_" data-uid="Android.Os.Parcelable.WriteToParcel*"></a>
+
+  <h3 id="Android_Os_Parcelable_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.Os.Parcelable.WriteToParcel(Android.Os.Parcel,System.Int32)">
+  WriteToParcel(Parcel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Parcelable.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Parcelable.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/os/Parcelable.html#writeToParcel(android.os.Parcel,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Parcelable.cs/#L47" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

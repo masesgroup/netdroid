@@ -1,0 +1,4086 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class AccountManager | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AccountManager | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/accounts/AccountManager.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Accounts_AccountManager.md&amp;value=---%0Auid%3A%20Android.Accounts.AccountManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Accounts.AccountManager">
+
+
+
+  <h1 id="Android_Accounts_AccountManager" data-uid="Android.Accounts.AccountManager" class="text-break">
+Class AccountManager  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AllPackageClasses.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Accounts.html">Accounts</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html">https://developer.android.com/reference/android/accounts/AccountManager.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AccountManager : JVMBridgeBase&lt;AccountManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Accounts.AccountManager.html">AccountManager</a>&gt;</div>
+      <div><span class="xref">AccountManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccountManager&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccountManager&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccountManager&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccountManager&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccountManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccountManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AccountManager&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AccountManager&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;AccountManager&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccountManager&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AccountManager&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AccountManager&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AccountManager&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Accounts_AccountManager__ctor_" data-uid="Android.Accounts.AccountManager.#ctor*"></a>
+
+  <h3 id="Android_Accounts_AccountManager__ctor" data-uid="Android.Accounts.AccountManager.#ctor">
+  AccountManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AllPackageClasses.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager__ctor_" data-uid="Android.Accounts.AccountManager.#ctor*"></a>
+
+  <h3 id="Android_Accounts_AccountManager__ctor_System_Object___" data-uid="Android.Accounts.AccountManager.#ctor(System.Object[])">
+  AccountManager(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AllPackageClasses.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManager(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Accounts_AccountManager_ACTION_ACCOUNT_REMOVED_" data-uid="Android.Accounts.AccountManager.ACTION_ACCOUNT_REMOVED*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_ACTION_ACCOUNT_REMOVED" data-uid="Android.Accounts.AccountManager.ACTION_ACCOUNT_REMOVED">
+  ACTION_ACCOUNT_REMOVED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#ACTION_ACCOUNT_REMOVED">https://developer.android.com/reference/android/accounts/AccountManager.html#ACTION_ACCOUNT_REMOVED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_ACCOUNT_REMOVED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_ACTION_AUTHENTICATOR_INTENT_" data-uid="Android.Accounts.AccountManager.ACTION_AUTHENTICATOR_INTENT*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_ACTION_AUTHENTICATOR_INTENT" data-uid="Android.Accounts.AccountManager.ACTION_AUTHENTICATOR_INTENT">
+  ACTION_AUTHENTICATOR_INTENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#ACTION_AUTHENTICATOR_INTENT">https://developer.android.com/reference/android/accounts/AccountManager.html#ACTION_AUTHENTICATOR_INTENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_AUTHENTICATOR_INTENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_AUTHENTICATOR_ATTRIBUTES_NAME_" data-uid="Android.Accounts.AccountManager.AUTHENTICATOR_ATTRIBUTES_NAME*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_AUTHENTICATOR_ATTRIBUTES_NAME" data-uid="Android.Accounts.AccountManager.AUTHENTICATOR_ATTRIBUTES_NAME">
+  AUTHENTICATOR_ATTRIBUTES_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#AUTHENTICATOR_ATTRIBUTES_NAME">https://developer.android.com/reference/android/accounts/AccountManager.html#AUTHENTICATOR_ATTRIBUTES_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String AUTHENTICATOR_ATTRIBUTES_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_AUTHENTICATOR_META_DATA_NAME_" data-uid="Android.Accounts.AccountManager.AUTHENTICATOR_META_DATA_NAME*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_AUTHENTICATOR_META_DATA_NAME" data-uid="Android.Accounts.AccountManager.AUTHENTICATOR_META_DATA_NAME">
+  AUTHENTICATOR_META_DATA_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#AUTHENTICATOR_META_DATA_NAME">https://developer.android.com/reference/android/accounts/AccountManager.html#AUTHENTICATOR_META_DATA_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String AUTHENTICATOR_META_DATA_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_BridgeClassName_" data-uid="Android.Accounts.AccountManager.BridgeClassName*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_BridgeClassName" data-uid="Android.Accounts.AccountManager.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AllPackageClasses.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_ERROR_CODE_BAD_ARGUMENTS_" data-uid="Android.Accounts.AccountManager.ERROR_CODE_BAD_ARGUMENTS*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_ERROR_CODE_BAD_ARGUMENTS" data-uid="Android.Accounts.AccountManager.ERROR_CODE_BAD_ARGUMENTS">
+  ERROR_CODE_BAD_ARGUMENTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_BAD_ARGUMENTS">https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_BAD_ARGUMENTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_BAD_ARGUMENTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_ERROR_CODE_BAD_AUTHENTICATION_" data-uid="Android.Accounts.AccountManager.ERROR_CODE_BAD_AUTHENTICATION*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_ERROR_CODE_BAD_AUTHENTICATION" data-uid="Android.Accounts.AccountManager.ERROR_CODE_BAD_AUTHENTICATION">
+  ERROR_CODE_BAD_AUTHENTICATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_BAD_AUTHENTICATION">https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_BAD_AUTHENTICATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_BAD_AUTHENTICATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_ERROR_CODE_BAD_REQUEST_" data-uid="Android.Accounts.AccountManager.ERROR_CODE_BAD_REQUEST*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_ERROR_CODE_BAD_REQUEST" data-uid="Android.Accounts.AccountManager.ERROR_CODE_BAD_REQUEST">
+  ERROR_CODE_BAD_REQUEST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_BAD_REQUEST">https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_BAD_REQUEST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_BAD_REQUEST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_ERROR_CODE_CANCELED_" data-uid="Android.Accounts.AccountManager.ERROR_CODE_CANCELED*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_ERROR_CODE_CANCELED" data-uid="Android.Accounts.AccountManager.ERROR_CODE_CANCELED">
+  ERROR_CODE_CANCELED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_CANCELED">https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_CANCELED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_CANCELED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_ERROR_CODE_INVALID_RESPONSE_" data-uid="Android.Accounts.AccountManager.ERROR_CODE_INVALID_RESPONSE*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_ERROR_CODE_INVALID_RESPONSE" data-uid="Android.Accounts.AccountManager.ERROR_CODE_INVALID_RESPONSE">
+  ERROR_CODE_INVALID_RESPONSE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_INVALID_RESPONSE">https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_INVALID_RESPONSE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_INVALID_RESPONSE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_ERROR_CODE_NETWORK_ERROR_" data-uid="Android.Accounts.AccountManager.ERROR_CODE_NETWORK_ERROR*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_ERROR_CODE_NETWORK_ERROR" data-uid="Android.Accounts.AccountManager.ERROR_CODE_NETWORK_ERROR">
+  ERROR_CODE_NETWORK_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_NETWORK_ERROR">https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_NETWORK_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_NETWORK_ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_ERROR_CODE_REMOTE_EXCEPTION_" data-uid="Android.Accounts.AccountManager.ERROR_CODE_REMOTE_EXCEPTION*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_ERROR_CODE_REMOTE_EXCEPTION" data-uid="Android.Accounts.AccountManager.ERROR_CODE_REMOTE_EXCEPTION">
+  ERROR_CODE_REMOTE_EXCEPTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_REMOTE_EXCEPTION">https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_REMOTE_EXCEPTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_REMOTE_EXCEPTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_ERROR_CODE_UNSUPPORTED_OPERATION_" data-uid="Android.Accounts.AccountManager.ERROR_CODE_UNSUPPORTED_OPERATION*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_ERROR_CODE_UNSUPPORTED_OPERATION" data-uid="Android.Accounts.AccountManager.ERROR_CODE_UNSUPPORTED_OPERATION">
+  ERROR_CODE_UNSUPPORTED_OPERATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_UNSUPPORTED_OPERATION">https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_UNSUPPORTED_OPERATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_UNSUPPORTED_OPERATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_IsBridgeAbstract_" data-uid="Android.Accounts.AccountManager.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_IsBridgeAbstract" data-uid="Android.Accounts.AccountManager.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AllPackageClasses.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_IsBridgeCloseable_" data-uid="Android.Accounts.AccountManager.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_IsBridgeCloseable" data-uid="Android.Accounts.AccountManager.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AllPackageClasses.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_IsBridgeInterface_" data-uid="Android.Accounts.AccountManager.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_IsBridgeInterface" data-uid="Android.Accounts.AccountManager.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AllPackageClasses.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_IsBridgeStatic_" data-uid="Android.Accounts.AccountManager.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_IsBridgeStatic" data-uid="Android.Accounts.AccountManager.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AllPackageClasses.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_ACCOUNTS_" data-uid="Android.Accounts.AccountManager.KEY_ACCOUNTS*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_ACCOUNTS" data-uid="Android.Accounts.AccountManager.KEY_ACCOUNTS">
+  KEY_ACCOUNTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ACCOUNTS">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ACCOUNTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_ACCOUNTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_ACCOUNT_AUTHENTICATOR_RESPONSE_" data-uid="Android.Accounts.AccountManager.KEY_ACCOUNT_AUTHENTICATOR_RESPONSE*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_ACCOUNT_AUTHENTICATOR_RESPONSE" data-uid="Android.Accounts.AccountManager.KEY_ACCOUNT_AUTHENTICATOR_RESPONSE">
+  KEY_ACCOUNT_AUTHENTICATOR_RESPONSE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ACCOUNT_AUTHENTICATOR_RESPONSE">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ACCOUNT_AUTHENTICATOR_RESPONSE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_ACCOUNT_AUTHENTICATOR_RESPONSE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_ACCOUNT_MANAGER_RESPONSE_" data-uid="Android.Accounts.AccountManager.KEY_ACCOUNT_MANAGER_RESPONSE*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_ACCOUNT_MANAGER_RESPONSE" data-uid="Android.Accounts.AccountManager.KEY_ACCOUNT_MANAGER_RESPONSE">
+  KEY_ACCOUNT_MANAGER_RESPONSE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ACCOUNT_MANAGER_RESPONSE">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ACCOUNT_MANAGER_RESPONSE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_ACCOUNT_MANAGER_RESPONSE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_ACCOUNT_NAME_" data-uid="Android.Accounts.AccountManager.KEY_ACCOUNT_NAME*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_ACCOUNT_NAME" data-uid="Android.Accounts.AccountManager.KEY_ACCOUNT_NAME">
+  KEY_ACCOUNT_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ACCOUNT_NAME">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ACCOUNT_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_ACCOUNT_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_ACCOUNT_SESSION_BUNDLE_" data-uid="Android.Accounts.AccountManager.KEY_ACCOUNT_SESSION_BUNDLE*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_ACCOUNT_SESSION_BUNDLE" data-uid="Android.Accounts.AccountManager.KEY_ACCOUNT_SESSION_BUNDLE">
+  KEY_ACCOUNT_SESSION_BUNDLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ACCOUNT_SESSION_BUNDLE">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ACCOUNT_SESSION_BUNDLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_ACCOUNT_SESSION_BUNDLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_ACCOUNT_STATUS_TOKEN_" data-uid="Android.Accounts.AccountManager.KEY_ACCOUNT_STATUS_TOKEN*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_ACCOUNT_STATUS_TOKEN" data-uid="Android.Accounts.AccountManager.KEY_ACCOUNT_STATUS_TOKEN">
+  KEY_ACCOUNT_STATUS_TOKEN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ACCOUNT_STATUS_TOKEN">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ACCOUNT_STATUS_TOKEN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_ACCOUNT_STATUS_TOKEN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_ACCOUNT_TYPE_" data-uid="Android.Accounts.AccountManager.KEY_ACCOUNT_TYPE*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_ACCOUNT_TYPE" data-uid="Android.Accounts.AccountManager.KEY_ACCOUNT_TYPE">
+  KEY_ACCOUNT_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ACCOUNT_TYPE">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ACCOUNT_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_ACCOUNT_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_ANDROID_PACKAGE_NAME_" data-uid="Android.Accounts.AccountManager.KEY_ANDROID_PACKAGE_NAME*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_ANDROID_PACKAGE_NAME" data-uid="Android.Accounts.AccountManager.KEY_ANDROID_PACKAGE_NAME">
+  KEY_ANDROID_PACKAGE_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ANDROID_PACKAGE_NAME">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ANDROID_PACKAGE_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_ANDROID_PACKAGE_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_AUTHENTICATOR_TYPES_" data-uid="Android.Accounts.AccountManager.KEY_AUTHENTICATOR_TYPES*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_AUTHENTICATOR_TYPES" data-uid="Android.Accounts.AccountManager.KEY_AUTHENTICATOR_TYPES">
+  KEY_AUTHENTICATOR_TYPES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_AUTHENTICATOR_TYPES">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_AUTHENTICATOR_TYPES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_AUTHENTICATOR_TYPES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_AUTHTOKEN_" data-uid="Android.Accounts.AccountManager.KEY_AUTHTOKEN*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_AUTHTOKEN" data-uid="Android.Accounts.AccountManager.KEY_AUTHTOKEN">
+  KEY_AUTHTOKEN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_AUTHTOKEN">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_AUTHTOKEN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_AUTHTOKEN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_AUTH_FAILED_MESSAGE_" data-uid="Android.Accounts.AccountManager.KEY_AUTH_FAILED_MESSAGE*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_AUTH_FAILED_MESSAGE" data-uid="Android.Accounts.AccountManager.KEY_AUTH_FAILED_MESSAGE">
+  KEY_AUTH_FAILED_MESSAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_AUTH_FAILED_MESSAGE">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_AUTH_FAILED_MESSAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_AUTH_FAILED_MESSAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_AUTH_TOKEN_LABEL_" data-uid="Android.Accounts.AccountManager.KEY_AUTH_TOKEN_LABEL*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_AUTH_TOKEN_LABEL" data-uid="Android.Accounts.AccountManager.KEY_AUTH_TOKEN_LABEL">
+  KEY_AUTH_TOKEN_LABEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_AUTH_TOKEN_LABEL">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_AUTH_TOKEN_LABEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_AUTH_TOKEN_LABEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_BOOLEAN_RESULT_" data-uid="Android.Accounts.AccountManager.KEY_BOOLEAN_RESULT*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_BOOLEAN_RESULT" data-uid="Android.Accounts.AccountManager.KEY_BOOLEAN_RESULT">
+  KEY_BOOLEAN_RESULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_BOOLEAN_RESULT">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_BOOLEAN_RESULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_BOOLEAN_RESULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_CALLER_PID_" data-uid="Android.Accounts.AccountManager.KEY_CALLER_PID*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_CALLER_PID" data-uid="Android.Accounts.AccountManager.KEY_CALLER_PID">
+  KEY_CALLER_PID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_CALLER_PID">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_CALLER_PID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_CALLER_PID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_CALLER_UID_" data-uid="Android.Accounts.AccountManager.KEY_CALLER_UID*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_CALLER_UID" data-uid="Android.Accounts.AccountManager.KEY_CALLER_UID">
+  KEY_CALLER_UID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_CALLER_UID">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_CALLER_UID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_CALLER_UID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_ERROR_CODE_" data-uid="Android.Accounts.AccountManager.KEY_ERROR_CODE*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_ERROR_CODE" data-uid="Android.Accounts.AccountManager.KEY_ERROR_CODE">
+  KEY_ERROR_CODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ERROR_CODE">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ERROR_CODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_ERROR_CODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_ERROR_MESSAGE_" data-uid="Android.Accounts.AccountManager.KEY_ERROR_MESSAGE*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_ERROR_MESSAGE" data-uid="Android.Accounts.AccountManager.KEY_ERROR_MESSAGE">
+  KEY_ERROR_MESSAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ERROR_MESSAGE">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_ERROR_MESSAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_ERROR_MESSAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_INTENT_" data-uid="Android.Accounts.AccountManager.KEY_INTENT*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_INTENT" data-uid="Android.Accounts.AccountManager.KEY_INTENT">
+  KEY_INTENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_INTENT">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_INTENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_INTENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_LAST_AUTHENTICATED_TIME_" data-uid="Android.Accounts.AccountManager.KEY_LAST_AUTHENTICATED_TIME*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_LAST_AUTHENTICATED_TIME" data-uid="Android.Accounts.AccountManager.KEY_LAST_AUTHENTICATED_TIME">
+  KEY_LAST_AUTHENTICATED_TIME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_LAST_AUTHENTICATED_TIME">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_LAST_AUTHENTICATED_TIME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_LAST_AUTHENTICATED_TIME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_PASSWORD_" data-uid="Android.Accounts.AccountManager.KEY_PASSWORD*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_PASSWORD" data-uid="Android.Accounts.AccountManager.KEY_PASSWORD">
+  KEY_PASSWORD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_PASSWORD">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_PASSWORD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_PASSWORD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_KEY_USERDATA_" data-uid="Android.Accounts.AccountManager.KEY_USERDATA*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_KEY_USERDATA" data-uid="Android.Accounts.AccountManager.KEY_USERDATA">
+  KEY_USERDATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_USERDATA">https://developer.android.com/reference/android/accounts/AccountManager.html#KEY_USERDATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_USERDATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_LOGIN_ACCOUNTS_CHANGED_ACTION_" data-uid="Android.Accounts.AccountManager.LOGIN_ACCOUNTS_CHANGED_ACTION*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_LOGIN_ACCOUNTS_CHANGED_ACTION" data-uid="Android.Accounts.AccountManager.LOGIN_ACCOUNTS_CHANGED_ACTION">
+  LOGIN_ACCOUNTS_CHANGED_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#LOGIN_ACCOUNTS_CHANGED_ACTION">https://developer.android.com/reference/android/accounts/AccountManager.html#LOGIN_ACCOUNTS_CHANGED_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String LOGIN_ACCOUNTS_CHANGED_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLE_" data-uid="Android.Accounts.AccountManager.PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLE*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLE" data-uid="Android.Accounts.AccountManager.PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLE">
+  PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLE">https://developer.android.com/reference/android/accounts/AccountManager.html#PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_PACKAGE_NAME_KEY_LEGACY_VISIBLE_" data-uid="Android.Accounts.AccountManager.PACKAGE_NAME_KEY_LEGACY_VISIBLE*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_PACKAGE_NAME_KEY_LEGACY_VISIBLE" data-uid="Android.Accounts.AccountManager.PACKAGE_NAME_KEY_LEGACY_VISIBLE">
+  PACKAGE_NAME_KEY_LEGACY_VISIBLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#PACKAGE_NAME_KEY_LEGACY_VISIBLE">https://developer.android.com/reference/android/accounts/AccountManager.html#PACKAGE_NAME_KEY_LEGACY_VISIBLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PACKAGE_NAME_KEY_LEGACY_VISIBLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_VISIBILITY_NOT_VISIBLE_" data-uid="Android.Accounts.AccountManager.VISIBILITY_NOT_VISIBLE*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_VISIBILITY_NOT_VISIBLE" data-uid="Android.Accounts.AccountManager.VISIBILITY_NOT_VISIBLE">
+  VISIBILITY_NOT_VISIBLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#VISIBILITY_NOT_VISIBLE">https://developer.android.com/reference/android/accounts/AccountManager.html#VISIBILITY_NOT_VISIBLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VISIBILITY_NOT_VISIBLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_VISIBILITY_UNDEFINED_" data-uid="Android.Accounts.AccountManager.VISIBILITY_UNDEFINED*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_VISIBILITY_UNDEFINED" data-uid="Android.Accounts.AccountManager.VISIBILITY_UNDEFINED">
+  VISIBILITY_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#VISIBILITY_UNDEFINED">https://developer.android.com/reference/android/accounts/AccountManager.html#VISIBILITY_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VISIBILITY_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_VISIBILITY_USER_MANAGED_NOT_VISIBLE_" data-uid="Android.Accounts.AccountManager.VISIBILITY_USER_MANAGED_NOT_VISIBLE*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_VISIBILITY_USER_MANAGED_NOT_VISIBLE" data-uid="Android.Accounts.AccountManager.VISIBILITY_USER_MANAGED_NOT_VISIBLE">
+  VISIBILITY_USER_MANAGED_NOT_VISIBLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#VISIBILITY_USER_MANAGED_NOT_VISIBLE">https://developer.android.com/reference/android/accounts/AccountManager.html#VISIBILITY_USER_MANAGED_NOT_VISIBLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VISIBILITY_USER_MANAGED_NOT_VISIBLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_VISIBILITY_USER_MANAGED_VISIBLE_" data-uid="Android.Accounts.AccountManager.VISIBILITY_USER_MANAGED_VISIBLE*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_VISIBILITY_USER_MANAGED_VISIBLE" data-uid="Android.Accounts.AccountManager.VISIBILITY_USER_MANAGED_VISIBLE">
+  VISIBILITY_USER_MANAGED_VISIBLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#VISIBILITY_USER_MANAGED_VISIBLE">https://developer.android.com/reference/android/accounts/AccountManager.html#VISIBILITY_USER_MANAGED_VISIBLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VISIBILITY_USER_MANAGED_VISIBLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_VISIBILITY_VISIBLE_" data-uid="Android.Accounts.AccountManager.VISIBILITY_VISIBLE*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_VISIBILITY_VISIBLE" data-uid="Android.Accounts.AccountManager.VISIBILITY_VISIBLE">
+  VISIBILITY_VISIBLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#VISIBILITY_VISIBLE">https://developer.android.com/reference/android/accounts/AccountManager.html#VISIBILITY_VISIBLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VISIBILITY_VISIBLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Accounts_AccountManager_AddAccount_" data-uid="Android.Accounts.AccountManager.AddAccount*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_AddAccount_Java_Lang_String_Java_Lang_String_Java_Lang_String___Android_Os_Bundle_Android_App_Activity_Android_Accounts_AccountManagerCallback_Android_Os_Bundle__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.AddAccount(Java.Lang.String,Java.Lang.String,Java.Lang.String[],Android.Os.Bundle,Android.App.Activity,Android.Accounts.AccountManagerCallback{Android.Os.Bundle},Android.Os.Handler)">
+  AddAccount(String, String, String[], Bundle, Activity, AccountManagerCallback&lt;Bundle&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#addAccount(java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#addAccount(java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Bundle&gt; AddAccount(String arg0, String arg1, String[] arg2, Bundle arg3, Activity arg4, AccountManagerCallback&lt;Bundle&gt; arg5, Handler arg6)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_AddAccountExplicitly_" data-uid="Android.Accounts.AccountManager.AddAccountExplicitly*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_AddAccountExplicitly_Android_Accounts_Account_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Accounts.AccountManager.AddAccountExplicitly(Android.Accounts.Account,Java.Lang.String,Android.Os.Bundle)">
+  AddAccountExplicitly(Account, String, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L615"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#addAccountExplicitly(android.accounts.Account,java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/accounts/AccountManager.html#addAccountExplicitly(android.accounts.Account,java.lang.String,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddAccountExplicitly(Account arg0, String arg1, Bundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_AddAccountExplicitly_" data-uid="Android.Accounts.AccountManager.AddAccountExplicitly*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_AddAccountExplicitly_Android_Accounts_Account_Java_Lang_String_Android_Os_Bundle_Java_Util_Map_Java_Lang_String_Java_Lang_Integer__" data-uid="Android.Accounts.AccountManager.AddAccountExplicitly(Android.Accounts.Account,Java.Lang.String,Android.Os.Bundle,Java.Util.Map{Java.Lang.String,Java.Lang.Integer})">
+  AddAccountExplicitly(Account, String, Bundle, Map&lt;String, Integer&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L604"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#addAccountExplicitly(android.accounts.Account,java.lang.String,android.os.Bundle,java.util.Map)">https://developer.android.com/reference/android/accounts/AccountManager.html#addAccountExplicitly(android.accounts.Account,java.lang.String,android.os.Bundle,java.util.Map)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddAccountExplicitly(Account arg0, String arg1, Bundle arg2, Map&lt;String, Integer&gt; arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>, <a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_AddOnAccountsUpdatedListener_" data-uid="Android.Accounts.AccountManager.AddOnAccountsUpdatedListener*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_AddOnAccountsUpdatedListener_Android_Accounts_OnAccountsUpdateListener_Android_Os_Handler_System_Boolean_" data-uid="Android.Accounts.AccountManager.AddOnAccountsUpdatedListener(Android.Accounts.OnAccountsUpdateListener,Android.Os.Handler,System.Boolean)">
+  AddOnAccountsUpdatedListener(OnAccountsUpdateListener, Handler, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L746"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener,android.os.Handler,boolean)">https://developer.android.com/reference/android/accounts/AccountManager.html#addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener,android.os.Handler,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOnAccountsUpdatedListener(OnAccountsUpdateListener arg0, Handler arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.OnAccountsUpdateListener.html">OnAccountsUpdateListener</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.OnAccountsUpdateListener.html">OnAccountsUpdateListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_AddOnAccountsUpdatedListener_" data-uid="Android.Accounts.AccountManager.AddOnAccountsUpdatedListener*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_AddOnAccountsUpdatedListener_Android_Accounts_OnAccountsUpdateListener_Android_Os_Handler_System_Boolean_Java_Lang_String___" data-uid="Android.Accounts.AccountManager.AddOnAccountsUpdatedListener(Android.Accounts.OnAccountsUpdateListener,Android.Os.Handler,System.Boolean,Java.Lang.String[])">
+  AddOnAccountsUpdatedListener(OnAccountsUpdateListener, Handler, bool, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L736"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener,android.os.Handler,boolean,java.lang.String[])">https://developer.android.com/reference/android/accounts/AccountManager.html#addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener,android.os.Handler,boolean,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOnAccountsUpdatedListener(OnAccountsUpdateListener arg0, Handler arg1, bool arg2, String[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.OnAccountsUpdateListener.html">OnAccountsUpdateListener</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.OnAccountsUpdateListener.html">OnAccountsUpdateListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_BlockingGetAuthToken_" data-uid="Android.Accounts.AccountManager.BlockingGetAuthToken*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_BlockingGetAuthToken_Android_Accounts_Account_Java_Lang_String_System_Boolean_" data-uid="Android.Accounts.AccountManager.BlockingGetAuthToken(Android.Accounts.Account,Java.Lang.String,System.Boolean)">
+  BlockingGetAuthToken(Account, String, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L668"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#blockingGetAuthToken(android.accounts.Account,java.lang.String,boolean)">https://developer.android.com/reference/android/accounts/AccountManager.html#blockingGetAuthToken(android.accounts.Account,java.lang.String,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String BlockingGetAuthToken(Account arg0, String arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AuthenticatorException.html">AuthenticatorException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Android.Accounts.OperationCanceledException.html">OperationCanceledException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Accounts_AccountManager_ClearPassword_" data-uid="Android.Accounts.AccountManager.ClearPassword*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_ClearPassword_Android_Accounts_Account_" data-uid="Android.Accounts.AccountManager.ClearPassword(Android.Accounts.Account)">
+  ClearPassword(Account)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L754"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#clearPassword(android.accounts.Account)">https://developer.android.com/reference/android/accounts/AccountManager.html#clearPassword(android.accounts.Account)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearPassword(Account arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_ConfirmCredentials_" data-uid="Android.Accounts.AccountManager.ConfirmCredentials*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_ConfirmCredentials_Android_Accounts_Account_Android_Os_Bundle_Android_App_Activity_Android_Accounts_AccountManagerCallback_Android_Os_Bundle__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.ConfirmCredentials(Android.Accounts.Account,Android.Os.Bundle,Android.App.Activity,Android.Accounts.AccountManagerCallback{Android.Os.Bundle},Android.Os.Handler)">
+  ConfirmCredentials(Account, Bundle, Activity, AccountManagerCallback&lt;Bundle&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#confirmCredentials(android.accounts.Account,android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#confirmCredentials(android.accounts.Account,android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Bundle&gt; ConfirmCredentials(Account arg0, Bundle arg1, Activity arg2, AccountManagerCallback&lt;Bundle&gt; arg3, Handler arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_EditProperties_" data-uid="Android.Accounts.AccountManager.EditProperties*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_EditProperties_Java_Lang_String_Android_App_Activity_Android_Accounts_AccountManagerCallback_Android_Os_Bundle__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.EditProperties(Java.Lang.String,Android.App.Activity,Android.Accounts.AccountManagerCallback{Android.Os.Bundle},Android.Os.Handler)">
+  EditProperties(String, Activity, AccountManagerCallback&lt;Bundle&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#editProperties(java.lang.String,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#editProperties(java.lang.String,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Bundle&gt; EditProperties(String arg0, Activity arg1, AccountManagerCallback&lt;Bundle&gt; arg2, Handler arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_FinishSession_" data-uid="Android.Accounts.AccountManager.FinishSession*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_FinishSession_Android_Os_Bundle_Android_App_Activity_Android_Accounts_AccountManagerCallback_Android_Os_Bundle__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.FinishSession(Android.Os.Bundle,Android.App.Activity,Android.Accounts.AccountManagerCallback{Android.Os.Bundle},Android.Os.Handler)">
+  FinishSession(Bundle, Activity, AccountManagerCallback&lt;Bundle&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L435"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#finishSession(android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#finishSession(android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Bundle&gt; FinishSession(Bundle arg0, Activity arg1, AccountManagerCallback&lt;Bundle&gt; arg2, Handler arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_Get_" data-uid="Android.Accounts.AccountManager.Get*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_Get_Android_Content_Context_" data-uid="Android.Accounts.AccountManager.Get(Android.Content.Context)">
+  Get(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#get(android.content.Context)">https://developer.android.com/reference/android/accounts/AccountManager.html#get(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AccountManager Get(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManager.html">AccountManager</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManager.html">AccountManager</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetAccountVisibility_" data-uid="Android.Accounts.AccountManager.GetAccountVisibility*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetAccountVisibility_Android_Accounts_Account_Java_Lang_String_" data-uid="Android.Accounts.AccountManager.GetAccountVisibility(Android.Accounts.Account,Java.Lang.String)">
+  GetAccountVisibility(Account, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L654"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAccountVisibility(android.accounts.Account,java.lang.String)">https://developer.android.com/reference/android/accounts/AccountManager.html#getAccountVisibility(android.accounts.Account,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAccountVisibility(Account arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetAccounts_" data-uid="Android.Accounts.AccountManager.GetAccounts*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetAccounts" data-uid="Android.Accounts.AccountManager.GetAccounts">
+  GetAccounts()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAccounts()">https://developer.android.com/reference/android/accounts/AccountManager.html#getAccounts()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Account[] GetAccounts()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.Account.html">Account</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetAccountsAndVisibilityForPackage_" data-uid="Android.Accounts.AccountManager.GetAccountsAndVisibilityForPackage*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetAccountsAndVisibilityForPackage_Java_Lang_String_Java_Lang_String_" data-uid="Android.Accounts.AccountManager.GetAccountsAndVisibilityForPackage(Java.Lang.String,Java.Lang.String)">
+  GetAccountsAndVisibilityForPackage(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L716"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAccountsAndVisibilityForPackage(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/accounts/AccountManager.html#getAccountsAndVisibilityForPackage(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map&lt;Account, Integer&gt; GetAccountsAndVisibilityForPackage(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="Android.Accounts.Account.html">Account</a>, <a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetAccountsByType_" data-uid="Android.Accounts.AccountManager.GetAccountsByType*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetAccountsByType_Java_Lang_String_" data-uid="Android.Accounts.AccountManager.GetAccountsByType(Java.Lang.String)">
+  GetAccountsByType(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAccountsByType(java.lang.String)">https://developer.android.com/reference/android/accounts/AccountManager.html#getAccountsByType(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Account[] GetAccountsByType(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.Account.html">Account</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetAccountsByTypeAndFeatures_" data-uid="Android.Accounts.AccountManager.GetAccountsByTypeAndFeatures*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetAccountsByTypeAndFeatures_Java_Lang_String_Java_Lang_String___Android_Accounts_AccountManagerCallback_Android_Accounts_Account____Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.GetAccountsByTypeAndFeatures(Java.Lang.String,Java.Lang.String[],Android.Accounts.AccountManagerCallback{Android.Accounts.Account[]},Android.Os.Handler)">
+  GetAccountsByTypeAndFeatures(String, String[], AccountManagerCallback&lt;Account[]&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAccountsByTypeAndFeatures(java.lang.String,java.lang.String[],android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#getAccountsByTypeAndFeatures(java.lang.String,java.lang.String[],android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Account[]&gt; GetAccountsByTypeAndFeatures(String arg0, String[] arg1, AccountManagerCallback&lt;Account[]&gt; arg2, Handler arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Android.Accounts.Account.html">Account</a>[]&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Android.Accounts.Account.html">Account</a>[]&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetAccountsByTypeForPackage_" data-uid="Android.Accounts.AccountManager.GetAccountsByTypeForPackage*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetAccountsByTypeForPackage_Java_Lang_String_Java_Lang_String_" data-uid="Android.Accounts.AccountManager.GetAccountsByTypeForPackage(Java.Lang.String,Java.Lang.String)">
+  GetAccountsByTypeForPackage(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L359"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAccountsByTypeForPackage(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/accounts/AccountManager.html#getAccountsByTypeForPackage(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Account[] GetAccountsByTypeForPackage(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.Account.html">Account</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetAuthToken_" data-uid="Android.Accounts.AccountManager.GetAuthToken*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetAuthToken_Android_Accounts_Account_Java_Lang_String_Android_Os_Bundle_Android_App_Activity_Android_Accounts_AccountManagerCallback_Android_Os_Bundle__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.GetAuthToken(Android.Accounts.Account,Java.Lang.String,Android.Os.Bundle,Android.App.Activity,Android.Accounts.AccountManagerCallback{Android.Os.Bundle},Android.Os.Handler)">
+  GetAuthToken(Account, String, Bundle, Activity, AccountManagerCallback&lt;Bundle&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthToken(android.accounts.Account,java.lang.String,android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthToken(android.accounts.Account,java.lang.String,android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Bundle&gt; GetAuthToken(Account arg0, String arg1, Bundle arg2, Activity arg3, AccountManagerCallback&lt;Bundle&gt; arg4, Handler arg5)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetAuthToken_" data-uid="Android.Accounts.AccountManager.GetAuthToken*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetAuthToken_Android_Accounts_Account_Java_Lang_String_Android_Os_Bundle_System_Boolean_Android_Accounts_AccountManagerCallback_Android_Os_Bundle__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.GetAuthToken(Android.Accounts.Account,Java.Lang.String,Android.Os.Bundle,System.Boolean,Android.Accounts.AccountManagerCallback{Android.Os.Bundle},Android.Os.Handler)">
+  GetAuthToken(Account, String, Bundle, bool, AccountManagerCallback&lt;Bundle&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthToken(android.accounts.Account,java.lang.String,android.os.Bundle,boolean,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthToken(android.accounts.Account,java.lang.String,android.os.Bundle,boolean,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Bundle&gt; GetAuthToken(Account arg0, String arg1, Bundle arg2, bool arg3, AccountManagerCallback&lt;Bundle&gt; arg4, Handler arg5)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetAuthToken_" data-uid="Android.Accounts.AccountManager.GetAuthToken*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetAuthToken_Android_Accounts_Account_Java_Lang_String_System_Boolean_Android_Accounts_AccountManagerCallback_Android_Os_Bundle__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.GetAuthToken(Android.Accounts.Account,Java.Lang.String,System.Boolean,Android.Accounts.AccountManagerCallback{Android.Os.Bundle},Android.Os.Handler)">
+  GetAuthToken(Account, String, bool, AccountManagerCallback&lt;Bundle&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthToken(android.accounts.Account,java.lang.String,boolean,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthToken(android.accounts.Account,java.lang.String,boolean,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public AccountManagerFuture&lt;Bundle&gt; GetAuthToken(Account arg0, String arg1, bool arg2, AccountManagerCallback&lt;Bundle&gt; arg3, Handler arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetAuthTokenByFeatures_" data-uid="Android.Accounts.AccountManager.GetAuthTokenByFeatures*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetAuthTokenByFeatures_Java_Lang_String_Java_Lang_String_Java_Lang_String___Android_App_Activity_Android_Os_Bundle_Android_Os_Bundle_Android_Accounts_AccountManagerCallback_Android_Os_Bundle__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.GetAuthTokenByFeatures(Java.Lang.String,Java.Lang.String,Java.Lang.String[],Android.App.Activity,Android.Os.Bundle,Android.Os.Bundle,Android.Accounts.AccountManagerCallback{Android.Os.Bundle},Android.Os.Handler)">
+  GetAuthTokenByFeatures(String, String, String[], Activity, Bundle, Bundle, AccountManagerCallback&lt;Bundle&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthTokenByFeatures(java.lang.String,java.lang.String,java.lang.String[],android.app.Activity,android.os.Bundle,android.os.Bundle,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthTokenByFeatures(java.lang.String,java.lang.String,java.lang.String[],android.app.Activity,android.os.Bundle,android.os.Bundle,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Bundle&gt; GetAuthTokenByFeatures(String arg0, String arg1, String[] arg2, Activity arg3, Bundle arg4, Bundle arg5, AccountManagerCallback&lt;Bundle&gt; arg6, Handler arg7)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg7</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetAuthenticatorTypes_" data-uid="Android.Accounts.AccountManager.GetAuthenticatorTypes*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetAuthenticatorTypes" data-uid="Android.Accounts.AccountManager.GetAuthenticatorTypes">
+  GetAuthenticatorTypes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthenticatorTypes()">https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthenticatorTypes()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AuthenticatorDescription[] GetAuthenticatorTypes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AuthenticatorDescription.html">AuthenticatorDescription</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AuthenticatorDescription.html">AuthenticatorDescription</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetPackagesAndVisibilityForAccount_" data-uid="Android.Accounts.AccountManager.GetPackagesAndVisibilityForAccount*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetPackagesAndVisibilityForAccount_Android_Accounts_Account_" data-uid="Android.Accounts.AccountManager.GetPackagesAndVisibilityForAccount(Android.Accounts.Account)">
+  GetPackagesAndVisibilityForAccount(Account)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L725"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getPackagesAndVisibilityForAccount(android.accounts.Account)">https://developer.android.com/reference/android/accounts/AccountManager.html#getPackagesAndVisibilityForAccount(android.accounts.Account)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map&lt;String, Integer&gt; GetPackagesAndVisibilityForAccount(Account arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>, <a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetPassword_" data-uid="Android.Accounts.AccountManager.GetPassword*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetPassword_Android_Accounts_Account_" data-uid="Android.Accounts.AccountManager.GetPassword(Android.Accounts.Account)">
+  GetPassword(Account)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L677"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getPassword(android.accounts.Account)">https://developer.android.com/reference/android/accounts/AccountManager.html#getPassword(android.accounts.Account)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetPassword(Account arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetPreviousName_" data-uid="Android.Accounts.AccountManager.GetPreviousName*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetPreviousName_Android_Accounts_Account_" data-uid="Android.Accounts.AccountManager.GetPreviousName(Android.Accounts.Account)">
+  GetPreviousName(Account)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getPreviousName(android.accounts.Account)">https://developer.android.com/reference/android/accounts/AccountManager.html#getPreviousName(android.accounts.Account)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetPreviousName(Account arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_GetUserData_" data-uid="Android.Accounts.AccountManager.GetUserData*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_GetUserData_Android_Accounts_Account_Java_Lang_String_" data-uid="Android.Accounts.AccountManager.GetUserData(Android.Accounts.Account,Java.Lang.String)">
+  GetUserData(Account, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L696"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getUserData(android.accounts.Account,java.lang.String)">https://developer.android.com/reference/android/accounts/AccountManager.html#getUserData(android.accounts.Account,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetUserData(Account arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_HasFeatures_" data-uid="Android.Accounts.AccountManager.HasFeatures*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_HasFeatures_Android_Accounts_Account_Java_Lang_String___Android_Accounts_AccountManagerCallback_Java_Lang_Boolean__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.HasFeatures(Android.Accounts.Account,Java.Lang.String[],Android.Accounts.AccountManagerCallback{Java.Lang.Boolean},Android.Os.Handler)">
+  HasFeatures(Account, String[], AccountManagerCallback&lt;Boolean&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#hasFeatures(android.accounts.Account,java.lang.String[],android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#hasFeatures(android.accounts.Account,java.lang.String[],android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Boolean&gt; HasFeatures(Account arg0, String[] arg1, AccountManagerCallback&lt;Boolean&gt; arg2, Handler arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Java.Lang.Boolean.html">Boolean</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Java.Lang.Boolean.html">Boolean</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_InvalidateAuthToken_" data-uid="Android.Accounts.AccountManager.InvalidateAuthToken*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_InvalidateAuthToken_Java_Lang_String_Java_Lang_String_" data-uid="Android.Accounts.AccountManager.InvalidateAuthToken(Java.Lang.String,Java.Lang.String)">
+  InvalidateAuthToken(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L763"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#invalidateAuthToken(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/accounts/AccountManager.html#invalidateAuthToken(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvalidateAuthToken(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_IsCredentialsUpdateSuggested_" data-uid="Android.Accounts.AccountManager.IsCredentialsUpdateSuggested*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_IsCredentialsUpdateSuggested_Android_Accounts_Account_Java_Lang_String_Android_Accounts_AccountManagerCallback_Java_Lang_Boolean__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.IsCredentialsUpdateSuggested(Android.Accounts.Account,Java.Lang.String,Android.Accounts.AccountManagerCallback{Java.Lang.Boolean},Android.Os.Handler)">
+  IsCredentialsUpdateSuggested(Account, String, AccountManagerCallback&lt;Boolean&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L572"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#isCredentialsUpdateSuggested(android.accounts.Account,java.lang.String,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#isCredentialsUpdateSuggested(android.accounts.Account,java.lang.String,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Boolean&gt; IsCredentialsUpdateSuggested(Account arg0, String arg1, AccountManagerCallback&lt;Boolean&gt; arg2, Handler arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Java.Lang.Boolean.html">Boolean</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Java.Lang.Boolean.html">Boolean</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_NewChooseAccountIntent_" data-uid="Android.Accounts.AccountManager.NewChooseAccountIntent*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_NewChooseAccountIntent_Android_Accounts_Account_Java_Util_ArrayList_Android_Accounts_Account__Java_Lang_String___System_Boolean_Java_Lang_String_Java_Lang_String_Java_Lang_String___Android_Os_Bundle_" data-uid="Android.Accounts.AccountManager.NewChooseAccountIntent(Android.Accounts.Account,Java.Util.ArrayList{Android.Accounts.Account},Java.Lang.String[],System.Boolean,Java.Lang.String,Java.Lang.String,Java.Lang.String[],Android.Os.Bundle)">
+  NewChooseAccountIntent(Account, ArrayList&lt;Account&gt;, String[], bool, String, String, String[], Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#newChooseAccountIntent(android.accounts.Account,java.util.ArrayList,java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle)">https://developer.android.com/reference/android/accounts/AccountManager.html#newChooseAccountIntent(android.accounts.Account,java.util.ArrayList,java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static Intent NewChooseAccountIntent(Account arg0, ArrayList&lt;Account&gt; arg1, String[] arg2, bool arg3, String arg4, String arg5, String[] arg6, Bundle arg7)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.ArrayList-1.html">ArrayList</a>&lt;<a class="xref" href="Android.Accounts.Account.html">Account</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.ArrayList.html">ArrayList</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg7</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_NewChooseAccountIntent_" data-uid="Android.Accounts.AccountManager.NewChooseAccountIntent*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_NewChooseAccountIntent_Android_Accounts_Account_Java_Util_List_Android_Accounts_Account__Java_Lang_String___Java_Lang_String_Java_Lang_String_Java_Lang_String___Android_Os_Bundle_" data-uid="Android.Accounts.AccountManager.NewChooseAccountIntent(Android.Accounts.Account,Java.Util.List{Android.Accounts.Account},Java.Lang.String[],Java.Lang.String,Java.Lang.String,Java.Lang.String[],Android.Os.Bundle)">
+  NewChooseAccountIntent(Account, List&lt;Account&gt;, String[], String, String, String[], Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#newChooseAccountIntent(android.accounts.Account,java.util.List,java.lang.String[],java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle)">https://developer.android.com/reference/android/accounts/AccountManager.html#newChooseAccountIntent(android.accounts.Account,java.util.List,java.lang.String[],java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Intent NewChooseAccountIntent(Account arg0, List&lt;Account&gt; arg1, String[] arg2, String arg3, String arg4, String[] arg5, Bundle arg6)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Accounts.Account.html">Account</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_NotifyAccountAuthenticated_" data-uid="Android.Accounts.AccountManager.NotifyAccountAuthenticated*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_NotifyAccountAuthenticated_Android_Accounts_Account_" data-uid="Android.Accounts.AccountManager.NotifyAccountAuthenticated(Android.Accounts.Account)">
+  NotifyAccountAuthenticated(Account)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L624"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#notifyAccountAuthenticated(android.accounts.Account)">https://developer.android.com/reference/android/accounts/AccountManager.html#notifyAccountAuthenticated(android.accounts.Account)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NotifyAccountAuthenticated(Account arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_PeekAuthToken_" data-uid="Android.Accounts.AccountManager.PeekAuthToken*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_PeekAuthToken_Android_Accounts_Account_Java_Lang_String_" data-uid="Android.Accounts.AccountManager.PeekAuthToken(Android.Accounts.Account,Java.Lang.String)">
+  PeekAuthToken(Account, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L706"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#peekAuthToken(android.accounts.Account,java.lang.String)">https://developer.android.com/reference/android/accounts/AccountManager.html#peekAuthToken(android.accounts.Account,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String PeekAuthToken(Account arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_RemoveAccount_" data-uid="Android.Accounts.AccountManager.RemoveAccount*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_RemoveAccount_Android_Accounts_Account_Android_Accounts_AccountManagerCallback_Java_Lang_Boolean__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.RemoveAccount(Android.Accounts.Account,Android.Accounts.AccountManagerCallback{Java.Lang.Boolean},Android.Os.Handler)">
+  RemoveAccount(Account, AccountManagerCallback&lt;Boolean&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#removeAccount(android.accounts.Account,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#removeAccount(android.accounts.Account,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public AccountManagerFuture&lt;Boolean&gt; RemoveAccount(Account arg0, AccountManagerCallback&lt;Boolean&gt; arg1, Handler arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Java.Lang.Boolean.html">Boolean</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Java.Lang.Boolean.html">Boolean</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_RemoveAccount_" data-uid="Android.Accounts.AccountManager.RemoveAccount*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_RemoveAccount_Android_Accounts_Account_Android_App_Activity_Android_Accounts_AccountManagerCallback_Android_Os_Bundle__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.RemoveAccount(Android.Accounts.Account,Android.App.Activity,Android.Accounts.AccountManagerCallback{Android.Os.Bundle},Android.Os.Handler)">
+  RemoveAccount(Account, Activity, AccountManagerCallback&lt;Bundle&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#removeAccount(android.accounts.Account,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#removeAccount(android.accounts.Account,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Bundle&gt; RemoveAccount(Account arg0, Activity arg1, AccountManagerCallback&lt;Bundle&gt; arg2, Handler arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_RemoveAccountExplicitly_" data-uid="Android.Accounts.AccountManager.RemoveAccountExplicitly*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_RemoveAccountExplicitly_Android_Accounts_Account_" data-uid="Android.Accounts.AccountManager.RemoveAccountExplicitly(Android.Accounts.Account)">
+  RemoveAccountExplicitly(Account)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L633"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#removeAccountExplicitly(android.accounts.Account)">https://developer.android.com/reference/android/accounts/AccountManager.html#removeAccountExplicitly(android.accounts.Account)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveAccountExplicitly(Account arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_RemoveOnAccountsUpdatedListener_" data-uid="Android.Accounts.AccountManager.RemoveOnAccountsUpdatedListener*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_RemoveOnAccountsUpdatedListener_Android_Accounts_OnAccountsUpdateListener_" data-uid="Android.Accounts.AccountManager.RemoveOnAccountsUpdatedListener(Android.Accounts.OnAccountsUpdateListener)">
+  RemoveOnAccountsUpdatedListener(OnAccountsUpdateListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L771"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#removeOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener)">https://developer.android.com/reference/android/accounts/AccountManager.html#removeOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveOnAccountsUpdatedListener(OnAccountsUpdateListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.OnAccountsUpdateListener.html">OnAccountsUpdateListener</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.OnAccountsUpdateListener.html">OnAccountsUpdateListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_RenameAccount_" data-uid="Android.Accounts.AccountManager.RenameAccount*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_RenameAccount_Android_Accounts_Account_Java_Lang_String_Android_Accounts_AccountManagerCallback_Android_Accounts_Account__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.RenameAccount(Android.Accounts.Account,Java.Lang.String,Android.Accounts.AccountManagerCallback{Android.Accounts.Account},Android.Os.Handler)">
+  RenameAccount(Account, String, AccountManagerCallback&lt;Account&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#renameAccount(android.accounts.Account,java.lang.String,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#renameAccount(android.accounts.Account,java.lang.String,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Account&gt; RenameAccount(Account arg0, String arg1, AccountManagerCallback&lt;Account&gt; arg2, Handler arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Android.Accounts.Account.html">Account</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Android.Accounts.Account.html">Account</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_SetAccountVisibility_" data-uid="Android.Accounts.AccountManager.SetAccountVisibility*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_SetAccountVisibility_Android_Accounts_Account_Java_Lang_String_System_Int32_" data-uid="Android.Accounts.AccountManager.SetAccountVisibility(Android.Accounts.Account,Java.Lang.String,System.Int32)">
+  SetAccountVisibility(Account, String, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L644"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#setAccountVisibility(android.accounts.Account,java.lang.String,int)">https://developer.android.com/reference/android/accounts/AccountManager.html#setAccountVisibility(android.accounts.Account,java.lang.String,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetAccountVisibility(Account arg0, String arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_SetAuthToken_" data-uid="Android.Accounts.AccountManager.SetAuthToken*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_SetAuthToken_Android_Accounts_Account_Java_Lang_String_Java_Lang_String_" data-uid="Android.Accounts.AccountManager.SetAuthToken(Android.Accounts.Account,Java.Lang.String,Java.Lang.String)">
+  SetAuthToken(Account, String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L781"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#setAuthToken(android.accounts.Account,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/accounts/AccountManager.html#setAuthToken(android.accounts.Account,java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAuthToken(Account arg0, String arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_SetPassword_" data-uid="Android.Accounts.AccountManager.SetPassword*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_SetPassword_Android_Accounts_Account_Java_Lang_String_" data-uid="Android.Accounts.AccountManager.SetPassword(Android.Accounts.Account,Java.Lang.String)">
+  SetPassword(Account, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L790"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#setPassword(android.accounts.Account,java.lang.String)">https://developer.android.com/reference/android/accounts/AccountManager.html#setPassword(android.accounts.Account,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPassword(Account arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_SetUserData_" data-uid="Android.Accounts.AccountManager.SetUserData*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_SetUserData_Android_Accounts_Account_Java_Lang_String_Java_Lang_String_" data-uid="Android.Accounts.AccountManager.SetUserData(Android.Accounts.Account,Java.Lang.String,Java.Lang.String)">
+  SetUserData(Account, String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L800"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#setUserData(android.accounts.Account,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/accounts/AccountManager.html#setUserData(android.accounts.Account,java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUserData(Account arg0, String arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_StartAddAccountSession_" data-uid="Android.Accounts.AccountManager.StartAddAccountSession*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_StartAddAccountSession_Java_Lang_String_Java_Lang_String_Java_Lang_String___Android_Os_Bundle_Android_App_Activity_Android_Accounts_AccountManagerCallback_Android_Os_Bundle__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.StartAddAccountSession(Java.Lang.String,Java.Lang.String,Java.Lang.String[],Android.Os.Bundle,Android.App.Activity,Android.Accounts.AccountManagerCallback{Android.Os.Bundle},Android.Os.Handler)">
+  StartAddAccountSession(String, String, String[], Bundle, Activity, AccountManagerCallback&lt;Bundle&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#startAddAccountSession(java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#startAddAccountSession(java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Bundle&gt; StartAddAccountSession(String arg0, String arg1, String[] arg2, Bundle arg3, Activity arg4, AccountManagerCallback&lt;Bundle&gt; arg5, Handler arg6)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_StartUpdateCredentialsSession_" data-uid="Android.Accounts.AccountManager.StartUpdateCredentialsSession*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_StartUpdateCredentialsSession_Android_Accounts_Account_Java_Lang_String_Android_Os_Bundle_Android_App_Activity_Android_Accounts_AccountManagerCallback_Android_Os_Bundle__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.StartUpdateCredentialsSession(Android.Accounts.Account,Java.Lang.String,Android.Os.Bundle,Android.App.Activity,Android.Accounts.AccountManagerCallback{Android.Os.Bundle},Android.Os.Handler)">
+  StartUpdateCredentialsSession(Account, String, Bundle, Activity, AccountManagerCallback&lt;Bundle&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L534"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#startUpdateCredentialsSession(android.accounts.Account,java.lang.String,android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#startUpdateCredentialsSession(android.accounts.Account,java.lang.String,android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Bundle&gt; StartUpdateCredentialsSession(Account arg0, String arg1, Bundle arg2, Activity arg3, AccountManagerCallback&lt;Bundle&gt; arg4, Handler arg5)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Accounts_AccountManager_UpdateCredentials_" data-uid="Android.Accounts.AccountManager.UpdateCredentials*"></a>
+
+  <h3 id="Android_Accounts_AccountManager_UpdateCredentials_Android_Accounts_Account_Java_Lang_String_Android_Os_Bundle_Android_App_Activity_Android_Accounts_AccountManagerCallback_Android_Os_Bundle__Android_Os_Handler_" data-uid="Android.Accounts.AccountManager.UpdateCredentials(Android.Accounts.Account,Java.Lang.String,Android.Os.Bundle,Android.App.Activity,Android.Accounts.AccountManagerCallback{Android.Os.Bundle},Android.Os.Handler)">
+  UpdateCredentials(Account, String, Bundle, Activity, AccountManagerCallback&lt;Bundle&gt;, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AccountManager.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/accounts/AccountManager.html#updateCredentials(android.accounts.Account,java.lang.String,android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)">https://developer.android.com/reference/android/accounts/AccountManager.html#updateCredentials(android.accounts.Account,java.lang.String,android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountManagerFuture&lt;Bundle&gt; UpdateCredentials(Account arg0, String arg1, Bundle arg2, Activity arg3, AccountManagerCallback&lt;Bundle&gt; arg4, Handler arg5)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Accounts.Account.html">Account</a></dt>
+    <dd><p><a class="xref" href="Android.Accounts.Account.html">Account</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Accounts.AccountManagerCallback-1.html">AccountManagerCallback</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerCallback.html">AccountManagerCallback</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Accounts.AccountManagerFuture-1.html">AccountManagerFuture</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Accounts.AccountManagerFuture.html">AccountManagerFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Accounts/AllPackageClasses.cs/#L212" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2920 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class DatabaseUtils | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DatabaseUtils | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/database/DatabaseUtils.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Database_DatabaseUtils.md&amp;value=---%0Auid%3A%20Android.Database.DatabaseUtils%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Database.DatabaseUtils">
+
+
+
+  <h1 id="Android_Database_DatabaseUtils" data-uid="Android.Database.DatabaseUtils" class="text-break">
+Class DatabaseUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Database.html">Database</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html">https://developer.android.com/reference/android/database/DatabaseUtils.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DatabaseUtils : JVMBridgeBase&lt;DatabaseUtils&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Database.DatabaseUtils.html">DatabaseUtils</a>&gt;</div>
+      <div><span class="xref">DatabaseUtils</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DatabaseUtils&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DatabaseUtils&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;DatabaseUtils&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DatabaseUtils&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DatabaseUtils&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DatabaseUtils&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DatabaseUtils&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Database_DatabaseUtils__ctor_" data-uid="Android.Database.DatabaseUtils.#ctor*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils__ctor" data-uid="Android.Database.DatabaseUtils.#ctor">
+  DatabaseUtils()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/AllPackageClasses.cs/#L657"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DatabaseUtils()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils__ctor_" data-uid="Android.Database.DatabaseUtils.#ctor*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils__ctor_System_Object___" data-uid="Android.Database.DatabaseUtils.#ctor(System.Object[])">
+  DatabaseUtils(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/AllPackageClasses.cs/#L661"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DatabaseUtils(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Database_DatabaseUtils_BridgeClassName_" data-uid="Android.Database.DatabaseUtils.BridgeClassName*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_BridgeClassName" data-uid="Android.Database.DatabaseUtils.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/AllPackageClasses.cs/#L668"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_IsBridgeAbstract_" data-uid="Android.Database.DatabaseUtils.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_IsBridgeAbstract" data-uid="Android.Database.DatabaseUtils.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/AllPackageClasses.cs/#L672"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_IsBridgeCloseable_" data-uid="Android.Database.DatabaseUtils.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_IsBridgeCloseable" data-uid="Android.Database.DatabaseUtils.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/AllPackageClasses.cs/#L676"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_IsBridgeInterface_" data-uid="Android.Database.DatabaseUtils.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_IsBridgeInterface" data-uid="Android.Database.DatabaseUtils.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/AllPackageClasses.cs/#L680"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_IsBridgeStatic_" data-uid="Android.Database.DatabaseUtils.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_IsBridgeStatic" data-uid="Android.Database.DatabaseUtils.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/AllPackageClasses.cs/#L684"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_STATEMENT_ABORT_" data-uid="Android.Database.DatabaseUtils.STATEMENT_ABORT*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_STATEMENT_ABORT" data-uid="Android.Database.DatabaseUtils.STATEMENT_ABORT">
+  STATEMENT_ABORT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_ABORT">https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_ABORT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATEMENT_ABORT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_STATEMENT_ATTACH_" data-uid="Android.Database.DatabaseUtils.STATEMENT_ATTACH*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_STATEMENT_ATTACH" data-uid="Android.Database.DatabaseUtils.STATEMENT_ATTACH">
+  STATEMENT_ATTACH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_ATTACH">https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_ATTACH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATEMENT_ATTACH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_STATEMENT_BEGIN_" data-uid="Android.Database.DatabaseUtils.STATEMENT_BEGIN*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_STATEMENT_BEGIN" data-uid="Android.Database.DatabaseUtils.STATEMENT_BEGIN">
+  STATEMENT_BEGIN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_BEGIN">https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_BEGIN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATEMENT_BEGIN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_STATEMENT_COMMIT_" data-uid="Android.Database.DatabaseUtils.STATEMENT_COMMIT*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_STATEMENT_COMMIT" data-uid="Android.Database.DatabaseUtils.STATEMENT_COMMIT">
+  STATEMENT_COMMIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_COMMIT">https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_COMMIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATEMENT_COMMIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_STATEMENT_DDL_" data-uid="Android.Database.DatabaseUtils.STATEMENT_DDL*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_STATEMENT_DDL" data-uid="Android.Database.DatabaseUtils.STATEMENT_DDL">
+  STATEMENT_DDL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_DDL">https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_DDL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATEMENT_DDL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_STATEMENT_OTHER_" data-uid="Android.Database.DatabaseUtils.STATEMENT_OTHER*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_STATEMENT_OTHER" data-uid="Android.Database.DatabaseUtils.STATEMENT_OTHER">
+  STATEMENT_OTHER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_OTHER">https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_OTHER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATEMENT_OTHER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_STATEMENT_PRAGMA_" data-uid="Android.Database.DatabaseUtils.STATEMENT_PRAGMA*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_STATEMENT_PRAGMA" data-uid="Android.Database.DatabaseUtils.STATEMENT_PRAGMA">
+  STATEMENT_PRAGMA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_PRAGMA">https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_PRAGMA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATEMENT_PRAGMA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_STATEMENT_SELECT_" data-uid="Android.Database.DatabaseUtils.STATEMENT_SELECT*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_STATEMENT_SELECT" data-uid="Android.Database.DatabaseUtils.STATEMENT_SELECT">
+  STATEMENT_SELECT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_SELECT">https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_SELECT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATEMENT_SELECT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_STATEMENT_UNPREPARED_" data-uid="Android.Database.DatabaseUtils.STATEMENT_UNPREPARED*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_STATEMENT_UNPREPARED" data-uid="Android.Database.DatabaseUtils.STATEMENT_UNPREPARED">
+  STATEMENT_UNPREPARED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_UNPREPARED">https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_UNPREPARED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATEMENT_UNPREPARED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_STATEMENT_UPDATE_" data-uid="Android.Database.DatabaseUtils.STATEMENT_UPDATE*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_STATEMENT_UPDATE" data-uid="Android.Database.DatabaseUtils.STATEMENT_UPDATE">
+  STATEMENT_UPDATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_UPDATE">https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_UPDATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATEMENT_UPDATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Database_DatabaseUtils_AppendEscapedSQLString_" data-uid="Android.Database.DatabaseUtils.AppendEscapedSQLString*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_AppendEscapedSQLString_Java_Lang_StringBuilder_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.AppendEscapedSQLString(Java.Lang.StringBuilder,Java.Lang.String)">
+  AppendEscapedSQLString(StringBuilder, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#appendEscapedSQLString(java.lang.StringBuilder,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#appendEscapedSQLString(java.lang.StringBuilder,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AppendEscapedSQLString(StringBuilder arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.StringBuilder.html">StringBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuilder.html">StringBuilder</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_AppendSelectionArgs_" data-uid="Android.Database.DatabaseUtils.AppendSelectionArgs*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_AppendSelectionArgs_Java_Lang_String___Java_Lang_String___" data-uid="Android.Database.DatabaseUtils.AppendSelectionArgs(Java.Lang.String[],Java.Lang.String[])">
+  AppendSelectionArgs(String[], String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#appendSelectionArgs(java.lang.String[],java.lang.String[])">https://developer.android.com/reference/android/database/DatabaseUtils.html#appendSelectionArgs(java.lang.String[],java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String[] AppendSelectionArgs(String[] arg0, String[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_AppendValueToSql_" data-uid="Android.Database.DatabaseUtils.AppendValueToSql*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_AppendValueToSql_Java_Lang_StringBuilder_System_Object_" data-uid="Android.Database.DatabaseUtils.AppendValueToSql(Java.Lang.StringBuilder,System.Object)">
+  AppendValueToSql(StringBuilder, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#appendValueToSql(java.lang.StringBuilder,java.lang.Object)">https://developer.android.com/reference/android/database/DatabaseUtils.html#appendValueToSql(java.lang.StringBuilder,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AppendValueToSql(StringBuilder arg0, object arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.StringBuilder.html">StringBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuilder.html">StringBuilder</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_BindObjectToProgram_" data-uid="Android.Database.DatabaseUtils.BindObjectToProgram*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_BindObjectToProgram_Android_Database_Sqlite_SQLiteProgram_System_Int32_System_Object_" data-uid="Android.Database.DatabaseUtils.BindObjectToProgram(Android.Database.Sqlite.SQLiteProgram,System.Int32,System.Object)">
+  BindObjectToProgram(SQLiteProgram, int, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#bindObjectToProgram(android.database.sqlite.SQLiteProgram,int,java.lang.Object)">https://developer.android.com/reference/android/database/DatabaseUtils.html#bindObjectToProgram(android.database.sqlite.SQLiteProgram,int,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BindObjectToProgram(SQLiteProgram arg0, int arg1, object arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Sqlite.SQLiteProgram.html">SQLiteProgram</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Sqlite.SQLiteProgram.html">SQLiteProgram</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_BlobFileDescriptorForQuery_" data-uid="Android.Database.DatabaseUtils.BlobFileDescriptorForQuery*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_BlobFileDescriptorForQuery_Android_Database_Sqlite_SQLiteDatabase_Java_Lang_String_Java_Lang_String___" data-uid="Android.Database.DatabaseUtils.BlobFileDescriptorForQuery(Android.Database.Sqlite.SQLiteDatabase,Java.Lang.String,Java.Lang.String[])">
+  BlobFileDescriptorForQuery(SQLiteDatabase, String, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#blobFileDescriptorForQuery(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String[])">https://developer.android.com/reference/android/database/DatabaseUtils.html#blobFileDescriptorForQuery(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ParcelFileDescriptor BlobFileDescriptorForQuery(SQLiteDatabase arg0, String arg1, String[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Sqlite.SQLiteDatabase.html">SQLiteDatabase</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Sqlite.SQLiteDatabase.html">SQLiteDatabase</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_BlobFileDescriptorForQuery_" data-uid="Android.Database.DatabaseUtils.BlobFileDescriptorForQuery*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_BlobFileDescriptorForQuery_Android_Database_Sqlite_SQLiteStatement_Java_Lang_String___" data-uid="Android.Database.DatabaseUtils.BlobFileDescriptorForQuery(Android.Database.Sqlite.SQLiteStatement,Java.Lang.String[])">
+  BlobFileDescriptorForQuery(SQLiteStatement, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#blobFileDescriptorForQuery(android.database.sqlite.SQLiteStatement,java.lang.String[])">https://developer.android.com/reference/android/database/DatabaseUtils.html#blobFileDescriptorForQuery(android.database.sqlite.SQLiteStatement,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ParcelFileDescriptor BlobFileDescriptorForQuery(SQLiteStatement arg0, String[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Sqlite.SQLiteStatement.html">SQLiteStatement</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Sqlite.SQLiteStatement.html">SQLiteStatement</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_ConcatenateWhere_" data-uid="Android.Database.DatabaseUtils.ConcatenateWhere*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_ConcatenateWhere_Java_Lang_String_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.ConcatenateWhere(Java.Lang.String,Java.Lang.String)">
+  ConcatenateWhere(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#concatenateWhere(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#concatenateWhere(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ConcatenateWhere(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CreateDbFromSqlStatements_" data-uid="Android.Database.DatabaseUtils.CreateDbFromSqlStatements*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CreateDbFromSqlStatements_Android_Content_Context_Java_Lang_String_System_Int32_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.CreateDbFromSqlStatements(Android.Content.Context,Java.Lang.String,System.Int32,Java.Lang.String)">
+  CreateDbFromSqlStatements(Context, String, int, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#createDbFromSqlStatements(android.content.Context,java.lang.String,int,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#createDbFromSqlStatements(android.content.Context,java.lang.String,int,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateDbFromSqlStatements(Context arg0, String arg1, int arg2, String arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorDoubleToContentValues_" data-uid="Android.Database.DatabaseUtils.CursorDoubleToContentValues*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorDoubleToContentValues_Android_Database_Cursor_Java_Lang_String_Android_Content_ContentValues_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.CursorDoubleToContentValues(Android.Database.Cursor,Java.Lang.String,Android.Content.ContentValues,Java.Lang.String)">
+  CursorDoubleToContentValues(Cursor, String, ContentValues, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorDoubleToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorDoubleToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorDoubleToContentValues(Cursor arg0, String arg1, ContentValues arg2, String arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorDoubleToContentValuesIfPresent_" data-uid="Android.Database.DatabaseUtils.CursorDoubleToContentValuesIfPresent*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorDoubleToContentValuesIfPresent_Android_Database_Cursor_Android_Content_ContentValues_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.CursorDoubleToContentValuesIfPresent(Android.Database.Cursor,Android.Content.ContentValues,Java.Lang.String)">
+  CursorDoubleToContentValuesIfPresent(Cursor, ContentValues, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorDoubleToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorDoubleToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorDoubleToContentValuesIfPresent(Cursor arg0, ContentValues arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorDoubleToCursorValues_" data-uid="Android.Database.DatabaseUtils.CursorDoubleToCursorValues*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorDoubleToCursorValues_Android_Database_Cursor_Java_Lang_String_Android_Content_ContentValues_" data-uid="Android.Database.DatabaseUtils.CursorDoubleToCursorValues(Android.Database.Cursor,Java.Lang.String,Android.Content.ContentValues)">
+  CursorDoubleToCursorValues(Cursor, String, ContentValues)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorDoubleToCursorValues(android.database.Cursor,java.lang.String,android.content.ContentValues)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorDoubleToCursorValues(android.database.Cursor,java.lang.String,android.content.ContentValues)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorDoubleToCursorValues(Cursor arg0, String arg1, ContentValues arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorFloatToContentValuesIfPresent_" data-uid="Android.Database.DatabaseUtils.CursorFloatToContentValuesIfPresent*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorFloatToContentValuesIfPresent_Android_Database_Cursor_Android_Content_ContentValues_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.CursorFloatToContentValuesIfPresent(Android.Database.Cursor,Android.Content.ContentValues,Java.Lang.String)">
+  CursorFloatToContentValuesIfPresent(Cursor, ContentValues, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorFloatToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorFloatToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorFloatToContentValuesIfPresent(Cursor arg0, ContentValues arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorIntToContentValues_" data-uid="Android.Database.DatabaseUtils.CursorIntToContentValues*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorIntToContentValues_Android_Database_Cursor_Java_Lang_String_Android_Content_ContentValues_" data-uid="Android.Database.DatabaseUtils.CursorIntToContentValues(Android.Database.Cursor,Java.Lang.String,Android.Content.ContentValues)">
+  CursorIntToContentValues(Cursor, String, ContentValues)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorIntToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorIntToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorIntToContentValues(Cursor arg0, String arg1, ContentValues arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorIntToContentValues_" data-uid="Android.Database.DatabaseUtils.CursorIntToContentValues*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorIntToContentValues_Android_Database_Cursor_Java_Lang_String_Android_Content_ContentValues_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.CursorIntToContentValues(Android.Database.Cursor,Java.Lang.String,Android.Content.ContentValues,Java.Lang.String)">
+  CursorIntToContentValues(Cursor, String, ContentValues, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorIntToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorIntToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorIntToContentValues(Cursor arg0, String arg1, ContentValues arg2, String arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorIntToContentValuesIfPresent_" data-uid="Android.Database.DatabaseUtils.CursorIntToContentValuesIfPresent*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorIntToContentValuesIfPresent_Android_Database_Cursor_Android_Content_ContentValues_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.CursorIntToContentValuesIfPresent(Android.Database.Cursor,Android.Content.ContentValues,Java.Lang.String)">
+  CursorIntToContentValuesIfPresent(Cursor, ContentValues, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorIntToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorIntToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorIntToContentValuesIfPresent(Cursor arg0, ContentValues arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorLongToContentValues_" data-uid="Android.Database.DatabaseUtils.CursorLongToContentValues*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorLongToContentValues_Android_Database_Cursor_Java_Lang_String_Android_Content_ContentValues_" data-uid="Android.Database.DatabaseUtils.CursorLongToContentValues(Android.Database.Cursor,Java.Lang.String,Android.Content.ContentValues)">
+  CursorLongToContentValues(Cursor, String, ContentValues)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorLongToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorLongToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorLongToContentValues(Cursor arg0, String arg1, ContentValues arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorLongToContentValues_" data-uid="Android.Database.DatabaseUtils.CursorLongToContentValues*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorLongToContentValues_Android_Database_Cursor_Java_Lang_String_Android_Content_ContentValues_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.CursorLongToContentValues(Android.Database.Cursor,Java.Lang.String,Android.Content.ContentValues,Java.Lang.String)">
+  CursorLongToContentValues(Cursor, String, ContentValues, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorLongToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorLongToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorLongToContentValues(Cursor arg0, String arg1, ContentValues arg2, String arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorLongToContentValuesIfPresent_" data-uid="Android.Database.DatabaseUtils.CursorLongToContentValuesIfPresent*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorLongToContentValuesIfPresent_Android_Database_Cursor_Android_Content_ContentValues_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.CursorLongToContentValuesIfPresent(Android.Database.Cursor,Android.Content.ContentValues,Java.Lang.String)">
+  CursorLongToContentValuesIfPresent(Cursor, ContentValues, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorLongToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorLongToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorLongToContentValuesIfPresent(Cursor arg0, ContentValues arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorRowToContentValues_" data-uid="Android.Database.DatabaseUtils.CursorRowToContentValues*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorRowToContentValues_Android_Database_Cursor_Android_Content_ContentValues_" data-uid="Android.Database.DatabaseUtils.CursorRowToContentValues(Android.Database.Cursor,Android.Content.ContentValues)">
+  CursorRowToContentValues(Cursor, ContentValues)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L438"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorRowToContentValues(android.database.Cursor,android.content.ContentValues)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorRowToContentValues(android.database.Cursor,android.content.ContentValues)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorRowToContentValues(Cursor arg0, ContentValues arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorShortToContentValuesIfPresent_" data-uid="Android.Database.DatabaseUtils.CursorShortToContentValuesIfPresent*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorShortToContentValuesIfPresent_Android_Database_Cursor_Android_Content_ContentValues_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.CursorShortToContentValuesIfPresent(Android.Database.Cursor,Android.Content.ContentValues,Java.Lang.String)">
+  CursorShortToContentValuesIfPresent(Cursor, ContentValues, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorShortToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorShortToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorShortToContentValuesIfPresent(Cursor arg0, ContentValues arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorStringToContentValues_" data-uid="Android.Database.DatabaseUtils.CursorStringToContentValues*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorStringToContentValues_Android_Database_Cursor_Java_Lang_String_Android_Content_ContentValues_" data-uid="Android.Database.DatabaseUtils.CursorStringToContentValues(Android.Database.Cursor,Java.Lang.String,Android.Content.ContentValues)">
+  CursorStringToContentValues(Cursor, String, ContentValues)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorStringToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorStringToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorStringToContentValues(Cursor arg0, String arg1, ContentValues arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorStringToContentValues_" data-uid="Android.Database.DatabaseUtils.CursorStringToContentValues*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorStringToContentValues_Android_Database_Cursor_Java_Lang_String_Android_Content_ContentValues_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.CursorStringToContentValues(Android.Database.Cursor,Java.Lang.String,Android.Content.ContentValues,Java.Lang.String)">
+  CursorStringToContentValues(Cursor, String, ContentValues, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorStringToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorStringToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorStringToContentValues(Cursor arg0, String arg1, ContentValues arg2, String arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorStringToContentValuesIfPresent_" data-uid="Android.Database.DatabaseUtils.CursorStringToContentValuesIfPresent*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorStringToContentValuesIfPresent_Android_Database_Cursor_Android_Content_ContentValues_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.CursorStringToContentValuesIfPresent(Android.Database.Cursor,Android.Content.ContentValues,Java.Lang.String)">
+  CursorStringToContentValuesIfPresent(Cursor, ContentValues, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L479"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorStringToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorStringToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorStringToContentValuesIfPresent(Cursor arg0, ContentValues arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_CursorStringToInsertHelper_" data-uid="Android.Database.DatabaseUtils.CursorStringToInsertHelper*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_CursorStringToInsertHelper_Android_Database_Cursor_Java_Lang_String_Android_Database_DatabaseUtils_InsertHelper_System_Int32_" data-uid="Android.Database.DatabaseUtils.CursorStringToInsertHelper(Android.Database.Cursor,Java.Lang.String,Android.Database.DatabaseUtils.InsertHelper,System.Int32)">
+  CursorStringToInsertHelper(Cursor, String, InsertHelper, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorStringToInsertHelper(android.database.Cursor,java.lang.String,android.database.DatabaseUtils.InsertHelper,int)">https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorStringToInsertHelper(android.database.Cursor,java.lang.String,android.database.DatabaseUtils.InsertHelper,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CursorStringToInsertHelper(Cursor arg0, String arg1, DatabaseUtils.InsertHelper arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Database.DatabaseUtils.html">DatabaseUtils</a>.<a class="xref" href="Android.Database.DatabaseUtils.InsertHelper.html">InsertHelper</a></dt>
+    <dd><p><a class="xref" href="Android.Database.DatabaseUtils.InsertHelper.html">DatabaseUtils.InsertHelper</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_DumpCurrentRow_" data-uid="Android.Database.DatabaseUtils.DumpCurrentRow*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_DumpCurrentRow_Android_Database_Cursor_" data-uid="Android.Database.DatabaseUtils.DumpCurrentRow(Android.Database.Cursor)">
+  DumpCurrentRow(Cursor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L516"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCurrentRow(android.database.Cursor)">https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCurrentRow(android.database.Cursor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DumpCurrentRow(Cursor arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_DumpCurrentRow_" data-uid="Android.Database.DatabaseUtils.DumpCurrentRow*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_DumpCurrentRow_Android_Database_Cursor_Java_Io_PrintStream_" data-uid="Android.Database.DatabaseUtils.DumpCurrentRow(Android.Database.Cursor,Java.Io.PrintStream)">
+  DumpCurrentRow(Cursor, PrintStream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L499"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCurrentRow(android.database.Cursor,java.io.PrintStream)">https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCurrentRow(android.database.Cursor,java.io.PrintStream)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DumpCurrentRow(Cursor arg0, PrintStream arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.PrintStream.html">PrintStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.PrintStream.html">PrintStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_DumpCurrentRow_" data-uid="Android.Database.DatabaseUtils.DumpCurrentRow*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_DumpCurrentRow_Android_Database_Cursor_Java_Lang_StringBuilder_" data-uid="Android.Database.DatabaseUtils.DumpCurrentRow(Android.Database.Cursor,Java.Lang.StringBuilder)">
+  DumpCurrentRow(Cursor, StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCurrentRow(android.database.Cursor,java.lang.StringBuilder)">https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCurrentRow(android.database.Cursor,java.lang.StringBuilder)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DumpCurrentRow(Cursor arg0, StringBuilder arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.StringBuilder.html">StringBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuilder.html">StringBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_DumpCurrentRowToString_" data-uid="Android.Database.DatabaseUtils.DumpCurrentRowToString*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_DumpCurrentRowToString_Android_Database_Cursor_" data-uid="Android.Database.DatabaseUtils.DumpCurrentRowToString(Android.Database.Cursor)">
+  DumpCurrentRowToString(Cursor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCurrentRowToString(android.database.Cursor)">https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCurrentRowToString(android.database.Cursor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DumpCurrentRowToString(Cursor arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_DumpCursor_" data-uid="Android.Database.DatabaseUtils.DumpCursor*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_DumpCursor_Android_Database_Cursor_" data-uid="Android.Database.DatabaseUtils.DumpCursor(Android.Database.Cursor)">
+  DumpCursor(Cursor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L542"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCursor(android.database.Cursor)">https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCursor(android.database.Cursor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DumpCursor(Cursor arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_DumpCursor_" data-uid="Android.Database.DatabaseUtils.DumpCursor*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_DumpCursor_Android_Database_Cursor_Java_Io_PrintStream_" data-uid="Android.Database.DatabaseUtils.DumpCursor(Android.Database.Cursor,Java.Io.PrintStream)">
+  DumpCursor(Cursor, PrintStream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCursor(android.database.Cursor,java.io.PrintStream)">https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCursor(android.database.Cursor,java.io.PrintStream)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DumpCursor(Cursor arg0, PrintStream arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.PrintStream.html">PrintStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.PrintStream.html">PrintStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_DumpCursor_" data-uid="Android.Database.DatabaseUtils.DumpCursor*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_DumpCursor_Android_Database_Cursor_Java_Lang_StringBuilder_" data-uid="Android.Database.DatabaseUtils.DumpCursor(Android.Database.Cursor,Java.Lang.StringBuilder)">
+  DumpCursor(Cursor, StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L534"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCursor(android.database.Cursor,java.lang.StringBuilder)">https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCursor(android.database.Cursor,java.lang.StringBuilder)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DumpCursor(Cursor arg0, StringBuilder arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.StringBuilder.html">StringBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuilder.html">StringBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_DumpCursorToString_" data-uid="Android.Database.DatabaseUtils.DumpCursorToString*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_DumpCursorToString_Android_Database_Cursor_" data-uid="Android.Database.DatabaseUtils.DumpCursorToString(Android.Database.Cursor)">
+  DumpCursorToString(Cursor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCursorToString(android.database.Cursor)">https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCursorToString(android.database.Cursor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DumpCursorToString(Cursor arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_GetCollationKey_" data-uid="Android.Database.DatabaseUtils.GetCollationKey*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_GetCollationKey_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.GetCollationKey(Java.Lang.String)">
+  GetCollationKey(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#getCollationKey(java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#getCollationKey(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GetCollationKey(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_GetHexCollationKey_" data-uid="Android.Database.DatabaseUtils.GetHexCollationKey*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_GetHexCollationKey_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.GetHexCollationKey(Java.Lang.String)">
+  GetHexCollationKey(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#getHexCollationKey(java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#getHexCollationKey(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GetHexCollationKey(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_GetSqlStatementType_" data-uid="Android.Database.DatabaseUtils.GetSqlStatementType*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_GetSqlStatementType_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.GetSqlStatementType(Java.Lang.String)">
+  GetSqlStatementType(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#getSqlStatementType(java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#getSqlStatementType(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetSqlStatementType(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_LongForQuery_" data-uid="Android.Database.DatabaseUtils.LongForQuery*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_LongForQuery_Android_Database_Sqlite_SQLiteDatabase_Java_Lang_String_Java_Lang_String___" data-uid="Android.Database.DatabaseUtils.LongForQuery(Android.Database.Sqlite.SQLiteDatabase,Java.Lang.String,Java.Lang.String[])">
+  LongForQuery(SQLiteDatabase, String, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#longForQuery(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String[])">https://developer.android.com/reference/android/database/DatabaseUtils.html#longForQuery(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long LongForQuery(SQLiteDatabase arg0, String arg1, String[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Sqlite.SQLiteDatabase.html">SQLiteDatabase</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Sqlite.SQLiteDatabase.html">SQLiteDatabase</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_LongForQuery_" data-uid="Android.Database.DatabaseUtils.LongForQuery*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_LongForQuery_Android_Database_Sqlite_SQLiteStatement_Java_Lang_String___" data-uid="Android.Database.DatabaseUtils.LongForQuery(Android.Database.Sqlite.SQLiteStatement,Java.Lang.String[])">
+  LongForQuery(SQLiteStatement, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#longForQuery(android.database.sqlite.SQLiteStatement,java.lang.String[])">https://developer.android.com/reference/android/database/DatabaseUtils.html#longForQuery(android.database.sqlite.SQLiteStatement,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long LongForQuery(SQLiteStatement arg0, String[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Sqlite.SQLiteStatement.html">SQLiteStatement</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Sqlite.SQLiteStatement.html">SQLiteStatement</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_QueryNumEntries_" data-uid="Android.Database.DatabaseUtils.QueryNumEntries*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_QueryNumEntries_Android_Database_Sqlite_SQLiteDatabase_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.QueryNumEntries(Android.Database.Sqlite.SQLiteDatabase,Java.Lang.String)">
+  QueryNumEntries(SQLiteDatabase, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#queryNumEntries(android.database.sqlite.SQLiteDatabase,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#queryNumEntries(android.database.sqlite.SQLiteDatabase,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long QueryNumEntries(SQLiteDatabase arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Sqlite.SQLiteDatabase.html">SQLiteDatabase</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Sqlite.SQLiteDatabase.html">SQLiteDatabase</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_QueryNumEntries_" data-uid="Android.Database.DatabaseUtils.QueryNumEntries*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_QueryNumEntries_Android_Database_Sqlite_SQLiteDatabase_Java_Lang_String_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.QueryNumEntries(Android.Database.Sqlite.SQLiteDatabase,Java.Lang.String,Java.Lang.String)">
+  QueryNumEntries(SQLiteDatabase, String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#queryNumEntries(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#queryNumEntries(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long QueryNumEntries(SQLiteDatabase arg0, String arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Sqlite.SQLiteDatabase.html">SQLiteDatabase</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Sqlite.SQLiteDatabase.html">SQLiteDatabase</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_QueryNumEntries_" data-uid="Android.Database.DatabaseUtils.QueryNumEntries*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_QueryNumEntries_Android_Database_Sqlite_SQLiteDatabase_Java_Lang_String_Java_Lang_String_Java_Lang_String___" data-uid="Android.Database.DatabaseUtils.QueryNumEntries(Android.Database.Sqlite.SQLiteDatabase,Java.Lang.String,Java.Lang.String,Java.Lang.String[])">
+  QueryNumEntries(SQLiteDatabase, String, String, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#queryNumEntries(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String,java.lang.String[])">https://developer.android.com/reference/android/database/DatabaseUtils.html#queryNumEntries(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long QueryNumEntries(SQLiteDatabase arg0, String arg1, String arg2, String[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Sqlite.SQLiteDatabase.html">SQLiteDatabase</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Sqlite.SQLiteDatabase.html">SQLiteDatabase</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_ReadExceptionFromParcel_" data-uid="Android.Database.DatabaseUtils.ReadExceptionFromParcel*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_ReadExceptionFromParcel_Android_Os_Parcel_" data-uid="Android.Database.DatabaseUtils.ReadExceptionFromParcel(Android.Os.Parcel)">
+  ReadExceptionFromParcel(Parcel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#readExceptionFromParcel(android.os.Parcel)">https://developer.android.com/reference/android/database/DatabaseUtils.html#readExceptionFromParcel(android.os.Parcel)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReadExceptionFromParcel(Parcel arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_ReadExceptionWithFileNotFoundExceptionFromParcel_" data-uid="Android.Database.DatabaseUtils.ReadExceptionWithFileNotFoundExceptionFromParcel*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_ReadExceptionWithFileNotFoundExceptionFromParcel_Android_Os_Parcel_" data-uid="Android.Database.DatabaseUtils.ReadExceptionWithFileNotFoundExceptionFromParcel(Android.Os.Parcel)">
+  ReadExceptionWithFileNotFoundExceptionFromParcel(Parcel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L551"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#readExceptionWithFileNotFoundExceptionFromParcel(android.os.Parcel)">https://developer.android.com/reference/android/database/DatabaseUtils.html#readExceptionWithFileNotFoundExceptionFromParcel(android.os.Parcel)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReadExceptionWithFileNotFoundExceptionFromParcel(Parcel arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Database_DatabaseUtils_ReadExceptionWithOperationApplicationExceptionFromParcel_" data-uid="Android.Database.DatabaseUtils.ReadExceptionWithOperationApplicationExceptionFromParcel*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_ReadExceptionWithOperationApplicationExceptionFromParcel_Android_Os_Parcel_" data-uid="Android.Database.DatabaseUtils.ReadExceptionWithOperationApplicationExceptionFromParcel(Android.Os.Parcel)">
+  ReadExceptionWithOperationApplicationExceptionFromParcel(Parcel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#readExceptionWithOperationApplicationExceptionFromParcel(android.os.Parcel)">https://developer.android.com/reference/android/database/DatabaseUtils.html#readExceptionWithOperationApplicationExceptionFromParcel(android.os.Parcel)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReadExceptionWithOperationApplicationExceptionFromParcel(Parcel arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.OperationApplicationException.html">OperationApplicationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Database_DatabaseUtils_SqlEscapeString_" data-uid="Android.Database.DatabaseUtils.SqlEscapeString*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_SqlEscapeString_Java_Lang_String_" data-uid="Android.Database.DatabaseUtils.SqlEscapeString(Java.Lang.String)">
+  SqlEscapeString(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#sqlEscapeString(java.lang.String)">https://developer.android.com/reference/android/database/DatabaseUtils.html#sqlEscapeString(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SqlEscapeString(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_StringForQuery_" data-uid="Android.Database.DatabaseUtils.StringForQuery*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_StringForQuery_Android_Database_Sqlite_SQLiteDatabase_Java_Lang_String_Java_Lang_String___" data-uid="Android.Database.DatabaseUtils.StringForQuery(Android.Database.Sqlite.SQLiteDatabase,Java.Lang.String,Java.Lang.String[])">
+  StringForQuery(SQLiteDatabase, String, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#stringForQuery(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String[])">https://developer.android.com/reference/android/database/DatabaseUtils.html#stringForQuery(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String StringForQuery(SQLiteDatabase arg0, String arg1, String[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Sqlite.SQLiteDatabase.html">SQLiteDatabase</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Sqlite.SQLiteDatabase.html">SQLiteDatabase</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_StringForQuery_" data-uid="Android.Database.DatabaseUtils.StringForQuery*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_StringForQuery_Android_Database_Sqlite_SQLiteStatement_Java_Lang_String___" data-uid="Android.Database.DatabaseUtils.StringForQuery(Android.Database.Sqlite.SQLiteStatement,Java.Lang.String[])">
+  StringForQuery(SQLiteStatement, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#stringForQuery(android.database.sqlite.SQLiteStatement,java.lang.String[])">https://developer.android.com/reference/android/database/DatabaseUtils.html#stringForQuery(android.database.sqlite.SQLiteStatement,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String StringForQuery(SQLiteStatement arg0, String[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.Sqlite.SQLiteStatement.html">SQLiteStatement</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Sqlite.SQLiteStatement.html">SQLiteStatement</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_DatabaseUtils_WriteExceptionToParcel_" data-uid="Android.Database.DatabaseUtils.WriteExceptionToParcel*"></a>
+
+  <h3 id="Android_Database_DatabaseUtils_WriteExceptionToParcel_Android_Os_Parcel_MASES_JCOBridge_C2JBridge_JVMBridgeException_" data-uid="Android.Database.DatabaseUtils.WriteExceptionToParcel(Android.Os.Parcel,MASES.JCOBridge.C2JBridge.JVMBridgeException)">
+  WriteExceptionToParcel(Parcel, JVMBridgeException)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/DatabaseUtils.html#writeExceptionToParcel(android.os.Parcel,java.lang.Exception)">https://developer.android.com/reference/android/database/DatabaseUtils.html#writeExceptionToParcel(android.os.Parcel,java.lang.Exception)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteExceptionToParcel(Parcel arg0, JVMBridgeException arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">JVMBridgeException</span></dt>
+    <dd><p><a class="xref" href="Java.Lang.Exception.html">Exception</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/DatabaseUtils.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

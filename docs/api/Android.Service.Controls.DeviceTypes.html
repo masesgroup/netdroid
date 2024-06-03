@@ -1,0 +1,2669 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class DeviceTypes | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DeviceTypes | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/service/controls/DeviceTypes.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Service_Controls_DeviceTypes.md&amp;value=---%0Auid%3A%20Android.Service.Controls.DeviceTypes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Service.Controls.DeviceTypes">
+
+
+
+  <h1 id="Android_Service_Controls_DeviceTypes" data-uid="Android.Service.Controls.DeviceTypes" class="text-break">
+Class DeviceTypes  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Service.html">Service</a>.<a class="xref" href="Android.Service.Controls.html">Controls</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html">https://developer.android.com/reference/android/service/controls/DeviceTypes.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DeviceTypes : JVMBridgeBase&lt;DeviceTypes&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Service.Controls.DeviceTypes.html">DeviceTypes</a>&gt;</div>
+      <div><span class="xref">DeviceTypes</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DeviceTypes&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DeviceTypes&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DeviceTypes&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DeviceTypes&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DeviceTypes&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DeviceTypes&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DeviceTypes&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DeviceTypes&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;DeviceTypes&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DeviceTypes&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DeviceTypes&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DeviceTypes&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DeviceTypes&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Service_Controls_DeviceTypes__ctor_" data-uid="Android.Service.Controls.DeviceTypes.#ctor*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes__ctor" data-uid="Android.Service.Controls.DeviceTypes.#ctor">
+  DeviceTypes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/AllPackageClasses.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeviceTypes()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes__ctor_" data-uid="Android.Service.Controls.DeviceTypes.#ctor*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes__ctor_System_Object___" data-uid="Android.Service.Controls.DeviceTypes.#ctor(System.Object[])">
+  DeviceTypes(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/AllPackageClasses.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeviceTypes(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Service_Controls_DeviceTypes_BridgeClassName_" data-uid="Android.Service.Controls.DeviceTypes.BridgeClassName*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_BridgeClassName" data-uid="Android.Service.Controls.DeviceTypes.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/AllPackageClasses.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_IsBridgeAbstract_" data-uid="Android.Service.Controls.DeviceTypes.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_IsBridgeAbstract" data-uid="Android.Service.Controls.DeviceTypes.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/AllPackageClasses.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_IsBridgeCloseable_" data-uid="Android.Service.Controls.DeviceTypes.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_IsBridgeCloseable" data-uid="Android.Service.Controls.DeviceTypes.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/AllPackageClasses.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_IsBridgeInterface_" data-uid="Android.Service.Controls.DeviceTypes.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_IsBridgeInterface" data-uid="Android.Service.Controls.DeviceTypes.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/AllPackageClasses.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_IsBridgeStatic_" data-uid="Android.Service.Controls.DeviceTypes.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_IsBridgeStatic" data-uid="Android.Service.Controls.DeviceTypes.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/AllPackageClasses.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_AC_HEATER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_AC_HEATER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_AC_HEATER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_AC_HEATER">
+  TYPE_AC_HEATER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_AC_HEATER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_AC_HEATER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_AC_HEATER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_AC_UNIT_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_AC_UNIT*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_AC_UNIT" data-uid="Android.Service.Controls.DeviceTypes.TYPE_AC_UNIT">
+  TYPE_AC_UNIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_AC_UNIT">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_AC_UNIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_AC_UNIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_AIR_FRESHENER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_AIR_FRESHENER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_AIR_FRESHENER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_AIR_FRESHENER">
+  TYPE_AIR_FRESHENER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_AIR_FRESHENER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_AIR_FRESHENER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_AIR_FRESHENER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_AIR_PURIFIER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_AIR_PURIFIER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_AIR_PURIFIER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_AIR_PURIFIER">
+  TYPE_AIR_PURIFIER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_AIR_PURIFIER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_AIR_PURIFIER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_AIR_PURIFIER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_AWNING_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_AWNING*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_AWNING" data-uid="Android.Service.Controls.DeviceTypes.TYPE_AWNING">
+  TYPE_AWNING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_AWNING">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_AWNING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_AWNING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_BLINDS_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_BLINDS*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_BLINDS" data-uid="Android.Service.Controls.DeviceTypes.TYPE_BLINDS">
+  TYPE_BLINDS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_BLINDS">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_BLINDS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_BLINDS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_CAMERA_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_CAMERA*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_CAMERA" data-uid="Android.Service.Controls.DeviceTypes.TYPE_CAMERA">
+  TYPE_CAMERA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_CAMERA">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_CAMERA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_CAMERA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_CLOSET_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_CLOSET*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_CLOSET" data-uid="Android.Service.Controls.DeviceTypes.TYPE_CLOSET">
+  TYPE_CLOSET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_CLOSET">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_CLOSET</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_CLOSET { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_COFFEE_MAKER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_COFFEE_MAKER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_COFFEE_MAKER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_COFFEE_MAKER">
+  TYPE_COFFEE_MAKER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_COFFEE_MAKER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_COFFEE_MAKER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_COFFEE_MAKER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_CURTAIN_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_CURTAIN*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_CURTAIN" data-uid="Android.Service.Controls.DeviceTypes.TYPE_CURTAIN">
+  TYPE_CURTAIN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_CURTAIN">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_CURTAIN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_CURTAIN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_DEHUMIDIFIER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_DEHUMIDIFIER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_DEHUMIDIFIER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_DEHUMIDIFIER">
+  TYPE_DEHUMIDIFIER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_DEHUMIDIFIER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_DEHUMIDIFIER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_DEHUMIDIFIER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_DISHWASHER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_DISHWASHER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_DISHWASHER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_DISHWASHER">
+  TYPE_DISHWASHER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_DISHWASHER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_DISHWASHER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_DISHWASHER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_DISPLAY_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_DISPLAY*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_DISPLAY" data-uid="Android.Service.Controls.DeviceTypes.TYPE_DISPLAY">
+  TYPE_DISPLAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_DISPLAY">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_DISPLAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_DISPLAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_DOOR_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_DOOR*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_DOOR" data-uid="Android.Service.Controls.DeviceTypes.TYPE_DOOR">
+  TYPE_DOOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_DOOR">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_DOOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_DOOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_DOORBELL_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_DOORBELL*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_DOORBELL" data-uid="Android.Service.Controls.DeviceTypes.TYPE_DOORBELL">
+  TYPE_DOORBELL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_DOORBELL">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_DOORBELL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_DOORBELL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_DRAWER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_DRAWER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_DRAWER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_DRAWER">
+  TYPE_DRAWER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_DRAWER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_DRAWER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_DRAWER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_DRYER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_DRYER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_DRYER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_DRYER">
+  TYPE_DRYER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_DRYER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_DRYER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_DRYER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_FAN_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_FAN*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_FAN" data-uid="Android.Service.Controls.DeviceTypes.TYPE_FAN">
+  TYPE_FAN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_FAN">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_FAN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_FAN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_GARAGE_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GARAGE*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_GARAGE" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GARAGE">
+  TYPE_GARAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GARAGE">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GARAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_GARAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_GATE_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GATE*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_GATE" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GATE">
+  TYPE_GATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GATE">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_GATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_GENERIC_ARM_DISARM_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GENERIC_ARM_DISARM*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_GENERIC_ARM_DISARM" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GENERIC_ARM_DISARM">
+  TYPE_GENERIC_ARM_DISARM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GENERIC_ARM_DISARM">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GENERIC_ARM_DISARM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_GENERIC_ARM_DISARM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_GENERIC_LOCK_UNLOCK_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GENERIC_LOCK_UNLOCK*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_GENERIC_LOCK_UNLOCK" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GENERIC_LOCK_UNLOCK">
+  TYPE_GENERIC_LOCK_UNLOCK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GENERIC_LOCK_UNLOCK">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GENERIC_LOCK_UNLOCK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_GENERIC_LOCK_UNLOCK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_GENERIC_ON_OFF_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GENERIC_ON_OFF*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_GENERIC_ON_OFF" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GENERIC_ON_OFF">
+  TYPE_GENERIC_ON_OFF
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GENERIC_ON_OFF">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GENERIC_ON_OFF</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_GENERIC_ON_OFF { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_GENERIC_OPEN_CLOSE_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GENERIC_OPEN_CLOSE*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_GENERIC_OPEN_CLOSE" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GENERIC_OPEN_CLOSE">
+  TYPE_GENERIC_OPEN_CLOSE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GENERIC_OPEN_CLOSE">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GENERIC_OPEN_CLOSE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_GENERIC_OPEN_CLOSE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_GENERIC_START_STOP_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GENERIC_START_STOP*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_GENERIC_START_STOP" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GENERIC_START_STOP">
+  TYPE_GENERIC_START_STOP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GENERIC_START_STOP">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GENERIC_START_STOP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_GENERIC_START_STOP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_GENERIC_TEMP_SETTING_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GENERIC_TEMP_SETTING*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_GENERIC_TEMP_SETTING" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GENERIC_TEMP_SETTING">
+  TYPE_GENERIC_TEMP_SETTING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GENERIC_TEMP_SETTING">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GENERIC_TEMP_SETTING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_GENERIC_TEMP_SETTING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_GENERIC_VIEWSTREAM_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GENERIC_VIEWSTREAM*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_GENERIC_VIEWSTREAM" data-uid="Android.Service.Controls.DeviceTypes.TYPE_GENERIC_VIEWSTREAM">
+  TYPE_GENERIC_VIEWSTREAM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GENERIC_VIEWSTREAM">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_GENERIC_VIEWSTREAM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_GENERIC_VIEWSTREAM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_HEATER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_HEATER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_HEATER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_HEATER">
+  TYPE_HEATER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_HEATER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_HEATER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_HEATER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_HOOD_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_HOOD*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_HOOD" data-uid="Android.Service.Controls.DeviceTypes.TYPE_HOOD">
+  TYPE_HOOD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_HOOD">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_HOOD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_HOOD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_HUMIDIFIER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_HUMIDIFIER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_HUMIDIFIER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_HUMIDIFIER">
+  TYPE_HUMIDIFIER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_HUMIDIFIER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_HUMIDIFIER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_HUMIDIFIER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_KETTLE_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_KETTLE*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_KETTLE" data-uid="Android.Service.Controls.DeviceTypes.TYPE_KETTLE">
+  TYPE_KETTLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_KETTLE">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_KETTLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_KETTLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_LIGHT_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_LIGHT*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_LIGHT" data-uid="Android.Service.Controls.DeviceTypes.TYPE_LIGHT">
+  TYPE_LIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_LIGHT">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_LIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_LIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_LOCK_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_LOCK*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_LOCK" data-uid="Android.Service.Controls.DeviceTypes.TYPE_LOCK">
+  TYPE_LOCK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_LOCK">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_LOCK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_LOCK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_MICROWAVE_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_MICROWAVE*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_MICROWAVE" data-uid="Android.Service.Controls.DeviceTypes.TYPE_MICROWAVE">
+  TYPE_MICROWAVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_MICROWAVE">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_MICROWAVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_MICROWAVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_MOP_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_MOP*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_MOP" data-uid="Android.Service.Controls.DeviceTypes.TYPE_MOP">
+  TYPE_MOP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_MOP">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_MOP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_MOP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_MOWER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_MOWER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_MOWER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_MOWER">
+  TYPE_MOWER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_MOWER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_MOWER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_MOWER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_MULTICOOKER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_MULTICOOKER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_MULTICOOKER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_MULTICOOKER">
+  TYPE_MULTICOOKER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_MULTICOOKER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_MULTICOOKER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_MULTICOOKER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_OUTLET_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_OUTLET*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_OUTLET" data-uid="Android.Service.Controls.DeviceTypes.TYPE_OUTLET">
+  TYPE_OUTLET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_OUTLET">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_OUTLET</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_OUTLET { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_PERGOLA_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_PERGOLA*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_PERGOLA" data-uid="Android.Service.Controls.DeviceTypes.TYPE_PERGOLA">
+  TYPE_PERGOLA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_PERGOLA">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_PERGOLA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_PERGOLA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_RADIATOR_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_RADIATOR*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_RADIATOR" data-uid="Android.Service.Controls.DeviceTypes.TYPE_RADIATOR">
+  TYPE_RADIATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_RADIATOR">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_RADIATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_RADIATOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_REFRIGERATOR_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_REFRIGERATOR*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_REFRIGERATOR" data-uid="Android.Service.Controls.DeviceTypes.TYPE_REFRIGERATOR">
+  TYPE_REFRIGERATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_REFRIGERATOR">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_REFRIGERATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_REFRIGERATOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_REMOTE_CONTROL_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_REMOTE_CONTROL*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_REMOTE_CONTROL" data-uid="Android.Service.Controls.DeviceTypes.TYPE_REMOTE_CONTROL">
+  TYPE_REMOTE_CONTROL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_REMOTE_CONTROL">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_REMOTE_CONTROL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_REMOTE_CONTROL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_ROUTINE_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_ROUTINE*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_ROUTINE" data-uid="Android.Service.Controls.DeviceTypes.TYPE_ROUTINE">
+  TYPE_ROUTINE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_ROUTINE">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_ROUTINE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_ROUTINE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_SECURITY_SYSTEM_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_SECURITY_SYSTEM*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_SECURITY_SYSTEM" data-uid="Android.Service.Controls.DeviceTypes.TYPE_SECURITY_SYSTEM">
+  TYPE_SECURITY_SYSTEM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_SECURITY_SYSTEM">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_SECURITY_SYSTEM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_SECURITY_SYSTEM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_SET_TOP_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_SET_TOP*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_SET_TOP" data-uid="Android.Service.Controls.DeviceTypes.TYPE_SET_TOP">
+  TYPE_SET_TOP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_SET_TOP">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_SET_TOP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_SET_TOP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_SHOWER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_SHOWER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_SHOWER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_SHOWER">
+  TYPE_SHOWER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_SHOWER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_SHOWER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_SHOWER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_SHUTTER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_SHUTTER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_SHUTTER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_SHUTTER">
+  TYPE_SHUTTER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_SHUTTER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_SHUTTER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_SHUTTER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_SPRINKLER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_SPRINKLER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_SPRINKLER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_SPRINKLER">
+  TYPE_SPRINKLER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_SPRINKLER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_SPRINKLER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_SPRINKLER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_STANDMIXER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_STANDMIXER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_STANDMIXER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_STANDMIXER">
+  TYPE_STANDMIXER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_STANDMIXER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_STANDMIXER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_STANDMIXER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_STYLER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_STYLER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_STYLER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_STYLER">
+  TYPE_STYLER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_STYLER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_STYLER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_STYLER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_SWITCH_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_SWITCH*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_SWITCH" data-uid="Android.Service.Controls.DeviceTypes.TYPE_SWITCH">
+  TYPE_SWITCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_SWITCH">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_SWITCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_SWITCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_THERMOSTAT_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_THERMOSTAT*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_THERMOSTAT" data-uid="Android.Service.Controls.DeviceTypes.TYPE_THERMOSTAT">
+  TYPE_THERMOSTAT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_THERMOSTAT">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_THERMOSTAT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_THERMOSTAT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_TV_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_TV*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_TV" data-uid="Android.Service.Controls.DeviceTypes.TYPE_TV">
+  TYPE_TV
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_TV">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_TV</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_TV { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_UNKNOWN_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_UNKNOWN*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_UNKNOWN" data-uid="Android.Service.Controls.DeviceTypes.TYPE_UNKNOWN">
+  TYPE_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_UNKNOWN">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_VACUUM_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_VACUUM*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_VACUUM" data-uid="Android.Service.Controls.DeviceTypes.TYPE_VACUUM">
+  TYPE_VACUUM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_VACUUM">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_VACUUM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VACUUM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_VALVE_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_VALVE*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_VALVE" data-uid="Android.Service.Controls.DeviceTypes.TYPE_VALVE">
+  TYPE_VALVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_VALVE">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_VALVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_VALVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_WASHER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_WASHER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_WASHER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_WASHER">
+  TYPE_WASHER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_WASHER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_WASHER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_WASHER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_WATER_HEATER_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_WATER_HEATER*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_WATER_HEATER" data-uid="Android.Service.Controls.DeviceTypes.TYPE_WATER_HEATER">
+  TYPE_WATER_HEATER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_WATER_HEATER">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_WATER_HEATER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_WATER_HEATER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Controls_DeviceTypes_TYPE_WINDOW_" data-uid="Android.Service.Controls.DeviceTypes.TYPE_WINDOW*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_TYPE_WINDOW" data-uid="Android.Service.Controls.DeviceTypes.TYPE_WINDOW">
+  TYPE_WINDOW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_WINDOW">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#TYPE_WINDOW</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_WINDOW { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Service_Controls_DeviceTypes_ValidDeviceType_" data-uid="Android.Service.Controls.DeviceTypes.ValidDeviceType*"></a>
+
+  <h3 id="Android_Service_Controls_DeviceTypes_ValidDeviceType_System_Int32_" data-uid="Android.Service.Controls.DeviceTypes.ValidDeviceType(System.Int32)">
+  ValidDeviceType(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/controls/DeviceTypes.html#validDeviceType(int)">https://developer.android.com/reference/android/service/controls/DeviceTypes.html#validDeviceType(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ValidDeviceType(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Controls/DeviceTypes.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

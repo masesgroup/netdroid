@@ -1,0 +1,3516 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class Bundle | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Bundle | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/os/Bundle.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Os_Bundle.md&amp;value=---%0Auid%3A%20Android.Os.Bundle%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Os.Bundle">
+
+
+
+  <h1 id="Android_Os_Bundle" data-uid="Android.Os.Bundle" class="text-break">
+Class Bundle  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Os.html">Os</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html">https://developer.android.com/reference/android/os/Bundle.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Bundle : BaseBundle, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ICloneable, IParcelable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Os.BaseBundle.html">BaseBundle</a>&gt;</div>
+      <div><a class="xref" href="Android.Os.BaseBundle.html">BaseBundle</a></div>
+      <div><span class="xref">Bundle</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Lang.ICloneable.html">ICloneable</a></div>
+      <div><a class="xref" href="Android.Os.IParcelable.html">IParcelable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_ContainsKey_Java_Lang_String_">BaseBundle.ContainsKey(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetBoolean_Java_Lang_String_System_Boolean_">BaseBundle.GetBoolean(String, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetBoolean_Java_Lang_String_">BaseBundle.GetBoolean(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_IsEmpty">BaseBundle.IsEmpty()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetBooleanArray_Java_Lang_String_">BaseBundle.GetBooleanArray(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetDouble_Java_Lang_String_System_Double_">BaseBundle.GetDouble(String, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetDouble_Java_Lang_String_">BaseBundle.GetDouble(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetDoubleArray_Java_Lang_String_">BaseBundle.GetDoubleArray(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetInt_Java_Lang_String_System_Int32_">BaseBundle.GetInt(String, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetInt_Java_Lang_String_">BaseBundle.GetInt(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_Size">BaseBundle.Size()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetIntArray_Java_Lang_String_">BaseBundle.GetIntArray(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_Get_Java_Lang_String_">BaseBundle.Get(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetString_Java_Lang_String_Java_Lang_String_">BaseBundle.GetString(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetString_Java_Lang_String_">BaseBundle.GetString(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetStringArray_Java_Lang_String_">BaseBundle.GetStringArray(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_KeySet">BaseBundle.KeySet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetLong_Java_Lang_String_System_Int64_">BaseBundle.GetLong(String, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetLong_Java_Lang_String_">BaseBundle.GetLong(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_GetLongArray_Java_Lang_String_">BaseBundle.GetLongArray(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_Clear">BaseBundle.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_PutAll_Android_Os_PersistableBundle_">BaseBundle.PutAll(PersistableBundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_PutBoolean_Java_Lang_String_System_Boolean_">BaseBundle.PutBoolean(String, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_PutBooleanArray_Java_Lang_String_System_Boolean___">BaseBundle.PutBooleanArray(String, bool[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_PutDouble_Java_Lang_String_System_Double_">BaseBundle.PutDouble(String, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_PutDoubleArray_Java_Lang_String_System_Double___">BaseBundle.PutDoubleArray(String, double[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_PutInt_Java_Lang_String_System_Int32_">BaseBundle.PutInt(String, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_PutIntArray_Java_Lang_String_System_Int32___">BaseBundle.PutIntArray(String, int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_PutLong_Java_Lang_String_System_Int64_">BaseBundle.PutLong(String, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_PutLongArray_Java_Lang_String_System_Int64___">BaseBundle.PutLongArray(String, long[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_PutString_Java_Lang_String_Java_Lang_String_">BaseBundle.PutString(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_PutStringArray_Java_Lang_String_Java_Lang_String___">BaseBundle.PutStringArray(String, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.BaseBundle.html#Android_Os_BaseBundle_Remove_Java_Lang_String_">BaseBundle.Remove(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseBundle&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseBundle&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseBundle&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseBundle&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseBundle&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseBundle&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseBundle&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseBundle&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;BaseBundle&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseBundle&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseBundle&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseBundle&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseBundle&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Os_Bundle__ctor_" data-uid="Android.Os.Bundle.#ctor*"></a>
+
+  <h3 id="Android_Os_Bundle__ctor" data-uid="Android.Os.Bundle.#ctor">
+  Bundle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle__ctor_" data-uid="Android.Os.Bundle.#ctor*"></a>
+
+  <h3 id="Android_Os_Bundle__ctor_Android_Os_Bundle_" data-uid="Android.Os.Bundle.#ctor(Android.Os.Bundle)">
+  Bundle(Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#%3Cinit%3E(android.os.Bundle)">https://developer.android.com/reference/android/os/Bundle.html#%3Cinit%3E(android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle(Bundle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle__ctor_" data-uid="Android.Os.Bundle.#ctor*"></a>
+
+  <h3 id="Android_Os_Bundle__ctor_Android_Os_PersistableBundle_" data-uid="Android.Os.Bundle.#ctor(Android.Os.PersistableBundle)">
+  Bundle(PersistableBundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#%3Cinit%3E(android.os.PersistableBundle)">https://developer.android.com/reference/android/os/Bundle.html#%3Cinit%3E(android.os.PersistableBundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle(PersistableBundle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle__ctor_" data-uid="Android.Os.Bundle.#ctor*"></a>
+
+  <h3 id="Android_Os_Bundle__ctor_Java_Lang_ClassLoader_" data-uid="Android.Os.Bundle.#ctor(Java.Lang.ClassLoader)">
+  Bundle(ClassLoader)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#%3Cinit%3E(java.lang.ClassLoader)">https://developer.android.com/reference/android/os/Bundle.html#%3Cinit%3E(java.lang.ClassLoader)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle(ClassLoader arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle__ctor_" data-uid="Android.Os.Bundle.#ctor*"></a>
+
+  <h3 id="Android_Os_Bundle__ctor_System_Int32_" data-uid="Android.Os.Bundle.#ctor(System.Int32)">
+  Bundle(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#%3Cinit%3E(int)">https://developer.android.com/reference/android/os/Bundle.html#%3Cinit%3E(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle__ctor_" data-uid="Android.Os.Bundle.#ctor*"></a>
+
+  <h3 id="Android_Os_Bundle__ctor_System_Object___" data-uid="Android.Os.Bundle.#ctor(System.Object[])">
+  Bundle(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L600"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Os_Bundle_BridgeClassName_" data-uid="Android.Os.Bundle.BridgeClassName*"></a>
+
+  <h3 id="Android_Os_Bundle_BridgeClassName" data-uid="Android.Os.Bundle.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L607"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_CREATOR_" data-uid="Android.Os.Bundle.CREATOR*"></a>
+
+  <h3 id="Android_Os_Bundle_CREATOR" data-uid="Android.Os.Bundle.CREATOR">
+  CREATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#CREATOR">https://developer.android.com/reference/android/os/Bundle.html#CREATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>.<a class="xref" href="Android.Os.Parcelable.Creator.html">Creator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_EMPTY_" data-uid="Android.Os.Bundle.EMPTY*"></a>
+
+  <h3 id="Android_Os_Bundle_EMPTY" data-uid="Android.Os.Bundle.EMPTY">
+  EMPTY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#EMPTY">https://developer.android.com/reference/android/os/Bundle.html#EMPTY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Bundle EMPTY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_IsBridgeAbstract_" data-uid="Android.Os.Bundle.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Os_Bundle_IsBridgeAbstract" data-uid="Android.Os.Bundle.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L611"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_IsBridgeCloseable_" data-uid="Android.Os.Bundle.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Os_Bundle_IsBridgeCloseable" data-uid="Android.Os.Bundle.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L615"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_IsBridgeInterface_" data-uid="Android.Os.Bundle.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Os_Bundle_IsBridgeInterface" data-uid="Android.Os.Bundle.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L619"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_IsBridgeStatic_" data-uid="Android.Os.Bundle.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Os_Bundle_IsBridgeStatic" data-uid="Android.Os.Bundle.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L623"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Os_Bundle_DeepCopy_" data-uid="Android.Os.Bundle.DeepCopy*"></a>
+
+  <h3 id="Android_Os_Bundle_DeepCopy" data-uid="Android.Os.Bundle.DeepCopy">
+  DeepCopy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#deepCopy()">https://developer.android.com/reference/android/os/Bundle.html#deepCopy()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle DeepCopy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_DescribeContents_" data-uid="Android.Os.Bundle.DescribeContents*"></a>
+
+  <h3 id="Android_Os_Bundle_DescribeContents" data-uid="Android.Os.Bundle.DescribeContents">
+  DescribeContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#describeContents()">https://developer.android.com/reference/android/os/Bundle.html#describeContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetBinder_" data-uid="Android.Os.Bundle.GetBinder*"></a>
+
+  <h3 id="Android_Os_Bundle_GetBinder_Java_Lang_String_" data-uid="Android.Os.Bundle.GetBinder(Java.Lang.String)">
+  GetBinder(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getBinder(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getBinder(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBinder GetBinder(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.IBinder.html">IBinder</a></dt>
+    <dd><p><a class="xref" href="Android.Os.IBinder.html">IBinder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetBundle_" data-uid="Android.Os.Bundle.GetBundle*"></a>
+
+  <h3 id="Android_Os_Bundle_GetBundle_Java_Lang_String_" data-uid="Android.Os.Bundle.GetBundle(Java.Lang.String)">
+  GetBundle(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getBundle(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getBundle(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle GetBundle(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetByte_" data-uid="Android.Os.Bundle.GetByte*"></a>
+
+  <h3 id="Android_Os_Bundle_GetByte_Java_Lang_String_" data-uid="Android.Os.Bundle.GetByte(Java.Lang.String)">
+  GetByte(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getByte(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getByte(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte GetByte(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetByte_" data-uid="Android.Os.Bundle.GetByte*"></a>
+
+  <h3 id="Android_Os_Bundle_GetByte_Java_Lang_String_System_Byte_" data-uid="Android.Os.Bundle.GetByte(Java.Lang.String,System.Byte)">
+  GetByte(String, byte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getByte(java.lang.String,byte)">https://developer.android.com/reference/android/os/Bundle.html#getByte(java.lang.String,byte)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Byte GetByte(String arg0, byte arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Byte.html">Byte</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Byte.html">Byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetByteArray_" data-uid="Android.Os.Bundle.GetByteArray*"></a>
+
+  <h3 id="Android_Os_Bundle_GetByteArray_Java_Lang_String_" data-uid="Android.Os.Bundle.GetByteArray(Java.Lang.String)">
+  GetByteArray(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getByteArray(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getByteArray(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetByteArray(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetChar_" data-uid="Android.Os.Bundle.GetChar*"></a>
+
+  <h3 id="Android_Os_Bundle_GetChar_Java_Lang_String_" data-uid="Android.Os.Bundle.GetChar(Java.Lang.String)">
+  GetChar(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getChar(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getChar(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetChar(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetChar_" data-uid="Android.Os.Bundle.GetChar*"></a>
+
+  <h3 id="Android_Os_Bundle_GetChar_Java_Lang_String_System_Char_" data-uid="Android.Os.Bundle.GetChar(Java.Lang.String,System.Char)">
+  GetChar(String, char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getChar(java.lang.String,char)">https://developer.android.com/reference/android/os/Bundle.html#getChar(java.lang.String,char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetChar(String arg0, char arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetCharArray_" data-uid="Android.Os.Bundle.GetCharArray*"></a>
+
+  <h3 id="Android_Os_Bundle_GetCharArray_Java_Lang_String_" data-uid="Android.Os.Bundle.GetCharArray(Java.Lang.String)">
+  GetCharArray(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getCharArray(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getCharArray(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char[] GetCharArray(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetCharSequence_" data-uid="Android.Os.Bundle.GetCharSequence*"></a>
+
+  <h3 id="Android_Os_Bundle_GetCharSequence_Java_Lang_String_" data-uid="Android.Os.Bundle.GetCharSequence(Java.Lang.String)">
+  GetCharSequence(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getCharSequence(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getCharSequence(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence GetCharSequence(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetCharSequence_" data-uid="Android.Os.Bundle.GetCharSequence*"></a>
+
+  <h3 id="Android_Os_Bundle_GetCharSequence_Java_Lang_String_Java_Lang_CharSequence_" data-uid="Android.Os.Bundle.GetCharSequence(Java.Lang.String,Java.Lang.CharSequence)">
+  GetCharSequence(String, CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getCharSequence(java.lang.String,java.lang.CharSequence)">https://developer.android.com/reference/android/os/Bundle.html#getCharSequence(java.lang.String,java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence GetCharSequence(String arg0, CharSequence arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetCharSequenceArray_" data-uid="Android.Os.Bundle.GetCharSequenceArray*"></a>
+
+  <h3 id="Android_Os_Bundle_GetCharSequenceArray_Java_Lang_String_" data-uid="Android.Os.Bundle.GetCharSequenceArray(Java.Lang.String)">
+  GetCharSequenceArray(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getCharSequenceArray(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getCharSequenceArray(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence[] GetCharSequenceArray(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetCharSequenceArrayList_" data-uid="Android.Os.Bundle.GetCharSequenceArrayList*"></a>
+
+  <h3 id="Android_Os_Bundle_GetCharSequenceArrayList_Java_Lang_String_" data-uid="Android.Os.Bundle.GetCharSequenceArrayList(Java.Lang.String)">
+  GetCharSequenceArrayList(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getCharSequenceArrayList(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getCharSequenceArrayList(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayList&lt;CharSequence&gt; GetCharSequenceArrayList(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.ArrayList-1.html">ArrayList</a>&lt;<a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.ArrayList.html">ArrayList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetClassLoader_" data-uid="Android.Os.Bundle.GetClassLoader*"></a>
+
+  <h3 id="Android_Os_Bundle_GetClassLoader" data-uid="Android.Os.Bundle.GetClassLoader">
+  GetClassLoader()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getClassLoader()">https://developer.android.com/reference/android/os/Bundle.html#getClassLoader()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClassLoader GetClassLoader()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetFloat_" data-uid="Android.Os.Bundle.GetFloat*"></a>
+
+  <h3 id="Android_Os_Bundle_GetFloat_Java_Lang_String_" data-uid="Android.Os.Bundle.GetFloat(Java.Lang.String)">
+  GetFloat(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getFloat(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getFloat(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFloat(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetFloat_" data-uid="Android.Os.Bundle.GetFloat*"></a>
+
+  <h3 id="Android_Os_Bundle_GetFloat_Java_Lang_String_System_Single_" data-uid="Android.Os.Bundle.GetFloat(Java.Lang.String,System.Single)">
+  GetFloat(String, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getFloat(java.lang.String,float)">https://developer.android.com/reference/android/os/Bundle.html#getFloat(java.lang.String,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFloat(String arg0, float arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetFloatArray_" data-uid="Android.Os.Bundle.GetFloatArray*"></a>
+
+  <h3 id="Android_Os_Bundle_GetFloatArray_Java_Lang_String_" data-uid="Android.Os.Bundle.GetFloatArray(Java.Lang.String)">
+  GetFloatArray(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getFloatArray(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getFloatArray(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] GetFloatArray(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetIntegerArrayList_" data-uid="Android.Os.Bundle.GetIntegerArrayList*"></a>
+
+  <h3 id="Android_Os_Bundle_GetIntegerArrayList_Java_Lang_String_" data-uid="Android.Os.Bundle.GetIntegerArrayList(Java.Lang.String)">
+  GetIntegerArrayList(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getIntegerArrayList(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getIntegerArrayList(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayList&lt;Integer&gt; GetIntegerArrayList(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.ArrayList-1.html">ArrayList</a>&lt;<a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.ArrayList.html">ArrayList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetParcelableArray_" data-uid="Android.Os.Bundle.GetParcelableArray*"></a>
+
+  <h3 id="Android_Os_Bundle_GetParcelableArray_Java_Lang_String_" data-uid="Android.Os.Bundle.GetParcelableArray(Java.Lang.String)">
+  GetParcelableArray(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getParcelableArray(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getParcelableArray(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Parcelable[] GetParcelableArray(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetParcelableArrayList_" data-uid="Android.Os.Bundle.GetParcelableArrayList*"></a>
+
+  <h3 id="Android_Os_Bundle_GetParcelableArrayList__1_Java_Lang_String_" data-uid="Android.Os.Bundle.GetParcelableArrayList``1(Java.Lang.String)">
+  GetParcelableArrayList&lt;T&gt;(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getParcelableArrayList(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getParcelableArrayList(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public ArrayList&lt;T&gt; GetParcelableArrayList&lt;T&gt;(String arg0) where T : IParcelable, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.ArrayList-1.html">ArrayList</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.ArrayList.html">ArrayList</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="Android.Os.IParcelable.html">IParcelable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetParcelableArrayList_" data-uid="Android.Os.Bundle.GetParcelableArrayList*"></a>
+
+  <h3 id="Android_Os_Bundle_GetParcelableArrayList__1_Java_Lang_String_Java_Lang_Class_" data-uid="Android.Os.Bundle.GetParcelableArrayList``1(Java.Lang.String,Java.Lang.Class)">
+  GetParcelableArrayList&lt;T&gt;(String, Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getParcelableArrayList(java.lang.String,java.lang.Class)">https://developer.android.com/reference/android/os/Bundle.html#getParcelableArrayList(java.lang.String,java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayList&lt;T&gt; GetParcelableArrayList&lt;T&gt;(String arg0, Class arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.ArrayList-1.html">ArrayList</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.ArrayList.html">ArrayList</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetParcelableArray_" data-uid="Android.Os.Bundle.GetParcelableArray*"></a>
+
+  <h3 id="Android_Os_Bundle_GetParcelableArray__1_Java_Lang_String_Java_Lang_Class_" data-uid="Android.Os.Bundle.GetParcelableArray``1(Java.Lang.String,Java.Lang.Class)">
+  GetParcelableArray&lt;T&gt;(String, Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getParcelableArray(java.lang.String,java.lang.Class)">https://developer.android.com/reference/android/os/Bundle.html#getParcelableArray(java.lang.String,java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] GetParcelableArray&lt;T&gt;(String arg0, Class arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetParcelable_" data-uid="Android.Os.Bundle.GetParcelable*"></a>
+
+  <h3 id="Android_Os_Bundle_GetParcelable__1_Java_Lang_String_" data-uid="Android.Os.Bundle.GetParcelable``1(Java.Lang.String)">
+  GetParcelable&lt;T&gt;(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getParcelable(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getParcelable(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public T GetParcelable&lt;T&gt;(String arg0) where T : IParcelable, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="Android.Os.IParcelable.html">IParcelable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetParcelable_" data-uid="Android.Os.Bundle.GetParcelable*"></a>
+
+  <h3 id="Android_Os_Bundle_GetParcelable__1_Java_Lang_String_Java_Lang_Class_" data-uid="Android.Os.Bundle.GetParcelable``1(Java.Lang.String,Java.Lang.Class)">
+  GetParcelable&lt;T&gt;(String, Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getParcelable(java.lang.String,java.lang.Class)">https://developer.android.com/reference/android/os/Bundle.html#getParcelable(java.lang.String,java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetParcelable&lt;T&gt;(String arg0, Class arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetSerializable_" data-uid="Android.Os.Bundle.GetSerializable*"></a>
+
+  <h3 id="Android_Os_Bundle_GetSerializable_Java_Lang_String_" data-uid="Android.Os.Bundle.GetSerializable(Java.Lang.String)">
+  GetSerializable(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getSerializable(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getSerializable(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Serializable GetSerializable(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.Serializable.html">Serializable</a></dt>
+    <dd><p><a class="xref" href="Java.Io.Serializable.html">Serializable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetSerializable_" data-uid="Android.Os.Bundle.GetSerializable*"></a>
+
+  <h3 id="Android_Os_Bundle_GetSerializable__1_Java_Lang_String_Java_Lang_Class_" data-uid="Android.Os.Bundle.GetSerializable``1(Java.Lang.String,Java.Lang.Class)">
+  GetSerializable&lt;T&gt;(String, Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getSerializable(java.lang.String,java.lang.Class)">https://developer.android.com/reference/android/os/Bundle.html#getSerializable(java.lang.String,java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetSerializable&lt;T&gt;(String arg0, Class arg1) where T : ISerializable, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetShort_" data-uid="Android.Os.Bundle.GetShort*"></a>
+
+  <h3 id="Android_Os_Bundle_GetShort_Java_Lang_String_" data-uid="Android.Os.Bundle.GetShort(Java.Lang.String)">
+  GetShort(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getShort(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getShort(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetShort(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetShort_" data-uid="Android.Os.Bundle.GetShort*"></a>
+
+  <h3 id="Android_Os_Bundle_GetShort_Java_Lang_String_System_Int16_" data-uid="Android.Os.Bundle.GetShort(Java.Lang.String,System.Int16)">
+  GetShort(String, short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getShort(java.lang.String,short)">https://developer.android.com/reference/android/os/Bundle.html#getShort(java.lang.String,short)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetShort(String arg0, short arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetShortArray_" data-uid="Android.Os.Bundle.GetShortArray*"></a>
+
+  <h3 id="Android_Os_Bundle_GetShortArray_Java_Lang_String_" data-uid="Android.Os.Bundle.GetShortArray(Java.Lang.String)">
+  GetShortArray(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getShortArray(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getShortArray(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short[] GetShortArray(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetSize_" data-uid="Android.Os.Bundle.GetSize*"></a>
+
+  <h3 id="Android_Os_Bundle_GetSize_Java_Lang_String_" data-uid="Android.Os.Bundle.GetSize(Java.Lang.String)">
+  GetSize(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getSize(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getSize(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Size GetSize(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Util.Size.html">Size</a></dt>
+    <dd><p><a class="xref" href="Android.Util.Size.html">Size</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetSizeF_" data-uid="Android.Os.Bundle.GetSizeF*"></a>
+
+  <h3 id="Android_Os_Bundle_GetSizeF_Java_Lang_String_" data-uid="Android.Os.Bundle.GetSizeF(Java.Lang.String)">
+  GetSizeF(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getSizeF(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getSizeF(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeF GetSizeF(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Util.SizeF.html">SizeF</a></dt>
+    <dd><p><a class="xref" href="Android.Util.SizeF.html">SizeF</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetSparseParcelableArray_" data-uid="Android.Os.Bundle.GetSparseParcelableArray*"></a>
+
+  <h3 id="Android_Os_Bundle_GetSparseParcelableArray__1_Java_Lang_String_" data-uid="Android.Os.Bundle.GetSparseParcelableArray``1(Java.Lang.String)">
+  GetSparseParcelableArray&lt;T&gt;(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getSparseParcelableArray(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getSparseParcelableArray(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public SparseArray&lt;T&gt; GetSparseParcelableArray&lt;T&gt;(String arg0) where T : IParcelable, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Util.SparseArray-1.html">SparseArray</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Android.Util.SparseArray.html">SparseArray</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="Android.Os.IParcelable.html">IParcelable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetSparseParcelableArray_" data-uid="Android.Os.Bundle.GetSparseParcelableArray*"></a>
+
+  <h3 id="Android_Os_Bundle_GetSparseParcelableArray__1_Java_Lang_String_Java_Lang_Class_" data-uid="Android.Os.Bundle.GetSparseParcelableArray``1(Java.Lang.String,Java.Lang.Class)">
+  GetSparseParcelableArray&lt;T&gt;(String, Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getSparseParcelableArray(java.lang.String,java.lang.Class)">https://developer.android.com/reference/android/os/Bundle.html#getSparseParcelableArray(java.lang.String,java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SparseArray&lt;T&gt; GetSparseParcelableArray&lt;T&gt;(String arg0, Class arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Util.SparseArray-1.html">SparseArray</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Android.Util.SparseArray.html">SparseArray</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_GetStringArrayList_" data-uid="Android.Os.Bundle.GetStringArrayList*"></a>
+
+  <h3 id="Android_Os_Bundle_GetStringArrayList_Java_Lang_String_" data-uid="Android.Os.Bundle.GetStringArrayList(Java.Lang.String)">
+  GetStringArrayList(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#getStringArrayList(java.lang.String)">https://developer.android.com/reference/android/os/Bundle.html#getStringArrayList(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayList&lt;String&gt; GetStringArrayList(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.ArrayList-1.html">ArrayList</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.ArrayList.html">ArrayList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_HasFileDescriptors_" data-uid="Android.Os.Bundle.HasFileDescriptors*"></a>
+
+  <h3 id="Android_Os_Bundle_HasFileDescriptors" data-uid="Android.Os.Bundle.HasFileDescriptors">
+  HasFileDescriptors()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#hasFileDescriptors()">https://developer.android.com/reference/android/os/Bundle.html#hasFileDescriptors()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasFileDescriptors()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutAll_" data-uid="Android.Os.Bundle.PutAll*"></a>
+
+  <h3 id="Android_Os_Bundle_PutAll_Android_Os_Bundle_" data-uid="Android.Os.Bundle.PutAll(Android.Os.Bundle)">
+  PutAll(Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putAll(android.os.Bundle)">https://developer.android.com/reference/android/os/Bundle.html#putAll(android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutAll(Bundle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutBinder_" data-uid="Android.Os.Bundle.PutBinder*"></a>
+
+  <h3 id="Android_Os_Bundle_PutBinder_Java_Lang_String_Android_Os_IBinder_" data-uid="Android.Os.Bundle.PutBinder(Java.Lang.String,Android.Os.IBinder)">
+  PutBinder(String, IBinder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L456"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putBinder(java.lang.String,android.os.IBinder)">https://developer.android.com/reference/android/os/Bundle.html#putBinder(java.lang.String,android.os.IBinder)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutBinder(String arg0, IBinder arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.IBinder.html">IBinder</a></dt>
+    <dd><p><a class="xref" href="Android.Os.IBinder.html">IBinder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutBundle_" data-uid="Android.Os.Bundle.PutBundle*"></a>
+
+  <h3 id="Android_Os_Bundle_PutBundle_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Os.Bundle.PutBundle(Java.Lang.String,Android.Os.Bundle)">
+  PutBundle(String, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L465"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putBundle(java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/os/Bundle.html#putBundle(java.lang.String,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutBundle(String arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutByte_" data-uid="Android.Os.Bundle.PutByte*"></a>
+
+  <h3 id="Android_Os_Bundle_PutByte_Java_Lang_String_System_Byte_" data-uid="Android.Os.Bundle.PutByte(Java.Lang.String,System.Byte)">
+  PutByte(String, byte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putByte(java.lang.String,byte)">https://developer.android.com/reference/android/os/Bundle.html#putByte(java.lang.String,byte)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutByte(String arg0, byte arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutByteArray_" data-uid="Android.Os.Bundle.PutByteArray*"></a>
+
+  <h3 id="Android_Os_Bundle_PutByteArray_Java_Lang_String_System_Byte___" data-uid="Android.Os.Bundle.PutByteArray(Java.Lang.String,System.Byte[])">
+  PutByteArray(String, byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L483"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putByteArray(java.lang.String,byte[])">https://developer.android.com/reference/android/os/Bundle.html#putByteArray(java.lang.String,byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutByteArray(String arg0, byte[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutChar_" data-uid="Android.Os.Bundle.PutChar*"></a>
+
+  <h3 id="Android_Os_Bundle_PutChar_Java_Lang_String_System_Char_" data-uid="Android.Os.Bundle.PutChar(Java.Lang.String,System.Char)">
+  PutChar(String, char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L492"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putChar(java.lang.String,char)">https://developer.android.com/reference/android/os/Bundle.html#putChar(java.lang.String,char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutChar(String arg0, char arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutCharArray_" data-uid="Android.Os.Bundle.PutCharArray*"></a>
+
+  <h3 id="Android_Os_Bundle_PutCharArray_Java_Lang_String_System_Char___" data-uid="Android.Os.Bundle.PutCharArray(Java.Lang.String,System.Char[])">
+  PutCharArray(String, char[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putCharArray(java.lang.String,char[])">https://developer.android.com/reference/android/os/Bundle.html#putCharArray(java.lang.String,char[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutCharArray(String arg0, char[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutCharSequence_" data-uid="Android.Os.Bundle.PutCharSequence*"></a>
+
+  <h3 id="Android_Os_Bundle_PutCharSequence_Java_Lang_String_Java_Lang_CharSequence_" data-uid="Android.Os.Bundle.PutCharSequence(Java.Lang.String,Java.Lang.CharSequence)">
+  PutCharSequence(String, CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putCharSequence(java.lang.String,java.lang.CharSequence)">https://developer.android.com/reference/android/os/Bundle.html#putCharSequence(java.lang.String,java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutCharSequence(String arg0, CharSequence arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutCharSequenceArray_" data-uid="Android.Os.Bundle.PutCharSequenceArray*"></a>
+
+  <h3 id="Android_Os_Bundle_PutCharSequenceArray_Java_Lang_String_Java_Lang_CharSequence___" data-uid="Android.Os.Bundle.PutCharSequenceArray(Java.Lang.String,Java.Lang.CharSequence[])">
+  PutCharSequenceArray(String, CharSequence[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putCharSequenceArray(java.lang.String,java.lang.CharSequence[])">https://developer.android.com/reference/android/os/Bundle.html#putCharSequenceArray(java.lang.String,java.lang.CharSequence[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutCharSequenceArray(String arg0, CharSequence[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutCharSequenceArrayList_" data-uid="Android.Os.Bundle.PutCharSequenceArrayList*"></a>
+
+  <h3 id="Android_Os_Bundle_PutCharSequenceArrayList_Java_Lang_String_Java_Util_ArrayList_Java_Lang_CharSequence__" data-uid="Android.Os.Bundle.PutCharSequenceArrayList(Java.Lang.String,Java.Util.ArrayList{Java.Lang.CharSequence})">
+  PutCharSequenceArrayList(String, ArrayList&lt;CharSequence&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L528"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putCharSequenceArrayList(java.lang.String,java.util.ArrayList)">https://developer.android.com/reference/android/os/Bundle.html#putCharSequenceArrayList(java.lang.String,java.util.ArrayList)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutCharSequenceArrayList(String arg0, ArrayList&lt;CharSequence&gt; arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.ArrayList-1.html">ArrayList</a>&lt;<a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.ArrayList.html">ArrayList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutFloat_" data-uid="Android.Os.Bundle.PutFloat*"></a>
+
+  <h3 id="Android_Os_Bundle_PutFloat_Java_Lang_String_System_Single_" data-uid="Android.Os.Bundle.PutFloat(Java.Lang.String,System.Single)">
+  PutFloat(String, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L537"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putFloat(java.lang.String,float)">https://developer.android.com/reference/android/os/Bundle.html#putFloat(java.lang.String,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutFloat(String arg0, float arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutFloatArray_" data-uid="Android.Os.Bundle.PutFloatArray*"></a>
+
+  <h3 id="Android_Os_Bundle_PutFloatArray_Java_Lang_String_System_Single___" data-uid="Android.Os.Bundle.PutFloatArray(Java.Lang.String,System.Single[])">
+  PutFloatArray(String, float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putFloatArray(java.lang.String,float[])">https://developer.android.com/reference/android/os/Bundle.html#putFloatArray(java.lang.String,float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutFloatArray(String arg0, float[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutIntegerArrayList_" data-uid="Android.Os.Bundle.PutIntegerArrayList*"></a>
+
+  <h3 id="Android_Os_Bundle_PutIntegerArrayList_Java_Lang_String_Java_Util_ArrayList_Java_Lang_Integer__" data-uid="Android.Os.Bundle.PutIntegerArrayList(Java.Lang.String,Java.Util.ArrayList{Java.Lang.Integer})">
+  PutIntegerArrayList(String, ArrayList&lt;Integer&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L555"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putIntegerArrayList(java.lang.String,java.util.ArrayList)">https://developer.android.com/reference/android/os/Bundle.html#putIntegerArrayList(java.lang.String,java.util.ArrayList)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutIntegerArrayList(String arg0, ArrayList&lt;Integer&gt; arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.ArrayList-1.html">ArrayList</a>&lt;<a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.ArrayList.html">ArrayList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutParcelable_" data-uid="Android.Os.Bundle.PutParcelable*"></a>
+
+  <h3 id="Android_Os_Bundle_PutParcelable_Java_Lang_String_Android_Os_Parcelable_" data-uid="Android.Os.Bundle.PutParcelable(Java.Lang.String,Android.Os.Parcelable)">
+  PutParcelable(String, Parcelable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putParcelable(java.lang.String,android.os.Parcelable)">https://developer.android.com/reference/android/os/Bundle.html#putParcelable(java.lang.String,android.os.Parcelable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutParcelable(String arg0, Parcelable arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutParcelableArray_" data-uid="Android.Os.Bundle.PutParcelableArray*"></a>
+
+  <h3 id="Android_Os_Bundle_PutParcelableArray_Java_Lang_String_Android_Os_Parcelable___" data-uid="Android.Os.Bundle.PutParcelableArray(Java.Lang.String,Android.Os.Parcelable[])">
+  PutParcelableArray(String, Parcelable[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L573"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putParcelableArray(java.lang.String,android.os.Parcelable[])">https://developer.android.com/reference/android/os/Bundle.html#putParcelableArray(java.lang.String,android.os.Parcelable[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutParcelableArray(String arg0, Parcelable[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutParcelableArrayList_" data-uid="Android.Os.Bundle.PutParcelableArrayList*"></a>
+
+  <h3 id="Android_Os_Bundle_PutParcelableArrayList__1_Java_Lang_String_Java_Util_ArrayList___0__" data-uid="Android.Os.Bundle.PutParcelableArrayList``1(Java.Lang.String,Java.Util.ArrayList{``0})">
+  PutParcelableArrayList&lt;Arg1ExtendsAndroid_Os_Parcelable&gt;(String, ArrayList&lt;Arg1ExtendsAndroid_Os_Parcelable&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putParcelableArrayList(java.lang.String,java.util.ArrayList)">https://developer.android.com/reference/android/os/Bundle.html#putParcelableArrayList(java.lang.String,java.util.ArrayList)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutParcelableArrayList&lt;Arg1ExtendsAndroid_Os_Parcelable&gt;(String arg0, ArrayList&lt;Arg1ExtendsAndroid_Os_Parcelable&gt; arg1) where Arg1ExtendsAndroid_Os_Parcelable : Parcelable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.ArrayList-1.html">ArrayList</a>&lt;Arg1ExtendsAndroid_Os_Parcelable&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.ArrayList.html">ArrayList</a></p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg1ExtendsAndroid_Os_Parcelable</code></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutSerializable_" data-uid="Android.Os.Bundle.PutSerializable*"></a>
+
+  <h3 id="Android_Os_Bundle_PutSerializable_Java_Lang_String_Java_Io_Serializable_" data-uid="Android.Os.Bundle.PutSerializable(Java.Lang.String,Java.Io.Serializable)">
+  PutSerializable(String, Serializable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putSerializable(java.lang.String,java.io.Serializable)">https://developer.android.com/reference/android/os/Bundle.html#putSerializable(java.lang.String,java.io.Serializable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutSerializable(String arg0, Serializable arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.Serializable.html">Serializable</a></dt>
+    <dd><p><a class="xref" href="Java.Io.Serializable.html">Serializable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutShort_" data-uid="Android.Os.Bundle.PutShort*"></a>
+
+  <h3 id="Android_Os_Bundle_PutShort_Java_Lang_String_System_Int16_" data-uid="Android.Os.Bundle.PutShort(Java.Lang.String,System.Int16)">
+  PutShort(String, short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L601"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putShort(java.lang.String,short)">https://developer.android.com/reference/android/os/Bundle.html#putShort(java.lang.String,short)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutShort(String arg0, short arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutShortArray_" data-uid="Android.Os.Bundle.PutShortArray*"></a>
+
+  <h3 id="Android_Os_Bundle_PutShortArray_Java_Lang_String_System_Int16___" data-uid="Android.Os.Bundle.PutShortArray(Java.Lang.String,System.Int16[])">
+  PutShortArray(String, short[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putShortArray(java.lang.String,short[])">https://developer.android.com/reference/android/os/Bundle.html#putShortArray(java.lang.String,short[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutShortArray(String arg0, short[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutSize_" data-uid="Android.Os.Bundle.PutSize*"></a>
+
+  <h3 id="Android_Os_Bundle_PutSize_Java_Lang_String_Android_Util_Size_" data-uid="Android.Os.Bundle.PutSize(Java.Lang.String,Android.Util.Size)">
+  PutSize(String, Size)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L619"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putSize(java.lang.String,android.util.Size)">https://developer.android.com/reference/android/os/Bundle.html#putSize(java.lang.String,android.util.Size)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutSize(String arg0, Size arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.Size.html">Size</a></dt>
+    <dd><p><a class="xref" href="Android.Util.Size.html">Size</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutSizeF_" data-uid="Android.Os.Bundle.PutSizeF*"></a>
+
+  <h3 id="Android_Os_Bundle_PutSizeF_Java_Lang_String_Android_Util_SizeF_" data-uid="Android.Os.Bundle.PutSizeF(Java.Lang.String,Android.Util.SizeF)">
+  PutSizeF(String, SizeF)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putSizeF(java.lang.String,android.util.SizeF)">https://developer.android.com/reference/android/os/Bundle.html#putSizeF(java.lang.String,android.util.SizeF)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutSizeF(String arg0, SizeF arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.SizeF.html">SizeF</a></dt>
+    <dd><p><a class="xref" href="Android.Util.SizeF.html">SizeF</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutSparseParcelableArray_" data-uid="Android.Os.Bundle.PutSparseParcelableArray*"></a>
+
+  <h3 id="Android_Os_Bundle_PutSparseParcelableArray__1_Java_Lang_String_Android_Util_SparseArray___0__" data-uid="Android.Os.Bundle.PutSparseParcelableArray``1(Java.Lang.String,Android.Util.SparseArray{``0})">
+  PutSparseParcelableArray&lt;Arg1ExtendsAndroid_Os_Parcelable&gt;(String, SparseArray&lt;Arg1ExtendsAndroid_Os_Parcelable&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L638"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putSparseParcelableArray(java.lang.String,android.util.SparseArray)">https://developer.android.com/reference/android/os/Bundle.html#putSparseParcelableArray(java.lang.String,android.util.SparseArray)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutSparseParcelableArray&lt;Arg1ExtendsAndroid_Os_Parcelable&gt;(String arg0, SparseArray&lt;Arg1ExtendsAndroid_Os_Parcelable&gt; arg1) where Arg1ExtendsAndroid_Os_Parcelable : Parcelable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.SparseArray-1.html">SparseArray</a>&lt;Arg1ExtendsAndroid_Os_Parcelable&gt;</dt>
+    <dd><p><a class="xref" href="Android.Util.SparseArray.html">SparseArray</a></p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg1ExtendsAndroid_Os_Parcelable</code></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_PutStringArrayList_" data-uid="Android.Os.Bundle.PutStringArrayList*"></a>
+
+  <h3 id="Android_Os_Bundle_PutStringArrayList_Java_Lang_String_Java_Util_ArrayList_Java_Lang_String__" data-uid="Android.Os.Bundle.PutStringArrayList(Java.Lang.String,Java.Util.ArrayList{Java.Lang.String})">
+  PutStringArrayList(String, ArrayList&lt;String&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L647"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#putStringArrayList(java.lang.String,java.util.ArrayList)">https://developer.android.com/reference/android/os/Bundle.html#putStringArrayList(java.lang.String,java.util.ArrayList)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutStringArrayList(String arg0, ArrayList&lt;String&gt; arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.ArrayList-1.html">ArrayList</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.ArrayList.html">ArrayList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_ReadFromParcel_" data-uid="Android.Os.Bundle.ReadFromParcel*"></a>
+
+  <h3 id="Android_Os_Bundle_ReadFromParcel_Android_Os_Parcel_" data-uid="Android.Os.Bundle.ReadFromParcel(Android.Os.Parcel)">
+  ReadFromParcel(Parcel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L655"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#readFromParcel(android.os.Parcel)">https://developer.android.com/reference/android/os/Bundle.html#readFromParcel(android.os.Parcel)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadFromParcel(Parcel arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_SetClassLoader_" data-uid="Android.Os.Bundle.SetClassLoader*"></a>
+
+  <h3 id="Android_Os_Bundle_SetClassLoader_Java_Lang_ClassLoader_" data-uid="Android.Os.Bundle.SetClassLoader(Java.Lang.ClassLoader)">
+  SetClassLoader(ClassLoader)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L663"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#setClassLoader(java.lang.ClassLoader)">https://developer.android.com/reference/android/os/Bundle.html#setClassLoader(java.lang.ClassLoader)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClassLoader(ClassLoader arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_WriteToParcel_" data-uid="Android.Os.Bundle.WriteToParcel*"></a>
+
+  <h3 id="Android_Os_Bundle_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.Os.Bundle.WriteToParcel(Android.Os.Parcel,System.Int32)">
+  WriteToParcel(Parcel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L672"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Bundle.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/os/Bundle.html#writeToParcel(android.os.Parcel,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Android_Os_Bundle_op_Implicit_" data-uid="Android.Os.Bundle.op_Implicit*"></a>
+
+  <h3 id="Android_Os_Bundle_op_Implicit_Android_Os_Bundle__Android_Os_Parcelable" data-uid="Android.Os.Bundle.op_Implicit(Android.Os.Bundle)~Android.Os.Parcelable">
+  implicit operator Parcelable(Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Os.Bundle.html">Bundle</a> to <a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Parcelable(Bundle t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Bundle_op_Implicit_" data-uid="Android.Os.Bundle.op_Implicit*"></a>
+
+  <h3 id="Android_Os_Bundle_op_Implicit_Android_Os_Bundle__Java_Lang_Cloneable" data-uid="Android.Os.Bundle.op_Implicit(Android.Os.Bundle)~Java.Lang.Cloneable">
+  implicit operator Cloneable(Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Os.Bundle.html">Bundle</a> to <a class="xref" href="Java.Lang.Cloneable.html">Cloneable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Cloneable(Bundle t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Cloneable.html">Cloneable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Bundle.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

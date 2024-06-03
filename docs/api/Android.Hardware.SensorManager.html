@@ -1,0 +1,3898 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class SensorManager | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SensorManager | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/hardware/SensorManager.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Hardware_SensorManager.md&amp;value=---%0Auid%3A%20Android.Hardware.SensorManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Hardware.SensorManager">
+
+
+
+  <h1 id="Android_Hardware_SensorManager" data-uid="Android.Hardware.SensorManager" class="text-break">
+Class SensorManager  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Hardware.html">Hardware</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html">https://developer.android.com/reference/android/hardware/SensorManager.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SensorManager : JVMBridgeBase&lt;SensorManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Hardware.SensorManager.html">SensorManager</a>&gt;</div>
+      <div><span class="xref">SensorManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SensorManager&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SensorManager&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SensorManager&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SensorManager&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SensorManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SensorManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SensorManager&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SensorManager&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;SensorManager&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SensorManager&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SensorManager&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SensorManager&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SensorManager&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Hardware_SensorManager__ctor_" data-uid="Android.Hardware.SensorManager.#ctor*"></a>
+
+  <h3 id="Android_Hardware_SensorManager__ctor" data-uid="Android.Hardware.SensorManager.#ctor">
+  SensorManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;SensorManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public SensorManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager__ctor_" data-uid="Android.Hardware.SensorManager.#ctor*"></a>
+
+  <h3 id="Android_Hardware_SensorManager__ctor_System_Object___" data-uid="Android.Hardware.SensorManager.#ctor(System.Object[])">
+  SensorManager(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;SensorManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public SensorManager(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Hardware_SensorManager_AXIS_MINUS_X_" data-uid="Android.Hardware.SensorManager.AXIS_MINUS_X*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_AXIS_MINUS_X" data-uid="Android.Hardware.SensorManager.AXIS_MINUS_X">
+  AXIS_MINUS_X
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#AXIS_MINUS_X">https://developer.android.com/reference/android/hardware/SensorManager.html#AXIS_MINUS_X</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AXIS_MINUS_X { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_AXIS_MINUS_Y_" data-uid="Android.Hardware.SensorManager.AXIS_MINUS_Y*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_AXIS_MINUS_Y" data-uid="Android.Hardware.SensorManager.AXIS_MINUS_Y">
+  AXIS_MINUS_Y
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#AXIS_MINUS_Y">https://developer.android.com/reference/android/hardware/SensorManager.html#AXIS_MINUS_Y</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AXIS_MINUS_Y { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_AXIS_MINUS_Z_" data-uid="Android.Hardware.SensorManager.AXIS_MINUS_Z*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_AXIS_MINUS_Z" data-uid="Android.Hardware.SensorManager.AXIS_MINUS_Z">
+  AXIS_MINUS_Z
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#AXIS_MINUS_Z">https://developer.android.com/reference/android/hardware/SensorManager.html#AXIS_MINUS_Z</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AXIS_MINUS_Z { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_AXIS_X_" data-uid="Android.Hardware.SensorManager.AXIS_X*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_AXIS_X" data-uid="Android.Hardware.SensorManager.AXIS_X">
+  AXIS_X
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#AXIS_X">https://developer.android.com/reference/android/hardware/SensorManager.html#AXIS_X</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AXIS_X { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_AXIS_Y_" data-uid="Android.Hardware.SensorManager.AXIS_Y*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_AXIS_Y" data-uid="Android.Hardware.SensorManager.AXIS_Y">
+  AXIS_Y
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#AXIS_Y">https://developer.android.com/reference/android/hardware/SensorManager.html#AXIS_Y</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AXIS_Y { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_AXIS_Z_" data-uid="Android.Hardware.SensorManager.AXIS_Z*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_AXIS_Z" data-uid="Android.Hardware.SensorManager.AXIS_Z">
+  AXIS_Z
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#AXIS_Z">https://developer.android.com/reference/android/hardware/SensorManager.html#AXIS_Z</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AXIS_Z { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_BridgeClassName_" data-uid="Android.Hardware.SensorManager.BridgeClassName*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_BridgeClassName" data-uid="Android.Hardware.SensorManager.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1420"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_DATA_X_" data-uid="Android.Hardware.SensorManager.DATA_X*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_DATA_X" data-uid="Android.Hardware.SensorManager.DATA_X">
+  DATA_X
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#DATA_X">https://developer.android.com/reference/android/hardware/SensorManager.html#DATA_X</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int DATA_X { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_DATA_Y_" data-uid="Android.Hardware.SensorManager.DATA_Y*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_DATA_Y" data-uid="Android.Hardware.SensorManager.DATA_Y">
+  DATA_Y
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#DATA_Y">https://developer.android.com/reference/android/hardware/SensorManager.html#DATA_Y</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int DATA_Y { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_DATA_Z_" data-uid="Android.Hardware.SensorManager.DATA_Z*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_DATA_Z" data-uid="Android.Hardware.SensorManager.DATA_Z">
+  DATA_Z
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#DATA_Z">https://developer.android.com/reference/android/hardware/SensorManager.html#DATA_Z</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int DATA_Z { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GRAVITY_DEATH_STAR_I_" data-uid="Android.Hardware.SensorManager.GRAVITY_DEATH_STAR_I*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GRAVITY_DEATH_STAR_I" data-uid="Android.Hardware.SensorManager.GRAVITY_DEATH_STAR_I">
+  GRAVITY_DEATH_STAR_I
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_DEATH_STAR_I">https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_DEATH_STAR_I</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GRAVITY_DEATH_STAR_I { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GRAVITY_EARTH_" data-uid="Android.Hardware.SensorManager.GRAVITY_EARTH*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GRAVITY_EARTH" data-uid="Android.Hardware.SensorManager.GRAVITY_EARTH">
+  GRAVITY_EARTH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_EARTH">https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_EARTH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GRAVITY_EARTH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GRAVITY_JUPITER_" data-uid="Android.Hardware.SensorManager.GRAVITY_JUPITER*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GRAVITY_JUPITER" data-uid="Android.Hardware.SensorManager.GRAVITY_JUPITER">
+  GRAVITY_JUPITER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_JUPITER">https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_JUPITER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GRAVITY_JUPITER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GRAVITY_MARS_" data-uid="Android.Hardware.SensorManager.GRAVITY_MARS*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GRAVITY_MARS" data-uid="Android.Hardware.SensorManager.GRAVITY_MARS">
+  GRAVITY_MARS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_MARS">https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_MARS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GRAVITY_MARS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GRAVITY_MERCURY_" data-uid="Android.Hardware.SensorManager.GRAVITY_MERCURY*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GRAVITY_MERCURY" data-uid="Android.Hardware.SensorManager.GRAVITY_MERCURY">
+  GRAVITY_MERCURY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_MERCURY">https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_MERCURY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GRAVITY_MERCURY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GRAVITY_MOON_" data-uid="Android.Hardware.SensorManager.GRAVITY_MOON*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GRAVITY_MOON" data-uid="Android.Hardware.SensorManager.GRAVITY_MOON">
+  GRAVITY_MOON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_MOON">https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_MOON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GRAVITY_MOON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GRAVITY_NEPTUNE_" data-uid="Android.Hardware.SensorManager.GRAVITY_NEPTUNE*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GRAVITY_NEPTUNE" data-uid="Android.Hardware.SensorManager.GRAVITY_NEPTUNE">
+  GRAVITY_NEPTUNE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_NEPTUNE">https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_NEPTUNE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GRAVITY_NEPTUNE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GRAVITY_PLUTO_" data-uid="Android.Hardware.SensorManager.GRAVITY_PLUTO*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GRAVITY_PLUTO" data-uid="Android.Hardware.SensorManager.GRAVITY_PLUTO">
+  GRAVITY_PLUTO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_PLUTO">https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_PLUTO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GRAVITY_PLUTO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GRAVITY_SATURN_" data-uid="Android.Hardware.SensorManager.GRAVITY_SATURN*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GRAVITY_SATURN" data-uid="Android.Hardware.SensorManager.GRAVITY_SATURN">
+  GRAVITY_SATURN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_SATURN">https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_SATURN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GRAVITY_SATURN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GRAVITY_SUN_" data-uid="Android.Hardware.SensorManager.GRAVITY_SUN*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GRAVITY_SUN" data-uid="Android.Hardware.SensorManager.GRAVITY_SUN">
+  GRAVITY_SUN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_SUN">https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_SUN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GRAVITY_SUN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GRAVITY_THE_ISLAND_" data-uid="Android.Hardware.SensorManager.GRAVITY_THE_ISLAND*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GRAVITY_THE_ISLAND" data-uid="Android.Hardware.SensorManager.GRAVITY_THE_ISLAND">
+  GRAVITY_THE_ISLAND
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_THE_ISLAND">https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_THE_ISLAND</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GRAVITY_THE_ISLAND { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GRAVITY_URANUS_" data-uid="Android.Hardware.SensorManager.GRAVITY_URANUS*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GRAVITY_URANUS" data-uid="Android.Hardware.SensorManager.GRAVITY_URANUS">
+  GRAVITY_URANUS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_URANUS">https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_URANUS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GRAVITY_URANUS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GRAVITY_VENUS_" data-uid="Android.Hardware.SensorManager.GRAVITY_VENUS*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GRAVITY_VENUS" data-uid="Android.Hardware.SensorManager.GRAVITY_VENUS">
+  GRAVITY_VENUS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_VENUS">https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_VENUS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GRAVITY_VENUS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_IsBridgeAbstract_" data-uid="Android.Hardware.SensorManager.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_IsBridgeAbstract" data-uid="Android.Hardware.SensorManager.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1424"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_IsBridgeCloseable_" data-uid="Android.Hardware.SensorManager.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_IsBridgeCloseable" data-uid="Android.Hardware.SensorManager.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1428"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_IsBridgeInterface_" data-uid="Android.Hardware.SensorManager.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_IsBridgeInterface" data-uid="Android.Hardware.SensorManager.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1432"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_IsBridgeStatic_" data-uid="Android.Hardware.SensorManager.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_IsBridgeStatic" data-uid="Android.Hardware.SensorManager.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1436"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_LIGHT_CLOUDY_" data-uid="Android.Hardware.SensorManager.LIGHT_CLOUDY*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_LIGHT_CLOUDY" data-uid="Android.Hardware.SensorManager.LIGHT_CLOUDY">
+  LIGHT_CLOUDY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_CLOUDY">https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_CLOUDY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LIGHT_CLOUDY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_LIGHT_FULLMOON_" data-uid="Android.Hardware.SensorManager.LIGHT_FULLMOON*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_LIGHT_FULLMOON" data-uid="Android.Hardware.SensorManager.LIGHT_FULLMOON">
+  LIGHT_FULLMOON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_FULLMOON">https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_FULLMOON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LIGHT_FULLMOON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_LIGHT_NO_MOON_" data-uid="Android.Hardware.SensorManager.LIGHT_NO_MOON*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_LIGHT_NO_MOON" data-uid="Android.Hardware.SensorManager.LIGHT_NO_MOON">
+  LIGHT_NO_MOON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_NO_MOON">https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_NO_MOON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LIGHT_NO_MOON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_LIGHT_OVERCAST_" data-uid="Android.Hardware.SensorManager.LIGHT_OVERCAST*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_LIGHT_OVERCAST" data-uid="Android.Hardware.SensorManager.LIGHT_OVERCAST">
+  LIGHT_OVERCAST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_OVERCAST">https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_OVERCAST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LIGHT_OVERCAST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_LIGHT_SHADE_" data-uid="Android.Hardware.SensorManager.LIGHT_SHADE*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_LIGHT_SHADE" data-uid="Android.Hardware.SensorManager.LIGHT_SHADE">
+  LIGHT_SHADE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_SHADE">https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_SHADE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LIGHT_SHADE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_LIGHT_SUNLIGHT_" data-uid="Android.Hardware.SensorManager.LIGHT_SUNLIGHT*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_LIGHT_SUNLIGHT" data-uid="Android.Hardware.SensorManager.LIGHT_SUNLIGHT">
+  LIGHT_SUNLIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_SUNLIGHT">https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_SUNLIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LIGHT_SUNLIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_LIGHT_SUNLIGHT_MAX_" data-uid="Android.Hardware.SensorManager.LIGHT_SUNLIGHT_MAX*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_LIGHT_SUNLIGHT_MAX" data-uid="Android.Hardware.SensorManager.LIGHT_SUNLIGHT_MAX">
+  LIGHT_SUNLIGHT_MAX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_SUNLIGHT_MAX">https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_SUNLIGHT_MAX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LIGHT_SUNLIGHT_MAX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_LIGHT_SUNRISE_" data-uid="Android.Hardware.SensorManager.LIGHT_SUNRISE*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_LIGHT_SUNRISE" data-uid="Android.Hardware.SensorManager.LIGHT_SUNRISE">
+  LIGHT_SUNRISE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_SUNRISE">https://developer.android.com/reference/android/hardware/SensorManager.html#LIGHT_SUNRISE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LIGHT_SUNRISE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_MAGNETIC_FIELD_EARTH_MAX_" data-uid="Android.Hardware.SensorManager.MAGNETIC_FIELD_EARTH_MAX*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_MAGNETIC_FIELD_EARTH_MAX" data-uid="Android.Hardware.SensorManager.MAGNETIC_FIELD_EARTH_MAX">
+  MAGNETIC_FIELD_EARTH_MAX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#MAGNETIC_FIELD_EARTH_MAX">https://developer.android.com/reference/android/hardware/SensorManager.html#MAGNETIC_FIELD_EARTH_MAX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float MAGNETIC_FIELD_EARTH_MAX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_MAGNETIC_FIELD_EARTH_MIN_" data-uid="Android.Hardware.SensorManager.MAGNETIC_FIELD_EARTH_MIN*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_MAGNETIC_FIELD_EARTH_MIN" data-uid="Android.Hardware.SensorManager.MAGNETIC_FIELD_EARTH_MIN">
+  MAGNETIC_FIELD_EARTH_MIN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#MAGNETIC_FIELD_EARTH_MIN">https://developer.android.com/reference/android/hardware/SensorManager.html#MAGNETIC_FIELD_EARTH_MIN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float MAGNETIC_FIELD_EARTH_MIN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_PRESSURE_STANDARD_ATMOSPHERE_" data-uid="Android.Hardware.SensorManager.PRESSURE_STANDARD_ATMOSPHERE*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_PRESSURE_STANDARD_ATMOSPHERE" data-uid="Android.Hardware.SensorManager.PRESSURE_STANDARD_ATMOSPHERE">
+  PRESSURE_STANDARD_ATMOSPHERE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#PRESSURE_STANDARD_ATMOSPHERE">https://developer.android.com/reference/android/hardware/SensorManager.html#PRESSURE_STANDARD_ATMOSPHERE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float PRESSURE_STANDARD_ATMOSPHERE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_RAW_DATA_INDEX_" data-uid="Android.Hardware.SensorManager.RAW_DATA_INDEX*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_RAW_DATA_INDEX" data-uid="Android.Hardware.SensorManager.RAW_DATA_INDEX">
+  RAW_DATA_INDEX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#RAW_DATA_INDEX">https://developer.android.com/reference/android/hardware/SensorManager.html#RAW_DATA_INDEX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int RAW_DATA_INDEX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_RAW_DATA_X_" data-uid="Android.Hardware.SensorManager.RAW_DATA_X*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_RAW_DATA_X" data-uid="Android.Hardware.SensorManager.RAW_DATA_X">
+  RAW_DATA_X
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#RAW_DATA_X">https://developer.android.com/reference/android/hardware/SensorManager.html#RAW_DATA_X</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int RAW_DATA_X { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_RAW_DATA_Y_" data-uid="Android.Hardware.SensorManager.RAW_DATA_Y*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_RAW_DATA_Y" data-uid="Android.Hardware.SensorManager.RAW_DATA_Y">
+  RAW_DATA_Y
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#RAW_DATA_Y">https://developer.android.com/reference/android/hardware/SensorManager.html#RAW_DATA_Y</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int RAW_DATA_Y { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_RAW_DATA_Z_" data-uid="Android.Hardware.SensorManager.RAW_DATA_Z*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_RAW_DATA_Z" data-uid="Android.Hardware.SensorManager.RAW_DATA_Z">
+  RAW_DATA_Z
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#RAW_DATA_Z">https://developer.android.com/reference/android/hardware/SensorManager.html#RAW_DATA_Z</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int RAW_DATA_Z { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_ACCELEROMETER_" data-uid="Android.Hardware.SensorManager.SENSOR_ACCELEROMETER*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_ACCELEROMETER" data-uid="Android.Hardware.SensorManager.SENSOR_ACCELEROMETER">
+  SENSOR_ACCELEROMETER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_ACCELEROMETER">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_ACCELEROMETER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int SENSOR_ACCELEROMETER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_ALL_" data-uid="Android.Hardware.SensorManager.SENSOR_ALL*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_ALL" data-uid="Android.Hardware.SensorManager.SENSOR_ALL">
+  SENSOR_ALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_ALL">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_ALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int SENSOR_ALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_DELAY_FASTEST_" data-uid="Android.Hardware.SensorManager.SENSOR_DELAY_FASTEST*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_DELAY_FASTEST" data-uid="Android.Hardware.SensorManager.SENSOR_DELAY_FASTEST">
+  SENSOR_DELAY_FASTEST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_DELAY_FASTEST">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_DELAY_FASTEST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SENSOR_DELAY_FASTEST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_DELAY_GAME_" data-uid="Android.Hardware.SensorManager.SENSOR_DELAY_GAME*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_DELAY_GAME" data-uid="Android.Hardware.SensorManager.SENSOR_DELAY_GAME">
+  SENSOR_DELAY_GAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_DELAY_GAME">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_DELAY_GAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SENSOR_DELAY_GAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_DELAY_NORMAL_" data-uid="Android.Hardware.SensorManager.SENSOR_DELAY_NORMAL*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_DELAY_NORMAL" data-uid="Android.Hardware.SensorManager.SENSOR_DELAY_NORMAL">
+  SENSOR_DELAY_NORMAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_DELAY_NORMAL">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_DELAY_NORMAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SENSOR_DELAY_NORMAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_DELAY_UI_" data-uid="Android.Hardware.SensorManager.SENSOR_DELAY_UI*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_DELAY_UI" data-uid="Android.Hardware.SensorManager.SENSOR_DELAY_UI">
+  SENSOR_DELAY_UI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_DELAY_UI">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_DELAY_UI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SENSOR_DELAY_UI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_LIGHT_" data-uid="Android.Hardware.SensorManager.SENSOR_LIGHT*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_LIGHT" data-uid="Android.Hardware.SensorManager.SENSOR_LIGHT">
+  SENSOR_LIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_LIGHT">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_LIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int SENSOR_LIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_MAGNETIC_FIELD_" data-uid="Android.Hardware.SensorManager.SENSOR_MAGNETIC_FIELD*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_MAGNETIC_FIELD" data-uid="Android.Hardware.SensorManager.SENSOR_MAGNETIC_FIELD">
+  SENSOR_MAGNETIC_FIELD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_MAGNETIC_FIELD">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_MAGNETIC_FIELD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int SENSOR_MAGNETIC_FIELD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_MAX_" data-uid="Android.Hardware.SensorManager.SENSOR_MAX*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_MAX" data-uid="Android.Hardware.SensorManager.SENSOR_MAX">
+  SENSOR_MAX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_MAX">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_MAX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int SENSOR_MAX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_MIN_" data-uid="Android.Hardware.SensorManager.SENSOR_MIN*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_MIN" data-uid="Android.Hardware.SensorManager.SENSOR_MIN">
+  SENSOR_MIN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_MIN">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_MIN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int SENSOR_MIN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_ORIENTATION_" data-uid="Android.Hardware.SensorManager.SENSOR_ORIENTATION*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_ORIENTATION" data-uid="Android.Hardware.SensorManager.SENSOR_ORIENTATION">
+  SENSOR_ORIENTATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_ORIENTATION">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_ORIENTATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int SENSOR_ORIENTATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_ORIENTATION_RAW_" data-uid="Android.Hardware.SensorManager.SENSOR_ORIENTATION_RAW*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_ORIENTATION_RAW" data-uid="Android.Hardware.SensorManager.SENSOR_ORIENTATION_RAW">
+  SENSOR_ORIENTATION_RAW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_ORIENTATION_RAW">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_ORIENTATION_RAW</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int SENSOR_ORIENTATION_RAW { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_PROXIMITY_" data-uid="Android.Hardware.SensorManager.SENSOR_PROXIMITY*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_PROXIMITY" data-uid="Android.Hardware.SensorManager.SENSOR_PROXIMITY">
+  SENSOR_PROXIMITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_PROXIMITY">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_PROXIMITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int SENSOR_PROXIMITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_STATUS_ACCURACY_HIGH_" data-uid="Android.Hardware.SensorManager.SENSOR_STATUS_ACCURACY_HIGH*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_STATUS_ACCURACY_HIGH" data-uid="Android.Hardware.SensorManager.SENSOR_STATUS_ACCURACY_HIGH">
+  SENSOR_STATUS_ACCURACY_HIGH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_STATUS_ACCURACY_HIGH">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_STATUS_ACCURACY_HIGH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SENSOR_STATUS_ACCURACY_HIGH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_STATUS_ACCURACY_LOW_" data-uid="Android.Hardware.SensorManager.SENSOR_STATUS_ACCURACY_LOW*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_STATUS_ACCURACY_LOW" data-uid="Android.Hardware.SensorManager.SENSOR_STATUS_ACCURACY_LOW">
+  SENSOR_STATUS_ACCURACY_LOW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_STATUS_ACCURACY_LOW">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_STATUS_ACCURACY_LOW</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SENSOR_STATUS_ACCURACY_LOW { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_STATUS_ACCURACY_MEDIUM_" data-uid="Android.Hardware.SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_STATUS_ACCURACY_MEDIUM" data-uid="Android.Hardware.SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM">
+  SENSOR_STATUS_ACCURACY_MEDIUM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_STATUS_ACCURACY_MEDIUM">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_STATUS_ACCURACY_MEDIUM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SENSOR_STATUS_ACCURACY_MEDIUM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_STATUS_NO_CONTACT_" data-uid="Android.Hardware.SensorManager.SENSOR_STATUS_NO_CONTACT*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_STATUS_NO_CONTACT" data-uid="Android.Hardware.SensorManager.SENSOR_STATUS_NO_CONTACT">
+  SENSOR_STATUS_NO_CONTACT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_STATUS_NO_CONTACT">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_STATUS_NO_CONTACT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SENSOR_STATUS_NO_CONTACT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_STATUS_UNRELIABLE_" data-uid="Android.Hardware.SensorManager.SENSOR_STATUS_UNRELIABLE*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_STATUS_UNRELIABLE" data-uid="Android.Hardware.SensorManager.SENSOR_STATUS_UNRELIABLE">
+  SENSOR_STATUS_UNRELIABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_STATUS_UNRELIABLE">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_STATUS_UNRELIABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SENSOR_STATUS_UNRELIABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_TEMPERATURE_" data-uid="Android.Hardware.SensorManager.SENSOR_TEMPERATURE*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_TEMPERATURE" data-uid="Android.Hardware.SensorManager.SENSOR_TEMPERATURE">
+  SENSOR_TEMPERATURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_TEMPERATURE">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_TEMPERATURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int SENSOR_TEMPERATURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_SENSOR_TRICORDER_" data-uid="Android.Hardware.SensorManager.SENSOR_TRICORDER*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_SENSOR_TRICORDER" data-uid="Android.Hardware.SensorManager.SENSOR_TRICORDER">
+  SENSOR_TRICORDER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_TRICORDER">https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_TRICORDER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int SENSOR_TRICORDER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_STANDARD_GRAVITY_" data-uid="Android.Hardware.SensorManager.STANDARD_GRAVITY*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_STANDARD_GRAVITY" data-uid="Android.Hardware.SensorManager.STANDARD_GRAVITY">
+  STANDARD_GRAVITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#STANDARD_GRAVITY">https://developer.android.com/reference/android/hardware/SensorManager.html#STANDARD_GRAVITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float STANDARD_GRAVITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Hardware_SensorManager_CancelTriggerSensor_" data-uid="Android.Hardware.SensorManager.CancelTriggerSensor*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_CancelTriggerSensor_Android_Hardware_TriggerEventListener_Android_Hardware_Sensor_" data-uid="Android.Hardware.SensorManager.CancelTriggerSensor(Android.Hardware.TriggerEventListener,Android.Hardware.Sensor)">
+  CancelTriggerSensor(TriggerEventListener, Sensor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#cancelTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)">https://developer.android.com/reference/android/hardware/SensorManager.html#cancelTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CancelTriggerSensor(TriggerEventListener arg0, Sensor arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.TriggerEventListener.html">TriggerEventListener</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.TriggerEventListener.html">TriggerEventListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_CreateDirectChannel_" data-uid="Android.Hardware.SensorManager.CreateDirectChannel*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_CreateDirectChannel_Android_Hardware_HardwareBuffer_" data-uid="Android.Hardware.SensorManager.CreateDirectChannel(Android.Hardware.HardwareBuffer)">
+  CreateDirectChannel(HardwareBuffer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#createDirectChannel(android.hardware.HardwareBuffer)">https://developer.android.com/reference/android/hardware/SensorManager.html#createDirectChannel(android.hardware.HardwareBuffer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SensorDirectChannel CreateDirectChannel(HardwareBuffer arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.HardwareBuffer.html">HardwareBuffer</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.HardwareBuffer.html">HardwareBuffer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Hardware.SensorDirectChannel.html">SensorDirectChannel</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorDirectChannel.html">SensorDirectChannel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_CreateDirectChannel_" data-uid="Android.Hardware.SensorManager.CreateDirectChannel*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_CreateDirectChannel_Android_Os_MemoryFile_" data-uid="Android.Hardware.SensorManager.CreateDirectChannel(Android.Os.MemoryFile)">
+  CreateDirectChannel(MemoryFile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L528"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#createDirectChannel(android.os.MemoryFile)">https://developer.android.com/reference/android/hardware/SensorManager.html#createDirectChannel(android.os.MemoryFile)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SensorDirectChannel CreateDirectChannel(MemoryFile arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.MemoryFile.html">MemoryFile</a></dt>
+    <dd><p><a class="xref" href="Android.Os.MemoryFile.html">MemoryFile</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Hardware.SensorDirectChannel.html">SensorDirectChannel</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorDirectChannel.html">SensorDirectChannel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_Flush_" data-uid="Android.Hardware.SensorManager.Flush*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_Flush_Android_Hardware_SensorEventListener_" data-uid="Android.Hardware.SensorManager.Flush(Android.Hardware.SensorEventListener)">
+  Flush(SensorEventListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#flush(android.hardware.SensorEventListener)">https://developer.android.com/reference/android/hardware/SensorManager.html#flush(android.hardware.SensorEventListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Flush(SensorEventListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SensorEventListener.html">SensorEventListener</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorEventListener.html">SensorEventListener</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GetAltitude_" data-uid="Android.Hardware.SensorManager.GetAltitude*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GetAltitude_System_Single_System_Single_" data-uid="Android.Hardware.SensorManager.GetAltitude(System.Single,System.Single)">
+  GetAltitude(float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#getAltitude(float,float)">https://developer.android.com/reference/android/hardware/SensorManager.html#getAltitude(float,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetAltitude(float arg0, float arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GetAngleChange_" data-uid="Android.Hardware.SensorManager.GetAngleChange*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GetAngleChange_System_Single___System_Single___System_Single___" data-uid="Android.Hardware.SensorManager.GetAngleChange(System.Single[],System.Single[],System.Single[])">
+  GetAngleChange(float[], float[], float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#getAngleChange(float[],float[],float[])">https://developer.android.com/reference/android/hardware/SensorManager.html#getAngleChange(float[],float[],float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetAngleChange(float[] arg0, float[] arg1, float[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GetDefaultSensor_" data-uid="Android.Hardware.SensorManager.GetDefaultSensor*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GetDefaultSensor_System_Int32_" data-uid="Android.Hardware.SensorManager.GetDefaultSensor(System.Int32)">
+  GetDefaultSensor(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#getDefaultSensor(int)">https://developer.android.com/reference/android/hardware/SensorManager.html#getDefaultSensor(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sensor GetDefaultSensor(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GetDefaultSensor_" data-uid="Android.Hardware.SensorManager.GetDefaultSensor*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GetDefaultSensor_System_Int32_System_Boolean_" data-uid="Android.Hardware.SensorManager.GetDefaultSensor(System.Int32,System.Boolean)">
+  GetDefaultSensor(int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#getDefaultSensor(int,boolean)">https://developer.android.com/reference/android/hardware/SensorManager.html#getDefaultSensor(int,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sensor GetDefaultSensor(int arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GetDynamicSensorList_" data-uid="Android.Hardware.SensorManager.GetDynamicSensorList*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GetDynamicSensorList_System_Int32_" data-uid="Android.Hardware.SensorManager.GetDynamicSensorList(System.Int32)">
+  GetDynamicSensorList(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L654"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#getDynamicSensorList(int)">https://developer.android.com/reference/android/hardware/SensorManager.html#getDynamicSensorList(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Sensor&gt; GetDynamicSensorList(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Hardware.Sensor.html">Sensor</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GetInclination_" data-uid="Android.Hardware.SensorManager.GetInclination*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GetInclination_System_Single___" data-uid="Android.Hardware.SensorManager.GetInclination(System.Single[])">
+  GetInclination(float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#getInclination(float[])">https://developer.android.com/reference/android/hardware/SensorManager.html#getInclination(float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetInclination(float[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GetOrientation_" data-uid="Android.Hardware.SensorManager.GetOrientation*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GetOrientation_System_Single___System_Single___" data-uid="Android.Hardware.SensorManager.GetOrientation(System.Single[],System.Single[])">
+  GetOrientation(float[], float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#getOrientation(float[],float[])">https://developer.android.com/reference/android/hardware/SensorManager.html#getOrientation(float[],float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float[] GetOrientation(float[] arg0, float[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GetQuaternionFromVector_" data-uid="Android.Hardware.SensorManager.GetQuaternionFromVector*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GetQuaternionFromVector_System_Single___System_Single___" data-uid="Android.Hardware.SensorManager.GetQuaternionFromVector(System.Single[],System.Single[])">
+  GetQuaternionFromVector(float[], float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L478"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#getQuaternionFromVector(float[],float[])">https://developer.android.com/reference/android/hardware/SensorManager.html#getQuaternionFromVector(float[],float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetQuaternionFromVector(float[] arg0, float[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GetRotationMatrix_" data-uid="Android.Hardware.SensorManager.GetRotationMatrix*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GetRotationMatrix_System_Single___System_Single___System_Single___System_Single___" data-uid="Android.Hardware.SensorManager.GetRotationMatrix(System.Single[],System.Single[],System.Single[],System.Single[])">
+  GetRotationMatrix(float[], float[], float[], float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#getRotationMatrix(float[],float[],float[],float[])">https://developer.android.com/reference/android/hardware/SensorManager.html#getRotationMatrix(float[],float[],float[],float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetRotationMatrix(float[] arg0, float[] arg1, float[] arg2, float[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GetRotationMatrixFromVector_" data-uid="Android.Hardware.SensorManager.GetRotationMatrixFromVector*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GetRotationMatrixFromVector_System_Single___System_Single___" data-uid="Android.Hardware.SensorManager.GetRotationMatrixFromVector(System.Single[],System.Single[])">
+  GetRotationMatrixFromVector(float[], float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#getRotationMatrixFromVector(float[],float[])">https://developer.android.com/reference/android/hardware/SensorManager.html#getRotationMatrixFromVector(float[],float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetRotationMatrixFromVector(float[] arg0, float[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GetSensorList_" data-uid="Android.Hardware.SensorManager.GetSensorList*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GetSensorList_System_Int32_" data-uid="Android.Hardware.SensorManager.GetSensorList(System.Int32)">
+  GetSensorList(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L663"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#getSensorList(int)">https://developer.android.com/reference/android/hardware/SensorManager.html#getSensorList(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Sensor&gt; GetSensorList(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Hardware.Sensor.html">Sensor</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_GetSensors_" data-uid="Android.Hardware.SensorManager.GetSensors*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_GetSensors" data-uid="Android.Hardware.SensorManager.GetSensors">
+  GetSensors()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L644"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#getSensors()">https://developer.android.com/reference/android/hardware/SensorManager.html#getSensors()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public int GetSensors()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_IsDynamicSensorDiscoverySupported_" data-uid="Android.Hardware.SensorManager.IsDynamicSensorDiscoverySupported*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_IsDynamicSensorDiscoverySupported" data-uid="Android.Hardware.SensorManager.IsDynamicSensorDiscoverySupported">
+  IsDynamicSensorDiscoverySupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L555"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#isDynamicSensorDiscoverySupported()">https://developer.android.com/reference/android/hardware/SensorManager.html#isDynamicSensorDiscoverySupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDynamicSensorDiscoverySupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_RegisterDynamicSensorCallback_" data-uid="Android.Hardware.SensorManager.RegisterDynamicSensorCallback*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_RegisterDynamicSensorCallback_Android_Hardware_SensorManager_DynamicSensorCallback_" data-uid="Android.Hardware.SensorManager.RegisterDynamicSensorCallback(Android.Hardware.SensorManager.DynamicSensorCallback)">
+  RegisterDynamicSensorCallback(DynamicSensorCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L680"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerDynamicSensorCallback(android.hardware.SensorManager.DynamicSensorCallback)">https://developer.android.com/reference/android/hardware/SensorManager.html#registerDynamicSensorCallback(android.hardware.SensorManager.DynamicSensorCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterDynamicSensorCallback(SensorManager.DynamicSensorCallback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SensorManager.html">SensorManager</a>.<a class="xref" href="Android.Hardware.SensorManager.DynamicSensorCallback.html">DynamicSensorCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorManager.DynamicSensorCallback.html">SensorManager.DynamicSensorCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_RegisterDynamicSensorCallback_" data-uid="Android.Hardware.SensorManager.RegisterDynamicSensorCallback*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_RegisterDynamicSensorCallback_Android_Hardware_SensorManager_DynamicSensorCallback_Android_Os_Handler_" data-uid="Android.Hardware.SensorManager.RegisterDynamicSensorCallback(Android.Hardware.SensorManager.DynamicSensorCallback,Android.Os.Handler)">
+  RegisterDynamicSensorCallback(DynamicSensorCallback, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L672"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerDynamicSensorCallback(android.hardware.SensorManager.DynamicSensorCallback,android.os.Handler)">https://developer.android.com/reference/android/hardware/SensorManager.html#registerDynamicSensorCallback(android.hardware.SensorManager.DynamicSensorCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterDynamicSensorCallback(SensorManager.DynamicSensorCallback arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SensorManager.html">SensorManager</a>.<a class="xref" href="Android.Hardware.SensorManager.DynamicSensorCallback.html">DynamicSensorCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorManager.DynamicSensorCallback.html">SensorManager.DynamicSensorCallback</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_RegisterListener_" data-uid="Android.Hardware.SensorManager.RegisterListener*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_RegisterListener_Android_Hardware_SensorEventListener_Android_Hardware_Sensor_System_Int32_" data-uid="Android.Hardware.SensorManager.RegisterListener(Android.Hardware.SensorEventListener,Android.Hardware.Sensor,System.Int32)">
+  RegisterListener(SensorEventListener, Sensor, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L603"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)">https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterListener(SensorEventListener arg0, Sensor arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SensorEventListener.html">SensorEventListener</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorEventListener.html">SensorEventListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_RegisterListener_" data-uid="Android.Hardware.SensorManager.RegisterListener*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_RegisterListener_Android_Hardware_SensorEventListener_Android_Hardware_Sensor_System_Int32_Android_Os_Handler_" data-uid="Android.Hardware.SensorManager.RegisterListener(Android.Hardware.SensorEventListener,Android.Hardware.Sensor,System.Int32,Android.Os.Handler)">
+  RegisterListener(SensorEventListener, Sensor, int, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L567"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,android.os.Handler)">https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterListener(SensorEventListener arg0, Sensor arg1, int arg2, Handler arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SensorEventListener.html">SensorEventListener</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorEventListener.html">SensorEventListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_RegisterListener_" data-uid="Android.Hardware.SensorManager.RegisterListener*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_RegisterListener_Android_Hardware_SensorEventListener_Android_Hardware_Sensor_System_Int32_System_Int32_" data-uid="Android.Hardware.SensorManager.RegisterListener(Android.Hardware.SensorEventListener,Android.Hardware.Sensor,System.Int32,System.Int32)">
+  RegisterListener(SensorEventListener, Sensor, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int)">https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterListener(SensorEventListener arg0, Sensor arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SensorEventListener.html">SensorEventListener</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorEventListener.html">SensorEventListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_RegisterListener_" data-uid="Android.Hardware.SensorManager.RegisterListener*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_RegisterListener_Android_Hardware_SensorEventListener_Android_Hardware_Sensor_System_Int32_System_Int32_Android_Os_Handler_" data-uid="Android.Hardware.SensorManager.RegisterListener(Android.Hardware.SensorEventListener,Android.Hardware.Sensor,System.Int32,System.Int32,Android.Os.Handler)">
+  RegisterListener(SensorEventListener, Sensor, int, int, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int,android.os.Handler)">https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterListener(SensorEventListener arg0, Sensor arg1, int arg2, int arg3, Handler arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SensorEventListener.html">SensorEventListener</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorEventListener.html">SensorEventListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_RegisterListener_" data-uid="Android.Hardware.SensorManager.RegisterListener*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_RegisterListener_Android_Hardware_SensorListener_System_Int32_" data-uid="Android.Hardware.SensorManager.RegisterListener(Android.Hardware.SensorListener,System.Int32)">
+  RegisterListener(SensorListener, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L625"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorListener,int)">https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorListener,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool RegisterListener(SensorListener arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SensorListener.html">SensorListener</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorListener.html">SensorListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_RegisterListener_" data-uid="Android.Hardware.SensorManager.RegisterListener*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_RegisterListener_Android_Hardware_SensorListener_System_Int32_System_Int32_" data-uid="Android.Hardware.SensorManager.RegisterListener(Android.Hardware.SensorListener,System.Int32,System.Int32)">
+  RegisterListener(SensorListener, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L614"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorListener,int,int)">https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorListener,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool RegisterListener(SensorListener arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SensorListener.html">SensorListener</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorListener.html">SensorListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_RemapCoordinateSystem_" data-uid="Android.Hardware.SensorManager.RemapCoordinateSystem*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_RemapCoordinateSystem_System_Single___System_Int32_System_Int32_System_Single___" data-uid="Android.Hardware.SensorManager.RemapCoordinateSystem(System.Single[],System.Int32,System.Int32,System.Single[])">
+  RemapCoordinateSystem(float[], int, int, float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#remapCoordinateSystem(float[],int,int,float[])">https://developer.android.com/reference/android/hardware/SensorManager.html#remapCoordinateSystem(float[],int,int,float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RemapCoordinateSystem(float[] arg0, int arg1, int arg2, float[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_RequestTriggerSensor_" data-uid="Android.Hardware.SensorManager.RequestTriggerSensor*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_RequestTriggerSensor_Android_Hardware_TriggerEventListener_Android_Hardware_Sensor_" data-uid="Android.Hardware.SensorManager.RequestTriggerSensor(Android.Hardware.TriggerEventListener,Android.Hardware.Sensor)">
+  RequestTriggerSensor(TriggerEventListener, Sensor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L636"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#requestTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)">https://developer.android.com/reference/android/hardware/SensorManager.html#requestTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequestTriggerSensor(TriggerEventListener arg0, Sensor arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.TriggerEventListener.html">TriggerEventListener</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.TriggerEventListener.html">TriggerEventListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_UnregisterDynamicSensorCallback_" data-uid="Android.Hardware.SensorManager.UnregisterDynamicSensorCallback*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_UnregisterDynamicSensorCallback_Android_Hardware_SensorManager_DynamicSensorCallback_" data-uid="Android.Hardware.SensorManager.UnregisterDynamicSensorCallback(Android.Hardware.SensorManager.DynamicSensorCallback)">
+  UnregisterDynamicSensorCallback(DynamicSensorCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L688"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#unregisterDynamicSensorCallback(android.hardware.SensorManager.DynamicSensorCallback)">https://developer.android.com/reference/android/hardware/SensorManager.html#unregisterDynamicSensorCallback(android.hardware.SensorManager.DynamicSensorCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterDynamicSensorCallback(SensorManager.DynamicSensorCallback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SensorManager.html">SensorManager</a>.<a class="xref" href="Android.Hardware.SensorManager.DynamicSensorCallback.html">DynamicSensorCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorManager.DynamicSensorCallback.html">SensorManager.DynamicSensorCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_UnregisterListener_" data-uid="Android.Hardware.SensorManager.UnregisterListener*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_UnregisterListener_Android_Hardware_SensorEventListener_" data-uid="Android.Hardware.SensorManager.UnregisterListener(Android.Hardware.SensorEventListener)">
+  UnregisterListener(SensorEventListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L705"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#unregisterListener(android.hardware.SensorEventListener)">https://developer.android.com/reference/android/hardware/SensorManager.html#unregisterListener(android.hardware.SensorEventListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterListener(SensorEventListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SensorEventListener.html">SensorEventListener</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorEventListener.html">SensorEventListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_UnregisterListener_" data-uid="Android.Hardware.SensorManager.UnregisterListener*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_UnregisterListener_Android_Hardware_SensorEventListener_Android_Hardware_Sensor_" data-uid="Android.Hardware.SensorManager.UnregisterListener(Android.Hardware.SensorEventListener,Android.Hardware.Sensor)">
+  UnregisterListener(SensorEventListener, Sensor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L697"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#unregisterListener(android.hardware.SensorEventListener,android.hardware.Sensor)">https://developer.android.com/reference/android/hardware/SensorManager.html#unregisterListener(android.hardware.SensorEventListener,android.hardware.Sensor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterListener(SensorEventListener arg0, Sensor arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SensorEventListener.html">SensorEventListener</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorEventListener.html">SensorEventListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.Sensor.html">Sensor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_UnregisterListener_" data-uid="Android.Hardware.SensorManager.UnregisterListener*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_UnregisterListener_Android_Hardware_SensorListener_" data-uid="Android.Hardware.SensorManager.UnregisterListener(Android.Hardware.SensorListener)">
+  UnregisterListener(SensorListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L723"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#unregisterListener(android.hardware.SensorListener)">https://developer.android.com/reference/android/hardware/SensorManager.html#unregisterListener(android.hardware.SensorListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void UnregisterListener(SensorListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SensorListener.html">SensorListener</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorListener.html">SensorListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SensorManager_UnregisterListener_" data-uid="Android.Hardware.SensorManager.UnregisterListener*"></a>
+
+  <h3 id="Android_Hardware_SensorManager_UnregisterListener_Android_Hardware_SensorListener_System_Int32_" data-uid="Android.Hardware.SensorManager.UnregisterListener(Android.Hardware.SensorListener,System.Int32)">
+  UnregisterListener(SensorListener, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L714"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SensorManager.html#unregisterListener(android.hardware.SensorListener,int)">https://developer.android.com/reference/android/hardware/SensorManager.html#unregisterListener(android.hardware.SensorListener,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void UnregisterListener(SensorListener arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SensorListener.html">SensorListener</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SensorListener.html">SensorListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SensorManager.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

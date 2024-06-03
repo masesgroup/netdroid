@@ -1,0 +1,2190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class SpeechRecognizer | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SpeechRecognizer | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/speech/SpeechRecognizer.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Speech_SpeechRecognizer.md&amp;value=---%0Auid%3A%20Android.Speech.SpeechRecognizer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Speech.SpeechRecognizer">
+
+
+
+  <h1 id="Android_Speech_SpeechRecognizer" data-uid="Android.Speech.SpeechRecognizer" class="text-break">
+Class SpeechRecognizer  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Speech.html">Speech</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html">https://developer.android.com/reference/android/speech/SpeechRecognizer.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SpeechRecognizer : JVMBridgeBase&lt;SpeechRecognizer&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Speech.SpeechRecognizer.html">SpeechRecognizer</a>&gt;</div>
+      <div><span class="xref">SpeechRecognizer</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SpeechRecognizer&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SpeechRecognizer&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;SpeechRecognizer&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SpeechRecognizer&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SpeechRecognizer&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SpeechRecognizer&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SpeechRecognizer&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Speech_SpeechRecognizer__ctor_" data-uid="Android.Speech.SpeechRecognizer.#ctor*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer__ctor" data-uid="Android.Speech.SpeechRecognizer.#ctor">
+  SpeechRecognizer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L701"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpeechRecognizer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer__ctor_" data-uid="Android.Speech.SpeechRecognizer.#ctor*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer__ctor_System_Object___" data-uid="Android.Speech.SpeechRecognizer.#ctor(System.Object[])">
+  SpeechRecognizer(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L705"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpeechRecognizer(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Speech_SpeechRecognizer_BridgeClassName_" data-uid="Android.Speech.SpeechRecognizer.BridgeClassName*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_BridgeClassName" data-uid="Android.Speech.SpeechRecognizer.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L712"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_CONFIDENCE_SCORES_" data-uid="Android.Speech.SpeechRecognizer.CONFIDENCE_SCORES*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_CONFIDENCE_SCORES" data-uid="Android.Speech.SpeechRecognizer.CONFIDENCE_SCORES">
+  CONFIDENCE_SCORES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#CONFIDENCE_SCORES">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#CONFIDENCE_SCORES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CONFIDENCE_SCORES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_DETECTED_LANGUAGE_" data-uid="Android.Speech.SpeechRecognizer.DETECTED_LANGUAGE*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_DETECTED_LANGUAGE" data-uid="Android.Speech.SpeechRecognizer.DETECTED_LANGUAGE">
+  DETECTED_LANGUAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#DETECTED_LANGUAGE">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#DETECTED_LANGUAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DETECTED_LANGUAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_AUDIO_" data-uid="Android.Speech.SpeechRecognizer.ERROR_AUDIO*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_AUDIO" data-uid="Android.Speech.SpeechRecognizer.ERROR_AUDIO">
+  ERROR_AUDIO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_AUDIO">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_AUDIO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_AUDIO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_CANNOT_CHECK_SUPPORT_" data-uid="Android.Speech.SpeechRecognizer.ERROR_CANNOT_CHECK_SUPPORT*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_CANNOT_CHECK_SUPPORT" data-uid="Android.Speech.SpeechRecognizer.ERROR_CANNOT_CHECK_SUPPORT">
+  ERROR_CANNOT_CHECK_SUPPORT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_CANNOT_CHECK_SUPPORT">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_CANNOT_CHECK_SUPPORT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CANNOT_CHECK_SUPPORT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_CANNOT_LISTEN_TO_DOWNLOAD_EVENTS_" data-uid="Android.Speech.SpeechRecognizer.ERROR_CANNOT_LISTEN_TO_DOWNLOAD_EVENTS*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_CANNOT_LISTEN_TO_DOWNLOAD_EVENTS" data-uid="Android.Speech.SpeechRecognizer.ERROR_CANNOT_LISTEN_TO_DOWNLOAD_EVENTS">
+  ERROR_CANNOT_LISTEN_TO_DOWNLOAD_EVENTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_CANNOT_LISTEN_TO_DOWNLOAD_EVENTS">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_CANNOT_LISTEN_TO_DOWNLOAD_EVENTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CANNOT_LISTEN_TO_DOWNLOAD_EVENTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_CLIENT_" data-uid="Android.Speech.SpeechRecognizer.ERROR_CLIENT*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_CLIENT" data-uid="Android.Speech.SpeechRecognizer.ERROR_CLIENT">
+  ERROR_CLIENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_CLIENT">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_CLIENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CLIENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_INSUFFICIENT_PERMISSIONS_" data-uid="Android.Speech.SpeechRecognizer.ERROR_INSUFFICIENT_PERMISSIONS*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_INSUFFICIENT_PERMISSIONS" data-uid="Android.Speech.SpeechRecognizer.ERROR_INSUFFICIENT_PERMISSIONS">
+  ERROR_INSUFFICIENT_PERMISSIONS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_INSUFFICIENT_PERMISSIONS">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_INSUFFICIENT_PERMISSIONS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_INSUFFICIENT_PERMISSIONS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_LANGUAGE_NOT_SUPPORTED_" data-uid="Android.Speech.SpeechRecognizer.ERROR_LANGUAGE_NOT_SUPPORTED*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_LANGUAGE_NOT_SUPPORTED" data-uid="Android.Speech.SpeechRecognizer.ERROR_LANGUAGE_NOT_SUPPORTED">
+  ERROR_LANGUAGE_NOT_SUPPORTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_LANGUAGE_NOT_SUPPORTED">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_LANGUAGE_NOT_SUPPORTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_LANGUAGE_NOT_SUPPORTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_LANGUAGE_UNAVAILABLE_" data-uid="Android.Speech.SpeechRecognizer.ERROR_LANGUAGE_UNAVAILABLE*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_LANGUAGE_UNAVAILABLE" data-uid="Android.Speech.SpeechRecognizer.ERROR_LANGUAGE_UNAVAILABLE">
+  ERROR_LANGUAGE_UNAVAILABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_LANGUAGE_UNAVAILABLE">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_LANGUAGE_UNAVAILABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_LANGUAGE_UNAVAILABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_NETWORK_" data-uid="Android.Speech.SpeechRecognizer.ERROR_NETWORK*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_NETWORK" data-uid="Android.Speech.SpeechRecognizer.ERROR_NETWORK">
+  ERROR_NETWORK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_NETWORK">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_NETWORK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_NETWORK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_NETWORK_TIMEOUT_" data-uid="Android.Speech.SpeechRecognizer.ERROR_NETWORK_TIMEOUT*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_NETWORK_TIMEOUT" data-uid="Android.Speech.SpeechRecognizer.ERROR_NETWORK_TIMEOUT">
+  ERROR_NETWORK_TIMEOUT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_NETWORK_TIMEOUT">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_NETWORK_TIMEOUT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_NETWORK_TIMEOUT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_NO_MATCH_" data-uid="Android.Speech.SpeechRecognizer.ERROR_NO_MATCH*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_NO_MATCH" data-uid="Android.Speech.SpeechRecognizer.ERROR_NO_MATCH">
+  ERROR_NO_MATCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_NO_MATCH">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_NO_MATCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_NO_MATCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_RECOGNIZER_BUSY_" data-uid="Android.Speech.SpeechRecognizer.ERROR_RECOGNIZER_BUSY*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_RECOGNIZER_BUSY" data-uid="Android.Speech.SpeechRecognizer.ERROR_RECOGNIZER_BUSY">
+  ERROR_RECOGNIZER_BUSY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_RECOGNIZER_BUSY">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_RECOGNIZER_BUSY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_RECOGNIZER_BUSY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_SERVER_" data-uid="Android.Speech.SpeechRecognizer.ERROR_SERVER*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_SERVER" data-uid="Android.Speech.SpeechRecognizer.ERROR_SERVER">
+  ERROR_SERVER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_SERVER">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_SERVER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_SERVER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_SERVER_DISCONNECTED_" data-uid="Android.Speech.SpeechRecognizer.ERROR_SERVER_DISCONNECTED*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_SERVER_DISCONNECTED" data-uid="Android.Speech.SpeechRecognizer.ERROR_SERVER_DISCONNECTED">
+  ERROR_SERVER_DISCONNECTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_SERVER_DISCONNECTED">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_SERVER_DISCONNECTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_SERVER_DISCONNECTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_SPEECH_TIMEOUT_" data-uid="Android.Speech.SpeechRecognizer.ERROR_SPEECH_TIMEOUT*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_SPEECH_TIMEOUT" data-uid="Android.Speech.SpeechRecognizer.ERROR_SPEECH_TIMEOUT">
+  ERROR_SPEECH_TIMEOUT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_SPEECH_TIMEOUT">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_SPEECH_TIMEOUT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_SPEECH_TIMEOUT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_ERROR_TOO_MANY_REQUESTS_" data-uid="Android.Speech.SpeechRecognizer.ERROR_TOO_MANY_REQUESTS*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_ERROR_TOO_MANY_REQUESTS" data-uid="Android.Speech.SpeechRecognizer.ERROR_TOO_MANY_REQUESTS">
+  ERROR_TOO_MANY_REQUESTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_TOO_MANY_REQUESTS">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_TOO_MANY_REQUESTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_TOO_MANY_REQUESTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_IsBridgeAbstract_" data-uid="Android.Speech.SpeechRecognizer.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_IsBridgeAbstract" data-uid="Android.Speech.SpeechRecognizer.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L716"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_IsBridgeCloseable_" data-uid="Android.Speech.SpeechRecognizer.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_IsBridgeCloseable" data-uid="Android.Speech.SpeechRecognizer.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L720"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_IsBridgeInterface_" data-uid="Android.Speech.SpeechRecognizer.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_IsBridgeInterface" data-uid="Android.Speech.SpeechRecognizer.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L724"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_IsBridgeStatic_" data-uid="Android.Speech.SpeechRecognizer.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_IsBridgeStatic" data-uid="Android.Speech.SpeechRecognizer.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L728"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_LANGUAGE_DETECTION_CONFIDENCE_LEVEL_" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_DETECTION_CONFIDENCE_LEVEL*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_LANGUAGE_DETECTION_CONFIDENCE_LEVEL" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_DETECTION_CONFIDENCE_LEVEL">
+  LANGUAGE_DETECTION_CONFIDENCE_LEVEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_DETECTION_CONFIDENCE_LEVEL">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_DETECTION_CONFIDENCE_LEVEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String LANGUAGE_DETECTION_CONFIDENCE_LEVEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_LANGUAGE_DETECTION_CONFIDENCE_LEVEL_CONFIDENT_" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_DETECTION_CONFIDENCE_LEVEL_CONFIDENT*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_LANGUAGE_DETECTION_CONFIDENCE_LEVEL_CONFIDENT" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_DETECTION_CONFIDENCE_LEVEL_CONFIDENT">
+  LANGUAGE_DETECTION_CONFIDENCE_LEVEL_CONFIDENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_DETECTION_CONFIDENCE_LEVEL_CONFIDENT">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_DETECTION_CONFIDENCE_LEVEL_CONFIDENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LANGUAGE_DETECTION_CONFIDENCE_LEVEL_CONFIDENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_LANGUAGE_DETECTION_CONFIDENCE_LEVEL_HIGHLY_CONFIDENT_" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_DETECTION_CONFIDENCE_LEVEL_HIGHLY_CONFIDENT*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_LANGUAGE_DETECTION_CONFIDENCE_LEVEL_HIGHLY_CONFIDENT" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_DETECTION_CONFIDENCE_LEVEL_HIGHLY_CONFIDENT">
+  LANGUAGE_DETECTION_CONFIDENCE_LEVEL_HIGHLY_CONFIDENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_DETECTION_CONFIDENCE_LEVEL_HIGHLY_CONFIDENT">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_DETECTION_CONFIDENCE_LEVEL_HIGHLY_CONFIDENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LANGUAGE_DETECTION_CONFIDENCE_LEVEL_HIGHLY_CONFIDENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_LANGUAGE_DETECTION_CONFIDENCE_LEVEL_NOT_CONFIDENT_" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_DETECTION_CONFIDENCE_LEVEL_NOT_CONFIDENT*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_LANGUAGE_DETECTION_CONFIDENCE_LEVEL_NOT_CONFIDENT" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_DETECTION_CONFIDENCE_LEVEL_NOT_CONFIDENT">
+  LANGUAGE_DETECTION_CONFIDENCE_LEVEL_NOT_CONFIDENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_DETECTION_CONFIDENCE_LEVEL_NOT_CONFIDENT">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_DETECTION_CONFIDENCE_LEVEL_NOT_CONFIDENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LANGUAGE_DETECTION_CONFIDENCE_LEVEL_NOT_CONFIDENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_LANGUAGE_DETECTION_CONFIDENCE_LEVEL_UNKNOWN_" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_DETECTION_CONFIDENCE_LEVEL_UNKNOWN*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_LANGUAGE_DETECTION_CONFIDENCE_LEVEL_UNKNOWN" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_DETECTION_CONFIDENCE_LEVEL_UNKNOWN">
+  LANGUAGE_DETECTION_CONFIDENCE_LEVEL_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_DETECTION_CONFIDENCE_LEVEL_UNKNOWN">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_DETECTION_CONFIDENCE_LEVEL_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LANGUAGE_DETECTION_CONFIDENCE_LEVEL_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_LANGUAGE_SWITCH_RESULT_" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_SWITCH_RESULT*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_LANGUAGE_SWITCH_RESULT" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_SWITCH_RESULT">
+  LANGUAGE_SWITCH_RESULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_SWITCH_RESULT">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_SWITCH_RESULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String LANGUAGE_SWITCH_RESULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_LANGUAGE_SWITCH_RESULT_FAILED_" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_SWITCH_RESULT_FAILED*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_LANGUAGE_SWITCH_RESULT_FAILED" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_SWITCH_RESULT_FAILED">
+  LANGUAGE_SWITCH_RESULT_FAILED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_SWITCH_RESULT_FAILED">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_SWITCH_RESULT_FAILED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LANGUAGE_SWITCH_RESULT_FAILED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_LANGUAGE_SWITCH_RESULT_NOT_ATTEMPTED_" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_SWITCH_RESULT_NOT_ATTEMPTED*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_LANGUAGE_SWITCH_RESULT_NOT_ATTEMPTED" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_SWITCH_RESULT_NOT_ATTEMPTED">
+  LANGUAGE_SWITCH_RESULT_NOT_ATTEMPTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_SWITCH_RESULT_NOT_ATTEMPTED">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_SWITCH_RESULT_NOT_ATTEMPTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LANGUAGE_SWITCH_RESULT_NOT_ATTEMPTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_LANGUAGE_SWITCH_RESULT_SKIPPED_NO_MODEL_" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_SWITCH_RESULT_SKIPPED_NO_MODEL*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_LANGUAGE_SWITCH_RESULT_SKIPPED_NO_MODEL" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_SWITCH_RESULT_SKIPPED_NO_MODEL">
+  LANGUAGE_SWITCH_RESULT_SKIPPED_NO_MODEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_SWITCH_RESULT_SKIPPED_NO_MODEL">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_SWITCH_RESULT_SKIPPED_NO_MODEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LANGUAGE_SWITCH_RESULT_SKIPPED_NO_MODEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_LANGUAGE_SWITCH_RESULT_SUCCEEDED_" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_SWITCH_RESULT_SUCCEEDED*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_LANGUAGE_SWITCH_RESULT_SUCCEEDED" data-uid="Android.Speech.SpeechRecognizer.LANGUAGE_SWITCH_RESULT_SUCCEEDED">
+  LANGUAGE_SWITCH_RESULT_SUCCEEDED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_SWITCH_RESULT_SUCCEEDED">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#LANGUAGE_SWITCH_RESULT_SUCCEEDED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LANGUAGE_SWITCH_RESULT_SUCCEEDED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_RECOGNITION_PARTS_" data-uid="Android.Speech.SpeechRecognizer.RECOGNITION_PARTS*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_RECOGNITION_PARTS" data-uid="Android.Speech.SpeechRecognizer.RECOGNITION_PARTS">
+  RECOGNITION_PARTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#RECOGNITION_PARTS">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#RECOGNITION_PARTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String RECOGNITION_PARTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_RESULTS_ALTERNATIVES_" data-uid="Android.Speech.SpeechRecognizer.RESULTS_ALTERNATIVES*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_RESULTS_ALTERNATIVES" data-uid="Android.Speech.SpeechRecognizer.RESULTS_ALTERNATIVES">
+  RESULTS_ALTERNATIVES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#RESULTS_ALTERNATIVES">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#RESULTS_ALTERNATIVES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String RESULTS_ALTERNATIVES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_RESULTS_RECOGNITION_" data-uid="Android.Speech.SpeechRecognizer.RESULTS_RECOGNITION*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_RESULTS_RECOGNITION" data-uid="Android.Speech.SpeechRecognizer.RESULTS_RECOGNITION">
+  RESULTS_RECOGNITION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#RESULTS_RECOGNITION">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#RESULTS_RECOGNITION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String RESULTS_RECOGNITION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_TOP_LOCALE_ALTERNATIVES_" data-uid="Android.Speech.SpeechRecognizer.TOP_LOCALE_ALTERNATIVES*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_TOP_LOCALE_ALTERNATIVES" data-uid="Android.Speech.SpeechRecognizer.TOP_LOCALE_ALTERNATIVES">
+  TOP_LOCALE_ALTERNATIVES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#TOP_LOCALE_ALTERNATIVES">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#TOP_LOCALE_ALTERNATIVES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TOP_LOCALE_ALTERNATIVES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Speech_SpeechRecognizer_Cancel_" data-uid="Android.Speech.SpeechRecognizer.Cancel*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_Cancel" data-uid="Android.Speech.SpeechRecognizer.Cancel">
+  Cancel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#cancel()">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#cancel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Cancel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_CheckRecognitionSupport_" data-uid="Android.Speech.SpeechRecognizer.CheckRecognitionSupport*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_CheckRecognitionSupport_Android_Content_Intent_Java_Util_Concurrent_Executor_Android_Speech_RecognitionSupportCallback_" data-uid="Android.Speech.SpeechRecognizer.CheckRecognitionSupport(Android.Content.Intent,Java.Util.Concurrent.Executor,Android.Speech.RecognitionSupportCallback)">
+  CheckRecognitionSupport(Intent, Executor, RecognitionSupportCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#checkRecognitionSupport(android.content.Intent,java.util.concurrent.Executor,android.speech.RecognitionSupportCallback)">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#checkRecognitionSupport(android.content.Intent,java.util.concurrent.Executor,android.speech.RecognitionSupportCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckRecognitionSupport(Intent arg0, Executor arg1, RecognitionSupportCallback arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Speech.RecognitionSupportCallback.html">RecognitionSupportCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Speech.RecognitionSupportCallback.html">RecognitionSupportCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_CreateOnDeviceSpeechRecognizer_" data-uid="Android.Speech.SpeechRecognizer.CreateOnDeviceSpeechRecognizer*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_CreateOnDeviceSpeechRecognizer_Android_Content_Context_" data-uid="Android.Speech.SpeechRecognizer.CreateOnDeviceSpeechRecognizer(Android.Content.Context)">
+  CreateOnDeviceSpeechRecognizer(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#createOnDeviceSpeechRecognizer(android.content.Context)">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#createOnDeviceSpeechRecognizer(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SpeechRecognizer CreateOnDeviceSpeechRecognizer(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Speech.SpeechRecognizer.html">SpeechRecognizer</a></dt>
+    <dd><p><a class="xref" href="Android.Speech.SpeechRecognizer.html">SpeechRecognizer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_CreateSpeechRecognizer_" data-uid="Android.Speech.SpeechRecognizer.CreateSpeechRecognizer*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_CreateSpeechRecognizer_Android_Content_Context_" data-uid="Android.Speech.SpeechRecognizer.CreateSpeechRecognizer(Android.Content.Context)">
+  CreateSpeechRecognizer(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#createSpeechRecognizer(android.content.Context)">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#createSpeechRecognizer(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SpeechRecognizer CreateSpeechRecognizer(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Speech.SpeechRecognizer.html">SpeechRecognizer</a></dt>
+    <dd><p><a class="xref" href="Android.Speech.SpeechRecognizer.html">SpeechRecognizer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_CreateSpeechRecognizer_" data-uid="Android.Speech.SpeechRecognizer.CreateSpeechRecognizer*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_CreateSpeechRecognizer_Android_Content_Context_Android_Content_ComponentName_" data-uid="Android.Speech.SpeechRecognizer.CreateSpeechRecognizer(Android.Content.Context,Android.Content.ComponentName)">
+  CreateSpeechRecognizer(Context, ComponentName)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#createSpeechRecognizer(android.content.Context,android.content.ComponentName)">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#createSpeechRecognizer(android.content.Context,android.content.ComponentName)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SpeechRecognizer CreateSpeechRecognizer(Context arg0, ComponentName arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Speech.SpeechRecognizer.html">SpeechRecognizer</a></dt>
+    <dd><p><a class="xref" href="Android.Speech.SpeechRecognizer.html">SpeechRecognizer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_Destroy_" data-uid="Android.Speech.SpeechRecognizer.Destroy*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_Destroy" data-uid="Android.Speech.SpeechRecognizer.Destroy">
+  Destroy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#destroy()">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#destroy()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Destroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_IsOnDeviceRecognitionAvailable_" data-uid="Android.Speech.SpeechRecognizer.IsOnDeviceRecognitionAvailable*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_IsOnDeviceRecognitionAvailable_Android_Content_Context_" data-uid="Android.Speech.SpeechRecognizer.IsOnDeviceRecognitionAvailable(Android.Content.Context)">
+  IsOnDeviceRecognitionAvailable(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#isOnDeviceRecognitionAvailable(android.content.Context)">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#isOnDeviceRecognitionAvailable(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsOnDeviceRecognitionAvailable(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_IsRecognitionAvailable_" data-uid="Android.Speech.SpeechRecognizer.IsRecognitionAvailable*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_IsRecognitionAvailable_Android_Content_Context_" data-uid="Android.Speech.SpeechRecognizer.IsRecognitionAvailable(Android.Content.Context)">
+  IsRecognitionAvailable(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#isRecognitionAvailable(android.content.Context)">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#isRecognitionAvailable(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsRecognitionAvailable(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_SetRecognitionListener_" data-uid="Android.Speech.SpeechRecognizer.SetRecognitionListener*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_SetRecognitionListener_Android_Speech_RecognitionListener_" data-uid="Android.Speech.SpeechRecognizer.SetRecognitionListener(Android.Speech.RecognitionListener)">
+  SetRecognitionListener(RecognitionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#setRecognitionListener(android.speech.RecognitionListener)">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#setRecognitionListener(android.speech.RecognitionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRecognitionListener(RecognitionListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Speech.RecognitionListener.html">RecognitionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Speech.RecognitionListener.html">RecognitionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_StartListening_" data-uid="Android.Speech.SpeechRecognizer.StartListening*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_StartListening_Android_Content_Intent_" data-uid="Android.Speech.SpeechRecognizer.StartListening(Android.Content.Intent)">
+  StartListening(Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#startListening(android.content.Intent)">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#startListening(android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartListening(Intent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_StopListening_" data-uid="Android.Speech.SpeechRecognizer.StopListening*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_StopListening" data-uid="Android.Speech.SpeechRecognizer.StopListening">
+  StopListening()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#stopListening()">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#stopListening()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopListening()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_TriggerModelDownload_" data-uid="Android.Speech.SpeechRecognizer.TriggerModelDownload*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_TriggerModelDownload_Android_Content_Intent_" data-uid="Android.Speech.SpeechRecognizer.TriggerModelDownload(Android.Content.Intent)">
+  TriggerModelDownload(Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#triggerModelDownload(android.content.Intent)">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#triggerModelDownload(android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerModelDownload(Intent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_SpeechRecognizer_TriggerModelDownload_" data-uid="Android.Speech.SpeechRecognizer.TriggerModelDownload*"></a>
+
+  <h3 id="Android_Speech_SpeechRecognizer_TriggerModelDownload_Android_Content_Intent_Java_Util_Concurrent_Executor_Android_Speech_ModelDownloadListener_" data-uid="Android.Speech.SpeechRecognizer.TriggerModelDownload(Android.Content.Intent,Java.Util.Concurrent.Executor,Android.Speech.ModelDownloadListener)">
+  TriggerModelDownload(Intent, Executor, ModelDownloadListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#triggerModelDownload(android.content.Intent,java.util.concurrent.Executor,android.speech.ModelDownloadListener)">https://developer.android.com/reference/android/speech/SpeechRecognizer.html#triggerModelDownload(android.content.Intent,java.util.concurrent.Executor,android.speech.ModelDownloadListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerModelDownload(Intent arg0, Executor arg1, ModelDownloadListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Speech.ModelDownloadListener.html">ModelDownloadListener</a></dt>
+    <dd><p><a class="xref" href="Android.Speech.ModelDownloadListener.html">ModelDownloadListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/SpeechRecognizer.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

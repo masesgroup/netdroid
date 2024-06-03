@@ -1,0 +1,3273 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class NumberFormat | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NumberFormat | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/icu/text/NumberFormat.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Icu_Text_NumberFormat.md&amp;value=---%0Auid%3A%20Android.Icu.Text.NumberFormat%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Icu.Text.NumberFormat">
+
+
+
+  <h1 id="Android_Icu_Text_NumberFormat" data-uid="Android.Icu.Text.NumberFormat" class="text-break">
+Class NumberFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Icu.html">Icu</a>.<a class="xref" href="Android.Icu.Text.html">Text</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html">https://developer.android.com/reference/android/icu/text/NumberFormat.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NumberFormat : UFormat, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ISerializable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Text.Format.html">Format</a>&gt;</div>
+      <div><a class="xref" href="Java.Text.Format.html">Format</a></div>
+      <div><a class="xref" href="Android.Icu.Text.UFormat.html">UFormat</a></div>
+      <div><span class="xref">NumberFormat</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
+      <div><a class="xref" href="Java.Lang.ICloneable.html">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Android.Icu.Text.DecimalFormat.html">DecimalFormat</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_ParseObject_Java_Lang_String_Java_Text_ParsePosition_">Format.ParseObject(String, ParsePosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_FormatMethod_System_Object_Java_Lang_StringBuffer_Java_Text_FieldPosition_">Format.FormatMethod(object, StringBuffer, FieldPosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_FormatMethod_System_Object_">Format.FormatMethod(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_ParseObject_Java_Lang_String_">Format.ParseObject(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_FormatToCharacterIterator_System_Object_">Format.FormatToCharacterIterator(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Format&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Icu_Text_NumberFormat__ctor_" data-uid="Android.Icu.Text.NumberFormat.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat__ctor" data-uid="Android.Icu.Text.NumberFormat.#ctor">
+  NumberFormat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;NumberFormat class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public NumberFormat()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat__ctor_" data-uid="Android.Icu.Text.NumberFormat.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat__ctor_System_Object___" data-uid="Android.Icu.Text.NumberFormat.#ctor(System.Object[])">
+  NumberFormat(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;NumberFormat class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public NumberFormat(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Icu_Text_NumberFormat_ACCOUNTINGCURRENCYSTYLE_" data-uid="Android.Icu.Text.NumberFormat.ACCOUNTINGCURRENCYSTYLE*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_ACCOUNTINGCURRENCYSTYLE" data-uid="Android.Icu.Text.NumberFormat.ACCOUNTINGCURRENCYSTYLE">
+  ACCOUNTINGCURRENCYSTYLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#ACCOUNTINGCURRENCYSTYLE">https://developer.android.com/reference/android/icu/text/NumberFormat.html#ACCOUNTINGCURRENCYSTYLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ACCOUNTINGCURRENCYSTYLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_BridgeClassName_" data-uid="Android.Icu.Text.NumberFormat.BridgeClassName*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_BridgeClassName" data-uid="Android.Icu.Text.NumberFormat.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_CASHCURRENCYSTYLE_" data-uid="Android.Icu.Text.NumberFormat.CASHCURRENCYSTYLE*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_CASHCURRENCYSTYLE" data-uid="Android.Icu.Text.NumberFormat.CASHCURRENCYSTYLE">
+  CASHCURRENCYSTYLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#CASHCURRENCYSTYLE">https://developer.android.com/reference/android/icu/text/NumberFormat.html#CASHCURRENCYSTYLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CASHCURRENCYSTYLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_CURRENCYSTYLE_" data-uid="Android.Icu.Text.NumberFormat.CURRENCYSTYLE*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_CURRENCYSTYLE" data-uid="Android.Icu.Text.NumberFormat.CURRENCYSTYLE">
+  CURRENCYSTYLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#CURRENCYSTYLE">https://developer.android.com/reference/android/icu/text/NumberFormat.html#CURRENCYSTYLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CURRENCYSTYLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_FRACTION_FIELD_" data-uid="Android.Icu.Text.NumberFormat.FRACTION_FIELD*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_FRACTION_FIELD" data-uid="Android.Icu.Text.NumberFormat.FRACTION_FIELD">
+  FRACTION_FIELD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#FRACTION_FIELD">https://developer.android.com/reference/android/icu/text/NumberFormat.html#FRACTION_FIELD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FRACTION_FIELD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_INTEGERSTYLE_" data-uid="Android.Icu.Text.NumberFormat.INTEGERSTYLE*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_INTEGERSTYLE" data-uid="Android.Icu.Text.NumberFormat.INTEGERSTYLE">
+  INTEGERSTYLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#INTEGERSTYLE">https://developer.android.com/reference/android/icu/text/NumberFormat.html#INTEGERSTYLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTEGERSTYLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_INTEGER_FIELD_" data-uid="Android.Icu.Text.NumberFormat.INTEGER_FIELD*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_INTEGER_FIELD" data-uid="Android.Icu.Text.NumberFormat.INTEGER_FIELD">
+  INTEGER_FIELD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#INTEGER_FIELD">https://developer.android.com/reference/android/icu/text/NumberFormat.html#INTEGER_FIELD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTEGER_FIELD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_ISOCURRENCYSTYLE_" data-uid="Android.Icu.Text.NumberFormat.ISOCURRENCYSTYLE*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_ISOCURRENCYSTYLE" data-uid="Android.Icu.Text.NumberFormat.ISOCURRENCYSTYLE">
+  ISOCURRENCYSTYLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#ISOCURRENCYSTYLE">https://developer.android.com/reference/android/icu/text/NumberFormat.html#ISOCURRENCYSTYLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ISOCURRENCYSTYLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_IsBridgeAbstract_" data-uid="Android.Icu.Text.NumberFormat.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_IsBridgeAbstract" data-uid="Android.Icu.Text.NumberFormat.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_IsBridgeCloseable_" data-uid="Android.Icu.Text.NumberFormat.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_IsBridgeCloseable" data-uid="Android.Icu.Text.NumberFormat.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_IsBridgeInterface_" data-uid="Android.Icu.Text.NumberFormat.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_IsBridgeInterface" data-uid="Android.Icu.Text.NumberFormat.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_IsBridgeStatic_" data-uid="Android.Icu.Text.NumberFormat.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_IsBridgeStatic" data-uid="Android.Icu.Text.NumberFormat.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_NUMBERSTYLE_" data-uid="Android.Icu.Text.NumberFormat.NUMBERSTYLE*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_NUMBERSTYLE" data-uid="Android.Icu.Text.NumberFormat.NUMBERSTYLE">
+  NUMBERSTYLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#NUMBERSTYLE">https://developer.android.com/reference/android/icu/text/NumberFormat.html#NUMBERSTYLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NUMBERSTYLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_PERCENTSTYLE_" data-uid="Android.Icu.Text.NumberFormat.PERCENTSTYLE*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_PERCENTSTYLE" data-uid="Android.Icu.Text.NumberFormat.PERCENTSTYLE">
+  PERCENTSTYLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#PERCENTSTYLE">https://developer.android.com/reference/android/icu/text/NumberFormat.html#PERCENTSTYLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PERCENTSTYLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_PLURALCURRENCYSTYLE_" data-uid="Android.Icu.Text.NumberFormat.PLURALCURRENCYSTYLE*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_PLURALCURRENCYSTYLE" data-uid="Android.Icu.Text.NumberFormat.PLURALCURRENCYSTYLE">
+  PLURALCURRENCYSTYLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#PLURALCURRENCYSTYLE">https://developer.android.com/reference/android/icu/text/NumberFormat.html#PLURALCURRENCYSTYLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PLURALCURRENCYSTYLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_SCIENTIFICSTYLE_" data-uid="Android.Icu.Text.NumberFormat.SCIENTIFICSTYLE*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_SCIENTIFICSTYLE" data-uid="Android.Icu.Text.NumberFormat.SCIENTIFICSTYLE">
+  SCIENTIFICSTYLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#SCIENTIFICSTYLE">https://developer.android.com/reference/android/icu/text/NumberFormat.html#SCIENTIFICSTYLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCIENTIFICSTYLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_STANDARDCURRENCYSTYLE_" data-uid="Android.Icu.Text.NumberFormat.STANDARDCURRENCYSTYLE*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_STANDARDCURRENCYSTYLE" data-uid="Android.Icu.Text.NumberFormat.STANDARDCURRENCYSTYLE">
+  STANDARDCURRENCYSTYLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#STANDARDCURRENCYSTYLE">https://developer.android.com/reference/android/icu/text/NumberFormat.html#STANDARDCURRENCYSTYLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STANDARDCURRENCYSTYLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Icu_Text_NumberFormat_Format_" data-uid="Android.Icu.Text.NumberFormat.Format*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_Format_Android_Icu_Math_BigDecimal_" data-uid="Android.Icu.Text.NumberFormat.Format(Android.Icu.Math.BigDecimal)">
+  Format(BigDecimal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(android.icu.math.BigDecimal)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(android.icu.math.BigDecimal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String Format(BigDecimal arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Math.BigDecimal.html">BigDecimal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_Format_" data-uid="Android.Icu.Text.NumberFormat.Format*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_Format_Android_Icu_Math_BigDecimal_Java_Lang_StringBuffer_Java_Text_FieldPosition_" data-uid="Android.Icu.Text.NumberFormat.Format(Android.Icu.Math.BigDecimal,Java.Lang.StringBuffer,Java.Text.FieldPosition)">
+  Format(BigDecimal, StringBuffer, FieldPosition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(android.icu.math.BigDecimal,java.lang.StringBuffer,java.text.FieldPosition)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(android.icu.math.BigDecimal,java.lang.StringBuffer,java.text.FieldPosition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringBuffer Format(BigDecimal arg0, StringBuffer arg1, FieldPosition arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Math.BigDecimal.html">BigDecimal</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Text.FieldPosition.html">FieldPosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.FieldPosition.html">FieldPosition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_Format_" data-uid="Android.Icu.Text.NumberFormat.Format*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_Format_Android_Icu_Util_CurrencyAmount_" data-uid="Android.Icu.Text.NumberFormat.Format(Android.Icu.Util.CurrencyAmount)">
+  Format(CurrencyAmount)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(android.icu.util.CurrencyAmount)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(android.icu.util.CurrencyAmount)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String Format(CurrencyAmount arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.CurrencyAmount.html">CurrencyAmount</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.CurrencyAmount.html">CurrencyAmount</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_Format_" data-uid="Android.Icu.Text.NumberFormat.Format*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_Format_Android_Icu_Util_CurrencyAmount_Java_Lang_StringBuffer_Java_Text_FieldPosition_" data-uid="Android.Icu.Text.NumberFormat.Format(Android.Icu.Util.CurrencyAmount,Java.Lang.StringBuffer,Java.Text.FieldPosition)">
+  Format(CurrencyAmount, StringBuffer, FieldPosition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L540"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(android.icu.util.CurrencyAmount,java.lang.StringBuffer,java.text.FieldPosition)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(android.icu.util.CurrencyAmount,java.lang.StringBuffer,java.text.FieldPosition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringBuffer Format(CurrencyAmount arg0, StringBuffer arg1, FieldPosition arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.CurrencyAmount.html">CurrencyAmount</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.CurrencyAmount.html">CurrencyAmount</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Text.FieldPosition.html">FieldPosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.FieldPosition.html">FieldPosition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_Format_" data-uid="Android.Icu.Text.NumberFormat.Format*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_Format_Java_Math_BigDecimal_" data-uid="Android.Icu.Text.NumberFormat.Format(Java.Math.BigDecimal)">
+  Format(BigDecimal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(java.math.BigDecimal)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(java.math.BigDecimal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String Format(BigDecimal arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd><p><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_Format_" data-uid="Android.Icu.Text.NumberFormat.Format*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_Format_Java_Math_BigDecimal_Java_Lang_StringBuffer_Java_Text_FieldPosition_" data-uid="Android.Icu.Text.NumberFormat.Format(Java.Math.BigDecimal,Java.Lang.StringBuffer,Java.Text.FieldPosition)">
+  Format(BigDecimal, StringBuffer, FieldPosition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(java.math.BigDecimal,java.lang.StringBuffer,java.text.FieldPosition)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(java.math.BigDecimal,java.lang.StringBuffer,java.text.FieldPosition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringBuffer Format(BigDecimal arg0, StringBuffer arg1, FieldPosition arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd><p><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Text.FieldPosition.html">FieldPosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.FieldPosition.html">FieldPosition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_Format_" data-uid="Android.Icu.Text.NumberFormat.Format*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_Format_Java_Math_BigInteger_" data-uid="Android.Icu.Text.NumberFormat.Format(Java.Math.BigInteger)">
+  Format(BigInteger)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(java.math.BigInteger)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(java.math.BigInteger)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String Format(BigInteger arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></dt>
+    <dd><p><a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_Format_" data-uid="Android.Icu.Text.NumberFormat.Format*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_Format_Java_Math_BigInteger_Java_Lang_StringBuffer_Java_Text_FieldPosition_" data-uid="Android.Icu.Text.NumberFormat.Format(Java.Math.BigInteger,Java.Lang.StringBuffer,Java.Text.FieldPosition)">
+  Format(BigInteger, StringBuffer, FieldPosition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(java.math.BigInteger,java.lang.StringBuffer,java.text.FieldPosition)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(java.math.BigInteger,java.lang.StringBuffer,java.text.FieldPosition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringBuffer Format(BigInteger arg0, StringBuffer arg1, FieldPosition arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></dt>
+    <dd><p><a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Text.FieldPosition.html">FieldPosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.FieldPosition.html">FieldPosition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_Format_" data-uid="Android.Icu.Text.NumberFormat.Format*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_Format_System_Double_" data-uid="Android.Icu.Text.NumberFormat.Format(System.Double)">
+  Format(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L452"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(double)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(double)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String Format(double arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_Format_" data-uid="Android.Icu.Text.NumberFormat.Format*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_Format_System_Double_Java_Lang_StringBuffer_Java_Text_FieldPosition_" data-uid="Android.Icu.Text.NumberFormat.Format(System.Double,Java.Lang.StringBuffer,Java.Text.FieldPosition)">
+  Format(double, StringBuffer, FieldPosition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(double,java.lang.StringBuffer,java.text.FieldPosition)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(double,java.lang.StringBuffer,java.text.FieldPosition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringBuffer Format(double arg0, StringBuffer arg1, FieldPosition arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Text.FieldPosition.html">FieldPosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.FieldPosition.html">FieldPosition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_Format_" data-uid="Android.Icu.Text.NumberFormat.Format*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_Format_System_Int64_" data-uid="Android.Icu.Text.NumberFormat.Format(System.Int64)">
+  Format(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L479"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(long)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String Format(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_Format_" data-uid="Android.Icu.Text.NumberFormat.Format*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_Format_System_Int64_Java_Lang_StringBuffer_Java_Text_FieldPosition_" data-uid="Android.Icu.Text.NumberFormat.Format(System.Int64,Java.Lang.StringBuffer,Java.Text.FieldPosition)">
+  Format(long, StringBuffer, FieldPosition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(long,java.lang.StringBuffer,java.text.FieldPosition)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(long,java.lang.StringBuffer,java.text.FieldPosition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringBuffer Format(long arg0, StringBuffer arg1, FieldPosition arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Text.FieldPosition.html">FieldPosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.FieldPosition.html">FieldPosition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetAvailableLocales_" data-uid="Android.Icu.Text.NumberFormat.GetAvailableLocales*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetAvailableLocales" data-uid="Android.Icu.Text.NumberFormat.GetAvailableLocales">
+  GetAvailableLocales()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getAvailableLocales()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getAvailableLocales()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Locale[] GetAvailableLocales()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Locale.html">Locale</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetContext_" data-uid="Android.Icu.Text.NumberFormat.GetContext*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetContext_Android_Icu_Text_DisplayContext_Type_" data-uid="Android.Icu.Text.NumberFormat.GetContext(Android.Icu.Text.DisplayContext.Type)">
+  GetContext(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getContext(android.icu.text.DisplayContext.Type)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getContext(android.icu.text.DisplayContext.Type)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DisplayContext GetContext(DisplayContext.Type arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.DisplayContext.html">DisplayContext</a>.<a class="xref" href="Android.Icu.Text.DisplayContext.Type.html">Type</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.DisplayContext.Type.html">DisplayContext.Type</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.DisplayContext.html">DisplayContext</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.DisplayContext.html">DisplayContext</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetCurrency_" data-uid="Android.Icu.Text.NumberFormat.GetCurrency*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetCurrency" data-uid="Android.Icu.Text.NumberFormat.GetCurrency">
+  GetCurrency()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getCurrency()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getCurrency()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Currency GetCurrency()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Util.Currency.html">Currency</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.Currency.html">Currency</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetCurrencyInstance_" data-uid="Android.Icu.Text.NumberFormat.GetCurrencyInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetCurrencyInstance" data-uid="Android.Icu.Text.NumberFormat.GetCurrencyInstance">
+  GetCurrencyInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getCurrencyInstance()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getCurrencyInstance()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetCurrencyInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetCurrencyInstance_" data-uid="Android.Icu.Text.NumberFormat.GetCurrencyInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetCurrencyInstance_Android_Icu_Util_ULocale_" data-uid="Android.Icu.Text.NumberFormat.GetCurrencyInstance(Android.Icu.Util.ULocale)">
+  GetCurrencyInstance(ULocale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getCurrencyInstance(android.icu.util.ULocale)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getCurrencyInstance(android.icu.util.ULocale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetCurrencyInstance(ULocale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetCurrencyInstance_" data-uid="Android.Icu.Text.NumberFormat.GetCurrencyInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetCurrencyInstance_Java_Util_Locale_" data-uid="Android.Icu.Text.NumberFormat.GetCurrencyInstance(Java.Util.Locale)">
+  GetCurrencyInstance(Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getCurrencyInstance(java.util.Locale)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getCurrencyInstance(java.util.Locale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetCurrencyInstance(Locale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetInstance_" data-uid="Android.Icu.Text.NumberFormat.GetInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetInstance" data-uid="Android.Icu.Text.NumberFormat.GetInstance">
+  GetInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetInstance_" data-uid="Android.Icu.Text.NumberFormat.GetInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetInstance_Android_Icu_Util_ULocale_" data-uid="Android.Icu.Text.NumberFormat.GetInstance(Android.Icu.Util.ULocale)">
+  GetInstance(ULocale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance(android.icu.util.ULocale)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance(android.icu.util.ULocale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetInstance(ULocale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetInstance_" data-uid="Android.Icu.Text.NumberFormat.GetInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetInstance_Android_Icu_Util_ULocale_System_Int32_" data-uid="Android.Icu.Text.NumberFormat.GetInstance(Android.Icu.Util.ULocale,System.Int32)">
+  GetInstance(ULocale, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance(android.icu.util.ULocale,int)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance(android.icu.util.ULocale,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetInstance(ULocale arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetInstance_" data-uid="Android.Icu.Text.NumberFormat.GetInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetInstance_Java_Util_Locale_" data-uid="Android.Icu.Text.NumberFormat.GetInstance(Java.Util.Locale)">
+  GetInstance(Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance(java.util.Locale)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance(java.util.Locale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetInstance(Locale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetInstance_" data-uid="Android.Icu.Text.NumberFormat.GetInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetInstance_Java_Util_Locale_System_Int32_" data-uid="Android.Icu.Text.NumberFormat.GetInstance(Java.Util.Locale,System.Int32)">
+  GetInstance(Locale, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance(java.util.Locale,int)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance(java.util.Locale,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetInstance(Locale arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetInstance_" data-uid="Android.Icu.Text.NumberFormat.GetInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetInstance_System_Int32_" data-uid="Android.Icu.Text.NumberFormat.GetInstance(System.Int32)">
+  GetInstance(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance(int)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetInstance(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetIntegerInstance_" data-uid="Android.Icu.Text.NumberFormat.GetIntegerInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetIntegerInstance" data-uid="Android.Icu.Text.NumberFormat.GetIntegerInstance">
+  GetIntegerInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getIntegerInstance()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getIntegerInstance()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetIntegerInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetIntegerInstance_" data-uid="Android.Icu.Text.NumberFormat.GetIntegerInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetIntegerInstance_Android_Icu_Util_ULocale_" data-uid="Android.Icu.Text.NumberFormat.GetIntegerInstance(Android.Icu.Util.ULocale)">
+  GetIntegerInstance(ULocale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getIntegerInstance(android.icu.util.ULocale)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getIntegerInstance(android.icu.util.ULocale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetIntegerInstance(ULocale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetIntegerInstance_" data-uid="Android.Icu.Text.NumberFormat.GetIntegerInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetIntegerInstance_Java_Util_Locale_" data-uid="Android.Icu.Text.NumberFormat.GetIntegerInstance(Java.Util.Locale)">
+  GetIntegerInstance(Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getIntegerInstance(java.util.Locale)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getIntegerInstance(java.util.Locale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetIntegerInstance(Locale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetMaximumFractionDigits_" data-uid="Android.Icu.Text.NumberFormat.GetMaximumFractionDigits*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetMaximumFractionDigits" data-uid="Android.Icu.Text.NumberFormat.GetMaximumFractionDigits">
+  GetMaximumFractionDigits()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMaximumFractionDigits()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMaximumFractionDigits()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMaximumFractionDigits()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetMaximumIntegerDigits_" data-uid="Android.Icu.Text.NumberFormat.GetMaximumIntegerDigits*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetMaximumIntegerDigits" data-uid="Android.Icu.Text.NumberFormat.GetMaximumIntegerDigits">
+  GetMaximumIntegerDigits()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L495"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMaximumIntegerDigits()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMaximumIntegerDigits()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMaximumIntegerDigits()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetMinimumFractionDigits_" data-uid="Android.Icu.Text.NumberFormat.GetMinimumFractionDigits*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetMinimumFractionDigits" data-uid="Android.Icu.Text.NumberFormat.GetMinimumFractionDigits">
+  GetMinimumFractionDigits()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L503"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMinimumFractionDigits()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMinimumFractionDigits()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMinimumFractionDigits()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetMinimumIntegerDigits_" data-uid="Android.Icu.Text.NumberFormat.GetMinimumIntegerDigits*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetMinimumIntegerDigits" data-uid="Android.Icu.Text.NumberFormat.GetMinimumIntegerDigits">
+  GetMinimumIntegerDigits()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMinimumIntegerDigits()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getMinimumIntegerDigits()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMinimumIntegerDigits()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetNumberInstance_" data-uid="Android.Icu.Text.NumberFormat.GetNumberInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetNumberInstance" data-uid="Android.Icu.Text.NumberFormat.GetNumberInstance">
+  GetNumberInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getNumberInstance()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getNumberInstance()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetNumberInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetNumberInstance_" data-uid="Android.Icu.Text.NumberFormat.GetNumberInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetNumberInstance_Android_Icu_Util_ULocale_" data-uid="Android.Icu.Text.NumberFormat.GetNumberInstance(Android.Icu.Util.ULocale)">
+  GetNumberInstance(ULocale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getNumberInstance(android.icu.util.ULocale)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getNumberInstance(android.icu.util.ULocale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetNumberInstance(ULocale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetNumberInstance_" data-uid="Android.Icu.Text.NumberFormat.GetNumberInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetNumberInstance_Java_Util_Locale_" data-uid="Android.Icu.Text.NumberFormat.GetNumberInstance(Java.Util.Locale)">
+  GetNumberInstance(Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getNumberInstance(java.util.Locale)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getNumberInstance(java.util.Locale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetNumberInstance(Locale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetPercentInstance_" data-uid="Android.Icu.Text.NumberFormat.GetPercentInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetPercentInstance" data-uid="Android.Icu.Text.NumberFormat.GetPercentInstance">
+  GetPercentInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getPercentInstance()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getPercentInstance()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetPercentInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetPercentInstance_" data-uid="Android.Icu.Text.NumberFormat.GetPercentInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetPercentInstance_Android_Icu_Util_ULocale_" data-uid="Android.Icu.Text.NumberFormat.GetPercentInstance(Android.Icu.Util.ULocale)">
+  GetPercentInstance(ULocale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getPercentInstance(android.icu.util.ULocale)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getPercentInstance(android.icu.util.ULocale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetPercentInstance(ULocale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetPercentInstance_" data-uid="Android.Icu.Text.NumberFormat.GetPercentInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetPercentInstance_Java_Util_Locale_" data-uid="Android.Icu.Text.NumberFormat.GetPercentInstance(Java.Util.Locale)">
+  GetPercentInstance(Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getPercentInstance(java.util.Locale)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getPercentInstance(java.util.Locale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetPercentInstance(Locale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetRoundingMode_" data-uid="Android.Icu.Text.NumberFormat.GetRoundingMode*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetRoundingMode" data-uid="Android.Icu.Text.NumberFormat.GetRoundingMode">
+  GetRoundingMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getRoundingMode()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getRoundingMode()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetRoundingMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetScientificInstance_" data-uid="Android.Icu.Text.NumberFormat.GetScientificInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetScientificInstance" data-uid="Android.Icu.Text.NumberFormat.GetScientificInstance">
+  GetScientificInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getScientificInstance()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getScientificInstance()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetScientificInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetScientificInstance_" data-uid="Android.Icu.Text.NumberFormat.GetScientificInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetScientificInstance_Android_Icu_Util_ULocale_" data-uid="Android.Icu.Text.NumberFormat.GetScientificInstance(Android.Icu.Util.ULocale)">
+  GetScientificInstance(ULocale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getScientificInstance(android.icu.util.ULocale)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getScientificInstance(android.icu.util.ULocale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetScientificInstance(ULocale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_GetScientificInstance_" data-uid="Android.Icu.Text.NumberFormat.GetScientificInstance*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_GetScientificInstance_Java_Util_Locale_" data-uid="Android.Icu.Text.NumberFormat.GetScientificInstance(Java.Util.Locale)">
+  GetScientificInstance(Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getScientificInstance(java.util.Locale)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#getScientificInstance(java.util.Locale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NumberFormat GetScientificInstance(Locale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_IsGroupingUsed_" data-uid="Android.Icu.Text.NumberFormat.IsGroupingUsed*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_IsGroupingUsed" data-uid="Android.Icu.Text.NumberFormat.IsGroupingUsed">
+  IsGroupingUsed()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#isGroupingUsed()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#isGroupingUsed()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGroupingUsed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_IsParseIntegerOnly_" data-uid="Android.Icu.Text.NumberFormat.IsParseIntegerOnly*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_IsParseIntegerOnly" data-uid="Android.Icu.Text.NumberFormat.IsParseIntegerOnly">
+  IsParseIntegerOnly()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L417"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#isParseIntegerOnly()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#isParseIntegerOnly()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsParseIntegerOnly()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_IsParseStrict_" data-uid="Android.Icu.Text.NumberFormat.IsParseStrict*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_IsParseStrict" data-uid="Android.Icu.Text.NumberFormat.IsParseStrict">
+  IsParseStrict()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#isParseStrict()">https://developer.android.com/reference/android/icu/text/NumberFormat.html#isParseStrict()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsParseStrict()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_Parse_" data-uid="Android.Icu.Text.NumberFormat.Parse*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_Parse_Java_Lang_String_" data-uid="Android.Icu.Text.NumberFormat.Parse(Java.Lang.String)">
+  Parse(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#parse(java.lang.String)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#parse(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Number Parse(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Number.html">Number</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Number.html">Number</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Text.ParseException.html">ParseException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_Parse_" data-uid="Android.Icu.Text.NumberFormat.Parse*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_Parse_Java_Lang_String_Java_Text_ParsePosition_" data-uid="Android.Icu.Text.NumberFormat.Parse(Java.Lang.String,Java.Text.ParsePosition)">
+  Parse(String, ParsePosition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#parse(java.lang.String,java.text.ParsePosition)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#parse(java.lang.String,java.text.ParsePosition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Number Parse(String arg0, ParsePosition arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Number.html">Number</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Number.html">Number</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_ParseCurrency_" data-uid="Android.Icu.Text.NumberFormat.ParseCurrency*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_ParseCurrency_Java_Lang_CharSequence_Java_Text_ParsePosition_" data-uid="Android.Icu.Text.NumberFormat.ParseCurrency(Java.Lang.CharSequence,Java.Text.ParsePosition)">
+  ParseCurrency(CharSequence, ParsePosition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#parseCurrency(java.lang.CharSequence,java.text.ParsePosition)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#parseCurrency(java.lang.CharSequence,java.text.ParsePosition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CurrencyAmount ParseCurrency(CharSequence arg0, ParsePosition arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Util.CurrencyAmount.html">CurrencyAmount</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.CurrencyAmount.html">CurrencyAmount</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_SetContext_" data-uid="Android.Icu.Text.NumberFormat.SetContext*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_SetContext_Android_Icu_Text_DisplayContext_" data-uid="Android.Icu.Text.NumberFormat.SetContext(Android.Icu.Text.DisplayContext)">
+  SetContext(DisplayContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setContext(android.icu.text.DisplayContext)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#setContext(android.icu.text.DisplayContext)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetContext(DisplayContext arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.DisplayContext.html">DisplayContext</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.DisplayContext.html">DisplayContext</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_SetCurrency_" data-uid="Android.Icu.Text.NumberFormat.SetCurrency*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_SetCurrency_Android_Icu_Util_Currency_" data-uid="Android.Icu.Text.NumberFormat.SetCurrency(Android.Icu.Util.Currency)">
+  SetCurrency(Currency)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setCurrency(android.icu.util.Currency)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#setCurrency(android.icu.util.Currency)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCurrency(Currency arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.Currency.html">Currency</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.Currency.html">Currency</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_SetGroupingUsed_" data-uid="Android.Icu.Text.NumberFormat.SetGroupingUsed*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_SetGroupingUsed_System_Boolean_" data-uid="Android.Icu.Text.NumberFormat.SetGroupingUsed(System.Boolean)">
+  SetGroupingUsed(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setGroupingUsed(boolean)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#setGroupingUsed(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGroupingUsed(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_SetMaximumFractionDigits_" data-uid="Android.Icu.Text.NumberFormat.SetMaximumFractionDigits*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_SetMaximumFractionDigits_System_Int32_" data-uid="Android.Icu.Text.NumberFormat.SetMaximumFractionDigits(System.Int32)">
+  SetMaximumFractionDigits(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L572"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMaximumFractionDigits(int)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMaximumFractionDigits(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaximumFractionDigits(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_SetMaximumIntegerDigits_" data-uid="Android.Icu.Text.NumberFormat.SetMaximumIntegerDigits*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_SetMaximumIntegerDigits_System_Int32_" data-uid="Android.Icu.Text.NumberFormat.SetMaximumIntegerDigits(System.Int32)">
+  SetMaximumIntegerDigits(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMaximumIntegerDigits(int)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMaximumIntegerDigits(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaximumIntegerDigits(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_SetMinimumFractionDigits_" data-uid="Android.Icu.Text.NumberFormat.SetMinimumFractionDigits*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_SetMinimumFractionDigits_System_Int32_" data-uid="Android.Icu.Text.NumberFormat.SetMinimumFractionDigits(System.Int32)">
+  SetMinimumFractionDigits(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMinimumFractionDigits(int)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMinimumFractionDigits(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMinimumFractionDigits(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_SetMinimumIntegerDigits_" data-uid="Android.Icu.Text.NumberFormat.SetMinimumIntegerDigits*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_SetMinimumIntegerDigits_System_Int32_" data-uid="Android.Icu.Text.NumberFormat.SetMinimumIntegerDigits(System.Int32)">
+  SetMinimumIntegerDigits(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMinimumIntegerDigits(int)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#setMinimumIntegerDigits(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMinimumIntegerDigits(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_SetParseIntegerOnly_" data-uid="Android.Icu.Text.NumberFormat.SetParseIntegerOnly*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_SetParseIntegerOnly_System_Boolean_" data-uid="Android.Icu.Text.NumberFormat.SetParseIntegerOnly(System.Boolean)">
+  SetParseIntegerOnly(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L604"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setParseIntegerOnly(boolean)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#setParseIntegerOnly(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParseIntegerOnly(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_SetParseStrict_" data-uid="Android.Icu.Text.NumberFormat.SetParseStrict*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_SetParseStrict_System_Boolean_" data-uid="Android.Icu.Text.NumberFormat.SetParseStrict(System.Boolean)">
+  SetParseStrict(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L612"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setParseStrict(boolean)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#setParseStrict(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParseStrict(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_NumberFormat_SetRoundingMode_" data-uid="Android.Icu.Text.NumberFormat.SetRoundingMode*"></a>
+
+  <h3 id="Android_Icu_Text_NumberFormat_SetRoundingMode_System_Int32_" data-uid="Android.Icu.Text.NumberFormat.SetRoundingMode(System.Int32)">
+  SetRoundingMode(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L620"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setRoundingMode(int)">https://developer.android.com/reference/android/icu/text/NumberFormat.html#setRoundingMode(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRoundingMode(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/NumberFormat.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

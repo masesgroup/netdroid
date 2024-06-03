@@ -1,0 +1,1270 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class CompactDecimalFormat | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CompactDecimalFormat | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/icu/text/CompactDecimalFormat.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Icu_Text_CompactDecimalFormat.md&amp;value=---%0Auid%3A%20Android.Icu.Text.CompactDecimalFormat%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Icu.Text.CompactDecimalFormat">
+
+
+
+  <h1 id="Android_Icu_Text_CompactDecimalFormat" data-uid="Android.Icu.Text.CompactDecimalFormat" class="text-break">
+Class CompactDecimalFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/CompactDecimalFormat.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Icu.html">Icu</a>.<a class="xref" href="Android.Icu.Text.html">Text</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/icu/text/CompactDecimalFormat.html">https://developer.android.com/reference/android/icu/text/CompactDecimalFormat.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CompactDecimalFormat : DecimalFormat, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ISerializable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Text.Format.html">Format</a>&gt;</div>
+      <div><a class="xref" href="Java.Text.Format.html">Format</a></div>
+      <div><a class="xref" href="Android.Icu.Text.UFormat.html">UFormat</a></div>
+      <div><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></div>
+      <div><a class="xref" href="Android.Icu.Text.DecimalFormat.html">DecimalFormat</a></div>
+      <div><span class="xref">CompactDecimalFormat</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
+      <div><a class="xref" href="Java.Lang.ICloneable.html">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_MINIMUM_GROUPING_DIGITS_AUTO">DecimalFormat.MINIMUM_GROUPING_DIGITS_AUTO</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_MINIMUM_GROUPING_DIGITS_MIN2">DecimalFormat.MINIMUM_GROUPING_DIGITS_MIN2</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_PAD_AFTER_PREFIX">DecimalFormat.PAD_AFTER_PREFIX</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_PAD_AFTER_SUFFIX">DecimalFormat.PAD_AFTER_SUFFIX</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_PAD_BEFORE_PREFIX">DecimalFormat.PAD_BEFORE_PREFIX</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_PAD_BEFORE_SUFFIX">DecimalFormat.PAD_BEFORE_SUFFIX</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetParseMaxDigits">DecimalFormat.GetParseMaxDigits()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetMathContextICU">DecimalFormat.GetMathContextICU()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetCurrencyPluralInfo">DecimalFormat.GetCurrencyPluralInfo()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetDecimalFormatSymbols">DecimalFormat.GetDecimalFormatSymbols()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetCurrencyUsage">DecimalFormat.GetCurrencyUsage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_AreSignificantDigitsUsed">DecimalFormat.AreSignificantDigitsUsed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_IsDecimalPatternMatchRequired">DecimalFormat.IsDecimalPatternMatchRequired()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_IsDecimalSeparatorAlwaysShown">DecimalFormat.IsDecimalSeparatorAlwaysShown()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_IsExponentSignAlwaysShown">DecimalFormat.IsExponentSignAlwaysShown()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_IsParseBigDecimal">DecimalFormat.IsParseBigDecimal()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_IsParseCaseSensitive">DecimalFormat.IsParseCaseSensitive()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_IsParseNoExponent">DecimalFormat.IsParseNoExponent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_IsScientificNotation">DecimalFormat.IsScientificNotation()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_IsSignAlwaysShown">DecimalFormat.IsSignAlwaysShown()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetMinimumExponentDigits">DecimalFormat.GetMinimumExponentDigits()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetPadCharacter">DecimalFormat.GetPadCharacter()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetFormatWidth">DecimalFormat.GetFormatWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetGroupingSize">DecimalFormat.GetGroupingSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetMaximumSignificantDigits">DecimalFormat.GetMaximumSignificantDigits()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetMinimumGroupingDigits">DecimalFormat.GetMinimumGroupingDigits()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetMinimumSignificantDigits">DecimalFormat.GetMinimumSignificantDigits()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetMultiplier">DecimalFormat.GetMultiplier()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetPadPosition">DecimalFormat.GetPadPosition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetSecondaryGroupingSize">DecimalFormat.GetSecondaryGroupingSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetNegativePrefix">DecimalFormat.GetNegativePrefix()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetNegativeSuffix">DecimalFormat.GetNegativeSuffix()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetPositivePrefix">DecimalFormat.GetPositivePrefix()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetPositiveSuffix">DecimalFormat.GetPositiveSuffix()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_ToLocalizedPattern">DecimalFormat.ToLocalizedPattern()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_ToPattern">DecimalFormat.ToPattern()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetRoundingIncrement">DecimalFormat.GetRoundingIncrement()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_GetMathContext">DecimalFormat.GetMathContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_ApplyLocalizedPattern_Java_Lang_String_">DecimalFormat.ApplyLocalizedPattern(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_ApplyPattern_Java_Lang_String_">DecimalFormat.ApplyPattern(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetCurrencyPluralInfo_Android_Icu_Text_CurrencyPluralInfo_">DecimalFormat.SetCurrencyPluralInfo(CurrencyPluralInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetCurrencyUsage_Android_Icu_Util_Currency_CurrencyUsage_">DecimalFormat.SetCurrencyUsage(Currency.CurrencyUsage)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetDecimalFormatSymbols_Android_Icu_Text_DecimalFormatSymbols_">DecimalFormat.SetDecimalFormatSymbols(DecimalFormatSymbols)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetDecimalPatternMatchRequired_System_Boolean_">DecimalFormat.SetDecimalPatternMatchRequired(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetDecimalSeparatorAlwaysShown_System_Boolean_">DecimalFormat.SetDecimalSeparatorAlwaysShown(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetExponentSignAlwaysShown_System_Boolean_">DecimalFormat.SetExponentSignAlwaysShown(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetFormatWidth_System_Int32_">DecimalFormat.SetFormatWidth(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetGroupingSize_System_Int32_">DecimalFormat.SetGroupingSize(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetMathContext_Java_Math_MathContext_">DecimalFormat.SetMathContext(MathContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetMathContextICU_Android_Icu_Math_MathContext_">DecimalFormat.SetMathContextICU(MathContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetMaximumSignificantDigits_System_Int32_">DecimalFormat.SetMaximumSignificantDigits(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetMinimumExponentDigits_System_Byte_">DecimalFormat.SetMinimumExponentDigits(byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetMinimumGroupingDigits_System_Int32_">DecimalFormat.SetMinimumGroupingDigits(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetMinimumSignificantDigits_System_Int32_">DecimalFormat.SetMinimumSignificantDigits(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetMultiplier_System_Int32_">DecimalFormat.SetMultiplier(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetNegativePrefix_Java_Lang_String_">DecimalFormat.SetNegativePrefix(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetNegativeSuffix_Java_Lang_String_">DecimalFormat.SetNegativeSuffix(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetPadCharacter_System_Char_">DecimalFormat.SetPadCharacter(char)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetPadPosition_System_Int32_">DecimalFormat.SetPadPosition(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetParseBigDecimal_System_Boolean_">DecimalFormat.SetParseBigDecimal(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetParseCaseSensitive_System_Boolean_">DecimalFormat.SetParseCaseSensitive(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetParseNoExponent_System_Boolean_">DecimalFormat.SetParseNoExponent(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetPositivePrefix_Java_Lang_String_">DecimalFormat.SetPositivePrefix(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetPositiveSuffix_Java_Lang_String_">DecimalFormat.SetPositiveSuffix(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetRoundingIncrement_Android_Icu_Math_BigDecimal_">DecimalFormat.SetRoundingIncrement(BigDecimal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetRoundingIncrement_System_Double_">DecimalFormat.SetRoundingIncrement(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetRoundingIncrement_Java_Math_BigDecimal_">DecimalFormat.SetRoundingIncrement(BigDecimal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetScientificNotation_System_Boolean_">DecimalFormat.SetScientificNotation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetSecondaryGroupingSize_System_Int32_">DecimalFormat.SetSecondaryGroupingSize(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetSignAlwaysShown_System_Boolean_">DecimalFormat.SetSignAlwaysShown(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetSignificantDigitsUsed_System_Boolean_">DecimalFormat.SetSignificantDigitsUsed(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DecimalFormat.html#Android_Icu_Text_DecimalFormat_SetParseMaxDigits_System_Int32_">DecimalFormat.SetParseMaxDigits(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_ACCOUNTINGCURRENCYSTYLE">NumberFormat.ACCOUNTINGCURRENCYSTYLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_CASHCURRENCYSTYLE">NumberFormat.CASHCURRENCYSTYLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_CURRENCYSTYLE">NumberFormat.CURRENCYSTYLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_FRACTION_FIELD">NumberFormat.FRACTION_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_INTEGER_FIELD">NumberFormat.INTEGER_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_INTEGERSTYLE">NumberFormat.INTEGERSTYLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_ISOCURRENCYSTYLE">NumberFormat.ISOCURRENCYSTYLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_NUMBERSTYLE">NumberFormat.NUMBERSTYLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_PERCENTSTYLE">NumberFormat.PERCENTSTYLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_PLURALCURRENCYSTYLE">NumberFormat.PLURALCURRENCYSTYLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_SCIENTIFICSTYLE">NumberFormat.SCIENTIFICSTYLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_STANDARDCURRENCYSTYLE">NumberFormat.STANDARDCURRENCYSTYLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetCurrencyInstance_Android_Icu_Util_ULocale_">NumberFormat.GetCurrencyInstance(ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetCurrencyInstance_Java_Util_Locale_">NumberFormat.GetCurrencyInstance(Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetInstance_Android_Icu_Util_ULocale_System_Int32_">NumberFormat.GetInstance(ULocale, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetInstance_Android_Icu_Util_ULocale_">NumberFormat.GetInstance(ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetInstance_Java_Util_Locale_System_Int32_">NumberFormat.GetInstance(Locale, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetInstance_Java_Util_Locale_">NumberFormat.GetInstance(Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetIntegerInstance_Android_Icu_Util_ULocale_">NumberFormat.GetIntegerInstance(ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetIntegerInstance_Java_Util_Locale_">NumberFormat.GetIntegerInstance(Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetNumberInstance_Android_Icu_Util_ULocale_">NumberFormat.GetNumberInstance(ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetNumberInstance_Java_Util_Locale_">NumberFormat.GetNumberInstance(Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetPercentInstance_Android_Icu_Util_ULocale_">NumberFormat.GetPercentInstance(ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetPercentInstance_Java_Util_Locale_">NumberFormat.GetPercentInstance(Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetScientificInstance_Android_Icu_Util_ULocale_">NumberFormat.GetScientificInstance(ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetScientificInstance_Java_Util_Locale_">NumberFormat.GetScientificInstance(Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetCurrencyInstance">NumberFormat.GetCurrencyInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetInstance">NumberFormat.GetInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetInstance_System_Int32_">NumberFormat.GetInstance(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetIntegerInstance">NumberFormat.GetIntegerInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetNumberInstance">NumberFormat.GetNumberInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetPercentInstance">NumberFormat.GetPercentInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetScientificInstance">NumberFormat.GetScientificInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetAvailableLocales">NumberFormat.GetAvailableLocales()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_Parse_Java_Lang_String_Java_Text_ParsePosition_">NumberFormat.Parse(String, ParsePosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_Format_Android_Icu_Math_BigDecimal_Java_Lang_StringBuffer_Java_Text_FieldPosition_">NumberFormat.Format(BigDecimal, StringBuffer, FieldPosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_Format_System_Double_Java_Lang_StringBuffer_Java_Text_FieldPosition_">NumberFormat.Format(double, StringBuffer, FieldPosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_Format_Java_Math_BigDecimal_Java_Lang_StringBuffer_Java_Text_FieldPosition_">NumberFormat.Format(BigDecimal, StringBuffer, FieldPosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_Format_Java_Math_BigInteger_Java_Lang_StringBuffer_Java_Text_FieldPosition_">NumberFormat.Format(BigInteger, StringBuffer, FieldPosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_Format_System_Int64_Java_Lang_StringBuffer_Java_Text_FieldPosition_">NumberFormat.Format(long, StringBuffer, FieldPosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetContext_Android_Icu_Text_DisplayContext_Type_">NumberFormat.GetContext(DisplayContext.Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetCurrency">NumberFormat.GetCurrency()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_ParseCurrency_Java_Lang_CharSequence_Java_Text_ParsePosition_">NumberFormat.ParseCurrency(CharSequence, ParsePosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_IsGroupingUsed">NumberFormat.IsGroupingUsed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_IsParseIntegerOnly">NumberFormat.IsParseIntegerOnly()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_IsParseStrict">NumberFormat.IsParseStrict()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_Format_Android_Icu_Math_BigDecimal_">NumberFormat.Format(BigDecimal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_Format_Android_Icu_Util_CurrencyAmount_">NumberFormat.Format(CurrencyAmount)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_Format_System_Double_">NumberFormat.Format(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_Format_Java_Math_BigDecimal_">NumberFormat.Format(BigDecimal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_Format_Java_Math_BigInteger_">NumberFormat.Format(BigInteger)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_Format_System_Int64_">NumberFormat.Format(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetMaximumFractionDigits">NumberFormat.GetMaximumFractionDigits()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetMaximumIntegerDigits">NumberFormat.GetMaximumIntegerDigits()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetMinimumFractionDigits">NumberFormat.GetMinimumFractionDigits()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetMinimumIntegerDigits">NumberFormat.GetMinimumIntegerDigits()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_GetRoundingMode">NumberFormat.GetRoundingMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_Parse_Java_Lang_String_">NumberFormat.Parse(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_Format_Android_Icu_Util_CurrencyAmount_Java_Lang_StringBuffer_Java_Text_FieldPosition_">NumberFormat.Format(CurrencyAmount, StringBuffer, FieldPosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_SetContext_Android_Icu_Text_DisplayContext_">NumberFormat.SetContext(DisplayContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_SetCurrency_Android_Icu_Util_Currency_">NumberFormat.SetCurrency(Currency)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_SetGroupingUsed_System_Boolean_">NumberFormat.SetGroupingUsed(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_SetMaximumFractionDigits_System_Int32_">NumberFormat.SetMaximumFractionDigits(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_SetMaximumIntegerDigits_System_Int32_">NumberFormat.SetMaximumIntegerDigits(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_SetMinimumFractionDigits_System_Int32_">NumberFormat.SetMinimumFractionDigits(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_SetMinimumIntegerDigits_System_Int32_">NumberFormat.SetMinimumIntegerDigits(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_SetParseIntegerOnly_System_Boolean_">NumberFormat.SetParseIntegerOnly(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_SetParseStrict_System_Boolean_">NumberFormat.SetParseStrict(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.NumberFormat.html#Android_Icu_Text_NumberFormat_SetRoundingMode_System_Int32_">NumberFormat.SetRoundingMode(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_ParseObject_Java_Lang_String_Java_Text_ParsePosition_">Format.ParseObject(String, ParsePosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_FormatMethod_System_Object_Java_Lang_StringBuffer_Java_Text_FieldPosition_">Format.FormatMethod(object, StringBuffer, FieldPosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_FormatMethod_System_Object_">Format.FormatMethod(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_ParseObject_Java_Lang_String_">Format.ParseObject(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_FormatToCharacterIterator_System_Object_">Format.FormatToCharacterIterator(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Format&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Icu_Text_CompactDecimalFormat__ctor_" data-uid="Android.Icu.Text.CompactDecimalFormat.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_CompactDecimalFormat__ctor" data-uid="Android.Icu.Text.CompactDecimalFormat.#ctor">
+  CompactDecimalFormat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L1107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompactDecimalFormat()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_CompactDecimalFormat__ctor_" data-uid="Android.Icu.Text.CompactDecimalFormat.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_CompactDecimalFormat__ctor_System_Object___" data-uid="Android.Icu.Text.CompactDecimalFormat.#ctor(System.Object[])">
+  CompactDecimalFormat(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L1111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompactDecimalFormat(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Icu_Text_CompactDecimalFormat_BridgeClassName_" data-uid="Android.Icu.Text.CompactDecimalFormat.BridgeClassName*"></a>
+
+  <h3 id="Android_Icu_Text_CompactDecimalFormat_BridgeClassName" data-uid="Android.Icu.Text.CompactDecimalFormat.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L1118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_CompactDecimalFormat_IsBridgeAbstract_" data-uid="Android.Icu.Text.CompactDecimalFormat.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Icu_Text_CompactDecimalFormat_IsBridgeAbstract" data-uid="Android.Icu.Text.CompactDecimalFormat.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L1122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_CompactDecimalFormat_IsBridgeCloseable_" data-uid="Android.Icu.Text.CompactDecimalFormat.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Icu_Text_CompactDecimalFormat_IsBridgeCloseable" data-uid="Android.Icu.Text.CompactDecimalFormat.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L1126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_CompactDecimalFormat_IsBridgeInterface_" data-uid="Android.Icu.Text.CompactDecimalFormat.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Icu_Text_CompactDecimalFormat_IsBridgeInterface" data-uid="Android.Icu.Text.CompactDecimalFormat.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L1130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_CompactDecimalFormat_IsBridgeStatic_" data-uid="Android.Icu.Text.CompactDecimalFormat.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Icu_Text_CompactDecimalFormat_IsBridgeStatic" data-uid="Android.Icu.Text.CompactDecimalFormat.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L1134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Icu_Text_CompactDecimalFormat_GetInstance_" data-uid="Android.Icu.Text.CompactDecimalFormat.GetInstance*"></a>
+
+  <h3 id="Android_Icu_Text_CompactDecimalFormat_GetInstance_Android_Icu_Util_ULocale_Android_Icu_Text_CompactDecimalFormat_CompactStyle_" data-uid="Android.Icu.Text.CompactDecimalFormat.GetInstance(Android.Icu.Util.ULocale,Android.Icu.Text.CompactDecimalFormat.CompactStyle)">
+  GetInstance(ULocale, CompactStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/CompactDecimalFormat.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/CompactDecimalFormat.html#getInstance(android.icu.util.ULocale,android.icu.text.CompactDecimalFormat.CompactStyle)">https://developer.android.com/reference/android/icu/text/CompactDecimalFormat.html#getInstance(android.icu.util.ULocale,android.icu.text.CompactDecimalFormat.CompactStyle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CompactDecimalFormat GetInstance(ULocale arg0, CompactDecimalFormat.CompactStyle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Icu.Text.CompactDecimalFormat.html">CompactDecimalFormat</a>.<a class="xref" href="Android.Icu.Text.CompactDecimalFormat.CompactStyle.html">CompactStyle</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.CompactDecimalFormat.CompactStyle.html">CompactDecimalFormat.CompactStyle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.CompactDecimalFormat.html">CompactDecimalFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.CompactDecimalFormat.html">CompactDecimalFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_CompactDecimalFormat_GetInstance_" data-uid="Android.Icu.Text.CompactDecimalFormat.GetInstance*"></a>
+
+  <h3 id="Android_Icu_Text_CompactDecimalFormat_GetInstance_Java_Util_Locale_Android_Icu_Text_CompactDecimalFormat_CompactStyle_" data-uid="Android.Icu.Text.CompactDecimalFormat.GetInstance(Java.Util.Locale,Android.Icu.Text.CompactDecimalFormat.CompactStyle)">
+  GetInstance(Locale, CompactStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/CompactDecimalFormat.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/CompactDecimalFormat.html#getInstance(java.util.Locale,android.icu.text.CompactDecimalFormat.CompactStyle)">https://developer.android.com/reference/android/icu/text/CompactDecimalFormat.html#getInstance(java.util.Locale,android.icu.text.CompactDecimalFormat.CompactStyle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CompactDecimalFormat GetInstance(Locale arg0, CompactDecimalFormat.CompactStyle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Icu.Text.CompactDecimalFormat.html">CompactDecimalFormat</a>.<a class="xref" href="Android.Icu.Text.CompactDecimalFormat.CompactStyle.html">CompactStyle</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.CompactDecimalFormat.CompactStyle.html">CompactDecimalFormat.CompactStyle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.CompactDecimalFormat.html">CompactDecimalFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.CompactDecimalFormat.html">CompactDecimalFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/CompactDecimalFormat.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2374 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class DateTimeFormatterBuilder | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DateTimeFormatterBuilder | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Java_Time_Format_DateTimeFormatterBuilder.md&amp;value=---%0Auid%3A%20Java.Time.Format.DateTimeFormatterBuilder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Java.Time.Format.DateTimeFormatterBuilder">
+
+
+
+  <h1 id="Java_Time_Format_DateTimeFormatterBuilder" data-uid="Java.Time.Format.DateTimeFormatterBuilder" class="text-break">
+Class DateTimeFormatterBuilder  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Java.html">Java</a>.<a class="xref" href="Java.Time.html">Time</a>.<a class="xref" href="Java.Time.Format.html">Format</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DateTimeFormatterBuilder : JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a>&gt;</div>
+      <div><span class="xref">DateTimeFormatterBuilder</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DateTimeFormatterBuilder&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder__ctor_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.#ctor*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder__ctor" data-uid="Java.Time.Format.DateTimeFormatterBuilder.#ctor">
+  DateTimeFormatterBuilder()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/AllPackageClasses.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder__ctor_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.#ctor*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder__ctor_System_Object___" data-uid="Java.Time.Format.DateTimeFormatterBuilder.#ctor(System.Object[])">
+  DateTimeFormatterBuilder(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/AllPackageClasses.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_BridgeClassName_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.BridgeClassName*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_BridgeClassName" data-uid="Java.Time.Format.DateTimeFormatterBuilder.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/AllPackageClasses.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_IsBridgeAbstract_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.IsBridgeAbstract*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_IsBridgeAbstract" data-uid="Java.Time.Format.DateTimeFormatterBuilder.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/AllPackageClasses.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_IsBridgeCloseable_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.IsBridgeCloseable*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_IsBridgeCloseable" data-uid="Java.Time.Format.DateTimeFormatterBuilder.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/AllPackageClasses.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_IsBridgeInterface_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.IsBridgeInterface*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_IsBridgeInterface" data-uid="Java.Time.Format.DateTimeFormatterBuilder.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/AllPackageClasses.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_IsBridgeStatic_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.IsBridgeStatic*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_IsBridgeStatic" data-uid="Java.Time.Format.DateTimeFormatterBuilder.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/AllPackageClasses.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_Append_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.Append*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_Append_Java_Time_Format_DateTimeFormatter_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.Append(Java.Time.Format.DateTimeFormatter)">
+  Append(DateTimeFormatter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#append(java.time.format.DateTimeFormatter)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#append(java.time.format.DateTimeFormatter)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder Append(DateTimeFormatter arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendChronologyId_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendChronologyId*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendChronologyId" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendChronologyId">
+  AppendChronologyId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendChronologyId()">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendChronologyId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendChronologyId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendChronologyText_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendChronologyText*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendChronologyText_Java_Time_Format_TextStyle_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendChronologyText(Java.Time.Format.TextStyle)">
+  AppendChronologyText(TextStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendChronologyText(java.time.format.TextStyle)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendChronologyText(java.time.format.TextStyle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendChronologyText(TextStyle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendDayPeriodText_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendDayPeriodText*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendDayPeriodText_Java_Time_Format_TextStyle_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendDayPeriodText(Java.Time.Format.TextStyle)">
+  AppendDayPeriodText(TextStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendDayPeriodText(java.time.format.TextStyle)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendDayPeriodText(java.time.format.TextStyle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendDayPeriodText(TextStyle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendFraction_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendFraction*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendFraction_Java_Time_Temporal_TemporalField_System_Int32_System_Int32_System_Boolean_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendFraction(Java.Time.Temporal.TemporalField,System.Int32,System.Int32,System.Boolean)">
+  AppendFraction(TemporalField, int, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendFraction(java.time.temporal.TemporalField,int,int,boolean)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendFraction(java.time.temporal.TemporalField,int,int,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendFraction(TemporalField arg0, int arg1, int arg2, bool arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendGenericZoneText_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendGenericZoneText*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendGenericZoneText_Java_Time_Format_TextStyle_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendGenericZoneText(Java.Time.Format.TextStyle)">
+  AppendGenericZoneText(TextStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendGenericZoneText(java.time.format.TextStyle)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendGenericZoneText(java.time.format.TextStyle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendGenericZoneText(TextStyle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendGenericZoneText_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendGenericZoneText*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendGenericZoneText_Java_Time_Format_TextStyle_Java_Util_Set_Java_Time_ZoneId__" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendGenericZoneText(Java.Time.Format.TextStyle,Java.Util.Set{Java.Time.ZoneId})">
+  AppendGenericZoneText(TextStyle, Set&lt;ZoneId&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendGenericZoneText(java.time.format.TextStyle,java.util.Set)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendGenericZoneText(java.time.format.TextStyle,java.util.Set)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendGenericZoneText(TextStyle arg0, Set&lt;ZoneId&gt; arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Time.ZoneId.html">ZoneId</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendInstant_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendInstant*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendInstant" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendInstant">
+  AppendInstant()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendInstant()">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendInstant()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendInstant()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendInstant_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendInstant*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendInstant_System_Int32_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendInstant(System.Int32)">
+  AppendInstant(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendInstant(int)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendInstant(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendInstant(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendLiteral_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendLiteral*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendLiteral_Java_Lang_String_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendLiteral(Java.Lang.String)">
+  AppendLiteral(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendLiteral(java.lang.String)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendLiteral(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendLiteral(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendLiteral_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendLiteral*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendLiteral_System_Char_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendLiteral(System.Char)">
+  AppendLiteral(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendLiteral(char)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendLiteral(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendLiteral(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendLocalized_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendLocalized*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendLocalized_Java_Time_Format_FormatStyle_Java_Time_Format_FormatStyle_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendLocalized(Java.Time.Format.FormatStyle,Java.Time.Format.FormatStyle)">
+  AppendLocalized(FormatStyle, FormatStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendLocalized(java.time.format.FormatStyle,java.time.format.FormatStyle)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendLocalized(java.time.format.FormatStyle,java.time.format.FormatStyle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendLocalized(FormatStyle arg0, FormatStyle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Format.FormatStyle.html">FormatStyle</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.FormatStyle.html">FormatStyle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.Format.FormatStyle.html">FormatStyle</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.FormatStyle.html">FormatStyle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendLocalizedOffset_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendLocalizedOffset*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendLocalizedOffset_Java_Time_Format_TextStyle_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendLocalizedOffset(Java.Time.Format.TextStyle)">
+  AppendLocalizedOffset(TextStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendLocalizedOffset(java.time.format.TextStyle)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendLocalizedOffset(java.time.format.TextStyle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendLocalizedOffset(TextStyle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendOffset_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendOffset*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendOffset_Java_Lang_String_Java_Lang_String_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendOffset(Java.Lang.String,Java.Lang.String)">
+  AppendOffset(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendOffset(java.lang.String,java.lang.String)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendOffset(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendOffset(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendOffsetId_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendOffsetId*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendOffsetId" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendOffsetId">
+  AppendOffsetId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendOffsetId()">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendOffsetId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendOffsetId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendOptional_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendOptional*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendOptional_Java_Time_Format_DateTimeFormatter_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendOptional(Java.Time.Format.DateTimeFormatter)">
+  AppendOptional(DateTimeFormatter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendOptional(java.time.format.DateTimeFormatter)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendOptional(java.time.format.DateTimeFormatter)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendOptional(DateTimeFormatter arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendPattern_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendPattern*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendPattern_Java_Lang_String_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendPattern(Java.Lang.String)">
+  AppendPattern(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendPattern(java.lang.String)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendPattern(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendPattern(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendText_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendText*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendText_Java_Time_Temporal_TemporalField_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendText(Java.Time.Temporal.TemporalField)">
+  AppendText(TemporalField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendText(TemporalField arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendText_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendText*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendText_Java_Time_Temporal_TemporalField_Java_Time_Format_TextStyle_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendText(Java.Time.Temporal.TemporalField,Java.Time.Format.TextStyle)">
+  AppendText(TemporalField, TextStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField,java.time.format.TextStyle)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField,java.time.format.TextStyle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendText(TemporalField arg0, TextStyle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendText_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendText*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendText_Java_Time_Temporal_TemporalField_Java_Util_Map_Java_Lang_Long_Java_Lang_String__" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendText(Java.Time.Temporal.TemporalField,Java.Util.Map{Java.Lang.Long,Java.Lang.String})">
+  AppendText(TemporalField, Map&lt;Long, String&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField,java.util.Map)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField,java.util.Map)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendText(TemporalField arg0, Map&lt;Long, String&gt; arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="Java.Lang.Long.html">Long</a>, <a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendValue_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendValue*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendValue_Java_Time_Temporal_TemporalField_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendValue(Java.Time.Temporal.TemporalField)">
+  AppendValue(TemporalField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendValue(TemporalField arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendValue_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendValue*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendValue_Java_Time_Temporal_TemporalField_System_Int32_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendValue(Java.Time.Temporal.TemporalField,System.Int32)">
+  AppendValue(TemporalField, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField,int)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendValue(TemporalField arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendValue_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendValue*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendValue_Java_Time_Temporal_TemporalField_System_Int32_System_Int32_Java_Time_Format_SignStyle_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendValue(Java.Time.Temporal.TemporalField,System.Int32,System.Int32,Java.Time.Format.SignStyle)">
+  AppendValue(TemporalField, int, int, SignStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField,int,int,java.time.format.SignStyle)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField,int,int,java.time.format.SignStyle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendValue(TemporalField arg0, int arg1, int arg2, SignStyle arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Time.Format.SignStyle.html">SignStyle</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.SignStyle.html">SignStyle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendValueReduced_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendValueReduced*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendValueReduced_Java_Time_Temporal_TemporalField_System_Int32_System_Int32_Java_Time_Chrono_ChronoLocalDate_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendValueReduced(Java.Time.Temporal.TemporalField,System.Int32,System.Int32,Java.Time.Chrono.ChronoLocalDate)">
+  AppendValueReduced(TemporalField, int, int, ChronoLocalDate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValueReduced(java.time.temporal.TemporalField,int,int,java.time.chrono.ChronoLocalDate)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValueReduced(java.time.temporal.TemporalField,int,int,java.time.chrono.ChronoLocalDate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendValueReduced(TemporalField arg0, int arg1, int arg2, ChronoLocalDate arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Time.Chrono.ChronoLocalDate.html">ChronoLocalDate</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Chrono.ChronoLocalDate.html">ChronoLocalDate</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendValueReduced_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendValueReduced*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendValueReduced_Java_Time_Temporal_TemporalField_System_Int32_System_Int32_System_Int32_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendValueReduced(Java.Time.Temporal.TemporalField,System.Int32,System.Int32,System.Int32)">
+  AppendValueReduced(TemporalField, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValueReduced(java.time.temporal.TemporalField,int,int,int)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendValueReduced(java.time.temporal.TemporalField,int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendValueReduced(TemporalField arg0, int arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendZoneId_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendZoneId*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendZoneId" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendZoneId">
+  AppendZoneId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneId()">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendZoneId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendZoneOrOffsetId_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendZoneOrOffsetId*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendZoneOrOffsetId" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendZoneOrOffsetId">
+  AppendZoneOrOffsetId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneOrOffsetId()">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneOrOffsetId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendZoneOrOffsetId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendZoneRegionId_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendZoneRegionId*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendZoneRegionId" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendZoneRegionId">
+  AppendZoneRegionId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneRegionId()">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneRegionId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendZoneRegionId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendZoneText_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendZoneText*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendZoneText_Java_Time_Format_TextStyle_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendZoneText(Java.Time.Format.TextStyle)">
+  AppendZoneText(TextStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneText(java.time.format.TextStyle)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneText(java.time.format.TextStyle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendZoneText(TextStyle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_AppendZoneText_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendZoneText*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_AppendZoneText_Java_Time_Format_TextStyle_Java_Util_Set_Java_Time_ZoneId__" data-uid="Java.Time.Format.DateTimeFormatterBuilder.AppendZoneText(Java.Time.Format.TextStyle,Java.Util.Set{Java.Time.ZoneId})">
+  AppendZoneText(TextStyle, Set&lt;ZoneId&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneText(java.time.format.TextStyle,java.util.Set)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendZoneText(java.time.format.TextStyle,java.util.Set)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder AppendZoneText(TextStyle arg0, Set&lt;ZoneId&gt; arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.TextStyle.html">TextStyle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Time.ZoneId.html">ZoneId</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_GetLocalizedDateTimePattern_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.GetLocalizedDateTimePattern*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_GetLocalizedDateTimePattern_Java_Time_Format_FormatStyle_Java_Time_Format_FormatStyle_Java_Time_Chrono_Chronology_Java_Util_Locale_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.GetLocalizedDateTimePattern(Java.Time.Format.FormatStyle,Java.Time.Format.FormatStyle,Java.Time.Chrono.Chronology,Java.Util.Locale)">
+  GetLocalizedDateTimePattern(FormatStyle, FormatStyle, Chronology, Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#getLocalizedDateTimePattern(java.time.format.FormatStyle,java.time.format.FormatStyle,java.time.chrono.Chronology,java.util.Locale)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#getLocalizedDateTimePattern(java.time.format.FormatStyle,java.time.format.FormatStyle,java.time.chrono.Chronology,java.util.Locale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GetLocalizedDateTimePattern(FormatStyle arg0, FormatStyle arg1, Chronology arg2, Locale arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Format.FormatStyle.html">FormatStyle</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.FormatStyle.html">FormatStyle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.Format.FormatStyle.html">FormatStyle</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.FormatStyle.html">FormatStyle</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Time.Chrono.Chronology.html">Chronology</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Chrono.Chronology.html">Chronology</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_OptionalEnd_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.OptionalEnd*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_OptionalEnd" data-uid="Java.Time.Format.DateTimeFormatterBuilder.OptionalEnd">
+  OptionalEnd()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#optionalEnd()">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#optionalEnd()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder OptionalEnd()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_OptionalStart_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.OptionalStart*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_OptionalStart" data-uid="Java.Time.Format.DateTimeFormatterBuilder.OptionalStart">
+  OptionalStart()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#optionalStart()">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#optionalStart()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder OptionalStart()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_PadNext_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.PadNext*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_PadNext_System_Int32_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.PadNext(System.Int32)">
+  PadNext(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#padNext(int)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#padNext(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder PadNext(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_PadNext_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.PadNext*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_PadNext_System_Int32_System_Char_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.PadNext(System.Int32,System.Char)">
+  PadNext(int, char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#padNext(int,char)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#padNext(int,char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder PadNext(int arg0, char arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_ParseCaseInsensitive_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.ParseCaseInsensitive*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_ParseCaseInsensitive" data-uid="Java.Time.Format.DateTimeFormatterBuilder.ParseCaseInsensitive">
+  ParseCaseInsensitive()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseCaseInsensitive()">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseCaseInsensitive()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder ParseCaseInsensitive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_ParseCaseSensitive_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.ParseCaseSensitive*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_ParseCaseSensitive" data-uid="Java.Time.Format.DateTimeFormatterBuilder.ParseCaseSensitive">
+  ParseCaseSensitive()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseCaseSensitive()">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseCaseSensitive()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder ParseCaseSensitive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_ParseDefaulting_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.ParseDefaulting*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_ParseDefaulting_Java_Time_Temporal_TemporalField_System_Int64_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.ParseDefaulting(Java.Time.Temporal.TemporalField,System.Int64)">
+  ParseDefaulting(TemporalField, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L417"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseDefaulting(java.time.temporal.TemporalField,long)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseDefaulting(java.time.temporal.TemporalField,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder ParseDefaulting(TemporalField arg0, long arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_ParseLenient_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.ParseLenient*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_ParseLenient" data-uid="Java.Time.Format.DateTimeFormatterBuilder.ParseLenient">
+  ParseLenient()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseLenient()">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseLenient()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder ParseLenient()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_ParseStrict_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.ParseStrict*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_ParseStrict" data-uid="Java.Time.Format.DateTimeFormatterBuilder.ParseStrict">
+  ParseStrict()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseStrict()">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#parseStrict()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatterBuilder ParseStrict()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatterBuilder.html">DateTimeFormatterBuilder</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_ToFormatter_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.ToFormatter*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_ToFormatter" data-uid="Java.Time.Format.DateTimeFormatterBuilder.ToFormatter">
+  ToFormatter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#toFormatter()">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#toFormatter()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatter ToFormatter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_Format_DateTimeFormatterBuilder_ToFormatter_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.ToFormatter*"></a>
+
+  <h3 id="Java_Time_Format_DateTimeFormatterBuilder_ToFormatter_Java_Util_Locale_" data-uid="Java.Time.Format.DateTimeFormatterBuilder.ToFormatter(Java.Util.Locale)">
+  ToFormatter(Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#toFormatter(java.util.Locale)">https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#toFormatter(java.util.Locale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeFormatter ToFormatter(Locale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/Format/DateTimeFormatterBuilder.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

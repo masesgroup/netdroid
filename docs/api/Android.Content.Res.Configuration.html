@@ -1,0 +1,4797 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class Configuration | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Configuration | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/content/res/Configuration.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Content_Res_Configuration.md&amp;value=---%0Auid%3A%20Android.Content.Res.Configuration%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Content.Res.Configuration">
+
+
+
+  <h1 id="Android_Content_Res_Configuration" data-uid="Android.Content.Res.Configuration" class="text-break">
+Class Configuration  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Content.html">Content</a>.<a class="xref" href="Android.Content.Res.html">Res</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html">https://developer.android.com/reference/android/content/res/Configuration.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Configuration : JVMBridgeBase&lt;Configuration&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IParcelable, IComparable&lt;Configuration&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a>&gt;</div>
+      <div><span class="xref">Configuration</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Os.IParcelable.html">IParcelable</a></div>
+      <div><a class="xref" href="Java.Lang.IComparable-1.html">IComparable</a>&lt;<a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Configuration&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Configuration&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Configuration&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Configuration&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Configuration&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Configuration&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Configuration&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Configuration&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Configuration&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Configuration&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Configuration&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Configuration&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Configuration&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Content_Res_Configuration__ctor_" data-uid="Android.Content.Res.Configuration.#ctor*"></a>
+
+  <h3 id="Android_Content_Res_Configuration__ctor" data-uid="Android.Content.Res.Configuration.#ctor">
+  Configuration()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/AllPackageClasses.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Configuration()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration__ctor_" data-uid="Android.Content.Res.Configuration.#ctor*"></a>
+
+  <h3 id="Android_Content_Res_Configuration__ctor_Android_Content_Res_Configuration_" data-uid="Android.Content.Res.Configuration.#ctor(Android.Content.Res.Configuration)">
+  Configuration(Configuration)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#%3Cinit%3E(android.content.res.Configuration)">https://developer.android.com/reference/android/content/res/Configuration.html#%3Cinit%3E(android.content.res.Configuration)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Configuration(Configuration arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration__ctor_" data-uid="Android.Content.Res.Configuration.#ctor*"></a>
+
+  <h3 id="Android_Content_Res_Configuration__ctor_System_Object___" data-uid="Android.Content.Res.Configuration.#ctor(System.Object[])">
+  Configuration(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/AllPackageClasses.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Configuration(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Content_Res_Configuration_BridgeClassName_" data-uid="Android.Content.Res.Configuration.BridgeClassName*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_BridgeClassName" data-uid="Android.Content.Res.Configuration.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/AllPackageClasses.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_COLOR_MODE_HDR_MASK_" data-uid="Android.Content.Res.Configuration.COLOR_MODE_HDR_MASK*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_COLOR_MODE_HDR_MASK" data-uid="Android.Content.Res.Configuration.COLOR_MODE_HDR_MASK">
+  COLOR_MODE_HDR_MASK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_HDR_MASK">https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_HDR_MASK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int COLOR_MODE_HDR_MASK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_COLOR_MODE_HDR_NO_" data-uid="Android.Content.Res.Configuration.COLOR_MODE_HDR_NO*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_COLOR_MODE_HDR_NO" data-uid="Android.Content.Res.Configuration.COLOR_MODE_HDR_NO">
+  COLOR_MODE_HDR_NO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_HDR_NO">https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_HDR_NO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int COLOR_MODE_HDR_NO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_COLOR_MODE_HDR_SHIFT_" data-uid="Android.Content.Res.Configuration.COLOR_MODE_HDR_SHIFT*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_COLOR_MODE_HDR_SHIFT" data-uid="Android.Content.Res.Configuration.COLOR_MODE_HDR_SHIFT">
+  COLOR_MODE_HDR_SHIFT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_HDR_SHIFT">https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_HDR_SHIFT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int COLOR_MODE_HDR_SHIFT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_COLOR_MODE_HDR_UNDEFINED_" data-uid="Android.Content.Res.Configuration.COLOR_MODE_HDR_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_COLOR_MODE_HDR_UNDEFINED" data-uid="Android.Content.Res.Configuration.COLOR_MODE_HDR_UNDEFINED">
+  COLOR_MODE_HDR_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_HDR_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_HDR_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int COLOR_MODE_HDR_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_COLOR_MODE_HDR_YES_" data-uid="Android.Content.Res.Configuration.COLOR_MODE_HDR_YES*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_COLOR_MODE_HDR_YES" data-uid="Android.Content.Res.Configuration.COLOR_MODE_HDR_YES">
+  COLOR_MODE_HDR_YES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_HDR_YES">https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_HDR_YES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int COLOR_MODE_HDR_YES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_COLOR_MODE_UNDEFINED_" data-uid="Android.Content.Res.Configuration.COLOR_MODE_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_COLOR_MODE_UNDEFINED" data-uid="Android.Content.Res.Configuration.COLOR_MODE_UNDEFINED">
+  COLOR_MODE_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int COLOR_MODE_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_COLOR_MODE_WIDE_COLOR_GAMUT_MASK_" data-uid="Android.Content.Res.Configuration.COLOR_MODE_WIDE_COLOR_GAMUT_MASK*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_COLOR_MODE_WIDE_COLOR_GAMUT_MASK" data-uid="Android.Content.Res.Configuration.COLOR_MODE_WIDE_COLOR_GAMUT_MASK">
+  COLOR_MODE_WIDE_COLOR_GAMUT_MASK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_WIDE_COLOR_GAMUT_MASK">https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_WIDE_COLOR_GAMUT_MASK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int COLOR_MODE_WIDE_COLOR_GAMUT_MASK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_COLOR_MODE_WIDE_COLOR_GAMUT_NO_" data-uid="Android.Content.Res.Configuration.COLOR_MODE_WIDE_COLOR_GAMUT_NO*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_COLOR_MODE_WIDE_COLOR_GAMUT_NO" data-uid="Android.Content.Res.Configuration.COLOR_MODE_WIDE_COLOR_GAMUT_NO">
+  COLOR_MODE_WIDE_COLOR_GAMUT_NO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_WIDE_COLOR_GAMUT_NO">https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_WIDE_COLOR_GAMUT_NO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int COLOR_MODE_WIDE_COLOR_GAMUT_NO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_COLOR_MODE_WIDE_COLOR_GAMUT_UNDEFINED_" data-uid="Android.Content.Res.Configuration.COLOR_MODE_WIDE_COLOR_GAMUT_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_COLOR_MODE_WIDE_COLOR_GAMUT_UNDEFINED" data-uid="Android.Content.Res.Configuration.COLOR_MODE_WIDE_COLOR_GAMUT_UNDEFINED">
+  COLOR_MODE_WIDE_COLOR_GAMUT_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_WIDE_COLOR_GAMUT_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_WIDE_COLOR_GAMUT_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int COLOR_MODE_WIDE_COLOR_GAMUT_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_COLOR_MODE_WIDE_COLOR_GAMUT_YES_" data-uid="Android.Content.Res.Configuration.COLOR_MODE_WIDE_COLOR_GAMUT_YES*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_COLOR_MODE_WIDE_COLOR_GAMUT_YES" data-uid="Android.Content.Res.Configuration.COLOR_MODE_WIDE_COLOR_GAMUT_YES">
+  COLOR_MODE_WIDE_COLOR_GAMUT_YES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_WIDE_COLOR_GAMUT_YES">https://developer.android.com/reference/android/content/res/Configuration.html#COLOR_MODE_WIDE_COLOR_GAMUT_YES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int COLOR_MODE_WIDE_COLOR_GAMUT_YES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_CREATOR_" data-uid="Android.Content.Res.Configuration.CREATOR*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_CREATOR" data-uid="Android.Content.Res.Configuration.CREATOR">
+  CREATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#CREATOR">https://developer.android.com/reference/android/content/res/Configuration.html#CREATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>.<a class="xref" href="Android.Os.Parcelable.Creator.html">Creator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_DENSITY_DPI_UNDEFINED_" data-uid="Android.Content.Res.Configuration.DENSITY_DPI_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_DENSITY_DPI_UNDEFINED" data-uid="Android.Content.Res.Configuration.DENSITY_DPI_UNDEFINED">
+  DENSITY_DPI_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#DENSITY_DPI_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#DENSITY_DPI_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DENSITY_DPI_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_FONT_WEIGHT_ADJUSTMENT_UNDEFINED_" data-uid="Android.Content.Res.Configuration.FONT_WEIGHT_ADJUSTMENT_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_FONT_WEIGHT_ADJUSTMENT_UNDEFINED" data-uid="Android.Content.Res.Configuration.FONT_WEIGHT_ADJUSTMENT_UNDEFINED">
+  FONT_WEIGHT_ADJUSTMENT_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#FONT_WEIGHT_ADJUSTMENT_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#FONT_WEIGHT_ADJUSTMENT_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FONT_WEIGHT_ADJUSTMENT_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_GRAMMATICAL_GENDER_FEMININE_" data-uid="Android.Content.Res.Configuration.GRAMMATICAL_GENDER_FEMININE*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_GRAMMATICAL_GENDER_FEMININE" data-uid="Android.Content.Res.Configuration.GRAMMATICAL_GENDER_FEMININE">
+  GRAMMATICAL_GENDER_FEMININE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#GRAMMATICAL_GENDER_FEMININE">https://developer.android.com/reference/android/content/res/Configuration.html#GRAMMATICAL_GENDER_FEMININE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GRAMMATICAL_GENDER_FEMININE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_GRAMMATICAL_GENDER_MASCULINE_" data-uid="Android.Content.Res.Configuration.GRAMMATICAL_GENDER_MASCULINE*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_GRAMMATICAL_GENDER_MASCULINE" data-uid="Android.Content.Res.Configuration.GRAMMATICAL_GENDER_MASCULINE">
+  GRAMMATICAL_GENDER_MASCULINE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#GRAMMATICAL_GENDER_MASCULINE">https://developer.android.com/reference/android/content/res/Configuration.html#GRAMMATICAL_GENDER_MASCULINE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GRAMMATICAL_GENDER_MASCULINE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_GRAMMATICAL_GENDER_NEUTRAL_" data-uid="Android.Content.Res.Configuration.GRAMMATICAL_GENDER_NEUTRAL*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_GRAMMATICAL_GENDER_NEUTRAL" data-uid="Android.Content.Res.Configuration.GRAMMATICAL_GENDER_NEUTRAL">
+  GRAMMATICAL_GENDER_NEUTRAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#GRAMMATICAL_GENDER_NEUTRAL">https://developer.android.com/reference/android/content/res/Configuration.html#GRAMMATICAL_GENDER_NEUTRAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GRAMMATICAL_GENDER_NEUTRAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_GRAMMATICAL_GENDER_NOT_SPECIFIED_" data-uid="Android.Content.Res.Configuration.GRAMMATICAL_GENDER_NOT_SPECIFIED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_GRAMMATICAL_GENDER_NOT_SPECIFIED" data-uid="Android.Content.Res.Configuration.GRAMMATICAL_GENDER_NOT_SPECIFIED">
+  GRAMMATICAL_GENDER_NOT_SPECIFIED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#GRAMMATICAL_GENDER_NOT_SPECIFIED">https://developer.android.com/reference/android/content/res/Configuration.html#GRAMMATICAL_GENDER_NOT_SPECIFIED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GRAMMATICAL_GENDER_NOT_SPECIFIED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_HARDKEYBOARDHIDDEN_NO_" data-uid="Android.Content.Res.Configuration.HARDKEYBOARDHIDDEN_NO*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_HARDKEYBOARDHIDDEN_NO" data-uid="Android.Content.Res.Configuration.HARDKEYBOARDHIDDEN_NO">
+  HARDKEYBOARDHIDDEN_NO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#HARDKEYBOARDHIDDEN_NO">https://developer.android.com/reference/android/content/res/Configuration.html#HARDKEYBOARDHIDDEN_NO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HARDKEYBOARDHIDDEN_NO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_HARDKEYBOARDHIDDEN_UNDEFINED_" data-uid="Android.Content.Res.Configuration.HARDKEYBOARDHIDDEN_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_HARDKEYBOARDHIDDEN_UNDEFINED" data-uid="Android.Content.Res.Configuration.HARDKEYBOARDHIDDEN_UNDEFINED">
+  HARDKEYBOARDHIDDEN_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#HARDKEYBOARDHIDDEN_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#HARDKEYBOARDHIDDEN_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HARDKEYBOARDHIDDEN_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_HARDKEYBOARDHIDDEN_YES_" data-uid="Android.Content.Res.Configuration.HARDKEYBOARDHIDDEN_YES*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_HARDKEYBOARDHIDDEN_YES" data-uid="Android.Content.Res.Configuration.HARDKEYBOARDHIDDEN_YES">
+  HARDKEYBOARDHIDDEN_YES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#HARDKEYBOARDHIDDEN_YES">https://developer.android.com/reference/android/content/res/Configuration.html#HARDKEYBOARDHIDDEN_YES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HARDKEYBOARDHIDDEN_YES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_IsBridgeAbstract_" data-uid="Android.Content.Res.Configuration.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_IsBridgeAbstract" data-uid="Android.Content.Res.Configuration.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/AllPackageClasses.cs/#L318"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_IsBridgeCloseable_" data-uid="Android.Content.Res.Configuration.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_IsBridgeCloseable" data-uid="Android.Content.Res.Configuration.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/AllPackageClasses.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_IsBridgeInterface_" data-uid="Android.Content.Res.Configuration.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_IsBridgeInterface" data-uid="Android.Content.Res.Configuration.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/AllPackageClasses.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_IsBridgeStatic_" data-uid="Android.Content.Res.Configuration.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_IsBridgeStatic" data-uid="Android.Content.Res.Configuration.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/AllPackageClasses.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_KEYBOARDHIDDEN_NO_" data-uid="Android.Content.Res.Configuration.KEYBOARDHIDDEN_NO*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_KEYBOARDHIDDEN_NO" data-uid="Android.Content.Res.Configuration.KEYBOARDHIDDEN_NO">
+  KEYBOARDHIDDEN_NO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#KEYBOARDHIDDEN_NO">https://developer.android.com/reference/android/content/res/Configuration.html#KEYBOARDHIDDEN_NO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEYBOARDHIDDEN_NO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_KEYBOARDHIDDEN_UNDEFINED_" data-uid="Android.Content.Res.Configuration.KEYBOARDHIDDEN_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_KEYBOARDHIDDEN_UNDEFINED" data-uid="Android.Content.Res.Configuration.KEYBOARDHIDDEN_UNDEFINED">
+  KEYBOARDHIDDEN_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#KEYBOARDHIDDEN_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#KEYBOARDHIDDEN_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEYBOARDHIDDEN_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_KEYBOARDHIDDEN_YES_" data-uid="Android.Content.Res.Configuration.KEYBOARDHIDDEN_YES*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_KEYBOARDHIDDEN_YES" data-uid="Android.Content.Res.Configuration.KEYBOARDHIDDEN_YES">
+  KEYBOARDHIDDEN_YES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#KEYBOARDHIDDEN_YES">https://developer.android.com/reference/android/content/res/Configuration.html#KEYBOARDHIDDEN_YES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEYBOARDHIDDEN_YES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_KEYBOARD_12KEY_" data-uid="Android.Content.Res.Configuration.KEYBOARD_12KEY*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_KEYBOARD_12KEY" data-uid="Android.Content.Res.Configuration.KEYBOARD_12KEY">
+  KEYBOARD_12KEY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#KEYBOARD_12KEY">https://developer.android.com/reference/android/content/res/Configuration.html#KEYBOARD_12KEY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEYBOARD_12KEY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_KEYBOARD_NOKEYS_" data-uid="Android.Content.Res.Configuration.KEYBOARD_NOKEYS*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_KEYBOARD_NOKEYS" data-uid="Android.Content.Res.Configuration.KEYBOARD_NOKEYS">
+  KEYBOARD_NOKEYS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#KEYBOARD_NOKEYS">https://developer.android.com/reference/android/content/res/Configuration.html#KEYBOARD_NOKEYS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEYBOARD_NOKEYS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_KEYBOARD_QWERTY_" data-uid="Android.Content.Res.Configuration.KEYBOARD_QWERTY*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_KEYBOARD_QWERTY" data-uid="Android.Content.Res.Configuration.KEYBOARD_QWERTY">
+  KEYBOARD_QWERTY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#KEYBOARD_QWERTY">https://developer.android.com/reference/android/content/res/Configuration.html#KEYBOARD_QWERTY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEYBOARD_QWERTY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_KEYBOARD_UNDEFINED_" data-uid="Android.Content.Res.Configuration.KEYBOARD_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_KEYBOARD_UNDEFINED" data-uid="Android.Content.Res.Configuration.KEYBOARD_UNDEFINED">
+  KEYBOARD_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#KEYBOARD_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#KEYBOARD_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEYBOARD_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_MNC_ZERO_" data-uid="Android.Content.Res.Configuration.MNC_ZERO*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_MNC_ZERO" data-uid="Android.Content.Res.Configuration.MNC_ZERO">
+  MNC_ZERO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#MNC_ZERO">https://developer.android.com/reference/android/content/res/Configuration.html#MNC_ZERO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MNC_ZERO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_NAVIGATIONHIDDEN_NO_" data-uid="Android.Content.Res.Configuration.NAVIGATIONHIDDEN_NO*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_NAVIGATIONHIDDEN_NO" data-uid="Android.Content.Res.Configuration.NAVIGATIONHIDDEN_NO">
+  NAVIGATIONHIDDEN_NO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATIONHIDDEN_NO">https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATIONHIDDEN_NO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NAVIGATIONHIDDEN_NO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_NAVIGATIONHIDDEN_UNDEFINED_" data-uid="Android.Content.Res.Configuration.NAVIGATIONHIDDEN_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_NAVIGATIONHIDDEN_UNDEFINED" data-uid="Android.Content.Res.Configuration.NAVIGATIONHIDDEN_UNDEFINED">
+  NAVIGATIONHIDDEN_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATIONHIDDEN_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATIONHIDDEN_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NAVIGATIONHIDDEN_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_NAVIGATIONHIDDEN_YES_" data-uid="Android.Content.Res.Configuration.NAVIGATIONHIDDEN_YES*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_NAVIGATIONHIDDEN_YES" data-uid="Android.Content.Res.Configuration.NAVIGATIONHIDDEN_YES">
+  NAVIGATIONHIDDEN_YES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATIONHIDDEN_YES">https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATIONHIDDEN_YES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NAVIGATIONHIDDEN_YES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_NAVIGATION_DPAD_" data-uid="Android.Content.Res.Configuration.NAVIGATION_DPAD*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_NAVIGATION_DPAD" data-uid="Android.Content.Res.Configuration.NAVIGATION_DPAD">
+  NAVIGATION_DPAD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATION_DPAD">https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATION_DPAD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NAVIGATION_DPAD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_NAVIGATION_NONAV_" data-uid="Android.Content.Res.Configuration.NAVIGATION_NONAV*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_NAVIGATION_NONAV" data-uid="Android.Content.Res.Configuration.NAVIGATION_NONAV">
+  NAVIGATION_NONAV
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATION_NONAV">https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATION_NONAV</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NAVIGATION_NONAV { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_NAVIGATION_TRACKBALL_" data-uid="Android.Content.Res.Configuration.NAVIGATION_TRACKBALL*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_NAVIGATION_TRACKBALL" data-uid="Android.Content.Res.Configuration.NAVIGATION_TRACKBALL">
+  NAVIGATION_TRACKBALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATION_TRACKBALL">https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATION_TRACKBALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NAVIGATION_TRACKBALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_NAVIGATION_UNDEFINED_" data-uid="Android.Content.Res.Configuration.NAVIGATION_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_NAVIGATION_UNDEFINED" data-uid="Android.Content.Res.Configuration.NAVIGATION_UNDEFINED">
+  NAVIGATION_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATION_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATION_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NAVIGATION_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_NAVIGATION_WHEEL_" data-uid="Android.Content.Res.Configuration.NAVIGATION_WHEEL*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_NAVIGATION_WHEEL" data-uid="Android.Content.Res.Configuration.NAVIGATION_WHEEL">
+  NAVIGATION_WHEEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATION_WHEEL">https://developer.android.com/reference/android/content/res/Configuration.html#NAVIGATION_WHEEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NAVIGATION_WHEEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_ORIENTATION_LANDSCAPE_" data-uid="Android.Content.Res.Configuration.ORIENTATION_LANDSCAPE*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_ORIENTATION_LANDSCAPE" data-uid="Android.Content.Res.Configuration.ORIENTATION_LANDSCAPE">
+  ORIENTATION_LANDSCAPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#ORIENTATION_LANDSCAPE">https://developer.android.com/reference/android/content/res/Configuration.html#ORIENTATION_LANDSCAPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ORIENTATION_LANDSCAPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_ORIENTATION_PORTRAIT_" data-uid="Android.Content.Res.Configuration.ORIENTATION_PORTRAIT*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_ORIENTATION_PORTRAIT" data-uid="Android.Content.Res.Configuration.ORIENTATION_PORTRAIT">
+  ORIENTATION_PORTRAIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#ORIENTATION_PORTRAIT">https://developer.android.com/reference/android/content/res/Configuration.html#ORIENTATION_PORTRAIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ORIENTATION_PORTRAIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_ORIENTATION_SQUARE_" data-uid="Android.Content.Res.Configuration.ORIENTATION_SQUARE*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_ORIENTATION_SQUARE" data-uid="Android.Content.Res.Configuration.ORIENTATION_SQUARE">
+  ORIENTATION_SQUARE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#ORIENTATION_SQUARE">https://developer.android.com/reference/android/content/res/Configuration.html#ORIENTATION_SQUARE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int ORIENTATION_SQUARE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_ORIENTATION_UNDEFINED_" data-uid="Android.Content.Res.Configuration.ORIENTATION_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_ORIENTATION_UNDEFINED" data-uid="Android.Content.Res.Configuration.ORIENTATION_UNDEFINED">
+  ORIENTATION_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#ORIENTATION_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#ORIENTATION_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ORIENTATION_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_LAYOUTDIR_LTR_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LAYOUTDIR_LTR*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_LAYOUTDIR_LTR" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LAYOUTDIR_LTR">
+  SCREENLAYOUT_LAYOUTDIR_LTR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LAYOUTDIR_LTR">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LAYOUTDIR_LTR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_LAYOUTDIR_LTR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_LAYOUTDIR_MASK_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LAYOUTDIR_MASK*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_LAYOUTDIR_MASK" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LAYOUTDIR_MASK">
+  SCREENLAYOUT_LAYOUTDIR_MASK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LAYOUTDIR_MASK">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LAYOUTDIR_MASK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_LAYOUTDIR_MASK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_LAYOUTDIR_RTL_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LAYOUTDIR_RTL*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_LAYOUTDIR_RTL" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LAYOUTDIR_RTL">
+  SCREENLAYOUT_LAYOUTDIR_RTL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LAYOUTDIR_RTL">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LAYOUTDIR_RTL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_LAYOUTDIR_RTL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_LAYOUTDIR_SHIFT_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LAYOUTDIR_SHIFT*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_LAYOUTDIR_SHIFT" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LAYOUTDIR_SHIFT">
+  SCREENLAYOUT_LAYOUTDIR_SHIFT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LAYOUTDIR_SHIFT">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LAYOUTDIR_SHIFT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_LAYOUTDIR_SHIFT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_LAYOUTDIR_UNDEFINED_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LAYOUTDIR_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_LAYOUTDIR_UNDEFINED" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LAYOUTDIR_UNDEFINED">
+  SCREENLAYOUT_LAYOUTDIR_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LAYOUTDIR_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LAYOUTDIR_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_LAYOUTDIR_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_LONG_MASK_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LONG_MASK*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_LONG_MASK" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LONG_MASK">
+  SCREENLAYOUT_LONG_MASK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LONG_MASK">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LONG_MASK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_LONG_MASK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_LONG_NO_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LONG_NO*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_LONG_NO" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LONG_NO">
+  SCREENLAYOUT_LONG_NO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LONG_NO">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LONG_NO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_LONG_NO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_LONG_UNDEFINED_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LONG_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_LONG_UNDEFINED" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LONG_UNDEFINED">
+  SCREENLAYOUT_LONG_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LONG_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LONG_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_LONG_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_LONG_YES_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LONG_YES*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_LONG_YES" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_LONG_YES">
+  SCREENLAYOUT_LONG_YES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LONG_YES">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_LONG_YES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_LONG_YES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_ROUND_MASK_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_ROUND_MASK*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_ROUND_MASK" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_ROUND_MASK">
+  SCREENLAYOUT_ROUND_MASK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_ROUND_MASK">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_ROUND_MASK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_ROUND_MASK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_ROUND_NO_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_ROUND_NO*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_ROUND_NO" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_ROUND_NO">
+  SCREENLAYOUT_ROUND_NO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_ROUND_NO">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_ROUND_NO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_ROUND_NO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_ROUND_UNDEFINED_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_ROUND_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_ROUND_UNDEFINED" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_ROUND_UNDEFINED">
+  SCREENLAYOUT_ROUND_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L455"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_ROUND_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_ROUND_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_ROUND_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_ROUND_YES_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_ROUND_YES*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_ROUND_YES" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_ROUND_YES">
+  SCREENLAYOUT_ROUND_YES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_ROUND_YES">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_ROUND_YES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_ROUND_YES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_SIZE_LARGE_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_SIZE_LARGE*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_SIZE_LARGE" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_SIZE_LARGE">
+  SCREENLAYOUT_SIZE_LARGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_SIZE_LARGE">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_SIZE_LARGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_SIZE_LARGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_SIZE_MASK_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_SIZE_MASK*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_SIZE_MASK" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_SIZE_MASK">
+  SCREENLAYOUT_SIZE_MASK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_SIZE_MASK">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_SIZE_MASK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_SIZE_MASK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_SIZE_NORMAL_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_SIZE_NORMAL*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_SIZE_NORMAL" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_SIZE_NORMAL">
+  SCREENLAYOUT_SIZE_NORMAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L479"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_SIZE_NORMAL">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_SIZE_NORMAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_SIZE_NORMAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_SIZE_SMALL_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_SIZE_SMALL*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_SIZE_SMALL" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_SIZE_SMALL">
+  SCREENLAYOUT_SIZE_SMALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_SIZE_SMALL">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_SIZE_SMALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_SIZE_SMALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_SIZE_UNDEFINED_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_SIZE_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_SIZE_UNDEFINED" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_SIZE_UNDEFINED">
+  SCREENLAYOUT_SIZE_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L491"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_SIZE_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_SIZE_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_SIZE_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_SIZE_XLARGE_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_SIZE_XLARGE*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_SIZE_XLARGE" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_SIZE_XLARGE">
+  SCREENLAYOUT_SIZE_XLARGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L497"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_SIZE_XLARGE">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_SIZE_XLARGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_SIZE_XLARGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREENLAYOUT_UNDEFINED_" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREENLAYOUT_UNDEFINED" data-uid="Android.Content.Res.Configuration.SCREENLAYOUT_UNDEFINED">
+  SCREENLAYOUT_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L503"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#SCREENLAYOUT_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREENLAYOUT_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREEN_HEIGHT_DP_UNDEFINED_" data-uid="Android.Content.Res.Configuration.SCREEN_HEIGHT_DP_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREEN_HEIGHT_DP_UNDEFINED" data-uid="Android.Content.Res.Configuration.SCREEN_HEIGHT_DP_UNDEFINED">
+  SCREEN_HEIGHT_DP_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREEN_HEIGHT_DP_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#SCREEN_HEIGHT_DP_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREEN_HEIGHT_DP_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SCREEN_WIDTH_DP_UNDEFINED_" data-uid="Android.Content.Res.Configuration.SCREEN_WIDTH_DP_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SCREEN_WIDTH_DP_UNDEFINED" data-uid="Android.Content.Res.Configuration.SCREEN_WIDTH_DP_UNDEFINED">
+  SCREEN_WIDTH_DP_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SCREEN_WIDTH_DP_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#SCREEN_WIDTH_DP_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCREEN_WIDTH_DP_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SMALLEST_SCREEN_WIDTH_DP_UNDEFINED_" data-uid="Android.Content.Res.Configuration.SMALLEST_SCREEN_WIDTH_DP_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SMALLEST_SCREEN_WIDTH_DP_UNDEFINED" data-uid="Android.Content.Res.Configuration.SMALLEST_SCREEN_WIDTH_DP_UNDEFINED">
+  SMALLEST_SCREEN_WIDTH_DP_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L509"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#SMALLEST_SCREEN_WIDTH_DP_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#SMALLEST_SCREEN_WIDTH_DP_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SMALLEST_SCREEN_WIDTH_DP_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_TOUCHSCREEN_FINGER_" data-uid="Android.Content.Res.Configuration.TOUCHSCREEN_FINGER*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_TOUCHSCREEN_FINGER" data-uid="Android.Content.Res.Configuration.TOUCHSCREEN_FINGER">
+  TOUCHSCREEN_FINGER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L515"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#TOUCHSCREEN_FINGER">https://developer.android.com/reference/android/content/res/Configuration.html#TOUCHSCREEN_FINGER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TOUCHSCREEN_FINGER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_TOUCHSCREEN_NOTOUCH_" data-uid="Android.Content.Res.Configuration.TOUCHSCREEN_NOTOUCH*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_TOUCHSCREEN_NOTOUCH" data-uid="Android.Content.Res.Configuration.TOUCHSCREEN_NOTOUCH">
+  TOUCHSCREEN_NOTOUCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L521"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#TOUCHSCREEN_NOTOUCH">https://developer.android.com/reference/android/content/res/Configuration.html#TOUCHSCREEN_NOTOUCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TOUCHSCREEN_NOTOUCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_TOUCHSCREEN_STYLUS_" data-uid="Android.Content.Res.Configuration.TOUCHSCREEN_STYLUS*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_TOUCHSCREEN_STYLUS" data-uid="Android.Content.Res.Configuration.TOUCHSCREEN_STYLUS">
+  TOUCHSCREEN_STYLUS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L527"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#TOUCHSCREEN_STYLUS">https://developer.android.com/reference/android/content/res/Configuration.html#TOUCHSCREEN_STYLUS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int TOUCHSCREEN_STYLUS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_TOUCHSCREEN_UNDEFINED_" data-uid="Android.Content.Res.Configuration.TOUCHSCREEN_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_TOUCHSCREEN_UNDEFINED" data-uid="Android.Content.Res.Configuration.TOUCHSCREEN_UNDEFINED">
+  TOUCHSCREEN_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L534"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#TOUCHSCREEN_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#TOUCHSCREEN_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TOUCHSCREEN_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_UI_MODE_NIGHT_MASK_" data-uid="Android.Content.Res.Configuration.UI_MODE_NIGHT_MASK*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_UI_MODE_NIGHT_MASK" data-uid="Android.Content.Res.Configuration.UI_MODE_NIGHT_MASK">
+  UI_MODE_NIGHT_MASK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L540"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_NIGHT_MASK">https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_NIGHT_MASK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UI_MODE_NIGHT_MASK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_UI_MODE_NIGHT_NO_" data-uid="Android.Content.Res.Configuration.UI_MODE_NIGHT_NO*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_UI_MODE_NIGHT_NO" data-uid="Android.Content.Res.Configuration.UI_MODE_NIGHT_NO">
+  UI_MODE_NIGHT_NO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_NIGHT_NO">https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_NIGHT_NO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UI_MODE_NIGHT_NO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_UI_MODE_NIGHT_UNDEFINED_" data-uid="Android.Content.Res.Configuration.UI_MODE_NIGHT_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_UI_MODE_NIGHT_UNDEFINED" data-uid="Android.Content.Res.Configuration.UI_MODE_NIGHT_UNDEFINED">
+  UI_MODE_NIGHT_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L552"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_NIGHT_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_NIGHT_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UI_MODE_NIGHT_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_UI_MODE_NIGHT_YES_" data-uid="Android.Content.Res.Configuration.UI_MODE_NIGHT_YES*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_UI_MODE_NIGHT_YES" data-uid="Android.Content.Res.Configuration.UI_MODE_NIGHT_YES">
+  UI_MODE_NIGHT_YES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L558"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_NIGHT_YES">https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_NIGHT_YES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UI_MODE_NIGHT_YES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_UI_MODE_TYPE_APPLIANCE_" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_APPLIANCE*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_UI_MODE_TYPE_APPLIANCE" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_APPLIANCE">
+  UI_MODE_TYPE_APPLIANCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_APPLIANCE">https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_APPLIANCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UI_MODE_TYPE_APPLIANCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_UI_MODE_TYPE_CAR_" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_CAR*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_UI_MODE_TYPE_CAR" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_CAR">
+  UI_MODE_TYPE_CAR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L570"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_CAR">https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_CAR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UI_MODE_TYPE_CAR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_UI_MODE_TYPE_DESK_" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_DESK*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_UI_MODE_TYPE_DESK" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_DESK">
+  UI_MODE_TYPE_DESK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_DESK">https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_DESK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UI_MODE_TYPE_DESK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_UI_MODE_TYPE_MASK_" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_MASK*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_UI_MODE_TYPE_MASK" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_MASK">
+  UI_MODE_TYPE_MASK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L582"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_MASK">https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_MASK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UI_MODE_TYPE_MASK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_UI_MODE_TYPE_NORMAL_" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_NORMAL*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_UI_MODE_TYPE_NORMAL" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_NORMAL">
+  UI_MODE_TYPE_NORMAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_NORMAL">https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_NORMAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UI_MODE_TYPE_NORMAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_UI_MODE_TYPE_TELEVISION_" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_TELEVISION*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_UI_MODE_TYPE_TELEVISION" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_TELEVISION">
+  UI_MODE_TYPE_TELEVISION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L594"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_TELEVISION">https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_TELEVISION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UI_MODE_TYPE_TELEVISION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_UI_MODE_TYPE_UNDEFINED_" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_UI_MODE_TYPE_UNDEFINED" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_UNDEFINED">
+  UI_MODE_TYPE_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L600"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_UNDEFINED">https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UI_MODE_TYPE_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_UI_MODE_TYPE_VR_HEADSET_" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_VR_HEADSET*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_UI_MODE_TYPE_VR_HEADSET" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_VR_HEADSET">
+  UI_MODE_TYPE_VR_HEADSET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L606"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_VR_HEADSET">https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_VR_HEADSET</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UI_MODE_TYPE_VR_HEADSET { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_UI_MODE_TYPE_WATCH_" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_WATCH*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_UI_MODE_TYPE_WATCH" data-uid="Android.Content.Res.Configuration.UI_MODE_TYPE_WATCH">
+  UI_MODE_TYPE_WATCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L612"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_WATCH">https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_WATCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UI_MODE_TYPE_WATCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_colorMode_" data-uid="Android.Content.Res.Configuration.colorMode*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_colorMode" data-uid="Android.Content.Res.Configuration.colorMode">
+  colorMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#colorMode">https://developer.android.com/reference/android/content/res/Configuration.html#colorMode</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int colorMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_densityDpi_" data-uid="Android.Content.Res.Configuration.densityDpi*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_densityDpi" data-uid="Android.Content.Res.Configuration.densityDpi">
+  densityDpi
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#densityDpi">https://developer.android.com/reference/android/content/res/Configuration.html#densityDpi</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int densityDpi { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_fontScale_" data-uid="Android.Content.Res.Configuration.fontScale*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_fontScale" data-uid="Android.Content.Res.Configuration.fontScale">
+  fontScale
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#fontScale">https://developer.android.com/reference/android/content/res/Configuration.html#fontScale</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fontScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_fontWeightAdjustment_" data-uid="Android.Content.Res.Configuration.fontWeightAdjustment*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_fontWeightAdjustment" data-uid="Android.Content.Res.Configuration.fontWeightAdjustment">
+  fontWeightAdjustment
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#fontWeightAdjustment">https://developer.android.com/reference/android/content/res/Configuration.html#fontWeightAdjustment</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int fontWeightAdjustment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_hardKeyboardHidden_" data-uid="Android.Content.Res.Configuration.hardKeyboardHidden*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_hardKeyboardHidden" data-uid="Android.Content.Res.Configuration.hardKeyboardHidden">
+  hardKeyboardHidden
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#hardKeyboardHidden">https://developer.android.com/reference/android/content/res/Configuration.html#hardKeyboardHidden</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int hardKeyboardHidden { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_keyboard_" data-uid="Android.Content.Res.Configuration.keyboard*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_keyboard" data-uid="Android.Content.Res.Configuration.keyboard">
+  keyboard
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#keyboard">https://developer.android.com/reference/android/content/res/Configuration.html#keyboard</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int keyboard { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_keyboardHidden_" data-uid="Android.Content.Res.Configuration.keyboardHidden*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_keyboardHidden" data-uid="Android.Content.Res.Configuration.keyboardHidden">
+  keyboardHidden
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#keyboardHidden">https://developer.android.com/reference/android/content/res/Configuration.html#keyboardHidden</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int keyboardHidden { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_locale_" data-uid="Android.Content.Res.Configuration.locale*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_locale" data-uid="Android.Content.Res.Configuration.locale">
+  locale
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#locale">https://developer.android.com/reference/android/content/res/Configuration.html#locale</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Locale locale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_mcc_" data-uid="Android.Content.Res.Configuration.mcc*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_mcc" data-uid="Android.Content.Res.Configuration.mcc">
+  mcc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#mcc">https://developer.android.com/reference/android/content/res/Configuration.html#mcc</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mcc { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_mnc_" data-uid="Android.Content.Res.Configuration.mnc*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_mnc" data-uid="Android.Content.Res.Configuration.mnc">
+  mnc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#mnc">https://developer.android.com/reference/android/content/res/Configuration.html#mnc</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mnc { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_navigation_" data-uid="Android.Content.Res.Configuration.navigation*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_navigation" data-uid="Android.Content.Res.Configuration.navigation">
+  navigation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#navigation">https://developer.android.com/reference/android/content/res/Configuration.html#navigation</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int navigation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_navigationHidden_" data-uid="Android.Content.Res.Configuration.navigationHidden*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_navigationHidden" data-uid="Android.Content.Res.Configuration.navigationHidden">
+  navigationHidden
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#navigationHidden">https://developer.android.com/reference/android/content/res/Configuration.html#navigationHidden</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int navigationHidden { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_orientation_" data-uid="Android.Content.Res.Configuration.orientation*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_orientation" data-uid="Android.Content.Res.Configuration.orientation">
+  orientation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#orientation">https://developer.android.com/reference/android/content/res/Configuration.html#orientation</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int orientation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_screenHeightDp_" data-uid="Android.Content.Res.Configuration.screenHeightDp*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_screenHeightDp" data-uid="Android.Content.Res.Configuration.screenHeightDp">
+  screenHeightDp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#screenHeightDp">https://developer.android.com/reference/android/content/res/Configuration.html#screenHeightDp</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int screenHeightDp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_screenLayout_" data-uid="Android.Content.Res.Configuration.screenLayout*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_screenLayout" data-uid="Android.Content.Res.Configuration.screenLayout">
+  screenLayout
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#screenLayout">https://developer.android.com/reference/android/content/res/Configuration.html#screenLayout</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int screenLayout { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_screenWidthDp_" data-uid="Android.Content.Res.Configuration.screenWidthDp*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_screenWidthDp" data-uid="Android.Content.Res.Configuration.screenWidthDp">
+  screenWidthDp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#screenWidthDp">https://developer.android.com/reference/android/content/res/Configuration.html#screenWidthDp</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int screenWidthDp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_smallestScreenWidthDp_" data-uid="Android.Content.Res.Configuration.smallestScreenWidthDp*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_smallestScreenWidthDp" data-uid="Android.Content.Res.Configuration.smallestScreenWidthDp">
+  smallestScreenWidthDp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#smallestScreenWidthDp">https://developer.android.com/reference/android/content/res/Configuration.html#smallestScreenWidthDp</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int smallestScreenWidthDp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_touchscreen_" data-uid="Android.Content.Res.Configuration.touchscreen*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_touchscreen" data-uid="Android.Content.Res.Configuration.touchscreen">
+  touchscreen
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#touchscreen">https://developer.android.com/reference/android/content/res/Configuration.html#touchscreen</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int touchscreen { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_uiMode_" data-uid="Android.Content.Res.Configuration.uiMode*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_uiMode" data-uid="Android.Content.Res.Configuration.uiMode">
+  uiMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#uiMode">https://developer.android.com/reference/android/content/res/Configuration.html#uiMode</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int uiMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Content_Res_Configuration_CompareTo_" data-uid="Android.Content.Res.Configuration.CompareTo*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_CompareTo_Android_Content_Res_Configuration_" data-uid="Android.Content.Res.Configuration.CompareTo(Android.Content.Res.Configuration)">
+  CompareTo(Configuration)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L697"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#compareTo(android.content.res.Configuration)">https://developer.android.com/reference/android/content/res/Configuration.html#compareTo(android.content.res.Configuration)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(Configuration arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_CompareTo_" data-uid="Android.Content.Res.Configuration.CompareTo*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_CompareTo_System_Object_" data-uid="Android.Content.Res.Configuration.CompareTo(System.Object)">
+  CompareTo(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L706"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#compareTo(java.lang.Object)">https://developer.android.com/reference/android/content/res/Configuration.html#compareTo(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(object arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_DescribeContents_" data-uid="Android.Content.Res.Configuration.DescribeContents*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_DescribeContents" data-uid="Android.Content.Res.Configuration.DescribeContents">
+  DescribeContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L714"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#describeContents()">https://developer.android.com/reference/android/content/res/Configuration.html#describeContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_Diff_" data-uid="Android.Content.Res.Configuration.Diff*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_Diff_Android_Content_Res_Configuration_" data-uid="Android.Content.Res.Configuration.Diff(Android.Content.Res.Configuration)">
+  Diff(Configuration)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L723"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#diff(android.content.res.Configuration)">https://developer.android.com/reference/android/content/res/Configuration.html#diff(android.content.res.Configuration)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Diff(Configuration arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_GenerateDelta_" data-uid="Android.Content.Res.Configuration.GenerateDelta*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_GenerateDelta_Android_Content_Res_Configuration_Android_Content_Res_Configuration_" data-uid="Android.Content.Res.Configuration.GenerateDelta(Android.Content.Res.Configuration,Android.Content.Res.Configuration)">
+  GenerateDelta(Configuration, Configuration)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L625"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#generateDelta(android.content.res.Configuration,android.content.res.Configuration)">https://developer.android.com/reference/android/content/res/Configuration.html#generateDelta(android.content.res.Configuration,android.content.res.Configuration)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Configuration GenerateDelta(Configuration arg0, Configuration arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_GetGrammaticalGender_" data-uid="Android.Content.Res.Configuration.GetGrammaticalGender*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_GetGrammaticalGender" data-uid="Android.Content.Res.Configuration.GetGrammaticalGender">
+  GetGrammaticalGender()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L731"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#getGrammaticalGender()">https://developer.android.com/reference/android/content/res/Configuration.html#getGrammaticalGender()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetGrammaticalGender()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_GetLayoutDirection_" data-uid="Android.Content.Res.Configuration.GetLayoutDirection*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_GetLayoutDirection" data-uid="Android.Content.Res.Configuration.GetLayoutDirection">
+  GetLayoutDirection()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L739"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#getLayoutDirection()">https://developer.android.com/reference/android/content/res/Configuration.html#getLayoutDirection()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLayoutDirection()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_GetLocales_" data-uid="Android.Content.Res.Configuration.GetLocales*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_GetLocales" data-uid="Android.Content.Res.Configuration.GetLocales">
+  GetLocales()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L647"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#getLocales()">https://developer.android.com/reference/android/content/res/Configuration.html#getLocales()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocaleList GetLocales()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.LocaleList.html">LocaleList</a></dt>
+    <dd><p><a class="xref" href="Android.Os.LocaleList.html">LocaleList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_IsLayoutSizeAtLeast_" data-uid="Android.Content.Res.Configuration.IsLayoutSizeAtLeast*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_IsLayoutSizeAtLeast_System_Int32_" data-uid="Android.Content.Res.Configuration.IsLayoutSizeAtLeast(System.Int32)">
+  IsLayoutSizeAtLeast(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L656"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#isLayoutSizeAtLeast(int)">https://developer.android.com/reference/android/content/res/Configuration.html#isLayoutSizeAtLeast(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLayoutSizeAtLeast(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_IsNightModeActive_" data-uid="Android.Content.Res.Configuration.IsNightModeActive*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_IsNightModeActive" data-uid="Android.Content.Res.Configuration.IsNightModeActive">
+  IsNightModeActive()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L664"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#isNightModeActive()">https://developer.android.com/reference/android/content/res/Configuration.html#isNightModeActive()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNightModeActive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_IsScreenHdr_" data-uid="Android.Content.Res.Configuration.IsScreenHdr*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_IsScreenHdr" data-uid="Android.Content.Res.Configuration.IsScreenHdr">
+  IsScreenHdr()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L672"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#isScreenHdr()">https://developer.android.com/reference/android/content/res/Configuration.html#isScreenHdr()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsScreenHdr()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_IsScreenRound_" data-uid="Android.Content.Res.Configuration.IsScreenRound*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_IsScreenRound" data-uid="Android.Content.Res.Configuration.IsScreenRound">
+  IsScreenRound()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L680"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#isScreenRound()">https://developer.android.com/reference/android/content/res/Configuration.html#isScreenRound()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsScreenRound()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_IsScreenWideColorGamut_" data-uid="Android.Content.Res.Configuration.IsScreenWideColorGamut*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_IsScreenWideColorGamut" data-uid="Android.Content.Res.Configuration.IsScreenWideColorGamut">
+  IsScreenWideColorGamut()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L688"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#isScreenWideColorGamut()">https://developer.android.com/reference/android/content/res/Configuration.html#isScreenWideColorGamut()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsScreenWideColorGamut()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_NeedNewResources_" data-uid="Android.Content.Res.Configuration.NeedNewResources*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_NeedNewResources_System_Int32_System_Int32_" data-uid="Android.Content.Res.Configuration.NeedNewResources(System.Int32,System.Int32)">
+  NeedNewResources(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L635"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#needNewResources(int,int)">https://developer.android.com/reference/android/content/res/Configuration.html#needNewResources(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool NeedNewResources(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_ReadFromParcel_" data-uid="Android.Content.Res.Configuration.ReadFromParcel*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_ReadFromParcel_Android_Os_Parcel_" data-uid="Android.Content.Res.Configuration.ReadFromParcel(Android.Os.Parcel)">
+  ReadFromParcel(Parcel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L756"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#readFromParcel(android.os.Parcel)">https://developer.android.com/reference/android/content/res/Configuration.html#readFromParcel(android.os.Parcel)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadFromParcel(Parcel arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SetLayoutDirection_" data-uid="Android.Content.Res.Configuration.SetLayoutDirection*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SetLayoutDirection_Java_Util_Locale_" data-uid="Android.Content.Res.Configuration.SetLayoutDirection(Java.Util.Locale)">
+  SetLayoutDirection(Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L764"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#setLayoutDirection(java.util.Locale)">https://developer.android.com/reference/android/content/res/Configuration.html#setLayoutDirection(java.util.Locale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayoutDirection(Locale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SetLocale_" data-uid="Android.Content.Res.Configuration.SetLocale*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SetLocale_Java_Util_Locale_" data-uid="Android.Content.Res.Configuration.SetLocale(Java.Util.Locale)">
+  SetLocale(Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L772"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#setLocale(java.util.Locale)">https://developer.android.com/reference/android/content/res/Configuration.html#setLocale(java.util.Locale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLocale(Locale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SetLocales_" data-uid="Android.Content.Res.Configuration.SetLocales*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SetLocales_Android_Os_LocaleList_" data-uid="Android.Content.Res.Configuration.SetLocales(Android.Os.LocaleList)">
+  SetLocales(LocaleList)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L780"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#setLocales(android.os.LocaleList)">https://developer.android.com/reference/android/content/res/Configuration.html#setLocales(android.os.LocaleList)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLocales(LocaleList arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.LocaleList.html">LocaleList</a></dt>
+    <dd><p><a class="xref" href="Android.Os.LocaleList.html">LocaleList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SetTo_" data-uid="Android.Content.Res.Configuration.SetTo*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SetTo_Android_Content_Res_Configuration_" data-uid="Android.Content.Res.Configuration.SetTo(Android.Content.Res.Configuration)">
+  SetTo(Configuration)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L788"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#setTo(android.content.res.Configuration)">https://developer.android.com/reference/android/content/res/Configuration.html#setTo(android.content.res.Configuration)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTo(Configuration arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_SetToDefaults_" data-uid="Android.Content.Res.Configuration.SetToDefaults*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_SetToDefaults" data-uid="Android.Content.Res.Configuration.SetToDefaults">
+  SetToDefaults()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L795"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#setToDefaults()">https://developer.android.com/reference/android/content/res/Configuration.html#setToDefaults()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetToDefaults()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_UpdateFrom_" data-uid="Android.Content.Res.Configuration.UpdateFrom*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_UpdateFrom_Android_Content_Res_Configuration_" data-uid="Android.Content.Res.Configuration.UpdateFrom(Android.Content.Res.Configuration)">
+  UpdateFrom(Configuration)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L748"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#updateFrom(android.content.res.Configuration)">https://developer.android.com/reference/android/content/res/Configuration.html#updateFrom(android.content.res.Configuration)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpdateFrom(Configuration arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_WriteToParcel_" data-uid="Android.Content.Res.Configuration.WriteToParcel*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.Content.Res.Configuration.WriteToParcel(Android.Os.Parcel,System.Int32)">
+  WriteToParcel(Parcel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L804"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Configuration.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/content/res/Configuration.html#writeToParcel(android.os.Parcel,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Android_Content_Res_Configuration_op_Implicit_" data-uid="Android.Content.Res.Configuration.op_Implicit*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_op_Implicit_Android_Content_Res_Configuration__Android_Os_Parcelable" data-uid="Android.Content.Res.Configuration.op_Implicit(Android.Content.Res.Configuration)~Android.Os.Parcelable">
+  implicit operator Parcelable(Configuration)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a> to <a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Parcelable(Configuration t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Configuration_op_Implicit_" data-uid="Android.Content.Res.Configuration.op_Implicit*"></a>
+
+  <h3 id="Android_Content_Res_Configuration_op_Implicit_Android_Content_Res_Configuration__Java_Lang_Comparable" data-uid="Android.Content.Res.Configuration.op_Implicit(Android.Content.Res.Configuration)~Java.Lang.Comparable">
+  implicit operator Comparable(Configuration)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a> to <a class="xref" href="Java.Lang.Comparable.html">Comparable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Comparable(Configuration t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Comparable.html">Comparable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Configuration.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

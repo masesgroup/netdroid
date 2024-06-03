@@ -1,0 +1,2036 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class TimeZoneFormat | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TimeZoneFormat | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Icu_Text_TimeZoneFormat.md&amp;value=---%0Auid%3A%20Android.Icu.Text.TimeZoneFormat%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Icu.Text.TimeZoneFormat">
+
+
+
+  <h1 id="Android_Icu_Text_TimeZoneFormat" data-uid="Android.Icu.Text.TimeZoneFormat" class="text-break">
+Class TimeZoneFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Icu.html">Icu</a>.<a class="xref" href="Android.Icu.Text.html">Text</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TimeZoneFormat : UFormat, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IFreezable&lt;TimeZoneFormat&gt;, ICloneable, ISerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Text.Format.html">Format</a>&gt;</div>
+      <div><a class="xref" href="Java.Text.Format.html">Format</a></div>
+      <div><a class="xref" href="Android.Icu.Text.UFormat.html">UFormat</a></div>
+      <div><span class="xref">TimeZoneFormat</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Icu.Util.IFreezable-1.html">IFreezable</a>&lt;<a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a>&gt;</div>
+      <div><a class="xref" href="Java.Lang.ICloneable.html">ICloneable</a></div>
+      <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_ParseObject_Java_Lang_String_Java_Text_ParsePosition_">Format.ParseObject(String, ParsePosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_FormatMethod_System_Object_Java_Lang_StringBuffer_Java_Text_FieldPosition_">Format.FormatMethod(object, StringBuffer, FieldPosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_FormatMethod_System_Object_">Format.FormatMethod(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_ParseObject_Java_Lang_String_">Format.ParseObject(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_FormatToCharacterIterator_System_Object_">Format.FormatToCharacterIterator(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Format&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat__ctor_" data-uid="Android.Icu.Text.TimeZoneFormat.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat__ctor" data-uid="Android.Icu.Text.TimeZoneFormat.#ctor">
+  TimeZoneFormat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeZoneFormat()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat__ctor_" data-uid="Android.Icu.Text.TimeZoneFormat.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat__ctor_System_Object___" data-uid="Android.Icu.Text.TimeZoneFormat.#ctor(System.Object[])">
+  TimeZoneFormat(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeZoneFormat(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_BridgeClassName_" data-uid="Android.Icu.Text.TimeZoneFormat.BridgeClassName*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_BridgeClassName" data-uid="Android.Icu.Text.TimeZoneFormat.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_IsBridgeAbstract_" data-uid="Android.Icu.Text.TimeZoneFormat.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_IsBridgeAbstract" data-uid="Android.Icu.Text.TimeZoneFormat.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_IsBridgeCloseable_" data-uid="Android.Icu.Text.TimeZoneFormat.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_IsBridgeCloseable" data-uid="Android.Icu.Text.TimeZoneFormat.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_IsBridgeInterface_" data-uid="Android.Icu.Text.TimeZoneFormat.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_IsBridgeInterface" data-uid="Android.Icu.Text.TimeZoneFormat.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_IsBridgeStatic_" data-uid="Android.Icu.Text.TimeZoneFormat.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_IsBridgeStatic" data-uid="Android.Icu.Text.TimeZoneFormat.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_CloneAsThawed_" data-uid="Android.Icu.Text.TimeZoneFormat.CloneAsThawed*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_CloneAsThawed" data-uid="Android.Icu.Text.TimeZoneFormat.CloneAsThawed">
+  CloneAsThawed()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#cloneAsThawed()">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#cloneAsThawed()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object CloneAsThawed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_Format_" data-uid="Android.Icu.Text.TimeZoneFormat.Format*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_Format_Android_Icu_Text_TimeZoneFormat_Style_Android_Icu_Util_TimeZone_System_Int64_" data-uid="Android.Icu.Text.TimeZoneFormat.Format(Android.Icu.Text.TimeZoneFormat.Style,Android.Icu.Util.TimeZone,System.Int64)">
+  Format(Style, TimeZone, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#format(android.icu.text.TimeZoneFormat.Style,android.icu.util.TimeZone,long)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#format(android.icu.text.TimeZoneFormat.Style,android.icu.util.TimeZone,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String Format(TimeZoneFormat.Style arg0, TimeZone arg1, long arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a>.<a class="xref" href="Android.Icu.Text.TimeZoneFormat.Style.html">Style</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.Style.html">TimeZoneFormat.Style</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Icu.Util.TimeZone.html">TimeZone</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.TimeZone.html">TimeZone</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_Format_" data-uid="Android.Icu.Text.TimeZoneFormat.Format*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_Format_Android_Icu_Text_TimeZoneFormat_Style_Android_Icu_Util_TimeZone_System_Int64_Android_Icu_Util_Output_Android_Icu_Text_TimeZoneFormat_TimeType__" data-uid="Android.Icu.Text.TimeZoneFormat.Format(Android.Icu.Text.TimeZoneFormat.Style,Android.Icu.Util.TimeZone,System.Int64,Android.Icu.Util.Output{Android.Icu.Text.TimeZoneFormat.TimeType})">
+  Format(Style, TimeZone, long, Output&lt;TimeType&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#format(android.icu.text.TimeZoneFormat.Style,android.icu.util.TimeZone,long,android.icu.util.Output)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#format(android.icu.text.TimeZoneFormat.Style,android.icu.util.TimeZone,long,android.icu.util.Output)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String Format(TimeZoneFormat.Style arg0, TimeZone arg1, long arg2, Output&lt;TimeZoneFormat.TimeType&gt; arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a>.<a class="xref" href="Android.Icu.Text.TimeZoneFormat.Style.html">Style</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.Style.html">TimeZoneFormat.Style</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Icu.Util.TimeZone.html">TimeZone</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.TimeZone.html">TimeZone</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Icu.Util.Output-1.html">Output</a>&lt;<a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a>.<a class="xref" href="Android.Icu.Text.TimeZoneFormat.TimeType.html">TimeType</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.Output.html">Output</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_FormatOffsetISO8601Basic_" data-uid="Android.Icu.Text.TimeZoneFormat.FormatOffsetISO8601Basic*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_FormatOffsetISO8601Basic_System_Int32_System_Boolean_System_Boolean_System_Boolean_" data-uid="Android.Icu.Text.TimeZoneFormat.FormatOffsetISO8601Basic(System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+  FormatOffsetISO8601Basic(int, bool, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#formatOffsetISO8601Basic(int,boolean,boolean,boolean)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#formatOffsetISO8601Basic(int,boolean,boolean,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String FormatOffsetISO8601Basic(int arg0, bool arg1, bool arg2, bool arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_FormatOffsetISO8601Extended_" data-uid="Android.Icu.Text.TimeZoneFormat.FormatOffsetISO8601Extended*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_FormatOffsetISO8601Extended_System_Int32_System_Boolean_System_Boolean_System_Boolean_" data-uid="Android.Icu.Text.TimeZoneFormat.FormatOffsetISO8601Extended(System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+  FormatOffsetISO8601Extended(int, bool, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#formatOffsetISO8601Extended(int,boolean,boolean,boolean)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#formatOffsetISO8601Extended(int,boolean,boolean,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String FormatOffsetISO8601Extended(int arg0, bool arg1, bool arg2, bool arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_FormatOffsetLocalizedGMT_" data-uid="Android.Icu.Text.TimeZoneFormat.FormatOffsetLocalizedGMT*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_FormatOffsetLocalizedGMT_System_Int32_" data-uid="Android.Icu.Text.TimeZoneFormat.FormatOffsetLocalizedGMT(System.Int32)">
+  FormatOffsetLocalizedGMT(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#formatOffsetLocalizedGMT(int)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#formatOffsetLocalizedGMT(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String FormatOffsetLocalizedGMT(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_FormatOffsetShortLocalizedGMT_" data-uid="Android.Icu.Text.TimeZoneFormat.FormatOffsetShortLocalizedGMT*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_FormatOffsetShortLocalizedGMT_System_Int32_" data-uid="Android.Icu.Text.TimeZoneFormat.FormatOffsetShortLocalizedGMT(System.Int32)">
+  FormatOffsetShortLocalizedGMT(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#formatOffsetShortLocalizedGMT(int)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#formatOffsetShortLocalizedGMT(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String FormatOffsetShortLocalizedGMT(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_Freeze_" data-uid="Android.Icu.Text.TimeZoneFormat.Freeze*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_Freeze" data-uid="Android.Icu.Text.TimeZoneFormat.Freeze">
+  Freeze()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#freeze()">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#freeze()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Freeze()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_GetDefaultParseOptions_" data-uid="Android.Icu.Text.TimeZoneFormat.GetDefaultParseOptions*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_GetDefaultParseOptions" data-uid="Android.Icu.Text.TimeZoneFormat.GetDefaultParseOptions">
+  GetDefaultParseOptions()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getDefaultParseOptions()">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getDefaultParseOptions()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnumSet&lt;TimeZoneFormat.ParseOption&gt; GetDefaultParseOptions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.EnumSet-1.html">EnumSet</a>&lt;<a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a>.<a class="xref" href="Android.Icu.Text.TimeZoneFormat.ParseOption.html">ParseOption</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.EnumSet.html">EnumSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_GetGMTOffsetDigits_" data-uid="Android.Icu.Text.TimeZoneFormat.GetGMTOffsetDigits*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_GetGMTOffsetDigits" data-uid="Android.Icu.Text.TimeZoneFormat.GetGMTOffsetDigits">
+  GetGMTOffsetDigits()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTOffsetDigits()">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTOffsetDigits()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetGMTOffsetDigits()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_GetGMTOffsetPattern_" data-uid="Android.Icu.Text.TimeZoneFormat.GetGMTOffsetPattern*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_GetGMTOffsetPattern_Android_Icu_Text_TimeZoneFormat_GMTOffsetPatternType_" data-uid="Android.Icu.Text.TimeZoneFormat.GetGMTOffsetPattern(Android.Icu.Text.TimeZoneFormat.GMTOffsetPatternType)">
+  GetGMTOffsetPattern(GMTOffsetPatternType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTOffsetPattern(android.icu.text.TimeZoneFormat.GMTOffsetPatternType)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTOffsetPattern(android.icu.text.TimeZoneFormat.GMTOffsetPatternType)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetGMTOffsetPattern(TimeZoneFormat.GMTOffsetPatternType arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a>.<a class="xref" href="Android.Icu.Text.TimeZoneFormat.GMTOffsetPatternType.html">GMTOffsetPatternType</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.GMTOffsetPatternType.html">TimeZoneFormat.GMTOffsetPatternType</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_GetGMTPattern_" data-uid="Android.Icu.Text.TimeZoneFormat.GetGMTPattern*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_GetGMTPattern" data-uid="Android.Icu.Text.TimeZoneFormat.GetGMTPattern">
+  GetGMTPattern()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTPattern()">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTPattern()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetGMTPattern()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_GetGMTZeroFormat_" data-uid="Android.Icu.Text.TimeZoneFormat.GetGMTZeroFormat*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_GetGMTZeroFormat" data-uid="Android.Icu.Text.TimeZoneFormat.GetGMTZeroFormat">
+  GetGMTZeroFormat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTZeroFormat()">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTZeroFormat()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetGMTZeroFormat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_GetInstance_" data-uid="Android.Icu.Text.TimeZoneFormat.GetInstance*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_GetInstance_Android_Icu_Util_ULocale_" data-uid="Android.Icu.Text.TimeZoneFormat.GetInstance(Android.Icu.Util.ULocale)">
+  GetInstance(ULocale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getInstance(android.icu.util.ULocale)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getInstance(android.icu.util.ULocale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TimeZoneFormat GetInstance(ULocale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_GetInstance_" data-uid="Android.Icu.Text.TimeZoneFormat.GetInstance*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_GetInstance_Java_Util_Locale_" data-uid="Android.Icu.Text.TimeZoneFormat.GetInstance(Java.Util.Locale)">
+  GetInstance(Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getInstance(java.util.Locale)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getInstance(java.util.Locale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TimeZoneFormat GetInstance(Locale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_GetTimeZoneNames_" data-uid="Android.Icu.Text.TimeZoneFormat.GetTimeZoneNames*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_GetTimeZoneNames" data-uid="Android.Icu.Text.TimeZoneFormat.GetTimeZoneNames">
+  GetTimeZoneNames()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getTimeZoneNames()">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getTimeZoneNames()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeZoneNames GetTimeZoneNames()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.TimeZoneNames.html">TimeZoneNames</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneNames.html">TimeZoneNames</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_IsFrozen_" data-uid="Android.Icu.Text.TimeZoneFormat.IsFrozen*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_IsFrozen" data-uid="Android.Icu.Text.TimeZoneFormat.IsFrozen">
+  IsFrozen()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#isFrozen()">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#isFrozen()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFrozen()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_Parse_" data-uid="Android.Icu.Text.TimeZoneFormat.Parse*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_Parse_Android_Icu_Text_TimeZoneFormat_Style_Java_Lang_String_Java_Text_ParsePosition_Android_Icu_Util_Output_Android_Icu_Text_TimeZoneFormat_TimeType__" data-uid="Android.Icu.Text.TimeZoneFormat.Parse(Android.Icu.Text.TimeZoneFormat.Style,Java.Lang.String,Java.Text.ParsePosition,Android.Icu.Util.Output{Android.Icu.Text.TimeZoneFormat.TimeType})">
+  Parse(Style, String, ParsePosition, Output&lt;TimeType&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parse(android.icu.text.TimeZoneFormat.Style,java.lang.String,java.text.ParsePosition,android.icu.util.Output)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parse(android.icu.text.TimeZoneFormat.Style,java.lang.String,java.text.ParsePosition,android.icu.util.Output)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeZone Parse(TimeZoneFormat.Style arg0, String arg1, ParsePosition arg2, Output&lt;TimeZoneFormat.TimeType&gt; arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a>.<a class="xref" href="Android.Icu.Text.TimeZoneFormat.Style.html">Style</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.Style.html">TimeZoneFormat.Style</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Icu.Util.Output-1.html">Output</a>&lt;<a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a>.<a class="xref" href="Android.Icu.Text.TimeZoneFormat.TimeType.html">TimeType</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.Output.html">Output</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Util.TimeZone.html">TimeZone</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.TimeZone.html">TimeZone</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_Parse_" data-uid="Android.Icu.Text.TimeZoneFormat.Parse*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_Parse_Android_Icu_Text_TimeZoneFormat_Style_Java_Lang_String_Java_Text_ParsePosition_Java_Util_EnumSet_Android_Icu_Text_TimeZoneFormat_ParseOption__Android_Icu_Util_Output_Android_Icu_Text_TimeZoneFormat_TimeType__" data-uid="Android.Icu.Text.TimeZoneFormat.Parse(Android.Icu.Text.TimeZoneFormat.Style,Java.Lang.String,Java.Text.ParsePosition,Java.Util.EnumSet{Android.Icu.Text.TimeZoneFormat.ParseOption},Android.Icu.Util.Output{Android.Icu.Text.TimeZoneFormat.TimeType})">
+  Parse(Style, String, ParsePosition, EnumSet&lt;ParseOption&gt;, Output&lt;TimeType&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parse(android.icu.text.TimeZoneFormat.Style,java.lang.String,java.text.ParsePosition,java.util.EnumSet,android.icu.util.Output)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parse(android.icu.text.TimeZoneFormat.Style,java.lang.String,java.text.ParsePosition,java.util.EnumSet,android.icu.util.Output)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeZone Parse(TimeZoneFormat.Style arg0, String arg1, ParsePosition arg2, EnumSet&lt;TimeZoneFormat.ParseOption&gt; arg3, Output&lt;TimeZoneFormat.TimeType&gt; arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a>.<a class="xref" href="Android.Icu.Text.TimeZoneFormat.Style.html">Style</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.Style.html">TimeZoneFormat.Style</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.EnumSet-1.html">EnumSet</a>&lt;<a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a>.<a class="xref" href="Android.Icu.Text.TimeZoneFormat.ParseOption.html">ParseOption</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.EnumSet.html">EnumSet</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Icu.Util.Output-1.html">Output</a>&lt;<a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a>.<a class="xref" href="Android.Icu.Text.TimeZoneFormat.TimeType.html">TimeType</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.Output.html">Output</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Util.TimeZone.html">TimeZone</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.TimeZone.html">TimeZone</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_Parse_" data-uid="Android.Icu.Text.TimeZoneFormat.Parse*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_Parse_Java_Lang_String_" data-uid="Android.Icu.Text.TimeZoneFormat.Parse(Java.Lang.String)">
+  Parse(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parse(java.lang.String)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parse(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeZone Parse(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Util.TimeZone.html">TimeZone</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.TimeZone.html">TimeZone</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Text.ParseException.html">ParseException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_Parse_" data-uid="Android.Icu.Text.TimeZoneFormat.Parse*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_Parse_Java_Lang_String_Java_Text_ParsePosition_" data-uid="Android.Icu.Text.TimeZoneFormat.Parse(Java.Lang.String,Java.Text.ParsePosition)">
+  Parse(String, ParsePosition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parse(java.lang.String,java.text.ParsePosition)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parse(java.lang.String,java.text.ParsePosition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeZone Parse(String arg0, ParsePosition arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Util.TimeZone.html">TimeZone</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.TimeZone.html">TimeZone</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_ParseOffsetISO8601_" data-uid="Android.Icu.Text.TimeZoneFormat.ParseOffsetISO8601*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_ParseOffsetISO8601_Java_Lang_String_Java_Text_ParsePosition_" data-uid="Android.Icu.Text.TimeZoneFormat.ParseOffsetISO8601(Java.Lang.String,Java.Text.ParsePosition)">
+  ParseOffsetISO8601(String, ParsePosition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parseOffsetISO8601(java.lang.String,java.text.ParsePosition)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parseOffsetISO8601(java.lang.String,java.text.ParsePosition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ParseOffsetISO8601(String arg0, ParsePosition arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_ParseOffsetLocalizedGMT_" data-uid="Android.Icu.Text.TimeZoneFormat.ParseOffsetLocalizedGMT*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_ParseOffsetLocalizedGMT_Java_Lang_String_Java_Text_ParsePosition_" data-uid="Android.Icu.Text.TimeZoneFormat.ParseOffsetLocalizedGMT(Java.Lang.String,Java.Text.ParsePosition)">
+  ParseOffsetLocalizedGMT(String, ParsePosition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parseOffsetLocalizedGMT(java.lang.String,java.text.ParsePosition)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parseOffsetLocalizedGMT(java.lang.String,java.text.ParsePosition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ParseOffsetLocalizedGMT(String arg0, ParsePosition arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_ParseOffsetShortLocalizedGMT_" data-uid="Android.Icu.Text.TimeZoneFormat.ParseOffsetShortLocalizedGMT*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_ParseOffsetShortLocalizedGMT_Java_Lang_String_Java_Text_ParsePosition_" data-uid="Android.Icu.Text.TimeZoneFormat.ParseOffsetShortLocalizedGMT(Java.Lang.String,Java.Text.ParsePosition)">
+  ParseOffsetShortLocalizedGMT(String, ParsePosition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parseOffsetShortLocalizedGMT(java.lang.String,java.text.ParsePosition)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parseOffsetShortLocalizedGMT(java.lang.String,java.text.ParsePosition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ParseOffsetShortLocalizedGMT(String arg0, ParsePosition arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_SetDefaultParseOptions_" data-uid="Android.Icu.Text.TimeZoneFormat.SetDefaultParseOptions*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_SetDefaultParseOptions_Java_Util_EnumSet_Android_Icu_Text_TimeZoneFormat_ParseOption__" data-uid="Android.Icu.Text.TimeZoneFormat.SetDefaultParseOptions(Java.Util.EnumSet{Android.Icu.Text.TimeZoneFormat.ParseOption})">
+  SetDefaultParseOptions(EnumSet&lt;ParseOption&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setDefaultParseOptions(java.util.EnumSet)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setDefaultParseOptions(java.util.EnumSet)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeZoneFormat SetDefaultParseOptions(EnumSet&lt;TimeZoneFormat.ParseOption&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.EnumSet-1.html">EnumSet</a>&lt;<a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a>.<a class="xref" href="Android.Icu.Text.TimeZoneFormat.ParseOption.html">ParseOption</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.EnumSet.html">EnumSet</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_SetGMTOffsetDigits_" data-uid="Android.Icu.Text.TimeZoneFormat.SetGMTOffsetDigits*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_SetGMTOffsetDigits_Java_Lang_String_" data-uid="Android.Icu.Text.TimeZoneFormat.SetGMTOffsetDigits(Java.Lang.String)">
+  SetGMTOffsetDigits(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setGMTOffsetDigits(java.lang.String)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setGMTOffsetDigits(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeZoneFormat SetGMTOffsetDigits(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_SetGMTOffsetPattern_" data-uid="Android.Icu.Text.TimeZoneFormat.SetGMTOffsetPattern*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_SetGMTOffsetPattern_Android_Icu_Text_TimeZoneFormat_GMTOffsetPatternType_Java_Lang_String_" data-uid="Android.Icu.Text.TimeZoneFormat.SetGMTOffsetPattern(Android.Icu.Text.TimeZoneFormat.GMTOffsetPatternType,Java.Lang.String)">
+  SetGMTOffsetPattern(GMTOffsetPatternType, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setGMTOffsetPattern(android.icu.text.TimeZoneFormat.GMTOffsetPatternType,java.lang.String)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setGMTOffsetPattern(android.icu.text.TimeZoneFormat.GMTOffsetPatternType,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeZoneFormat SetGMTOffsetPattern(TimeZoneFormat.GMTOffsetPatternType arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a>.<a class="xref" href="Android.Icu.Text.TimeZoneFormat.GMTOffsetPatternType.html">GMTOffsetPatternType</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.GMTOffsetPatternType.html">TimeZoneFormat.GMTOffsetPatternType</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_SetGMTPattern_" data-uid="Android.Icu.Text.TimeZoneFormat.SetGMTPattern*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_SetGMTPattern_Java_Lang_String_" data-uid="Android.Icu.Text.TimeZoneFormat.SetGMTPattern(Java.Lang.String)">
+  SetGMTPattern(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setGMTPattern(java.lang.String)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setGMTPattern(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeZoneFormat SetGMTPattern(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_SetGMTZeroFormat_" data-uid="Android.Icu.Text.TimeZoneFormat.SetGMTZeroFormat*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_SetGMTZeroFormat_Java_Lang_String_" data-uid="Android.Icu.Text.TimeZoneFormat.SetGMTZeroFormat(Java.Lang.String)">
+  SetGMTZeroFormat(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setGMTZeroFormat(java.lang.String)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setGMTZeroFormat(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeZoneFormat SetGMTZeroFormat(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_SetTimeZoneNames_" data-uid="Android.Icu.Text.TimeZoneFormat.SetTimeZoneNames*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_SetTimeZoneNames_Android_Icu_Text_TimeZoneNames_" data-uid="Android.Icu.Text.TimeZoneFormat.SetTimeZoneNames(Android.Icu.Text.TimeZoneNames)">
+  SetTimeZoneNames(TimeZoneNames)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setTimeZoneNames(android.icu.text.TimeZoneNames)">https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setTimeZoneNames(android.icu.text.TimeZoneNames)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeZoneFormat SetTimeZoneNames(TimeZoneNames arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.TimeZoneNames.html">TimeZoneNames</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneNames.html">TimeZoneNames</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_op_Implicit_" data-uid="Android.Icu.Text.TimeZoneFormat.op_Implicit*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_op_Implicit_Android_Icu_Text_TimeZoneFormat__Android_Icu_Util_Freezable" data-uid="Android.Icu.Text.TimeZoneFormat.op_Implicit(Android.Icu.Text.TimeZoneFormat)~Android.Icu.Util.Freezable">
+  implicit operator Freezable(TimeZoneFormat)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a> to <a class="xref" href="Android.Icu.Util.Freezable.html">Freezable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Freezable(TimeZoneFormat t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Util.Freezable.html">Freezable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_TimeZoneFormat_op_Implicit_" data-uid="Android.Icu.Text.TimeZoneFormat.op_Implicit*"></a>
+
+  <h3 id="Android_Icu_Text_TimeZoneFormat_op_Implicit_Android_Icu_Text_TimeZoneFormat__Java_Io_Serializable" data-uid="Android.Icu.Text.TimeZoneFormat.op_Implicit(Android.Icu.Text.TimeZoneFormat)~Java.Io.Serializable">
+  implicit operator Serializable(TimeZoneFormat)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a> to <a class="xref" href="Java.Io.Serializable.html">Serializable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Serializable(TimeZoneFormat t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.Serializable.html">Serializable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/TimeZoneFormat.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

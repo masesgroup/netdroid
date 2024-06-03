@@ -1,0 +1,3186 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class Resources | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Resources | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/content/res/Resources.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Content_Res_Resources.md&amp;value=---%0Auid%3A%20Android.Content.Res.Resources%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Content.Res.Resources">
+
+
+
+  <h1 id="Android_Content_Res_Resources" data-uid="Android.Content.Res.Resources" class="text-break">
+Class Resources  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Content.html">Content</a>.<a class="xref" href="Android.Content.Res.html">Res</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html">https://developer.android.com/reference/android/content/res/Resources.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Resources : JVMBridgeBase&lt;Resources&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Content.Res.Resources.html">Resources</a>&gt;</div>
+      <div><span class="xref">Resources</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Resources&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Resources&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Resources&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Resources&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Resources&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Resources&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Resources&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Resources&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Resources&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Resources&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Resources&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Resources&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Resources&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Content_Res_Resources__ctor_" data-uid="Android.Content.Res.Resources.#ctor*"></a>
+
+  <h3 id="Android_Content_Res_Resources__ctor" data-uid="Android.Content.Res.Resources.#ctor">
+  Resources()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/AllPackageClasses.cs/#L435"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Resources()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources__ctor_" data-uid="Android.Content.Res.Resources.#ctor*"></a>
+
+  <h3 id="Android_Content_Res_Resources__ctor_Android_Content_Res_AssetManager_Android_Util_DisplayMetrics_Android_Content_Res_Configuration_" data-uid="Android.Content.Res.Resources.#ctor(Android.Content.Res.AssetManager,Android.Util.DisplayMetrics,Android.Content.Res.Configuration)">
+  Resources(AssetManager, DisplayMetrics, Configuration)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#%3Cinit%3E(android.content.res.AssetManager,android.util.DisplayMetrics,android.content.res.Configuration)">https://developer.android.com/reference/android/content/res/Resources.html#%3Cinit%3E(android.content.res.AssetManager,android.util.DisplayMetrics,android.content.res.Configuration)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Resources(AssetManager arg0, DisplayMetrics arg1, Configuration arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.AssetManager.html">AssetManager</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.AssetManager.html">AssetManager</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.DisplayMetrics.html">DisplayMetrics</a></dt>
+    <dd><p><a class="xref" href="Android.Util.DisplayMetrics.html">DisplayMetrics</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources__ctor_" data-uid="Android.Content.Res.Resources.#ctor*"></a>
+
+  <h3 id="Android_Content_Res_Resources__ctor_System_Object___" data-uid="Android.Content.Res.Resources.#ctor(System.Object[])">
+  Resources(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/AllPackageClasses.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Resources(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Content_Res_Resources_BridgeClassName_" data-uid="Android.Content.Res.Resources.BridgeClassName*"></a>
+
+  <h3 id="Android_Content_Res_Resources_BridgeClassName" data-uid="Android.Content.Res.Resources.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/AllPackageClasses.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_ID_NULL_" data-uid="Android.Content.Res.Resources.ID_NULL*"></a>
+
+  <h3 id="Android_Content_Res_Resources_ID_NULL" data-uid="Android.Content.Res.Resources.ID_NULL">
+  ID_NULL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#ID_NULL">https://developer.android.com/reference/android/content/res/Resources.html#ID_NULL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ID_NULL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_IsBridgeAbstract_" data-uid="Android.Content.Res.Resources.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Content_Res_Resources_IsBridgeAbstract" data-uid="Android.Content.Res.Resources.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/AllPackageClasses.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_IsBridgeCloseable_" data-uid="Android.Content.Res.Resources.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Content_Res_Resources_IsBridgeCloseable" data-uid="Android.Content.Res.Resources.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/AllPackageClasses.cs/#L454"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_IsBridgeInterface_" data-uid="Android.Content.Res.Resources.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Content_Res_Resources_IsBridgeInterface" data-uid="Android.Content.Res.Resources.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/AllPackageClasses.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_IsBridgeStatic_" data-uid="Android.Content.Res.Resources.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Content_Res_Resources_IsBridgeStatic" data-uid="Android.Content.Res.Resources.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/AllPackageClasses.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Content_Res_Resources_AddLoaders_" data-uid="Android.Content.Res.Resources.AddLoaders*"></a>
+
+  <h3 id="Android_Content_Res_Resources_AddLoaders_Android_Content_Res_Loader_ResourcesLoader___" data-uid="Android.Content.Res.Resources.AddLoaders(Android.Content.Res.Loader.ResourcesLoader[])">
+  AddLoaders(params ResourcesLoader[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#addLoaders(android.content.res.loader.ResourcesLoader[])">https://developer.android.com/reference/android/content/res/Resources.html#addLoaders(android.content.res.loader.ResourcesLoader[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddLoaders(params ResourcesLoader[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.Loader.ResourcesLoader.html">ResourcesLoader</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Loader.ResourcesLoader.html">ResourcesLoader</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_FinishPreloading_" data-uid="Android.Content.Res.Resources.FinishPreloading*"></a>
+
+  <h3 id="Android_Content_Res_Resources_FinishPreloading" data-uid="Android.Content.Res.Resources.FinishPreloading">
+  FinishPreloading()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#finishPreloading()">https://developer.android.com/reference/android/content/res/Resources.html#finishPreloading()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FinishPreloading()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_FlushLayoutCache_" data-uid="Android.Content.Res.Resources.FlushLayoutCache*"></a>
+
+  <h3 id="Android_Content_Res_Resources_FlushLayoutCache" data-uid="Android.Content.Res.Resources.FlushLayoutCache">
+  FlushLayoutCache()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#flushLayoutCache()">https://developer.android.com/reference/android/content/res/Resources.html#flushLayoutCache()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FlushLayoutCache()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_GetAnimation_" data-uid="Android.Content.Res.Resources.GetAnimation*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetAnimation_System_Int32_" data-uid="Android.Content.Res.Resources.GetAnimation(System.Int32)">
+  GetAnimation(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getAnimation(int)">https://developer.android.com/reference/android/content/res/Resources.html#getAnimation(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlResourceParser GetAnimation(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.XmlResourceParser.html">XmlResourceParser</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.XmlResourceParser.html">XmlResourceParser</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetAssets_" data-uid="Android.Content.Res.Resources.GetAssets*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetAssets" data-uid="Android.Content.Res.Resources.GetAssets">
+  GetAssets()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getAssets()">https://developer.android.com/reference/android/content/res/Resources.html#getAssets()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetManager GetAssets()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.AssetManager.html">AssetManager</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.AssetManager.html">AssetManager</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_GetAttributeSetSourceResId_" data-uid="Android.Content.Res.Resources.GetAttributeSetSourceResId*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetAttributeSetSourceResId_Android_Util_AttributeSet_" data-uid="Android.Content.Res.Resources.GetAttributeSetSourceResId(Android.Util.AttributeSet)">
+  GetAttributeSetSourceResId(AttributeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getAttributeSetSourceResId(android.util.AttributeSet)">https://developer.android.com/reference/android/content/res/Resources.html#getAttributeSetSourceResId(android.util.AttributeSet)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetAttributeSetSourceResId(AttributeSet arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_GetBoolean_" data-uid="Android.Content.Res.Resources.GetBoolean*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetBoolean_System_Int32_" data-uid="Android.Content.Res.Resources.GetBoolean(System.Int32)">
+  GetBoolean(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getBoolean(int)">https://developer.android.com/reference/android/content/res/Resources.html#getBoolean(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBoolean(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetColor_" data-uid="Android.Content.Res.Resources.GetColor*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetColor_System_Int32_" data-uid="Android.Content.Res.Resources.GetColor(System.Int32)">
+  GetColor(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getColor(int)">https://developer.android.com/reference/android/content/res/Resources.html#getColor(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public int GetColor(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetColor_" data-uid="Android.Content.Res.Resources.GetColor*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetColor_System_Int32_Android_Content_Res_Resources_Theme_" data-uid="Android.Content.Res.Resources.GetColor(System.Int32,Android.Content.Res.Resources.Theme)">
+  GetColor(int, Theme)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getColor(int,android.content.res.Resources.Theme)">https://developer.android.com/reference/android/content/res/Resources.html#getColor(int,android.content.res.Resources.Theme)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetColor(int arg0, Resources.Theme arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.Theme.html">Theme</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Resources.Theme.html">Resources.Theme</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetColorStateList_" data-uid="Android.Content.Res.Resources.GetColorStateList*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetColorStateList_System_Int32_" data-uid="Android.Content.Res.Resources.GetColorStateList(System.Int32)">
+  GetColorStateList(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getColorStateList(int)">https://developer.android.com/reference/android/content/res/Resources.html#getColorStateList(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public ColorStateList GetColorStateList(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.ColorStateList.html">ColorStateList</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.ColorStateList.html">ColorStateList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetColorStateList_" data-uid="Android.Content.Res.Resources.GetColorStateList*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetColorStateList_System_Int32_Android_Content_Res_Resources_Theme_" data-uid="Android.Content.Res.Resources.GetColorStateList(System.Int32,Android.Content.Res.Resources.Theme)">
+  GetColorStateList(int, Theme)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getColorStateList(int,android.content.res.Resources.Theme)">https://developer.android.com/reference/android/content/res/Resources.html#getColorStateList(int,android.content.res.Resources.Theme)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ColorStateList GetColorStateList(int arg0, Resources.Theme arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.Theme.html">Theme</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Resources.Theme.html">Resources.Theme</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.ColorStateList.html">ColorStateList</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.ColorStateList.html">ColorStateList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetConfiguration_" data-uid="Android.Content.Res.Resources.GetConfiguration*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetConfiguration" data-uid="Android.Content.Res.Resources.GetConfiguration">
+  GetConfiguration()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getConfiguration()">https://developer.android.com/reference/android/content/res/Resources.html#getConfiguration()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Configuration GetConfiguration()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_GetDimension_" data-uid="Android.Content.Res.Resources.GetDimension*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetDimension_System_Int32_" data-uid="Android.Content.Res.Resources.GetDimension(System.Int32)">
+  GetDimension(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getDimension(int)">https://developer.android.com/reference/android/content/res/Resources.html#getDimension(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetDimension(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetDimensionPixelOffset_" data-uid="Android.Content.Res.Resources.GetDimensionPixelOffset*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetDimensionPixelOffset_System_Int32_" data-uid="Android.Content.Res.Resources.GetDimensionPixelOffset(System.Int32)">
+  GetDimensionPixelOffset(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getDimensionPixelOffset(int)">https://developer.android.com/reference/android/content/res/Resources.html#getDimensionPixelOffset(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDimensionPixelOffset(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetDimensionPixelSize_" data-uid="Android.Content.Res.Resources.GetDimensionPixelSize*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetDimensionPixelSize_System_Int32_" data-uid="Android.Content.Res.Resources.GetDimensionPixelSize(System.Int32)">
+  GetDimensionPixelSize(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getDimensionPixelSize(int)">https://developer.android.com/reference/android/content/res/Resources.html#getDimensionPixelSize(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDimensionPixelSize(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetDisplayMetrics_" data-uid="Android.Content.Res.Resources.GetDisplayMetrics*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetDisplayMetrics" data-uid="Android.Content.Res.Resources.GetDisplayMetrics">
+  GetDisplayMetrics()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getDisplayMetrics()">https://developer.android.com/reference/android/content/res/Resources.html#getDisplayMetrics()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DisplayMetrics GetDisplayMetrics()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Util.DisplayMetrics.html">DisplayMetrics</a></dt>
+    <dd><p><a class="xref" href="Android.Util.DisplayMetrics.html">DisplayMetrics</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_GetDrawable_" data-uid="Android.Content.Res.Resources.GetDrawable*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetDrawable_System_Int32_" data-uid="Android.Content.Res.Resources.GetDrawable(System.Int32)">
+  GetDrawable(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getDrawable(int)">https://developer.android.com/reference/android/content/res/Resources.html#getDrawable(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Drawable GetDrawable(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetDrawable_" data-uid="Android.Content.Res.Resources.GetDrawable*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetDrawable_System_Int32_Android_Content_Res_Resources_Theme_" data-uid="Android.Content.Res.Resources.GetDrawable(System.Int32,Android.Content.Res.Resources.Theme)">
+  GetDrawable(int, Theme)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getDrawable(int,android.content.res.Resources.Theme)">https://developer.android.com/reference/android/content/res/Resources.html#getDrawable(int,android.content.res.Resources.Theme)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Drawable GetDrawable(int arg0, Resources.Theme arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.Theme.html">Theme</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Resources.Theme.html">Resources.Theme</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetDrawableForDensity_" data-uid="Android.Content.Res.Resources.GetDrawableForDensity*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetDrawableForDensity_System_Int32_System_Int32_" data-uid="Android.Content.Res.Resources.GetDrawableForDensity(System.Int32,System.Int32)">
+  GetDrawableForDensity(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getDrawableForDensity(int,int)">https://developer.android.com/reference/android/content/res/Resources.html#getDrawableForDensity(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Drawable GetDrawableForDensity(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetDrawableForDensity_" data-uid="Android.Content.Res.Resources.GetDrawableForDensity*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetDrawableForDensity_System_Int32_System_Int32_Android_Content_Res_Resources_Theme_" data-uid="Android.Content.Res.Resources.GetDrawableForDensity(System.Int32,System.Int32,Android.Content.Res.Resources.Theme)">
+  GetDrawableForDensity(int, int, Theme)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getDrawableForDensity(int,int,android.content.res.Resources.Theme)">https://developer.android.com/reference/android/content/res/Resources.html#getDrawableForDensity(int,int,android.content.res.Resources.Theme)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Drawable GetDrawableForDensity(int arg0, int arg1, Resources.Theme arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.Theme.html">Theme</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Resources.Theme.html">Resources.Theme</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_GetFloat_" data-uid="Android.Content.Res.Resources.GetFloat*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetFloat_System_Int32_" data-uid="Android.Content.Res.Resources.GetFloat(System.Int32)">
+  GetFloat(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getFloat(int)">https://developer.android.com/reference/android/content/res/Resources.html#getFloat(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFloat(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_GetFont_" data-uid="Android.Content.Res.Resources.GetFont*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetFont_System_Int32_" data-uid="Android.Content.Res.Resources.GetFont(System.Int32)">
+  GetFont(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getFont(int)">https://developer.android.com/reference/android/content/res/Resources.html#getFont(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Typeface GetFont(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Graphics.Typeface.html">Typeface</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Typeface.html">Typeface</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetFraction_" data-uid="Android.Content.Res.Resources.GetFraction*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetFraction_System_Int32_System_Int32_System_Int32_" data-uid="Android.Content.Res.Resources.GetFraction(System.Int32,System.Int32,System.Int32)">
+  GetFraction(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getFraction(int,int,int)">https://developer.android.com/reference/android/content/res/Resources.html#getFraction(int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFraction(int arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_GetIdentifier_" data-uid="Android.Content.Res.Resources.GetIdentifier*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetIdentifier_Java_Lang_String_Java_Lang_String_Java_Lang_String_" data-uid="Android.Content.Res.Resources.GetIdentifier(Java.Lang.String,Java.Lang.String,Java.Lang.String)">
+  GetIdentifier(String, String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getIdentifier(java.lang.String,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/content/res/Resources.html#getIdentifier(java.lang.String,java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetIdentifier(String arg0, String arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_GetIntArray_" data-uid="Android.Content.Res.Resources.GetIntArray*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetIntArray_System_Int32_" data-uid="Android.Content.Res.Resources.GetIntArray(System.Int32)">
+  GetIntArray(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getIntArray(int)">https://developer.android.com/reference/android/content/res/Resources.html#getIntArray(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] GetIntArray(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetInteger_" data-uid="Android.Content.Res.Resources.GetInteger*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetInteger_System_Int32_" data-uid="Android.Content.Res.Resources.GetInteger(System.Int32)">
+  GetInteger(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getInteger(int)">https://developer.android.com/reference/android/content/res/Resources.html#getInteger(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInteger(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetLayout_" data-uid="Android.Content.Res.Resources.GetLayout*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetLayout_System_Int32_" data-uid="Android.Content.Res.Resources.GetLayout(System.Int32)">
+  GetLayout(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getLayout(int)">https://developer.android.com/reference/android/content/res/Resources.html#getLayout(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlResourceParser GetLayout(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.XmlResourceParser.html">XmlResourceParser</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.XmlResourceParser.html">XmlResourceParser</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetMovie_" data-uid="Android.Content.Res.Resources.GetMovie*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetMovie_System_Int32_" data-uid="Android.Content.Res.Resources.GetMovie(System.Int32)">
+  GetMovie(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getMovie(int)">https://developer.android.com/reference/android/content/res/Resources.html#getMovie(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Movie GetMovie(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Graphics.Movie.html">Movie</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Movie.html">Movie</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetQuantityString_" data-uid="Android.Content.Res.Resources.GetQuantityString*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetQuantityString_System_Int32_System_Int32_" data-uid="Android.Content.Res.Resources.GetQuantityString(System.Int32,System.Int32)">
+  GetQuantityString(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getQuantityString(int,int)">https://developer.android.com/reference/android/content/res/Resources.html#getQuantityString(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetQuantityString(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetQuantityString_" data-uid="Android.Content.Res.Resources.GetQuantityString*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetQuantityString_System_Int32_System_Int32_System_Object___" data-uid="Android.Content.Res.Resources.GetQuantityString(System.Int32,System.Int32,System.Object[])">
+  GetQuantityString(int, int, params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getQuantityString(int,int,java.lang.Object[])">https://developer.android.com/reference/android/content/res/Resources.html#getQuantityString(int,int,java.lang.Object[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetQuantityString(int arg0, int arg1, params object[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetQuantityText_" data-uid="Android.Content.Res.Resources.GetQuantityText*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetQuantityText_System_Int32_System_Int32_" data-uid="Android.Content.Res.Resources.GetQuantityText(System.Int32,System.Int32)">
+  GetQuantityText(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L417"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getQuantityText(int,int)">https://developer.android.com/reference/android/content/res/Resources.html#getQuantityText(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence GetQuantityText(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetResourceEntryName_" data-uid="Android.Content.Res.Resources.GetResourceEntryName*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetResourceEntryName_System_Int32_" data-uid="Android.Content.Res.Resources.GetResourceEntryName(System.Int32)">
+  GetResourceEntryName(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getResourceEntryName(int)">https://developer.android.com/reference/android/content/res/Resources.html#getResourceEntryName(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetResourceEntryName(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetResourceName_" data-uid="Android.Content.Res.Resources.GetResourceName*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetResourceName_System_Int32_" data-uid="Android.Content.Res.Resources.GetResourceName(System.Int32)">
+  GetResourceName(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getResourceName(int)">https://developer.android.com/reference/android/content/res/Resources.html#getResourceName(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetResourceName(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetResourcePackageName_" data-uid="Android.Content.Res.Resources.GetResourcePackageName*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetResourcePackageName_System_Int32_" data-uid="Android.Content.Res.Resources.GetResourcePackageName(System.Int32)">
+  GetResourcePackageName(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L500"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getResourcePackageName(int)">https://developer.android.com/reference/android/content/res/Resources.html#getResourcePackageName(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetResourcePackageName(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetResourceTypeName_" data-uid="Android.Content.Res.Resources.GetResourceTypeName*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetResourceTypeName_System_Int32_" data-uid="Android.Content.Res.Resources.GetResourceTypeName(System.Int32)">
+  GetResourceTypeName(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getResourceTypeName(int)">https://developer.android.com/reference/android/content/res/Resources.html#getResourceTypeName(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetResourceTypeName(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetString_" data-uid="Android.Content.Res.Resources.GetString*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetString_System_Int32_" data-uid="Android.Content.Res.Resources.GetString(System.Int32)">
+  GetString(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L531"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getString(int)">https://developer.android.com/reference/android/content/res/Resources.html#getString(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetString(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetString_" data-uid="Android.Content.Res.Resources.GetString*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetString_System_Int32_System_Object___" data-uid="Android.Content.Res.Resources.GetString(System.Int32,System.Object[])">
+  GetString(int, params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L521"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getString(int,java.lang.Object[])">https://developer.android.com/reference/android/content/res/Resources.html#getString(int,java.lang.Object[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetString(int arg0, params object[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetStringArray_" data-uid="Android.Content.Res.Resources.GetStringArray*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetStringArray_System_Int32_" data-uid="Android.Content.Res.Resources.GetStringArray(System.Int32)">
+  GetStringArray(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getStringArray(int)">https://developer.android.com/reference/android/content/res/Resources.html#getStringArray(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String[] GetStringArray(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetSystem_" data-uid="Android.Content.Res.Resources.GetSystem*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetSystem" data-uid="Android.Content.Res.Resources.GetSystem">
+  GetSystem()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getSystem()">https://developer.android.com/reference/android/content/res/Resources.html#getSystem()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Resources GetSystem()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Resources.html">Resources</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_GetText_" data-uid="Android.Content.Res.Resources.GetText*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetText_System_Int32_" data-uid="Android.Content.Res.Resources.GetText(System.Int32)">
+  GetText(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getText(int)">https://developer.android.com/reference/android/content/res/Resources.html#getText(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence GetText(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetText_" data-uid="Android.Content.Res.Resources.GetText*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetText_System_Int32_Java_Lang_CharSequence_" data-uid="Android.Content.Res.Resources.GetText(System.Int32,Java.Lang.CharSequence)">
+  GetText(int, CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getText(int,java.lang.CharSequence)">https://developer.android.com/reference/android/content/res/Resources.html#getText(int,java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence GetText(int arg0, CharSequence arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_GetTextArray_" data-uid="Android.Content.Res.Resources.GetTextArray*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetTextArray_System_Int32_" data-uid="Android.Content.Res.Resources.GetTextArray(System.Int32)">
+  GetTextArray(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getTextArray(int)">https://developer.android.com/reference/android/content/res/Resources.html#getTextArray(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence[] GetTextArray(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetValue_" data-uid="Android.Content.Res.Resources.GetValue*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetValue_Java_Lang_String_Android_Util_TypedValue_System_Boolean_" data-uid="Android.Content.Res.Resources.GetValue(Java.Lang.String,Android.Util.TypedValue,System.Boolean)">
+  GetValue(String, TypedValue, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getValue(java.lang.String,android.util.TypedValue,boolean)">https://developer.android.com/reference/android/content/res/Resources.html#getValue(java.lang.String,android.util.TypedValue,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetValue(String arg0, TypedValue arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.TypedValue.html">TypedValue</a></dt>
+    <dd><p><a class="xref" href="Android.Util.TypedValue.html">TypedValue</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetValue_" data-uid="Android.Content.Res.Resources.GetValue*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetValue_System_Int32_Android_Util_TypedValue_System_Boolean_" data-uid="Android.Content.Res.Resources.GetValue(System.Int32,Android.Util.TypedValue,System.Boolean)">
+  GetValue(int, TypedValue, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getValue(int,android.util.TypedValue,boolean)">https://developer.android.com/reference/android/content/res/Resources.html#getValue(int,android.util.TypedValue,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetValue(int arg0, TypedValue arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.TypedValue.html">TypedValue</a></dt>
+    <dd><p><a class="xref" href="Android.Util.TypedValue.html">TypedValue</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetValueForDensity_" data-uid="Android.Content.Res.Resources.GetValueForDensity*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetValueForDensity_System_Int32_System_Int32_Android_Util_TypedValue_System_Boolean_" data-uid="Android.Content.Res.Resources.GetValueForDensity(System.Int32,System.Int32,Android.Util.TypedValue,System.Boolean)">
+  GetValueForDensity(int, int, TypedValue, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getValueForDensity(int,int,android.util.TypedValue,boolean)">https://developer.android.com/reference/android/content/res/Resources.html#getValueForDensity(int,int,android.util.TypedValue,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetValueForDensity(int arg0, int arg1, TypedValue arg2, bool arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Util.TypedValue.html">TypedValue</a></dt>
+    <dd><p><a class="xref" href="Android.Util.TypedValue.html">TypedValue</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_GetXml_" data-uid="Android.Content.Res.Resources.GetXml*"></a>
+
+  <h3 id="Android_Content_Res_Resources_GetXml_System_Int32_" data-uid="Android.Content.Res.Resources.GetXml(System.Int32)">
+  GetXml(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#getXml(int)">https://developer.android.com/reference/android/content/res/Resources.html#getXml(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlResourceParser GetXml(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.XmlResourceParser.html">XmlResourceParser</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.XmlResourceParser.html">XmlResourceParser</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_NewTheme_" data-uid="Android.Content.Res.Resources.NewTheme*"></a>
+
+  <h3 id="Android_Content_Res_Resources_NewTheme" data-uid="Android.Content.Res.Resources.NewTheme">
+  NewTheme()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#newTheme()">https://developer.android.com/reference/android/content/res/Resources.html#newTheme()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Resources.Theme NewTheme()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.Theme.html">Theme</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Resources.Theme.html">Resources.Theme</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_ObtainAttributes_" data-uid="Android.Content.Res.Resources.ObtainAttributes*"></a>
+
+  <h3 id="Android_Content_Res_Resources_ObtainAttributes_Android_Util_AttributeSet_System_Int32___" data-uid="Android.Content.Res.Resources.ObtainAttributes(Android.Util.AttributeSet,System.Int32[])">
+  ObtainAttributes(AttributeSet, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#obtainAttributes(android.util.AttributeSet,int[])">https://developer.android.com/reference/android/content/res/Resources.html#obtainAttributes(android.util.AttributeSet,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypedArray ObtainAttributes(AttributeSet arg0, int[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.TypedArray.html">TypedArray</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.TypedArray.html">TypedArray</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_ObtainTypedArray_" data-uid="Android.Content.Res.Resources.ObtainTypedArray*"></a>
+
+  <h3 id="Android_Content_Res_Resources_ObtainTypedArray_System_Int32_" data-uid="Android.Content.Res.Resources.ObtainTypedArray(System.Int32)">
+  ObtainTypedArray(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#obtainTypedArray(int)">https://developer.android.com/reference/android/content/res/Resources.html#obtainTypedArray(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypedArray ObtainTypedArray(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.TypedArray.html">TypedArray</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.TypedArray.html">TypedArray</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_OpenRawResource_" data-uid="Android.Content.Res.Resources.OpenRawResource*"></a>
+
+  <h3 id="Android_Content_Res_Resources_OpenRawResource_System_Int32_" data-uid="Android.Content.Res.Resources.OpenRawResource(System.Int32)">
+  OpenRawResource(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#openRawResource(int)">https://developer.android.com/reference/android/content/res/Resources.html#openRawResource(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputStream OpenRawResource(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.InputStream.html">InputStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.InputStream.html">InputStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_OpenRawResource_" data-uid="Android.Content.Res.Resources.OpenRawResource*"></a>
+
+  <h3 id="Android_Content_Res_Resources_OpenRawResource_System_Int32_Android_Util_TypedValue_" data-uid="Android.Content.Res.Resources.OpenRawResource(System.Int32,Android.Util.TypedValue)">
+  OpenRawResource(int, TypedValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#openRawResource(int,android.util.TypedValue)">https://developer.android.com/reference/android/content/res/Resources.html#openRawResource(int,android.util.TypedValue)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputStream OpenRawResource(int arg0, TypedValue arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.TypedValue.html">TypedValue</a></dt>
+    <dd><p><a class="xref" href="Android.Util.TypedValue.html">TypedValue</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.InputStream.html">InputStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.InputStream.html">InputStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_OpenRawResourceFd_" data-uid="Android.Content.Res.Resources.OpenRawResourceFd*"></a>
+
+  <h3 id="Android_Content_Res_Resources_OpenRawResourceFd_System_Int32_" data-uid="Android.Content.Res.Resources.OpenRawResourceFd(System.Int32)">
+  OpenRawResourceFd(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#openRawResourceFd(int)">https://developer.android.com/reference/android/content/res/Resources.html#openRawResourceFd(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetFileDescriptor OpenRawResourceFd(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.Resources.html">Resources</a>.<a class="xref" href="Android.Content.Res.Resources.NotFoundException.html">NotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_ParseBundleExtra_" data-uid="Android.Content.Res.Resources.ParseBundleExtra*"></a>
+
+  <h3 id="Android_Content_Res_Resources_ParseBundleExtra_Java_Lang_String_Android_Util_AttributeSet_Android_Os_Bundle_" data-uid="Android.Content.Res.Resources.ParseBundleExtra(Java.Lang.String,Android.Util.AttributeSet,Android.Os.Bundle)">
+  ParseBundleExtra(String, AttributeSet, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L594"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#parseBundleExtra(java.lang.String,android.util.AttributeSet,android.os.Bundle)">https://developer.android.com/reference/android/content/res/Resources.html#parseBundleExtra(java.lang.String,android.util.AttributeSet,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ParseBundleExtra(String arg0, AttributeSet arg1, Bundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.Xmlpull.V1.XmlPullParserException.html">XmlPullParserException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_ParseBundleExtras_" data-uid="Android.Content.Res.Resources.ParseBundleExtras*"></a>
+
+  <h3 id="Android_Content_Res_Resources_ParseBundleExtras_Android_Content_Res_XmlResourceParser_Android_Os_Bundle_" data-uid="Android.Content.Res.Resources.ParseBundleExtras(Android.Content.Res.XmlResourceParser,Android.Os.Bundle)">
+  ParseBundleExtras(XmlResourceParser, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L605"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#parseBundleExtras(android.content.res.XmlResourceParser,android.os.Bundle)">https://developer.android.com/reference/android/content/res/Resources.html#parseBundleExtras(android.content.res.XmlResourceParser,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ParseBundleExtras(XmlResourceParser arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.XmlResourceParser.html">XmlResourceParser</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.XmlResourceParser.html">XmlResourceParser</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Org.Xmlpull.V1.XmlPullParserException.html">XmlPullParserException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Res_Resources_RemoveLoaders_" data-uid="Android.Content.Res.Resources.RemoveLoaders*"></a>
+
+  <h3 id="Android_Content_Res_Resources_RemoveLoaders_Android_Content_Res_Loader_ResourcesLoader___" data-uid="Android.Content.Res.Resources.RemoveLoaders(Android.Content.Res.Loader.ResourcesLoader[])">
+  RemoveLoaders(params ResourcesLoader[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L613"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#removeLoaders(android.content.res.loader.ResourcesLoader[])">https://developer.android.com/reference/android/content/res/Resources.html#removeLoaders(android.content.res.loader.ResourcesLoader[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveLoaders(params ResourcesLoader[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.Loader.ResourcesLoader.html">ResourcesLoader</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Loader.ResourcesLoader.html">ResourcesLoader</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Res_Resources_UpdateConfiguration_" data-uid="Android.Content.Res.Resources.UpdateConfiguration*"></a>
+
+  <h3 id="Android_Content_Res_Resources_UpdateConfiguration_Android_Content_Res_Configuration_Android_Util_DisplayMetrics_" data-uid="Android.Content.Res.Resources.UpdateConfiguration(Android.Content.Res.Configuration,Android.Util.DisplayMetrics)">
+  UpdateConfiguration(Configuration, DisplayMetrics)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L622"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/res/Resources.html#updateConfiguration(android.content.res.Configuration,android.util.DisplayMetrics)">https://developer.android.com/reference/android/content/res/Resources.html#updateConfiguration(android.content.res.Configuration,android.util.DisplayMetrics)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void UpdateConfiguration(Configuration arg0, DisplayMetrics arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.DisplayMetrics.html">DisplayMetrics</a></dt>
+    <dd><p><a class="xref" href="Android.Util.DisplayMetrics.html">DisplayMetrics</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Res/Resources.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

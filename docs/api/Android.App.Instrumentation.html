@@ -1,0 +1,3266 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class Instrumentation | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Instrumentation | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/app/Instrumentation.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_App_Instrumentation.md&amp;value=---%0Auid%3A%20Android.App.Instrumentation%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.App.Instrumentation">
+
+
+
+  <h1 id="Android_App_Instrumentation" data-uid="Android.App.Instrumentation" class="text-break">
+Class Instrumentation  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.App.html">App</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html">https://developer.android.com/reference/android/app/Instrumentation.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Instrumentation : JVMBridgeBase&lt;Instrumentation&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.App.Instrumentation.html">Instrumentation</a>&gt;</div>
+      <div><span class="xref">Instrumentation</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Instrumentation&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Instrumentation&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Instrumentation&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Instrumentation&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Instrumentation&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Instrumentation&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Instrumentation&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Instrumentation&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Instrumentation&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Instrumentation&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Instrumentation&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Instrumentation&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Instrumentation&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_App_Instrumentation__ctor_" data-uid="Android.App.Instrumentation.#ctor*"></a>
+
+  <h3 id="Android_App_Instrumentation__ctor" data-uid="Android.App.Instrumentation.#ctor">
+  Instrumentation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3461"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Instrumentation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation__ctor_" data-uid="Android.App.Instrumentation.#ctor*"></a>
+
+  <h3 id="Android_App_Instrumentation__ctor_System_Object___" data-uid="Android.App.Instrumentation.#ctor(System.Object[])">
+  Instrumentation(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3465"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Instrumentation(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_App_Instrumentation_BridgeClassName_" data-uid="Android.App.Instrumentation.BridgeClassName*"></a>
+
+  <h3 id="Android_App_Instrumentation_BridgeClassName" data-uid="Android.App.Instrumentation.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3472"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_IsBridgeAbstract_" data-uid="Android.App.Instrumentation.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_App_Instrumentation_IsBridgeAbstract" data-uid="Android.App.Instrumentation.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3476"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_IsBridgeCloseable_" data-uid="Android.App.Instrumentation.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_App_Instrumentation_IsBridgeCloseable" data-uid="Android.App.Instrumentation.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3480"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_IsBridgeInterface_" data-uid="Android.App.Instrumentation.IsBridgeInterface*"></a>
+
+  <h3 id="Android_App_Instrumentation_IsBridgeInterface" data-uid="Android.App.Instrumentation.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3484"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_IsBridgeStatic_" data-uid="Android.App.Instrumentation.IsBridgeStatic*"></a>
+
+  <h3 id="Android_App_Instrumentation_IsBridgeStatic" data-uid="Android.App.Instrumentation.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3488"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_REPORT_KEY_IDENTIFIER_" data-uid="Android.App.Instrumentation.REPORT_KEY_IDENTIFIER*"></a>
+
+  <h3 id="Android_App_Instrumentation_REPORT_KEY_IDENTIFIER" data-uid="Android.App.Instrumentation.REPORT_KEY_IDENTIFIER">
+  REPORT_KEY_IDENTIFIER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#REPORT_KEY_IDENTIFIER">https://developer.android.com/reference/android/app/Instrumentation.html#REPORT_KEY_IDENTIFIER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String REPORT_KEY_IDENTIFIER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_REPORT_KEY_STREAMRESULT_" data-uid="Android.App.Instrumentation.REPORT_KEY_STREAMRESULT*"></a>
+
+  <h3 id="Android_App_Instrumentation_REPORT_KEY_STREAMRESULT" data-uid="Android.App.Instrumentation.REPORT_KEY_STREAMRESULT">
+  REPORT_KEY_STREAMRESULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#REPORT_KEY_STREAMRESULT">https://developer.android.com/reference/android/app/Instrumentation.html#REPORT_KEY_STREAMRESULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String REPORT_KEY_STREAMRESULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_App_Instrumentation_AcquireLooperManager_" data-uid="Android.App.Instrumentation.AcquireLooperManager*"></a>
+
+  <h3 id="Android_App_Instrumentation_AcquireLooperManager_Android_Os_Looper_" data-uid="Android.App.Instrumentation.AcquireLooperManager(Android.Os.Looper)">
+  AcquireLooperManager(Looper)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#acquireLooperManager(android.os.Looper)">https://developer.android.com/reference/android/app/Instrumentation.html#acquireLooperManager(android.os.Looper)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TestLooperManager AcquireLooperManager(Looper arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Looper.html">Looper</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Looper.html">Looper</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.TestLooperManager.html">TestLooperManager</a></dt>
+    <dd><p><a class="xref" href="Android.Os.TestLooperManager.html">TestLooperManager</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_AddMonitor_" data-uid="Android.App.Instrumentation.AddMonitor*"></a>
+
+  <h3 id="Android_App_Instrumentation_AddMonitor_Android_App_Instrumentation_ActivityMonitor_" data-uid="Android.App.Instrumentation.AddMonitor(Android.App.Instrumentation.ActivityMonitor)">
+  AddMonitor(ActivityMonitor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#addMonitor(android.app.Instrumentation.ActivityMonitor)">https://developer.android.com/reference/android/app/Instrumentation.html#addMonitor(android.app.Instrumentation.ActivityMonitor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMonitor(Instrumentation.ActivityMonitor arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Instrumentation.html">Instrumentation</a>.<a class="xref" href="Android.App.Instrumentation.ActivityMonitor.html">ActivityMonitor</a></dt>
+    <dd><p><a class="xref" href="Android.App.Instrumentation.ActivityMonitor.html">Instrumentation.ActivityMonitor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_AddMonitor_" data-uid="Android.App.Instrumentation.AddMonitor*"></a>
+
+  <h3 id="Android_App_Instrumentation_AddMonitor_Android_Content_IntentFilter_Android_App_Instrumentation_ActivityResult_System_Boolean_" data-uid="Android.App.Instrumentation.AddMonitor(Android.Content.IntentFilter,Android.App.Instrumentation.ActivityResult,System.Boolean)">
+  AddMonitor(IntentFilter, ActivityResult, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#addMonitor(android.content.IntentFilter,android.app.Instrumentation.ActivityResult,boolean)">https://developer.android.com/reference/android/app/Instrumentation.html#addMonitor(android.content.IntentFilter,android.app.Instrumentation.ActivityResult,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Instrumentation.ActivityMonitor AddMonitor(IntentFilter arg0, Instrumentation.ActivityResult arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.IntentFilter.html">IntentFilter</a></dt>
+    <dd><p><a class="xref" href="Android.Content.IntentFilter.html">IntentFilter</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.Instrumentation.html">Instrumentation</a>.<a class="xref" href="Android.App.Instrumentation.ActivityResult.html">ActivityResult</a></dt>
+    <dd><p><a class="xref" href="Android.App.Instrumentation.ActivityResult.html">Instrumentation.ActivityResult</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Instrumentation.html">Instrumentation</a>.<a class="xref" href="Android.App.Instrumentation.ActivityMonitor.html">ActivityMonitor</a></dt>
+    <dd><p><a class="xref" href="Android.App.Instrumentation.ActivityMonitor.html">Instrumentation.ActivityMonitor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_AddMonitor_" data-uid="Android.App.Instrumentation.AddMonitor*"></a>
+
+  <h3 id="Android_App_Instrumentation_AddMonitor_Java_Lang_String_Android_App_Instrumentation_ActivityResult_System_Boolean_" data-uid="Android.App.Instrumentation.AddMonitor(Java.Lang.String,Android.App.Instrumentation.ActivityResult,System.Boolean)">
+  AddMonitor(String, ActivityResult, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#addMonitor(java.lang.String,android.app.Instrumentation.ActivityResult,boolean)">https://developer.android.com/reference/android/app/Instrumentation.html#addMonitor(java.lang.String,android.app.Instrumentation.ActivityResult,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Instrumentation.ActivityMonitor AddMonitor(String arg0, Instrumentation.ActivityResult arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.Instrumentation.html">Instrumentation</a>.<a class="xref" href="Android.App.Instrumentation.ActivityResult.html">ActivityResult</a></dt>
+    <dd><p><a class="xref" href="Android.App.Instrumentation.ActivityResult.html">Instrumentation.ActivityResult</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Instrumentation.html">Instrumentation</a>.<a class="xref" href="Android.App.Instrumentation.ActivityMonitor.html">ActivityMonitor</a></dt>
+    <dd><p><a class="xref" href="Android.App.Instrumentation.ActivityMonitor.html">Instrumentation.ActivityMonitor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_AddResults_" data-uid="Android.App.Instrumentation.AddResults*"></a>
+
+  <h3 id="Android_App_Instrumentation_AddResults_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.AddResults(Android.Os.Bundle)">
+  AddResults(Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#addResults(android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#addResults(android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddResults(Bundle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnCreate_" data-uid="Android.App.Instrumentation.CallActivityOnCreate*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnCreate_Android_App_Activity_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.CallActivityOnCreate(Android.App.Activity,Android.Os.Bundle)">
+  CallActivityOnCreate(Activity, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnCreate(android.app.Activity,android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnCreate(android.app.Activity,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnCreate(Activity arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnCreate_" data-uid="Android.App.Instrumentation.CallActivityOnCreate*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnCreate_Android_App_Activity_Android_Os_Bundle_Android_Os_PersistableBundle_" data-uid="Android.App.Instrumentation.CallActivityOnCreate(Android.App.Activity,Android.Os.Bundle,Android.Os.PersistableBundle)">
+  CallActivityOnCreate(Activity, Bundle, PersistableBundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnCreate(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnCreate(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnCreate(Activity arg0, Bundle arg1, PersistableBundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnDestroy_" data-uid="Android.App.Instrumentation.CallActivityOnDestroy*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnDestroy_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnDestroy(Android.App.Activity)">
+  CallActivityOnDestroy(Activity)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnDestroy(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnDestroy(android.app.Activity)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnDestroy(Activity arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnNewIntent_" data-uid="Android.App.Instrumentation.CallActivityOnNewIntent*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnNewIntent_Android_App_Activity_Android_Content_Intent_" data-uid="Android.App.Instrumentation.CallActivityOnNewIntent(Android.App.Activity,Android.Content.Intent)">
+  CallActivityOnNewIntent(Activity, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnNewIntent(android.app.Activity,android.content.Intent)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnNewIntent(android.app.Activity,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnNewIntent(Activity arg0, Intent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnPause_" data-uid="Android.App.Instrumentation.CallActivityOnPause*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnPause_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnPause(Android.App.Activity)">
+  CallActivityOnPause(Activity)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPause(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPause(android.app.Activity)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnPause(Activity arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnPictureInPictureRequested_" data-uid="Android.App.Instrumentation.CallActivityOnPictureInPictureRequested*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnPictureInPictureRequested_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnPictureInPictureRequested(Android.App.Activity)">
+  CallActivityOnPictureInPictureRequested(Activity)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L369"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPictureInPictureRequested(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPictureInPictureRequested(android.app.Activity)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnPictureInPictureRequested(Activity arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnPostCreate_" data-uid="Android.App.Instrumentation.CallActivityOnPostCreate*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnPostCreate_Android_App_Activity_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.CallActivityOnPostCreate(Android.App.Activity,Android.Os.Bundle)">
+  CallActivityOnPostCreate(Activity, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPostCreate(android.app.Activity,android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPostCreate(android.app.Activity,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnPostCreate(Activity arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnPostCreate_" data-uid="Android.App.Instrumentation.CallActivityOnPostCreate*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnPostCreate_Android_App_Activity_Android_Os_Bundle_Android_Os_PersistableBundle_" data-uid="Android.App.Instrumentation.CallActivityOnPostCreate(Android.App.Activity,Android.Os.Bundle,Android.Os.PersistableBundle)">
+  CallActivityOnPostCreate(Activity, Bundle, PersistableBundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPostCreate(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPostCreate(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnPostCreate(Activity arg0, Bundle arg1, PersistableBundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnRestart_" data-uid="Android.App.Instrumentation.CallActivityOnRestart*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnRestart_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnRestart(Android.App.Activity)">
+  CallActivityOnRestart(Activity)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnRestart(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnRestart(android.app.Activity)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnRestart(Activity arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnRestoreInstanceState_" data-uid="Android.App.Instrumentation.CallActivityOnRestoreInstanceState*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnRestoreInstanceState_Android_App_Activity_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.CallActivityOnRestoreInstanceState(Android.App.Activity,Android.Os.Bundle)">
+  CallActivityOnRestoreInstanceState(Activity, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnRestoreInstanceState(android.app.Activity,android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnRestoreInstanceState(android.app.Activity,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnRestoreInstanceState(Activity arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnRestoreInstanceState_" data-uid="Android.App.Instrumentation.CallActivityOnRestoreInstanceState*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnRestoreInstanceState_Android_App_Activity_Android_Os_Bundle_Android_Os_PersistableBundle_" data-uid="Android.App.Instrumentation.CallActivityOnRestoreInstanceState(Android.App.Activity,Android.Os.Bundle,Android.Os.PersistableBundle)">
+  CallActivityOnRestoreInstanceState(Activity, Bundle, PersistableBundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnRestoreInstanceState(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnRestoreInstanceState(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnRestoreInstanceState(Activity arg0, Bundle arg1, PersistableBundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnResume_" data-uid="Android.App.Instrumentation.CallActivityOnResume*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnResume_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnResume(Android.App.Activity)">
+  CallActivityOnResume(Activity)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnResume(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnResume(android.app.Activity)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnResume(Activity arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnSaveInstanceState_" data-uid="Android.App.Instrumentation.CallActivityOnSaveInstanceState*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnSaveInstanceState_Android_App_Activity_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.CallActivityOnSaveInstanceState(Android.App.Activity,Android.Os.Bundle)">
+  CallActivityOnSaveInstanceState(Activity, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnSaveInstanceState(android.app.Activity,android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnSaveInstanceState(android.app.Activity,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnSaveInstanceState(Activity arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnSaveInstanceState_" data-uid="Android.App.Instrumentation.CallActivityOnSaveInstanceState*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnSaveInstanceState_Android_App_Activity_Android_Os_Bundle_Android_Os_PersistableBundle_" data-uid="Android.App.Instrumentation.CallActivityOnSaveInstanceState(Android.App.Activity,Android.Os.Bundle,Android.Os.PersistableBundle)">
+  CallActivityOnSaveInstanceState(Activity, Bundle, PersistableBundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnSaveInstanceState(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnSaveInstanceState(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnSaveInstanceState(Activity arg0, Bundle arg1, PersistableBundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnStart_" data-uid="Android.App.Instrumentation.CallActivityOnStart*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnStart_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnStart(Android.App.Activity)">
+  CallActivityOnStart(Activity)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnStart(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnStart(android.app.Activity)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnStart(Activity arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnStop_" data-uid="Android.App.Instrumentation.CallActivityOnStop*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnStop_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnStop(Android.App.Activity)">
+  CallActivityOnStop(Activity)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnStop(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnStop(android.app.Activity)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnStop(Activity arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallActivityOnUserLeaving_" data-uid="Android.App.Instrumentation.CallActivityOnUserLeaving*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnUserLeaving_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnUserLeaving(Android.App.Activity)">
+  CallActivityOnUserLeaving(Activity)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnUserLeaving(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnUserLeaving(android.app.Activity)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnUserLeaving(Activity arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CallApplicationOnCreate_" data-uid="Android.App.Instrumentation.CallApplicationOnCreate*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallApplicationOnCreate_Android_App_Application_" data-uid="Android.App.Instrumentation.CallApplicationOnCreate(Android.App.Application)">
+  CallApplicationOnCreate(Application)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callApplicationOnCreate(android.app.Application)">https://developer.android.com/reference/android/app/Instrumentation.html#callApplicationOnCreate(android.app.Application)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallApplicationOnCreate(Application arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Application.html">Application</a></dt>
+    <dd><p><a class="xref" href="Android.App.Application.html">Application</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_CheckMonitorHit_" data-uid="Android.App.Instrumentation.CheckMonitorHit*"></a>
+
+  <h3 id="Android_App_Instrumentation_CheckMonitorHit_Android_App_Instrumentation_ActivityMonitor_System_Int32_" data-uid="Android.App.Instrumentation.CheckMonitorHit(Android.App.Instrumentation.ActivityMonitor,System.Int32)">
+  CheckMonitorHit(ActivityMonitor, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#checkMonitorHit(android.app.Instrumentation.ActivityMonitor,int)">https://developer.android.com/reference/android/app/Instrumentation.html#checkMonitorHit(android.app.Instrumentation.ActivityMonitor,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckMonitorHit(Instrumentation.ActivityMonitor arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Instrumentation.html">Instrumentation</a>.<a class="xref" href="Android.App.Instrumentation.ActivityMonitor.html">ActivityMonitor</a></dt>
+    <dd><p><a class="xref" href="Android.App.Instrumentation.ActivityMonitor.html">Instrumentation.ActivityMonitor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_EndPerformanceSnapshot_" data-uid="Android.App.Instrumentation.EndPerformanceSnapshot*"></a>
+
+  <h3 id="Android_App_Instrumentation_EndPerformanceSnapshot" data-uid="Android.App.Instrumentation.EndPerformanceSnapshot">
+  EndPerformanceSnapshot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#endPerformanceSnapshot()">https://developer.android.com/reference/android/app/Instrumentation.html#endPerformanceSnapshot()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndPerformanceSnapshot()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_Finish_" data-uid="Android.App.Instrumentation.Finish*"></a>
+
+  <h3 id="Android_App_Instrumentation_Finish_System_Int32_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.Finish(System.Int32,Android.Os.Bundle)">
+  Finish(int, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#finish(int,android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#finish(int,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Finish(int arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_GetAllocCounts_" data-uid="Android.App.Instrumentation.GetAllocCounts*"></a>
+
+  <h3 id="Android_App_Instrumentation_GetAllocCounts" data-uid="Android.App.Instrumentation.GetAllocCounts">
+  GetAllocCounts()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#getAllocCounts()">https://developer.android.com/reference/android/app/Instrumentation.html#getAllocCounts()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle GetAllocCounts()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_GetBinderCounts_" data-uid="Android.App.Instrumentation.GetBinderCounts*"></a>
+
+  <h3 id="Android_App_Instrumentation_GetBinderCounts" data-uid="Android.App.Instrumentation.GetBinderCounts">
+  GetBinderCounts()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#getBinderCounts()">https://developer.android.com/reference/android/app/Instrumentation.html#getBinderCounts()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle GetBinderCounts()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_GetComponentName_" data-uid="Android.App.Instrumentation.GetComponentName*"></a>
+
+  <h3 id="Android_App_Instrumentation_GetComponentName" data-uid="Android.App.Instrumentation.GetComponentName">
+  GetComponentName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#getComponentName()">https://developer.android.com/reference/android/app/Instrumentation.html#getComponentName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ComponentName GetComponentName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_GetContext_" data-uid="Android.App.Instrumentation.GetContext*"></a>
+
+  <h3 id="Android_App_Instrumentation_GetContext" data-uid="Android.App.Instrumentation.GetContext">
+  GetContext()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#getContext()">https://developer.android.com/reference/android/app/Instrumentation.html#getContext()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Context GetContext()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_GetProcessName_" data-uid="Android.App.Instrumentation.GetProcessName*"></a>
+
+  <h3 id="Android_App_Instrumentation_GetProcessName" data-uid="Android.App.Instrumentation.GetProcessName">
+  GetProcessName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#getProcessName()">https://developer.android.com/reference/android/app/Instrumentation.html#getProcessName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetProcessName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_GetTargetContext_" data-uid="Android.App.Instrumentation.GetTargetContext*"></a>
+
+  <h3 id="Android_App_Instrumentation_GetTargetContext" data-uid="Android.App.Instrumentation.GetTargetContext">
+  GetTargetContext()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#getTargetContext()">https://developer.android.com/reference/android/app/Instrumentation.html#getTargetContext()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Context GetTargetContext()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_GetUiAutomation_" data-uid="Android.App.Instrumentation.GetUiAutomation*"></a>
+
+  <h3 id="Android_App_Instrumentation_GetUiAutomation" data-uid="Android.App.Instrumentation.GetUiAutomation">
+  GetUiAutomation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#getUiAutomation()">https://developer.android.com/reference/android/app/Instrumentation.html#getUiAutomation()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UiAutomation GetUiAutomation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.UiAutomation.html">UiAutomation</a></dt>
+    <dd><p><a class="xref" href="Android.App.UiAutomation.html">UiAutomation</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_GetUiAutomation_" data-uid="Android.App.Instrumentation.GetUiAutomation*"></a>
+
+  <h3 id="Android_App_Instrumentation_GetUiAutomation_System_Int32_" data-uid="Android.App.Instrumentation.GetUiAutomation(System.Int32)">
+  GetUiAutomation(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#getUiAutomation(int)">https://developer.android.com/reference/android/app/Instrumentation.html#getUiAutomation(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UiAutomation GetUiAutomation(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.UiAutomation.html">UiAutomation</a></dt>
+    <dd><p><a class="xref" href="Android.App.UiAutomation.html">UiAutomation</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_InvokeContextMenuAction_" data-uid="Android.App.Instrumentation.InvokeContextMenuAction*"></a>
+
+  <h3 id="Android_App_Instrumentation_InvokeContextMenuAction_Android_App_Activity_System_Int32_System_Int32_" data-uid="Android.App.Instrumentation.InvokeContextMenuAction(Android.App.Activity,System.Int32,System.Int32)">
+  InvokeContextMenuAction(Activity, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#invokeContextMenuAction(android.app.Activity,int,int)">https://developer.android.com/reference/android/app/Instrumentation.html#invokeContextMenuAction(android.app.Activity,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InvokeContextMenuAction(Activity arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_InvokeMenuActionSync_" data-uid="Android.App.Instrumentation.InvokeMenuActionSync*"></a>
+
+  <h3 id="Android_App_Instrumentation_InvokeMenuActionSync_Android_App_Activity_System_Int32_System_Int32_" data-uid="Android.App.Instrumentation.InvokeMenuActionSync(Android.App.Activity,System.Int32,System.Int32)">
+  InvokeMenuActionSync(Activity, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#invokeMenuActionSync(android.app.Activity,int,int)">https://developer.android.com/reference/android/app/Instrumentation.html#invokeMenuActionSync(android.app.Activity,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InvokeMenuActionSync(Activity arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_IsProfiling_" data-uid="Android.App.Instrumentation.IsProfiling*"></a>
+
+  <h3 id="Android_App_Instrumentation_IsProfiling" data-uid="Android.App.Instrumentation.IsProfiling">
+  IsProfiling()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#isProfiling()">https://developer.android.com/reference/android/app/Instrumentation.html#isProfiling()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProfiling()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_NewActivity_" data-uid="Android.App.Instrumentation.NewActivity*"></a>
+
+  <h3 id="Android_App_Instrumentation_NewActivity_Java_Lang_Class_Android_Content_Context_Android_Os_IBinder_Android_App_Application_Android_Content_Intent_Android_Content_Pm_ActivityInfo_Java_Lang_CharSequence_Android_App_Activity_Java_Lang_String_System_Object_" data-uid="Android.App.Instrumentation.NewActivity(Java.Lang.Class,Android.Content.Context,Android.Os.IBinder,Android.App.Application,Android.Content.Intent,Android.Content.Pm.ActivityInfo,Java.Lang.CharSequence,Android.App.Activity,Java.Lang.String,System.Object)">
+  NewActivity(Class, Context, IBinder, Application, Intent, ActivityInfo, CharSequence, Activity, String, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#newActivity(java.lang.Class,android.content.Context,android.os.IBinder,android.app.Application,android.content.Intent,android.content.pm.ActivityInfo,java.lang.CharSequence,android.app.Activity,java.lang.String,java.lang.Object)">https://developer.android.com/reference/android/app/Instrumentation.html#newActivity(java.lang.Class,android.content.Context,android.os.IBinder,android.app.Application,android.content.Intent,android.content.pm.ActivityInfo,java.lang.CharSequence,android.app.Activity,java.lang.String,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Activity NewActivity(Class arg0, Context arg1, IBinder arg2, Application arg3, Intent arg4, ActivityInfo arg5, CharSequence arg6, Activity arg7, String arg8, object arg9)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.IBinder.html">IBinder</a></dt>
+    <dd><p><a class="xref" href="Android.Os.IBinder.html">IBinder</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.App.Application.html">Application</a></dt>
+    <dd><p><a class="xref" href="Android.App.Application.html">Application</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Android.Content.Pm.ActivityInfo.html">ActivityInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Pm.ActivityInfo.html">ActivityInfo</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg7</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg8</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg9</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalAccessException.html">IllegalAccessException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.InstantiationException.html">InstantiationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_App_Instrumentation_NewActivity_" data-uid="Android.App.Instrumentation.NewActivity*"></a>
+
+  <h3 id="Android_App_Instrumentation_NewActivity_Java_Lang_ClassLoader_Java_Lang_String_Android_Content_Intent_" data-uid="Android.App.Instrumentation.NewActivity(Java.Lang.ClassLoader,Java.Lang.String,Android.Content.Intent)">
+  NewActivity(ClassLoader, String, Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#newActivity(java.lang.ClassLoader,java.lang.String,android.content.Intent)">https://developer.android.com/reference/android/app/Instrumentation.html#newActivity(java.lang.ClassLoader,java.lang.String,android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Activity NewActivity(ClassLoader arg0, String arg1, Intent arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.ClassNotFoundException.html">ClassNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalAccessException.html">IllegalAccessException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.InstantiationException.html">InstantiationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_App_Instrumentation_NewApplication_" data-uid="Android.App.Instrumentation.NewApplication*"></a>
+
+  <h3 id="Android_App_Instrumentation_NewApplication_Java_Lang_Class_Android_Content_Context_" data-uid="Android.App.Instrumentation.NewApplication(Java.Lang.Class,Android.Content.Context)">
+  NewApplication(Class, Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#newApplication(java.lang.Class,android.content.Context)">https://developer.android.com/reference/android/app/Instrumentation.html#newApplication(java.lang.Class,android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Application NewApplication(Class arg0, Context arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Application.html">Application</a></dt>
+    <dd><p><a class="xref" href="Android.App.Application.html">Application</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.ClassNotFoundException.html">ClassNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalAccessException.html">IllegalAccessException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.InstantiationException.html">InstantiationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_App_Instrumentation_NewApplication_" data-uid="Android.App.Instrumentation.NewApplication*"></a>
+
+  <h3 id="Android_App_Instrumentation_NewApplication_Java_Lang_ClassLoader_Java_Lang_String_Android_Content_Context_" data-uid="Android.App.Instrumentation.NewApplication(Java.Lang.ClassLoader,Java.Lang.String,Android.Content.Context)">
+  NewApplication(ClassLoader, String, Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#newApplication(java.lang.ClassLoader,java.lang.String,android.content.Context)">https://developer.android.com/reference/android/app/Instrumentation.html#newApplication(java.lang.ClassLoader,java.lang.String,android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Application NewApplication(ClassLoader arg0, String arg1, Context arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Application.html">Application</a></dt>
+    <dd><p><a class="xref" href="Android.App.Application.html">Application</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.ClassNotFoundException.html">ClassNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalAccessException.html">IllegalAccessException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.InstantiationException.html">InstantiationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_App_Instrumentation_OnCreate_" data-uid="Android.App.Instrumentation.OnCreate*"></a>
+
+  <h3 id="Android_App_Instrumentation_OnCreate_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.OnCreate(Android.Os.Bundle)">
+  OnCreate(Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#onCreate(android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#onCreate(android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCreate(Bundle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_OnDestroy_" data-uid="Android.App.Instrumentation.OnDestroy*"></a>
+
+  <h3 id="Android_App_Instrumentation_OnDestroy" data-uid="Android.App.Instrumentation.OnDestroy">
+  OnDestroy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#onDestroy()">https://developer.android.com/reference/android/app/Instrumentation.html#onDestroy()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_OnException_" data-uid="Android.App.Instrumentation.OnException*"></a>
+
+  <h3 id="Android_App_Instrumentation_OnException_System_Object_MASES_JCOBridge_C2JBridge_JVMBridgeException_" data-uid="Android.App.Instrumentation.OnException(System.Object,MASES.JCOBridge.C2JBridge.JVMBridgeException)">
+  OnException(object, JVMBridgeException)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#onException(java.lang.Object,java.lang.Throwable)">https://developer.android.com/reference/android/app/Instrumentation.html#onException(java.lang.Object,java.lang.Throwable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnException(object arg0, JVMBridgeException arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">JVMBridgeException</span></dt>
+    <dd><p><a class="xref" href="Java.Lang.Throwable.html">Throwable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_OnStart_" data-uid="Android.App.Instrumentation.OnStart*"></a>
+
+  <h3 id="Android_App_Instrumentation_OnStart" data-uid="Android.App.Instrumentation.OnStart">
+  OnStart()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L512"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#onStart()">https://developer.android.com/reference/android/app/Instrumentation.html#onStart()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_RemoveMonitor_" data-uid="Android.App.Instrumentation.RemoveMonitor*"></a>
+
+  <h3 id="Android_App_Instrumentation_RemoveMonitor_Android_App_Instrumentation_ActivityMonitor_" data-uid="Android.App.Instrumentation.RemoveMonitor(Android.App.Instrumentation.ActivityMonitor)">
+  RemoveMonitor(ActivityMonitor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#removeMonitor(android.app.Instrumentation.ActivityMonitor)">https://developer.android.com/reference/android/app/Instrumentation.html#removeMonitor(android.app.Instrumentation.ActivityMonitor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveMonitor(Instrumentation.ActivityMonitor arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Instrumentation.html">Instrumentation</a>.<a class="xref" href="Android.App.Instrumentation.ActivityMonitor.html">ActivityMonitor</a></dt>
+    <dd><p><a class="xref" href="Android.App.Instrumentation.ActivityMonitor.html">Instrumentation.ActivityMonitor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_ResetInTouchMode_" data-uid="Android.App.Instrumentation.ResetInTouchMode*"></a>
+
+  <h3 id="Android_App_Instrumentation_ResetInTouchMode" data-uid="Android.App.Instrumentation.ResetInTouchMode">
+  ResetInTouchMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L527"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#resetInTouchMode()">https://developer.android.com/reference/android/app/Instrumentation.html#resetInTouchMode()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetInTouchMode()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_RunOnMainSync_" data-uid="Android.App.Instrumentation.RunOnMainSync*"></a>
+
+  <h3 id="Android_App_Instrumentation_RunOnMainSync_Java_Lang_Runnable_" data-uid="Android.App.Instrumentation.RunOnMainSync(Java.Lang.Runnable)">
+  RunOnMainSync(Runnable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#runOnMainSync(java.lang.Runnable)">https://developer.android.com/reference/android/app/Instrumentation.html#runOnMainSync(java.lang.Runnable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RunOnMainSync(Runnable arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_SendCharacterSync_" data-uid="Android.App.Instrumentation.SendCharacterSync*"></a>
+
+  <h3 id="Android_App_Instrumentation_SendCharacterSync_System_Int32_" data-uid="Android.App.Instrumentation.SendCharacterSync(System.Int32)">
+  SendCharacterSync(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#sendCharacterSync(int)">https://developer.android.com/reference/android/app/Instrumentation.html#sendCharacterSync(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendCharacterSync(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_SendKeyDownUpSync_" data-uid="Android.App.Instrumentation.SendKeyDownUpSync*"></a>
+
+  <h3 id="Android_App_Instrumentation_SendKeyDownUpSync_System_Int32_" data-uid="Android.App.Instrumentation.SendKeyDownUpSync(System.Int32)">
+  SendKeyDownUpSync(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L551"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#sendKeyDownUpSync(int)">https://developer.android.com/reference/android/app/Instrumentation.html#sendKeyDownUpSync(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendKeyDownUpSync(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_SendKeySync_" data-uid="Android.App.Instrumentation.SendKeySync*"></a>
+
+  <h3 id="Android_App_Instrumentation_SendKeySync_Android_View_KeyEvent_" data-uid="Android.App.Instrumentation.SendKeySync(Android.View.KeyEvent)">
+  SendKeySync(KeyEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#sendKeySync(android.view.KeyEvent)">https://developer.android.com/reference/android/app/Instrumentation.html#sendKeySync(android.view.KeyEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendKeySync(KeyEvent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_SendPointerSync_" data-uid="Android.App.Instrumentation.SendPointerSync*"></a>
+
+  <h3 id="Android_App_Instrumentation_SendPointerSync_Android_View_MotionEvent_" data-uid="Android.App.Instrumentation.SendPointerSync(Android.View.MotionEvent)">
+  SendPointerSync(MotionEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L567"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#sendPointerSync(android.view.MotionEvent)">https://developer.android.com/reference/android/app/Instrumentation.html#sendPointerSync(android.view.MotionEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendPointerSync(MotionEvent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.MotionEvent.html">MotionEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.MotionEvent.html">MotionEvent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_SendStatus_" data-uid="Android.App.Instrumentation.SendStatus*"></a>
+
+  <h3 id="Android_App_Instrumentation_SendStatus_System_Int32_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.SendStatus(System.Int32,Android.Os.Bundle)">
+  SendStatus(int, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#sendStatus(int,android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#sendStatus(int,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendStatus(int arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_SendStringSync_" data-uid="Android.App.Instrumentation.SendStringSync*"></a>
+
+  <h3 id="Android_App_Instrumentation_SendStringSync_Java_Lang_String_" data-uid="Android.App.Instrumentation.SendStringSync(Java.Lang.String)">
+  SendStringSync(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#sendStringSync(java.lang.String)">https://developer.android.com/reference/android/app/Instrumentation.html#sendStringSync(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendStringSync(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_SendTrackballEventSync_" data-uid="Android.App.Instrumentation.SendTrackballEventSync*"></a>
+
+  <h3 id="Android_App_Instrumentation_SendTrackballEventSync_Android_View_MotionEvent_" data-uid="Android.App.Instrumentation.SendTrackballEventSync(Android.View.MotionEvent)">
+  SendTrackballEventSync(MotionEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#sendTrackballEventSync(android.view.MotionEvent)">https://developer.android.com/reference/android/app/Instrumentation.html#sendTrackballEventSync(android.view.MotionEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendTrackballEventSync(MotionEvent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.MotionEvent.html">MotionEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.MotionEvent.html">MotionEvent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_SetAutomaticPerformanceSnapshots_" data-uid="Android.App.Instrumentation.SetAutomaticPerformanceSnapshots*"></a>
+
+  <h3 id="Android_App_Instrumentation_SetAutomaticPerformanceSnapshots" data-uid="Android.App.Instrumentation.SetAutomaticPerformanceSnapshots">
+  SetAutomaticPerformanceSnapshots()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L599"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#setAutomaticPerformanceSnapshots()">https://developer.android.com/reference/android/app/Instrumentation.html#setAutomaticPerformanceSnapshots()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAutomaticPerformanceSnapshots()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_SetInTouchMode_" data-uid="Android.App.Instrumentation.SetInTouchMode*"></a>
+
+  <h3 id="Android_App_Instrumentation_SetInTouchMode_System_Boolean_" data-uid="Android.App.Instrumentation.SetInTouchMode(System.Boolean)">
+  SetInTouchMode(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L607"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#setInTouchMode(boolean)">https://developer.android.com/reference/android/app/Instrumentation.html#setInTouchMode(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInTouchMode(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_Start_" data-uid="Android.App.Instrumentation.Start*"></a>
+
+  <h3 id="Android_App_Instrumentation_Start" data-uid="Android.App.Instrumentation.Start">
+  Start()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L614"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#start()">https://developer.android.com/reference/android/app/Instrumentation.html#start()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_StartActivitySync_" data-uid="Android.App.Instrumentation.StartActivitySync*"></a>
+
+  <h3 id="Android_App_Instrumentation_StartActivitySync_Android_Content_Intent_" data-uid="Android.App.Instrumentation.StartActivitySync(Android.Content.Intent)">
+  StartActivitySync(Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#startActivitySync(android.content.Intent)">https://developer.android.com/reference/android/app/Instrumentation.html#startActivitySync(android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Activity StartActivitySync(Intent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_StartActivitySync_" data-uid="Android.App.Instrumentation.StartActivitySync*"></a>
+
+  <h3 id="Android_App_Instrumentation_StartActivitySync_Android_Content_Intent_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.StartActivitySync(Android.Content.Intent,Android.Os.Bundle)">
+  StartActivitySync(Intent, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#startActivitySync(android.content.Intent,android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#startActivitySync(android.content.Intent,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Activity StartActivitySync(Intent arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_StartAllocCounting_" data-uid="Android.App.Instrumentation.StartAllocCounting*"></a>
+
+  <h3 id="Android_App_Instrumentation_StartAllocCounting" data-uid="Android.App.Instrumentation.StartAllocCounting">
+  StartAllocCounting()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L621"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#startAllocCounting()">https://developer.android.com/reference/android/app/Instrumentation.html#startAllocCounting()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void StartAllocCounting()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_StartPerformanceSnapshot_" data-uid="Android.App.Instrumentation.StartPerformanceSnapshot*"></a>
+
+  <h3 id="Android_App_Instrumentation_StartPerformanceSnapshot" data-uid="Android.App.Instrumentation.StartPerformanceSnapshot">
+  StartPerformanceSnapshot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L629"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#startPerformanceSnapshot()">https://developer.android.com/reference/android/app/Instrumentation.html#startPerformanceSnapshot()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartPerformanceSnapshot()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_StartProfiling_" data-uid="Android.App.Instrumentation.StartProfiling*"></a>
+
+  <h3 id="Android_App_Instrumentation_StartProfiling" data-uid="Android.App.Instrumentation.StartProfiling">
+  StartProfiling()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L636"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#startProfiling()">https://developer.android.com/reference/android/app/Instrumentation.html#startProfiling()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartProfiling()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_StopAllocCounting_" data-uid="Android.App.Instrumentation.StopAllocCounting*"></a>
+
+  <h3 id="Android_App_Instrumentation_StopAllocCounting" data-uid="Android.App.Instrumentation.StopAllocCounting">
+  StopAllocCounting()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L643"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#stopAllocCounting()">https://developer.android.com/reference/android/app/Instrumentation.html#stopAllocCounting()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void StopAllocCounting()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_StopProfiling_" data-uid="Android.App.Instrumentation.StopProfiling*"></a>
+
+  <h3 id="Android_App_Instrumentation_StopProfiling" data-uid="Android.App.Instrumentation.StopProfiling">
+  StopProfiling()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L651"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#stopProfiling()">https://developer.android.com/reference/android/app/Instrumentation.html#stopProfiling()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopProfiling()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_WaitForIdle_" data-uid="Android.App.Instrumentation.WaitForIdle*"></a>
+
+  <h3 id="Android_App_Instrumentation_WaitForIdle_Java_Lang_Runnable_" data-uid="Android.App.Instrumentation.WaitForIdle(Java.Lang.Runnable)">
+  WaitForIdle(Runnable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L659"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#waitForIdle(java.lang.Runnable)">https://developer.android.com/reference/android/app/Instrumentation.html#waitForIdle(java.lang.Runnable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WaitForIdle(Runnable arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_WaitForIdleSync_" data-uid="Android.App.Instrumentation.WaitForIdleSync*"></a>
+
+  <h3 id="Android_App_Instrumentation_WaitForIdleSync" data-uid="Android.App.Instrumentation.WaitForIdleSync">
+  WaitForIdleSync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L666"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#waitForIdleSync()">https://developer.android.com/reference/android/app/Instrumentation.html#waitForIdleSync()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WaitForIdleSync()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_WaitForMonitor_" data-uid="Android.App.Instrumentation.WaitForMonitor*"></a>
+
+  <h3 id="Android_App_Instrumentation_WaitForMonitor_Android_App_Instrumentation_ActivityMonitor_" data-uid="Android.App.Instrumentation.WaitForMonitor(Android.App.Instrumentation.ActivityMonitor)">
+  WaitForMonitor(ActivityMonitor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#waitForMonitor(android.app.Instrumentation.ActivityMonitor)">https://developer.android.com/reference/android/app/Instrumentation.html#waitForMonitor(android.app.Instrumentation.ActivityMonitor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Activity WaitForMonitor(Instrumentation.ActivityMonitor arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Instrumentation.html">Instrumentation</a>.<a class="xref" href="Android.App.Instrumentation.ActivityMonitor.html">ActivityMonitor</a></dt>
+    <dd><p><a class="xref" href="Android.App.Instrumentation.ActivityMonitor.html">Instrumentation.ActivityMonitor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Instrumentation_WaitForMonitorWithTimeout_" data-uid="Android.App.Instrumentation.WaitForMonitorWithTimeout*"></a>
+
+  <h3 id="Android_App_Instrumentation_WaitForMonitorWithTimeout_Android_App_Instrumentation_ActivityMonitor_System_Int64_" data-uid="Android.App.Instrumentation.WaitForMonitorWithTimeout(Android.App.Instrumentation.ActivityMonitor,System.Int64)">
+  WaitForMonitorWithTimeout(ActivityMonitor, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#waitForMonitorWithTimeout(android.app.Instrumentation.ActivityMonitor,long)">https://developer.android.com/reference/android/app/Instrumentation.html#waitForMonitorWithTimeout(android.app.Instrumentation.ActivityMonitor,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Activity WaitForMonitorWithTimeout(Instrumentation.ActivityMonitor arg0, long arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Instrumentation.html">Instrumentation</a>.<a class="xref" href="Android.App.Instrumentation.ActivityMonitor.html">ActivityMonitor</a></dt>
+    <dd><p><a class="xref" href="Android.App.Instrumentation.ActivityMonitor.html">Instrumentation.ActivityMonitor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

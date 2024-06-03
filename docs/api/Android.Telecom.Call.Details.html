@@ -1,0 +1,2890 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class Call.Details | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Call.Details | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/telecom/Call.Details.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Telecom_Call_Details.md&amp;value=---%0Auid%3A%20Android.Telecom.Call.Details%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Telecom.Call.Details">
+
+
+
+  <h1 id="Android_Telecom_Call_Details" data-uid="Android.Telecom.Call.Details" class="text-break">
+Class Call.Details  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L707"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Telecom.html">Telecom</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html">https://developer.android.com/reference/android/telecom/Call.Details.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Call.Details : JVMBridgeBase&lt;Call.Details&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Telecom.Call.html">Call</a>.<a class="xref" href="Android.Telecom.Call.Details.html">Details</a>&gt;</div>
+      <div><span class="xref">Call.Details</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Call.Details&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Call.Details&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Call.Details&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Call.Details&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Call.Details&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Call.Details&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Call.Details&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Call.Details&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Call.Details&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Call.Details&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Call.Details&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Call.Details&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Call.Details&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Telecom_Call_Details__ctor_" data-uid="Android.Telecom.Call.Details.#ctor*"></a>
+
+  <h3 id="Android_Telecom_Call_Details__ctor" data-uid="Android.Telecom.Call.Details.#ctor">
+  Details()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Details()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details__ctor_" data-uid="Android.Telecom.Call.Details.#ctor*"></a>
+
+  <h3 id="Android_Telecom_Call_Details__ctor_System_Object___" data-uid="Android.Telecom.Call.Details.#ctor(System.Object[])">
+  Details(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Details(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Telecom_Call_Details_BridgeClassName_" data-uid="Android.Telecom.Call.Details.BridgeClassName*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_BridgeClassName" data-uid="Android.Telecom.Call.Details.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_ADD_PARTICIPANT_" data-uid="Android.Telecom.Call.Details.CAPABILITY_ADD_PARTICIPANT*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_ADD_PARTICIPANT" data-uid="Android.Telecom.Call.Details.CAPABILITY_ADD_PARTICIPANT">
+  CAPABILITY_ADD_PARTICIPANT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L721"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_ADD_PARTICIPANT">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_ADD_PARTICIPANT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_ADD_PARTICIPANT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO_" data-uid="Android.Telecom.Call.Details.CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO" data-uid="Android.Telecom.Call.Details.CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO">
+  CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L739"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_CAN_PAUSE_VIDEO_" data-uid="Android.Telecom.Call.Details.CAPABILITY_CAN_PAUSE_VIDEO*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_CAN_PAUSE_VIDEO" data-uid="Android.Telecom.Call.Details.CAPABILITY_CAN_PAUSE_VIDEO">
+  CAPABILITY_CAN_PAUSE_VIDEO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L727"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_CAN_PAUSE_VIDEO">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_CAN_PAUSE_VIDEO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_CAN_PAUSE_VIDEO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_CAN_PULL_CALL_" data-uid="Android.Telecom.Call.Details.CAPABILITY_CAN_PULL_CALL*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_CAN_PULL_CALL" data-uid="Android.Telecom.Call.Details.CAPABILITY_CAN_PULL_CALL">
+  CAPABILITY_CAN_PULL_CALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L733"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_CAN_PULL_CALL">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_CAN_PULL_CALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_CAN_PULL_CALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_DISCONNECT_FROM_CONFERENCE_" data-uid="Android.Telecom.Call.Details.CAPABILITY_DISCONNECT_FROM_CONFERENCE*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_DISCONNECT_FROM_CONFERENCE" data-uid="Android.Telecom.Call.Details.CAPABILITY_DISCONNECT_FROM_CONFERENCE">
+  CAPABILITY_DISCONNECT_FROM_CONFERENCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L745"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_DISCONNECT_FROM_CONFERENCE">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_DISCONNECT_FROM_CONFERENCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_DISCONNECT_FROM_CONFERENCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_HOLD_" data-uid="Android.Telecom.Call.Details.CAPABILITY_HOLD*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_HOLD" data-uid="Android.Telecom.Call.Details.CAPABILITY_HOLD">
+  CAPABILITY_HOLD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L751"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_HOLD">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_HOLD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_HOLD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_MANAGE_CONFERENCE_" data-uid="Android.Telecom.Call.Details.CAPABILITY_MANAGE_CONFERENCE*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_MANAGE_CONFERENCE" data-uid="Android.Telecom.Call.Details.CAPABILITY_MANAGE_CONFERENCE">
+  CAPABILITY_MANAGE_CONFERENCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L757"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_MANAGE_CONFERENCE">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_MANAGE_CONFERENCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_MANAGE_CONFERENCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_MERGE_CONFERENCE_" data-uid="Android.Telecom.Call.Details.CAPABILITY_MERGE_CONFERENCE*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_MERGE_CONFERENCE" data-uid="Android.Telecom.Call.Details.CAPABILITY_MERGE_CONFERENCE">
+  CAPABILITY_MERGE_CONFERENCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L763"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_MERGE_CONFERENCE">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_MERGE_CONFERENCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_MERGE_CONFERENCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_MUTE_" data-uid="Android.Telecom.Call.Details.CAPABILITY_MUTE*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_MUTE" data-uid="Android.Telecom.Call.Details.CAPABILITY_MUTE">
+  CAPABILITY_MUTE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L769"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_MUTE">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_MUTE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_MUTE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_REMOTE_PARTY_SUPPORTS_RTT_" data-uid="Android.Telecom.Call.Details.CAPABILITY_REMOTE_PARTY_SUPPORTS_RTT*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_REMOTE_PARTY_SUPPORTS_RTT" data-uid="Android.Telecom.Call.Details.CAPABILITY_REMOTE_PARTY_SUPPORTS_RTT">
+  CAPABILITY_REMOTE_PARTY_SUPPORTS_RTT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L775"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_REMOTE_PARTY_SUPPORTS_RTT">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_REMOTE_PARTY_SUPPORTS_RTT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_REMOTE_PARTY_SUPPORTS_RTT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_RESPOND_VIA_TEXT_" data-uid="Android.Telecom.Call.Details.CAPABILITY_RESPOND_VIA_TEXT*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_RESPOND_VIA_TEXT" data-uid="Android.Telecom.Call.Details.CAPABILITY_RESPOND_VIA_TEXT">
+  CAPABILITY_RESPOND_VIA_TEXT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L781"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_RESPOND_VIA_TEXT">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_RESPOND_VIA_TEXT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_RESPOND_VIA_TEXT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_SEPARATE_FROM_CONFERENCE_" data-uid="Android.Telecom.Call.Details.CAPABILITY_SEPARATE_FROM_CONFERENCE*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_SEPARATE_FROM_CONFERENCE" data-uid="Android.Telecom.Call.Details.CAPABILITY_SEPARATE_FROM_CONFERENCE">
+  CAPABILITY_SEPARATE_FROM_CONFERENCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L787"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SEPARATE_FROM_CONFERENCE">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SEPARATE_FROM_CONFERENCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_SEPARATE_FROM_CONFERENCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL_" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL">
+  CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L805"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_SUPPORTS_VT_LOCAL_RX_" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORTS_VT_LOCAL_RX*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_SUPPORTS_VT_LOCAL_RX" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORTS_VT_LOCAL_RX">
+  CAPABILITY_SUPPORTS_VT_LOCAL_RX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L811"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORTS_VT_LOCAL_RX">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORTS_VT_LOCAL_RX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_SUPPORTS_VT_LOCAL_RX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_SUPPORTS_VT_LOCAL_TX_" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORTS_VT_LOCAL_TX*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_SUPPORTS_VT_LOCAL_TX" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORTS_VT_LOCAL_TX">
+  CAPABILITY_SUPPORTS_VT_LOCAL_TX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L817"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORTS_VT_LOCAL_TX">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORTS_VT_LOCAL_TX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_SUPPORTS_VT_LOCAL_TX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL_" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL">
+  CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L823"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_SUPPORTS_VT_REMOTE_RX_" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORTS_VT_REMOTE_RX*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_SUPPORTS_VT_REMOTE_RX" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORTS_VT_REMOTE_RX">
+  CAPABILITY_SUPPORTS_VT_REMOTE_RX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L829"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORTS_VT_REMOTE_RX">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORTS_VT_REMOTE_RX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_SUPPORTS_VT_REMOTE_RX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_SUPPORTS_VT_REMOTE_TX_" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORTS_VT_REMOTE_TX*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_SUPPORTS_VT_REMOTE_TX" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORTS_VT_REMOTE_TX">
+  CAPABILITY_SUPPORTS_VT_REMOTE_TX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L835"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORTS_VT_REMOTE_TX">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORTS_VT_REMOTE_TX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_SUPPORTS_VT_REMOTE_TX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_SUPPORT_DEFLECT_" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORT_DEFLECT*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_SUPPORT_DEFLECT" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORT_DEFLECT">
+  CAPABILITY_SUPPORT_DEFLECT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L793"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORT_DEFLECT">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORT_DEFLECT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_SUPPORT_DEFLECT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_SUPPORT_HOLD_" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORT_HOLD*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_SUPPORT_HOLD" data-uid="Android.Telecom.Call.Details.CAPABILITY_SUPPORT_HOLD">
+  CAPABILITY_SUPPORT_HOLD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L799"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORT_HOLD">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SUPPORT_HOLD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_SUPPORT_HOLD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CAPABILITY_SWAP_CONFERENCE_" data-uid="Android.Telecom.Call.Details.CAPABILITY_SWAP_CONFERENCE*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CAPABILITY_SWAP_CONFERENCE" data-uid="Android.Telecom.Call.Details.CAPABILITY_SWAP_CONFERENCE">
+  CAPABILITY_SWAP_CONFERENCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L841"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SWAP_CONFERENCE">https://developer.android.com/reference/android/telecom/Call.Details.html#CAPABILITY_SWAP_CONFERENCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPABILITY_SWAP_CONFERENCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_DIRECTION_INCOMING_" data-uid="Android.Telecom.Call.Details.DIRECTION_INCOMING*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_DIRECTION_INCOMING" data-uid="Android.Telecom.Call.Details.DIRECTION_INCOMING">
+  DIRECTION_INCOMING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L847"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#DIRECTION_INCOMING">https://developer.android.com/reference/android/telecom/Call.Details.html#DIRECTION_INCOMING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DIRECTION_INCOMING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_DIRECTION_OUTGOING_" data-uid="Android.Telecom.Call.Details.DIRECTION_OUTGOING*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_DIRECTION_OUTGOING" data-uid="Android.Telecom.Call.Details.DIRECTION_OUTGOING">
+  DIRECTION_OUTGOING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L853"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#DIRECTION_OUTGOING">https://developer.android.com/reference/android/telecom/Call.Details.html#DIRECTION_OUTGOING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DIRECTION_OUTGOING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_DIRECTION_UNKNOWN_" data-uid="Android.Telecom.Call.Details.DIRECTION_UNKNOWN*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_DIRECTION_UNKNOWN" data-uid="Android.Telecom.Call.Details.DIRECTION_UNKNOWN">
+  DIRECTION_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L859"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#DIRECTION_UNKNOWN">https://developer.android.com/reference/android/telecom/Call.Details.html#DIRECTION_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DIRECTION_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_IsBridgeAbstract_" data-uid="Android.Telecom.Call.Details.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_IsBridgeAbstract" data-uid="Android.Telecom.Call.Details.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_IsBridgeCloseable_" data-uid="Android.Telecom.Call.Details.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_IsBridgeCloseable" data-uid="Android.Telecom.Call.Details.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_IsBridgeInterface_" data-uid="Android.Telecom.Call.Details.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_IsBridgeInterface" data-uid="Android.Telecom.Call.Details.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_IsBridgeStatic_" data-uid="Android.Telecom.Call.Details.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_IsBridgeStatic" data-uid="Android.Telecom.Call.Details.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_ASSISTED_DIALING_" data-uid="Android.Telecom.Call.Details.PROPERTY_ASSISTED_DIALING*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_ASSISTED_DIALING" data-uid="Android.Telecom.Call.Details.PROPERTY_ASSISTED_DIALING">
+  PROPERTY_ASSISTED_DIALING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L865"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_ASSISTED_DIALING">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_ASSISTED_DIALING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_ASSISTED_DIALING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_CONFERENCE_" data-uid="Android.Telecom.Call.Details.PROPERTY_CONFERENCE*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_CONFERENCE" data-uid="Android.Telecom.Call.Details.PROPERTY_CONFERENCE">
+  PROPERTY_CONFERENCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L871"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_CONFERENCE">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_CONFERENCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_CONFERENCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_CROSS_SIM_" data-uid="Android.Telecom.Call.Details.PROPERTY_CROSS_SIM*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_CROSS_SIM" data-uid="Android.Telecom.Call.Details.PROPERTY_CROSS_SIM">
+  PROPERTY_CROSS_SIM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L877"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_CROSS_SIM">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_CROSS_SIM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_CROSS_SIM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_EMERGENCY_CALLBACK_MODE_" data-uid="Android.Telecom.Call.Details.PROPERTY_EMERGENCY_CALLBACK_MODE*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_EMERGENCY_CALLBACK_MODE" data-uid="Android.Telecom.Call.Details.PROPERTY_EMERGENCY_CALLBACK_MODE">
+  PROPERTY_EMERGENCY_CALLBACK_MODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L883"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_EMERGENCY_CALLBACK_MODE">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_EMERGENCY_CALLBACK_MODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_EMERGENCY_CALLBACK_MODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_ENTERPRISE_CALL_" data-uid="Android.Telecom.Call.Details.PROPERTY_ENTERPRISE_CALL*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_ENTERPRISE_CALL" data-uid="Android.Telecom.Call.Details.PROPERTY_ENTERPRISE_CALL">
+  PROPERTY_ENTERPRISE_CALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L889"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_ENTERPRISE_CALL">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_ENTERPRISE_CALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_ENTERPRISE_CALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_GENERIC_CONFERENCE_" data-uid="Android.Telecom.Call.Details.PROPERTY_GENERIC_CONFERENCE*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_GENERIC_CONFERENCE" data-uid="Android.Telecom.Call.Details.PROPERTY_GENERIC_CONFERENCE">
+  PROPERTY_GENERIC_CONFERENCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L895"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_GENERIC_CONFERENCE">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_GENERIC_CONFERENCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_GENERIC_CONFERENCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_HAS_CDMA_VOICE_PRIVACY_" data-uid="Android.Telecom.Call.Details.PROPERTY_HAS_CDMA_VOICE_PRIVACY*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_HAS_CDMA_VOICE_PRIVACY" data-uid="Android.Telecom.Call.Details.PROPERTY_HAS_CDMA_VOICE_PRIVACY">
+  PROPERTY_HAS_CDMA_VOICE_PRIVACY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L901"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_HAS_CDMA_VOICE_PRIVACY">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_HAS_CDMA_VOICE_PRIVACY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_HAS_CDMA_VOICE_PRIVACY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_HIGH_DEF_AUDIO_" data-uid="Android.Telecom.Call.Details.PROPERTY_HIGH_DEF_AUDIO*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_HIGH_DEF_AUDIO" data-uid="Android.Telecom.Call.Details.PROPERTY_HIGH_DEF_AUDIO">
+  PROPERTY_HIGH_DEF_AUDIO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L907"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_HIGH_DEF_AUDIO">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_HIGH_DEF_AUDIO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_HIGH_DEF_AUDIO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_IS_ADHOC_CONFERENCE_" data-uid="Android.Telecom.Call.Details.PROPERTY_IS_ADHOC_CONFERENCE*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_IS_ADHOC_CONFERENCE" data-uid="Android.Telecom.Call.Details.PROPERTY_IS_ADHOC_CONFERENCE">
+  PROPERTY_IS_ADHOC_CONFERENCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L913"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_IS_ADHOC_CONFERENCE">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_IS_ADHOC_CONFERENCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_IS_ADHOC_CONFERENCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_IS_EXTERNAL_CALL_" data-uid="Android.Telecom.Call.Details.PROPERTY_IS_EXTERNAL_CALL*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_IS_EXTERNAL_CALL" data-uid="Android.Telecom.Call.Details.PROPERTY_IS_EXTERNAL_CALL">
+  PROPERTY_IS_EXTERNAL_CALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L919"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_IS_EXTERNAL_CALL">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_IS_EXTERNAL_CALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_IS_EXTERNAL_CALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALL_" data-uid="Android.Telecom.Call.Details.PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALL*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALL" data-uid="Android.Telecom.Call.Details.PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALL">
+  PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L925"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALL">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_RTT_" data-uid="Android.Telecom.Call.Details.PROPERTY_RTT*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_RTT" data-uid="Android.Telecom.Call.Details.PROPERTY_RTT">
+  PROPERTY_RTT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L931"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_RTT">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_RTT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_RTT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_SELF_MANAGED_" data-uid="Android.Telecom.Call.Details.PROPERTY_SELF_MANAGED*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_SELF_MANAGED" data-uid="Android.Telecom.Call.Details.PROPERTY_SELF_MANAGED">
+  PROPERTY_SELF_MANAGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L937"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_SELF_MANAGED">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_SELF_MANAGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_SELF_MANAGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_VOIP_AUDIO_MODE_" data-uid="Android.Telecom.Call.Details.PROPERTY_VOIP_AUDIO_MODE*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_VOIP_AUDIO_MODE" data-uid="Android.Telecom.Call.Details.PROPERTY_VOIP_AUDIO_MODE">
+  PROPERTY_VOIP_AUDIO_MODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L943"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_VOIP_AUDIO_MODE">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_VOIP_AUDIO_MODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_VOIP_AUDIO_MODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PROPERTY_WIFI_" data-uid="Android.Telecom.Call.Details.PROPERTY_WIFI*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PROPERTY_WIFI" data-uid="Android.Telecom.Call.Details.PROPERTY_WIFI">
+  PROPERTY_WIFI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L949"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_WIFI">https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_WIFI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROPERTY_WIFI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Telecom_Call_Details_Can_" data-uid="Android.Telecom.Call.Details.Can*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_Can_System_Int32_" data-uid="Android.Telecom.Call.Details.Can(System.Int32)">
+  Can(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1067"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#can(int)">https://developer.android.com/reference/android/telecom/Call.Details.html#can(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Can(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_Can_" data-uid="Android.Telecom.Call.Details.Can*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_Can_System_Int32_System_Int32_" data-uid="Android.Telecom.Call.Details.Can(System.Int32,System.Int32)">
+  Can(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L962"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#can(int,int)">https://developer.android.com/reference/android/telecom/Call.Details.html#can(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Can(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_CapabilitiesToString_" data-uid="Android.Telecom.Call.Details.CapabilitiesToString*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_CapabilitiesToString_System_Int32_" data-uid="Android.Telecom.Call.Details.CapabilitiesToString(System.Int32)">
+  CapabilitiesToString(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L981"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#capabilitiesToString(int)">https://developer.android.com/reference/android/telecom/Call.Details.html#capabilitiesToString(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CapabilitiesToString(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetAccountHandle_" data-uid="Android.Telecom.Call.Details.GetAccountHandle*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetAccountHandle" data-uid="Android.Telecom.Call.Details.GetAccountHandle">
+  GetAccountHandle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1050"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getAccountHandle()">https://developer.android.com/reference/android/telecom/Call.Details.html#getAccountHandle()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhoneAccountHandle GetAccountHandle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.PhoneAccountHandle.html">PhoneAccountHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetCallCapabilities_" data-uid="Android.Telecom.Call.Details.GetCallCapabilities*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetCallCapabilities" data-uid="Android.Telecom.Call.Details.GetCallCapabilities">
+  GetCallCapabilities()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallCapabilities()">https://developer.android.com/reference/android/telecom/Call.Details.html#getCallCapabilities()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCallCapabilities()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetCallDirection_" data-uid="Android.Telecom.Call.Details.GetCallDirection*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetCallDirection" data-uid="Android.Telecom.Call.Details.GetCallDirection">
+  GetCallDirection()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallDirection()">https://developer.android.com/reference/android/telecom/Call.Details.html#getCallDirection()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCallDirection()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetCallProperties_" data-uid="Android.Telecom.Call.Details.GetCallProperties*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetCallProperties" data-uid="Android.Telecom.Call.Details.GetCallProperties">
+  GetCallProperties()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallProperties()">https://developer.android.com/reference/android/telecom/Call.Details.html#getCallProperties()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCallProperties()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetCallerDisplayName_" data-uid="Android.Telecom.Call.Details.GetCallerDisplayName*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetCallerDisplayName" data-uid="Android.Telecom.Call.Details.GetCallerDisplayName">
+  GetCallerDisplayName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerDisplayName()">https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerDisplayName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetCallerDisplayName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetCallerDisplayNamePresentation_" data-uid="Android.Telecom.Call.Details.GetCallerDisplayNamePresentation*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetCallerDisplayNamePresentation" data-uid="Android.Telecom.Call.Details.GetCallerDisplayNamePresentation">
+  GetCallerDisplayNamePresentation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerDisplayNamePresentation()">https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerDisplayNamePresentation()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCallerDisplayNamePresentation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetCallerNumberVerificationStatus_" data-uid="Android.Telecom.Call.Details.GetCallerNumberVerificationStatus*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetCallerNumberVerificationStatus" data-uid="Android.Telecom.Call.Details.GetCallerNumberVerificationStatus">
+  GetCallerNumberVerificationStatus()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerNumberVerificationStatus()">https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerNumberVerificationStatus()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCallerNumberVerificationStatus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetConnectTimeMillis_" data-uid="Android.Telecom.Call.Details.GetConnectTimeMillis*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetConnectTimeMillis" data-uid="Android.Telecom.Call.Details.GetConnectTimeMillis">
+  GetConnectTimeMillis()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1092"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getConnectTimeMillis()">https://developer.android.com/reference/android/telecom/Call.Details.html#getConnectTimeMillis()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetConnectTimeMillis()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetContactDisplayName_" data-uid="Android.Telecom.Call.Details.GetContactDisplayName*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetContactDisplayName" data-uid="Android.Telecom.Call.Details.GetContactDisplayName">
+  GetContactDisplayName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getContactDisplayName()">https://developer.android.com/reference/android/telecom/Call.Details.html#getContactDisplayName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetContactDisplayName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetContactPhotoUri_" data-uid="Android.Telecom.Call.Details.GetContactPhotoUri*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetContactPhotoUri" data-uid="Android.Telecom.Call.Details.GetContactPhotoUri">
+  GetContactPhotoUri()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1002"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getContactPhotoUri()">https://developer.android.com/reference/android/telecom/Call.Details.html#getContactPhotoUri()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri GetContactPhotoUri()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetCreationTimeMillis_" data-uid="Android.Telecom.Call.Details.GetCreationTimeMillis*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetCreationTimeMillis" data-uid="Android.Telecom.Call.Details.GetCreationTimeMillis">
+  GetCreationTimeMillis()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCreationTimeMillis()">https://developer.android.com/reference/android/telecom/Call.Details.html#getCreationTimeMillis()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetCreationTimeMillis()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetDisconnectCause_" data-uid="Android.Telecom.Call.Details.GetDisconnectCause*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetDisconnectCause" data-uid="Android.Telecom.Call.Details.GetDisconnectCause">
+  GetDisconnectCause()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1034"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getDisconnectCause()">https://developer.android.com/reference/android/telecom/Call.Details.html#getDisconnectCause()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DisconnectCause GetDisconnectCause()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Telecom.DisconnectCause.html">DisconnectCause</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.DisconnectCause.html">DisconnectCause</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetExtras_" data-uid="Android.Telecom.Call.Details.GetExtras*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetExtras" data-uid="Android.Telecom.Call.Details.GetExtras">
+  GetExtras()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1018"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getExtras()">https://developer.android.com/reference/android/telecom/Call.Details.html#getExtras()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle GetExtras()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetGatewayInfo_" data-uid="Android.Telecom.Call.Details.GetGatewayInfo*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetGatewayInfo" data-uid="Android.Telecom.Call.Details.GetGatewayInfo">
+  GetGatewayInfo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1042"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getGatewayInfo()">https://developer.android.com/reference/android/telecom/Call.Details.html#getGatewayInfo()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GatewayInfo GetGatewayInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Telecom.GatewayInfo.html">GatewayInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.GatewayInfo.html">GatewayInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetHandle_" data-uid="Android.Telecom.Call.Details.GetHandle*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetHandle" data-uid="Android.Telecom.Call.Details.GetHandle">
+  GetHandle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1010"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getHandle()">https://developer.android.com/reference/android/telecom/Call.Details.html#getHandle()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri GetHandle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetHandlePresentation_" data-uid="Android.Telecom.Call.Details.GetHandlePresentation*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetHandlePresentation" data-uid="Android.Telecom.Call.Details.GetHandlePresentation">
+  GetHandlePresentation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getHandlePresentation()">https://developer.android.com/reference/android/telecom/Call.Details.html#getHandlePresentation()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetHandlePresentation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetIntentExtras_" data-uid="Android.Telecom.Call.Details.GetIntentExtras*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetIntentExtras" data-uid="Android.Telecom.Call.Details.GetIntentExtras">
+  GetIntentExtras()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1026"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getIntentExtras()">https://developer.android.com/reference/android/telecom/Call.Details.html#getIntentExtras()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle GetIntentExtras()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetState_" data-uid="Android.Telecom.Call.Details.GetState*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetState" data-uid="Android.Telecom.Call.Details.GetState">
+  GetState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1084"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getState()">https://developer.android.com/reference/android/telecom/Call.Details.html#getState()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetStatusHints_" data-uid="Android.Telecom.Call.Details.GetStatusHints*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetStatusHints" data-uid="Android.Telecom.Call.Details.GetStatusHints">
+  GetStatusHints()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1058"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getStatusHints()">https://developer.android.com/reference/android/telecom/Call.Details.html#getStatusHints()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StatusHints GetStatusHints()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Telecom.StatusHints.html">StatusHints</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.StatusHints.html">StatusHints</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_GetVideoState_" data-uid="Android.Telecom.Call.Details.GetVideoState*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_GetVideoState" data-uid="Android.Telecom.Call.Details.GetVideoState">
+  GetVideoState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#getVideoState()">https://developer.android.com/reference/android/telecom/Call.Details.html#getVideoState()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetVideoState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_HasProperty_" data-uid="Android.Telecom.Call.Details.HasProperty*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_HasProperty_System_Int32_" data-uid="Android.Telecom.Call.Details.HasProperty(System.Int32)">
+  HasProperty(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L1076"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#hasProperty(int)">https://developer.android.com/reference/android/telecom/Call.Details.html#hasProperty(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasProperty(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_HasProperty_" data-uid="Android.Telecom.Call.Details.HasProperty*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_HasProperty_System_Int32_System_Int32_" data-uid="Android.Telecom.Call.Details.HasProperty(System.Int32,System.Int32)">
+  HasProperty(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L972"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#hasProperty(int,int)">https://developer.android.com/reference/android/telecom/Call.Details.html#hasProperty(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasProperty(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_Call_Details_PropertiesToString_" data-uid="Android.Telecom.Call.Details.PropertiesToString*"></a>
+
+  <h3 id="Android_Telecom_Call_Details_PropertiesToString_System_Int32_" data-uid="Android.Telecom.Call.Details.PropertiesToString(System.Int32)">
+  PropertiesToString(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L990"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/Call.Details.html#propertiesToString(int)">https://developer.android.com/reference/android/telecom/Call.Details.html#propertiesToString(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PropertiesToString(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/Call.cs/#L707" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2643 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class ContentProvider | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ContentProvider | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/content/ContentProvider.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Content_ContentProvider.md&amp;value=---%0Auid%3A%20Android.Content.ContentProvider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Content.ContentProvider">
+
+
+
+  <h1 id="Android_Content_ContentProvider" data-uid="Android.Content.ContentProvider" class="text-break">
+Class ContentProvider  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Content.html">Content</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html">https://developer.android.com/reference/android/content/ContentProvider.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ContentProvider : ComponentCallbacks2, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IComponentCallbacks2, IComponentCallbacks</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Content.ComponentCallbacks.html">ComponentCallbacks</a>&gt;</div>
+      <div><a class="xref" href="Android.Content.ComponentCallbacks.html">ComponentCallbacks</a></div>
+      <div><a class="xref" href="Android.Content.ComponentCallbacks2.html">ComponentCallbacks2</a></div>
+      <div><span class="xref">ContentProvider</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Content.IComponentCallbacks2.html">IComponentCallbacks2</a></div>
+      <div><a class="xref" href="Android.Content.IComponentCallbacks.html">IComponentCallbacks</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Android.App.Slice.SliceProvider.html">SliceProvider</a></div>
+      <div><a class="xref" href="Android.Content.SearchRecentSuggestionsProvider.html">SearchRecentSuggestionsProvider</a></div>
+      <div><a class="xref" href="Android.Provider.CloudMediaProvider.html">CloudMediaProvider</a></div>
+      <div><a class="xref" href="Android.Provider.DocumentsProvider.html">DocumentsProvider</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_BACKGROUND">ComponentCallbacks2.TRIM_MEMORY_BACKGROUND</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_COMPLETE">ComponentCallbacks2.TRIM_MEMORY_COMPLETE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_MODERATE">ComponentCallbacks2.TRIM_MEMORY_MODERATE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_RUNNING_CRITICAL">ComponentCallbacks2.TRIM_MEMORY_RUNNING_CRITICAL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_RUNNING_LOW">ComponentCallbacks2.TRIM_MEMORY_RUNNING_LOW</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_RUNNING_MODERATE">ComponentCallbacks2.TRIM_MEMORY_RUNNING_MODERATE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_UI_HIDDEN">ComponentCallbacks2.TRIM_MEMORY_UI_HIDDEN</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;ComponentCallbacks&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Content_ContentProvider__ctor_" data-uid="Android.Content.ContentProvider.#ctor*"></a>
+
+  <h3 id="Android_Content_ContentProvider__ctor" data-uid="Android.Content.ContentProvider.#ctor">
+  ContentProvider()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/AllPackageClasses.cs/#L798"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;ContentProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public ContentProvider()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider__ctor_" data-uid="Android.Content.ContentProvider.#ctor*"></a>
+
+  <h3 id="Android_Content_ContentProvider__ctor_System_Object___" data-uid="Android.Content.ContentProvider.#ctor(System.Object[])">
+  ContentProvider(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/AllPackageClasses.cs/#L803"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;ContentProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public ContentProvider(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Content_ContentProvider_BridgeClassName_" data-uid="Android.Content.ContentProvider.BridgeClassName*"></a>
+
+  <h3 id="Android_Content_ContentProvider_BridgeClassName" data-uid="Android.Content.ContentProvider.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/AllPackageClasses.cs/#L811"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_IsBridgeAbstract_" data-uid="Android.Content.ContentProvider.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Content_ContentProvider_IsBridgeAbstract" data-uid="Android.Content.ContentProvider.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/AllPackageClasses.cs/#L815"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_IsBridgeCloseable_" data-uid="Android.Content.ContentProvider.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Content_ContentProvider_IsBridgeCloseable" data-uid="Android.Content.ContentProvider.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/AllPackageClasses.cs/#L819"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_IsBridgeInterface_" data-uid="Android.Content.ContentProvider.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Content_ContentProvider_IsBridgeInterface" data-uid="Android.Content.ContentProvider.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/AllPackageClasses.cs/#L823"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_IsBridgeStatic_" data-uid="Android.Content.ContentProvider.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Content_ContentProvider_IsBridgeStatic" data-uid="Android.Content.ContentProvider.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/AllPackageClasses.cs/#L827"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Content_ContentProvider_ApplyBatch_" data-uid="Android.Content.ContentProvider.ApplyBatch*"></a>
+
+  <h3 id="Android_Content_ContentProvider_ApplyBatch_Java_Lang_String_Java_Util_ArrayList_Android_Content_ContentProviderOperation__" data-uid="Android.Content.ContentProvider.ApplyBatch(Java.Lang.String,Java.Util.ArrayList{Android.Content.ContentProviderOperation})">
+  ApplyBatch(String, ArrayList&lt;ContentProviderOperation&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#applyBatch(java.lang.String,java.util.ArrayList)">https://developer.android.com/reference/android/content/ContentProvider.html#applyBatch(java.lang.String,java.util.ArrayList)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentProviderResult[] ApplyBatch(String arg0, ArrayList&lt;ContentProviderOperation&gt; arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.ArrayList-1.html">ArrayList</a>&lt;<a class="xref" href="Android.Content.ContentProviderOperation.html">ContentProviderOperation</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.ArrayList.html">ArrayList</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.ContentProviderResult.html">ContentProviderResult</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Content.ContentProviderResult.html">ContentProviderResult</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.OperationApplicationException.html">OperationApplicationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_ContentProvider_ApplyBatch_" data-uid="Android.Content.ContentProvider.ApplyBatch*"></a>
+
+  <h3 id="Android_Content_ContentProvider_ApplyBatch_Java_Util_ArrayList_Android_Content_ContentProviderOperation__" data-uid="Android.Content.ContentProvider.ApplyBatch(Java.Util.ArrayList{Android.Content.ContentProviderOperation})">
+  ApplyBatch(ArrayList&lt;ContentProviderOperation&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#applyBatch(java.util.ArrayList)">https://developer.android.com/reference/android/content/ContentProvider.html#applyBatch(java.util.ArrayList)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentProviderResult[] ApplyBatch(ArrayList&lt;ContentProviderOperation&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.ArrayList-1.html">ArrayList</a>&lt;<a class="xref" href="Android.Content.ContentProviderOperation.html">ContentProviderOperation</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.ArrayList.html">ArrayList</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.ContentProviderResult.html">ContentProviderResult</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Content.ContentProviderResult.html">ContentProviderResult</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.OperationApplicationException.html">OperationApplicationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_ContentProvider_AttachInfo_" data-uid="Android.Content.ContentProvider.AttachInfo*"></a>
+
+  <h3 id="Android_Content_ContentProvider_AttachInfo_Android_Content_Context_Android_Content_Pm_ProviderInfo_" data-uid="Android.Content.ContentProvider.AttachInfo(Android.Content.Context,Android.Content.Pm.ProviderInfo)">
+  AttachInfo(Context, ProviderInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#attachInfo(android.content.Context,android.content.pm.ProviderInfo)">https://developer.android.com/reference/android/content/ContentProvider.html#attachInfo(android.content.Context,android.content.pm.ProviderInfo)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AttachInfo(Context arg0, ProviderInfo arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Pm.ProviderInfo.html">ProviderInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Pm.ProviderInfo.html">ProviderInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_BulkInsert_" data-uid="Android.Content.ContentProvider.BulkInsert*"></a>
+
+  <h3 id="Android_Content_ContentProvider_BulkInsert_Android_Net_Uri_Android_Content_ContentValues___" data-uid="Android.Content.ContentProvider.BulkInsert(Android.Net.Uri,Android.Content.ContentValues[])">
+  BulkInsert(Uri, ContentValues[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#bulkInsert(android.net.Uri,android.content.ContentValues[])">https://developer.android.com/reference/android/content/ContentProvider.html#bulkInsert(android.net.Uri,android.content.ContentValues[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BulkInsert(Uri arg0, ContentValues[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Call_" data-uid="Android.Content.ContentProvider.Call*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Call_Java_Lang_String_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Content.ContentProvider.Call(Java.Lang.String,Java.Lang.String,Android.Os.Bundle)">
+  Call(String, String, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#call(java.lang.String,java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/content/ContentProvider.html#call(java.lang.String,java.lang.String,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle Call(String arg0, String arg1, Bundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Call_" data-uid="Android.Content.ContentProvider.Call*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Call_Java_Lang_String_Java_Lang_String_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Content.ContentProvider.Call(Java.Lang.String,Java.Lang.String,Java.Lang.String,Android.Os.Bundle)">
+  Call(String, String, String, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#call(java.lang.String,java.lang.String,java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/content/ContentProvider.html#call(java.lang.String,java.lang.String,java.lang.String,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle Call(String arg0, String arg1, String arg2, Bundle arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Canonicalize_" data-uid="Android.Content.ContentProvider.Canonicalize*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Canonicalize_Android_Net_Uri_" data-uid="Android.Content.ContentProvider.Canonicalize(Android.Net.Uri)">
+  Canonicalize(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#canonicalize(android.net.Uri)">https://developer.android.com/reference/android/content/ContentProvider.html#canonicalize(android.net.Uri)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri Canonicalize(Uri arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_ClearCallingIdentity_" data-uid="Android.Content.ContentProvider.ClearCallingIdentity*"></a>
+
+  <h3 id="Android_Content_ContentProvider_ClearCallingIdentity" data-uid="Android.Content.ContentProvider.ClearCallingIdentity">
+  ClearCallingIdentity()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#clearCallingIdentity()">https://developer.android.com/reference/android/content/ContentProvider.html#clearCallingIdentity()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentProvider.CallingIdentity ClearCallingIdentity()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.ContentProvider.html">ContentProvider</a>.<a class="xref" href="Android.Content.ContentProvider.CallingIdentity.html">CallingIdentity</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentProvider.CallingIdentity.html">ContentProvider.CallingIdentity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Delete_" data-uid="Android.Content.ContentProvider.Delete*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Delete_Android_Net_Uri_Android_Os_Bundle_" data-uid="Android.Content.ContentProvider.Delete(Android.Net.Uri,Android.Os.Bundle)">
+  Delete(Uri, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#delete(android.net.Uri,android.os.Bundle)">https://developer.android.com/reference/android/content/ContentProvider.html#delete(android.net.Uri,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Delete(Uri arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Delete_" data-uid="Android.Content.ContentProvider.Delete*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Delete_Android_Net_Uri_Java_Lang_String_Java_Lang_String___" data-uid="Android.Content.ContentProvider.Delete(Android.Net.Uri,Java.Lang.String,Java.Lang.String[])">
+  Delete(Uri, String, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#delete(android.net.Uri,java.lang.String,java.lang.String[])">https://developer.android.com/reference/android/content/ContentProvider.html#delete(android.net.Uri,java.lang.String,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Delete(Uri arg0, String arg1, String[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Dump_" data-uid="Android.Content.ContentProvider.Dump*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Dump_Java_Io_FileDescriptor_Java_Io_PrintWriter_Java_Lang_String___" data-uid="Android.Content.ContentProvider.Dump(Java.Io.FileDescriptor,Java.Io.PrintWriter,Java.Lang.String[])">
+  Dump(FileDescriptor, PrintWriter, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L460"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#dump(java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])">https://developer.android.com/reference/android/content/ContentProvider.html#dump(java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dump(FileDescriptor arg0, PrintWriter arg1, String[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Io.FileDescriptor.html">FileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Java.Io.FileDescriptor.html">FileDescriptor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.PrintWriter.html">PrintWriter</a></dt>
+    <dd><p><a class="xref" href="Java.Io.PrintWriter.html">PrintWriter</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_GetCallingAttributionSource_" data-uid="Android.Content.ContentProvider.GetCallingAttributionSource*"></a>
+
+  <h3 id="Android_Content_ContentProvider_GetCallingAttributionSource" data-uid="Android.Content.ContentProvider.GetCallingAttributionSource">
+  GetCallingAttributionSource()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#getCallingAttributionSource()">https://developer.android.com/reference/android/content/ContentProvider.html#getCallingAttributionSource()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttributionSource GetCallingAttributionSource()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.AttributionSource.html">AttributionSource</a></dt>
+    <dd><p><a class="xref" href="Android.Content.AttributionSource.html">AttributionSource</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_GetCallingAttributionTag_" data-uid="Android.Content.ContentProvider.GetCallingAttributionTag*"></a>
+
+  <h3 id="Android_Content_ContentProvider_GetCallingAttributionTag" data-uid="Android.Content.ContentProvider.GetCallingAttributionTag">
+  GetCallingAttributionTag()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#getCallingAttributionTag()">https://developer.android.com/reference/android/content/ContentProvider.html#getCallingAttributionTag()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetCallingAttributionTag()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_GetCallingPackage_" data-uid="Android.Content.ContentProvider.GetCallingPackage*"></a>
+
+  <h3 id="Android_Content_ContentProvider_GetCallingPackage" data-uid="Android.Content.ContentProvider.GetCallingPackage">
+  GetCallingPackage()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L359"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#getCallingPackage()">https://developer.android.com/reference/android/content/ContentProvider.html#getCallingPackage()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetCallingPackage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_GetCallingPackageUnchecked_" data-uid="Android.Content.ContentProvider.GetCallingPackageUnchecked*"></a>
+
+  <h3 id="Android_Content_ContentProvider_GetCallingPackageUnchecked" data-uid="Android.Content.ContentProvider.GetCallingPackageUnchecked">
+  GetCallingPackageUnchecked()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#getCallingPackageUnchecked()">https://developer.android.com/reference/android/content/ContentProvider.html#getCallingPackageUnchecked()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetCallingPackageUnchecked()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_GetContext_" data-uid="Android.Content.ContentProvider.GetContext*"></a>
+
+  <h3 id="Android_Content_ContentProvider_GetContext" data-uid="Android.Content.ContentProvider.GetContext">
+  GetContext()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#getContext()">https://developer.android.com/reference/android/content/ContentProvider.html#getContext()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Context GetContext()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_GetPathPermissions_" data-uid="Android.Content.ContentProvider.GetPathPermissions*"></a>
+
+  <h3 id="Android_Content_ContentProvider_GetPathPermissions" data-uid="Android.Content.ContentProvider.GetPathPermissions">
+  GetPathPermissions()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#getPathPermissions()">https://developer.android.com/reference/android/content/ContentProvider.html#getPathPermissions()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PathPermission[] GetPathPermissions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Pm.PathPermission.html">PathPermission</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Content.Pm.PathPermission.html">PathPermission</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_GetReadPermission_" data-uid="Android.Content.ContentProvider.GetReadPermission*"></a>
+
+  <h3 id="Android_Content_ContentProvider_GetReadPermission" data-uid="Android.Content.ContentProvider.GetReadPermission">
+  GetReadPermission()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#getReadPermission()">https://developer.android.com/reference/android/content/ContentProvider.html#getReadPermission()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetReadPermission()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_GetStreamTypes_" data-uid="Android.Content.ContentProvider.GetStreamTypes*"></a>
+
+  <h3 id="Android_Content_ContentProvider_GetStreamTypes_Android_Net_Uri_Java_Lang_String_" data-uid="Android.Content.ContentProvider.GetStreamTypes(Android.Net.Uri,Java.Lang.String)">
+  GetStreamTypes(Uri, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#getStreamTypes(android.net.Uri,java.lang.String)">https://developer.android.com/reference/android/content/ContentProvider.html#getStreamTypes(android.net.Uri,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String[] GetStreamTypes(Uri arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_GetType_" data-uid="Android.Content.ContentProvider.GetType*"></a>
+
+  <h3 id="Android_Content_ContentProvider_GetType_Android_Net_Uri_" data-uid="Android.Content.ContentProvider.GetType(Android.Net.Uri)">
+  GetType(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#getType(android.net.Uri)">https://developer.android.com/reference/android/content/ContentProvider.html#getType(android.net.Uri)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetType(Uri arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_GetTypeAnonymous_" data-uid="Android.Content.ContentProvider.GetTypeAnonymous*"></a>
+
+  <h3 id="Android_Content_ContentProvider_GetTypeAnonymous_Android_Net_Uri_" data-uid="Android.Content.ContentProvider.GetTypeAnonymous(Android.Net.Uri)">
+  GetTypeAnonymous(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#getTypeAnonymous(android.net.Uri)">https://developer.android.com/reference/android/content/ContentProvider.html#getTypeAnonymous(android.net.Uri)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetTypeAnonymous(Uri arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_GetWritePermission_" data-uid="Android.Content.ContentProvider.GetWritePermission*"></a>
+
+  <h3 id="Android_Content_ContentProvider_GetWritePermission" data-uid="Android.Content.ContentProvider.GetWritePermission">
+  GetWritePermission()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#getWritePermission()">https://developer.android.com/reference/android/content/ContentProvider.html#getWritePermission()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetWritePermission()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Insert_" data-uid="Android.Content.ContentProvider.Insert*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Insert_Android_Net_Uri_Android_Content_ContentValues_" data-uid="Android.Content.ContentProvider.Insert(Android.Net.Uri,Android.Content.ContentValues)">
+  Insert(Uri, ContentValues)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#insert(android.net.Uri,android.content.ContentValues)">https://developer.android.com/reference/android/content/ContentProvider.html#insert(android.net.Uri,android.content.ContentValues)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri Insert(Uri arg0, ContentValues arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Insert_" data-uid="Android.Content.ContentProvider.Insert*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Insert_Android_Net_Uri_Android_Content_ContentValues_Android_Os_Bundle_" data-uid="Android.Content.ContentProvider.Insert(Android.Net.Uri,Android.Content.ContentValues,Android.Os.Bundle)">
+  Insert(Uri, ContentValues, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#insert(android.net.Uri,android.content.ContentValues,android.os.Bundle)">https://developer.android.com/reference/android/content/ContentProvider.html#insert(android.net.Uri,android.content.ContentValues,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri Insert(Uri arg0, ContentValues arg1, Bundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_OnCallingPackageChanged_" data-uid="Android.Content.ContentProvider.OnCallingPackageChanged*"></a>
+
+  <h3 id="Android_Content_ContentProvider_OnCallingPackageChanged" data-uid="Android.Content.ContentProvider.OnCallingPackageChanged">
+  OnCallingPackageChanged()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#onCallingPackageChanged()">https://developer.android.com/reference/android/content/ContentProvider.html#onCallingPackageChanged()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCallingPackageChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_OnConfigurationChanged_" data-uid="Android.Content.ContentProvider.OnConfigurationChanged*"></a>
+
+  <h3 id="Android_Content_ContentProvider_OnConfigurationChanged_Android_Content_Res_Configuration_" data-uid="Android.Content.ContentProvider.OnConfigurationChanged(Android.Content.Res.Configuration)">
+  OnConfigurationChanged(Configuration)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#onConfigurationChanged(android.content.res.Configuration)">https://developer.android.com/reference/android/content/ContentProvider.html#onConfigurationChanged(android.content.res.Configuration)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConfigurationChanged(Configuration arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_OnCreate_" data-uid="Android.Content.ContentProvider.OnCreate*"></a>
+
+  <h3 id="Android_Content_ContentProvider_OnCreate" data-uid="Android.Content.ContentProvider.OnCreate">
+  OnCreate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#onCreate()">https://developer.android.com/reference/android/content/ContentProvider.html#onCreate()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnCreate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_OnLowMemory_" data-uid="Android.Content.ContentProvider.OnLowMemory*"></a>
+
+  <h3 id="Android_Content_ContentProvider_OnLowMemory" data-uid="Android.Content.ContentProvider.OnLowMemory">
+  OnLowMemory()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#onLowMemory()">https://developer.android.com/reference/android/content/ContentProvider.html#onLowMemory()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLowMemory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_OnTrimMemory_" data-uid="Android.Content.ContentProvider.OnTrimMemory*"></a>
+
+  <h3 id="Android_Content_ContentProvider_OnTrimMemory_System_Int32_" data-uid="Android.Content.ContentProvider.OnTrimMemory(System.Int32)">
+  OnTrimMemory(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#onTrimMemory(int)">https://developer.android.com/reference/android/content/ContentProvider.html#onTrimMemory(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTrimMemory(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_OpenAssetFile_" data-uid="Android.Content.ContentProvider.OpenAssetFile*"></a>
+
+  <h3 id="Android_Content_ContentProvider_OpenAssetFile_Android_Net_Uri_Java_Lang_String_" data-uid="Android.Content.ContentProvider.OpenAssetFile(Android.Net.Uri,Java.Lang.String)">
+  OpenAssetFile(Uri, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#openAssetFile(android.net.Uri,java.lang.String)">https://developer.android.com/reference/android/content/ContentProvider.html#openAssetFile(android.net.Uri,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetFileDescriptor OpenAssetFile(Uri arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_ContentProvider_OpenAssetFile_" data-uid="Android.Content.ContentProvider.OpenAssetFile*"></a>
+
+  <h3 id="Android_Content_ContentProvider_OpenAssetFile_Android_Net_Uri_Java_Lang_String_Android_Os_CancellationSignal_" data-uid="Android.Content.ContentProvider.OpenAssetFile(Android.Net.Uri,Java.Lang.String,Android.Os.CancellationSignal)">
+  OpenAssetFile(Uri, String, CancellationSignal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#openAssetFile(android.net.Uri,java.lang.String,android.os.CancellationSignal)">https://developer.android.com/reference/android/content/ContentProvider.html#openAssetFile(android.net.Uri,java.lang.String,android.os.CancellationSignal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetFileDescriptor OpenAssetFile(Uri arg0, String arg1, CancellationSignal arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_ContentProvider_OpenFile_" data-uid="Android.Content.ContentProvider.OpenFile*"></a>
+
+  <h3 id="Android_Content_ContentProvider_OpenFile_Android_Net_Uri_Java_Lang_String_" data-uid="Android.Content.ContentProvider.OpenFile(Android.Net.Uri,Java.Lang.String)">
+  OpenFile(Uri, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#openFile(android.net.Uri,java.lang.String)">https://developer.android.com/reference/android/content/ContentProvider.html#openFile(android.net.Uri,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParcelFileDescriptor OpenFile(Uri arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_ContentProvider_OpenFile_" data-uid="Android.Content.ContentProvider.OpenFile*"></a>
+
+  <h3 id="Android_Content_ContentProvider_OpenFile_Android_Net_Uri_Java_Lang_String_Android_Os_CancellationSignal_" data-uid="Android.Content.ContentProvider.OpenFile(Android.Net.Uri,Java.Lang.String,Android.Os.CancellationSignal)">
+  OpenFile(Uri, String, CancellationSignal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#openFile(android.net.Uri,java.lang.String,android.os.CancellationSignal)">https://developer.android.com/reference/android/content/ContentProvider.html#openFile(android.net.Uri,java.lang.String,android.os.CancellationSignal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParcelFileDescriptor OpenFile(Uri arg0, String arg1, CancellationSignal arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_ContentProvider_OpenPipeHelper_" data-uid="Android.Content.ContentProvider.OpenPipeHelper*"></a>
+
+  <h3 id="Android_Content_ContentProvider_OpenPipeHelper__1_Android_Net_Uri_Java_Lang_String_Android_Os_Bundle___0_Android_Content_ContentProvider_PipeDataWriter___0__" data-uid="Android.Content.ContentProvider.OpenPipeHelper``1(Android.Net.Uri,Java.Lang.String,Android.Os.Bundle,``0,Android.Content.ContentProvider.PipeDataWriter{``0})">
+  OpenPipeHelper&lt;T&gt;(Uri, String, Bundle, T, PipeDataWriter&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#openPipeHelper(android.net.Uri,java.lang.String,android.os.Bundle,java.lang.Object,android.content.ContentProvider.PipeDataWriter)">https://developer.android.com/reference/android/content/ContentProvider.html#openPipeHelper(android.net.Uri,java.lang.String,android.os.Bundle,java.lang.Object,android.content.ContentProvider.PipeDataWriter)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParcelFileDescriptor OpenPipeHelper&lt;T&gt;(Uri arg0, String arg1, Bundle arg2, T arg3, ContentProvider.PipeDataWriter&lt;T&gt; arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg3</code> <span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Content.ContentProvider.html">ContentProvider</a>.<a class="xref" href="Android.Content.ContentProvider.PipeDataWriter-1.html">PipeDataWriter</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Android.Content.ContentProvider.PipeDataWriter.html">ContentProvider.PipeDataWriter</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_ContentProvider_OpenTypedAssetFile_" data-uid="Android.Content.ContentProvider.OpenTypedAssetFile*"></a>
+
+  <h3 id="Android_Content_ContentProvider_OpenTypedAssetFile_Android_Net_Uri_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Content.ContentProvider.OpenTypedAssetFile(Android.Net.Uri,Java.Lang.String,Android.Os.Bundle)">
+  OpenTypedAssetFile(Uri, String, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#openTypedAssetFile(android.net.Uri,java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/content/ContentProvider.html#openTypedAssetFile(android.net.Uri,java.lang.String,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetFileDescriptor OpenTypedAssetFile(Uri arg0, String arg1, Bundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_ContentProvider_OpenTypedAssetFile_" data-uid="Android.Content.ContentProvider.OpenTypedAssetFile*"></a>
+
+  <h3 id="Android_Content_ContentProvider_OpenTypedAssetFile_Android_Net_Uri_Java_Lang_String_Android_Os_Bundle_Android_Os_CancellationSignal_" data-uid="Android.Content.ContentProvider.OpenTypedAssetFile(Android.Net.Uri,Java.Lang.String,Android.Os.Bundle,Android.Os.CancellationSignal)">
+  OpenTypedAssetFile(Uri, String, Bundle, CancellationSignal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#openTypedAssetFile(android.net.Uri,java.lang.String,android.os.Bundle,android.os.CancellationSignal)">https://developer.android.com/reference/android/content/ContentProvider.html#openTypedAssetFile(android.net.Uri,java.lang.String,android.os.Bundle,android.os.CancellationSignal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetFileDescriptor OpenTypedAssetFile(Uri arg0, String arg1, Bundle arg2, CancellationSignal arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_ContentProvider_Query_" data-uid="Android.Content.ContentProvider.Query*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Query_Android_Net_Uri_Java_Lang_String___Android_Os_Bundle_Android_Os_CancellationSignal_" data-uid="Android.Content.ContentProvider.Query(Android.Net.Uri,Java.Lang.String[],Android.Os.Bundle,Android.Os.CancellationSignal)">
+  Query(Uri, String[], Bundle, CancellationSignal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#query(android.net.Uri,java.lang.String[],android.os.Bundle,android.os.CancellationSignal)">https://developer.android.com/reference/android/content/ContentProvider.html#query(android.net.Uri,java.lang.String[],android.os.Bundle,android.os.CancellationSignal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor Query(Uri arg0, String[] arg1, Bundle arg2, CancellationSignal arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Query_" data-uid="Android.Content.ContentProvider.Query*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Query_Android_Net_Uri_Java_Lang_String___Java_Lang_String_Java_Lang_String___Java_Lang_String_" data-uid="Android.Content.ContentProvider.Query(Android.Net.Uri,Java.Lang.String[],Java.Lang.String,Java.Lang.String[],Java.Lang.String)">
+  Query(Uri, String[], String, String[], String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)">https://developer.android.com/reference/android/content/ContentProvider.html#query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor Query(Uri arg0, String[] arg1, String arg2, String[] arg3, String arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Query_" data-uid="Android.Content.ContentProvider.Query*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Query_Android_Net_Uri_Java_Lang_String___Java_Lang_String_Java_Lang_String___Java_Lang_String_Android_Os_CancellationSignal_" data-uid="Android.Content.ContentProvider.Query(Android.Net.Uri,Java.Lang.String[],Java.Lang.String,Java.Lang.String[],Java.Lang.String,Android.Os.CancellationSignal)">
+  Query(Uri, String[], String, String[], String, CancellationSignal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)">https://developer.android.com/reference/android/content/ContentProvider.html#query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor Query(Uri arg0, String[] arg1, String arg2, String[] arg3, String arg4, CancellationSignal arg5)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Refresh_" data-uid="Android.Content.ContentProvider.Refresh*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Refresh_Android_Net_Uri_Android_Os_Bundle_Android_Os_CancellationSignal_" data-uid="Android.Content.ContentProvider.Refresh(Android.Net.Uri,Android.Os.Bundle,Android.Os.CancellationSignal)">
+  Refresh(Uri, Bundle, CancellationSignal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#refresh(android.net.Uri,android.os.Bundle,android.os.CancellationSignal)">https://developer.android.com/reference/android/content/ContentProvider.html#refresh(android.net.Uri,android.os.Bundle,android.os.CancellationSignal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Refresh(Uri arg0, Bundle arg1, CancellationSignal arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_RequireContext_" data-uid="Android.Content.ContentProvider.RequireContext*"></a>
+
+  <h3 id="Android_Content_ContentProvider_RequireContext" data-uid="Android.Content.ContentProvider.RequireContext">
+  RequireContext()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#requireContext()">https://developer.android.com/reference/android/content/ContentProvider.html#requireContext()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Context RequireContext()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_RestoreCallingIdentity_" data-uid="Android.Content.ContentProvider.RestoreCallingIdentity*"></a>
+
+  <h3 id="Android_Content_ContentProvider_RestoreCallingIdentity_Android_Content_ContentProvider_CallingIdentity_" data-uid="Android.Content.ContentProvider.RestoreCallingIdentity(Android.Content.ContentProvider.CallingIdentity)">
+  RestoreCallingIdentity(CallingIdentity)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#restoreCallingIdentity(android.content.ContentProvider.CallingIdentity)">https://developer.android.com/reference/android/content/ContentProvider.html#restoreCallingIdentity(android.content.ContentProvider.CallingIdentity)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestoreCallingIdentity(ContentProvider.CallingIdentity arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentProvider.html">ContentProvider</a>.<a class="xref" href="Android.Content.ContentProvider.CallingIdentity.html">CallingIdentity</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentProvider.CallingIdentity.html">ContentProvider.CallingIdentity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Shutdown_" data-uid="Android.Content.ContentProvider.Shutdown*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Shutdown" data-uid="Android.Content.ContentProvider.Shutdown">
+  Shutdown()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L497"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#shutdown()">https://developer.android.com/reference/android/content/ContentProvider.html#shutdown()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Shutdown()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Uncanonicalize_" data-uid="Android.Content.ContentProvider.Uncanonicalize*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Uncanonicalize_Android_Net_Uri_" data-uid="Android.Content.ContentProvider.Uncanonicalize(Android.Net.Uri)">
+  Uncanonicalize(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#uncanonicalize(android.net.Uri)">https://developer.android.com/reference/android/content/ContentProvider.html#uncanonicalize(android.net.Uri)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri Uncanonicalize(Uri arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Update_" data-uid="Android.Content.ContentProvider.Update*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Update_Android_Net_Uri_Android_Content_ContentValues_Android_Os_Bundle_" data-uid="Android.Content.ContentProvider.Update(Android.Net.Uri,Android.Content.ContentValues,Android.Os.Bundle)">
+  Update(Uri, ContentValues, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#update(android.net.Uri,android.content.ContentValues,android.os.Bundle)">https://developer.android.com/reference/android/content/ContentProvider.html#update(android.net.Uri,android.content.ContentValues,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Update(Uri arg0, ContentValues arg1, Bundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_ContentProvider_Update_" data-uid="Android.Content.ContentProvider.Update*"></a>
+
+  <h3 id="Android_Content_ContentProvider_Update_Android_Net_Uri_Android_Content_ContentValues_Java_Lang_String_Java_Lang_String___" data-uid="Android.Content.ContentProvider.Update(Android.Net.Uri,Android.Content.ContentValues,Java.Lang.String,Java.Lang.String[])">
+  Update(Uri, ContentValues, String, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/ContentProvider.html#update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])">https://developer.android.com/reference/android/content/ContentProvider.html#update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Update(Uri arg0, ContentValues arg1, String arg2, String[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentValues.html">ContentValues</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/ContentProvider.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

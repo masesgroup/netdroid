@@ -1,0 +1,2070 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class DynamicsProcessing | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DynamicsProcessing | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_Audiofx_DynamicsProcessing.md&amp;value=---%0Auid%3A%20Android.Media.Audiofx.DynamicsProcessing%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.Audiofx.DynamicsProcessing">
+
+
+
+  <h1 id="Android_Media_Audiofx_DynamicsProcessing" data-uid="Android.Media.Audiofx.DynamicsProcessing" class="text-break">
+Class DynamicsProcessing  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a>.<a class="xref" href="Android.Media.Audiofx.html">Audiofx</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DynamicsProcessing : AudioEffect, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Media.Audiofx.AudioEffect.html">AudioEffect</a>&gt;</div>
+      <div><a class="xref" href="Android.Media.Audiofx.AudioEffect.html">AudioEffect</a></div>
+      <div><span class="xref">DynamicsProcessing</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ALREADY_EXISTS">AudioEffect.ALREADY_EXISTS</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_CONTENT_TYPE_GAME">AudioEffect.CONTENT_TYPE_GAME</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_CONTENT_TYPE_MOVIE">AudioEffect.CONTENT_TYPE_MOVIE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_CONTENT_TYPE_MUSIC">AudioEffect.CONTENT_TYPE_MUSIC</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_CONTENT_TYPE_VOICE">AudioEffect.CONTENT_TYPE_VOICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ERROR">AudioEffect.ERROR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ERROR_BAD_VALUE">AudioEffect.ERROR_BAD_VALUE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ERROR_DEAD_OBJECT">AudioEffect.ERROR_DEAD_OBJECT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ERROR_INVALID_OPERATION">AudioEffect.ERROR_INVALID_OPERATION</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ERROR_NO_INIT">AudioEffect.ERROR_NO_INIT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ERROR_NO_MEMORY">AudioEffect.ERROR_NO_MEMORY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_SUCCESS">AudioEffect.SUCCESS</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION">AudioEffect.ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL">AudioEffect.ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION">AudioEffect.ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_AUXILIARY">AudioEffect.EFFECT_AUXILIARY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_INSERT">AudioEffect.EFFECT_INSERT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_POST_PROCESSING">AudioEffect.EFFECT_POST_PROCESSING</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_PRE_PROCESSING">AudioEffect.EFFECT_PRE_PROCESSING</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EXTRA_AUDIO_SESSION">AudioEffect.EXTRA_AUDIO_SESSION</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EXTRA_CONTENT_TYPE">AudioEffect.EXTRA_CONTENT_TYPE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EXTRA_PACKAGE_NAME">AudioEffect.EXTRA_PACKAGE_NAME</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_AEC">AudioEffect.EFFECT_TYPE_AEC</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_AGC">AudioEffect.EFFECT_TYPE_AGC</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_BASS_BOOST">AudioEffect.EFFECT_TYPE_BASS_BOOST</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_DYNAMICS_PROCESSING">AudioEffect.EFFECT_TYPE_DYNAMICS_PROCESSING</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_ENV_REVERB">AudioEffect.EFFECT_TYPE_ENV_REVERB</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_EQUALIZER">AudioEffect.EFFECT_TYPE_EQUALIZER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_HAPTIC_GENERATOR">AudioEffect.EFFECT_TYPE_HAPTIC_GENERATOR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_LOUDNESS_ENHANCER">AudioEffect.EFFECT_TYPE_LOUDNESS_ENHANCER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_NS">AudioEffect.EFFECT_TYPE_NS</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_PRESET_REVERB">AudioEffect.EFFECT_TYPE_PRESET_REVERB</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_VIRTUALIZER">AudioEffect.EFFECT_TYPE_VIRTUALIZER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_QueryEffects">AudioEffect.QueryEffects()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_GetDescriptor">AudioEffect.GetDescriptor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_GetEnabled">AudioEffect.GetEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_HasControl">AudioEffect.HasControl()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_GetId">AudioEffect.GetId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_SetEnabled_System_Boolean_">AudioEffect.SetEnabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_Release">AudioEffect.Release()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_SetControlStatusListener_Android_Media_Audiofx_AudioEffect_OnControlStatusChangeListener_">AudioEffect.SetControlStatusListener(AudioEffect.OnControlStatusChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_SetEnableStatusListener_Android_Media_Audiofx_AudioEffect_OnEnableStatusChangeListener_">AudioEffect.SetEnableStatusListener(AudioEffect.OnEnableStatusChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioEffect&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioEffect&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;AudioEffect&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioEffect&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioEffect&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioEffect&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing__ctor_" data-uid="Android.Media.Audiofx.DynamicsProcessing.#ctor*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing__ctor" data-uid="Android.Media.Audiofx.DynamicsProcessing.#ctor">
+  DynamicsProcessing()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicsProcessing()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing__ctor_" data-uid="Android.Media.Audiofx.DynamicsProcessing.#ctor*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing__ctor_System_Int32_" data-uid="Android.Media.Audiofx.DynamicsProcessing.#ctor(System.Int32)">
+  DynamicsProcessing(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#%3Cinit%3E(int)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#%3Cinit%3E(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicsProcessing(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing__ctor_" data-uid="Android.Media.Audiofx.DynamicsProcessing.#ctor*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing__ctor_System_Int32_System_Int32_Android_Media_Audiofx_DynamicsProcessing_Config_" data-uid="Android.Media.Audiofx.DynamicsProcessing.#ctor(System.Int32,System.Int32,Android.Media.Audiofx.DynamicsProcessing.Config)">
+  DynamicsProcessing(int, int, Config)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#%3Cinit%3E(int,int,android.media.audiofx.DynamicsProcessing.Config)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#%3Cinit%3E(int,int,android.media.audiofx.DynamicsProcessing.Config)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicsProcessing(int arg0, int arg1, DynamicsProcessing.Config arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Config.html">Config</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Config.html">DynamicsProcessing.Config</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing__ctor_" data-uid="Android.Media.Audiofx.DynamicsProcessing.#ctor*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing__ctor_System_Object___" data-uid="Android.Media.Audiofx.DynamicsProcessing.#ctor(System.Object[])">
+  DynamicsProcessing(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicsProcessing(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_BridgeClassName_" data-uid="Android.Media.Audiofx.DynamicsProcessing.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_BridgeClassName" data-uid="Android.Media.Audiofx.DynamicsProcessing.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L509"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_IsBridgeAbstract_" data-uid="Android.Media.Audiofx.DynamicsProcessing.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_IsBridgeAbstract" data-uid="Android.Media.Audiofx.DynamicsProcessing.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L513"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_IsBridgeCloseable_" data-uid="Android.Media.Audiofx.DynamicsProcessing.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_IsBridgeCloseable" data-uid="Android.Media.Audiofx.DynamicsProcessing.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L517"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_IsBridgeInterface_" data-uid="Android.Media.Audiofx.DynamicsProcessing.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_IsBridgeInterface" data-uid="Android.Media.Audiofx.DynamicsProcessing.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L521"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_IsBridgeStatic_" data-uid="Android.Media.Audiofx.DynamicsProcessing.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_IsBridgeStatic" data-uid="Android.Media.Audiofx.DynamicsProcessing.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_VARIANT_FAVOR_FREQUENCY_RESOLUTION_" data-uid="Android.Media.Audiofx.DynamicsProcessing.VARIANT_FAVOR_FREQUENCY_RESOLUTION*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_VARIANT_FAVOR_FREQUENCY_RESOLUTION" data-uid="Android.Media.Audiofx.DynamicsProcessing.VARIANT_FAVOR_FREQUENCY_RESOLUTION">
+  VARIANT_FAVOR_FREQUENCY_RESOLUTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#VARIANT_FAVOR_FREQUENCY_RESOLUTION">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#VARIANT_FAVOR_FREQUENCY_RESOLUTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VARIANT_FAVOR_FREQUENCY_RESOLUTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_VARIANT_FAVOR_TIME_RESOLUTION_" data-uid="Android.Media.Audiofx.DynamicsProcessing.VARIANT_FAVOR_TIME_RESOLUTION*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_VARIANT_FAVOR_TIME_RESOLUTION" data-uid="Android.Media.Audiofx.DynamicsProcessing.VARIANT_FAVOR_TIME_RESOLUTION">
+  VARIANT_FAVOR_TIME_RESOLUTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#VARIANT_FAVOR_TIME_RESOLUTION">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#VARIANT_FAVOR_TIME_RESOLUTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VARIANT_FAVOR_TIME_RESOLUTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_GetChannelByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetChannelByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_GetChannelByChannelIndex_System_Int32_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetChannelByChannelIndex(System.Int32)">
+  GetChannelByChannelIndex(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getChannelByChannelIndex(int)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getChannelByChannelIndex(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicsProcessing.Channel GetChannelByChannelIndex(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Channel.html">DynamicsProcessing.Channel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_GetChannelCount_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetChannelCount*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_GetChannelCount" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetChannelCount">
+  GetChannelCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getChannelCount()">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getChannelCount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetChannelCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_GetConfig_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetConfig*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_GetConfig" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetConfig">
+  GetConfig()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getConfig()">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getConfig()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicsProcessing.Config GetConfig()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Config.html">Config</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Config.html">DynamicsProcessing.Config</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_GetInputGainByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetInputGainByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_GetInputGainByChannelIndex_System_Int32_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetInputGainByChannelIndex(System.Int32)">
+  GetInputGainByChannelIndex(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getInputGainByChannelIndex(int)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getInputGainByChannelIndex(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetInputGainByChannelIndex(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_GetLimiterByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetLimiterByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_GetLimiterByChannelIndex_System_Int32_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetLimiterByChannelIndex(System.Int32)">
+  GetLimiterByChannelIndex(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getLimiterByChannelIndex(int)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getLimiterByChannelIndex(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicsProcessing.Limiter GetLimiterByChannelIndex(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Limiter.html">Limiter</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Limiter.html">DynamicsProcessing.Limiter</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_GetMbcBandByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetMbcBandByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_GetMbcBandByChannelIndex_System_Int32_System_Int32_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetMbcBandByChannelIndex(System.Int32,System.Int32)">
+  GetMbcBandByChannelIndex(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getMbcBandByChannelIndex(int,int)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getMbcBandByChannelIndex(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicsProcessing.MbcBand GetMbcBandByChannelIndex(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.MbcBand.html">MbcBand</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.MbcBand.html">DynamicsProcessing.MbcBand</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_GetMbcByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetMbcByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_GetMbcByChannelIndex_System_Int32_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetMbcByChannelIndex(System.Int32)">
+  GetMbcByChannelIndex(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getMbcByChannelIndex(int)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getMbcByChannelIndex(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicsProcessing.Mbc GetMbcByChannelIndex(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Mbc.html">Mbc</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Mbc.html">DynamicsProcessing.Mbc</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_GetPostEqBandByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetPostEqBandByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_GetPostEqBandByChannelIndex_System_Int32_System_Int32_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetPostEqBandByChannelIndex(System.Int32,System.Int32)">
+  GetPostEqBandByChannelIndex(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getPostEqBandByChannelIndex(int,int)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getPostEqBandByChannelIndex(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicsProcessing.EqBand GetPostEqBandByChannelIndex(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.EqBand.html">EqBand</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.EqBand.html">DynamicsProcessing.EqBand</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_GetPostEqByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetPostEqByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_GetPostEqByChannelIndex_System_Int32_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetPostEqByChannelIndex(System.Int32)">
+  GetPostEqByChannelIndex(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getPostEqByChannelIndex(int)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getPostEqByChannelIndex(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicsProcessing.Eq GetPostEqByChannelIndex(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Eq.html">Eq</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Eq.html">DynamicsProcessing.Eq</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_GetPreEqBandByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetPreEqBandByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_GetPreEqBandByChannelIndex_System_Int32_System_Int32_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetPreEqBandByChannelIndex(System.Int32,System.Int32)">
+  GetPreEqBandByChannelIndex(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getPreEqBandByChannelIndex(int,int)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getPreEqBandByChannelIndex(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicsProcessing.EqBand GetPreEqBandByChannelIndex(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.EqBand.html">EqBand</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.EqBand.html">DynamicsProcessing.EqBand</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_GetPreEqByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetPreEqByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_GetPreEqByChannelIndex_System_Int32_" data-uid="Android.Media.Audiofx.DynamicsProcessing.GetPreEqByChannelIndex(System.Int32)">
+  GetPreEqByChannelIndex(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getPreEqByChannelIndex(int)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getPreEqByChannelIndex(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicsProcessing.Eq GetPreEqByChannelIndex(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Eq.html">Eq</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Eq.html">DynamicsProcessing.Eq</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetAllChannelsTo_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetAllChannelsTo*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetAllChannelsTo_Android_Media_Audiofx_DynamicsProcessing_Channel_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetAllChannelsTo(Android.Media.Audiofx.DynamicsProcessing.Channel)">
+  SetAllChannelsTo(Channel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setAllChannelsTo(android.media.audiofx.DynamicsProcessing.Channel)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setAllChannelsTo(android.media.audiofx.DynamicsProcessing.Channel)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAllChannelsTo(DynamicsProcessing.Channel arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Channel.html">DynamicsProcessing.Channel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetChannelTo_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetChannelTo*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetChannelTo_System_Int32_Android_Media_Audiofx_DynamicsProcessing_Channel_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetChannelTo(System.Int32,Android.Media.Audiofx.DynamicsProcessing.Channel)">
+  SetChannelTo(int, Channel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setChannelTo(int,android.media.audiofx.DynamicsProcessing.Channel)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setChannelTo(int,android.media.audiofx.DynamicsProcessing.Channel)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetChannelTo(int arg0, DynamicsProcessing.Channel arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Channel.html">DynamicsProcessing.Channel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetInputGainAllChannelsTo_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetInputGainAllChannelsTo*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetInputGainAllChannelsTo_System_Single_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetInputGainAllChannelsTo(System.Single)">
+  SetInputGainAllChannelsTo(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setInputGainAllChannelsTo(float)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setInputGainAllChannelsTo(float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInputGainAllChannelsTo(float arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetInputGainbyChannel_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetInputGainbyChannel*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetInputGainbyChannel_System_Int32_System_Single_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetInputGainbyChannel(System.Int32,System.Single)">
+  SetInputGainbyChannel(int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setInputGainbyChannel(int,float)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setInputGainbyChannel(int,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInputGainbyChannel(int arg0, float arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetLimiterAllChannelsTo_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetLimiterAllChannelsTo*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetLimiterAllChannelsTo_Android_Media_Audiofx_DynamicsProcessing_Limiter_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetLimiterAllChannelsTo(Android.Media.Audiofx.DynamicsProcessing.Limiter)">
+  SetLimiterAllChannelsTo(Limiter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setLimiterAllChannelsTo(android.media.audiofx.DynamicsProcessing.Limiter)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setLimiterAllChannelsTo(android.media.audiofx.DynamicsProcessing.Limiter)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLimiterAllChannelsTo(DynamicsProcessing.Limiter arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Limiter.html">Limiter</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Limiter.html">DynamicsProcessing.Limiter</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetLimiterByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetLimiterByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetLimiterByChannelIndex_System_Int32_Android_Media_Audiofx_DynamicsProcessing_Limiter_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetLimiterByChannelIndex(System.Int32,Android.Media.Audiofx.DynamicsProcessing.Limiter)">
+  SetLimiterByChannelIndex(int, Limiter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setLimiterByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Limiter)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setLimiterByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Limiter)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLimiterByChannelIndex(int arg0, DynamicsProcessing.Limiter arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Limiter.html">Limiter</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Limiter.html">DynamicsProcessing.Limiter</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetMbcAllChannelsTo_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetMbcAllChannelsTo*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetMbcAllChannelsTo_Android_Media_Audiofx_DynamicsProcessing_Mbc_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetMbcAllChannelsTo(Android.Media.Audiofx.DynamicsProcessing.Mbc)">
+  SetMbcAllChannelsTo(Mbc)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setMbcAllChannelsTo(android.media.audiofx.DynamicsProcessing.Mbc)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setMbcAllChannelsTo(android.media.audiofx.DynamicsProcessing.Mbc)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMbcAllChannelsTo(DynamicsProcessing.Mbc arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Mbc.html">Mbc</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Mbc.html">DynamicsProcessing.Mbc</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetMbcBandAllChannelsTo_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetMbcBandAllChannelsTo*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetMbcBandAllChannelsTo_System_Int32_Android_Media_Audiofx_DynamicsProcessing_MbcBand_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetMbcBandAllChannelsTo(System.Int32,Android.Media.Audiofx.DynamicsProcessing.MbcBand)">
+  SetMbcBandAllChannelsTo(int, MbcBand)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setMbcBandAllChannelsTo(int,android.media.audiofx.DynamicsProcessing.MbcBand)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setMbcBandAllChannelsTo(int,android.media.audiofx.DynamicsProcessing.MbcBand)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMbcBandAllChannelsTo(int arg0, DynamicsProcessing.MbcBand arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.MbcBand.html">MbcBand</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.MbcBand.html">DynamicsProcessing.MbcBand</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetMbcBandByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetMbcBandByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetMbcBandByChannelIndex_System_Int32_System_Int32_Android_Media_Audiofx_DynamicsProcessing_MbcBand_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetMbcBandByChannelIndex(System.Int32,System.Int32,Android.Media.Audiofx.DynamicsProcessing.MbcBand)">
+  SetMbcBandByChannelIndex(int, int, MbcBand)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setMbcBandByChannelIndex(int,int,android.media.audiofx.DynamicsProcessing.MbcBand)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setMbcBandByChannelIndex(int,int,android.media.audiofx.DynamicsProcessing.MbcBand)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMbcBandByChannelIndex(int arg0, int arg1, DynamicsProcessing.MbcBand arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.MbcBand.html">MbcBand</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.MbcBand.html">DynamicsProcessing.MbcBand</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetMbcByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetMbcByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetMbcByChannelIndex_System_Int32_Android_Media_Audiofx_DynamicsProcessing_Mbc_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetMbcByChannelIndex(System.Int32,Android.Media.Audiofx.DynamicsProcessing.Mbc)">
+  SetMbcByChannelIndex(int, Mbc)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setMbcByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Mbc)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setMbcByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Mbc)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMbcByChannelIndex(int arg0, DynamicsProcessing.Mbc arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Mbc.html">Mbc</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Mbc.html">DynamicsProcessing.Mbc</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetPostEqAllChannelsTo_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPostEqAllChannelsTo*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetPostEqAllChannelsTo_Android_Media_Audiofx_DynamicsProcessing_Eq_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPostEqAllChannelsTo(Android.Media.Audiofx.DynamicsProcessing.Eq)">
+  SetPostEqAllChannelsTo(Eq)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPostEqAllChannelsTo(android.media.audiofx.DynamicsProcessing.Eq)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPostEqAllChannelsTo(android.media.audiofx.DynamicsProcessing.Eq)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPostEqAllChannelsTo(DynamicsProcessing.Eq arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Eq.html">Eq</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Eq.html">DynamicsProcessing.Eq</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetPostEqBandAllChannelsTo_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPostEqBandAllChannelsTo*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetPostEqBandAllChannelsTo_System_Int32_Android_Media_Audiofx_DynamicsProcessing_EqBand_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPostEqBandAllChannelsTo(System.Int32,Android.Media.Audiofx.DynamicsProcessing.EqBand)">
+  SetPostEqBandAllChannelsTo(int, EqBand)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPostEqBandAllChannelsTo(int,android.media.audiofx.DynamicsProcessing.EqBand)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPostEqBandAllChannelsTo(int,android.media.audiofx.DynamicsProcessing.EqBand)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPostEqBandAllChannelsTo(int arg0, DynamicsProcessing.EqBand arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.EqBand.html">EqBand</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.EqBand.html">DynamicsProcessing.EqBand</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetPostEqBandByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPostEqBandByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetPostEqBandByChannelIndex_System_Int32_System_Int32_Android_Media_Audiofx_DynamicsProcessing_EqBand_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPostEqBandByChannelIndex(System.Int32,System.Int32,Android.Media.Audiofx.DynamicsProcessing.EqBand)">
+  SetPostEqBandByChannelIndex(int, int, EqBand)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPostEqBandByChannelIndex(int,int,android.media.audiofx.DynamicsProcessing.EqBand)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPostEqBandByChannelIndex(int,int,android.media.audiofx.DynamicsProcessing.EqBand)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPostEqBandByChannelIndex(int arg0, int arg1, DynamicsProcessing.EqBand arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.EqBand.html">EqBand</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.EqBand.html">DynamicsProcessing.EqBand</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetPostEqByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPostEqByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetPostEqByChannelIndex_System_Int32_Android_Media_Audiofx_DynamicsProcessing_Eq_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPostEqByChannelIndex(System.Int32,Android.Media.Audiofx.DynamicsProcessing.Eq)">
+  SetPostEqByChannelIndex(int, Eq)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPostEqByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Eq)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPostEqByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Eq)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPostEqByChannelIndex(int arg0, DynamicsProcessing.Eq arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Eq.html">Eq</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Eq.html">DynamicsProcessing.Eq</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetPreEqAllChannelsTo_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPreEqAllChannelsTo*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetPreEqAllChannelsTo_Android_Media_Audiofx_DynamicsProcessing_Eq_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPreEqAllChannelsTo(Android.Media.Audiofx.DynamicsProcessing.Eq)">
+  SetPreEqAllChannelsTo(Eq)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPreEqAllChannelsTo(android.media.audiofx.DynamicsProcessing.Eq)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPreEqAllChannelsTo(android.media.audiofx.DynamicsProcessing.Eq)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreEqAllChannelsTo(DynamicsProcessing.Eq arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Eq.html">Eq</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Eq.html">DynamicsProcessing.Eq</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetPreEqBandAllChannelsTo_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPreEqBandAllChannelsTo*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetPreEqBandAllChannelsTo_System_Int32_Android_Media_Audiofx_DynamicsProcessing_EqBand_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPreEqBandAllChannelsTo(System.Int32,Android.Media.Audiofx.DynamicsProcessing.EqBand)">
+  SetPreEqBandAllChannelsTo(int, EqBand)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPreEqBandAllChannelsTo(int,android.media.audiofx.DynamicsProcessing.EqBand)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPreEqBandAllChannelsTo(int,android.media.audiofx.DynamicsProcessing.EqBand)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreEqBandAllChannelsTo(int arg0, DynamicsProcessing.EqBand arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.EqBand.html">EqBand</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.EqBand.html">DynamicsProcessing.EqBand</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetPreEqBandByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPreEqBandByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetPreEqBandByChannelIndex_System_Int32_System_Int32_Android_Media_Audiofx_DynamicsProcessing_EqBand_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPreEqBandByChannelIndex(System.Int32,System.Int32,Android.Media.Audiofx.DynamicsProcessing.EqBand)">
+  SetPreEqBandByChannelIndex(int, int, EqBand)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPreEqBandByChannelIndex(int,int,android.media.audiofx.DynamicsProcessing.EqBand)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPreEqBandByChannelIndex(int,int,android.media.audiofx.DynamicsProcessing.EqBand)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreEqBandByChannelIndex(int arg0, int arg1, DynamicsProcessing.EqBand arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.EqBand.html">EqBand</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.EqBand.html">DynamicsProcessing.EqBand</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_DynamicsProcessing_SetPreEqByChannelIndex_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPreEqByChannelIndex*"></a>
+
+  <h3 id="Android_Media_Audiofx_DynamicsProcessing_SetPreEqByChannelIndex_System_Int32_Android_Media_Audiofx_DynamicsProcessing_Eq_" data-uid="Android.Media.Audiofx.DynamicsProcessing.SetPreEqByChannelIndex(System.Int32,Android.Media.Audiofx.DynamicsProcessing.Eq)">
+  SetPreEqByChannelIndex(int, Eq)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPreEqByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Eq)">https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPreEqByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Eq)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreEqByChannelIndex(int arg0, DynamicsProcessing.Eq arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.html">DynamicsProcessing</a>.<a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Eq.html">Eq</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.DynamicsProcessing.Eq.html">DynamicsProcessing.Eq</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/DynamicsProcessing.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

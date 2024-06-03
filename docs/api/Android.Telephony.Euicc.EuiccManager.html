@@ -1,0 +1,2531 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class EuiccManager | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EuiccManager | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Telephony_Euicc_EuiccManager.md&amp;value=---%0Auid%3A%20Android.Telephony.Euicc.EuiccManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Telephony.Euicc.EuiccManager">
+
+
+
+  <h1 id="Android_Telephony_Euicc_EuiccManager" data-uid="Android.Telephony.Euicc.EuiccManager" class="text-break">
+Class EuiccManager  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Telephony.html">Telephony</a>.<a class="xref" href="Android.Telephony.Euicc.html">Euicc</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EuiccManager : JVMBridgeBase&lt;EuiccManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Telephony.Euicc.EuiccManager.html">EuiccManager</a>&gt;</div>
+      <div><span class="xref">EuiccManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EuiccManager&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EuiccManager&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EuiccManager&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EuiccManager&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EuiccManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EuiccManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EuiccManager&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EuiccManager&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;EuiccManager&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EuiccManager&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EuiccManager&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EuiccManager&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EuiccManager&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager__ctor_" data-uid="Android.Telephony.Euicc.EuiccManager.#ctor*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager__ctor" data-uid="Android.Telephony.Euicc.EuiccManager.#ctor">
+  EuiccManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EuiccManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager__ctor_" data-uid="Android.Telephony.Euicc.EuiccManager.#ctor*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager__ctor_System_Object___" data-uid="Android.Telephony.Euicc.EuiccManager.#ctor(System.Object[])">
+  EuiccManager(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EuiccManager(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ACTION_MANAGE_EMBEDDED_SUBSCRIPTIONS_" data-uid="Android.Telephony.Euicc.EuiccManager.ACTION_MANAGE_EMBEDDED_SUBSCRIPTIONS*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ACTION_MANAGE_EMBEDDED_SUBSCRIPTIONS" data-uid="Android.Telephony.Euicc.EuiccManager.ACTION_MANAGE_EMBEDDED_SUBSCRIPTIONS">
+  ACTION_MANAGE_EMBEDDED_SUBSCRIPTIONS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ACTION_MANAGE_EMBEDDED_SUBSCRIPTIONS">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ACTION_MANAGE_EMBEDDED_SUBSCRIPTIONS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_MANAGE_EMBEDDED_SUBSCRIPTIONS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ACTION_NOTIFY_CARRIER_SETUP_INCOMPLETE_" data-uid="Android.Telephony.Euicc.EuiccManager.ACTION_NOTIFY_CARRIER_SETUP_INCOMPLETE*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ACTION_NOTIFY_CARRIER_SETUP_INCOMPLETE" data-uid="Android.Telephony.Euicc.EuiccManager.ACTION_NOTIFY_CARRIER_SETUP_INCOMPLETE">
+  ACTION_NOTIFY_CARRIER_SETUP_INCOMPLETE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ACTION_NOTIFY_CARRIER_SETUP_INCOMPLETE">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ACTION_NOTIFY_CARRIER_SETUP_INCOMPLETE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_NOTIFY_CARRIER_SETUP_INCOMPLETE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ACTION_START_EUICC_ACTIVATION_" data-uid="Android.Telephony.Euicc.EuiccManager.ACTION_START_EUICC_ACTIVATION*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ACTION_START_EUICC_ACTIVATION" data-uid="Android.Telephony.Euicc.EuiccManager.ACTION_START_EUICC_ACTIVATION">
+  ACTION_START_EUICC_ACTIVATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ACTION_START_EUICC_ACTIVATION">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ACTION_START_EUICC_ACTIVATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_START_EUICC_ACTIVATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_BridgeClassName_" data-uid="Android.Telephony.Euicc.EuiccManager.BridgeClassName*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_BridgeClassName" data-uid="Android.Telephony.Euicc.EuiccManager.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_EMBEDDED_SUBSCRIPTION_RESULT_ERROR_" data-uid="Android.Telephony.Euicc.EuiccManager.EMBEDDED_SUBSCRIPTION_RESULT_ERROR*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_EMBEDDED_SUBSCRIPTION_RESULT_ERROR" data-uid="Android.Telephony.Euicc.EuiccManager.EMBEDDED_SUBSCRIPTION_RESULT_ERROR">
+  EMBEDDED_SUBSCRIPTION_RESULT_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EMBEDDED_SUBSCRIPTION_RESULT_ERROR">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EMBEDDED_SUBSCRIPTION_RESULT_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EMBEDDED_SUBSCRIPTION_RESULT_ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_EMBEDDED_SUBSCRIPTION_RESULT_OK_" data-uid="Android.Telephony.Euicc.EuiccManager.EMBEDDED_SUBSCRIPTION_RESULT_OK*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_EMBEDDED_SUBSCRIPTION_RESULT_OK" data-uid="Android.Telephony.Euicc.EuiccManager.EMBEDDED_SUBSCRIPTION_RESULT_OK">
+  EMBEDDED_SUBSCRIPTION_RESULT_OK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EMBEDDED_SUBSCRIPTION_RESULT_OK">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EMBEDDED_SUBSCRIPTION_RESULT_OK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EMBEDDED_SUBSCRIPTION_RESULT_OK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR_" data-uid="Android.Telephony.Euicc.EuiccManager.EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR" data-uid="Android.Telephony.Euicc.EuiccManager.EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR">
+  EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_ADDRESS_MISSING_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_ADDRESS_MISSING*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_ADDRESS_MISSING" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_ADDRESS_MISSING">
+  ERROR_ADDRESS_MISSING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_ADDRESS_MISSING">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_ADDRESS_MISSING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_ADDRESS_MISSING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_CARRIER_LOCKED_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_CARRIER_LOCKED*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_CARRIER_LOCKED" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_CARRIER_LOCKED">
+  ERROR_CARRIER_LOCKED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_CARRIER_LOCKED">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_CARRIER_LOCKED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CARRIER_LOCKED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_CERTIFICATE_ERROR_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_CERTIFICATE_ERROR*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_CERTIFICATE_ERROR" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_CERTIFICATE_ERROR">
+  ERROR_CERTIFICATE_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_CERTIFICATE_ERROR">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_CERTIFICATE_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CERTIFICATE_ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_CONNECTION_ERROR_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_CONNECTION_ERROR*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_CONNECTION_ERROR" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_CONNECTION_ERROR">
+  ERROR_CONNECTION_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_CONNECTION_ERROR">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_CONNECTION_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CONNECTION_ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_DISALLOWED_BY_PPR_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_DISALLOWED_BY_PPR*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_DISALLOWED_BY_PPR" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_DISALLOWED_BY_PPR">
+  ERROR_DISALLOWED_BY_PPR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_DISALLOWED_BY_PPR">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_DISALLOWED_BY_PPR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_DISALLOWED_BY_PPR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_EUICC_INSUFFICIENT_MEMORY_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_EUICC_INSUFFICIENT_MEMORY*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_EUICC_INSUFFICIENT_MEMORY" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_EUICC_INSUFFICIENT_MEMORY">
+  ERROR_EUICC_INSUFFICIENT_MEMORY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_EUICC_INSUFFICIENT_MEMORY">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_EUICC_INSUFFICIENT_MEMORY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_EUICC_INSUFFICIENT_MEMORY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_EUICC_MISSING_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_EUICC_MISSING*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_EUICC_MISSING" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_EUICC_MISSING">
+  ERROR_EUICC_MISSING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_EUICC_MISSING">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_EUICC_MISSING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_EUICC_MISSING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_INCOMPATIBLE_CARRIER_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_INCOMPATIBLE_CARRIER*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_INCOMPATIBLE_CARRIER" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_INCOMPATIBLE_CARRIER">
+  ERROR_INCOMPATIBLE_CARRIER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_INCOMPATIBLE_CARRIER">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_INCOMPATIBLE_CARRIER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_INCOMPATIBLE_CARRIER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_INSTALL_PROFILE_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_INSTALL_PROFILE*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_INSTALL_PROFILE" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_INSTALL_PROFILE">
+  ERROR_INSTALL_PROFILE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_INSTALL_PROFILE">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_INSTALL_PROFILE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_INSTALL_PROFILE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_INVALID_ACTIVATION_CODE_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_INVALID_ACTIVATION_CODE*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_INVALID_ACTIVATION_CODE" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_INVALID_ACTIVATION_CODE">
+  ERROR_INVALID_ACTIVATION_CODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_INVALID_ACTIVATION_CODE">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_INVALID_ACTIVATION_CODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_INVALID_ACTIVATION_CODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_INVALID_CONFIRMATION_CODE_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_INVALID_CONFIRMATION_CODE*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_INVALID_CONFIRMATION_CODE" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_INVALID_CONFIRMATION_CODE">
+  ERROR_INVALID_CONFIRMATION_CODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_INVALID_CONFIRMATION_CODE">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_INVALID_CONFIRMATION_CODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_INVALID_CONFIRMATION_CODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_INVALID_PORT_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_INVALID_PORT*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_INVALID_PORT" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_INVALID_PORT">
+  ERROR_INVALID_PORT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_INVALID_PORT">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_INVALID_PORT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_INVALID_PORT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_INVALID_RESPONSE_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_INVALID_RESPONSE*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_INVALID_RESPONSE" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_INVALID_RESPONSE">
+  ERROR_INVALID_RESPONSE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_INVALID_RESPONSE">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_INVALID_RESPONSE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_INVALID_RESPONSE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_NO_PROFILES_AVAILABLE_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_NO_PROFILES_AVAILABLE*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_NO_PROFILES_AVAILABLE" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_NO_PROFILES_AVAILABLE">
+  ERROR_NO_PROFILES_AVAILABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_NO_PROFILES_AVAILABLE">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_NO_PROFILES_AVAILABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_NO_PROFILES_AVAILABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_OPERATION_BUSY_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_OPERATION_BUSY*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_OPERATION_BUSY" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_OPERATION_BUSY">
+  ERROR_OPERATION_BUSY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_OPERATION_BUSY">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_OPERATION_BUSY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_OPERATION_BUSY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_SIM_MISSING_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_SIM_MISSING*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_SIM_MISSING" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_SIM_MISSING">
+  ERROR_SIM_MISSING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_SIM_MISSING">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_SIM_MISSING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_SIM_MISSING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_TIME_OUT_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_TIME_OUT*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_TIME_OUT" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_TIME_OUT">
+  ERROR_TIME_OUT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_TIME_OUT">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_TIME_OUT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_TIME_OUT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_ERROR_UNSUPPORTED_VERSION_" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_UNSUPPORTED_VERSION*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_ERROR_UNSUPPORTED_VERSION" data-uid="Android.Telephony.Euicc.EuiccManager.ERROR_UNSUPPORTED_VERSION">
+  ERROR_UNSUPPORTED_VERSION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_UNSUPPORTED_VERSION">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#ERROR_UNSUPPORTED_VERSION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_UNSUPPORTED_VERSION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE_" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE">
+  EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_EXTRA_EMBEDDED_SUBSCRIPTION_DOWNLOADABLE_SUBSCRIPTION_" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_EMBEDDED_SUBSCRIPTION_DOWNLOADABLE_SUBSCRIPTION*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_EXTRA_EMBEDDED_SUBSCRIPTION_DOWNLOADABLE_SUBSCRIPTION" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_EMBEDDED_SUBSCRIPTION_DOWNLOADABLE_SUBSCRIPTION">
+  EXTRA_EMBEDDED_SUBSCRIPTION_DOWNLOADABLE_SUBSCRIPTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EXTRA_EMBEDDED_SUBSCRIPTION_DOWNLOADABLE_SUBSCRIPTION">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EXTRA_EMBEDDED_SUBSCRIPTION_DOWNLOADABLE_SUBSCRIPTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_EMBEDDED_SUBSCRIPTION_DOWNLOADABLE_SUBSCRIPTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_EXTRA_EMBEDDED_SUBSCRIPTION_ERROR_CODE_" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_EMBEDDED_SUBSCRIPTION_ERROR_CODE*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_EXTRA_EMBEDDED_SUBSCRIPTION_ERROR_CODE" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_EMBEDDED_SUBSCRIPTION_ERROR_CODE">
+  EXTRA_EMBEDDED_SUBSCRIPTION_ERROR_CODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EXTRA_EMBEDDED_SUBSCRIPTION_ERROR_CODE">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EXTRA_EMBEDDED_SUBSCRIPTION_ERROR_CODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_EMBEDDED_SUBSCRIPTION_ERROR_CODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_EXTRA_EMBEDDED_SUBSCRIPTION_OPERATION_CODE_" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_EMBEDDED_SUBSCRIPTION_OPERATION_CODE*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_EXTRA_EMBEDDED_SUBSCRIPTION_OPERATION_CODE" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_EMBEDDED_SUBSCRIPTION_OPERATION_CODE">
+  EXTRA_EMBEDDED_SUBSCRIPTION_OPERATION_CODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EXTRA_EMBEDDED_SUBSCRIPTION_OPERATION_CODE">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EXTRA_EMBEDDED_SUBSCRIPTION_OPERATION_CODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_EMBEDDED_SUBSCRIPTION_OPERATION_CODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_REASON_CODE_" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_REASON_CODE*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_REASON_CODE" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_REASON_CODE">
+  EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_REASON_CODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_REASON_CODE">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_REASON_CODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_REASON_CODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_SUBJECT_CODE_" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_SUBJECT_CODE*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_SUBJECT_CODE" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_SUBJECT_CODE">
+  EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_SUBJECT_CODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_SUBJECT_CODE">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_SUBJECT_CODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_EMBEDDED_SUBSCRIPTION_SMDX_SUBJECT_CODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_EXTRA_USE_QR_SCANNER_" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_USE_QR_SCANNER*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_EXTRA_USE_QR_SCANNER" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_USE_QR_SCANNER">
+  EXTRA_USE_QR_SCANNER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EXTRA_USE_QR_SCANNER">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EXTRA_USE_QR_SCANNER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_USE_QR_SCANNER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_IsBridgeAbstract_" data-uid="Android.Telephony.Euicc.EuiccManager.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_IsBridgeAbstract" data-uid="Android.Telephony.Euicc.EuiccManager.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_IsBridgeCloseable_" data-uid="Android.Telephony.Euicc.EuiccManager.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_IsBridgeCloseable" data-uid="Android.Telephony.Euicc.EuiccManager.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_IsBridgeInterface_" data-uid="Android.Telephony.Euicc.EuiccManager.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_IsBridgeInterface" data-uid="Android.Telephony.Euicc.EuiccManager.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_IsBridgeStatic_" data-uid="Android.Telephony.Euicc.EuiccManager.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_IsBridgeStatic" data-uid="Android.Telephony.Euicc.EuiccManager.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_META_DATA_CARRIER_ICON_" data-uid="Android.Telephony.Euicc.EuiccManager.META_DATA_CARRIER_ICON*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_META_DATA_CARRIER_ICON" data-uid="Android.Telephony.Euicc.EuiccManager.META_DATA_CARRIER_ICON">
+  META_DATA_CARRIER_ICON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#META_DATA_CARRIER_ICON">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#META_DATA_CARRIER_ICON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String META_DATA_CARRIER_ICON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_OPERATION_APDU_" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_APDU*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_OPERATION_APDU" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_APDU">
+  OPERATION_APDU
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_APDU">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_APDU</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OPERATION_APDU { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_OPERATION_DOWNLOAD_" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_DOWNLOAD*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_OPERATION_DOWNLOAD" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_DOWNLOAD">
+  OPERATION_DOWNLOAD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_DOWNLOAD">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_DOWNLOAD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OPERATION_DOWNLOAD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_OPERATION_EUICC_CARD_" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_EUICC_CARD*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_OPERATION_EUICC_CARD" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_EUICC_CARD">
+  OPERATION_EUICC_CARD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_EUICC_CARD">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_EUICC_CARD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OPERATION_EUICC_CARD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_OPERATION_EUICC_GSMA_" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_EUICC_GSMA*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_OPERATION_EUICC_GSMA" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_EUICC_GSMA">
+  OPERATION_EUICC_GSMA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_EUICC_GSMA">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_EUICC_GSMA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OPERATION_EUICC_GSMA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_OPERATION_HTTP_" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_HTTP*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_OPERATION_HTTP" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_HTTP">
+  OPERATION_HTTP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_HTTP">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_HTTP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OPERATION_HTTP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_OPERATION_METADATA_" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_METADATA*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_OPERATION_METADATA" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_METADATA">
+  OPERATION_METADATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_METADATA">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_METADATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OPERATION_METADATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_OPERATION_SIM_SLOT_" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_SIM_SLOT*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_OPERATION_SIM_SLOT" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_SIM_SLOT">
+  OPERATION_SIM_SLOT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_SIM_SLOT">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_SIM_SLOT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OPERATION_SIM_SLOT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_OPERATION_SMDX_" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_SMDX*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_OPERATION_SMDX" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_SMDX">
+  OPERATION_SMDX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_SMDX">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_SMDX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OPERATION_SMDX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_OPERATION_SMDX_SUBJECT_REASON_CODE_" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_SMDX_SUBJECT_REASON_CODE*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_OPERATION_SMDX_SUBJECT_REASON_CODE" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_SMDX_SUBJECT_REASON_CODE">
+  OPERATION_SMDX_SUBJECT_REASON_CODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_SMDX_SUBJECT_REASON_CODE">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_SMDX_SUBJECT_REASON_CODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OPERATION_SMDX_SUBJECT_REASON_CODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_OPERATION_SWITCH_" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_SWITCH*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_OPERATION_SWITCH" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_SWITCH">
+  OPERATION_SWITCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_SWITCH">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_SWITCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OPERATION_SWITCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_OPERATION_SYSTEM_" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_SYSTEM*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_OPERATION_SYSTEM" data-uid="Android.Telephony.Euicc.EuiccManager.OPERATION_SYSTEM">
+  OPERATION_SYSTEM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_SYSTEM">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#OPERATION_SYSTEM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OPERATION_SYSTEM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_CreateForCardId_" data-uid="Android.Telephony.Euicc.EuiccManager.CreateForCardId*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_CreateForCardId_System_Int32_" data-uid="Android.Telephony.Euicc.EuiccManager.CreateForCardId(System.Int32)">
+  CreateForCardId(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#createForCardId(int)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#createForCardId(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EuiccManager CreateForCardId(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Telephony.Euicc.EuiccManager.html">EuiccManager</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Euicc.EuiccManager.html">EuiccManager</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_DeleteSubscription_" data-uid="Android.Telephony.Euicc.EuiccManager.DeleteSubscription*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_DeleteSubscription_System_Int32_Android_App_PendingIntent_" data-uid="Android.Telephony.Euicc.EuiccManager.DeleteSubscription(System.Int32,Android.App.PendingIntent)">
+  DeleteSubscription(int, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#deleteSubscription(int,android.app.PendingIntent)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#deleteSubscription(int,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteSubscription(int arg0, PendingIntent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_DownloadSubscription_" data-uid="Android.Telephony.Euicc.EuiccManager.DownloadSubscription*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_DownloadSubscription_Android_Telephony_Euicc_DownloadableSubscription_System_Boolean_Android_App_PendingIntent_" data-uid="Android.Telephony.Euicc.EuiccManager.DownloadSubscription(Android.Telephony.Euicc.DownloadableSubscription,System.Boolean,Android.App.PendingIntent)">
+  DownloadSubscription(DownloadableSubscription, bool, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#downloadSubscription(android.telephony.euicc.DownloadableSubscription,boolean,android.app.PendingIntent)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#downloadSubscription(android.telephony.euicc.DownloadableSubscription,boolean,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DownloadSubscription(DownloadableSubscription arg0, bool arg1, PendingIntent arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telephony.Euicc.DownloadableSubscription.html">DownloadableSubscription</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Euicc.DownloadableSubscription.html">DownloadableSubscription</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_GetEid_" data-uid="Android.Telephony.Euicc.EuiccManager.GetEid*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_GetEid" data-uid="Android.Telephony.Euicc.EuiccManager.GetEid">
+  GetEid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getEid()">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getEid()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetEid()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_GetEuiccInfo_" data-uid="Android.Telephony.Euicc.EuiccManager.GetEuiccInfo*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_GetEuiccInfo" data-uid="Android.Telephony.Euicc.EuiccManager.GetEuiccInfo">
+  GetEuiccInfo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getEuiccInfo()">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getEuiccInfo()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EuiccInfo GetEuiccInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Telephony.Euicc.EuiccInfo.html">EuiccInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Telephony.Euicc.EuiccInfo.html">EuiccInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_IsEnabled_" data-uid="Android.Telephony.Euicc.EuiccManager.IsEnabled*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_IsEnabled" data-uid="Android.Telephony.Euicc.EuiccManager.IsEnabled">
+  IsEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#isEnabled()">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#isEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_IsSimPortAvailable_" data-uid="Android.Telephony.Euicc.EuiccManager.IsSimPortAvailable*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_IsSimPortAvailable_System_Int32_" data-uid="Android.Telephony.Euicc.EuiccManager.IsSimPortAvailable(System.Int32)">
+  IsSimPortAvailable(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#isSimPortAvailable(int)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#isSimPortAvailable(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSimPortAvailable(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_StartResolutionActivity_" data-uid="Android.Telephony.Euicc.EuiccManager.StartResolutionActivity*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_StartResolutionActivity_Android_App_Activity_System_Int32_Android_Content_Intent_Android_App_PendingIntent_" data-uid="Android.Telephony.Euicc.EuiccManager.StartResolutionActivity(Android.App.Activity,System.Int32,Android.Content.Intent,Android.App.PendingIntent)">
+  StartResolutionActivity(Activity, int, Intent, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#startResolutionActivity(android.app.Activity,int,android.content.Intent,android.app.PendingIntent)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#startResolutionActivity(android.app.Activity,int,android.content.Intent,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartResolutionActivity(Activity arg0, int arg1, Intent arg2, PendingIntent arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.IntentSender.html">IntentSender</a>.<a class="xref" href="Android.Content.IntentSender.SendIntentException.html">SendIntentException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_SwitchToSubscription_" data-uid="Android.Telephony.Euicc.EuiccManager.SwitchToSubscription*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_SwitchToSubscription_System_Int32_Android_App_PendingIntent_" data-uid="Android.Telephony.Euicc.EuiccManager.SwitchToSubscription(System.Int32,Android.App.PendingIntent)">
+  SwitchToSubscription(int, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#switchToSubscription(int,android.app.PendingIntent)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#switchToSubscription(int,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchToSubscription(int arg0, PendingIntent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_SwitchToSubscription_" data-uid="Android.Telephony.Euicc.EuiccManager.SwitchToSubscription*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_SwitchToSubscription_System_Int32_System_Int32_Android_App_PendingIntent_" data-uid="Android.Telephony.Euicc.EuiccManager.SwitchToSubscription(System.Int32,System.Int32,Android.App.PendingIntent)">
+  SwitchToSubscription(int, int, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#switchToSubscription(int,int,android.app.PendingIntent)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#switchToSubscription(int,int,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchToSubscription(int arg0, int arg1, PendingIntent arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_Euicc_EuiccManager_UpdateSubscriptionNickname_" data-uid="Android.Telephony.Euicc.EuiccManager.UpdateSubscriptionNickname*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_UpdateSubscriptionNickname_System_Int32_Java_Lang_String_Android_App_PendingIntent_" data-uid="Android.Telephony.Euicc.EuiccManager.UpdateSubscriptionNickname(System.Int32,Java.Lang.String,Android.App.PendingIntent)">
+  UpdateSubscriptionNickname(int, String, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L404"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#updateSubscriptionNickname(int,java.lang.String,android.app.PendingIntent)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#updateSubscriptionNickname(int,java.lang.String,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateSubscriptionNickname(int arg0, String arg1, PendingIntent arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

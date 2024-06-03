@@ -1,0 +1,2897 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class CompletionStage&lt;T&gt; | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CompletionStage&lt;T&gt; | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Java_Util_Concurrent_CompletionStage_1.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.CompletionStage%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Java.Util.Concurrent.CompletionStage`1">
+
+
+
+  <h1 id="Java_Util_Concurrent_CompletionStage_1" data-uid="Java.Util.Concurrent.CompletionStage`1" class="text-break">
+Class CompletionStage&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L496"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Java.html">Java</a>.<a class="xref" href="Java.Util.html">Util</a>.<a class="xref" href="Java.Util.Concurrent.html">Concurrent</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CompletionStage&lt;T&gt; : JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ICompletionStage&lt;T&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;T&gt;&gt;</div>
+      <div><span class="xref">CompletionStage&lt;T&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Util.Concurrent.ICompletionStage-1.html">ICompletionStage</a>&lt;T&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;CompletionStage&lt;T&gt;&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1__ctor_" data-uid="Java.Util.Concurrent.CompletionStage`1.#ctor*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1__ctor" data-uid="Java.Util.Concurrent.CompletionStage`1.#ctor">
+  CompletionStage()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L779"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;CompletionStage class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public CompletionStage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1__ctor_" data-uid="Java.Util.Concurrent.CompletionStage`1.#ctor*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1__ctor_System_Object___" data-uid="Java.Util.Concurrent.CompletionStage`1.#ctor(System.Object[])">
+  CompletionStage(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L784"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;CompletionStage class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public CompletionStage(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_BridgeClassName_" data-uid="Java.Util.Concurrent.CompletionStage`1.BridgeClassName*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_BridgeClassName" data-uid="Java.Util.Concurrent.CompletionStage`1.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L792"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_IsBridgeAbstract_" data-uid="Java.Util.Concurrent.CompletionStage`1.IsBridgeAbstract*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_IsBridgeAbstract" data-uid="Java.Util.Concurrent.CompletionStage`1.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L796"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_IsBridgeCloseable_" data-uid="Java.Util.Concurrent.CompletionStage`1.IsBridgeCloseable*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_IsBridgeCloseable" data-uid="Java.Util.Concurrent.CompletionStage`1.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L800"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_IsBridgeInterface_" data-uid="Java.Util.Concurrent.CompletionStage`1.IsBridgeInterface*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_IsBridgeInterface" data-uid="Java.Util.Concurrent.CompletionStage`1.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L804"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_IsBridgeStatic_" data-uid="Java.Util.Concurrent.CompletionStage`1.IsBridgeStatic*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_IsBridgeStatic" data-uid="Java.Util.Concurrent.CompletionStage`1.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L808"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_AcceptEitherAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.AcceptEitherAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_AcceptEitherAsync__2_Java_Util_Concurrent_CompletionStage___0__Java_Util_Function_Consumer___1__" data-uid="Java.Util.Concurrent.CompletionStage`1.AcceptEitherAsync``2(Java.Util.Concurrent.CompletionStage{``0},Java.Util.Function.Consumer{``1})">
+  AcceptEitherAsync&lt;Arg0ExtendsT, Arg1objectSuperT&gt;(CompletionStage&lt;Arg0ExtendsT&gt;, Consumer&lt;Arg1objectSuperT&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L803"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; AcceptEitherAsync&lt;Arg0ExtendsT, Arg1objectSuperT&gt;(CompletionStage&lt;Arg0ExtendsT&gt; arg0, Consumer&lt;Arg1objectSuperT&gt; arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;Arg0ExtendsT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;Arg1objectSuperT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_AcceptEitherAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.AcceptEitherAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_AcceptEitherAsync__2_Java_Util_Concurrent_CompletionStage___0__Java_Util_Function_Consumer___1__Java_Util_Concurrent_Executor_" data-uid="Java.Util.Concurrent.CompletionStage`1.AcceptEitherAsync``2(Java.Util.Concurrent.CompletionStage{``0},Java.Util.Function.Consumer{``1},Java.Util.Concurrent.Executor)">
+  AcceptEitherAsync&lt;Arg0ExtendsT, Arg1objectSuperT&gt;(CompletionStage&lt;Arg0ExtendsT&gt;, Consumer&lt;Arg1objectSuperT&gt;, Executor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L791"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer,java.util.concurrent.Executor)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer,java.util.concurrent.Executor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; AcceptEitherAsync&lt;Arg0ExtendsT, Arg1objectSuperT&gt;(CompletionStage&lt;Arg0ExtendsT&gt; arg0, Consumer&lt;Arg1objectSuperT&gt; arg1, Executor arg2) where Arg0ExtendsT : T where Arg1objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;Arg0ExtendsT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;Arg1objectSuperT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_AcceptEither_" data-uid="Java.Util.Concurrent.CompletionStage`1.AcceptEither*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_AcceptEither__2_Java_Util_Concurrent_CompletionStage___0__Java_Util_Function_Consumer___1__" data-uid="Java.Util.Concurrent.CompletionStage`1.AcceptEither``2(Java.Util.Concurrent.CompletionStage{``0},Java.Util.Function.Consumer{``1})">
+  AcceptEither&lt;Arg0ExtendsT, Arg1objectSuperT&gt;(CompletionStage&lt;Arg0ExtendsT&gt;, Consumer&lt;Arg1objectSuperT&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L778"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#acceptEither(java.util.concurrent.CompletionStage,java.util.function.Consumer)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#acceptEither(java.util.concurrent.CompletionStage,java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; AcceptEither&lt;Arg0ExtendsT, Arg1objectSuperT&gt;(CompletionStage&lt;Arg0ExtendsT&gt; arg0, Consumer&lt;Arg1objectSuperT&gt; arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;Arg0ExtendsT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;Arg1objectSuperT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ApplyToEitherAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ApplyToEitherAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ApplyToEitherAsync__3_Java_Util_Concurrent_CompletionStage___1__Java_Util_Function_Function___2___0__" data-uid="Java.Util.Concurrent.CompletionStage`1.ApplyToEitherAsync``3(Java.Util.Concurrent.CompletionStage{``1},Java.Util.Function.Function{``2,``0})">
+  ApplyToEitherAsync&lt;U, Arg0ExtendsT, Arg1objectSuperT&gt;(CompletionStage&lt;Arg0ExtendsT&gt;, Function&lt;Arg1objectSuperT, U&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L647"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ApplyToEitherAsync&lt;U, Arg0ExtendsT, Arg1objectSuperT&gt;(CompletionStage&lt;Arg0ExtendsT&gt; arg0, Function&lt;Arg1objectSuperT, U&gt; arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;Arg0ExtendsT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;Arg1objectSuperT, U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg0ExtendsT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ApplyToEitherAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ApplyToEitherAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ApplyToEitherAsync__3_Java_Util_Concurrent_CompletionStage___1__Java_Util_Function_Function___2___0__Java_Util_Concurrent_Executor_" data-uid="Java.Util.Concurrent.CompletionStage`1.ApplyToEitherAsync``3(Java.Util.Concurrent.CompletionStage{``1},Java.Util.Function.Function{``2,``0},Java.Util.Concurrent.Executor)">
+  ApplyToEitherAsync&lt;U, Arg0ExtendsT, Arg1objectSuperT&gt;(CompletionStage&lt;Arg0ExtendsT&gt;, Function&lt;Arg1objectSuperT, U&gt;, Executor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L634"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function,java.util.concurrent.Executor)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function,java.util.concurrent.Executor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ApplyToEitherAsync&lt;U, Arg0ExtendsT, Arg1objectSuperT&gt;(CompletionStage&lt;Arg0ExtendsT&gt; arg0, Function&lt;Arg1objectSuperT, U&gt; arg1, Executor arg2) where Arg0ExtendsT : T where Arg1objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;Arg0ExtendsT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;Arg1objectSuperT, U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg0ExtendsT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ApplyToEither_" data-uid="Java.Util.Concurrent.CompletionStage`1.ApplyToEither*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ApplyToEither__3_Java_Util_Concurrent_CompletionStage___1__Java_Util_Function_Function___2___0__" data-uid="Java.Util.Concurrent.CompletionStage`1.ApplyToEither``3(Java.Util.Concurrent.CompletionStage{``1},Java.Util.Function.Function{``2,``0})">
+  ApplyToEither&lt;U, Arg0ExtendsT, Arg1objectSuperT&gt;(CompletionStage&lt;Arg0ExtendsT&gt;, Function&lt;Arg1objectSuperT, U&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L620"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#applyToEither(java.util.concurrent.CompletionStage,java.util.function.Function)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#applyToEither(java.util.concurrent.CompletionStage,java.util.function.Function)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ApplyToEither&lt;U, Arg0ExtendsT, Arg1objectSuperT&gt;(CompletionStage&lt;Arg0ExtendsT&gt; arg0, Function&lt;Arg1objectSuperT, U&gt; arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;Arg0ExtendsT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;Arg1objectSuperT, U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg0ExtendsT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ExceptionallyAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ExceptionallyAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ExceptionallyAsync__1_Java_Util_Function_Function_Java_Lang_Throwable___0__" data-uid="Java.Util.Concurrent.CompletionStage`1.ExceptionallyAsync``1(Java.Util.Function.Function{Java.Lang.Throwable,``0})">
+  ExceptionallyAsync&lt;Arg0ExtendsT&gt;(Function&lt;Throwable, Arg0ExtendsT&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L989"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyAsync(java.util.function.Function)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyAsync(java.util.function.Function)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;T&gt; ExceptionallyAsync&lt;Arg0ExtendsT&gt;(Function&lt;Throwable, Arg0ExtendsT&gt; arg0) where Arg0ExtendsT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;<a class="xref" href="Java.Lang.Throwable.html">Throwable</a>, Arg0ExtendsT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ExceptionallyAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ExceptionallyAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ExceptionallyAsync__1_Java_Util_Function_Function_Java_Lang_Throwable___0__Java_Util_Concurrent_Executor_" data-uid="Java.Util.Concurrent.CompletionStage`1.ExceptionallyAsync``1(Java.Util.Function.Function{Java.Lang.Throwable,``0},Java.Util.Concurrent.Executor)">
+  ExceptionallyAsync&lt;Arg0ExtendsT&gt;(Function&lt;Throwable, Arg0ExtendsT&gt;, Executor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L979"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyAsync(java.util.function.Function,java.util.concurrent.Executor)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyAsync(java.util.function.Function,java.util.concurrent.Executor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;T&gt; ExceptionallyAsync&lt;Arg0ExtendsT&gt;(Function&lt;Throwable, Arg0ExtendsT&gt; arg0, Executor arg1) where Arg0ExtendsT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;<a class="xref" href="Java.Lang.Throwable.html">Throwable</a>, Arg0ExtendsT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ExceptionallyComposeAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ExceptionallyComposeAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ExceptionallyComposeAsync__1_Java_Util_Function_Function_Java_Lang_Throwable___0__" data-uid="Java.Util.Concurrent.CompletionStage`1.ExceptionallyComposeAsync``1(Java.Util.Function.Function{Java.Lang.Throwable,``0})">
+  ExceptionallyComposeAsync&lt;Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt;(Function&lt;Throwable, Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L1020"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyComposeAsync(java.util.function.Function)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyComposeAsync(java.util.function.Function)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;T&gt; ExceptionallyComposeAsync&lt;Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt;(Function&lt;Throwable, Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt; arg0) where Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_ : CompletionStage&lt;T&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;<a class="xref" href="Java.Lang.Throwable.html">Throwable</a>, Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_</code></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage&lt;T&gt;</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ExceptionallyComposeAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ExceptionallyComposeAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ExceptionallyComposeAsync__1_Java_Util_Function_Function_Java_Lang_Throwable___0__Java_Util_Concurrent_Executor_" data-uid="Java.Util.Concurrent.CompletionStage`1.ExceptionallyComposeAsync``1(Java.Util.Function.Function{Java.Lang.Throwable,``0},Java.Util.Concurrent.Executor)">
+  ExceptionallyComposeAsync&lt;Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt;(Function&lt;Throwable, Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt;, Executor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L1010"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyComposeAsync(java.util.function.Function,java.util.concurrent.Executor)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyComposeAsync(java.util.function.Function,java.util.concurrent.Executor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;T&gt; ExceptionallyComposeAsync&lt;Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt;(Function&lt;Throwable, Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt; arg0, Executor arg1) where Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_ : CompletionStage&lt;T&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;<a class="xref" href="Java.Lang.Throwable.html">Throwable</a>, Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_</code></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage&lt;T&gt;</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ExceptionallyCompose_" data-uid="Java.Util.Concurrent.CompletionStage`1.ExceptionallyCompose*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ExceptionallyCompose__1_Java_Util_Function_Function_Java_Lang_Throwable___0__" data-uid="Java.Util.Concurrent.CompletionStage`1.ExceptionallyCompose``1(Java.Util.Function.Function{Java.Lang.Throwable,``0})">
+  ExceptionallyCompose&lt;Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt;(Function&lt;Throwable, Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L999"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyCompose(java.util.function.Function)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyCompose(java.util.function.Function)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;T&gt; ExceptionallyCompose&lt;Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt;(Function&lt;Throwable, Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt; arg0) where Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_ : CompletionStage&lt;T&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;<a class="xref" href="Java.Lang.Throwable.html">Throwable</a>, Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_</code></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage&lt;T&gt;</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_Exceptionally_" data-uid="Java.Util.Concurrent.CompletionStage`1.Exceptionally*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_Exceptionally__1_Java_Util_Function_Function_Java_Lang_Throwable___0__" data-uid="Java.Util.Concurrent.CompletionStage`1.Exceptionally``1(Java.Util.Function.Function{Java.Lang.Throwable,``0})">
+  Exceptionally&lt;Arg0ExtendsT&gt;(Function&lt;Throwable, Arg0ExtendsT&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L934"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionally(java.util.function.Function)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionally(java.util.function.Function)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;T&gt; Exceptionally&lt;Arg0ExtendsT&gt;(Function&lt;Throwable, Arg0ExtendsT&gt; arg0) where Arg0ExtendsT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;<a class="xref" href="Java.Lang.Throwable.html">Throwable</a>, Arg0ExtendsT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_HandleAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.HandleAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_HandleAsync__3_Java_Util_Function_BiFunction___1_Java_Lang_Throwable___2__" data-uid="Java.Util.Concurrent.CompletionStage`1.HandleAsync``3(Java.Util.Function.BiFunction{``1,Java.Lang.Throwable,``2})">
+  HandleAsync&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(BiFunction&lt;Arg0objectSuperT, Throwable, Arg0ExtendsU&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L684"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#handleAsync(java.util.function.BiFunction)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#handleAsync(java.util.function.BiFunction)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; HandleAsync&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(BiFunction&lt;Arg0objectSuperT, Throwable, Arg0ExtendsU&gt; arg0) where Arg0objectSuperT : T where Arg0ExtendsU : U</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.BiFunction-3.html">BiFunction</a>&lt;Arg0objectSuperT, <a class="xref" href="Java.Lang.Throwable.html">Throwable</a>, Arg0ExtendsU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiFunction.html">BiFunction</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg0ExtendsU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_HandleAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.HandleAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_HandleAsync__3_Java_Util_Function_BiFunction___1_Java_Lang_Throwable___2__Java_Util_Concurrent_Executor_" data-uid="Java.Util.Concurrent.CompletionStage`1.HandleAsync``3(Java.Util.Function.BiFunction{``1,Java.Lang.Throwable,``2},Java.Util.Concurrent.Executor)">
+  HandleAsync&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(BiFunction&lt;Arg0objectSuperT, Throwable, Arg0ExtendsU&gt;, Executor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L672"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#handleAsync(java.util.function.BiFunction,java.util.concurrent.Executor)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#handleAsync(java.util.function.BiFunction,java.util.concurrent.Executor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; HandleAsync&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(BiFunction&lt;Arg0objectSuperT, Throwable, Arg0ExtendsU&gt; arg0, Executor arg1) where Arg0objectSuperT : T where Arg0ExtendsU : U</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.BiFunction-3.html">BiFunction</a>&lt;Arg0objectSuperT, <a class="xref" href="Java.Lang.Throwable.html">Throwable</a>, Arg0ExtendsU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiFunction.html">BiFunction</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg0ExtendsU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_Handle_" data-uid="Java.Util.Concurrent.CompletionStage`1.Handle*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_Handle__3_Java_Util_Function_BiFunction___1_Java_Lang_Throwable___2__" data-uid="Java.Util.Concurrent.CompletionStage`1.Handle``3(Java.Util.Function.BiFunction{``1,Java.Lang.Throwable,``2})">
+  Handle&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(BiFunction&lt;Arg0objectSuperT, Throwable, Arg0ExtendsU&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L659"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#handle(java.util.function.BiFunction)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#handle(java.util.function.BiFunction)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; Handle&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(BiFunction&lt;Arg0objectSuperT, Throwable, Arg0ExtendsU&gt; arg0) where Arg0objectSuperT : T where Arg0ExtendsU : U</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.BiFunction-3.html">BiFunction</a>&lt;Arg0objectSuperT, <a class="xref" href="Java.Lang.Throwable.html">Throwable</a>, Arg0ExtendsU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiFunction.html">BiFunction</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg0ExtendsU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_RunAfterBoth_" data-uid="Java.Util.Concurrent.CompletionStage`1.RunAfterBoth*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_RunAfterBoth_Java_Util_Concurrent_CompletionStage_System_Object__Java_Lang_Runnable_" data-uid="Java.Util.Concurrent.CompletionStage`1.RunAfterBoth(Java.Util.Concurrent.CompletionStage{System.Object},Java.Lang.Runnable)">
+  RunAfterBoth(CompletionStage&lt;object&gt;, Runnable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L813"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#runAfterBoth(java.util.concurrent.CompletionStage,java.lang.Runnable)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#runAfterBoth(java.util.concurrent.CompletionStage,java.lang.Runnable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; RunAfterBoth(CompletionStage&lt;object&gt; arg0, Runnable arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_RunAfterBothAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.RunAfterBothAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_RunAfterBothAsync_Java_Util_Concurrent_CompletionStage_System_Object__Java_Lang_Runnable_" data-uid="Java.Util.Concurrent.CompletionStage`1.RunAfterBothAsync(Java.Util.Concurrent.CompletionStage{System.Object},Java.Lang.Runnable)">
+  RunAfterBothAsync(CompletionStage&lt;object&gt;, Runnable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L834"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; RunAfterBothAsync(CompletionStage&lt;object&gt; arg0, Runnable arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_RunAfterBothAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.RunAfterBothAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_RunAfterBothAsync_Java_Util_Concurrent_CompletionStage_System_Object__Java_Lang_Runnable_Java_Util_Concurrent_Executor_" data-uid="Java.Util.Concurrent.CompletionStage`1.RunAfterBothAsync(Java.Util.Concurrent.CompletionStage{System.Object},Java.Lang.Runnable,Java.Util.Concurrent.Executor)">
+  RunAfterBothAsync(CompletionStage&lt;object&gt;, Runnable, Executor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L824"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; RunAfterBothAsync(CompletionStage&lt;object&gt; arg0, Runnable arg1, Executor arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_RunAfterEither_" data-uid="Java.Util.Concurrent.CompletionStage`1.RunAfterEither*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_RunAfterEither_Java_Util_Concurrent_CompletionStage_System_Object__Java_Lang_Runnable_" data-uid="Java.Util.Concurrent.CompletionStage`1.RunAfterEither(Java.Util.Concurrent.CompletionStage{System.Object},Java.Lang.Runnable)">
+  RunAfterEither(CompletionStage&lt;object&gt;, Runnable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L844"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#runAfterEither(java.util.concurrent.CompletionStage,java.lang.Runnable)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#runAfterEither(java.util.concurrent.CompletionStage,java.lang.Runnable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; RunAfterEither(CompletionStage&lt;object&gt; arg0, Runnable arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_RunAfterEitherAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.RunAfterEitherAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_RunAfterEitherAsync_Java_Util_Concurrent_CompletionStage_System_Object__Java_Lang_Runnable_" data-uid="Java.Util.Concurrent.CompletionStage`1.RunAfterEitherAsync(Java.Util.Concurrent.CompletionStage{System.Object},Java.Lang.Runnable)">
+  RunAfterEitherAsync(CompletionStage&lt;object&gt;, Runnable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L865"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; RunAfterEitherAsync(CompletionStage&lt;object&gt; arg0, Runnable arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_RunAfterEitherAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.RunAfterEitherAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_RunAfterEitherAsync_Java_Util_Concurrent_CompletionStage_System_Object__Java_Lang_Runnable_Java_Util_Concurrent_Executor_" data-uid="Java.Util.Concurrent.CompletionStage`1.RunAfterEitherAsync(Java.Util.Concurrent.CompletionStage{System.Object},Java.Lang.Runnable,Java.Util.Concurrent.Executor)">
+  RunAfterEitherAsync(CompletionStage&lt;object&gt;, Runnable, Executor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L855"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; RunAfterEitherAsync(CompletionStage&lt;object&gt; arg0, Runnable arg1, Executor arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenAcceptAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenAcceptAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenAcceptAsync__1_Java_Util_Function_Consumer___0__" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenAcceptAsync``1(Java.Util.Function.Consumer{``0})">
+  ThenAcceptAsync&lt;Arg0objectSuperT&gt;(Consumer&lt;Arg0objectSuperT&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L896"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenAcceptAsync(java.util.function.Consumer)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenAcceptAsync(java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; ThenAcceptAsync&lt;Arg0objectSuperT&gt;(Consumer&lt;Arg0objectSuperT&gt; arg0) where Arg0objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;Arg0objectSuperT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenAcceptAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenAcceptAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenAcceptAsync__1_Java_Util_Function_Consumer___0__Java_Util_Concurrent_Executor_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenAcceptAsync``1(Java.Util.Function.Consumer{``0},Java.Util.Concurrent.Executor)">
+  ThenAcceptAsync&lt;Arg0objectSuperT&gt;(Consumer&lt;Arg0objectSuperT&gt;, Executor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L886"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenAcceptAsync(java.util.function.Consumer,java.util.concurrent.Executor)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenAcceptAsync(java.util.function.Consumer,java.util.concurrent.Executor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; ThenAcceptAsync&lt;Arg0objectSuperT&gt;(Consumer&lt;Arg0objectSuperT&gt; arg0, Executor arg1) where Arg0objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;Arg0objectSuperT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenAcceptBothAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenAcceptBothAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenAcceptBothAsync__4_Java_Util_Concurrent_CompletionStage___0__Java_Util_Function_BiConsumer___2___3__" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenAcceptBothAsync``4(Java.Util.Concurrent.CompletionStage{``0},Java.Util.Function.BiConsumer{``2,``3})">
+  ThenAcceptBothAsync&lt;Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU&gt;(CompletionStage&lt;Arg0ExtendsU&gt;, BiConsumer&lt;Arg1objectSuperT, Arg1objectSuperU&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L607"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; ThenAcceptBothAsync&lt;Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU&gt;(CompletionStage&lt;Arg0ExtendsU&gt; arg0, BiConsumer&lt;Arg1objectSuperT, Arg1objectSuperU&gt; arg1) where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;Arg0ExtendsU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.BiConsumer-2.html">BiConsumer</a>&lt;Arg1objectSuperT, Arg1objectSuperU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiConsumer.html">BiConsumer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg1objectSuperU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenAcceptBothAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenAcceptBothAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenAcceptBothAsync__4_Java_Util_Concurrent_CompletionStage___0__Java_Util_Function_BiConsumer___2___3__Java_Util_Concurrent_Executor_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenAcceptBothAsync``4(Java.Util.Concurrent.CompletionStage{``0},Java.Util.Function.BiConsumer{``2,``3},Java.Util.Concurrent.Executor)">
+  ThenAcceptBothAsync&lt;Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU&gt;(CompletionStage&lt;Arg0ExtendsU&gt;, BiConsumer&lt;Arg1objectSuperT, Arg1objectSuperU&gt;, Executor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L593"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer,java.util.concurrent.Executor)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer,java.util.concurrent.Executor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; ThenAcceptBothAsync&lt;Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU&gt;(CompletionStage&lt;Arg0ExtendsU&gt; arg0, BiConsumer&lt;Arg1objectSuperT, Arg1objectSuperU&gt; arg1, Executor arg2) where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;Arg0ExtendsU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.BiConsumer-2.html">BiConsumer</a>&lt;Arg1objectSuperT, Arg1objectSuperU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiConsumer.html">BiConsumer</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg1objectSuperU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenAcceptBoth_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenAcceptBoth*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenAcceptBoth__4_Java_Util_Concurrent_CompletionStage___0__Java_Util_Function_BiConsumer___2___3__" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenAcceptBoth``4(Java.Util.Concurrent.CompletionStage{``0},Java.Util.Function.BiConsumer{``2,``3})">
+  ThenAcceptBoth&lt;Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU&gt;(CompletionStage&lt;Arg0ExtendsU&gt;, BiConsumer&lt;Arg1objectSuperT, Arg1objectSuperU&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L578"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenAcceptBoth(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenAcceptBoth(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; ThenAcceptBoth&lt;Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU&gt;(CompletionStage&lt;Arg0ExtendsU&gt; arg0, BiConsumer&lt;Arg1objectSuperT, Arg1objectSuperU&gt; arg1) where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;Arg0ExtendsU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.BiConsumer-2.html">BiConsumer</a>&lt;Arg1objectSuperT, Arg1objectSuperU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiConsumer.html">BiConsumer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg1objectSuperU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenAccept_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenAccept*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenAccept__1_Java_Util_Function_Consumer___0__" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenAccept``1(Java.Util.Function.Consumer{``0})">
+  ThenAccept&lt;Arg0objectSuperT&gt;(Consumer&lt;Arg0objectSuperT&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L875"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenAccept(java.util.function.Consumer)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenAccept(java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; ThenAccept&lt;Arg0objectSuperT&gt;(Consumer&lt;Arg0objectSuperT&gt; arg0) where Arg0objectSuperT : T</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;Arg0objectSuperT&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenApplyAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenApplyAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenApplyAsync__3_Java_Util_Function_Function___1___2__" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenApplyAsync``3(Java.Util.Function.Function{``1,``2})">
+  ThenApplyAsync&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsU&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L721"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenApplyAsync(java.util.function.Function)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenApplyAsync(java.util.function.Function)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ThenApplyAsync&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsU&gt; arg0) where Arg0objectSuperT : T where Arg0ExtendsU : U</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;Arg0objectSuperT, Arg0ExtendsU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg0ExtendsU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenApplyAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenApplyAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenApplyAsync__3_Java_Util_Function_Function___1___2__Java_Util_Concurrent_Executor_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenApplyAsync``3(Java.Util.Function.Function{``1,``2},Java.Util.Concurrent.Executor)">
+  ThenApplyAsync&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsU&gt;, Executor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L709"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenApplyAsync(java.util.function.Function,java.util.concurrent.Executor)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenApplyAsync(java.util.function.Function,java.util.concurrent.Executor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ThenApplyAsync&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsU&gt; arg0, Executor arg1) where Arg0objectSuperT : T where Arg0ExtendsU : U</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;Arg0objectSuperT, Arg0ExtendsU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg0ExtendsU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenApply_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenApply*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenApply__3_Java_Util_Function_Function___1___2__" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenApply``3(Java.Util.Function.Function{``1,``2})">
+  ThenApply&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsU&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L696"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenApply(java.util.function.Function)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenApply(java.util.function.Function)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ThenApply&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsU&gt; arg0) where Arg0objectSuperT : T where Arg0ExtendsU : U</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;Arg0objectSuperT, Arg0ExtendsU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg0ExtendsU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenCombineAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenCombineAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenCombineAsync__6_Java_Util_Concurrent_CompletionStage___1__Java_Util_Function_BiFunction___3___4___5__" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenCombineAsync``6(Java.Util.Concurrent.CompletionStage{``1},Java.Util.Function.BiFunction{``3,``4,``5})">
+  ThenCombineAsync&lt;V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;(CompletionStage&lt;Arg0ExtendsU&gt;, BiFunction&lt;Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;V&gt; ThenCombineAsync&lt;V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;(CompletionStage&lt;Arg0ExtendsU&gt; arg0, BiFunction&lt;Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt; arg1) where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U where Arg1ExtendsV : V</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;Arg0ExtendsU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.BiFunction-3.html">BiFunction</a>&lt;Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiFunction.html">BiFunction</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>V</code></dt>
+    <dd></dd>
+    <dt><code>Arg0ExtendsU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg1objectSuperU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+    <dt><code>Arg1ExtendsV</code></dt>
+    <dd><p><code class="typeparamref">V</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenCombineAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenCombineAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenCombineAsync__6_Java_Util_Concurrent_CompletionStage___1__Java_Util_Function_BiFunction___3___4___5__Java_Util_Concurrent_Executor_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenCombineAsync``6(Java.Util.Concurrent.CompletionStage{``1},Java.Util.Function.BiFunction{``3,``4,``5},Java.Util.Concurrent.Executor)">
+  ThenCombineAsync&lt;V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;(CompletionStage&lt;Arg0ExtendsU&gt;, BiFunction&lt;Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;, Executor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction,java.util.concurrent.Executor)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction,java.util.concurrent.Executor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;V&gt; ThenCombineAsync&lt;V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;(CompletionStage&lt;Arg0ExtendsU&gt; arg0, BiFunction&lt;Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt; arg1, Executor arg2) where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U where Arg1ExtendsV : V</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;Arg0ExtendsU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.BiFunction-3.html">BiFunction</a>&lt;Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiFunction.html">BiFunction</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>V</code></dt>
+    <dd></dd>
+    <dt><code>Arg0ExtendsU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg1objectSuperU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+    <dt><code>Arg1ExtendsV</code></dt>
+    <dd><p><code class="typeparamref">V</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenCombine_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenCombine*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenCombine__6_Java_Util_Concurrent_CompletionStage___1__Java_Util_Function_BiFunction___3___4___5__" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenCombine``6(Java.Util.Concurrent.CompletionStage{``1},Java.Util.Function.BiFunction{``3,``4,``5})">
+  ThenCombine&lt;V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;(CompletionStage&lt;Arg0ExtendsU&gt;, BiFunction&lt;Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L531"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenCombine(java.util.concurrent.CompletionStage,java.util.function.BiFunction)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenCombine(java.util.concurrent.CompletionStage,java.util.function.BiFunction)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;V&gt; ThenCombine&lt;V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;(CompletionStage&lt;Arg0ExtendsU&gt; arg0, BiFunction&lt;Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt; arg1) where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U where Arg1ExtendsV : V</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;Arg0ExtendsU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.BiFunction-3.html">BiFunction</a>&lt;Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiFunction.html">BiFunction</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>V</code></dt>
+    <dd></dd>
+    <dt><code>Arg0ExtendsU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg1objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg1objectSuperU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+    <dt><code>Arg1ExtendsV</code></dt>
+    <dd><p><code class="typeparamref">V</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenComposeAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenComposeAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenComposeAsync__3_Java_Util_Function_Function___1___2__" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenComposeAsync``3(Java.Util.Function.Function{``1,``2})">
+  ThenComposeAsync&lt;U, Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L758"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenComposeAsync(java.util.function.Function)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenComposeAsync(java.util.function.Function)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ThenComposeAsync&lt;U, Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt; arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_ : CompletionStage&lt;U&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_</code></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage&lt;T&gt;</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenComposeAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenComposeAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenComposeAsync__3_Java_Util_Function_Function___1___2__Java_Util_Concurrent_Executor_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenComposeAsync``3(Java.Util.Function.Function{``1,``2},Java.Util.Concurrent.Executor)">
+  ThenComposeAsync&lt;U, Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;, Executor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L746"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenComposeAsync(java.util.function.Function,java.util.concurrent.Executor)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenComposeAsync(java.util.function.Function,java.util.concurrent.Executor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ThenComposeAsync&lt;U, Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt; arg0, Executor arg1) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_ : CompletionStage&lt;U&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_</code></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage&lt;T&gt;</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenCompose_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenCompose*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenCompose__3_Java_Util_Function_Function___1___2__" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenCompose``3(Java.Util.Function.Function{``1,``2})">
+  ThenCompose&lt;U, Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L733"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenCompose(java.util.function.Function)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenCompose(java.util.function.Function)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ThenCompose&lt;U, Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt; arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_ : CompletionStage&lt;U&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_</code></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage&lt;T&gt;</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenRun_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenRun*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenRun_Java_Lang_Runnable_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenRun(Java.Lang.Runnable)">
+  ThenRun(Runnable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L905"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenRun(java.lang.Runnable)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenRun(java.lang.Runnable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; ThenRun(Runnable arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenRunAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenRunAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenRunAsync_Java_Lang_Runnable_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenRunAsync(Java.Lang.Runnable)">
+  ThenRunAsync(Runnable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L924"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenRunAsync(java.lang.Runnable)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenRunAsync(java.lang.Runnable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; ThenRunAsync(Runnable arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ThenRunAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenRunAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ThenRunAsync_Java_Lang_Runnable_Java_Util_Concurrent_Executor_" data-uid="Java.Util.Concurrent.CompletionStage`1.ThenRunAsync(Java.Lang.Runnable,Java.Util.Concurrent.Executor)">
+  ThenRunAsync(Runnable, Executor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L915"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenRunAsync(java.lang.Runnable,java.util.concurrent.Executor)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#thenRunAsync(java.lang.Runnable,java.util.concurrent.Executor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; ThenRunAsync(Runnable arg0, Executor arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;<a class="xref" href="Java.Lang.Void.html">Void</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_ToCompletableFuture_" data-uid="Java.Util.Concurrent.CompletionStage`1.ToCompletableFuture*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_ToCompletableFuture" data-uid="Java.Util.Concurrent.CompletionStage`1.ToCompletableFuture">
+  ToCompletableFuture()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L766"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#toCompletableFuture()">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#toCompletableFuture()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletableFuture&lt;T&gt; ToCompletableFuture()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletableFuture-1.html">CompletableFuture</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletableFuture.html">CompletableFuture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_WhenCompleteAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.WhenCompleteAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_WhenCompleteAsync__2_Java_Util_Function_BiConsumer___0___1__" data-uid="Java.Util.Concurrent.CompletionStage`1.WhenCompleteAsync``2(Java.Util.Function.BiConsumer{``0,``1})">
+  WhenCompleteAsync&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;(BiConsumer&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L968"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#whenCompleteAsync(java.util.function.BiConsumer)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#whenCompleteAsync(java.util.function.BiConsumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;T&gt; WhenCompleteAsync&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;(BiConsumer&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt; arg0) where Arg0objectSuperT : T where Arg0objectSuperJava_Lang_Throwable : Throwable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.BiConsumer-2.html">BiConsumer</a>&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiConsumer.html">BiConsumer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg0objectSuperJava_Lang_Throwable</code></dt>
+    <dd><p><a class="xref" href="Java.Lang.Throwable.html">Throwable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_WhenCompleteAsync_" data-uid="Java.Util.Concurrent.CompletionStage`1.WhenCompleteAsync*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_WhenCompleteAsync__2_Java_Util_Function_BiConsumer___0___1__Java_Util_Concurrent_Executor_" data-uid="Java.Util.Concurrent.CompletionStage`1.WhenCompleteAsync``2(Java.Util.Function.BiConsumer{``0,``1},Java.Util.Concurrent.Executor)">
+  WhenCompleteAsync&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;(BiConsumer&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;, Executor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L957"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#whenCompleteAsync(java.util.function.BiConsumer,java.util.concurrent.Executor)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#whenCompleteAsync(java.util.function.BiConsumer,java.util.concurrent.Executor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;T&gt; WhenCompleteAsync&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;(BiConsumer&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt; arg0, Executor arg1) where Arg0objectSuperT : T where Arg0objectSuperJava_Lang_Throwable : Throwable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.BiConsumer-2.html">BiConsumer</a>&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiConsumer.html">BiConsumer</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg0objectSuperJava_Lang_Throwable</code></dt>
+    <dd><p><a class="xref" href="Java.Lang.Throwable.html">Throwable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_WhenComplete_" data-uid="Java.Util.Concurrent.CompletionStage`1.WhenComplete*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_WhenComplete__2_Java_Util_Function_BiConsumer___0___1__" data-uid="Java.Util.Concurrent.CompletionStage`1.WhenComplete``2(Java.Util.Function.BiConsumer{``0,``1})">
+  WhenComplete&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;(BiConsumer&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L945"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#whenComplete(java.util.function.BiConsumer)">https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#whenComplete(java.util.function.BiConsumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionStage&lt;T&gt; WhenComplete&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;(BiConsumer&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt; arg0) where Arg0objectSuperT : T where Arg0objectSuperJava_Lang_Throwable : Throwable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.BiConsumer-2.html">BiConsumer</a>&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiConsumer.html">BiConsumer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0objectSuperT</code></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>Arg0objectSuperJava_Lang_Throwable</code></dt>
+    <dd><p><a class="xref" href="Java.Lang.Throwable.html">Throwable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Java_Util_Concurrent_CompletionStage_1_op_Implicit_" data-uid="Java.Util.Concurrent.CompletionStage`1.op_Implicit*"></a>
+
+  <h3 id="Java_Util_Concurrent_CompletionStage_1_op_Implicit_Java_Util_Concurrent_CompletionStage__0___Java_Util_Concurrent_CompletionStage" data-uid="Java.Util.Concurrent.CompletionStage`1.op_Implicit(Java.Util.Concurrent.CompletionStage{`0})~Java.Util.Concurrent.CompletionStage">
+  implicit operator CompletionStage(CompletionStage&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L506"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage&lt;T&gt;</a> to <a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator CompletionStage(CompletionStage&lt;T&gt; t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.CompletionStage.html">CompletionStage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/CompletionStage.cs/#L496" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

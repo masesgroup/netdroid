@@ -1,0 +1,3523 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class NutritionRecord | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NutritionRecord | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Health_Connect_Datatypes_NutritionRecord.md&amp;value=---%0Auid%3A%20Android.Health.Connect.Datatypes.NutritionRecord%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Health.Connect.Datatypes.NutritionRecord">
+
+
+
+  <h1 id="Android_Health_Connect_Datatypes_NutritionRecord" data-uid="Android.Health.Connect.Datatypes.NutritionRecord" class="text-break">
+Class NutritionRecord  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Health.html">Health</a>.<a class="xref" href="Android.Health.Connect.html">Connect</a>.<a class="xref" href="Android.Health.Connect.Datatypes.html">Datatypes</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NutritionRecord : IntervalRecord, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Health.Connect.Datatypes.Record.html">Record</a>&gt;</div>
+      <div><a class="xref" href="Android.Health.Connect.Datatypes.Record.html">Record</a></div>
+      <div><a class="xref" href="Android.Health.Connect.Datatypes.IntervalRecord.html">IntervalRecord</a></div>
+      <div><span class="xref">NutritionRecord</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Health.Connect.Datatypes.IntervalRecord.html#Android_Health_Connect_Datatypes_IntervalRecord_GetEndTime">IntervalRecord.GetEndTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Health.Connect.Datatypes.IntervalRecord.html#Android_Health_Connect_Datatypes_IntervalRecord_GetStartTime">IntervalRecord.GetStartTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Health.Connect.Datatypes.IntervalRecord.html#Android_Health_Connect_Datatypes_IntervalRecord_GetEndZoneOffset">IntervalRecord.GetEndZoneOffset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Health.Connect.Datatypes.IntervalRecord.html#Android_Health_Connect_Datatypes_IntervalRecord_GetStartZoneOffset">IntervalRecord.GetStartZoneOffset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Health.Connect.Datatypes.Record.html#Android_Health_Connect_Datatypes_Record_GetMetadata">Record.GetMetadata()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Record&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Record&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Record&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Record&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Record&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Record&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Record&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Record&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Record&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Record&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Record&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Record&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Record&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord__ctor_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.#ctor*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord__ctor" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.#ctor">
+  NutritionRecord()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/AllPackageClasses.cs/#L3432"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NutritionRecord()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord__ctor_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.#ctor*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord__ctor_System_Object___" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.#ctor(System.Object[])">
+  NutritionRecord(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/AllPackageClasses.cs/#L3436"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NutritionRecord(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_BIOTIN_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.BIOTIN_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_BIOTIN_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.BIOTIN_TOTAL">
+  BIOTIN_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#BIOTIN_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#BIOTIN_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType BIOTIN_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_BridgeClassName_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.BridgeClassName*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_BridgeClassName" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/AllPackageClasses.cs/#L3443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_CAFFEINE_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.CAFFEINE_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_CAFFEINE_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.CAFFEINE_TOTAL">
+  CAFFEINE_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#CAFFEINE_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#CAFFEINE_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType CAFFEINE_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_CALCIUM_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.CALCIUM_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_CALCIUM_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.CALCIUM_TOTAL">
+  CALCIUM_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#CALCIUM_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#CALCIUM_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType CALCIUM_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_CHLORIDE_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.CHLORIDE_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_CHLORIDE_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.CHLORIDE_TOTAL">
+  CHLORIDE_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#CHLORIDE_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#CHLORIDE_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType CHLORIDE_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_CHOLESTEROL_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.CHOLESTEROL_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_CHOLESTEROL_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.CHOLESTEROL_TOTAL">
+  CHOLESTEROL_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#CHOLESTEROL_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#CHOLESTEROL_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType CHOLESTEROL_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_CHROMIUM_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.CHROMIUM_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_CHROMIUM_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.CHROMIUM_TOTAL">
+  CHROMIUM_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#CHROMIUM_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#CHROMIUM_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType CHROMIUM_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_COPPER_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.COPPER_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_COPPER_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.COPPER_TOTAL">
+  COPPER_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#COPPER_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#COPPER_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType COPPER_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_DIETARY_FIBER_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.DIETARY_FIBER_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_DIETARY_FIBER_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.DIETARY_FIBER_TOTAL">
+  DIETARY_FIBER_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#DIETARY_FIBER_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#DIETARY_FIBER_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType DIETARY_FIBER_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_ENERGY_FROM_FAT_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.ENERGY_FROM_FAT_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_ENERGY_FROM_FAT_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.ENERGY_FROM_FAT_TOTAL">
+  ENERGY_FROM_FAT_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#ENERGY_FROM_FAT_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#ENERGY_FROM_FAT_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType ENERGY_FROM_FAT_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_ENERGY_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.ENERGY_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_ENERGY_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.ENERGY_TOTAL">
+  ENERGY_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#ENERGY_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#ENERGY_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType ENERGY_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_FOLATE_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.FOLATE_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_FOLATE_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.FOLATE_TOTAL">
+  FOLATE_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#FOLATE_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#FOLATE_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType FOLATE_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_FOLIC_ACID_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.FOLIC_ACID_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_FOLIC_ACID_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.FOLIC_ACID_TOTAL">
+  FOLIC_ACID_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#FOLIC_ACID_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#FOLIC_ACID_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType FOLIC_ACID_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_IODINE_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.IODINE_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_IODINE_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.IODINE_TOTAL">
+  IODINE_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#IODINE_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#IODINE_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType IODINE_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_IRON_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.IRON_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_IRON_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.IRON_TOTAL">
+  IRON_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#IRON_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#IRON_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType IRON_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_IsBridgeAbstract_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_IsBridgeAbstract" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/AllPackageClasses.cs/#L3447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_IsBridgeCloseable_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_IsBridgeCloseable" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/AllPackageClasses.cs/#L3451"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_IsBridgeInterface_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_IsBridgeInterface" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/AllPackageClasses.cs/#L3455"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_IsBridgeStatic_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_IsBridgeStatic" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/AllPackageClasses.cs/#L3459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_MAGNESIUM_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.MAGNESIUM_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_MAGNESIUM_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.MAGNESIUM_TOTAL">
+  MAGNESIUM_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#MAGNESIUM_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#MAGNESIUM_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType MAGNESIUM_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_MANGANESE_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.MANGANESE_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_MANGANESE_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.MANGANESE_TOTAL">
+  MANGANESE_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#MANGANESE_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#MANGANESE_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType MANGANESE_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_MOLYBDENUM_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.MOLYBDENUM_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_MOLYBDENUM_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.MOLYBDENUM_TOTAL">
+  MOLYBDENUM_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#MOLYBDENUM_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#MOLYBDENUM_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType MOLYBDENUM_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_MONOUNSATURATED_FAT_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.MONOUNSATURATED_FAT_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_MONOUNSATURATED_FAT_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.MONOUNSATURATED_FAT_TOTAL">
+  MONOUNSATURATED_FAT_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#MONOUNSATURATED_FAT_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#MONOUNSATURATED_FAT_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType MONOUNSATURATED_FAT_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_NIACIN_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.NIACIN_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_NIACIN_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.NIACIN_TOTAL">
+  NIACIN_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#NIACIN_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#NIACIN_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType NIACIN_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_PANTOTHENIC_ACID_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.PANTOTHENIC_ACID_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_PANTOTHENIC_ACID_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.PANTOTHENIC_ACID_TOTAL">
+  PANTOTHENIC_ACID_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#PANTOTHENIC_ACID_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#PANTOTHENIC_ACID_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType PANTOTHENIC_ACID_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_PHOSPHORUS_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.PHOSPHORUS_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_PHOSPHORUS_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.PHOSPHORUS_TOTAL">
+  PHOSPHORUS_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#PHOSPHORUS_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#PHOSPHORUS_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType PHOSPHORUS_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_POLYUNSATURATED_FAT_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.POLYUNSATURATED_FAT_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_POLYUNSATURATED_FAT_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.POLYUNSATURATED_FAT_TOTAL">
+  POLYUNSATURATED_FAT_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#POLYUNSATURATED_FAT_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#POLYUNSATURATED_FAT_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType POLYUNSATURATED_FAT_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_POTASSIUM_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.POTASSIUM_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_POTASSIUM_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.POTASSIUM_TOTAL">
+  POTASSIUM_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#POTASSIUM_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#POTASSIUM_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType POTASSIUM_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_PROTEIN_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.PROTEIN_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_PROTEIN_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.PROTEIN_TOTAL">
+  PROTEIN_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#PROTEIN_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#PROTEIN_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType PROTEIN_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_RIBOFLAVIN_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.RIBOFLAVIN_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_RIBOFLAVIN_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.RIBOFLAVIN_TOTAL">
+  RIBOFLAVIN_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#RIBOFLAVIN_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#RIBOFLAVIN_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType RIBOFLAVIN_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_SATURATED_FAT_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.SATURATED_FAT_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_SATURATED_FAT_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.SATURATED_FAT_TOTAL">
+  SATURATED_FAT_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#SATURATED_FAT_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#SATURATED_FAT_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType SATURATED_FAT_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_SELENIUM_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.SELENIUM_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_SELENIUM_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.SELENIUM_TOTAL">
+  SELENIUM_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#SELENIUM_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#SELENIUM_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType SELENIUM_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_SODIUM_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.SODIUM_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_SODIUM_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.SODIUM_TOTAL">
+  SODIUM_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#SODIUM_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#SODIUM_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType SODIUM_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_SUGAR_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.SUGAR_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_SUGAR_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.SUGAR_TOTAL">
+  SUGAR_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#SUGAR_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#SUGAR_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType SUGAR_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_THIAMIN_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.THIAMIN_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_THIAMIN_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.THIAMIN_TOTAL">
+  THIAMIN_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#THIAMIN_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#THIAMIN_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType THIAMIN_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_TOTAL_CARBOHYDRATE_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.TOTAL_CARBOHYDRATE_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_TOTAL_CARBOHYDRATE_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.TOTAL_CARBOHYDRATE_TOTAL">
+  TOTAL_CARBOHYDRATE_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#TOTAL_CARBOHYDRATE_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#TOTAL_CARBOHYDRATE_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType TOTAL_CARBOHYDRATE_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_TOTAL_FAT_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.TOTAL_FAT_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_TOTAL_FAT_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.TOTAL_FAT_TOTAL">
+  TOTAL_FAT_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#TOTAL_FAT_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#TOTAL_FAT_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType TOTAL_FAT_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_UNSATURATED_FAT_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.UNSATURATED_FAT_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_UNSATURATED_FAT_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.UNSATURATED_FAT_TOTAL">
+  UNSATURATED_FAT_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#UNSATURATED_FAT_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#UNSATURATED_FAT_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType UNSATURATED_FAT_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_VITAMIN_A_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.VITAMIN_A_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_VITAMIN_A_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.VITAMIN_A_TOTAL">
+  VITAMIN_A_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#VITAMIN_A_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#VITAMIN_A_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType VITAMIN_A_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_VITAMIN_B12_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.VITAMIN_B12_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_VITAMIN_B12_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.VITAMIN_B12_TOTAL">
+  VITAMIN_B12_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#VITAMIN_B12_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#VITAMIN_B12_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType VITAMIN_B12_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_VITAMIN_B6_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.VITAMIN_B6_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_VITAMIN_B6_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.VITAMIN_B6_TOTAL">
+  VITAMIN_B6_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#VITAMIN_B6_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#VITAMIN_B6_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType VITAMIN_B6_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_VITAMIN_C_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.VITAMIN_C_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_VITAMIN_C_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.VITAMIN_C_TOTAL">
+  VITAMIN_C_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#VITAMIN_C_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#VITAMIN_C_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType VITAMIN_C_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_VITAMIN_D_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.VITAMIN_D_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_VITAMIN_D_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.VITAMIN_D_TOTAL">
+  VITAMIN_D_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#VITAMIN_D_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#VITAMIN_D_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType VITAMIN_D_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_VITAMIN_E_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.VITAMIN_E_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_VITAMIN_E_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.VITAMIN_E_TOTAL">
+  VITAMIN_E_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#VITAMIN_E_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#VITAMIN_E_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType VITAMIN_E_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_VITAMIN_K_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.VITAMIN_K_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_VITAMIN_K_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.VITAMIN_K_TOTAL">
+  VITAMIN_K_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#VITAMIN_K_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#VITAMIN_K_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType VITAMIN_K_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_ZINC_TOTAL_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.ZINC_TOTAL*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_ZINC_TOTAL" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.ZINC_TOTAL">
+  ZINC_TOTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#ZINC_TOTAL">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#ZINC_TOTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AggregationType ZINC_TOTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.AggregationType.html">AggregationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetBiotin_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetBiotin*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetBiotin" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetBiotin">
+  GetBiotin()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getBiotin()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getBiotin()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetBiotin()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetCaffeine_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetCaffeine*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetCaffeine" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetCaffeine">
+  GetCaffeine()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCaffeine()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCaffeine()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetCaffeine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetCalcium_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetCalcium*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetCalcium" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetCalcium">
+  GetCalcium()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCalcium()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCalcium()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetCalcium()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetChloride_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetChloride*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetChloride" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetChloride">
+  GetChloride()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getChloride()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getChloride()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetChloride()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetCholesterol_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetCholesterol*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetCholesterol" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetCholesterol">
+  GetCholesterol()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCholesterol()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCholesterol()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetCholesterol()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetChromium_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetChromium*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetChromium" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetChromium">
+  GetChromium()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getChromium()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getChromium()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetChromium()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetCopper_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetCopper*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetCopper" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetCopper">
+  GetCopper()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCopper()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCopper()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetCopper()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetDietaryFiber_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetDietaryFiber*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetDietaryFiber" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetDietaryFiber">
+  GetDietaryFiber()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getDietaryFiber()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getDietaryFiber()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetDietaryFiber()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetEnergy_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetEnergy*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetEnergy" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetEnergy">
+  GetEnergy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getEnergy()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getEnergy()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Energy GetEnergy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Energy.html">Energy</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Energy.html">Energy</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetEnergyFromFat_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetEnergyFromFat*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetEnergyFromFat" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetEnergyFromFat">
+  GetEnergyFromFat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getEnergyFromFat()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getEnergyFromFat()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Energy GetEnergyFromFat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Energy.html">Energy</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Energy.html">Energy</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetFolate_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetFolate*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetFolate" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetFolate">
+  GetFolate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getFolate()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getFolate()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetFolate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetFolicAcid_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetFolicAcid*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetFolicAcid" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetFolicAcid">
+  GetFolicAcid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getFolicAcid()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getFolicAcid()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetFolicAcid()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetIodine_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetIodine*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetIodine" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetIodine">
+  GetIodine()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getIodine()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getIodine()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetIodine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetIron_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetIron*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetIron" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetIron">
+  GetIron()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getIron()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getIron()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetIron()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetMagnesium_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetMagnesium*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetMagnesium" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetMagnesium">
+  GetMagnesium()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMagnesium()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMagnesium()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetMagnesium()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetManganese_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetManganese*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetManganese" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetManganese">
+  GetManganese()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getManganese()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getManganese()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetManganese()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetMealName_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetMealName*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetMealName" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetMealName">
+  GetMealName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L642"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMealName()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMealName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetMealName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetMealType_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetMealType*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetMealType" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetMealType">
+  GetMealType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L634"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMealType()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMealType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMealType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetMolybdenum_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetMolybdenum*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetMolybdenum" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetMolybdenum">
+  GetMolybdenum()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMolybdenum()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMolybdenum()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetMolybdenum()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetMonounsaturatedFat_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetMonounsaturatedFat*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetMonounsaturatedFat" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetMonounsaturatedFat">
+  GetMonounsaturatedFat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMonounsaturatedFat()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMonounsaturatedFat()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetMonounsaturatedFat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetNiacin_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetNiacin*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetNiacin" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetNiacin">
+  GetNiacin()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getNiacin()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getNiacin()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetNiacin()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetPantothenicAcid_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetPantothenicAcid*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetPantothenicAcid" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetPantothenicAcid">
+  GetPantothenicAcid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPantothenicAcid()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPantothenicAcid()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetPantothenicAcid()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetPhosphorus_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetPhosphorus*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetPhosphorus" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetPhosphorus">
+  GetPhosphorus()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPhosphorus()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPhosphorus()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetPhosphorus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetPolyunsaturatedFat_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetPolyunsaturatedFat*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetPolyunsaturatedFat" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetPolyunsaturatedFat">
+  GetPolyunsaturatedFat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPolyunsaturatedFat()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPolyunsaturatedFat()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetPolyunsaturatedFat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetPotassium_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetPotassium*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetPotassium" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetPotassium">
+  GetPotassium()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPotassium()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPotassium()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetPotassium()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetProtein_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetProtein*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetProtein" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetProtein">
+  GetProtein()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getProtein()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getProtein()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetProtein()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetRiboflavin_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetRiboflavin*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetRiboflavin" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetRiboflavin">
+  GetRiboflavin()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getRiboflavin()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getRiboflavin()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetRiboflavin()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetSaturatedFat_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetSaturatedFat*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetSaturatedFat" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetSaturatedFat">
+  GetSaturatedFat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSaturatedFat()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSaturatedFat()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetSaturatedFat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetSelenium_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetSelenium*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetSelenium" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetSelenium">
+  GetSelenium()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L506"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSelenium()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSelenium()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetSelenium()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetSodium_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetSodium*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetSodium" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetSodium">
+  GetSodium()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L514"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSodium()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSodium()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetSodium()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetSugar_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetSugar*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetSugar" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetSugar">
+  GetSugar()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L522"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSugar()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSugar()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetSugar()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetThiamin_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetThiamin*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetThiamin" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetThiamin">
+  GetThiamin()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L530"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getThiamin()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getThiamin()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetThiamin()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetTotalCarbohydrate_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetTotalCarbohydrate*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetTotalCarbohydrate" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetTotalCarbohydrate">
+  GetTotalCarbohydrate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getTotalCarbohydrate()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getTotalCarbohydrate()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetTotalCarbohydrate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetTotalFat_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetTotalFat*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetTotalFat" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetTotalFat">
+  GetTotalFat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getTotalFat()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getTotalFat()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetTotalFat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetTransFat_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetTransFat*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetTransFat" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetTransFat">
+  GetTransFat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L554"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getTransFat()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getTransFat()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetTransFat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetUnsaturatedFat_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetUnsaturatedFat*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetUnsaturatedFat" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetUnsaturatedFat">
+  GetUnsaturatedFat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L562"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getUnsaturatedFat()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getUnsaturatedFat()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetUnsaturatedFat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetVitaminA_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetVitaminA*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetVitaminA" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetVitaminA">
+  GetVitaminA()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L570"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminA()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminA()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetVitaminA()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetVitaminB12_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetVitaminB12*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetVitaminB12" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetVitaminB12">
+  GetVitaminB12()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L578"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminB12()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminB12()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetVitaminB12()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetVitaminB6_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetVitaminB6*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetVitaminB6" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetVitaminB6">
+  GetVitaminB6()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L586"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminB6()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminB6()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetVitaminB6()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetVitaminC_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetVitaminC*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetVitaminC" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetVitaminC">
+  GetVitaminC()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L594"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminC()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminC()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetVitaminC()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetVitaminD_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetVitaminD*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetVitaminD" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetVitaminD">
+  GetVitaminD()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L602"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminD()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminD()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetVitaminD()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetVitaminE_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetVitaminE*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetVitaminE" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetVitaminE">
+  GetVitaminE()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminE()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminE()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetVitaminE()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetVitaminK_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetVitaminK*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetVitaminK" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetVitaminK">
+  GetVitaminK()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L618"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminK()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminK()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetVitaminK()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Health_Connect_Datatypes_NutritionRecord_GetZinc_" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetZinc*"></a>
+
+  <h3 id="Android_Health_Connect_Datatypes_NutritionRecord_GetZinc" data-uid="Android.Health.Connect.Datatypes.NutritionRecord.GetZinc">
+  GetZinc()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L626"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getZinc()">https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getZinc()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mass GetZinc()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></dt>
+    <dd><p><a class="xref" href="Android.Health.Connect.Datatypes.Units.Mass.html">Mass</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Health/Connect/Datatypes/NutritionRecord.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

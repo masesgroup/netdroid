@@ -1,0 +1,2333 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class MediaParser | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MediaParser | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/media/MediaParser.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_MediaParser.md&amp;value=---%0Auid%3A%20Android.Media.MediaParser%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.MediaParser">
+
+
+
+  <h1 id="Android_Media_MediaParser" data-uid="Android.Media.MediaParser" class="text-break">
+Class MediaParser  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html">https://developer.android.com/reference/android/media/MediaParser.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MediaParser : JVMBridgeBase&lt;MediaParser&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Media.MediaParser.html">MediaParser</a>&gt;</div>
+      <div><span class="xref">MediaParser</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaParser&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaParser&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaParser&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaParser&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaParser&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaParser&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaParser&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaParser&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;MediaParser&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaParser&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaParser&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaParser&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaParser&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_MediaParser__ctor_" data-uid="Android.Media.MediaParser.#ctor*"></a>
+
+  <h3 id="Android_Media_MediaParser__ctor" data-uid="Android.Media.MediaParser.#ctor">
+  MediaParser()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L6646"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaParser()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser__ctor_" data-uid="Android.Media.MediaParser.#ctor*"></a>
+
+  <h3 id="Android_Media_MediaParser__ctor_System_Object___" data-uid="Android.Media.MediaParser.#ctor(System.Object[])">
+  MediaParser(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L6650"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaParser(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_MediaParser_BridgeClassName_" data-uid="Android.Media.MediaParser.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_MediaParser_BridgeClassName" data-uid="Android.Media.MediaParser.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L6657"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_IsBridgeAbstract_" data-uid="Android.Media.MediaParser.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_MediaParser_IsBridgeAbstract" data-uid="Android.Media.MediaParser.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L6661"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_IsBridgeCloseable_" data-uid="Android.Media.MediaParser.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_MediaParser_IsBridgeCloseable" data-uid="Android.Media.MediaParser.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L6665"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_IsBridgeInterface_" data-uid="Android.Media.MediaParser.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_MediaParser_IsBridgeInterface" data-uid="Android.Media.MediaParser.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L6669"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_IsBridgeStatic_" data-uid="Android.Media.MediaParser.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_MediaParser_IsBridgeStatic" data-uid="Android.Media.MediaParser.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L6673"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_ADTS_ENABLE_CBR_SEEKING_" data-uid="Android.Media.MediaParser.PARAMETER_ADTS_ENABLE_CBR_SEEKING*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_ADTS_ENABLE_CBR_SEEKING" data-uid="Android.Media.MediaParser.PARAMETER_ADTS_ENABLE_CBR_SEEKING">
+  PARAMETER_ADTS_ENABLE_CBR_SEEKING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_ADTS_ENABLE_CBR_SEEKING">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_ADTS_ENABLE_CBR_SEEKING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_ADTS_ENABLE_CBR_SEEKING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_AMR_ENABLE_CBR_SEEKING_" data-uid="Android.Media.MediaParser.PARAMETER_AMR_ENABLE_CBR_SEEKING*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_AMR_ENABLE_CBR_SEEKING" data-uid="Android.Media.MediaParser.PARAMETER_AMR_ENABLE_CBR_SEEKING">
+  PARAMETER_AMR_ENABLE_CBR_SEEKING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_AMR_ENABLE_CBR_SEEKING">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_AMR_ENABLE_CBR_SEEKING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_AMR_ENABLE_CBR_SEEKING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_FLAC_DISABLE_ID3_" data-uid="Android.Media.MediaParser.PARAMETER_FLAC_DISABLE_ID3*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_FLAC_DISABLE_ID3" data-uid="Android.Media.MediaParser.PARAMETER_FLAC_DISABLE_ID3">
+  PARAMETER_FLAC_DISABLE_ID3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_FLAC_DISABLE_ID3">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_FLAC_DISABLE_ID3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_FLAC_DISABLE_ID3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_MATROSKA_DISABLE_CUES_SEEKING_" data-uid="Android.Media.MediaParser.PARAMETER_MATROSKA_DISABLE_CUES_SEEKING*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_MATROSKA_DISABLE_CUES_SEEKING" data-uid="Android.Media.MediaParser.PARAMETER_MATROSKA_DISABLE_CUES_SEEKING">
+  PARAMETER_MATROSKA_DISABLE_CUES_SEEKING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_MATROSKA_DISABLE_CUES_SEEKING">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_MATROSKA_DISABLE_CUES_SEEKING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_MATROSKA_DISABLE_CUES_SEEKING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_MP3_DISABLE_ID3_" data-uid="Android.Media.MediaParser.PARAMETER_MP3_DISABLE_ID3*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_MP3_DISABLE_ID3" data-uid="Android.Media.MediaParser.PARAMETER_MP3_DISABLE_ID3">
+  PARAMETER_MP3_DISABLE_ID3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_MP3_DISABLE_ID3">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_MP3_DISABLE_ID3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_MP3_DISABLE_ID3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_MP3_ENABLE_CBR_SEEKING_" data-uid="Android.Media.MediaParser.PARAMETER_MP3_ENABLE_CBR_SEEKING*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_MP3_ENABLE_CBR_SEEKING" data-uid="Android.Media.MediaParser.PARAMETER_MP3_ENABLE_CBR_SEEKING">
+  PARAMETER_MP3_ENABLE_CBR_SEEKING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_MP3_ENABLE_CBR_SEEKING">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_MP3_ENABLE_CBR_SEEKING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_MP3_ENABLE_CBR_SEEKING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_MP3_ENABLE_INDEX_SEEKING_" data-uid="Android.Media.MediaParser.PARAMETER_MP3_ENABLE_INDEX_SEEKING*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_MP3_ENABLE_INDEX_SEEKING" data-uid="Android.Media.MediaParser.PARAMETER_MP3_ENABLE_INDEX_SEEKING">
+  PARAMETER_MP3_ENABLE_INDEX_SEEKING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_MP3_ENABLE_INDEX_SEEKING">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_MP3_ENABLE_INDEX_SEEKING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_MP3_ENABLE_INDEX_SEEKING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_MP4_IGNORE_EDIT_LISTS_" data-uid="Android.Media.MediaParser.PARAMETER_MP4_IGNORE_EDIT_LISTS*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_MP4_IGNORE_EDIT_LISTS" data-uid="Android.Media.MediaParser.PARAMETER_MP4_IGNORE_EDIT_LISTS">
+  PARAMETER_MP4_IGNORE_EDIT_LISTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_MP4_IGNORE_EDIT_LISTS">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_MP4_IGNORE_EDIT_LISTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_MP4_IGNORE_EDIT_LISTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_MP4_IGNORE_TFDT_BOX_" data-uid="Android.Media.MediaParser.PARAMETER_MP4_IGNORE_TFDT_BOX*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_MP4_IGNORE_TFDT_BOX" data-uid="Android.Media.MediaParser.PARAMETER_MP4_IGNORE_TFDT_BOX">
+  PARAMETER_MP4_IGNORE_TFDT_BOX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_MP4_IGNORE_TFDT_BOX">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_MP4_IGNORE_TFDT_BOX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_MP4_IGNORE_TFDT_BOX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_MP4_TREAT_VIDEO_FRAMES_AS_KEYFRAMES_" data-uid="Android.Media.MediaParser.PARAMETER_MP4_TREAT_VIDEO_FRAMES_AS_KEYFRAMES*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_MP4_TREAT_VIDEO_FRAMES_AS_KEYFRAMES" data-uid="Android.Media.MediaParser.PARAMETER_MP4_TREAT_VIDEO_FRAMES_AS_KEYFRAMES">
+  PARAMETER_MP4_TREAT_VIDEO_FRAMES_AS_KEYFRAMES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_MP4_TREAT_VIDEO_FRAMES_AS_KEYFRAMES">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_MP4_TREAT_VIDEO_FRAMES_AS_KEYFRAMES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_MP4_TREAT_VIDEO_FRAMES_AS_KEYFRAMES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_TS_ALLOW_NON_IDR_AVC_KEYFRAMES_" data-uid="Android.Media.MediaParser.PARAMETER_TS_ALLOW_NON_IDR_AVC_KEYFRAMES*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_TS_ALLOW_NON_IDR_AVC_KEYFRAMES" data-uid="Android.Media.MediaParser.PARAMETER_TS_ALLOW_NON_IDR_AVC_KEYFRAMES">
+  PARAMETER_TS_ALLOW_NON_IDR_AVC_KEYFRAMES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_TS_ALLOW_NON_IDR_AVC_KEYFRAMES">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_TS_ALLOW_NON_IDR_AVC_KEYFRAMES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_TS_ALLOW_NON_IDR_AVC_KEYFRAMES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_TS_DETECT_ACCESS_UNITS_" data-uid="Android.Media.MediaParser.PARAMETER_TS_DETECT_ACCESS_UNITS*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_TS_DETECT_ACCESS_UNITS" data-uid="Android.Media.MediaParser.PARAMETER_TS_DETECT_ACCESS_UNITS">
+  PARAMETER_TS_DETECT_ACCESS_UNITS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_TS_DETECT_ACCESS_UNITS">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_TS_DETECT_ACCESS_UNITS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_TS_DETECT_ACCESS_UNITS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_TS_ENABLE_HDMV_DTS_AUDIO_STREAMS_" data-uid="Android.Media.MediaParser.PARAMETER_TS_ENABLE_HDMV_DTS_AUDIO_STREAMS*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_TS_ENABLE_HDMV_DTS_AUDIO_STREAMS" data-uid="Android.Media.MediaParser.PARAMETER_TS_ENABLE_HDMV_DTS_AUDIO_STREAMS">
+  PARAMETER_TS_ENABLE_HDMV_DTS_AUDIO_STREAMS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_TS_ENABLE_HDMV_DTS_AUDIO_STREAMS">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_TS_ENABLE_HDMV_DTS_AUDIO_STREAMS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_TS_ENABLE_HDMV_DTS_AUDIO_STREAMS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_TS_IGNORE_AAC_STREAM_" data-uid="Android.Media.MediaParser.PARAMETER_TS_IGNORE_AAC_STREAM*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_TS_IGNORE_AAC_STREAM" data-uid="Android.Media.MediaParser.PARAMETER_TS_IGNORE_AAC_STREAM">
+  PARAMETER_TS_IGNORE_AAC_STREAM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_TS_IGNORE_AAC_STREAM">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_TS_IGNORE_AAC_STREAM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_TS_IGNORE_AAC_STREAM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_TS_IGNORE_AVC_STREAM_" data-uid="Android.Media.MediaParser.PARAMETER_TS_IGNORE_AVC_STREAM*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_TS_IGNORE_AVC_STREAM" data-uid="Android.Media.MediaParser.PARAMETER_TS_IGNORE_AVC_STREAM">
+  PARAMETER_TS_IGNORE_AVC_STREAM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_TS_IGNORE_AVC_STREAM">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_TS_IGNORE_AVC_STREAM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_TS_IGNORE_AVC_STREAM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_TS_IGNORE_SPLICE_INFO_STREAM_" data-uid="Android.Media.MediaParser.PARAMETER_TS_IGNORE_SPLICE_INFO_STREAM*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_TS_IGNORE_SPLICE_INFO_STREAM" data-uid="Android.Media.MediaParser.PARAMETER_TS_IGNORE_SPLICE_INFO_STREAM">
+  PARAMETER_TS_IGNORE_SPLICE_INFO_STREAM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_TS_IGNORE_SPLICE_INFO_STREAM">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_TS_IGNORE_SPLICE_INFO_STREAM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_TS_IGNORE_SPLICE_INFO_STREAM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARAMETER_TS_MODE_" data-uid="Android.Media.MediaParser.PARAMETER_TS_MODE*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARAMETER_TS_MODE" data-uid="Android.Media.MediaParser.PARAMETER_TS_MODE">
+  PARAMETER_TS_MODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_TS_MODE">https://developer.android.com/reference/android/media/MediaParser.html#PARAMETER_TS_MODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_TS_MODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_AC3_" data-uid="Android.Media.MediaParser.PARSER_NAME_AC3*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_AC3" data-uid="Android.Media.MediaParser.PARSER_NAME_AC3">
+  PARSER_NAME_AC3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_AC3">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_AC3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_AC3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_AC4_" data-uid="Android.Media.MediaParser.PARSER_NAME_AC4*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_AC4" data-uid="Android.Media.MediaParser.PARSER_NAME_AC4">
+  PARSER_NAME_AC4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_AC4">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_AC4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_AC4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_ADTS_" data-uid="Android.Media.MediaParser.PARSER_NAME_ADTS*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_ADTS" data-uid="Android.Media.MediaParser.PARSER_NAME_ADTS">
+  PARSER_NAME_ADTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_ADTS">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_ADTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_ADTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_AMR_" data-uid="Android.Media.MediaParser.PARSER_NAME_AMR*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_AMR" data-uid="Android.Media.MediaParser.PARSER_NAME_AMR">
+  PARSER_NAME_AMR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_AMR">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_AMR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_AMR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_FLAC_" data-uid="Android.Media.MediaParser.PARSER_NAME_FLAC*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_FLAC" data-uid="Android.Media.MediaParser.PARSER_NAME_FLAC">
+  PARSER_NAME_FLAC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_FLAC">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_FLAC</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_FLAC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_FLV_" data-uid="Android.Media.MediaParser.PARSER_NAME_FLV*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_FLV" data-uid="Android.Media.MediaParser.PARSER_NAME_FLV">
+  PARSER_NAME_FLV
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_FLV">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_FLV</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_FLV { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_FMP4_" data-uid="Android.Media.MediaParser.PARSER_NAME_FMP4*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_FMP4" data-uid="Android.Media.MediaParser.PARSER_NAME_FMP4">
+  PARSER_NAME_FMP4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_FMP4">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_FMP4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_FMP4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_MATROSKA_" data-uid="Android.Media.MediaParser.PARSER_NAME_MATROSKA*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_MATROSKA" data-uid="Android.Media.MediaParser.PARSER_NAME_MATROSKA">
+  PARSER_NAME_MATROSKA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_MATROSKA">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_MATROSKA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_MATROSKA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_MP3_" data-uid="Android.Media.MediaParser.PARSER_NAME_MP3*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_MP3" data-uid="Android.Media.MediaParser.PARSER_NAME_MP3">
+  PARSER_NAME_MP3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_MP3">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_MP3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_MP3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_MP4_" data-uid="Android.Media.MediaParser.PARSER_NAME_MP4*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_MP4" data-uid="Android.Media.MediaParser.PARSER_NAME_MP4">
+  PARSER_NAME_MP4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_MP4">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_MP4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_MP4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_OGG_" data-uid="Android.Media.MediaParser.PARSER_NAME_OGG*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_OGG" data-uid="Android.Media.MediaParser.PARSER_NAME_OGG">
+  PARSER_NAME_OGG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_OGG">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_OGG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_OGG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_PS_" data-uid="Android.Media.MediaParser.PARSER_NAME_PS*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_PS" data-uid="Android.Media.MediaParser.PARSER_NAME_PS">
+  PARSER_NAME_PS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_PS">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_PS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_PS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_TS_" data-uid="Android.Media.MediaParser.PARSER_NAME_TS*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_TS" data-uid="Android.Media.MediaParser.PARSER_NAME_TS">
+  PARSER_NAME_TS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_TS">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_TS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_TS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_UNKNOWN_" data-uid="Android.Media.MediaParser.PARSER_NAME_UNKNOWN*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_UNKNOWN" data-uid="Android.Media.MediaParser.PARSER_NAME_UNKNOWN">
+  PARSER_NAME_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_UNKNOWN">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_PARSER_NAME_WAV_" data-uid="Android.Media.MediaParser.PARSER_NAME_WAV*"></a>
+
+  <h3 id="Android_Media_MediaParser_PARSER_NAME_WAV" data-uid="Android.Media.MediaParser.PARSER_NAME_WAV">
+  PARSER_NAME_WAV
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_WAV">https://developer.android.com/reference/android/media/MediaParser.html#PARSER_NAME_WAV</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARSER_NAME_WAV { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_SAMPLE_FLAG_DECODE_ONLY_" data-uid="Android.Media.MediaParser.SAMPLE_FLAG_DECODE_ONLY*"></a>
+
+  <h3 id="Android_Media_MediaParser_SAMPLE_FLAG_DECODE_ONLY" data-uid="Android.Media.MediaParser.SAMPLE_FLAG_DECODE_ONLY">
+  SAMPLE_FLAG_DECODE_ONLY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#SAMPLE_FLAG_DECODE_ONLY">https://developer.android.com/reference/android/media/MediaParser.html#SAMPLE_FLAG_DECODE_ONLY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SAMPLE_FLAG_DECODE_ONLY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_SAMPLE_FLAG_ENCRYPTED_" data-uid="Android.Media.MediaParser.SAMPLE_FLAG_ENCRYPTED*"></a>
+
+  <h3 id="Android_Media_MediaParser_SAMPLE_FLAG_ENCRYPTED" data-uid="Android.Media.MediaParser.SAMPLE_FLAG_ENCRYPTED">
+  SAMPLE_FLAG_ENCRYPTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#SAMPLE_FLAG_ENCRYPTED">https://developer.android.com/reference/android/media/MediaParser.html#SAMPLE_FLAG_ENCRYPTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SAMPLE_FLAG_ENCRYPTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA_" data-uid="Android.Media.MediaParser.SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA*"></a>
+
+  <h3 id="Android_Media_MediaParser_SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA" data-uid="Android.Media.MediaParser.SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA">
+  SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA">https://developer.android.com/reference/android/media/MediaParser.html#SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_SAMPLE_FLAG_KEY_FRAME_" data-uid="Android.Media.MediaParser.SAMPLE_FLAG_KEY_FRAME*"></a>
+
+  <h3 id="Android_Media_MediaParser_SAMPLE_FLAG_KEY_FRAME" data-uid="Android.Media.MediaParser.SAMPLE_FLAG_KEY_FRAME">
+  SAMPLE_FLAG_KEY_FRAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#SAMPLE_FLAG_KEY_FRAME">https://developer.android.com/reference/android/media/MediaParser.html#SAMPLE_FLAG_KEY_FRAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SAMPLE_FLAG_KEY_FRAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_SAMPLE_FLAG_LAST_SAMPLE_" data-uid="Android.Media.MediaParser.SAMPLE_FLAG_LAST_SAMPLE*"></a>
+
+  <h3 id="Android_Media_MediaParser_SAMPLE_FLAG_LAST_SAMPLE" data-uid="Android.Media.MediaParser.SAMPLE_FLAG_LAST_SAMPLE">
+  SAMPLE_FLAG_LAST_SAMPLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#SAMPLE_FLAG_LAST_SAMPLE">https://developer.android.com/reference/android/media/MediaParser.html#SAMPLE_FLAG_LAST_SAMPLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SAMPLE_FLAG_LAST_SAMPLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Media_MediaParser_Advance_" data-uid="Android.Media.MediaParser.Advance*"></a>
+
+  <h3 id="Android_Media_MediaParser_Advance_Android_Media_MediaParser_SeekableInputReader_" data-uid="Android.Media.MediaParser.Advance(Android.Media.MediaParser.SeekableInputReader)">
+  Advance(SeekableInputReader)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#advance(android.media.MediaParser.SeekableInputReader)">https://developer.android.com/reference/android/media/MediaParser.html#advance(android.media.MediaParser.SeekableInputReader)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Advance(MediaParser.SeekableInputReader arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaParser.html">MediaParser</a>.<a class="xref" href="Android.Media.MediaParser.SeekableInputReader.html">SeekableInputReader</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaParser.SeekableInputReader.html">MediaParser.SeekableInputReader</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_MediaParser_Create_" data-uid="Android.Media.MediaParser.Create*"></a>
+
+  <h3 id="Android_Media_MediaParser_Create_Android_Media_MediaParser_OutputConsumer_Java_Lang_String___" data-uid="Android.Media.MediaParser.Create(Android.Media.MediaParser.OutputConsumer,Java.Lang.String[])">
+  Create(OutputConsumer, params String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#create(android.media.MediaParser.OutputConsumer,java.lang.String[])">https://developer.android.com/reference/android/media/MediaParser.html#create(android.media.MediaParser.OutputConsumer,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MediaParser Create(MediaParser.OutputConsumer arg0, params String[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaParser.html">MediaParser</a>.<a class="xref" href="Android.Media.MediaParser.OutputConsumer.html">OutputConsumer</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaParser.OutputConsumer.html">MediaParser.OutputConsumer</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaParser.html">MediaParser</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaParser.html">MediaParser</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_CreateByName_" data-uid="Android.Media.MediaParser.CreateByName*"></a>
+
+  <h3 id="Android_Media_MediaParser_CreateByName_Java_Lang_String_Android_Media_MediaParser_OutputConsumer_" data-uid="Android.Media.MediaParser.CreateByName(Java.Lang.String,Android.Media.MediaParser.OutputConsumer)">
+  CreateByName(String, OutputConsumer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#createByName(java.lang.String,android.media.MediaParser.OutputConsumer)">https://developer.android.com/reference/android/media/MediaParser.html#createByName(java.lang.String,android.media.MediaParser.OutputConsumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MediaParser CreateByName(String arg0, MediaParser.OutputConsumer arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.MediaParser.html">MediaParser</a>.<a class="xref" href="Android.Media.MediaParser.OutputConsumer.html">OutputConsumer</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaParser.OutputConsumer.html">MediaParser.OutputConsumer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaParser.html">MediaParser</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaParser.html">MediaParser</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_GetLogSessionId_" data-uid="Android.Media.MediaParser.GetLogSessionId*"></a>
+
+  <h3 id="Android_Media_MediaParser_GetLogSessionId" data-uid="Android.Media.MediaParser.GetLogSessionId">
+  GetLogSessionId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#getLogSessionId()">https://developer.android.com/reference/android/media/MediaParser.html#getLogSessionId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LogSessionId GetLogSessionId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Metrics.LogSessionId.html">LogSessionId</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Metrics.LogSessionId.html">LogSessionId</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_GetParserName_" data-uid="Android.Media.MediaParser.GetParserName*"></a>
+
+  <h3 id="Android_Media_MediaParser_GetParserName" data-uid="Android.Media.MediaParser.GetParserName">
+  GetParserName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#getParserName()">https://developer.android.com/reference/android/media/MediaParser.html#getParserName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetParserName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_GetParserNames_" data-uid="Android.Media.MediaParser.GetParserNames*"></a>
+
+  <h3 id="Android_Media_MediaParser_GetParserNames_Android_Media_MediaFormat_" data-uid="Android.Media.MediaParser.GetParserNames(Android.Media.MediaFormat)">
+  GetParserNames(MediaFormat)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#getParserNames(android.media.MediaFormat)">https://developer.android.com/reference/android/media/MediaParser.html#getParserNames(android.media.MediaFormat)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;String&gt; GetParserNames(MediaFormat arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaFormat.html">MediaFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaFormat.html">MediaFormat</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_Release_" data-uid="Android.Media.MediaParser.Release*"></a>
+
+  <h3 id="Android_Media_MediaParser_Release" data-uid="Android.Media.MediaParser.Release">
+  Release()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#release()">https://developer.android.com/reference/android/media/MediaParser.html#release()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Release()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_Seek_" data-uid="Android.Media.MediaParser.Seek*"></a>
+
+  <h3 id="Android_Media_MediaParser_Seek_Android_Media_MediaParser_SeekPoint_" data-uid="Android.Media.MediaParser.Seek(Android.Media.MediaParser.SeekPoint)">
+  Seek(SeekPoint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#seek(android.media.MediaParser.SeekPoint)">https://developer.android.com/reference/android/media/MediaParser.html#seek(android.media.MediaParser.SeekPoint)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Seek(MediaParser.SeekPoint arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaParser.html">MediaParser</a>.<a class="xref" href="Android.Media.MediaParser.SeekPoint.html">SeekPoint</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaParser.SeekPoint.html">MediaParser.SeekPoint</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_SetLogSessionId_" data-uid="Android.Media.MediaParser.SetLogSessionId*"></a>
+
+  <h3 id="Android_Media_MediaParser_SetLogSessionId_Android_Media_Metrics_LogSessionId_" data-uid="Android.Media.MediaParser.SetLogSessionId(Android.Media.Metrics.LogSessionId)">
+  SetLogSessionId(LogSessionId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#setLogSessionId(android.media.metrics.LogSessionId)">https://developer.android.com/reference/android/media/MediaParser.html#setLogSessionId(android.media.metrics.LogSessionId)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLogSessionId(LogSessionId arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Metrics.LogSessionId.html">LogSessionId</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Metrics.LogSessionId.html">LogSessionId</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_SetParameter_" data-uid="Android.Media.MediaParser.SetParameter*"></a>
+
+  <h3 id="Android_Media_MediaParser_SetParameter_Java_Lang_String_System_Object_" data-uid="Android.Media.MediaParser.SetParameter(Java.Lang.String,System.Object)">
+  SetParameter(String, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#setParameter(java.lang.String,java.lang.Object)">https://developer.android.com/reference/android/media/MediaParser.html#setParameter(java.lang.String,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaParser SetParameter(String arg0, object arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaParser.html">MediaParser</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaParser.html">MediaParser</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaParser_SupportsParameter_" data-uid="Android.Media.MediaParser.SupportsParameter*"></a>
+
+  <h3 id="Android_Media_MediaParser_SupportsParameter_Java_Lang_String_" data-uid="Android.Media.MediaParser.SupportsParameter(Java.Lang.String)">
+  SupportsParameter(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaParser.html#supportsParameter(java.lang.String)">https://developer.android.com/reference/android/media/MediaParser.html#supportsParameter(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportsParameter(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaParser.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

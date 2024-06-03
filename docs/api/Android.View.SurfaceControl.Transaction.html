@@ -1,0 +1,2020 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class SurfaceControl.Transaction | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SurfaceControl.Transaction | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_View_SurfaceControl_Transaction.md&amp;value=---%0Auid%3A%20Android.View.SurfaceControl.Transaction%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.View.SurfaceControl.Transaction">
+
+
+
+  <h1 id="Android_View_SurfaceControl_Transaction" data-uid="Android.View.SurfaceControl.Transaction" class="text-break">
+Class SurfaceControl.Transaction  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.View.html">View</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SurfaceControl.Transaction : JVMBridgeBase&lt;SurfaceControl.Transaction&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ICloseable, IAutoCloseable, IParcelable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a>&gt;</div>
+      <div><span class="xref">SurfaceControl.Transaction</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Io.ICloseable.html">ICloseable</a></div>
+      <div><a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a></div>
+      <div><a class="xref" href="Android.Os.IParcelable.html">IParcelable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SurfaceControl.Transaction&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_View_SurfaceControl_Transaction__ctor_" data-uid="Android.View.SurfaceControl.Transaction.#ctor*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction__ctor" data-uid="Android.View.SurfaceControl.Transaction.#ctor">
+  Transaction()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transaction()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction__ctor_" data-uid="Android.View.SurfaceControl.Transaction.#ctor*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction__ctor_System_Object___" data-uid="Android.View.SurfaceControl.Transaction.#ctor(System.Object[])">
+  Transaction(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transaction(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_View_SurfaceControl_Transaction_BridgeClassName_" data-uid="Android.View.SurfaceControl.Transaction.BridgeClassName*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_BridgeClassName" data-uid="Android.View.SurfaceControl.Transaction.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_CREATOR_" data-uid="Android.View.SurfaceControl.Transaction.CREATOR*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_CREATOR" data-uid="Android.View.SurfaceControl.Transaction.CREATOR">
+  CREATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#CREATOR">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#CREATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>.<a class="xref" href="Android.Os.Parcelable.Creator.html">Creator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_IsBridgeAbstract_" data-uid="Android.View.SurfaceControl.Transaction.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_IsBridgeAbstract" data-uid="Android.View.SurfaceControl.Transaction.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_IsBridgeCloseable_" data-uid="Android.View.SurfaceControl.Transaction.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_IsBridgeCloseable" data-uid="Android.View.SurfaceControl.Transaction.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_IsBridgeInterface_" data-uid="Android.View.SurfaceControl.Transaction.IsBridgeInterface*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_IsBridgeInterface" data-uid="Android.View.SurfaceControl.Transaction.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_IsBridgeStatic_" data-uid="Android.View.SurfaceControl.Transaction.IsBridgeStatic*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_IsBridgeStatic" data-uid="Android.View.SurfaceControl.Transaction.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_View_SurfaceControl_Transaction_AddTransactionCommittedListener_" data-uid="Android.View.SurfaceControl.Transaction.AddTransactionCommittedListener*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_AddTransactionCommittedListener_Java_Util_Concurrent_Executor_Android_View_SurfaceControl_TransactionCommittedListener_" data-uid="Android.View.SurfaceControl.Transaction.AddTransactionCommittedListener(Java.Util.Concurrent.Executor,Android.View.SurfaceControl.TransactionCommittedListener)">
+  AddTransactionCommittedListener(Executor, TransactionCommittedListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#addTransactionCommittedListener(java.util.concurrent.Executor,android.view.SurfaceControl.TransactionCommittedListener)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#addTransactionCommittedListener(java.util.concurrent.Executor,android.view.SurfaceControl.TransactionCommittedListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction AddTransactionCommittedListener(Executor arg0, SurfaceControl.TransactionCommittedListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.TransactionCommittedListener.html">TransactionCommittedListener</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.TransactionCommittedListener.html">SurfaceControl.TransactionCommittedListener</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_Apply_" data-uid="Android.View.SurfaceControl.Transaction.Apply*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_Apply" data-uid="Android.View.SurfaceControl.Transaction.Apply">
+  Apply()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#apply()">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#apply()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Apply()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_ClearFrameRate_" data-uid="Android.View.SurfaceControl.Transaction.ClearFrameRate*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_ClearFrameRate_Android_View_SurfaceControl_" data-uid="Android.View.SurfaceControl.Transaction.ClearFrameRate(Android.View.SurfaceControl)">
+  ClearFrameRate(SurfaceControl)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#clearFrameRate(android.view.SurfaceControl)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#clearFrameRate(android.view.SurfaceControl)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction ClearFrameRate(SurfaceControl arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_ClearTrustedPresentationCallback_" data-uid="Android.View.SurfaceControl.Transaction.ClearTrustedPresentationCallback*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_ClearTrustedPresentationCallback_Android_View_SurfaceControl_" data-uid="Android.View.SurfaceControl.Transaction.ClearTrustedPresentationCallback(Android.View.SurfaceControl)">
+  ClearTrustedPresentationCallback(SurfaceControl)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#clearTrustedPresentationCallback(android.view.SurfaceControl)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#clearTrustedPresentationCallback(android.view.SurfaceControl)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction ClearTrustedPresentationCallback(SurfaceControl arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_Close_" data-uid="Android.View.SurfaceControl.Transaction.Close*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_Close" data-uid="Android.View.SurfaceControl.Transaction.Close">
+  Close()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#close()">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#close()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_DescribeContents_" data-uid="Android.View.SurfaceControl.Transaction.DescribeContents*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_DescribeContents" data-uid="Android.View.SurfaceControl.Transaction.DescribeContents">
+  DescribeContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#describeContents()">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#describeContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_Merge_" data-uid="Android.View.SurfaceControl.Transaction.Merge*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_Merge_Android_View_SurfaceControl_Transaction_" data-uid="Android.View.SurfaceControl.Transaction.Merge(Android.View.SurfaceControl.Transaction)">
+  Merge(Transaction)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#merge(android.view.SurfaceControl.Transaction)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#merge(android.view.SurfaceControl.Transaction)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction Merge(SurfaceControl.Transaction arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_Reparent_" data-uid="Android.View.SurfaceControl.Transaction.Reparent*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_Reparent_Android_View_SurfaceControl_Android_View_SurfaceControl_" data-uid="Android.View.SurfaceControl.Transaction.Reparent(Android.View.SurfaceControl,Android.View.SurfaceControl)">
+  Reparent(SurfaceControl, SurfaceControl)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#reparent(android.view.SurfaceControl,android.view.SurfaceControl)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#reparent(android.view.SurfaceControl,android.view.SurfaceControl)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction Reparent(SurfaceControl arg0, SurfaceControl arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetAlpha_" data-uid="Android.View.SurfaceControl.Transaction.SetAlpha*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetAlpha_Android_View_SurfaceControl_System_Single_" data-uid="Android.View.SurfaceControl.Transaction.SetAlpha(Android.View.SurfaceControl,System.Single)">
+  SetAlpha(SurfaceControl, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setAlpha(android.view.SurfaceControl,float)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setAlpha(android.view.SurfaceControl,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetAlpha(SurfaceControl arg0, float arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetBuffer_" data-uid="Android.View.SurfaceControl.Transaction.SetBuffer*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetBuffer_Android_View_SurfaceControl_Android_Hardware_HardwareBuffer_" data-uid="Android.View.SurfaceControl.Transaction.SetBuffer(Android.View.SurfaceControl,Android.Hardware.HardwareBuffer)">
+  SetBuffer(SurfaceControl, HardwareBuffer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBuffer(android.view.SurfaceControl,android.hardware.HardwareBuffer)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBuffer(android.view.SurfaceControl,android.hardware.HardwareBuffer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetBuffer(SurfaceControl arg0, HardwareBuffer arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Hardware.HardwareBuffer.html">HardwareBuffer</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.HardwareBuffer.html">HardwareBuffer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetBuffer_" data-uid="Android.View.SurfaceControl.Transaction.SetBuffer*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetBuffer_Android_View_SurfaceControl_Android_Hardware_HardwareBuffer_Android_Hardware_SyncFence_" data-uid="Android.View.SurfaceControl.Transaction.SetBuffer(Android.View.SurfaceControl,Android.Hardware.HardwareBuffer,Android.Hardware.SyncFence)">
+  SetBuffer(SurfaceControl, HardwareBuffer, SyncFence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBuffer(android.view.SurfaceControl,android.hardware.HardwareBuffer,android.hardware.SyncFence)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBuffer(android.view.SurfaceControl,android.hardware.HardwareBuffer,android.hardware.SyncFence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetBuffer(SurfaceControl arg0, HardwareBuffer arg1, SyncFence arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Hardware.HardwareBuffer.html">HardwareBuffer</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.HardwareBuffer.html">HardwareBuffer</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Hardware.SyncFence.html">SyncFence</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SyncFence.html">SyncFence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetBuffer_" data-uid="Android.View.SurfaceControl.Transaction.SetBuffer*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetBuffer_Android_View_SurfaceControl_Android_Hardware_HardwareBuffer_Android_Hardware_SyncFence_Java_Util_Function_Consumer_Android_Hardware_SyncFence__" data-uid="Android.View.SurfaceControl.Transaction.SetBuffer(Android.View.SurfaceControl,Android.Hardware.HardwareBuffer,Android.Hardware.SyncFence,Java.Util.Function.Consumer{Android.Hardware.SyncFence})">
+  SetBuffer(SurfaceControl, HardwareBuffer, SyncFence, Consumer&lt;SyncFence&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBuffer(android.view.SurfaceControl,android.hardware.HardwareBuffer,android.hardware.SyncFence,java.util.function.Consumer)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBuffer(android.view.SurfaceControl,android.hardware.HardwareBuffer,android.hardware.SyncFence,java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetBuffer(SurfaceControl arg0, HardwareBuffer arg1, SyncFence arg2, Consumer&lt;SyncFence&gt; arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Hardware.HardwareBuffer.html">HardwareBuffer</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.HardwareBuffer.html">HardwareBuffer</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Hardware.SyncFence.html">SyncFence</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SyncFence.html">SyncFence</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;<a class="xref" href="Android.Hardware.SyncFence.html">SyncFence</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetBufferSize_" data-uid="Android.View.SurfaceControl.Transaction.SetBufferSize*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetBufferSize_Android_View_SurfaceControl_System_Int32_System_Int32_" data-uid="Android.View.SurfaceControl.Transaction.SetBufferSize(Android.View.SurfaceControl,System.Int32,System.Int32)">
+  SetBufferSize(SurfaceControl, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L359"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBufferSize(android.view.SurfaceControl,int,int)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBufferSize(android.view.SurfaceControl,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetBufferSize(SurfaceControl arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetBufferTransform_" data-uid="Android.View.SurfaceControl.Transaction.SetBufferTransform*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetBufferTransform_Android_View_SurfaceControl_System_Int32_" data-uid="Android.View.SurfaceControl.Transaction.SetBufferTransform(Android.View.SurfaceControl,System.Int32)">
+  SetBufferTransform(SurfaceControl, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L369"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBufferTransform(android.view.SurfaceControl,int)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBufferTransform(android.view.SurfaceControl,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetBufferTransform(SurfaceControl arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetCrop_" data-uid="Android.View.SurfaceControl.Transaction.SetCrop*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetCrop_Android_View_SurfaceControl_Android_Graphics_Rect_" data-uid="Android.View.SurfaceControl.Transaction.SetCrop(Android.View.SurfaceControl,Android.Graphics.Rect)">
+  SetCrop(SurfaceControl, Rect)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setCrop(android.view.SurfaceControl,android.graphics.Rect)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setCrop(android.view.SurfaceControl,android.graphics.Rect)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetCrop(SurfaceControl arg0, Rect arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Graphics.Rect.html">Rect</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Rect.html">Rect</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetDamageRegion_" data-uid="Android.View.SurfaceControl.Transaction.SetDamageRegion*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetDamageRegion_Android_View_SurfaceControl_Android_Graphics_Region_" data-uid="Android.View.SurfaceControl.Transaction.SetDamageRegion(Android.View.SurfaceControl,Android.Graphics.Region)">
+  SetDamageRegion(SurfaceControl, Region)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setDamageRegion(android.view.SurfaceControl,android.graphics.Region)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setDamageRegion(android.view.SurfaceControl,android.graphics.Region)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetDamageRegion(SurfaceControl arg0, Region arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Graphics.Region.html">Region</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Region.html">Region</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetDataSpace_" data-uid="Android.View.SurfaceControl.Transaction.SetDataSpace*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetDataSpace_Android_View_SurfaceControl_System_Int32_" data-uid="Android.View.SurfaceControl.Transaction.SetDataSpace(Android.View.SurfaceControl,System.Int32)">
+  SetDataSpace(SurfaceControl, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setDataSpace(android.view.SurfaceControl,int)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setDataSpace(android.view.SurfaceControl,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetDataSpace(SurfaceControl arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetExtendedRangeBrightness_" data-uid="Android.View.SurfaceControl.Transaction.SetExtendedRangeBrightness*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetExtendedRangeBrightness_Android_View_SurfaceControl_System_Single_System_Single_" data-uid="Android.View.SurfaceControl.Transaction.SetExtendedRangeBrightness(Android.View.SurfaceControl,System.Single,System.Single)">
+  SetExtendedRangeBrightness(SurfaceControl, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setExtendedRangeBrightness(android.view.SurfaceControl,float,float)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setExtendedRangeBrightness(android.view.SurfaceControl,float,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetExtendedRangeBrightness(SurfaceControl arg0, float arg1, float arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetFrameRate_" data-uid="Android.View.SurfaceControl.Transaction.SetFrameRate*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetFrameRate_Android_View_SurfaceControl_System_Single_System_Int32_" data-uid="Android.View.SurfaceControl.Transaction.SetFrameRate(Android.View.SurfaceControl,System.Single,System.Int32)">
+  SetFrameRate(SurfaceControl, float, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setFrameRate(android.view.SurfaceControl,float,int)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setFrameRate(android.view.SurfaceControl,float,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetFrameRate(SurfaceControl arg0, float arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetFrameRate_" data-uid="Android.View.SurfaceControl.Transaction.SetFrameRate*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetFrameRate_Android_View_SurfaceControl_System_Single_System_Int32_System_Int32_" data-uid="Android.View.SurfaceControl.Transaction.SetFrameRate(Android.View.SurfaceControl,System.Single,System.Int32,System.Int32)">
+  SetFrameRate(SurfaceControl, float, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setFrameRate(android.view.SurfaceControl,float,int,int)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setFrameRate(android.view.SurfaceControl,float,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetFrameRate(SurfaceControl arg0, float arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetGeometry_" data-uid="Android.View.SurfaceControl.Transaction.SetGeometry*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetGeometry_Android_View_SurfaceControl_Android_Graphics_Rect_Android_Graphics_Rect_System_Int32_" data-uid="Android.View.SurfaceControl.Transaction.SetGeometry(Android.View.SurfaceControl,Android.Graphics.Rect,Android.Graphics.Rect,System.Int32)">
+  SetGeometry(SurfaceControl, Rect, Rect, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setGeometry(android.view.SurfaceControl,android.graphics.Rect,android.graphics.Rect,int)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setGeometry(android.view.SurfaceControl,android.graphics.Rect,android.graphics.Rect,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public SurfaceControl.Transaction SetGeometry(SurfaceControl arg0, Rect arg1, Rect arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Graphics.Rect.html">Rect</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Rect.html">Rect</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Graphics.Rect.html">Rect</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Rect.html">Rect</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetLayer_" data-uid="Android.View.SurfaceControl.Transaction.SetLayer*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetLayer_Android_View_SurfaceControl_System_Int32_" data-uid="Android.View.SurfaceControl.Transaction.SetLayer(Android.View.SurfaceControl,System.Int32)">
+  SetLayer(SurfaceControl, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L456"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setLayer(android.view.SurfaceControl,int)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setLayer(android.view.SurfaceControl,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetLayer(SurfaceControl arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetOpaque_" data-uid="Android.View.SurfaceControl.Transaction.SetOpaque*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetOpaque_Android_View_SurfaceControl_System_Boolean_" data-uid="Android.View.SurfaceControl.Transaction.SetOpaque(Android.View.SurfaceControl,System.Boolean)">
+  SetOpaque(SurfaceControl, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setOpaque(android.view.SurfaceControl,boolean)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setOpaque(android.view.SurfaceControl,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetOpaque(SurfaceControl arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetPosition_" data-uid="Android.View.SurfaceControl.Transaction.SetPosition*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetPosition_Android_View_SurfaceControl_System_Single_System_Single_" data-uid="Android.View.SurfaceControl.Transaction.SetPosition(Android.View.SurfaceControl,System.Single,System.Single)">
+  SetPosition(SurfaceControl, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L477"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setPosition(android.view.SurfaceControl,float,float)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setPosition(android.view.SurfaceControl,float,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetPosition(SurfaceControl arg0, float arg1, float arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetScale_" data-uid="Android.View.SurfaceControl.Transaction.SetScale*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetScale_Android_View_SurfaceControl_System_Single_System_Single_" data-uid="Android.View.SurfaceControl.Transaction.SetScale(Android.View.SurfaceControl,System.Single,System.Single)">
+  SetScale(SurfaceControl, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L488"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setScale(android.view.SurfaceControl,float,float)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setScale(android.view.SurfaceControl,float,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetScale(SurfaceControl arg0, float arg1, float arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetTrustedPresentationCallback_" data-uid="Android.View.SurfaceControl.Transaction.SetTrustedPresentationCallback*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetTrustedPresentationCallback_Android_View_SurfaceControl_Android_View_SurfaceControl_TrustedPresentationThresholds_Java_Util_Concurrent_Executor_Java_Util_Function_Consumer_Java_Lang_Boolean__" data-uid="Android.View.SurfaceControl.Transaction.SetTrustedPresentationCallback(Android.View.SurfaceControl,Android.View.SurfaceControl.TrustedPresentationThresholds,Java.Util.Concurrent.Executor,Java.Util.Function.Consumer{Java.Lang.Boolean})">
+  SetTrustedPresentationCallback(SurfaceControl, TrustedPresentationThresholds, Executor, Consumer&lt;Boolean&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L500"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setTrustedPresentationCallback(android.view.SurfaceControl,android.view.SurfaceControl.TrustedPresentationThresholds,java.util.concurrent.Executor,java.util.function.Consumer)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setTrustedPresentationCallback(android.view.SurfaceControl,android.view.SurfaceControl.TrustedPresentationThresholds,java.util.concurrent.Executor,java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetTrustedPresentationCallback(SurfaceControl arg0, SurfaceControl.TrustedPresentationThresholds arg1, Executor arg2, Consumer&lt;Boolean&gt; arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.TrustedPresentationThresholds.html">TrustedPresentationThresholds</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.TrustedPresentationThresholds.html">SurfaceControl.TrustedPresentationThresholds</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;<a class="xref" href="Java.Lang.Boolean.html">Boolean</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_SetVisibility_" data-uid="Android.View.SurfaceControl.Transaction.SetVisibility*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_SetVisibility_Android_View_SurfaceControl_System_Boolean_" data-uid="Android.View.SurfaceControl.Transaction.SetVisibility(Android.View.SurfaceControl,System.Boolean)">
+  SetVisibility(SurfaceControl, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setVisibility(android.view.SurfaceControl,boolean)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setVisibility(android.view.SurfaceControl,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControl.Transaction SetVisibility(SurfaceControl arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd><p><a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_WriteToParcel_" data-uid="Android.View.SurfaceControl.Transaction.WriteToParcel*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.View.SurfaceControl.Transaction.WriteToParcel(Android.Os.Parcel,System.Int32)">
+  WriteToParcel(Parcel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#writeToParcel(android.os.Parcel,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Android_View_SurfaceControl_Transaction_op_Implicit_" data-uid="Android.View.SurfaceControl.Transaction.op_Implicit*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_op_Implicit_Android_View_SurfaceControl_Transaction__Android_Os_Parcelable" data-uid="Android.View.SurfaceControl.Transaction.op_Implicit(Android.View.SurfaceControl.Transaction)~Android.Os.Parcelable">
+  implicit operator Parcelable(Transaction)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a> to <a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Parcelable(SurfaceControl.Transaction t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControl_Transaction_op_Implicit_" data-uid="Android.View.SurfaceControl.Transaction.op_Implicit*"></a>
+
+  <h3 id="Android_View_SurfaceControl_Transaction_op_Implicit_Android_View_SurfaceControl_Transaction__Java_Io_Closeable" data-uid="Android.View.SurfaceControl.Transaction.op_Implicit(Android.View.SurfaceControl.Transaction)~Java.Io.Closeable">
+  implicit operator Closeable(Transaction)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.View.SurfaceControl.Transaction.html">SurfaceControl.Transaction</a> to <a class="xref" href="Java.Io.Closeable.html">Closeable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Closeable(SurfaceControl.Transaction t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.View.SurfaceControl.html">SurfaceControl</a>.<a class="xref" href="Android.View.SurfaceControl.Transaction.html">Transaction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.Closeable.html">Closeable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControl.cs/#L229" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

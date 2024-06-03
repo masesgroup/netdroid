@@ -1,0 +1,2539 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class EditorInfo | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EditorInfo | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_View_Inputmethod_EditorInfo.md&amp;value=---%0Auid%3A%20Android.View.Inputmethod.EditorInfo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.View.Inputmethod.EditorInfo">
+
+
+
+  <h1 id="Android_View_Inputmethod_EditorInfo" data-uid="Android.View.Inputmethod.EditorInfo" class="text-break">
+Class EditorInfo  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.View.html">View</a>.<a class="xref" href="Android.View.Inputmethod.html">Inputmethod</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EditorInfo : JVMBridgeBase&lt;EditorInfo&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IInputType, IParcelable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.View.Inputmethod.EditorInfo.html">EditorInfo</a>&gt;</div>
+      <div><span class="xref">EditorInfo</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Text.IInputType.html">IInputType</a></div>
+      <div><a class="xref" href="Android.Os.IParcelable.html">IParcelable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EditorInfo&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EditorInfo&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EditorInfo&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EditorInfo&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EditorInfo&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EditorInfo&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EditorInfo&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EditorInfo&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;EditorInfo&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EditorInfo&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EditorInfo&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EditorInfo&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EditorInfo&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_View_Inputmethod_EditorInfo__ctor_" data-uid="Android.View.Inputmethod.EditorInfo.#ctor*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo__ctor" data-uid="Android.View.Inputmethod.EditorInfo.#ctor">
+  EditorInfo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditorInfo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo__ctor_" data-uid="Android.View.Inputmethod.EditorInfo.#ctor*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo__ctor_System_Object___" data-uid="Android.View.Inputmethod.EditorInfo.#ctor(System.Object[])">
+  EditorInfo(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L527"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditorInfo(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_BridgeClassName_" data-uid="Android.View.Inputmethod.EditorInfo.BridgeClassName*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_BridgeClassName" data-uid="Android.View.Inputmethod.EditorInfo.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L534"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_CREATOR_" data-uid="Android.View.Inputmethod.EditorInfo.CREATOR*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_CREATOR" data-uid="Android.View.Inputmethod.EditorInfo.CREATOR">
+  CREATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#CREATOR">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#CREATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>.<a class="xref" href="Android.Os.Parcelable.Creator.html">Creator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_ACTION_DONE_" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_DONE*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_ACTION_DONE" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_DONE">
+  IME_ACTION_DONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_DONE">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_DONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_ACTION_DONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_ACTION_GO_" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_GO*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_ACTION_GO" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_GO">
+  IME_ACTION_GO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_GO">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_GO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_ACTION_GO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_ACTION_NEXT_" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_NEXT*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_ACTION_NEXT" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_NEXT">
+  IME_ACTION_NEXT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_NEXT">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_NEXT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_ACTION_NEXT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_ACTION_NONE_" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_NONE*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_ACTION_NONE" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_NONE">
+  IME_ACTION_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_NONE">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_ACTION_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_ACTION_PREVIOUS_" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_PREVIOUS*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_ACTION_PREVIOUS" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_PREVIOUS">
+  IME_ACTION_PREVIOUS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_PREVIOUS">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_PREVIOUS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_ACTION_PREVIOUS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_ACTION_SEARCH_" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_SEARCH*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_ACTION_SEARCH" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_SEARCH">
+  IME_ACTION_SEARCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_SEARCH">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_SEARCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_ACTION_SEARCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_ACTION_SEND_" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_SEND*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_ACTION_SEND" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_SEND">
+  IME_ACTION_SEND
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_SEND">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_SEND</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_ACTION_SEND { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_ACTION_UNSPECIFIED_" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_UNSPECIFIED*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_ACTION_UNSPECIFIED" data-uid="Android.View.Inputmethod.EditorInfo.IME_ACTION_UNSPECIFIED">
+  IME_ACTION_UNSPECIFIED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_UNSPECIFIED">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_ACTION_UNSPECIFIED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_ACTION_UNSPECIFIED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_FLAG_FORCE_ASCII_" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_FORCE_ASCII*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_FLAG_FORCE_ASCII" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_FORCE_ASCII">
+  IME_FLAG_FORCE_ASCII
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_FORCE_ASCII">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_FORCE_ASCII</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_FLAG_FORCE_ASCII { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_FLAG_NAVIGATE_NEXT_" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_NAVIGATE_NEXT*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_FLAG_NAVIGATE_NEXT" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_NAVIGATE_NEXT">
+  IME_FLAG_NAVIGATE_NEXT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_NAVIGATE_NEXT">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_NAVIGATE_NEXT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_FLAG_NAVIGATE_NEXT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_FLAG_NAVIGATE_PREVIOUS_" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_NAVIGATE_PREVIOUS*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_FLAG_NAVIGATE_PREVIOUS" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_NAVIGATE_PREVIOUS">
+  IME_FLAG_NAVIGATE_PREVIOUS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_NAVIGATE_PREVIOUS">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_NAVIGATE_PREVIOUS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_FLAG_NAVIGATE_PREVIOUS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_FLAG_NO_ACCESSORY_ACTION_" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_NO_ACCESSORY_ACTION*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_FLAG_NO_ACCESSORY_ACTION" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_NO_ACCESSORY_ACTION">
+  IME_FLAG_NO_ACCESSORY_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_ACCESSORY_ACTION">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_ACCESSORY_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_FLAG_NO_ACCESSORY_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_FLAG_NO_ENTER_ACTION_" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_NO_ENTER_ACTION*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_FLAG_NO_ENTER_ACTION" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_NO_ENTER_ACTION">
+  IME_FLAG_NO_ENTER_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_ENTER_ACTION">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_ENTER_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_FLAG_NO_ENTER_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_FLAG_NO_EXTRACT_UI_" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_NO_EXTRACT_UI*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_FLAG_NO_EXTRACT_UI" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_NO_EXTRACT_UI">
+  IME_FLAG_NO_EXTRACT_UI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_EXTRACT_UI">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_EXTRACT_UI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_FLAG_NO_EXTRACT_UI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_FLAG_NO_FULLSCREEN_" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_NO_FULLSCREEN*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_FLAG_NO_FULLSCREEN" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_NO_FULLSCREEN">
+  IME_FLAG_NO_FULLSCREEN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_FULLSCREEN">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_FULLSCREEN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_FLAG_NO_FULLSCREEN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_FLAG_NO_PERSONALIZED_LEARNING_" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_NO_PERSONALIZED_LEARNING*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_FLAG_NO_PERSONALIZED_LEARNING" data-uid="Android.View.Inputmethod.EditorInfo.IME_FLAG_NO_PERSONALIZED_LEARNING">
+  IME_FLAG_NO_PERSONALIZED_LEARNING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_PERSONALIZED_LEARNING">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_FLAG_NO_PERSONALIZED_LEARNING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_FLAG_NO_PERSONALIZED_LEARNING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_MASK_ACTION_" data-uid="Android.View.Inputmethod.EditorInfo.IME_MASK_ACTION*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_MASK_ACTION" data-uid="Android.View.Inputmethod.EditorInfo.IME_MASK_ACTION">
+  IME_MASK_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_MASK_ACTION">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_MASK_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_MASK_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IME_NULL_" data-uid="Android.View.Inputmethod.EditorInfo.IME_NULL*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IME_NULL" data-uid="Android.View.Inputmethod.EditorInfo.IME_NULL">
+  IME_NULL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_NULL">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#IME_NULL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IME_NULL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IsBridgeAbstract_" data-uid="Android.View.Inputmethod.EditorInfo.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IsBridgeAbstract" data-uid="Android.View.Inputmethod.EditorInfo.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IsBridgeCloseable_" data-uid="Android.View.Inputmethod.EditorInfo.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IsBridgeCloseable" data-uid="Android.View.Inputmethod.EditorInfo.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L542"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IsBridgeInterface_" data-uid="Android.View.Inputmethod.EditorInfo.IsBridgeInterface*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IsBridgeInterface" data-uid="Android.View.Inputmethod.EditorInfo.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_IsBridgeStatic_" data-uid="Android.View.Inputmethod.EditorInfo.IsBridgeStatic*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_IsBridgeStatic" data-uid="Android.View.Inputmethod.EditorInfo.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L550"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_actionId_" data-uid="Android.View.Inputmethod.EditorInfo.actionId*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_actionId" data-uid="Android.View.Inputmethod.EditorInfo.actionId">
+  actionId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#actionId">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#actionId</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int actionId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_actionLabel_" data-uid="Android.View.Inputmethod.EditorInfo.actionLabel*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_actionLabel" data-uid="Android.View.Inputmethod.EditorInfo.actionLabel">
+  actionLabel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#actionLabel">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#actionLabel</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence actionLabel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_contentMimeTypes_" data-uid="Android.View.Inputmethod.EditorInfo.contentMimeTypes*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_contentMimeTypes" data-uid="Android.View.Inputmethod.EditorInfo.contentMimeTypes">
+  contentMimeTypes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#contentMimeTypes">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#contentMimeTypes</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String[] contentMimeTypes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_extras_" data-uid="Android.View.Inputmethod.EditorInfo.extras*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_extras" data-uid="Android.View.Inputmethod.EditorInfo.extras">
+  extras
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#extras">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#extras</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle extras { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_fieldId_" data-uid="Android.View.Inputmethod.EditorInfo.fieldId*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_fieldId" data-uid="Android.View.Inputmethod.EditorInfo.fieldId">
+  fieldId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#fieldId">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#fieldId</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int fieldId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_fieldName_" data-uid="Android.View.Inputmethod.EditorInfo.fieldName*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_fieldName" data-uid="Android.View.Inputmethod.EditorInfo.fieldName">
+  fieldName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#fieldName">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#fieldName</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String fieldName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_hintLocales_" data-uid="Android.View.Inputmethod.EditorInfo.hintLocales*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_hintLocales" data-uid="Android.View.Inputmethod.EditorInfo.hintLocales">
+  hintLocales
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#hintLocales">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#hintLocales</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocaleList hintLocales { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.LocaleList.html">LocaleList</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_hintText_" data-uid="Android.View.Inputmethod.EditorInfo.hintText*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_hintText" data-uid="Android.View.Inputmethod.EditorInfo.hintText">
+  hintText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#hintText">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#hintText</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence hintText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_imeOptions_" data-uid="Android.View.Inputmethod.EditorInfo.imeOptions*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_imeOptions" data-uid="Android.View.Inputmethod.EditorInfo.imeOptions">
+  imeOptions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#imeOptions">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#imeOptions</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int imeOptions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_initialCapsMode_" data-uid="Android.View.Inputmethod.EditorInfo.initialCapsMode*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_initialCapsMode" data-uid="Android.View.Inputmethod.EditorInfo.initialCapsMode">
+  initialCapsMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#initialCapsMode">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#initialCapsMode</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int initialCapsMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_initialSelEnd_" data-uid="Android.View.Inputmethod.EditorInfo.initialSelEnd*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_initialSelEnd" data-uid="Android.View.Inputmethod.EditorInfo.initialSelEnd">
+  initialSelEnd
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#initialSelEnd">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#initialSelEnd</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int initialSelEnd { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_initialSelStart_" data-uid="Android.View.Inputmethod.EditorInfo.initialSelStart*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_initialSelStart" data-uid="Android.View.Inputmethod.EditorInfo.initialSelStart">
+  initialSelStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#initialSelStart">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#initialSelStart</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int initialSelStart { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_inputType_" data-uid="Android.View.Inputmethod.EditorInfo.inputType*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_inputType" data-uid="Android.View.Inputmethod.EditorInfo.inputType">
+  inputType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#inputType">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#inputType</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int inputType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_label_" data-uid="Android.View.Inputmethod.EditorInfo.label*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_label" data-uid="Android.View.Inputmethod.EditorInfo.label">
+  label
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#label">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#label</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence label { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_packageName_" data-uid="Android.View.Inputmethod.EditorInfo.packageName*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_packageName" data-uid="Android.View.Inputmethod.EditorInfo.packageName">
+  packageName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#packageName">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#packageName</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String packageName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_privateImeOptions_" data-uid="Android.View.Inputmethod.EditorInfo.privateImeOptions*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_privateImeOptions" data-uid="Android.View.Inputmethod.EditorInfo.privateImeOptions">
+  privateImeOptions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#privateImeOptions">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#privateImeOptions</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String privateImeOptions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_DescribeContents_" data-uid="Android.View.Inputmethod.EditorInfo.DescribeContents*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_DescribeContents" data-uid="Android.View.Inputmethod.EditorInfo.DescribeContents">
+  DescribeContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#describeContents()">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#describeContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_Dump_" data-uid="Android.View.Inputmethod.EditorInfo.Dump*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_Dump_Android_Util_Printer_Java_Lang_String_" data-uid="Android.View.Inputmethod.EditorInfo.Dump(Android.Util.Printer,Java.Lang.String)">
+  Dump(Printer, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#dump(android.util.Printer,java.lang.String)">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#dump(android.util.Printer,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dump(Printer arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Util.Printer.html">Printer</a></dt>
+    <dd><p><a class="xref" href="Android.Util.Printer.html">Printer</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_GetInitialSelectedText_" data-uid="Android.View.Inputmethod.EditorInfo.GetInitialSelectedText*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_GetInitialSelectedText_System_Int32_" data-uid="Android.View.Inputmethod.EditorInfo.GetInitialSelectedText(System.Int32)">
+  GetInitialSelectedText(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialSelectedText(int)">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialSelectedText(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence GetInitialSelectedText(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_GetInitialSurroundingText_" data-uid="Android.View.Inputmethod.EditorInfo.GetInitialSurroundingText*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_GetInitialSurroundingText_System_Int32_System_Int32_System_Int32_" data-uid="Android.View.Inputmethod.EditorInfo.GetInitialSurroundingText(System.Int32,System.Int32,System.Int32)">
+  GetInitialSurroundingText(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialSurroundingText(int,int,int)">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialSurroundingText(int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurroundingText GetInitialSurroundingText(int arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Inputmethod.SurroundingText.html">SurroundingText</a></dt>
+    <dd><p><a class="xref" href="Android.View.Inputmethod.SurroundingText.html">SurroundingText</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_GetInitialTextAfterCursor_" data-uid="Android.View.Inputmethod.EditorInfo.GetInitialTextAfterCursor*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_GetInitialTextAfterCursor_System_Int32_System_Int32_" data-uid="Android.View.Inputmethod.EditorInfo.GetInitialTextAfterCursor(System.Int32,System.Int32)">
+  GetInitialTextAfterCursor(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialTextAfterCursor(int,int)">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialTextAfterCursor(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence GetInitialTextAfterCursor(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_GetInitialTextBeforeCursor_" data-uid="Android.View.Inputmethod.EditorInfo.GetInitialTextBeforeCursor*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_GetInitialTextBeforeCursor_System_Int32_System_Int32_" data-uid="Android.View.Inputmethod.EditorInfo.GetInitialTextBeforeCursor(System.Int32,System.Int32)">
+  GetInitialTextBeforeCursor(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialTextBeforeCursor(int,int)">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialTextBeforeCursor(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence GetInitialTextBeforeCursor(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_GetInitialToolType_" data-uid="Android.View.Inputmethod.EditorInfo.GetInitialToolType*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_GetInitialToolType" data-uid="Android.View.Inputmethod.EditorInfo.GetInitialToolType">
+  GetInitialToolType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialToolType()">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialToolType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInitialToolType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_GetSupportedHandwritingGesturePreviews_" data-uid="Android.View.Inputmethod.EditorInfo.GetSupportedHandwritingGesturePreviews*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_GetSupportedHandwritingGesturePreviews__1" data-uid="Android.View.Inputmethod.EditorInfo.GetSupportedHandwritingGesturePreviews``1">
+  GetSupportedHandwritingGesturePreviews&lt;ReturnExtendsAndroid_View_Inputmethod_PreviewableHandwritingGesture&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getSupportedHandwritingGesturePreviews()">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getSupportedHandwritingGesturePreviews()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Set&lt;Class&gt; GetSupportedHandwritingGesturePreviews&lt;ReturnExtendsAndroid_View_Inputmethod_PreviewableHandwritingGesture&gt;() where ReturnExtendsAndroid_View_Inputmethod_PreviewableHandwritingGesture : PreviewableHandwritingGesture</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.Class.html">Class</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ReturnExtendsAndroid_View_Inputmethod_PreviewableHandwritingGesture</code></dt>
+    <dd><p><a class="xref" href="Android.View.Inputmethod.PreviewableHandwritingGesture.html">PreviewableHandwritingGesture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_GetSupportedHandwritingGestures_" data-uid="Android.View.Inputmethod.EditorInfo.GetSupportedHandwritingGestures*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_GetSupportedHandwritingGestures__1" data-uid="Android.View.Inputmethod.EditorInfo.GetSupportedHandwritingGestures``1">
+  GetSupportedHandwritingGestures&lt;ReturnExtendsAndroid_View_Inputmethod_HandwritingGesture&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getSupportedHandwritingGestures()">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getSupportedHandwritingGestures()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Class&gt; GetSupportedHandwritingGestures&lt;ReturnExtendsAndroid_View_Inputmethod_HandwritingGesture&gt;() where ReturnExtendsAndroid_View_Inputmethod_HandwritingGesture : HandwritingGesture</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.Class.html">Class</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ReturnExtendsAndroid_View_Inputmethod_HandwritingGesture</code></dt>
+    <dd><p><a class="xref" href="Android.View.Inputmethod.HandwritingGesture.html">HandwritingGesture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_MakeCompatible_" data-uid="Android.View.Inputmethod.EditorInfo.MakeCompatible*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_MakeCompatible_System_Int32_" data-uid="Android.View.Inputmethod.EditorInfo.MakeCompatible(System.Int32)">
+  MakeCompatible(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#makeCompatible(int)">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#makeCompatible(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MakeCompatible(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_SetInitialSurroundingSubText_" data-uid="Android.View.Inputmethod.EditorInfo.SetInitialSurroundingSubText*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_SetInitialSurroundingSubText_Java_Lang_CharSequence_System_Int32_" data-uid="Android.View.Inputmethod.EditorInfo.SetInitialSurroundingSubText(Java.Lang.CharSequence,System.Int32)">
+  SetInitialSurroundingSubText(CharSequence, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setInitialSurroundingSubText(java.lang.CharSequence,int)">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setInitialSurroundingSubText(java.lang.CharSequence,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInitialSurroundingSubText(CharSequence arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_SetInitialSurroundingText_" data-uid="Android.View.Inputmethod.EditorInfo.SetInitialSurroundingText*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_SetInitialSurroundingText_Java_Lang_CharSequence_" data-uid="Android.View.Inputmethod.EditorInfo.SetInitialSurroundingText(Java.Lang.CharSequence)">
+  SetInitialSurroundingText(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setInitialSurroundingText(java.lang.CharSequence)">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setInitialSurroundingText(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInitialSurroundingText(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_SetInitialToolType_" data-uid="Android.View.Inputmethod.EditorInfo.SetInitialToolType*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_SetInitialToolType_System_Int32_" data-uid="Android.View.Inputmethod.EditorInfo.SetInitialToolType(System.Int32)">
+  SetInitialToolType(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setInitialToolType(int)">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setInitialToolType(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInitialToolType(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_SetSupportedHandwritingGesturePreviews_" data-uid="Android.View.Inputmethod.EditorInfo.SetSupportedHandwritingGesturePreviews*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_SetSupportedHandwritingGesturePreviews__1_Java_Util_Set_Java_Lang_Class__" data-uid="Android.View.Inputmethod.EditorInfo.SetSupportedHandwritingGesturePreviews``1(Java.Util.Set{Java.Lang.Class})">
+  SetSupportedHandwritingGesturePreviews&lt;Arg0ExtendsAndroid_View_Inputmethod_PreviewableHandwritingGesture&gt;(Set&lt;Class&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setSupportedHandwritingGesturePreviews(java.util.Set)">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setSupportedHandwritingGesturePreviews(java.util.Set)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSupportedHandwritingGesturePreviews&lt;Arg0ExtendsAndroid_View_Inputmethod_PreviewableHandwritingGesture&gt;(Set&lt;Class&gt; arg0) where Arg0ExtendsAndroid_View_Inputmethod_PreviewableHandwritingGesture : PreviewableHandwritingGesture</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.Class.html">Class</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsAndroid_View_Inputmethod_PreviewableHandwritingGesture</code></dt>
+    <dd><p><a class="xref" href="Android.View.Inputmethod.PreviewableHandwritingGesture.html">PreviewableHandwritingGesture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_SetSupportedHandwritingGestures_" data-uid="Android.View.Inputmethod.EditorInfo.SetSupportedHandwritingGestures*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_SetSupportedHandwritingGestures__1_Java_Util_List_Java_Lang_Class__" data-uid="Android.View.Inputmethod.EditorInfo.SetSupportedHandwritingGestures``1(Java.Util.List{Java.Lang.Class})">
+  SetSupportedHandwritingGestures&lt;Arg0ExtendsAndroid_View_Inputmethod_HandwritingGesture&gt;(List&lt;Class&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setSupportedHandwritingGestures(java.util.List)">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setSupportedHandwritingGestures(java.util.List)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSupportedHandwritingGestures&lt;Arg0ExtendsAndroid_View_Inputmethod_HandwritingGesture&gt;(List&lt;Class&gt; arg0) where Arg0ExtendsAndroid_View_Inputmethod_HandwritingGesture : HandwritingGesture</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.Class.html">Class</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsAndroid_View_Inputmethod_HandwritingGesture</code></dt>
+    <dd><p><a class="xref" href="Android.View.Inputmethod.HandwritingGesture.html">HandwritingGesture</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_WriteToParcel_" data-uid="Android.View.Inputmethod.EditorInfo.WriteToParcel*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.View.Inputmethod.EditorInfo.WriteToParcel(Android.Os.Parcel,System.Int32)">
+  WriteToParcel(Parcel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#writeToParcel(android.os.Parcel,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_op_Implicit_" data-uid="Android.View.Inputmethod.EditorInfo.op_Implicit*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_op_Implicit_Android_View_Inputmethod_EditorInfo__Android_Os_Parcelable" data-uid="Android.View.Inputmethod.EditorInfo.op_Implicit(Android.View.Inputmethod.EditorInfo)~Android.Os.Parcelable">
+  implicit operator Parcelable(EditorInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.View.Inputmethod.EditorInfo.html">EditorInfo</a> to <a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Parcelable(EditorInfo t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.View.Inputmethod.EditorInfo.html">EditorInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_EditorInfo_op_Implicit_" data-uid="Android.View.Inputmethod.EditorInfo.op_Implicit*"></a>
+
+  <h3 id="Android_View_Inputmethod_EditorInfo_op_Implicit_Android_View_Inputmethod_EditorInfo__Android_Text_InputType" data-uid="Android.View.Inputmethod.EditorInfo.op_Implicit(Android.View.Inputmethod.EditorInfo)~Android.Text.InputType">
+  implicit operator InputType(EditorInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.View.Inputmethod.EditorInfo.html">EditorInfo</a> to <a class="xref" href="Android.Text.InputType.html">InputType</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputType(EditorInfo t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.View.Inputmethod.EditorInfo.html">EditorInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Text.InputType.html">InputType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/EditorInfo.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

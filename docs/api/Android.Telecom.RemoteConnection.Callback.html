@@ -1,0 +1,1398 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class RemoteConnection.Callback | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RemoteConnection.Callback | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Telecom_RemoteConnection_Callback.md&amp;value=---%0Auid%3A%20Android.Telecom.RemoteConnection.Callback%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Telecom.RemoteConnection.Callback">
+
+
+
+  <h1 id="Android_Telecom_RemoteConnection_Callback" data-uid="Android.Telecom.RemoteConnection.Callback" class="text-break">
+Class RemoteConnection.Callback  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Telecom.html">Telecom</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RemoteConnection.Callback : JVMBridgeBase&lt;RemoteConnection.Callback&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a>.<a class="xref" href="Android.Telecom.RemoteConnection.Callback.html">Callback</a>&gt;</div>
+      <div><span class="xref">RemoteConnection.Callback</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;RemoteConnection.Callback&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback__ctor_" data-uid="Android.Telecom.RemoteConnection.Callback.#ctor*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback__ctor" data-uid="Android.Telecom.RemoteConnection.Callback.#ctor">
+  Callback()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L1654"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public Callback()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback__ctor_" data-uid="Android.Telecom.RemoteConnection.Callback.#ctor*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback__ctor_System_Object___" data-uid="Android.Telecom.RemoteConnection.Callback.#ctor(System.Object[])">
+  Callback(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L1659"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public Callback(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_BridgeClassName_" data-uid="Android.Telecom.RemoteConnection.Callback.BridgeClassName*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_BridgeClassName" data-uid="Android.Telecom.RemoteConnection.Callback.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L1667"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_IsBridgeAbstract_" data-uid="Android.Telecom.RemoteConnection.Callback.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_IsBridgeAbstract" data-uid="Android.Telecom.RemoteConnection.Callback.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L1671"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_IsBridgeCloseable_" data-uid="Android.Telecom.RemoteConnection.Callback.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_IsBridgeCloseable" data-uid="Android.Telecom.RemoteConnection.Callback.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L1675"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_IsBridgeInterface_" data-uid="Android.Telecom.RemoteConnection.Callback.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_IsBridgeInterface" data-uid="Android.Telecom.RemoteConnection.Callback.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L1679"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_IsBridgeStatic_" data-uid="Android.Telecom.RemoteConnection.Callback.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_IsBridgeStatic" data-uid="Android.Telecom.RemoteConnection.Callback.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/AllPackageClasses.cs/#L1683"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnAddressChanged_" data-uid="Android.Telecom.RemoteConnection.Callback.OnAddressChanged*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnAddressChanged_Android_Telecom_RemoteConnection_Android_Net_Uri_System_Int32_" data-uid="Android.Telecom.RemoteConnection.Callback.OnAddressChanged(Android.Telecom.RemoteConnection,Android.Net.Uri,System.Int32)">
+  OnAddressChanged(RemoteConnection, Uri, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onAddressChanged(android.telecom.RemoteConnection,android.net.Uri,int)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onAddressChanged(android.telecom.RemoteConnection,android.net.Uri,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnAddressChanged(RemoteConnection arg0, Uri arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnCallerDisplayNameChanged_" data-uid="Android.Telecom.RemoteConnection.Callback.OnCallerDisplayNameChanged*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnCallerDisplayNameChanged_Android_Telecom_RemoteConnection_Java_Lang_String_System_Int32_" data-uid="Android.Telecom.RemoteConnection.Callback.OnCallerDisplayNameChanged(Android.Telecom.RemoteConnection,Java.Lang.String,System.Int32)">
+  OnCallerDisplayNameChanged(RemoteConnection, String, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onCallerDisplayNameChanged(android.telecom.RemoteConnection,java.lang.String,int)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onCallerDisplayNameChanged(android.telecom.RemoteConnection,java.lang.String,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCallerDisplayNameChanged(RemoteConnection arg0, String arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnConferenceChanged_" data-uid="Android.Telecom.RemoteConnection.Callback.OnConferenceChanged*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnConferenceChanged_Android_Telecom_RemoteConnection_Android_Telecom_RemoteConference_" data-uid="Android.Telecom.RemoteConnection.Callback.OnConferenceChanged(Android.Telecom.RemoteConnection,Android.Telecom.RemoteConference)">
+  OnConferenceChanged(RemoteConnection, RemoteConference)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onConferenceChanged(android.telecom.RemoteConnection,android.telecom.RemoteConference)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onConferenceChanged(android.telecom.RemoteConnection,android.telecom.RemoteConference)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConferenceChanged(RemoteConnection arg0, RemoteConference arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Telecom.RemoteConference.html">RemoteConference</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConference.html">RemoteConference</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnConferenceableConnectionsChanged_" data-uid="Android.Telecom.RemoteConnection.Callback.OnConferenceableConnectionsChanged*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnConferenceableConnectionsChanged_Android_Telecom_RemoteConnection_Java_Util_List_Android_Telecom_RemoteConnection__" data-uid="Android.Telecom.RemoteConnection.Callback.OnConferenceableConnectionsChanged(Android.Telecom.RemoteConnection,Java.Util.List{Android.Telecom.RemoteConnection})">
+  OnConferenceableConnectionsChanged(RemoteConnection, List&lt;RemoteConnection&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onConferenceableConnectionsChanged(android.telecom.RemoteConnection,java.util.List)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onConferenceableConnectionsChanged(android.telecom.RemoteConnection,java.util.List)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConferenceableConnectionsChanged(RemoteConnection arg0, List&lt;RemoteConnection&gt; arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnConnectionCapabilitiesChanged_" data-uid="Android.Telecom.RemoteConnection.Callback.OnConnectionCapabilitiesChanged*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnConnectionCapabilitiesChanged_Android_Telecom_RemoteConnection_System_Int32_" data-uid="Android.Telecom.RemoteConnection.Callback.OnConnectionCapabilitiesChanged(Android.Telecom.RemoteConnection,System.Int32)">
+  OnConnectionCapabilitiesChanged(RemoteConnection, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onConnectionCapabilitiesChanged(android.telecom.RemoteConnection,int)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onConnectionCapabilitiesChanged(android.telecom.RemoteConnection,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConnectionCapabilitiesChanged(RemoteConnection arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnConnectionEvent_" data-uid="Android.Telecom.RemoteConnection.Callback.OnConnectionEvent*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnConnectionEvent_Android_Telecom_RemoteConnection_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Telecom.RemoteConnection.Callback.OnConnectionEvent(Android.Telecom.RemoteConnection,Java.Lang.String,Android.Os.Bundle)">
+  OnConnectionEvent(RemoteConnection, String, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onConnectionEvent(android.telecom.RemoteConnection,java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onConnectionEvent(android.telecom.RemoteConnection,java.lang.String,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConnectionEvent(RemoteConnection arg0, String arg1, Bundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnConnectionPropertiesChanged_" data-uid="Android.Telecom.RemoteConnection.Callback.OnConnectionPropertiesChanged*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnConnectionPropertiesChanged_Android_Telecom_RemoteConnection_System_Int32_" data-uid="Android.Telecom.RemoteConnection.Callback.OnConnectionPropertiesChanged(Android.Telecom.RemoteConnection,System.Int32)">
+  OnConnectionPropertiesChanged(RemoteConnection, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onConnectionPropertiesChanged(android.telecom.RemoteConnection,int)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onConnectionPropertiesChanged(android.telecom.RemoteConnection,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConnectionPropertiesChanged(RemoteConnection arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnDestroyed_" data-uid="Android.Telecom.RemoteConnection.Callback.OnDestroyed*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnDestroyed_Android_Telecom_RemoteConnection_" data-uid="Android.Telecom.RemoteConnection.Callback.OnDestroyed(Android.Telecom.RemoteConnection)">
+  OnDestroyed(RemoteConnection)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onDestroyed(android.telecom.RemoteConnection)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onDestroyed(android.telecom.RemoteConnection)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDestroyed(RemoteConnection arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnDisconnected_" data-uid="Android.Telecom.RemoteConnection.Callback.OnDisconnected*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnDisconnected_Android_Telecom_RemoteConnection_Android_Telecom_DisconnectCause_" data-uid="Android.Telecom.RemoteConnection.Callback.OnDisconnected(Android.Telecom.RemoteConnection,Android.Telecom.DisconnectCause)">
+  OnDisconnected(RemoteConnection, DisconnectCause)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onDisconnected(android.telecom.RemoteConnection,android.telecom.DisconnectCause)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onDisconnected(android.telecom.RemoteConnection,android.telecom.DisconnectCause)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDisconnected(RemoteConnection arg0, DisconnectCause arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Telecom.DisconnectCause.html">DisconnectCause</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.DisconnectCause.html">DisconnectCause</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnExtrasChanged_" data-uid="Android.Telecom.RemoteConnection.Callback.OnExtrasChanged*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnExtrasChanged_Android_Telecom_RemoteConnection_Android_Os_Bundle_" data-uid="Android.Telecom.RemoteConnection.Callback.OnExtrasChanged(Android.Telecom.RemoteConnection,Android.Os.Bundle)">
+  OnExtrasChanged(RemoteConnection, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onExtrasChanged(android.telecom.RemoteConnection,android.os.Bundle)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onExtrasChanged(android.telecom.RemoteConnection,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnExtrasChanged(RemoteConnection arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnPostDialChar_" data-uid="Android.Telecom.RemoteConnection.Callback.OnPostDialChar*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnPostDialChar_Android_Telecom_RemoteConnection_System_Char_" data-uid="Android.Telecom.RemoteConnection.Callback.OnPostDialChar(Android.Telecom.RemoteConnection,System.Char)">
+  OnPostDialChar(RemoteConnection, char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onPostDialChar(android.telecom.RemoteConnection,char)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onPostDialChar(android.telecom.RemoteConnection,char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPostDialChar(RemoteConnection arg0, char arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnPostDialWait_" data-uid="Android.Telecom.RemoteConnection.Callback.OnPostDialWait*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnPostDialWait_Android_Telecom_RemoteConnection_Java_Lang_String_" data-uid="Android.Telecom.RemoteConnection.Callback.OnPostDialWait(Android.Telecom.RemoteConnection,Java.Lang.String)">
+  OnPostDialWait(RemoteConnection, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onPostDialWait(android.telecom.RemoteConnection,java.lang.String)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onPostDialWait(android.telecom.RemoteConnection,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPostDialWait(RemoteConnection arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnRingbackRequested_" data-uid="Android.Telecom.RemoteConnection.Callback.OnRingbackRequested*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnRingbackRequested_Android_Telecom_RemoteConnection_System_Boolean_" data-uid="Android.Telecom.RemoteConnection.Callback.OnRingbackRequested(Android.Telecom.RemoteConnection,System.Boolean)">
+  OnRingbackRequested(RemoteConnection, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L428"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onRingbackRequested(android.telecom.RemoteConnection,boolean)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onRingbackRequested(android.telecom.RemoteConnection,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRingbackRequested(RemoteConnection arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnStateChanged_" data-uid="Android.Telecom.RemoteConnection.Callback.OnStateChanged*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnStateChanged_Android_Telecom_RemoteConnection_System_Int32_" data-uid="Android.Telecom.RemoteConnection.Callback.OnStateChanged(Android.Telecom.RemoteConnection,System.Int32)">
+  OnStateChanged(RemoteConnection, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onStateChanged(android.telecom.RemoteConnection,int)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onStateChanged(android.telecom.RemoteConnection,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnStateChanged(RemoteConnection arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnStatusHintsChanged_" data-uid="Android.Telecom.RemoteConnection.Callback.OnStatusHintsChanged*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnStatusHintsChanged_Android_Telecom_RemoteConnection_Android_Telecom_StatusHints_" data-uid="Android.Telecom.RemoteConnection.Callback.OnStatusHintsChanged(Android.Telecom.RemoteConnection,Android.Telecom.StatusHints)">
+  OnStatusHintsChanged(RemoteConnection, StatusHints)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onStatusHintsChanged(android.telecom.RemoteConnection,android.telecom.StatusHints)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onStatusHintsChanged(android.telecom.RemoteConnection,android.telecom.StatusHints)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnStatusHintsChanged(RemoteConnection arg0, StatusHints arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Telecom.StatusHints.html">StatusHints</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.StatusHints.html">StatusHints</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnVideoProviderChanged_" data-uid="Android.Telecom.RemoteConnection.Callback.OnVideoProviderChanged*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnVideoProviderChanged_Android_Telecom_RemoteConnection_Android_Telecom_RemoteConnection_VideoProvider_" data-uid="Android.Telecom.RemoteConnection.Callback.OnVideoProviderChanged(Android.Telecom.RemoteConnection,Android.Telecom.RemoteConnection.VideoProvider)">
+  OnVideoProviderChanged(RemoteConnection, VideoProvider)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L455"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onVideoProviderChanged(android.telecom.RemoteConnection,android.telecom.RemoteConnection.VideoProvider)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onVideoProviderChanged(android.telecom.RemoteConnection,android.telecom.RemoteConnection.VideoProvider)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnVideoProviderChanged(RemoteConnection arg0, RemoteConnection.VideoProvider arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a>.<a class="xref" href="Android.Telecom.RemoteConnection.VideoProvider.html">VideoProvider</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.VideoProvider.html">RemoteConnection.VideoProvider</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnVideoStateChanged_" data-uid="Android.Telecom.RemoteConnection.Callback.OnVideoStateChanged*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnVideoStateChanged_Android_Telecom_RemoteConnection_System_Int32_" data-uid="Android.Telecom.RemoteConnection.Callback.OnVideoStateChanged(Android.Telecom.RemoteConnection,System.Int32)">
+  OnVideoStateChanged(RemoteConnection, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L464"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onVideoStateChanged(android.telecom.RemoteConnection,int)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onVideoStateChanged(android.telecom.RemoteConnection,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnVideoStateChanged(RemoteConnection arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Telecom_RemoteConnection_Callback_OnVoipAudioChanged_" data-uid="Android.Telecom.RemoteConnection.Callback.OnVoipAudioChanged*"></a>
+
+  <h3 id="Android_Telecom_RemoteConnection_Callback_OnVoipAudioChanged_Android_Telecom_RemoteConnection_System_Boolean_" data-uid="Android.Telecom.RemoteConnection.Callback.OnVoipAudioChanged(Android.Telecom.RemoteConnection,System.Boolean)">
+  OnVoipAudioChanged(RemoteConnection, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onVoipAudioChanged(android.telecom.RemoteConnection,boolean)">https://developer.android.com/reference/android/telecom/RemoteConnection.Callback.html#onVoipAudioChanged(android.telecom.RemoteConnection,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnVoipAudioChanged(RemoteConnection arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></dt>
+    <dd><p><a class="xref" href="Android.Telecom.RemoteConnection.html">RemoteConnection</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/RemoteConnection.cs/#L294" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

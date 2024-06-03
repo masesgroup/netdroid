@@ -1,0 +1,3497 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class MediaStore | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MediaStore | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/provider/MediaStore.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Provider_MediaStore.md&amp;value=---%0Auid%3A%20Android.Provider.MediaStore%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Provider.MediaStore">
+
+
+
+  <h1 id="Android_Provider_MediaStore" data-uid="Android.Provider.MediaStore" class="text-break">
+Class MediaStore  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Provider.html">Provider</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html">https://developer.android.com/reference/android/provider/MediaStore.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MediaStore : JVMBridgeBase&lt;MediaStore&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Provider.MediaStore.html">MediaStore</a>&gt;</div>
+      <div><span class="xref">MediaStore</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaStore&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaStore&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaStore&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaStore&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaStore&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaStore&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaStore&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaStore&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;MediaStore&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaStore&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaStore&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaStore&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaStore&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Provider_MediaStore__ctor_" data-uid="Android.Provider.MediaStore.#ctor*"></a>
+
+  <h3 id="Android_Provider_MediaStore__ctor" data-uid="Android.Provider.MediaStore.#ctor">
+  MediaStore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5475"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaStore()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore__ctor_" data-uid="Android.Provider.MediaStore.#ctor*"></a>
+
+  <h3 id="Android_Provider_MediaStore__ctor_System_Object___" data-uid="Android.Provider.MediaStore.#ctor(System.Object[])">
+  MediaStore(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5479"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaStore(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Provider_MediaStore_ACTION_IMAGE_CAPTURE_" data-uid="Android.Provider.MediaStore.ACTION_IMAGE_CAPTURE*"></a>
+
+  <h3 id="Android_Provider_MediaStore_ACTION_IMAGE_CAPTURE" data-uid="Android.Provider.MediaStore.ACTION_IMAGE_CAPTURE">
+  ACTION_IMAGE_CAPTURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_IMAGE_CAPTURE">https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_IMAGE_CAPTURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_IMAGE_CAPTURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_ACTION_IMAGE_CAPTURE_SECURE_" data-uid="Android.Provider.MediaStore.ACTION_IMAGE_CAPTURE_SECURE*"></a>
+
+  <h3 id="Android_Provider_MediaStore_ACTION_IMAGE_CAPTURE_SECURE" data-uid="Android.Provider.MediaStore.ACTION_IMAGE_CAPTURE_SECURE">
+  ACTION_IMAGE_CAPTURE_SECURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_IMAGE_CAPTURE_SECURE">https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_IMAGE_CAPTURE_SECURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_IMAGE_CAPTURE_SECURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_ACTION_PICK_IMAGES_" data-uid="Android.Provider.MediaStore.ACTION_PICK_IMAGES*"></a>
+
+  <h3 id="Android_Provider_MediaStore_ACTION_PICK_IMAGES" data-uid="Android.Provider.MediaStore.ACTION_PICK_IMAGES">
+  ACTION_PICK_IMAGES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_PICK_IMAGES">https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_PICK_IMAGES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_PICK_IMAGES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_ACTION_PICK_IMAGES_SETTINGS_" data-uid="Android.Provider.MediaStore.ACTION_PICK_IMAGES_SETTINGS*"></a>
+
+  <h3 id="Android_Provider_MediaStore_ACTION_PICK_IMAGES_SETTINGS" data-uid="Android.Provider.MediaStore.ACTION_PICK_IMAGES_SETTINGS">
+  ACTION_PICK_IMAGES_SETTINGS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_PICK_IMAGES_SETTINGS">https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_PICK_IMAGES_SETTINGS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_PICK_IMAGES_SETTINGS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_ACTION_REVIEW_" data-uid="Android.Provider.MediaStore.ACTION_REVIEW*"></a>
+
+  <h3 id="Android_Provider_MediaStore_ACTION_REVIEW" data-uid="Android.Provider.MediaStore.ACTION_REVIEW">
+  ACTION_REVIEW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_REVIEW">https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_REVIEW</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_REVIEW { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_ACTION_REVIEW_SECURE_" data-uid="Android.Provider.MediaStore.ACTION_REVIEW_SECURE*"></a>
+
+  <h3 id="Android_Provider_MediaStore_ACTION_REVIEW_SECURE" data-uid="Android.Provider.MediaStore.ACTION_REVIEW_SECURE">
+  ACTION_REVIEW_SECURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_REVIEW_SECURE">https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_REVIEW_SECURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_REVIEW_SECURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_ACTION_VIDEO_CAPTURE_" data-uid="Android.Provider.MediaStore.ACTION_VIDEO_CAPTURE*"></a>
+
+  <h3 id="Android_Provider_MediaStore_ACTION_VIDEO_CAPTURE" data-uid="Android.Provider.MediaStore.ACTION_VIDEO_CAPTURE">
+  ACTION_VIDEO_CAPTURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_VIDEO_CAPTURE">https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_VIDEO_CAPTURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_VIDEO_CAPTURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_AUTHORITY_" data-uid="Android.Provider.MediaStore.AUTHORITY*"></a>
+
+  <h3 id="Android_Provider_MediaStore_AUTHORITY" data-uid="Android.Provider.MediaStore.AUTHORITY">
+  AUTHORITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#AUTHORITY">https://developer.android.com/reference/android/provider/MediaStore.html#AUTHORITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String AUTHORITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_AUTHORITY_URI_" data-uid="Android.Provider.MediaStore.AUTHORITY_URI*"></a>
+
+  <h3 id="Android_Provider_MediaStore_AUTHORITY_URI" data-uid="Android.Provider.MediaStore.AUTHORITY_URI">
+  AUTHORITY_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#AUTHORITY_URI">https://developer.android.com/reference/android/provider/MediaStore.html#AUTHORITY_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri AUTHORITY_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_BridgeClassName_" data-uid="Android.Provider.MediaStore.BridgeClassName*"></a>
+
+  <h3 id="Android_Provider_MediaStore_BridgeClassName" data-uid="Android.Provider.MediaStore.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_ACCEPT_ORIGINAL_MEDIA_FORMAT_" data-uid="Android.Provider.MediaStore.EXTRA_ACCEPT_ORIGINAL_MEDIA_FORMAT*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_ACCEPT_ORIGINAL_MEDIA_FORMAT" data-uid="Android.Provider.MediaStore.EXTRA_ACCEPT_ORIGINAL_MEDIA_FORMAT">
+  EXTRA_ACCEPT_ORIGINAL_MEDIA_FORMAT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_ACCEPT_ORIGINAL_MEDIA_FORMAT">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_ACCEPT_ORIGINAL_MEDIA_FORMAT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_ACCEPT_ORIGINAL_MEDIA_FORMAT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_BRIGHTNESS_" data-uid="Android.Provider.MediaStore.EXTRA_BRIGHTNESS*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_BRIGHTNESS" data-uid="Android.Provider.MediaStore.EXTRA_BRIGHTNESS">
+  EXTRA_BRIGHTNESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_BRIGHTNESS">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_BRIGHTNESS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_BRIGHTNESS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_DURATION_LIMIT_" data-uid="Android.Provider.MediaStore.EXTRA_DURATION_LIMIT*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_DURATION_LIMIT" data-uid="Android.Provider.MediaStore.EXTRA_DURATION_LIMIT">
+  EXTRA_DURATION_LIMIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_DURATION_LIMIT">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_DURATION_LIMIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_DURATION_LIMIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_FINISH_ON_COMPLETION_" data-uid="Android.Provider.MediaStore.EXTRA_FINISH_ON_COMPLETION*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_FINISH_ON_COMPLETION" data-uid="Android.Provider.MediaStore.EXTRA_FINISH_ON_COMPLETION">
+  EXTRA_FINISH_ON_COMPLETION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_FINISH_ON_COMPLETION">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_FINISH_ON_COMPLETION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_FINISH_ON_COMPLETION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_FULL_SCREEN_" data-uid="Android.Provider.MediaStore.EXTRA_FULL_SCREEN*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_FULL_SCREEN" data-uid="Android.Provider.MediaStore.EXTRA_FULL_SCREEN">
+  EXTRA_FULL_SCREEN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_FULL_SCREEN">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_FULL_SCREEN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_FULL_SCREEN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_MEDIA_ALBUM_" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_ALBUM*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_ALBUM" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_ALBUM">
+  EXTRA_MEDIA_ALBUM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_ALBUM">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_ALBUM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_MEDIA_ALBUM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_MEDIA_ARTIST_" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_ARTIST*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_ARTIST" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_ARTIST">
+  EXTRA_MEDIA_ARTIST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_ARTIST">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_ARTIST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_MEDIA_ARTIST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_MEDIA_CAPABILITIES_" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_CAPABILITIES*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_CAPABILITIES" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_CAPABILITIES">
+  EXTRA_MEDIA_CAPABILITIES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_CAPABILITIES">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_CAPABILITIES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_MEDIA_CAPABILITIES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_MEDIA_CAPABILITIES_UID_" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_CAPABILITIES_UID*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_CAPABILITIES_UID" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_CAPABILITIES_UID">
+  EXTRA_MEDIA_CAPABILITIES_UID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_CAPABILITIES_UID">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_CAPABILITIES_UID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_MEDIA_CAPABILITIES_UID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_MEDIA_FOCUS_" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_FOCUS*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_FOCUS" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_FOCUS">
+  EXTRA_MEDIA_FOCUS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_FOCUS">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_FOCUS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_MEDIA_FOCUS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_MEDIA_GENRE_" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_GENRE*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_GENRE" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_GENRE">
+  EXTRA_MEDIA_GENRE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_GENRE">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_GENRE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_MEDIA_GENRE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_MEDIA_PLAYLIST_" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_PLAYLIST*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_PLAYLIST" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_PLAYLIST">
+  EXTRA_MEDIA_PLAYLIST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_PLAYLIST">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_PLAYLIST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String EXTRA_MEDIA_PLAYLIST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_MEDIA_RADIO_CHANNEL_" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_RADIO_CHANNEL*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_RADIO_CHANNEL" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_RADIO_CHANNEL">
+  EXTRA_MEDIA_RADIO_CHANNEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_RADIO_CHANNEL">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_RADIO_CHANNEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_MEDIA_RADIO_CHANNEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_MEDIA_TITLE_" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_TITLE*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_TITLE" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_TITLE">
+  EXTRA_MEDIA_TITLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_TITLE">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_TITLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_MEDIA_TITLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_OUTPUT_" data-uid="Android.Provider.MediaStore.EXTRA_OUTPUT*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_OUTPUT" data-uid="Android.Provider.MediaStore.EXTRA_OUTPUT">
+  EXTRA_OUTPUT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_OUTPUT">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_OUTPUT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_OUTPUT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_PICK_IMAGES_MAX_" data-uid="Android.Provider.MediaStore.EXTRA_PICK_IMAGES_MAX*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_PICK_IMAGES_MAX" data-uid="Android.Provider.MediaStore.EXTRA_PICK_IMAGES_MAX">
+  EXTRA_PICK_IMAGES_MAX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICK_IMAGES_MAX">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICK_IMAGES_MAX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_PICK_IMAGES_MAX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_SCREEN_ORIENTATION_" data-uid="Android.Provider.MediaStore.EXTRA_SCREEN_ORIENTATION*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_SCREEN_ORIENTATION" data-uid="Android.Provider.MediaStore.EXTRA_SCREEN_ORIENTATION">
+  EXTRA_SCREEN_ORIENTATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_SCREEN_ORIENTATION">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_SCREEN_ORIENTATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_SCREEN_ORIENTATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_SHOW_ACTION_ICONS_" data-uid="Android.Provider.MediaStore.EXTRA_SHOW_ACTION_ICONS*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_SHOW_ACTION_ICONS" data-uid="Android.Provider.MediaStore.EXTRA_SHOW_ACTION_ICONS">
+  EXTRA_SHOW_ACTION_ICONS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_SHOW_ACTION_ICONS">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_SHOW_ACTION_ICONS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_SHOW_ACTION_ICONS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_SIZE_LIMIT_" data-uid="Android.Provider.MediaStore.EXTRA_SIZE_LIMIT*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_SIZE_LIMIT" data-uid="Android.Provider.MediaStore.EXTRA_SIZE_LIMIT">
+  EXTRA_SIZE_LIMIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_SIZE_LIMIT">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_SIZE_LIMIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_SIZE_LIMIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_VIDEO_QUALITY_" data-uid="Android.Provider.MediaStore.EXTRA_VIDEO_QUALITY*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_VIDEO_QUALITY" data-uid="Android.Provider.MediaStore.EXTRA_VIDEO_QUALITY">
+  EXTRA_VIDEO_QUALITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_VIDEO_QUALITY">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_VIDEO_QUALITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_VIDEO_QUALITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH_" data-uid="Android.Provider.MediaStore.INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH*"></a>
+
+  <h3 id="Android_Provider_MediaStore_INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH" data-uid="Android.Provider.MediaStore.INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH">
+  INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_INTENT_ACTION_MEDIA_SEARCH_" data-uid="Android.Provider.MediaStore.INTENT_ACTION_MEDIA_SEARCH*"></a>
+
+  <h3 id="Android_Provider_MediaStore_INTENT_ACTION_MEDIA_SEARCH" data-uid="Android.Provider.MediaStore.INTENT_ACTION_MEDIA_SEARCH">
+  INTENT_ACTION_MEDIA_SEARCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_MEDIA_SEARCH">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_MEDIA_SEARCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_ACTION_MEDIA_SEARCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_INTENT_ACTION_MUSIC_PLAYER_" data-uid="Android.Provider.MediaStore.INTENT_ACTION_MUSIC_PLAYER*"></a>
+
+  <h3 id="Android_Provider_MediaStore_INTENT_ACTION_MUSIC_PLAYER" data-uid="Android.Provider.MediaStore.INTENT_ACTION_MUSIC_PLAYER">
+  INTENT_ACTION_MUSIC_PLAYER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_MUSIC_PLAYER">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_MUSIC_PLAYER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_INTENT_ACTION_STILL_IMAGE_CAMERA_" data-uid="Android.Provider.MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA*"></a>
+
+  <h3 id="Android_Provider_MediaStore_INTENT_ACTION_STILL_IMAGE_CAMERA" data-uid="Android.Provider.MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA">
+  INTENT_ACTION_STILL_IMAGE_CAMERA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_STILL_IMAGE_CAMERA">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_STILL_IMAGE_CAMERA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_ACTION_STILL_IMAGE_CAMERA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE_" data-uid="Android.Provider.MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE*"></a>
+
+  <h3 id="Android_Provider_MediaStore_INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE" data-uid="Android.Provider.MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE">
+  INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_INTENT_ACTION_TEXT_OPEN_FROM_SEARCH_" data-uid="Android.Provider.MediaStore.INTENT_ACTION_TEXT_OPEN_FROM_SEARCH*"></a>
+
+  <h3 id="Android_Provider_MediaStore_INTENT_ACTION_TEXT_OPEN_FROM_SEARCH" data-uid="Android.Provider.MediaStore.INTENT_ACTION_TEXT_OPEN_FROM_SEARCH">
+  INTENT_ACTION_TEXT_OPEN_FROM_SEARCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_TEXT_OPEN_FROM_SEARCH">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_TEXT_OPEN_FROM_SEARCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_ACTION_TEXT_OPEN_FROM_SEARCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_INTENT_ACTION_VIDEO_CAMERA_" data-uid="Android.Provider.MediaStore.INTENT_ACTION_VIDEO_CAMERA*"></a>
+
+  <h3 id="Android_Provider_MediaStore_INTENT_ACTION_VIDEO_CAMERA" data-uid="Android.Provider.MediaStore.INTENT_ACTION_VIDEO_CAMERA">
+  INTENT_ACTION_VIDEO_CAMERA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_VIDEO_CAMERA">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_VIDEO_CAMERA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_ACTION_VIDEO_CAMERA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_INTENT_ACTION_VIDEO_PLAY_FROM_SEARCH_" data-uid="Android.Provider.MediaStore.INTENT_ACTION_VIDEO_PLAY_FROM_SEARCH*"></a>
+
+  <h3 id="Android_Provider_MediaStore_INTENT_ACTION_VIDEO_PLAY_FROM_SEARCH" data-uid="Android.Provider.MediaStore.INTENT_ACTION_VIDEO_PLAY_FROM_SEARCH">
+  INTENT_ACTION_VIDEO_PLAY_FROM_SEARCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_VIDEO_PLAY_FROM_SEARCH">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_VIDEO_PLAY_FROM_SEARCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_ACTION_VIDEO_PLAY_FROM_SEARCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_IsBridgeAbstract_" data-uid="Android.Provider.MediaStore.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Provider_MediaStore_IsBridgeAbstract" data-uid="Android.Provider.MediaStore.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_IsBridgeCloseable_" data-uid="Android.Provider.MediaStore.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Provider_MediaStore_IsBridgeCloseable" data-uid="Android.Provider.MediaStore.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5494"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_IsBridgeInterface_" data-uid="Android.Provider.MediaStore.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Provider_MediaStore_IsBridgeInterface" data-uid="Android.Provider.MediaStore.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_IsBridgeStatic_" data-uid="Android.Provider.MediaStore.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Provider_MediaStore_IsBridgeStatic" data-uid="Android.Provider.MediaStore.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5502"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_MATCH_DEFAULT_" data-uid="Android.Provider.MediaStore.MATCH_DEFAULT*"></a>
+
+  <h3 id="Android_Provider_MediaStore_MATCH_DEFAULT" data-uid="Android.Provider.MediaStore.MATCH_DEFAULT">
+  MATCH_DEFAULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#MATCH_DEFAULT">https://developer.android.com/reference/android/provider/MediaStore.html#MATCH_DEFAULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MATCH_DEFAULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_MATCH_EXCLUDE_" data-uid="Android.Provider.MediaStore.MATCH_EXCLUDE*"></a>
+
+  <h3 id="Android_Provider_MediaStore_MATCH_EXCLUDE" data-uid="Android.Provider.MediaStore.MATCH_EXCLUDE">
+  MATCH_EXCLUDE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#MATCH_EXCLUDE">https://developer.android.com/reference/android/provider/MediaStore.html#MATCH_EXCLUDE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MATCH_EXCLUDE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_MATCH_INCLUDE_" data-uid="Android.Provider.MediaStore.MATCH_INCLUDE*"></a>
+
+  <h3 id="Android_Provider_MediaStore_MATCH_INCLUDE" data-uid="Android.Provider.MediaStore.MATCH_INCLUDE">
+  MATCH_INCLUDE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#MATCH_INCLUDE">https://developer.android.com/reference/android/provider/MediaStore.html#MATCH_INCLUDE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MATCH_INCLUDE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_MATCH_ONLY_" data-uid="Android.Provider.MediaStore.MATCH_ONLY*"></a>
+
+  <h3 id="Android_Provider_MediaStore_MATCH_ONLY" data-uid="Android.Provider.MediaStore.MATCH_ONLY">
+  MATCH_ONLY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#MATCH_ONLY">https://developer.android.com/reference/android/provider/MediaStore.html#MATCH_ONLY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MATCH_ONLY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_MEDIA_IGNORE_FILENAME_" data-uid="Android.Provider.MediaStore.MEDIA_IGNORE_FILENAME*"></a>
+
+  <h3 id="Android_Provider_MediaStore_MEDIA_IGNORE_FILENAME" data-uid="Android.Provider.MediaStore.MEDIA_IGNORE_FILENAME">
+  MEDIA_IGNORE_FILENAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#MEDIA_IGNORE_FILENAME">https://developer.android.com/reference/android/provider/MediaStore.html#MEDIA_IGNORE_FILENAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String MEDIA_IGNORE_FILENAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_MEDIA_SCANNER_VOLUME_" data-uid="Android.Provider.MediaStore.MEDIA_SCANNER_VOLUME*"></a>
+
+  <h3 id="Android_Provider_MediaStore_MEDIA_SCANNER_VOLUME" data-uid="Android.Provider.MediaStore.MEDIA_SCANNER_VOLUME">
+  MEDIA_SCANNER_VOLUME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#MEDIA_SCANNER_VOLUME">https://developer.android.com/reference/android/provider/MediaStore.html#MEDIA_SCANNER_VOLUME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String MEDIA_SCANNER_VOLUME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_META_DATA_REVIEW_GALLERY_PREWARM_SERVICE_" data-uid="Android.Provider.MediaStore.META_DATA_REVIEW_GALLERY_PREWARM_SERVICE*"></a>
+
+  <h3 id="Android_Provider_MediaStore_META_DATA_REVIEW_GALLERY_PREWARM_SERVICE" data-uid="Android.Provider.MediaStore.META_DATA_REVIEW_GALLERY_PREWARM_SERVICE">
+  META_DATA_REVIEW_GALLERY_PREWARM_SERVICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#META_DATA_REVIEW_GALLERY_PREWARM_SERVICE">https://developer.android.com/reference/android/provider/MediaStore.html#META_DATA_REVIEW_GALLERY_PREWARM_SERVICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String META_DATA_REVIEW_GALLERY_PREWARM_SERVICE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_META_DATA_STILL_IMAGE_CAMERA_PREWARM_SERVICE_" data-uid="Android.Provider.MediaStore.META_DATA_STILL_IMAGE_CAMERA_PREWARM_SERVICE*"></a>
+
+  <h3 id="Android_Provider_MediaStore_META_DATA_STILL_IMAGE_CAMERA_PREWARM_SERVICE" data-uid="Android.Provider.MediaStore.META_DATA_STILL_IMAGE_CAMERA_PREWARM_SERVICE">
+  META_DATA_STILL_IMAGE_CAMERA_PREWARM_SERVICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#META_DATA_STILL_IMAGE_CAMERA_PREWARM_SERVICE">https://developer.android.com/reference/android/provider/MediaStore.html#META_DATA_STILL_IMAGE_CAMERA_PREWARM_SERVICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String META_DATA_STILL_IMAGE_CAMERA_PREWARM_SERVICE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES_" data-uid="Android.Provider.MediaStore.QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES*"></a>
+
+  <h3 id="Android_Provider_MediaStore_QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES" data-uid="Android.Provider.MediaStore.QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES">
+  QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES">https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_QUERY_ARG_MATCH_FAVORITE_" data-uid="Android.Provider.MediaStore.QUERY_ARG_MATCH_FAVORITE*"></a>
+
+  <h3 id="Android_Provider_MediaStore_QUERY_ARG_MATCH_FAVORITE" data-uid="Android.Provider.MediaStore.QUERY_ARG_MATCH_FAVORITE">
+  QUERY_ARG_MATCH_FAVORITE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_MATCH_FAVORITE">https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_MATCH_FAVORITE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String QUERY_ARG_MATCH_FAVORITE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_QUERY_ARG_MATCH_PENDING_" data-uid="Android.Provider.MediaStore.QUERY_ARG_MATCH_PENDING*"></a>
+
+  <h3 id="Android_Provider_MediaStore_QUERY_ARG_MATCH_PENDING" data-uid="Android.Provider.MediaStore.QUERY_ARG_MATCH_PENDING">
+  QUERY_ARG_MATCH_PENDING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_MATCH_PENDING">https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_MATCH_PENDING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String QUERY_ARG_MATCH_PENDING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_QUERY_ARG_MATCH_TRASHED_" data-uid="Android.Provider.MediaStore.QUERY_ARG_MATCH_TRASHED*"></a>
+
+  <h3 id="Android_Provider_MediaStore_QUERY_ARG_MATCH_TRASHED" data-uid="Android.Provider.MediaStore.QUERY_ARG_MATCH_TRASHED">
+  QUERY_ARG_MATCH_TRASHED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_MATCH_TRASHED">https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_MATCH_TRASHED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String QUERY_ARG_MATCH_TRASHED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_QUERY_ARG_RELATED_URI_" data-uid="Android.Provider.MediaStore.QUERY_ARG_RELATED_URI*"></a>
+
+  <h3 id="Android_Provider_MediaStore_QUERY_ARG_RELATED_URI" data-uid="Android.Provider.MediaStore.QUERY_ARG_RELATED_URI">
+  QUERY_ARG_RELATED_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_RELATED_URI">https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_RELATED_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String QUERY_ARG_RELATED_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_UNKNOWN_STRING_" data-uid="Android.Provider.MediaStore.UNKNOWN_STRING*"></a>
+
+  <h3 id="Android_Provider_MediaStore_UNKNOWN_STRING" data-uid="Android.Provider.MediaStore.UNKNOWN_STRING">
+  UNKNOWN_STRING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#UNKNOWN_STRING">https://developer.android.com/reference/android/provider/MediaStore.html#UNKNOWN_STRING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String UNKNOWN_STRING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_VOLUME_EXTERNAL_" data-uid="Android.Provider.MediaStore.VOLUME_EXTERNAL*"></a>
+
+  <h3 id="Android_Provider_MediaStore_VOLUME_EXTERNAL" data-uid="Android.Provider.MediaStore.VOLUME_EXTERNAL">
+  VOLUME_EXTERNAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#VOLUME_EXTERNAL">https://developer.android.com/reference/android/provider/MediaStore.html#VOLUME_EXTERNAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String VOLUME_EXTERNAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_VOLUME_EXTERNAL_PRIMARY_" data-uid="Android.Provider.MediaStore.VOLUME_EXTERNAL_PRIMARY*"></a>
+
+  <h3 id="Android_Provider_MediaStore_VOLUME_EXTERNAL_PRIMARY" data-uid="Android.Provider.MediaStore.VOLUME_EXTERNAL_PRIMARY">
+  VOLUME_EXTERNAL_PRIMARY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#VOLUME_EXTERNAL_PRIMARY">https://developer.android.com/reference/android/provider/MediaStore.html#VOLUME_EXTERNAL_PRIMARY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String VOLUME_EXTERNAL_PRIMARY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_VOLUME_INTERNAL_" data-uid="Android.Provider.MediaStore.VOLUME_INTERNAL*"></a>
+
+  <h3 id="Android_Provider_MediaStore_VOLUME_INTERNAL" data-uid="Android.Provider.MediaStore.VOLUME_INTERNAL">
+  VOLUME_INTERNAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#VOLUME_INTERNAL">https://developer.android.com/reference/android/provider/MediaStore.html#VOLUME_INTERNAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String VOLUME_INTERNAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Provider_MediaStore_CanManageMedia_" data-uid="Android.Provider.MediaStore.CanManageMedia*"></a>
+
+  <h3 id="Android_Provider_MediaStore_CanManageMedia_Android_Content_Context_" data-uid="Android.Provider.MediaStore.CanManageMedia(Android.Content.Context)">
+  CanManageMedia(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#canManageMedia(android.content.Context)">https://developer.android.com/reference/android/provider/MediaStore.html#canManageMedia(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanManageMedia(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_CreateDeleteRequest_" data-uid="Android.Provider.MediaStore.CreateDeleteRequest*"></a>
+
+  <h3 id="Android_Provider_MediaStore_CreateDeleteRequest_Android_Content_ContentResolver_Java_Util_Collection_Android_Net_Uri__" data-uid="Android.Provider.MediaStore.CreateDeleteRequest(Android.Content.ContentResolver,Java.Util.Collection{Android.Net.Uri})">
+  CreateDeleteRequest(ContentResolver, Collection&lt;Uri&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#createDeleteRequest(android.content.ContentResolver,java.util.Collection)">https://developer.android.com/reference/android/provider/MediaStore.html#createDeleteRequest(android.content.ContentResolver,java.util.Collection)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PendingIntent CreateDeleteRequest(ContentResolver arg0, Collection&lt;Uri&gt; arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;<a class="xref" href="Android.Net.Uri.html">Uri</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_CreateFavoriteRequest_" data-uid="Android.Provider.MediaStore.CreateFavoriteRequest*"></a>
+
+  <h3 id="Android_Provider_MediaStore_CreateFavoriteRequest_Android_Content_ContentResolver_Java_Util_Collection_Android_Net_Uri__System_Boolean_" data-uid="Android.Provider.MediaStore.CreateFavoriteRequest(Android.Content.ContentResolver,Java.Util.Collection{Android.Net.Uri},System.Boolean)">
+  CreateFavoriteRequest(ContentResolver, Collection&lt;Uri&gt;, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#createFavoriteRequest(android.content.ContentResolver,java.util.Collection,boolean)">https://developer.android.com/reference/android/provider/MediaStore.html#createFavoriteRequest(android.content.ContentResolver,java.util.Collection,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PendingIntent CreateFavoriteRequest(ContentResolver arg0, Collection&lt;Uri&gt; arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;<a class="xref" href="Android.Net.Uri.html">Uri</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_CreateTrashRequest_" data-uid="Android.Provider.MediaStore.CreateTrashRequest*"></a>
+
+  <h3 id="Android_Provider_MediaStore_CreateTrashRequest_Android_Content_ContentResolver_Java_Util_Collection_Android_Net_Uri__System_Boolean_" data-uid="Android.Provider.MediaStore.CreateTrashRequest(Android.Content.ContentResolver,Java.Util.Collection{Android.Net.Uri},System.Boolean)">
+  CreateTrashRequest(ContentResolver, Collection&lt;Uri&gt;, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#createTrashRequest(android.content.ContentResolver,java.util.Collection,boolean)">https://developer.android.com/reference/android/provider/MediaStore.html#createTrashRequest(android.content.ContentResolver,java.util.Collection,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PendingIntent CreateTrashRequest(ContentResolver arg0, Collection&lt;Uri&gt; arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;<a class="xref" href="Android.Net.Uri.html">Uri</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_CreateWriteRequest_" data-uid="Android.Provider.MediaStore.CreateWriteRequest*"></a>
+
+  <h3 id="Android_Provider_MediaStore_CreateWriteRequest_Android_Content_ContentResolver_Java_Util_Collection_Android_Net_Uri__" data-uid="Android.Provider.MediaStore.CreateWriteRequest(Android.Content.ContentResolver,Java.Util.Collection{Android.Net.Uri})">
+  CreateWriteRequest(ContentResolver, Collection&lt;Uri&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L408"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#createWriteRequest(android.content.ContentResolver,java.util.Collection)">https://developer.android.com/reference/android/provider/MediaStore.html#createWriteRequest(android.content.ContentResolver,java.util.Collection)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PendingIntent CreateWriteRequest(ContentResolver arg0, Collection&lt;Uri&gt; arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;<a class="xref" href="Android.Net.Uri.html">Uri</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_GetDocumentUri_" data-uid="Android.Provider.MediaStore.GetDocumentUri*"></a>
+
+  <h3 id="Android_Provider_MediaStore_GetDocumentUri_Android_Content_Context_Android_Net_Uri_" data-uid="Android.Provider.MediaStore.GetDocumentUri(Android.Content.Context,Android.Net.Uri)">
+  GetDocumentUri(Context, Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getDocumentUri(android.content.Context,android.net.Uri)">https://developer.android.com/reference/android/provider/MediaStore.html#getDocumentUri(android.content.Context,android.net.Uri)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri GetDocumentUri(Context arg0, Uri arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_GetExternalVolumeNames_" data-uid="Android.Provider.MediaStore.GetExternalVolumeNames*"></a>
+
+  <h3 id="Android_Provider_MediaStore_GetExternalVolumeNames_Android_Content_Context_" data-uid="Android.Provider.MediaStore.GetExternalVolumeNames(Android.Content.Context)">
+  GetExternalVolumeNames(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getExternalVolumeNames(android.content.Context)">https://developer.android.com/reference/android/provider/MediaStore.html#getExternalVolumeNames(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;String&gt; GetExternalVolumeNames(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_GetGeneration_" data-uid="Android.Provider.MediaStore.GetGeneration*"></a>
+
+  <h3 id="Android_Provider_MediaStore_GetGeneration_Android_Content_Context_Java_Lang_String_" data-uid="Android.Provider.MediaStore.GetGeneration(Android.Content.Context,Java.Lang.String)">
+  GetGeneration(Context, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L599"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getGeneration(android.content.Context,java.lang.String)">https://developer.android.com/reference/android/provider/MediaStore.html#getGeneration(android.content.Context,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long GetGeneration(Context arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_GetMediaScannerUri_" data-uid="Android.Provider.MediaStore.GetMediaScannerUri*"></a>
+
+  <h3 id="Android_Provider_MediaStore_GetMediaScannerUri" data-uid="Android.Provider.MediaStore.GetMediaScannerUri">
+  GetMediaScannerUri()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getMediaScannerUri()">https://developer.android.com/reference/android/provider/MediaStore.html#getMediaScannerUri()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri GetMediaScannerUri()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_GetMediaUri_" data-uid="Android.Provider.MediaStore.GetMediaUri*"></a>
+
+  <h3 id="Android_Provider_MediaStore_GetMediaUri_Android_Content_Context_Android_Net_Uri_" data-uid="Android.Provider.MediaStore.GetMediaUri(Android.Content.Context,Android.Net.Uri)">
+  GetMediaUri(Context, Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L436"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getMediaUri(android.content.Context,android.net.Uri)">https://developer.android.com/reference/android/provider/MediaStore.html#getMediaUri(android.content.Context,android.net.Uri)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri GetMediaUri(Context arg0, Uri arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_GetOriginalMediaFormatFileDescriptor_" data-uid="Android.Provider.MediaStore.GetOriginalMediaFormatFileDescriptor*"></a>
+
+  <h3 id="Android_Provider_MediaStore_GetOriginalMediaFormatFileDescriptor_Android_Content_Context_Android_Os_ParcelFileDescriptor_" data-uid="Android.Provider.MediaStore.GetOriginalMediaFormatFileDescriptor(Android.Content.Context,Android.Os.ParcelFileDescriptor)">
+  GetOriginalMediaFormatFileDescriptor(Context, ParcelFileDescriptor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getOriginalMediaFormatFileDescriptor(android.content.Context,android.os.ParcelFileDescriptor)">https://developer.android.com/reference/android/provider/MediaStore.html#getOriginalMediaFormatFileDescriptor(android.content.Context,android.os.ParcelFileDescriptor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ParcelFileDescriptor GetOriginalMediaFormatFileDescriptor(Context arg0, ParcelFileDescriptor arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_MediaStore_GetPickImagesMaxLimit_" data-uid="Android.Provider.MediaStore.GetPickImagesMaxLimit*"></a>
+
+  <h3 id="Android_Provider_MediaStore_GetPickImagesMaxLimit" data-uid="Android.Provider.MediaStore.GetPickImagesMaxLimit">
+  GetPickImagesMaxLimit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getPickImagesMaxLimit()">https://developer.android.com/reference/android/provider/MediaStore.html#getPickImagesMaxLimit()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetPickImagesMaxLimit()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_GetRecentExternalVolumeNames_" data-uid="Android.Provider.MediaStore.GetRecentExternalVolumeNames*"></a>
+
+  <h3 id="Android_Provider_MediaStore_GetRecentExternalVolumeNames_Android_Content_Context_" data-uid="Android.Provider.MediaStore.GetRecentExternalVolumeNames(Android.Content.Context)">
+  GetRecentExternalVolumeNames(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L589"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getRecentExternalVolumeNames(android.content.Context)">https://developer.android.com/reference/android/provider/MediaStore.html#getRecentExternalVolumeNames(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;String&gt; GetRecentExternalVolumeNames(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_GetRedactedUri_" data-uid="Android.Provider.MediaStore.GetRedactedUri*"></a>
+
+  <h3 id="Android_Provider_MediaStore_GetRedactedUri_Android_Content_ContentResolver_Android_Net_Uri_" data-uid="Android.Provider.MediaStore.GetRedactedUri(Android.Content.ContentResolver,Android.Net.Uri)">
+  GetRedactedUri(ContentResolver, Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getRedactedUri(android.content.ContentResolver,android.net.Uri)">https://developer.android.com/reference/android/provider/MediaStore.html#getRedactedUri(android.content.ContentResolver,android.net.Uri)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri GetRedactedUri(ContentResolver arg0, Uri arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_GetRedactedUri_" data-uid="Android.Provider.MediaStore.GetRedactedUri*"></a>
+
+  <h3 id="Android_Provider_MediaStore_GetRedactedUri_Android_Content_ContentResolver_Java_Util_List_Android_Net_Uri__" data-uid="Android.Provider.MediaStore.GetRedactedUri(Android.Content.ContentResolver,Java.Util.List{Android.Net.Uri})">
+  GetRedactedUri(ContentResolver, List&lt;Uri&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getRedactedUri(android.content.ContentResolver,java.util.List)">https://developer.android.com/reference/android/provider/MediaStore.html#getRedactedUri(android.content.ContentResolver,java.util.List)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Uri&gt; GetRedactedUri(ContentResolver arg0, List&lt;Uri&gt; arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Net.Uri.html">Uri</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Net.Uri.html">Uri</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_GetRequireOriginal_" data-uid="Android.Provider.MediaStore.GetRequireOriginal*"></a>
+
+  <h3 id="Android_Provider_MediaStore_GetRequireOriginal_Android_Net_Uri_" data-uid="Android.Provider.MediaStore.GetRequireOriginal(Android.Net.Uri)">
+  GetRequireOriginal(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getRequireOriginal(android.net.Uri)">https://developer.android.com/reference/android/provider/MediaStore.html#getRequireOriginal(android.net.Uri)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetRequireOriginal(Uri arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_GetVersion_" data-uid="Android.Provider.MediaStore.GetVersion*"></a>
+
+  <h3 id="Android_Provider_MediaStore_GetVersion_Android_Content_Context_" data-uid="Android.Provider.MediaStore.GetVersion(Android.Content.Context)">
+  GetVersion(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L552"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getVersion(android.content.Context)">https://developer.android.com/reference/android/provider/MediaStore.html#getVersion(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GetVersion(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_GetVersion_" data-uid="Android.Provider.MediaStore.GetVersion*"></a>
+
+  <h3 id="Android_Provider_MediaStore_GetVersion_Android_Content_Context_Java_Lang_String_" data-uid="Android.Provider.MediaStore.GetVersion(Android.Content.Context,Java.Lang.String)">
+  GetVersion(Context, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getVersion(android.content.Context,java.lang.String)">https://developer.android.com/reference/android/provider/MediaStore.html#getVersion(android.content.Context,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GetVersion(Context arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_GetVolumeName_" data-uid="Android.Provider.MediaStore.GetVolumeName*"></a>
+
+  <h3 id="Android_Provider_MediaStore_GetVolumeName_Android_Net_Uri_" data-uid="Android.Provider.MediaStore.GetVolumeName(Android.Net.Uri)">
+  GetVolumeName(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L561"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getVolumeName(android.net.Uri)">https://developer.android.com/reference/android/provider/MediaStore.html#getVolumeName(android.net.Uri)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GetVolumeName(Uri arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_IsCurrentCloudMediaProviderAuthority_" data-uid="Android.Provider.MediaStore.IsCurrentCloudMediaProviderAuthority*"></a>
+
+  <h3 id="Android_Provider_MediaStore_IsCurrentCloudMediaProviderAuthority_Android_Content_ContentResolver_Java_Lang_String_" data-uid="Android.Provider.MediaStore.IsCurrentCloudMediaProviderAuthority(Android.Content.ContentResolver,Java.Lang.String)">
+  IsCurrentCloudMediaProviderAuthority(ContentResolver, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#isCurrentCloudMediaProviderAuthority(android.content.ContentResolver,java.lang.String)">https://developer.android.com/reference/android/provider/MediaStore.html#isCurrentCloudMediaProviderAuthority(android.content.ContentResolver,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCurrentCloudMediaProviderAuthority(ContentResolver arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_IsCurrentSystemGallery_" data-uid="Android.Provider.MediaStore.IsCurrentSystemGallery*"></a>
+
+  <h3 id="Android_Provider_MediaStore_IsCurrentSystemGallery_Android_Content_ContentResolver_System_Int32_Java_Lang_String_" data-uid="Android.Provider.MediaStore.IsCurrentSystemGallery(Android.Content.ContentResolver,System.Int32,Java.Lang.String)">
+  IsCurrentSystemGallery(ContentResolver, int, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L515"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#isCurrentSystemGallery(android.content.ContentResolver,int,java.lang.String)">https://developer.android.com/reference/android/provider/MediaStore.html#isCurrentSystemGallery(android.content.ContentResolver,int,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCurrentSystemGallery(ContentResolver arg0, int arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_IsSupportedCloudMediaProviderAuthority_" data-uid="Android.Provider.MediaStore.IsSupportedCloudMediaProviderAuthority*"></a>
+
+  <h3 id="Android_Provider_MediaStore_IsSupportedCloudMediaProviderAuthority_Android_Content_ContentResolver_Java_Lang_String_" data-uid="Android.Provider.MediaStore.IsSupportedCloudMediaProviderAuthority(Android.Content.ContentResolver,Java.Lang.String)">
+  IsSupportedCloudMediaProviderAuthority(ContentResolver, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#isSupportedCloudMediaProviderAuthority(android.content.ContentResolver,java.lang.String)">https://developer.android.com/reference/android/provider/MediaStore.html#isSupportedCloudMediaProviderAuthority(android.content.ContentResolver,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSupportedCloudMediaProviderAuthority(ContentResolver arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_NotifyCloudMediaChangedEvent_" data-uid="Android.Provider.MediaStore.NotifyCloudMediaChangedEvent*"></a>
+
+  <h3 id="Android_Provider_MediaStore_NotifyCloudMediaChangedEvent_Android_Content_ContentResolver_Java_Lang_String_Java_Lang_String_" data-uid="Android.Provider.MediaStore.NotifyCloudMediaChangedEvent(Android.Content.ContentResolver,Java.Lang.String,Java.Lang.String)">
+  NotifyCloudMediaChangedEvent(ContentResolver, String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#notifyCloudMediaChangedEvent(android.content.ContentResolver,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/provider/MediaStore.html#notifyCloudMediaChangedEvent(android.content.ContentResolver,java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void NotifyCloudMediaChangedEvent(ContentResolver arg0, String arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_MediaStore_SetIncludePending_" data-uid="Android.Provider.MediaStore.SetIncludePending*"></a>
+
+  <h3 id="Android_Provider_MediaStore_SetIncludePending_Android_Net_Uri_" data-uid="Android.Provider.MediaStore.SetIncludePending(Android.Net.Uri)">
+  SetIncludePending(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L455"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#setIncludePending(android.net.Uri)">https://developer.android.com/reference/android/provider/MediaStore.html#setIncludePending(android.net.Uri)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static Uri SetIncludePending(Uri arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_SetRequireOriginal_" data-uid="Android.Provider.MediaStore.SetRequireOriginal*"></a>
+
+  <h3 id="Android_Provider_MediaStore_SetRequireOriginal_Android_Net_Uri_" data-uid="Android.Provider.MediaStore.SetRequireOriginal(Android.Net.Uri)">
+  SetRequireOriginal(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L465"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#setRequireOriginal(android.net.Uri)">https://developer.android.com/reference/android/provider/MediaStore.html#setRequireOriginal(android.net.Uri)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri SetRequireOriginal(Uri arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

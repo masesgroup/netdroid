@@ -1,0 +1,1727 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class RuleBasedCollator | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RuleBasedCollator | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Icu_Text_RuleBasedCollator.md&amp;value=---%0Auid%3A%20Android.Icu.Text.RuleBasedCollator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Icu.Text.RuleBasedCollator">
+
+
+
+  <h1 id="Android_Icu_Text_RuleBasedCollator" data-uid="Android.Icu.Text.RuleBasedCollator" class="text-break">
+Class RuleBasedCollator  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Icu.html">Icu</a>.<a class="xref" href="Android.Icu.Text.html">Text</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RuleBasedCollator : Collator, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IFreezable&lt;Collator&gt;, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Icu.Text.Collator.html">Collator</a>&gt;</div>
+      <div><a class="xref" href="Android.Icu.Text.Collator.html">Collator</a></div>
+      <div><span class="xref">RuleBasedCollator</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Icu.Util.IFreezable-1.html">IFreezable</a>&lt;<a class="xref" href="Android.Icu.Text.Collator.html">Collator</a>&gt;</div>
+      <div><a class="xref" href="Java.Lang.ICloneable.html">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_CANONICAL_DECOMPOSITION">Collator.CANONICAL_DECOMPOSITION</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_FULL_DECOMPOSITION">Collator.FULL_DECOMPOSITION</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_IDENTICAL">Collator.IDENTICAL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_NO_DECOMPOSITION">Collator.NO_DECOMPOSITION</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_PRIMARY">Collator.PRIMARY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_QUATERNARY">Collator.QUATERNARY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_SECONDARY">Collator.SECONDARY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_TERTIARY">Collator.TERTIARY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetInstance">Collator.GetInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetInstance_Android_Icu_Util_ULocale_">Collator.GetInstance(ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetInstance_Java_Util_Locale_">Collator.GetInstance(Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetFunctionalEquivalent_Java_Lang_String_Android_Icu_Util_ULocale_System_Boolean___">Collator.GetFunctionalEquivalent(String, ULocale, bool[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetFunctionalEquivalent_Java_Lang_String_Android_Icu_Util_ULocale_">Collator.GetFunctionalEquivalent(String, ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetAvailableULocales">Collator.GetAvailableULocales()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetKeywords">Collator.GetKeywords()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetKeywordValues_Java_Lang_String_">Collator.GetKeywordValues(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetKeywordValuesForLocale_Java_Lang_String_Android_Icu_Util_ULocale_System_Boolean_">Collator.GetKeywordValuesForLocale(String, ULocale, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetEquivalentReorderCodes_System_Int32_">Collator.GetEquivalentReorderCodes(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetDisplayName_Android_Icu_Util_ULocale_Android_Icu_Util_ULocale_">Collator.GetDisplayName(ULocale, ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetDisplayName_Android_Icu_Util_ULocale_">Collator.GetDisplayName(ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetDisplayName_Java_Util_Locale_Java_Util_Locale_">Collator.GetDisplayName(Locale, Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetDisplayName_Java_Util_Locale_">Collator.GetDisplayName(Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetAvailableLocales">Collator.GetAvailableLocales()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetCollationKey_Java_Lang_String_">Collator.GetCollationKey(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetUCAVersion">Collator.GetUCAVersion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetVersion">Collator.GetVersion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_Compare_Java_Lang_String_Java_Lang_String_">Collator.Compare(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetVariableTop">Collator.GetVariableTop()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_SetMaxVariable_System_Int32_">Collator.SetMaxVariable(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetTailoredSet">Collator.GetTailoredSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_Equals_Java_Lang_String_Java_Lang_String_">Collator.Equals(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_IsFrozen">Collator.IsFrozen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_Compare_System_Object_System_Object_">Collator.Compare(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetDecomposition">Collator.GetDecomposition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetMaxVariable">Collator.GetMaxVariable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetStrength">Collator.GetStrength()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_GetReorderCodes">Collator.GetReorderCodes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_CloneAsThawed">Collator.CloneAsThawed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_Freeze">Collator.Freeze()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_SetDecomposition_System_Int32_">Collator.SetDecomposition(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_SetReorderCodes_System_Int32___">Collator.SetReorderCodes(params int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.Collator.html#Android_Icu_Text_Collator_SetStrength_System_Int32_">Collator.SetStrength(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Collator&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Collator&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Collator&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Collator&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Collator&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Collator&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Collator&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Collator&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Collator&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Collator&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Collator&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Collator&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Collator&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator__ctor_" data-uid="Android.Icu.Text.RuleBasedCollator.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator__ctor" data-uid="Android.Icu.Text.RuleBasedCollator.#ctor">
+  RuleBasedCollator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3761"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RuleBasedCollator()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator__ctor_" data-uid="Android.Icu.Text.RuleBasedCollator.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator__ctor_Java_Lang_String_" data-uid="Android.Icu.Text.RuleBasedCollator.#ctor(Java.Lang.String)">
+  RuleBasedCollator(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#%3Cinit%3E(java.lang.String)">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#%3Cinit%3E(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RuleBasedCollator(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Exception.html">Exception</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator__ctor_" data-uid="Android.Icu.Text.RuleBasedCollator.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator__ctor_System_Object___" data-uid="Android.Icu.Text.RuleBasedCollator.#ctor(System.Object[])">
+  RuleBasedCollator(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3765"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RuleBasedCollator(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_BridgeClassName_" data-uid="Android.Icu.Text.RuleBasedCollator.BridgeClassName*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_BridgeClassName" data-uid="Android.Icu.Text.RuleBasedCollator.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3772"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_IsBridgeAbstract_" data-uid="Android.Icu.Text.RuleBasedCollator.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_IsBridgeAbstract" data-uid="Android.Icu.Text.RuleBasedCollator.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3776"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_IsBridgeCloseable_" data-uid="Android.Icu.Text.RuleBasedCollator.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_IsBridgeCloseable" data-uid="Android.Icu.Text.RuleBasedCollator.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3780"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_IsBridgeInterface_" data-uid="Android.Icu.Text.RuleBasedCollator.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_IsBridgeInterface" data-uid="Android.Icu.Text.RuleBasedCollator.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3784"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_IsBridgeStatic_" data-uid="Android.Icu.Text.RuleBasedCollator.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_IsBridgeStatic" data-uid="Android.Icu.Text.RuleBasedCollator.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3788"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_GetCollationElementIterator_" data-uid="Android.Icu.Text.RuleBasedCollator.GetCollationElementIterator*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_GetCollationElementIterator_Android_Icu_Text_UCharacterIterator_" data-uid="Android.Icu.Text.RuleBasedCollator.GetCollationElementIterator(Android.Icu.Text.UCharacterIterator)">
+  GetCollationElementIterator(UCharacterIterator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getCollationElementIterator(android.icu.text.UCharacterIterator)">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getCollationElementIterator(android.icu.text.UCharacterIterator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CollationElementIterator GetCollationElementIterator(UCharacterIterator arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.UCharacterIterator.html">UCharacterIterator</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UCharacterIterator.html">UCharacterIterator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.CollationElementIterator.html">CollationElementIterator</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.CollationElementIterator.html">CollationElementIterator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_GetCollationElementIterator_" data-uid="Android.Icu.Text.RuleBasedCollator.GetCollationElementIterator*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_GetCollationElementIterator_Java_Lang_String_" data-uid="Android.Icu.Text.RuleBasedCollator.GetCollationElementIterator(Java.Lang.String)">
+  GetCollationElementIterator(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getCollationElementIterator(java.lang.String)">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getCollationElementIterator(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CollationElementIterator GetCollationElementIterator(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.CollationElementIterator.html">CollationElementIterator</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.CollationElementIterator.html">CollationElementIterator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_GetCollationElementIterator_" data-uid="Android.Icu.Text.RuleBasedCollator.GetCollationElementIterator*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_GetCollationElementIterator_Java_Text_CharacterIterator_" data-uid="Android.Icu.Text.RuleBasedCollator.GetCollationElementIterator(Java.Text.CharacterIterator)">
+  GetCollationElementIterator(CharacterIterator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getCollationElementIterator(java.text.CharacterIterator)">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getCollationElementIterator(java.text.CharacterIterator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CollationElementIterator GetCollationElementIterator(CharacterIterator arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Text.CharacterIterator.html">CharacterIterator</a></dt>
+    <dd><p><a class="xref" href="Java.Text.CharacterIterator.html">CharacterIterator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.CollationElementIterator.html">CollationElementIterator</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.CollationElementIterator.html">CollationElementIterator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_GetContractionsAndExpansions_" data-uid="Android.Icu.Text.RuleBasedCollator.GetContractionsAndExpansions*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_GetContractionsAndExpansions_Android_Icu_Text_UnicodeSet_Android_Icu_Text_UnicodeSet_System_Boolean_" data-uid="Android.Icu.Text.RuleBasedCollator.GetContractionsAndExpansions(Android.Icu.Text.UnicodeSet,Android.Icu.Text.UnicodeSet,System.Boolean)">
+  GetContractionsAndExpansions(UnicodeSet, UnicodeSet, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getContractionsAndExpansions(android.icu.text.UnicodeSet,android.icu.text.UnicodeSet,boolean)">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getContractionsAndExpansions(android.icu.text.UnicodeSet,android.icu.text.UnicodeSet,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetContractionsAndExpansions(UnicodeSet arg0, UnicodeSet arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Exception.html">Exception</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_GetNumericCollation_" data-uid="Android.Icu.Text.RuleBasedCollator.GetNumericCollation*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_GetNumericCollation" data-uid="Android.Icu.Text.RuleBasedCollator.GetNumericCollation">
+  GetNumericCollation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getNumericCollation()">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getNumericCollation()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetNumericCollation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_GetRules_" data-uid="Android.Icu.Text.RuleBasedCollator.GetRules*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_GetRules" data-uid="Android.Icu.Text.RuleBasedCollator.GetRules">
+  GetRules()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getRules()">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getRules()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetRules()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_GetRules_" data-uid="Android.Icu.Text.RuleBasedCollator.GetRules*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_GetRules_System_Boolean_" data-uid="Android.Icu.Text.RuleBasedCollator.GetRules(System.Boolean)">
+  GetRules(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getRules(boolean)">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getRules(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetRules(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_IsAlternateHandlingShifted_" data-uid="Android.Icu.Text.RuleBasedCollator.IsAlternateHandlingShifted*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_IsAlternateHandlingShifted" data-uid="Android.Icu.Text.RuleBasedCollator.IsAlternateHandlingShifted">
+  IsAlternateHandlingShifted()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#isAlternateHandlingShifted()">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#isAlternateHandlingShifted()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAlternateHandlingShifted()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_IsCaseLevel_" data-uid="Android.Icu.Text.RuleBasedCollator.IsCaseLevel*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_IsCaseLevel" data-uid="Android.Icu.Text.RuleBasedCollator.IsCaseLevel">
+  IsCaseLevel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#isCaseLevel()">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#isCaseLevel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCaseLevel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_IsFrenchCollation_" data-uid="Android.Icu.Text.RuleBasedCollator.IsFrenchCollation*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_IsFrenchCollation" data-uid="Android.Icu.Text.RuleBasedCollator.IsFrenchCollation">
+  IsFrenchCollation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#isFrenchCollation()">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#isFrenchCollation()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFrenchCollation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_IsLowerCaseFirst_" data-uid="Android.Icu.Text.RuleBasedCollator.IsLowerCaseFirst*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_IsLowerCaseFirst" data-uid="Android.Icu.Text.RuleBasedCollator.IsLowerCaseFirst">
+  IsLowerCaseFirst()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#isLowerCaseFirst()">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#isLowerCaseFirst()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLowerCaseFirst()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_IsUpperCaseFirst_" data-uid="Android.Icu.Text.RuleBasedCollator.IsUpperCaseFirst*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_IsUpperCaseFirst" data-uid="Android.Icu.Text.RuleBasedCollator.IsUpperCaseFirst">
+  IsUpperCaseFirst()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#isUpperCaseFirst()">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#isUpperCaseFirst()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUpperCaseFirst()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_SetAlternateHandlingDefault_" data-uid="Android.Icu.Text.RuleBasedCollator.SetAlternateHandlingDefault*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_SetAlternateHandlingDefault" data-uid="Android.Icu.Text.RuleBasedCollator.SetAlternateHandlingDefault">
+  SetAlternateHandlingDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setAlternateHandlingDefault()">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setAlternateHandlingDefault()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAlternateHandlingDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_SetAlternateHandlingShifted_" data-uid="Android.Icu.Text.RuleBasedCollator.SetAlternateHandlingShifted*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_SetAlternateHandlingShifted_System_Boolean_" data-uid="Android.Icu.Text.RuleBasedCollator.SetAlternateHandlingShifted(System.Boolean)">
+  SetAlternateHandlingShifted(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setAlternateHandlingShifted(boolean)">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setAlternateHandlingShifted(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAlternateHandlingShifted(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_SetCaseFirstDefault_" data-uid="Android.Icu.Text.RuleBasedCollator.SetCaseFirstDefault*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_SetCaseFirstDefault" data-uid="Android.Icu.Text.RuleBasedCollator.SetCaseFirstDefault">
+  SetCaseFirstDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setCaseFirstDefault()">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setCaseFirstDefault()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCaseFirstDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_SetCaseLevel_" data-uid="Android.Icu.Text.RuleBasedCollator.SetCaseLevel*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_SetCaseLevel_System_Boolean_" data-uid="Android.Icu.Text.RuleBasedCollator.SetCaseLevel(System.Boolean)">
+  SetCaseLevel(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setCaseLevel(boolean)">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setCaseLevel(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCaseLevel(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_SetCaseLevelDefault_" data-uid="Android.Icu.Text.RuleBasedCollator.SetCaseLevelDefault*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_SetCaseLevelDefault" data-uid="Android.Icu.Text.RuleBasedCollator.SetCaseLevelDefault">
+  SetCaseLevelDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setCaseLevelDefault()">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setCaseLevelDefault()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCaseLevelDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_SetDecompositionDefault_" data-uid="Android.Icu.Text.RuleBasedCollator.SetDecompositionDefault*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_SetDecompositionDefault" data-uid="Android.Icu.Text.RuleBasedCollator.SetDecompositionDefault">
+  SetDecompositionDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setDecompositionDefault()">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setDecompositionDefault()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDecompositionDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_SetFrenchCollation_" data-uid="Android.Icu.Text.RuleBasedCollator.SetFrenchCollation*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_SetFrenchCollation_System_Boolean_" data-uid="Android.Icu.Text.RuleBasedCollator.SetFrenchCollation(System.Boolean)">
+  SetFrenchCollation(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setFrenchCollation(boolean)">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setFrenchCollation(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFrenchCollation(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_SetFrenchCollationDefault_" data-uid="Android.Icu.Text.RuleBasedCollator.SetFrenchCollationDefault*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_SetFrenchCollationDefault" data-uid="Android.Icu.Text.RuleBasedCollator.SetFrenchCollationDefault">
+  SetFrenchCollationDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setFrenchCollationDefault()">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setFrenchCollationDefault()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFrenchCollationDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_SetLowerCaseFirst_" data-uid="Android.Icu.Text.RuleBasedCollator.SetLowerCaseFirst*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_SetLowerCaseFirst_System_Boolean_" data-uid="Android.Icu.Text.RuleBasedCollator.SetLowerCaseFirst(System.Boolean)">
+  SetLowerCaseFirst(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setLowerCaseFirst(boolean)">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setLowerCaseFirst(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLowerCaseFirst(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_SetNumericCollation_" data-uid="Android.Icu.Text.RuleBasedCollator.SetNumericCollation*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_SetNumericCollation_System_Boolean_" data-uid="Android.Icu.Text.RuleBasedCollator.SetNumericCollation(System.Boolean)">
+  SetNumericCollation(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setNumericCollation(boolean)">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setNumericCollation(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNumericCollation(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_SetNumericCollationDefault_" data-uid="Android.Icu.Text.RuleBasedCollator.SetNumericCollationDefault*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_SetNumericCollationDefault" data-uid="Android.Icu.Text.RuleBasedCollator.SetNumericCollationDefault">
+  SetNumericCollationDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setNumericCollationDefault()">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setNumericCollationDefault()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNumericCollationDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_SetStrengthDefault_" data-uid="Android.Icu.Text.RuleBasedCollator.SetStrengthDefault*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_SetStrengthDefault" data-uid="Android.Icu.Text.RuleBasedCollator.SetStrengthDefault">
+  SetStrengthDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setStrengthDefault()">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setStrengthDefault()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStrengthDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_RuleBasedCollator_SetUpperCaseFirst_" data-uid="Android.Icu.Text.RuleBasedCollator.SetUpperCaseFirst*"></a>
+
+  <h3 id="Android_Icu_Text_RuleBasedCollator_SetUpperCaseFirst_System_Boolean_" data-uid="Android.Icu.Text.RuleBasedCollator.SetUpperCaseFirst(System.Boolean)">
+  SetUpperCaseFirst(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setUpperCaseFirst(boolean)">https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setUpperCaseFirst(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUpperCaseFirst(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/RuleBasedCollator.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

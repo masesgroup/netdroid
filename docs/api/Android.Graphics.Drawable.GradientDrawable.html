@@ -1,0 +1,2476 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class GradientDrawable | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GradientDrawable | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Graphics_Drawable_GradientDrawable.md&amp;value=---%0Auid%3A%20Android.Graphics.Drawable.GradientDrawable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Graphics.Drawable.GradientDrawable">
+
+
+
+  <h1 id="Android_Graphics_Drawable_GradientDrawable" data-uid="Android.Graphics.Drawable.GradientDrawable" class="text-break">
+Class GradientDrawable  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Graphics.html">Graphics</a>.<a class="xref" href="Android.Graphics.Drawable.html">Drawable</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GradientDrawable : Drawable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a>&gt;</div>
+      <div><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></div>
+      <div><span class="xref">GradientDrawable</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromPath_Java_Lang_String_">Drawable.CreateFromPath(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromResourceStream_Android_Content_Res_Resources_Android_Util_TypedValue_Java_Io_InputStream_Java_Lang_String_Android_Graphics_BitmapFactory_Options_">Drawable.CreateFromResourceStream(Resources, TypedValue, InputStream, String, BitmapFactory.Options)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromResourceStream_Android_Content_Res_Resources_Android_Util_TypedValue_Java_Io_InputStream_Java_Lang_String_">Drawable.CreateFromResourceStream(Resources, TypedValue, InputStream, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromStream_Java_Io_InputStream_Java_Lang_String_">Drawable.CreateFromStream(InputStream, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromXml_Android_Content_Res_Resources_Org_Xmlpull_V1_XmlPullParser_Android_Content_Res_Resources_Theme_">Drawable.CreateFromXml(Resources, XmlPullParser, Resources.Theme)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromXml_Android_Content_Res_Resources_Org_Xmlpull_V1_XmlPullParser_">Drawable.CreateFromXml(Resources, XmlPullParser)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromXmlInner_Android_Content_Res_Resources_Org_Xmlpull_V1_XmlPullParser_Android_Util_AttributeSet_Android_Content_Res_Resources_Theme_">Drawable.CreateFromXmlInner(Resources, XmlPullParser, AttributeSet, Resources.Theme)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CreateFromXmlInner_Android_Content_Res_Resources_Org_Xmlpull_V1_XmlPullParser_Android_Util_AttributeSet_">Drawable.CreateFromXmlInner(Resources, XmlPullParser, AttributeSet)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_ResolveOpacity_System_Int32_System_Int32_">Drawable.ResolveOpacity(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetOpacity">Drawable.GetOpacity()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_Draw_Android_Graphics_Canvas_">Drawable.Draw(Canvas)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetAlpha_System_Int32_">Drawable.SetAlpha(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetColorFilter_Android_Graphics_ColorFilter_">Drawable.SetColorFilter(ColorFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetColorFilter">Drawable.GetColorFilter()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetCurrent">Drawable.GetCurrent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_Mutate">Drawable.Mutate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetCallback">Drawable.GetCallback()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetConstantState">Drawable.GetConstantState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetOpticalInsets">Drawable.GetOpticalInsets()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetDirtyBounds">Drawable.GetDirtyBounds()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetTransparentRegion">Drawable.GetTransparentRegion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CanApplyTheme">Drawable.CanApplyTheme()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetPadding_Android_Graphics_Rect_">Drawable.GetPadding(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_HasFocusStateSpecified">Drawable.HasFocusStateSpecified()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_IsAutoMirrored">Drawable.IsAutoMirrored()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_IsFilterBitmap">Drawable.IsFilterBitmap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_IsProjected">Drawable.IsProjected()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_IsStateful">Drawable.IsStateful()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_OnLayoutDirectionChanged_System_Int32_">Drawable.OnLayoutDirectionChanged(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetState_System_Int32___">Drawable.SetState(int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetVisible_System_Boolean_System_Boolean_">Drawable.SetVisible(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CopyBounds">Drawable.CopyBounds()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetBounds">Drawable.GetBounds()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_IsVisible">Drawable.IsVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetLayoutDirection_System_Int32_">Drawable.SetLayoutDirection(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetLevel_System_Int32_">Drawable.SetLevel(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetLevel">Drawable.GetLevel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_CopyBounds_Android_Graphics_Rect_">Drawable.CopyBounds(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetCallback_Android_Graphics_Drawable_Drawable_Callback_">Drawable.SetCallback(Drawable.Callback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetAlpha">Drawable.GetAlpha()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetChangingConfigurations">Drawable.GetChangingConfigurations()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetIntrinsicHeight">Drawable.GetIntrinsicHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetIntrinsicWidth">Drawable.GetIntrinsicWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetLayoutDirection">Drawable.GetLayoutDirection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetMinimumHeight">Drawable.GetMinimumHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetMinimumWidth">Drawable.GetMinimumWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetState">Drawable.GetState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_ApplyTheme_Android_Content_Res_Resources_Theme_">Drawable.ApplyTheme(Resources.Theme)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_ClearColorFilter">Drawable.ClearColorFilter()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetHotspotBounds_Android_Graphics_Rect_">Drawable.GetHotspotBounds(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_GetOutline_Android_Graphics_Outline_">Drawable.GetOutline(Outline)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_Inflate_Android_Content_Res_Resources_Org_Xmlpull_V1_XmlPullParser_Android_Util_AttributeSet_Android_Content_Res_Resources_Theme_">Drawable.Inflate(Resources, XmlPullParser, AttributeSet, Resources.Theme)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_Inflate_Android_Content_Res_Resources_Org_Xmlpull_V1_XmlPullParser_Android_Util_AttributeSet_">Drawable.Inflate(Resources, XmlPullParser, AttributeSet)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_InvalidateSelf">Drawable.InvalidateSelf()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_JumpToCurrentState">Drawable.JumpToCurrentState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_ScheduleSelf_Java_Lang_Runnable_System_Int64_">Drawable.ScheduleSelf(Runnable, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetAutoMirrored_System_Boolean_">Drawable.SetAutoMirrored(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetBounds_Android_Graphics_Rect_">Drawable.SetBounds(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetBounds_System_Int32_System_Int32_System_Int32_System_Int32_">Drawable.SetBounds(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetChangingConfigurations_System_Int32_">Drawable.SetChangingConfigurations(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetColorFilter_System_Int32_Android_Graphics_PorterDuff_Mode_">Drawable.SetColorFilter(int, PorterDuff.Mode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetDither_System_Boolean_">Drawable.SetDither(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetFilterBitmap_System_Boolean_">Drawable.SetFilterBitmap(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetHotspot_System_Single_System_Single_">Drawable.SetHotspot(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetHotspotBounds_System_Int32_System_Int32_System_Int32_System_Int32_">Drawable.SetHotspotBounds(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetTint_System_Int32_">Drawable.SetTint(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetTintBlendMode_Android_Graphics_BlendMode_">Drawable.SetTintBlendMode(BlendMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetTintList_Android_Content_Res_ColorStateList_">Drawable.SetTintList(ColorStateList)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_SetTintMode_Android_Graphics_PorterDuff_Mode_">Drawable.SetTintMode(PorterDuff.Mode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Drawable.Drawable.html#Android_Graphics_Drawable_Drawable_UnscheduleSelf_Java_Lang_Runnable_">Drawable.UnscheduleSelf(Runnable)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Drawable&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Drawable&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Drawable&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Drawable&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Drawable&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Drawable&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Drawable&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable__ctor_" data-uid="Android.Graphics.Drawable.GradientDrawable.#ctor*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable__ctor" data-uid="Android.Graphics.Drawable.GradientDrawable.#ctor">
+  GradientDrawable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/AllPackageClasses.cs/#L847"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GradientDrawable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable__ctor_" data-uid="Android.Graphics.Drawable.GradientDrawable.#ctor*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable__ctor_Android_Graphics_Drawable_GradientDrawable_Orientation_System_Int32___" data-uid="Android.Graphics.Drawable.GradientDrawable.#ctor(Android.Graphics.Drawable.GradientDrawable.Orientation,System.Int32[])">
+  GradientDrawable(Orientation, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#%3Cinit%3E(android.graphics.drawable.GradientDrawable.Orientation,int[])">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#%3Cinit%3E(android.graphics.drawable.GradientDrawable.Orientation,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GradientDrawable(GradientDrawable.Orientation arg0, int[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Graphics.Drawable.GradientDrawable.html">GradientDrawable</a>.<a class="xref" href="Android.Graphics.Drawable.GradientDrawable.Orientation.html">Orientation</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.GradientDrawable.Orientation.html">GradientDrawable.Orientation</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable__ctor_" data-uid="Android.Graphics.Drawable.GradientDrawable.#ctor*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable__ctor_System_Object___" data-uid="Android.Graphics.Drawable.GradientDrawable.#ctor(System.Object[])">
+  GradientDrawable(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/AllPackageClasses.cs/#L851"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GradientDrawable(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_BridgeClassName_" data-uid="Android.Graphics.Drawable.GradientDrawable.BridgeClassName*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_BridgeClassName" data-uid="Android.Graphics.Drawable.GradientDrawable.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/AllPackageClasses.cs/#L858"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_IsBridgeAbstract_" data-uid="Android.Graphics.Drawable.GradientDrawable.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_IsBridgeAbstract" data-uid="Android.Graphics.Drawable.GradientDrawable.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/AllPackageClasses.cs/#L862"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_IsBridgeCloseable_" data-uid="Android.Graphics.Drawable.GradientDrawable.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_IsBridgeCloseable" data-uid="Android.Graphics.Drawable.GradientDrawable.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/AllPackageClasses.cs/#L866"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_IsBridgeInterface_" data-uid="Android.Graphics.Drawable.GradientDrawable.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_IsBridgeInterface" data-uid="Android.Graphics.Drawable.GradientDrawable.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/AllPackageClasses.cs/#L870"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_IsBridgeStatic_" data-uid="Android.Graphics.Drawable.GradientDrawable.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_IsBridgeStatic" data-uid="Android.Graphics.Drawable.GradientDrawable.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/AllPackageClasses.cs/#L874"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_LINE_" data-uid="Android.Graphics.Drawable.GradientDrawable.LINE*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_LINE" data-uid="Android.Graphics.Drawable.GradientDrawable.LINE">
+  LINE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#LINE">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#LINE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LINE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_LINEAR_GRADIENT_" data-uid="Android.Graphics.Drawable.GradientDrawable.LINEAR_GRADIENT*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_LINEAR_GRADIENT" data-uid="Android.Graphics.Drawable.GradientDrawable.LINEAR_GRADIENT">
+  LINEAR_GRADIENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#LINEAR_GRADIENT">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#LINEAR_GRADIENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LINEAR_GRADIENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_OVAL_" data-uid="Android.Graphics.Drawable.GradientDrawable.OVAL*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_OVAL" data-uid="Android.Graphics.Drawable.GradientDrawable.OVAL">
+  OVAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#OVAL">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#OVAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OVAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_RADIAL_GRADIENT_" data-uid="Android.Graphics.Drawable.GradientDrawable.RADIAL_GRADIENT*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_RADIAL_GRADIENT" data-uid="Android.Graphics.Drawable.GradientDrawable.RADIAL_GRADIENT">
+  RADIAL_GRADIENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#RADIAL_GRADIENT">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#RADIAL_GRADIENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RADIAL_GRADIENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_RECTANGLE_" data-uid="Android.Graphics.Drawable.GradientDrawable.RECTANGLE*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_RECTANGLE" data-uid="Android.Graphics.Drawable.GradientDrawable.RECTANGLE">
+  RECTANGLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#RECTANGLE">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#RECTANGLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RECTANGLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_RING_" data-uid="Android.Graphics.Drawable.GradientDrawable.RING*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_RING" data-uid="Android.Graphics.Drawable.GradientDrawable.RING">
+  RING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#RING">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#RING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SWEEP_GRADIENT_" data-uid="Android.Graphics.Drawable.GradientDrawable.SWEEP_GRADIENT*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SWEEP_GRADIENT" data-uid="Android.Graphics.Drawable.GradientDrawable.SWEEP_GRADIENT">
+  SWEEP_GRADIENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#SWEEP_GRADIENT">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#SWEEP_GRADIENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SWEEP_GRADIENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetColor_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetColor*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetColor" data-uid="Android.Graphics.Drawable.GradientDrawable.GetColor">
+  GetColor()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getColor()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getColor()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ColorStateList GetColor()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.ColorStateList.html">ColorStateList</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.ColorStateList.html">ColorStateList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetColors_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetColors*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetColors" data-uid="Android.Graphics.Drawable.GradientDrawable.GetColors">
+  GetColors()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getColors()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getColors()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] GetColors()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetCornerRadii_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetCornerRadii*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetCornerRadii" data-uid="Android.Graphics.Drawable.GradientDrawable.GetCornerRadii">
+  GetCornerRadii()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getCornerRadii()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getCornerRadii()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] GetCornerRadii()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetCornerRadius_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetCornerRadius*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetCornerRadius" data-uid="Android.Graphics.Drawable.GradientDrawable.GetCornerRadius">
+  GetCornerRadius()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getCornerRadius()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getCornerRadius()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetCornerRadius()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetGradientCenterX_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetGradientCenterX*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetGradientCenterX" data-uid="Android.Graphics.Drawable.GradientDrawable.GetGradientCenterX">
+  GetGradientCenterX()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientCenterX()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientCenterX()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetGradientCenterX()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetGradientCenterY_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetGradientCenterY*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetGradientCenterY" data-uid="Android.Graphics.Drawable.GradientDrawable.GetGradientCenterY">
+  GetGradientCenterY()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientCenterY()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientCenterY()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetGradientCenterY()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetGradientRadius_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetGradientRadius*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetGradientRadius" data-uid="Android.Graphics.Drawable.GradientDrawable.GetGradientRadius">
+  GetGradientRadius()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientRadius()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientRadius()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetGradientRadius()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetGradientType_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetGradientType*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetGradientType" data-uid="Android.Graphics.Drawable.GradientDrawable.GetGradientType">
+  GetGradientType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientType()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetGradientType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetInnerRadius_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetInnerRadius*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetInnerRadius" data-uid="Android.Graphics.Drawable.GradientDrawable.GetInnerRadius">
+  GetInnerRadius()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getInnerRadius()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getInnerRadius()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInnerRadius()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetInnerRadiusRatio_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetInnerRadiusRatio*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetInnerRadiusRatio" data-uid="Android.Graphics.Drawable.GradientDrawable.GetInnerRadiusRatio">
+  GetInnerRadiusRatio()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getInnerRadiusRatio()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getInnerRadiusRatio()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetInnerRadiusRatio()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetOrientation_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetOrientation*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetOrientation" data-uid="Android.Graphics.Drawable.GradientDrawable.GetOrientation">
+  GetOrientation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getOrientation()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getOrientation()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GradientDrawable.Orientation GetOrientation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Graphics.Drawable.GradientDrawable.html">GradientDrawable</a>.<a class="xref" href="Android.Graphics.Drawable.GradientDrawable.Orientation.html">Orientation</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.GradientDrawable.Orientation.html">GradientDrawable.Orientation</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetShape_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetShape*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetShape" data-uid="Android.Graphics.Drawable.GradientDrawable.GetShape">
+  GetShape()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getShape()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getShape()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetShape()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetThickness_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetThickness*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetThickness" data-uid="Android.Graphics.Drawable.GradientDrawable.GetThickness">
+  GetThickness()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getThickness()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getThickness()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetThickness()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetThicknessRatio_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetThicknessRatio*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetThicknessRatio" data-uid="Android.Graphics.Drawable.GradientDrawable.GetThicknessRatio">
+  GetThicknessRatio()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getThicknessRatio()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getThicknessRatio()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetThicknessRatio()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_GetUseLevel_" data-uid="Android.Graphics.Drawable.GradientDrawable.GetUseLevel*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_GetUseLevel" data-uid="Android.Graphics.Drawable.GradientDrawable.GetUseLevel">
+  GetUseLevel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getUseLevel()">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getUseLevel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetUseLevel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetColor_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetColor*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetColor_Android_Content_Res_ColorStateList_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetColor(Android.Content.Res.ColorStateList)">
+  SetColor(ColorStateList)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setColor(android.content.res.ColorStateList)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setColor(android.content.res.ColorStateList)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(ColorStateList arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.ColorStateList.html">ColorStateList</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.ColorStateList.html">ColorStateList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetColor_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetColor*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetColor_System_Int32_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetColor(System.Int32)">
+  SetColor(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setColor(int)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setColor(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetColors_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetColors*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetColors_System_Int32___" data-uid="Android.Graphics.Drawable.GradientDrawable.SetColors(System.Int32[])">
+  SetColors(int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setColors(int[])">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setColors(int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColors(int[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetColors_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetColors*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetColors_System_Int32___System_Single___" data-uid="Android.Graphics.Drawable.GradientDrawable.SetColors(System.Int32[],System.Single[])">
+  SetColors(int[], float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setColors(int[],float[])">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setColors(int[],float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColors(int[] arg0, float[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetCornerRadii_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetCornerRadii*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetCornerRadii_System_Single___" data-uid="Android.Graphics.Drawable.GradientDrawable.SetCornerRadii(System.Single[])">
+  SetCornerRadii(float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setCornerRadii(float[])">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setCornerRadii(float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCornerRadii(float[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetCornerRadius_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetCornerRadius*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetCornerRadius_System_Single_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetCornerRadius(System.Single)">
+  SetCornerRadius(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setCornerRadius(float)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setCornerRadius(float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCornerRadius(float arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetGradientCenter_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetGradientCenter*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetGradientCenter_System_Single_System_Single_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetGradientCenter(System.Single,System.Single)">
+  SetGradientCenter(float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setGradientCenter(float,float)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setGradientCenter(float,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGradientCenter(float arg0, float arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetGradientRadius_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetGradientRadius*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetGradientRadius_System_Single_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetGradientRadius(System.Single)">
+  SetGradientRadius(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setGradientRadius(float)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setGradientRadius(float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGradientRadius(float arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetGradientType_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetGradientType*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetGradientType_System_Int32_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetGradientType(System.Int32)">
+  SetGradientType(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setGradientType(int)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setGradientType(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGradientType(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetInnerRadius_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetInnerRadius*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetInnerRadius_System_Int32_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetInnerRadius(System.Int32)">
+  SetInnerRadius(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setInnerRadius(int)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setInnerRadius(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInnerRadius(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetInnerRadiusRatio_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetInnerRadiusRatio*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetInnerRadiusRatio_System_Single_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetInnerRadiusRatio(System.Single)">
+  SetInnerRadiusRatio(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setInnerRadiusRatio(float)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setInnerRadiusRatio(float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInnerRadiusRatio(float arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetOrientation_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetOrientation*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetOrientation_Android_Graphics_Drawable_GradientDrawable_Orientation_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetOrientation(Android.Graphics.Drawable.GradientDrawable.Orientation)">
+  SetOrientation(Orientation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setOrientation(android.graphics.drawable.GradientDrawable.Orientation)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setOrientation(android.graphics.drawable.GradientDrawable.Orientation)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOrientation(GradientDrawable.Orientation arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Graphics.Drawable.GradientDrawable.html">GradientDrawable</a>.<a class="xref" href="Android.Graphics.Drawable.GradientDrawable.Orientation.html">Orientation</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.GradientDrawable.Orientation.html">GradientDrawable.Orientation</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetPadding_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetPadding*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetPadding_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetPadding(System.Int32,System.Int32,System.Int32,System.Int32)">
+  SetPadding(int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setPadding(int,int,int,int)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setPadding(int,int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPadding(int arg0, int arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetShape_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetShape*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetShape_System_Int32_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetShape(System.Int32)">
+  SetShape(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setShape(int)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setShape(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetShape(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetSize_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetSize*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetSize_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetSize(System.Int32,System.Int32)">
+  SetSize(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setSize(int,int)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setSize(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSize(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetStroke_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetStroke*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetStroke_System_Int32_Android_Content_Res_ColorStateList_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetStroke(System.Int32,Android.Content.Res.ColorStateList)">
+  SetStroke(int, ColorStateList)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setStroke(int,android.content.res.ColorStateList)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setStroke(int,android.content.res.ColorStateList)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStroke(int arg0, ColorStateList arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Res.ColorStateList.html">ColorStateList</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.ColorStateList.html">ColorStateList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetStroke_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetStroke*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetStroke_System_Int32_Android_Content_Res_ColorStateList_System_Single_System_Single_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetStroke(System.Int32,Android.Content.Res.ColorStateList,System.Single,System.Single)">
+  SetStroke(int, ColorStateList, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setStroke(int,android.content.res.ColorStateList,float,float)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setStroke(int,android.content.res.ColorStateList,float,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStroke(int arg0, ColorStateList arg1, float arg2, float arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Res.ColorStateList.html">ColorStateList</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.ColorStateList.html">ColorStateList</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetStroke_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetStroke*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetStroke_System_Int32_System_Int32_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetStroke(System.Int32,System.Int32)">
+  SetStroke(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setStroke(int,int)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setStroke(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStroke(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetStroke_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetStroke*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetStroke_System_Int32_System_Int32_System_Single_System_Single_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetStroke(System.Int32,System.Int32,System.Single,System.Single)">
+  SetStroke(int, int, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setStroke(int,int,float,float)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setStroke(int,int,float,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStroke(int arg0, int arg1, float arg2, float arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetThickness_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetThickness*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetThickness_System_Int32_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetThickness(System.Int32)">
+  SetThickness(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setThickness(int)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setThickness(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetThickness(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetThicknessRatio_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetThicknessRatio*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetThicknessRatio_System_Single_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetThicknessRatio(System.Single)">
+  SetThicknessRatio(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setThicknessRatio(float)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setThicknessRatio(float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetThicknessRatio(float arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Drawable_GradientDrawable_SetUseLevel_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetUseLevel*"></a>
+
+  <h3 id="Android_Graphics_Drawable_GradientDrawable_SetUseLevel_System_Boolean_" data-uid="Android.Graphics.Drawable.GradientDrawable.SetUseLevel(System.Boolean)">
+  SetUseLevel(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setUseLevel(boolean)">https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setUseLevel(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUseLevel(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Drawable/GradientDrawable.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

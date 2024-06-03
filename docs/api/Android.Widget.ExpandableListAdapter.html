@@ -1,0 +1,1955 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class ExpandableListAdapter | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ExpandableListAdapter | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Widget_ExpandableListAdapter.md&amp;value=---%0Auid%3A%20Android.Widget.ExpandableListAdapter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Widget.ExpandableListAdapter">
+
+
+
+  <h1 id="Android_Widget_ExpandableListAdapter" data-uid="Android.Widget.ExpandableListAdapter" class="text-break">
+Class ExpandableListAdapter  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Widget.html">Widget</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ExpandableListAdapter : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IExpandableListAdapter</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<span class="xref">JVMBridgeListener</span>&gt;</div>
+      <div><span class="xref">JVMBridgeListener</span></div>
+      <div><span class="xref">ExpandableListAdapter</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Widget.IExpandableListAdapter.html">IExpandableListAdapter</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Android.Widget.ExpandableListAdapterDirect.html">ExpandableListAdapterDirect</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler(string, EventHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler&lt;TDataClass&gt;(string, EventHandler&lt;CLRListenerEventArgs&lt;TDataClass&gt;&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeListener.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeListener.AutoInit</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeListener.IsBridgeStatic</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeListener.IsBridgeCloseable</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeListener.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;JVMBridgeListener&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeInterface</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeAbstract</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Widget_ExpandableListAdapter__ctor_" data-uid="Android.Widget.ExpandableListAdapter.#ctor*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter__ctor" data-uid="Android.Widget.ExpandableListAdapter.#ctor">
+  ExpandableListAdapter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L2605"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpandableListAdapter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Widget_ExpandableListAdapter_BridgeClassName_" data-uid="Android.Widget.ExpandableListAdapter.BridgeClassName*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_BridgeClassName" data-uid="Android.Widget.ExpandableListAdapter.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L2613"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnAreAllItemsEnabled_" data-uid="Android.Widget.ExpandableListAdapter.OnAreAllItemsEnabled*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnAreAllItemsEnabled" data-uid="Android.Widget.ExpandableListAdapter.OnAreAllItemsEnabled">
+  OnAreAllItemsEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#areAllItemsEnabled()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#areAllItemsEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;bool&gt; OnAreAllItemsEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnAreAllItemsEnabled_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnAreAllItemsEnabled">OnAreAllItemsEnabled</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetChild_" data-uid="Android.Widget.ExpandableListAdapter.OnGetChild*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetChild" data-uid="Android.Widget.ExpandableListAdapter.OnGetChild">
+  OnGetChild
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChild(int,int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChild(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;int, int, object&gt; OnGetChild { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetChild_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetChild">OnGetChild</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetChildId_" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildId*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetChildId" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildId">
+  OnGetChildId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildId(int,int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildId(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;int, int, long&gt; OnGetChildId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetChildId_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetChildId">OnGetChildId</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetChildView_" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildView*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetChildView" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildView">
+  OnGetChildView
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;int, int, bool, View, ViewGroup, View&gt; OnGetChildView { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-6">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="Android.View.View.html">View</a>, <a class="xref" href="Android.View.ViewGroup.html">ViewGroup</a>, <a class="xref" href="Android.View.View.html">View</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetChildView_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetChildView">OnGetChildView</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetChildrenCount_" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildrenCount*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetChildrenCount" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildrenCount">
+  OnGetChildrenCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildrenCount(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildrenCount(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;int, int&gt; OnGetChildrenCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetChildrenCount_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetChildrenCount">OnGetChildrenCount</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetCombinedChildId_" data-uid="Android.Widget.ExpandableListAdapter.OnGetCombinedChildId*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetCombinedChildId" data-uid="Android.Widget.ExpandableListAdapter.OnGetCombinedChildId">
+  OnGetCombinedChildId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedChildId(long,long)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedChildId(long,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;long, long, long&gt; OnGetCombinedChildId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetCombinedChildId_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetCombinedChildId">OnGetCombinedChildId</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetCombinedGroupId_" data-uid="Android.Widget.ExpandableListAdapter.OnGetCombinedGroupId*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetCombinedGroupId" data-uid="Android.Widget.ExpandableListAdapter.OnGetCombinedGroupId">
+  OnGetCombinedGroupId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedGroupId(long)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedGroupId(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;long, long&gt; OnGetCombinedGroupId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetCombinedGroupId_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetCombinedGroupId">OnGetCombinedGroupId</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetGroup_" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroup*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetGroup" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroup">
+  OnGetGroup
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroup(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroup(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;int, object&gt; OnGetGroup { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetGroup_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetGroup">OnGetGroup</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetGroupCount_" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupCount*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetGroupCount" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupCount">
+  OnGetGroupCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupCount()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupCount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;int&gt; OnGetGroupCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetGroupCount_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetGroupCount">OnGetGroupCount</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetGroupId_" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupId*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetGroupId" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupId">
+  OnGetGroupId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupId(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupId(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;int, long&gt; OnGetGroupId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetGroupId_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetGroupId">OnGetGroupId</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetGroupView_" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupView*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetGroupView" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupView">
+  OnGetGroupView
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupView(int,boolean,android.view.View,android.view.ViewGroup)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupView(int,boolean,android.view.View,android.view.ViewGroup)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;int, bool, View, ViewGroup, View&gt; OnGetGroupView { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-5">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="Android.View.View.html">View</a>, <a class="xref" href="Android.View.ViewGroup.html">ViewGroup</a>, <a class="xref" href="Android.View.View.html">View</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetGroupView_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetGroupView">OnGetGroupView</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnHasStableIds_" data-uid="Android.Widget.ExpandableListAdapter.OnHasStableIds*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnHasStableIds" data-uid="Android.Widget.ExpandableListAdapter.OnHasStableIds">
+  OnHasStableIds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#hasStableIds()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#hasStableIds()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;bool&gt; OnHasStableIds { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnHasStableIds_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnHasStableIds">OnHasStableIds</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnIsChildSelectable_" data-uid="Android.Widget.ExpandableListAdapter.OnIsChildSelectable*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnIsChildSelectable" data-uid="Android.Widget.ExpandableListAdapter.OnIsChildSelectable">
+  OnIsChildSelectable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isChildSelectable(int,int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isChildSelectable(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;int, int, bool&gt; OnIsChildSelectable { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnIsChildSelectable_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnIsChildSelectable">OnIsChildSelectable</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnIsEmpty_" data-uid="Android.Widget.ExpandableListAdapter.OnIsEmpty*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnIsEmpty" data-uid="Android.Widget.ExpandableListAdapter.OnIsEmpty">
+  OnIsEmpty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isEmpty()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isEmpty()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;bool&gt; OnIsEmpty { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnIsEmpty_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnIsEmpty">OnIsEmpty</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnOnGroupCollapsed_" data-uid="Android.Widget.ExpandableListAdapter.OnOnGroupCollapsed*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnOnGroupCollapsed" data-uid="Android.Widget.ExpandableListAdapter.OnOnGroupCollapsed">
+  OnOnGroupCollapsed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupCollapsed(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupCollapsed(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;int&gt; OnOnGroupCollapsed { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnOnGroupCollapsed_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnOnGroupCollapsed">OnOnGroupCollapsed</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnOnGroupExpanded_" data-uid="Android.Widget.ExpandableListAdapter.OnOnGroupExpanded*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnOnGroupExpanded" data-uid="Android.Widget.ExpandableListAdapter.OnOnGroupExpanded">
+  OnOnGroupExpanded
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupExpanded(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupExpanded(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;int&gt; OnOnGroupExpanded { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnOnGroupExpanded_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnOnGroupExpanded">OnOnGroupExpanded</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnRegisterDataSetObserver_" data-uid="Android.Widget.ExpandableListAdapter.OnRegisterDataSetObserver*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnRegisterDataSetObserver" data-uid="Android.Widget.ExpandableListAdapter.OnRegisterDataSetObserver">
+  OnRegisterDataSetObserver
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#registerDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#registerDataSetObserver(android.database.DataSetObserver)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;DataSetObserver&gt; OnRegisterDataSetObserver { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Android.Database.DataSetObserver.html">DataSetObserver</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnRegisterDataSetObserver_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnRegisterDataSetObserver">OnRegisterDataSetObserver</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnUnregisterDataSetObserver_" data-uid="Android.Widget.ExpandableListAdapter.OnUnregisterDataSetObserver*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnUnregisterDataSetObserver" data-uid="Android.Widget.ExpandableListAdapter.OnUnregisterDataSetObserver">
+  OnUnregisterDataSetObserver
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L488"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;DataSetObserver&gt; OnUnregisterDataSetObserver { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Android.Database.DataSetObserver.html">DataSetObserver</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnUnregisterDataSetObserver_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnUnregisterDataSetObserver">OnUnregisterDataSetObserver</a> has a value it takes precedence over corresponding class method</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Widget_ExpandableListAdapter_AreAllItemsEnabled_" data-uid="Android.Widget.ExpandableListAdapter.AreAllItemsEnabled*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_AreAllItemsEnabled" data-uid="Android.Widget.ExpandableListAdapter.AreAllItemsEnabled">
+  AreAllItemsEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#areAllItemsEnabled()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#areAllItemsEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AreAllItemsEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_GetChild_" data-uid="Android.Widget.ExpandableListAdapter.GetChild*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_GetChild_System_Int32_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.GetChild(System.Int32,System.Int32)">
+  GetChild(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChild(int,int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChild(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object GetChild(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_GetChildId_" data-uid="Android.Widget.ExpandableListAdapter.GetChildId*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_GetChildId_System_Int32_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.GetChildId(System.Int32,System.Int32)">
+  GetChildId(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildId(int,int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildId(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual long GetChildId(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_GetChildView_" data-uid="Android.Widget.ExpandableListAdapter.GetChildView*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_GetChildView_System_Int32_System_Int32_System_Boolean_Android_View_View_Android_View_ViewGroup_" data-uid="Android.Widget.ExpandableListAdapter.GetChildView(System.Int32,System.Int32,System.Boolean,Android.View.View,Android.View.ViewGroup)">
+  GetChildView(int, int, bool, View, ViewGroup)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual View GetChildView(int arg0, int arg1, bool arg2, View arg3, ViewGroup arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.View.ViewGroup.html">ViewGroup</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewGroup.html">ViewGroup</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_GetChildrenCount_" data-uid="Android.Widget.ExpandableListAdapter.GetChildrenCount*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_GetChildrenCount_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.GetChildrenCount(System.Int32)">
+  GetChildrenCount(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildrenCount(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildrenCount(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetChildrenCount(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_GetCombinedChildId_" data-uid="Android.Widget.ExpandableListAdapter.GetCombinedChildId*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_GetCombinedChildId_System_Int64_System_Int64_" data-uid="Android.Widget.ExpandableListAdapter.GetCombinedChildId(System.Int64,System.Int64)">
+  GetCombinedChildId(long, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedChildId(long,long)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedChildId(long,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual long GetCombinedChildId(long arg0, long arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_GetCombinedGroupId_" data-uid="Android.Widget.ExpandableListAdapter.GetCombinedGroupId*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_GetCombinedGroupId_System_Int64_" data-uid="Android.Widget.ExpandableListAdapter.GetCombinedGroupId(System.Int64)">
+  GetCombinedGroupId(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedGroupId(long)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedGroupId(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual long GetCombinedGroupId(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_GetGroup_" data-uid="Android.Widget.ExpandableListAdapter.GetGroup*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_GetGroup_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.GetGroup(System.Int32)">
+  GetGroup(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroup(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroup(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object GetGroup(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_GetGroupCount_" data-uid="Android.Widget.ExpandableListAdapter.GetGroupCount*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_GetGroupCount" data-uid="Android.Widget.ExpandableListAdapter.GetGroupCount">
+  GetGroupCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupCount()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupCount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetGroupCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_GetGroupId_" data-uid="Android.Widget.ExpandableListAdapter.GetGroupId*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_GetGroupId_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.GetGroupId(System.Int32)">
+  GetGroupId(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L416"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupId(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupId(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual long GetGroupId(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_GetGroupView_" data-uid="Android.Widget.ExpandableListAdapter.GetGroupView*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_GetGroupView_System_Int32_System_Boolean_Android_View_View_Android_View_ViewGroup_" data-uid="Android.Widget.ExpandableListAdapter.GetGroupView(System.Int32,System.Boolean,Android.View.View,Android.View.ViewGroup)">
+  GetGroupView(int, bool, View, ViewGroup)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupView(int,boolean,android.view.View,android.view.ViewGroup)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupView(int,boolean,android.view.View,android.view.ViewGroup)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual View GetGroupView(int arg0, bool arg1, View arg2, ViewGroup arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.View.ViewGroup.html">ViewGroup</a></dt>
+    <dd><p><a class="xref" href="Android.View.ViewGroup.html">ViewGroup</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_HasStableIds_" data-uid="Android.Widget.ExpandableListAdapter.HasStableIds*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_HasStableIds" data-uid="Android.Widget.ExpandableListAdapter.HasStableIds">
+  HasStableIds()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#hasStableIds()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#hasStableIds()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HasStableIds()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_InitializeHandlers_" data-uid="Android.Widget.ExpandableListAdapter.InitializeHandlers*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_InitializeHandlers" data-uid="Android.Widget.ExpandableListAdapter.InitializeHandlers">
+  InitializeHandlers()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handlers initializer for <a class="xref" href="Android.Widget.ExpandableListAdapter.html">ExpandableListAdapter</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeHandlers()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_IsChildSelectable_" data-uid="Android.Widget.ExpandableListAdapter.IsChildSelectable*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_IsChildSelectable_System_Int32_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.IsChildSelectable(System.Int32,System.Int32)">
+  IsChildSelectable(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isChildSelectable(int,int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isChildSelectable(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsChildSelectable(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_IsEmpty_" data-uid="Android.Widget.ExpandableListAdapter.IsEmpty*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_IsEmpty" data-uid="Android.Widget.ExpandableListAdapter.IsEmpty">
+  IsEmpty()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isEmpty()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isEmpty()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsEmpty()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGroupCollapsed_" data-uid="Android.Widget.ExpandableListAdapter.OnGroupCollapsed*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGroupCollapsed_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.OnGroupCollapsed(System.Int32)">
+  OnGroupCollapsed(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupCollapsed(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupCollapsed(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnGroupCollapsed(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGroupExpanded_" data-uid="Android.Widget.ExpandableListAdapter.OnGroupExpanded*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGroupExpanded_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.OnGroupExpanded(System.Int32)">
+  OnGroupExpanded(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupExpanded(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupExpanded(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnGroupExpanded(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_RegisterDataSetObserver_" data-uid="Android.Widget.ExpandableListAdapter.RegisterDataSetObserver*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_RegisterDataSetObserver_Android_Database_DataSetObserver_" data-uid="Android.Widget.ExpandableListAdapter.RegisterDataSetObserver(Android.Database.DataSetObserver)">
+  RegisterDataSetObserver(DataSetObserver)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L479"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#registerDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#registerDataSetObserver(android.database.DataSetObserver)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RegisterDataSetObserver(DataSetObserver arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.DataSetObserver.html">DataSetObserver</a></dt>
+    <dd><p><a class="xref" href="Android.Database.DataSetObserver.html">DataSetObserver</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_UnregisterDataSetObserver_" data-uid="Android.Widget.ExpandableListAdapter.UnregisterDataSetObserver*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_UnregisterDataSetObserver_Android_Database_DataSetObserver_" data-uid="Android.Widget.ExpandableListAdapter.UnregisterDataSetObserver(Android.Database.DataSetObserver)">
+  UnregisterDataSetObserver(DataSetObserver)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L500"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UnregisterDataSetObserver(DataSetObserver arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Database.DataSetObserver.html">DataSetObserver</a></dt>
+    <dd><p><a class="xref" href="Android.Database.DataSetObserver.html">DataSetObserver</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L47" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,3339 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class DecimalFormatSymbols | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DecimalFormatSymbols | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Icu_Text_DecimalFormatSymbols.md&amp;value=---%0Auid%3A%20Android.Icu.Text.DecimalFormatSymbols%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Icu.Text.DecimalFormatSymbols">
+
+
+
+  <h1 id="Android_Icu_Text_DecimalFormatSymbols" data-uid="Android.Icu.Text.DecimalFormatSymbols" class="text-break">
+Class DecimalFormatSymbols  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Icu.html">Icu</a>.<a class="xref" href="Android.Icu.Text.html">Text</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DecimalFormatSymbols : JVMBridgeBase&lt;DecimalFormatSymbols&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ICloneable, ISerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a>&gt;</div>
+      <div><span class="xref">DecimalFormatSymbols</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Lang.ICloneable.html">ICloneable</a></div>
+      <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;DecimalFormatSymbols&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols__ctor_" data-uid="Android.Icu.Text.DecimalFormatSymbols.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols__ctor" data-uid="Android.Icu.Text.DecimalFormatSymbols.#ctor">
+  DecimalFormatSymbols()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L1857"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DecimalFormatSymbols()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols__ctor_" data-uid="Android.Icu.Text.DecimalFormatSymbols.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols__ctor_Android_Icu_Util_ULocale_" data-uid="Android.Icu.Text.DecimalFormatSymbols.#ctor(Android.Icu.Util.ULocale)">
+  DecimalFormatSymbols(ULocale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#%3Cinit%3E(android.icu.util.ULocale)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#%3Cinit%3E(android.icu.util.ULocale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DecimalFormatSymbols(ULocale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols__ctor_" data-uid="Android.Icu.Text.DecimalFormatSymbols.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols__ctor_Java_Util_Locale_" data-uid="Android.Icu.Text.DecimalFormatSymbols.#ctor(Java.Util.Locale)">
+  DecimalFormatSymbols(Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#%3Cinit%3E(java.util.Locale)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#%3Cinit%3E(java.util.Locale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DecimalFormatSymbols(Locale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols__ctor_" data-uid="Android.Icu.Text.DecimalFormatSymbols.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols__ctor_System_Object___" data-uid="Android.Icu.Text.DecimalFormatSymbols.#ctor(System.Object[])">
+  DecimalFormatSymbols(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L1861"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DecimalFormatSymbols(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_BridgeClassName_" data-uid="Android.Icu.Text.DecimalFormatSymbols.BridgeClassName*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_BridgeClassName" data-uid="Android.Icu.Text.DecimalFormatSymbols.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L1868"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_CURRENCY_SPC_CURRENCY_MATCH_" data-uid="Android.Icu.Text.DecimalFormatSymbols.CURRENCY_SPC_CURRENCY_MATCH*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_CURRENCY_SPC_CURRENCY_MATCH" data-uid="Android.Icu.Text.DecimalFormatSymbols.CURRENCY_SPC_CURRENCY_MATCH">
+  CURRENCY_SPC_CURRENCY_MATCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#CURRENCY_SPC_CURRENCY_MATCH">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#CURRENCY_SPC_CURRENCY_MATCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CURRENCY_SPC_CURRENCY_MATCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_CURRENCY_SPC_INSERT_" data-uid="Android.Icu.Text.DecimalFormatSymbols.CURRENCY_SPC_INSERT*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_CURRENCY_SPC_INSERT" data-uid="Android.Icu.Text.DecimalFormatSymbols.CURRENCY_SPC_INSERT">
+  CURRENCY_SPC_INSERT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#CURRENCY_SPC_INSERT">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#CURRENCY_SPC_INSERT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CURRENCY_SPC_INSERT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_CURRENCY_SPC_SURROUNDING_MATCH_" data-uid="Android.Icu.Text.DecimalFormatSymbols.CURRENCY_SPC_SURROUNDING_MATCH*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_CURRENCY_SPC_SURROUNDING_MATCH" data-uid="Android.Icu.Text.DecimalFormatSymbols.CURRENCY_SPC_SURROUNDING_MATCH">
+  CURRENCY_SPC_SURROUNDING_MATCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#CURRENCY_SPC_SURROUNDING_MATCH">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#CURRENCY_SPC_SURROUNDING_MATCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CURRENCY_SPC_SURROUNDING_MATCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_IsBridgeAbstract_" data-uid="Android.Icu.Text.DecimalFormatSymbols.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_IsBridgeAbstract" data-uid="Android.Icu.Text.DecimalFormatSymbols.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L1872"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_IsBridgeCloseable_" data-uid="Android.Icu.Text.DecimalFormatSymbols.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_IsBridgeCloseable" data-uid="Android.Icu.Text.DecimalFormatSymbols.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L1876"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_IsBridgeInterface_" data-uid="Android.Icu.Text.DecimalFormatSymbols.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_IsBridgeInterface" data-uid="Android.Icu.Text.DecimalFormatSymbols.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L1880"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_IsBridgeStatic_" data-uid="Android.Icu.Text.DecimalFormatSymbols.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_IsBridgeStatic" data-uid="Android.Icu.Text.DecimalFormatSymbols.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L1884"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_ForNumberingSystem_" data-uid="Android.Icu.Text.DecimalFormatSymbols.ForNumberingSystem*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_ForNumberingSystem_Android_Icu_Util_ULocale_Android_Icu_Text_NumberingSystem_" data-uid="Android.Icu.Text.DecimalFormatSymbols.ForNumberingSystem(Android.Icu.Util.ULocale,Android.Icu.Text.NumberingSystem)">
+  ForNumberingSystem(ULocale, NumberingSystem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#forNumberingSystem(android.icu.util.ULocale,android.icu.text.NumberingSystem)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#forNumberingSystem(android.icu.util.ULocale,android.icu.text.NumberingSystem)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DecimalFormatSymbols ForNumberingSystem(ULocale arg0, NumberingSystem arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Icu.Text.NumberingSystem.html">NumberingSystem</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberingSystem.html">NumberingSystem</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_ForNumberingSystem_" data-uid="Android.Icu.Text.DecimalFormatSymbols.ForNumberingSystem*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_ForNumberingSystem_Java_Util_Locale_Android_Icu_Text_NumberingSystem_" data-uid="Android.Icu.Text.DecimalFormatSymbols.ForNumberingSystem(Java.Util.Locale,Android.Icu.Text.NumberingSystem)">
+  ForNumberingSystem(Locale, NumberingSystem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#forNumberingSystem(java.util.Locale,android.icu.text.NumberingSystem)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#forNumberingSystem(java.util.Locale,android.icu.text.NumberingSystem)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DecimalFormatSymbols ForNumberingSystem(Locale arg0, NumberingSystem arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Icu.Text.NumberingSystem.html">NumberingSystem</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberingSystem.html">NumberingSystem</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetAvailableLocales_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetAvailableLocales*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetAvailableLocales" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetAvailableLocales">
+  GetAvailableLocales()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getAvailableLocales()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getAvailableLocales()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Locale[] GetAvailableLocales()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Locale.html">Locale</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetAvailableULocales_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetAvailableULocales*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetAvailableULocales" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetAvailableULocales">
+  GetAvailableULocales()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getAvailableULocales()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getAvailableULocales()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ULocale[] GetAvailableULocales()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetCurrency_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetCurrency*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetCurrency" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetCurrency">
+  GetCurrency()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getCurrency()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getCurrency()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Currency GetCurrency()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Util.Currency.html">Currency</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.Currency.html">Currency</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetCurrencySymbol_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetCurrencySymbol*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetCurrencySymbol" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetCurrencySymbol">
+  GetCurrencySymbol()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getCurrencySymbol()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getCurrencySymbol()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetCurrencySymbol()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetDecimalSeparator_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetDecimalSeparator*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetDecimalSeparator" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetDecimalSeparator">
+  GetDecimalSeparator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getDecimalSeparator()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getDecimalSeparator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetDecimalSeparator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetDecimalSeparatorString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetDecimalSeparatorString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetDecimalSeparatorString" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetDecimalSeparatorString">
+  GetDecimalSeparatorString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getDecimalSeparatorString()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getDecimalSeparatorString()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetDecimalSeparatorString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetDigit_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetDigit*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetDigit" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetDigit">
+  GetDigit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getDigit()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getDigit()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetDigit()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetDigitStrings_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetDigitStrings*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetDigitStrings" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetDigitStrings">
+  GetDigitStrings()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getDigitStrings()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getDigitStrings()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String[] GetDigitStrings()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetDigits_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetDigits*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetDigits" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetDigits">
+  GetDigits()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getDigits()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getDigits()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char[] GetDigits()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetExponentMultiplicationSign_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetExponentMultiplicationSign*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetExponentMultiplicationSign" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetExponentMultiplicationSign">
+  GetExponentMultiplicationSign()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getExponentMultiplicationSign()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getExponentMultiplicationSign()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetExponentMultiplicationSign()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetExponentSeparator_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetExponentSeparator*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetExponentSeparator" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetExponentSeparator">
+  GetExponentSeparator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getExponentSeparator()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getExponentSeparator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetExponentSeparator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetGroupingSeparator_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetGroupingSeparator*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetGroupingSeparator" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetGroupingSeparator">
+  GetGroupingSeparator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getGroupingSeparator()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getGroupingSeparator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetGroupingSeparator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetGroupingSeparatorString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetGroupingSeparatorString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetGroupingSeparatorString" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetGroupingSeparatorString">
+  GetGroupingSeparatorString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getGroupingSeparatorString()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getGroupingSeparatorString()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetGroupingSeparatorString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetInfinity_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetInfinity*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetInfinity" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetInfinity">
+  GetInfinity()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getInfinity()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getInfinity()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetInfinity()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetInstance_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetInstance*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetInstance" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetInstance">
+  GetInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getInstance()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getInstance()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DecimalFormatSymbols GetInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetInstance_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetInstance*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetInstance_Android_Icu_Util_ULocale_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetInstance(Android.Icu.Util.ULocale)">
+  GetInstance(ULocale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getInstance(android.icu.util.ULocale)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getInstance(android.icu.util.ULocale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DecimalFormatSymbols GetInstance(ULocale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetInstance_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetInstance*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetInstance_Java_Util_Locale_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetInstance(Java.Util.Locale)">
+  GetInstance(Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getInstance(java.util.Locale)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getInstance(java.util.Locale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DecimalFormatSymbols GetInstance(Locale arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetInternationalCurrencySymbol_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetInternationalCurrencySymbol*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetInternationalCurrencySymbol" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetInternationalCurrencySymbol">
+  GetInternationalCurrencySymbol()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getInternationalCurrencySymbol()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getInternationalCurrencySymbol()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetInternationalCurrencySymbol()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetLocale_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetLocale*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetLocale" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetLocale">
+  GetLocale()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getLocale()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getLocale()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Locale GetLocale()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetMinusSign_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetMinusSign*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetMinusSign" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetMinusSign">
+  GetMinusSign()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getMinusSign()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getMinusSign()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetMinusSign()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetMinusSignString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetMinusSignString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetMinusSignString" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetMinusSignString">
+  GetMinusSignString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getMinusSignString()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getMinusSignString()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetMinusSignString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetMonetaryDecimalSeparator_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetMonetaryDecimalSeparator*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetMonetaryDecimalSeparator" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetMonetaryDecimalSeparator">
+  GetMonetaryDecimalSeparator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getMonetaryDecimalSeparator()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getMonetaryDecimalSeparator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetMonetaryDecimalSeparator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetMonetaryDecimalSeparatorString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetMonetaryDecimalSeparatorString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetMonetaryDecimalSeparatorString" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetMonetaryDecimalSeparatorString">
+  GetMonetaryDecimalSeparatorString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getMonetaryDecimalSeparatorString()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getMonetaryDecimalSeparatorString()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetMonetaryDecimalSeparatorString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetMonetaryGroupingSeparator_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetMonetaryGroupingSeparator*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetMonetaryGroupingSeparator" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetMonetaryGroupingSeparator">
+  GetMonetaryGroupingSeparator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getMonetaryGroupingSeparator()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getMonetaryGroupingSeparator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetMonetaryGroupingSeparator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetMonetaryGroupingSeparatorString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetMonetaryGroupingSeparatorString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetMonetaryGroupingSeparatorString" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetMonetaryGroupingSeparatorString">
+  GetMonetaryGroupingSeparatorString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getMonetaryGroupingSeparatorString()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getMonetaryGroupingSeparatorString()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetMonetaryGroupingSeparatorString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetNaN_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetNaN*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetNaN" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetNaN">
+  GetNaN()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getNaN()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getNaN()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetNaN()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetPadEscape_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPadEscape*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetPadEscape" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPadEscape">
+  GetPadEscape()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPadEscape()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPadEscape()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetPadEscape()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetPatternForCurrencySpacing_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPatternForCurrencySpacing*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetPatternForCurrencySpacing_System_Int32_System_Boolean_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPatternForCurrencySpacing(System.Int32,System.Boolean)">
+  GetPatternForCurrencySpacing(int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPatternForCurrencySpacing(int,boolean)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPatternForCurrencySpacing(int,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetPatternForCurrencySpacing(int arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetPatternSeparator_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPatternSeparator*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetPatternSeparator" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPatternSeparator">
+  GetPatternSeparator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPatternSeparator()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPatternSeparator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetPatternSeparator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetPerMill_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPerMill*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetPerMill" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPerMill">
+  GetPerMill()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPerMill()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPerMill()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetPerMill()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetPerMillString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPerMillString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetPerMillString" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPerMillString">
+  GetPerMillString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPerMillString()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPerMillString()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetPerMillString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetPercent_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPercent*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetPercent" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPercent">
+  GetPercent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPercent()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPercent()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetPercent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetPercentString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPercentString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetPercentString" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPercentString">
+  GetPercentString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPercentString()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPercentString()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetPercentString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetPlusSign_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPlusSign*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetPlusSign" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPlusSign">
+  GetPlusSign()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPlusSign()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPlusSign()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetPlusSign()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetPlusSignString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPlusSignString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetPlusSignString" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetPlusSignString">
+  GetPlusSignString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPlusSignString()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPlusSignString()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetPlusSignString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetSignificantDigit_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetSignificantDigit*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetSignificantDigit" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetSignificantDigit">
+  GetSignificantDigit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getSignificantDigit()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getSignificantDigit()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetSignificantDigit()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetULocale_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetULocale*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetULocale" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetULocale">
+  GetULocale()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getULocale()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getULocale()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ULocale GetULocale()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_GetZeroDigit_" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetZeroDigit*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_GetZeroDigit" data-uid="Android.Icu.Text.DecimalFormatSymbols.GetZeroDigit">
+  GetZeroDigit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getZeroDigit()">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getZeroDigit()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetZeroDigit()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetCurrency_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetCurrency*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetCurrency_Android_Icu_Util_Currency_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetCurrency(Android.Icu.Util.Currency)">
+  SetCurrency(Currency)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setCurrency(android.icu.util.Currency)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setCurrency(android.icu.util.Currency)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCurrency(Currency arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Util.Currency.html">Currency</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.Currency.html">Currency</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetCurrencySymbol_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetCurrencySymbol*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetCurrencySymbol_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetCurrencySymbol(Java.Lang.String)">
+  SetCurrencySymbol(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setCurrencySymbol(java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setCurrencySymbol(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCurrencySymbol(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetDecimalSeparator_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetDecimalSeparator*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetDecimalSeparator_System_Char_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetDecimalSeparator(System.Char)">
+  SetDecimalSeparator(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L438"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setDecimalSeparator(char)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setDecimalSeparator(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDecimalSeparator(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetDecimalSeparatorString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetDecimalSeparatorString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetDecimalSeparatorString_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetDecimalSeparatorString(Java.Lang.String)">
+  SetDecimalSeparatorString(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setDecimalSeparatorString(java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setDecimalSeparatorString(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDecimalSeparatorString(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetDigit_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetDigit*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetDigit_System_Char_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetDigit(System.Char)">
+  SetDigit(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L454"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setDigit(char)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setDigit(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDigit(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetDigitStrings_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetDigitStrings*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetDigitStrings_Java_Lang_String___" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetDigitStrings(Java.Lang.String[])">
+  SetDigitStrings(String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setDigitStrings(java.lang.String[])">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setDigitStrings(java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDigitStrings(String[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetExponentMultiplicationSign_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetExponentMultiplicationSign*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetExponentMultiplicationSign_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetExponentMultiplicationSign(Java.Lang.String)">
+  SetExponentMultiplicationSign(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setExponentMultiplicationSign(java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setExponentMultiplicationSign(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetExponentMultiplicationSign(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetExponentSeparator_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetExponentSeparator*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetExponentSeparator_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetExponentSeparator(Java.Lang.String)">
+  SetExponentSeparator(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L478"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setExponentSeparator(java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setExponentSeparator(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetExponentSeparator(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetGroupingSeparator_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetGroupingSeparator*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetGroupingSeparator_System_Char_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetGroupingSeparator(System.Char)">
+  SetGroupingSeparator(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setGroupingSeparator(char)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setGroupingSeparator(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGroupingSeparator(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetGroupingSeparatorString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetGroupingSeparatorString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetGroupingSeparatorString_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetGroupingSeparatorString(Java.Lang.String)">
+  SetGroupingSeparatorString(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setGroupingSeparatorString(java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setGroupingSeparatorString(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGroupingSeparatorString(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetInfinity_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetInfinity*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetInfinity_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetInfinity(Java.Lang.String)">
+  SetInfinity(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setInfinity(java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setInfinity(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInfinity(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetInternationalCurrencySymbol_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetInternationalCurrencySymbol*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetInternationalCurrencySymbol_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetInternationalCurrencySymbol(Java.Lang.String)">
+  SetInternationalCurrencySymbol(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setInternationalCurrencySymbol(java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setInternationalCurrencySymbol(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInternationalCurrencySymbol(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetMinusSign_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetMinusSign*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetMinusSign_System_Char_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetMinusSign(System.Char)">
+  SetMinusSign(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setMinusSign(char)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setMinusSign(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMinusSign(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetMinusSignString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetMinusSignString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetMinusSignString_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetMinusSignString(Java.Lang.String)">
+  SetMinusSignString(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setMinusSignString(java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setMinusSignString(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMinusSignString(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetMonetaryDecimalSeparator_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetMonetaryDecimalSeparator*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetMonetaryDecimalSeparator_System_Char_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetMonetaryDecimalSeparator(System.Char)">
+  SetMonetaryDecimalSeparator(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L534"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setMonetaryDecimalSeparator(char)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setMonetaryDecimalSeparator(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMonetaryDecimalSeparator(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetMonetaryDecimalSeparatorString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetMonetaryDecimalSeparatorString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetMonetaryDecimalSeparatorString_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetMonetaryDecimalSeparatorString(Java.Lang.String)">
+  SetMonetaryDecimalSeparatorString(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L542"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setMonetaryDecimalSeparatorString(java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setMonetaryDecimalSeparatorString(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMonetaryDecimalSeparatorString(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetMonetaryGroupingSeparator_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetMonetaryGroupingSeparator*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetMonetaryGroupingSeparator_System_Char_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetMonetaryGroupingSeparator(System.Char)">
+  SetMonetaryGroupingSeparator(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L550"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setMonetaryGroupingSeparator(char)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setMonetaryGroupingSeparator(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMonetaryGroupingSeparator(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetMonetaryGroupingSeparatorString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetMonetaryGroupingSeparatorString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetMonetaryGroupingSeparatorString_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetMonetaryGroupingSeparatorString(Java.Lang.String)">
+  SetMonetaryGroupingSeparatorString(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L558"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setMonetaryGroupingSeparatorString(java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setMonetaryGroupingSeparatorString(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMonetaryGroupingSeparatorString(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetNaN_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetNaN*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetNaN_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetNaN(Java.Lang.String)">
+  SetNaN(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L566"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setNaN(java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setNaN(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNaN(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetPadEscape_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPadEscape*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetPadEscape_System_Char_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPadEscape(System.Char)">
+  SetPadEscape(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L574"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPadEscape(char)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPadEscape(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPadEscape(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetPatternForCurrencySpacing_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPatternForCurrencySpacing*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetPatternForCurrencySpacing_System_Int32_System_Boolean_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPatternForCurrencySpacing(System.Int32,System.Boolean,Java.Lang.String)">
+  SetPatternForCurrencySpacing(int, bool, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPatternForCurrencySpacing(int,boolean,java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPatternForCurrencySpacing(int,boolean,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPatternForCurrencySpacing(int arg0, bool arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetPatternSeparator_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPatternSeparator*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetPatternSeparator_System_Char_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPatternSeparator(System.Char)">
+  SetPatternSeparator(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPatternSeparator(char)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPatternSeparator(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPatternSeparator(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetPerMill_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPerMill*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetPerMill_System_Char_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPerMill(System.Char)">
+  SetPerMill(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L616"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPerMill(char)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPerMill(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPerMill(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetPerMillString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPerMillString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetPerMillString_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPerMillString(Java.Lang.String)">
+  SetPerMillString(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L624"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPerMillString(java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPerMillString(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPerMillString(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetPercent_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPercent*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetPercent_System_Char_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPercent(System.Char)">
+  SetPercent(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L600"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPercent(char)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPercent(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPercent(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetPercentString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPercentString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetPercentString_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPercentString(Java.Lang.String)">
+  SetPercentString(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L608"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPercentString(java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPercentString(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPercentString(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetPlusSign_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPlusSign*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetPlusSign_System_Char_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPlusSign(System.Char)">
+  SetPlusSign(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L632"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPlusSign(char)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPlusSign(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlusSign(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetPlusSignString_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPlusSignString*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetPlusSignString_Java_Lang_String_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetPlusSignString(Java.Lang.String)">
+  SetPlusSignString(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L640"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPlusSignString(java.lang.String)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPlusSignString(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlusSignString(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetSignificantDigit_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetSignificantDigit*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetSignificantDigit_System_Char_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetSignificantDigit(System.Char)">
+  SetSignificantDigit(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L648"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setSignificantDigit(char)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setSignificantDigit(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSignificantDigit(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_SetZeroDigit_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetZeroDigit*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_SetZeroDigit_System_Char_" data-uid="Android.Icu.Text.DecimalFormatSymbols.SetZeroDigit(System.Char)">
+  SetZeroDigit(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L656"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setZeroDigit(char)">https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setZeroDigit(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetZeroDigit(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_op_Implicit_" data-uid="Android.Icu.Text.DecimalFormatSymbols.op_Implicit*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_op_Implicit_Android_Icu_Text_DecimalFormatSymbols__Java_Io_Serializable" data-uid="Android.Icu.Text.DecimalFormatSymbols.op_Implicit(Android.Icu.Text.DecimalFormatSymbols)~Java.Io.Serializable">
+  implicit operator Serializable(DecimalFormatSymbols)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a> to <a class="xref" href="Java.Io.Serializable.html">Serializable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Serializable(DecimalFormatSymbols t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.Serializable.html">Serializable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_DecimalFormatSymbols_op_Implicit_" data-uid="Android.Icu.Text.DecimalFormatSymbols.op_Implicit*"></a>
+
+  <h3 id="Android_Icu_Text_DecimalFormatSymbols_op_Implicit_Android_Icu_Text_DecimalFormatSymbols__Java_Lang_Cloneable" data-uid="Android.Icu.Text.DecimalFormatSymbols.op_Implicit(Android.Icu.Text.DecimalFormatSymbols)~Java.Lang.Cloneable">
+  implicit operator Cloneable(DecimalFormatSymbols)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a> to <a class="xref" href="Java.Lang.Cloneable.html">Cloneable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Cloneable(DecimalFormatSymbols t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Icu.Text.DecimalFormatSymbols.html">DecimalFormatSymbols</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Cloneable.html">Cloneable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/DecimalFormatSymbols.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,4178 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class ToneGenerator | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ToneGenerator | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/media/ToneGenerator.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_ToneGenerator.md&amp;value=---%0Auid%3A%20Android.Media.ToneGenerator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.ToneGenerator">
+
+
+
+  <h1 id="Android_Media_ToneGenerator" data-uid="Android.Media.ToneGenerator" class="text-break">
+Class ToneGenerator  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html">https://developer.android.com/reference/android/media/ToneGenerator.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ToneGenerator : JVMBridgeBase&lt;ToneGenerator&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Media.ToneGenerator.html">ToneGenerator</a>&gt;</div>
+      <div><span class="xref">ToneGenerator</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ToneGenerator&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ToneGenerator&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ToneGenerator&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ToneGenerator&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ToneGenerator&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ToneGenerator&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ToneGenerator&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ToneGenerator&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;ToneGenerator&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ToneGenerator&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ToneGenerator&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ToneGenerator&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ToneGenerator&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_ToneGenerator__ctor_" data-uid="Android.Media.ToneGenerator.#ctor*"></a>
+
+  <h3 id="Android_Media_ToneGenerator__ctor" data-uid="Android.Media.ToneGenerator.#ctor">
+  ToneGenerator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L11923"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToneGenerator()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator__ctor_" data-uid="Android.Media.ToneGenerator.#ctor*"></a>
+
+  <h3 id="Android_Media_ToneGenerator__ctor_System_Int32_System_Int32_" data-uid="Android.Media.ToneGenerator.#ctor(System.Int32,System.Int32)">
+  ToneGenerator(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#%3Cinit%3E(int,int)">https://developer.android.com/reference/android/media/ToneGenerator.html#%3Cinit%3E(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToneGenerator(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator__ctor_" data-uid="Android.Media.ToneGenerator.#ctor*"></a>
+
+  <h3 id="Android_Media_ToneGenerator__ctor_System_Object___" data-uid="Android.Media.ToneGenerator.#ctor(System.Object[])">
+  ToneGenerator(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L11927"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToneGenerator(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_ToneGenerator_BridgeClassName_" data-uid="Android.Media.ToneGenerator.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_BridgeClassName" data-uid="Android.Media.ToneGenerator.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L11934"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_IsBridgeAbstract_" data-uid="Android.Media.ToneGenerator.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_IsBridgeAbstract" data-uid="Android.Media.ToneGenerator.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L11938"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_IsBridgeCloseable_" data-uid="Android.Media.ToneGenerator.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_IsBridgeCloseable" data-uid="Android.Media.ToneGenerator.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L11942"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_IsBridgeInterface_" data-uid="Android.Media.ToneGenerator.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_IsBridgeInterface" data-uid="Android.Media.ToneGenerator.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L11946"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_IsBridgeStatic_" data-uid="Android.Media.ToneGenerator.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_IsBridgeStatic" data-uid="Android.Media.ToneGenerator.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L11950"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_MAX_VOLUME_" data-uid="Android.Media.ToneGenerator.MAX_VOLUME*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_MAX_VOLUME" data-uid="Android.Media.ToneGenerator.MAX_VOLUME">
+  MAX_VOLUME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#MAX_VOLUME">https://developer.android.com/reference/android/media/ToneGenerator.html#MAX_VOLUME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MAX_VOLUME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_MIN_VOLUME_" data-uid="Android.Media.ToneGenerator.MIN_VOLUME*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_MIN_VOLUME" data-uid="Android.Media.ToneGenerator.MIN_VOLUME">
+  MIN_VOLUME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#MIN_VOLUME">https://developer.android.com/reference/android/media/ToneGenerator.html#MIN_VOLUME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MIN_VOLUME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_ABBR_ALERT_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ABBR_ALERT*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_ABBR_ALERT" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ABBR_ALERT">
+  TONE_CDMA_ABBR_ALERT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ABBR_ALERT">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ABBR_ALERT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_ABBR_ALERT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_ABBR_INTERCEPT_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ABBR_INTERCEPT*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_ABBR_INTERCEPT" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ABBR_INTERCEPT">
+  TONE_CDMA_ABBR_INTERCEPT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ABBR_INTERCEPT">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ABBR_INTERCEPT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_ABBR_INTERCEPT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_ABBR_REORDER_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ABBR_REORDER*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_ABBR_REORDER" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ABBR_REORDER">
+  TONE_CDMA_ABBR_REORDER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ABBR_REORDER">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ABBR_REORDER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_ABBR_REORDER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_ALERT_AUTOREDIAL_LITE_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ALERT_AUTOREDIAL_LITE*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_ALERT_AUTOREDIAL_LITE" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ALERT_AUTOREDIAL_LITE">
+  TONE_CDMA_ALERT_AUTOREDIAL_LITE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ALERT_AUTOREDIAL_LITE">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ALERT_AUTOREDIAL_LITE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_ALERT_AUTOREDIAL_LITE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_ALERT_CALL_GUARD_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ALERT_CALL_GUARD*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_ALERT_CALL_GUARD" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ALERT_CALL_GUARD">
+  TONE_CDMA_ALERT_CALL_GUARD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ALERT_CALL_GUARD">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ALERT_CALL_GUARD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_ALERT_CALL_GUARD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_ALERT_INCALL_LITE_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ALERT_INCALL_LITE*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_ALERT_INCALL_LITE" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ALERT_INCALL_LITE">
+  TONE_CDMA_ALERT_INCALL_LITE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ALERT_INCALL_LITE">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ALERT_INCALL_LITE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_ALERT_INCALL_LITE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_ALERT_NETWORK_LITE_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ALERT_NETWORK_LITE*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_ALERT_NETWORK_LITE" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ALERT_NETWORK_LITE">
+  TONE_CDMA_ALERT_NETWORK_LITE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ALERT_NETWORK_LITE">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ALERT_NETWORK_LITE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_ALERT_NETWORK_LITE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_ANSWER_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ANSWER*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_ANSWER" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ANSWER">
+  TONE_CDMA_ANSWER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ANSWER">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ANSWER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_ANSWER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_CALLDROP_LITE_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALLDROP_LITE*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_CALLDROP_LITE" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALLDROP_LITE">
+  TONE_CDMA_CALLDROP_LITE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALLDROP_LITE">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALLDROP_LITE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_CALLDROP_LITE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP">
+  TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL">
+  TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_PAT3_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_PAT3*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_PAT3" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_PAT3">
+  TONE_CDMA_CALL_SIGNAL_ISDN_PAT3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_PAT3">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_PAT3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_CALL_SIGNAL_ISDN_PAT3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_PAT5_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_PAT5*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_PAT5" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_PAT5">
+  TONE_CDMA_CALL_SIGNAL_ISDN_PAT5
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_PAT5">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_PAT5</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_CALL_SIGNAL_ISDN_PAT5 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_PAT6_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_PAT6*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_PAT6" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_PAT6">
+  TONE_CDMA_CALL_SIGNAL_ISDN_PAT6
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_PAT6">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_PAT6</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_CALL_SIGNAL_ISDN_PAT6 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_PAT7_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_PAT7*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_PAT7" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_PAT7">
+  TONE_CDMA_CALL_SIGNAL_ISDN_PAT7
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_PAT7">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_PAT7</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_CALL_SIGNAL_ISDN_PAT7 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING">
+  TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI">
+  TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_CONFIRM_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CONFIRM*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_CONFIRM" data-uid="Android.Media.ToneGenerator.TONE_CDMA_CONFIRM">
+  TONE_CDMA_CONFIRM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CONFIRM">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_CONFIRM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_CONFIRM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_DIAL_TONE_LITE_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_DIAL_TONE_LITE*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_DIAL_TONE_LITE" data-uid="Android.Media.ToneGenerator.TONE_CDMA_DIAL_TONE_LITE">
+  TONE_CDMA_DIAL_TONE_LITE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_DIAL_TONE_LITE">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_DIAL_TONE_LITE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_DIAL_TONE_LITE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_EMERGENCY_RINGBACK_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_EMERGENCY_RINGBACK*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_EMERGENCY_RINGBACK" data-uid="Android.Media.ToneGenerator.TONE_CDMA_EMERGENCY_RINGBACK">
+  TONE_CDMA_EMERGENCY_RINGBACK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_EMERGENCY_RINGBACK">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_EMERGENCY_RINGBACK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_EMERGENCY_RINGBACK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_L_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_L*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_L" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_L">
+  TONE_CDMA_HIGH_L
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_L">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_L</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_HIGH_L { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_PBX_L_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_PBX_L*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_PBX_L" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_PBX_L">
+  TONE_CDMA_HIGH_PBX_L
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_PBX_L">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_PBX_L</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_HIGH_PBX_L { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_PBX_SLS_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_PBX_SLS*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_PBX_SLS" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_PBX_SLS">
+  TONE_CDMA_HIGH_PBX_SLS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_PBX_SLS">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_PBX_SLS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_HIGH_PBX_SLS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_PBX_SS_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_PBX_SS*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_PBX_SS" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_PBX_SS">
+  TONE_CDMA_HIGH_PBX_SS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_PBX_SS">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_PBX_SS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_HIGH_PBX_SS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_PBX_SSL_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_PBX_SSL*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_PBX_SSL" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_PBX_SSL">
+  TONE_CDMA_HIGH_PBX_SSL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_PBX_SSL">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_PBX_SSL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_HIGH_PBX_SSL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_PBX_S_X4_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_PBX_S_X4*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_PBX_S_X4" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_PBX_S_X4">
+  TONE_CDMA_HIGH_PBX_S_X4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_PBX_S_X4">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_PBX_S_X4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_HIGH_PBX_S_X4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_SLS_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_SLS*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_SLS" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_SLS">
+  TONE_CDMA_HIGH_SLS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_SLS">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_SLS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_HIGH_SLS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_SS_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_SS*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_SS" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_SS">
+  TONE_CDMA_HIGH_SS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_SS">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_SS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_HIGH_SS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_SSL_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_SSL*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_SSL" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_SSL">
+  TONE_CDMA_HIGH_SSL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_SSL">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_SSL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_HIGH_SSL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_SS_2_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_SS_2*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_SS_2" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_SS_2">
+  TONE_CDMA_HIGH_SS_2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_SS_2">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_SS_2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_HIGH_SS_2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_S_X4_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_S_X4*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_HIGH_S_X4" data-uid="Android.Media.ToneGenerator.TONE_CDMA_HIGH_S_X4">
+  TONE_CDMA_HIGH_S_X4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_S_X4">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_HIGH_S_X4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_HIGH_S_X4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_INTERCEPT_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_INTERCEPT*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_INTERCEPT" data-uid="Android.Media.ToneGenerator.TONE_CDMA_INTERCEPT">
+  TONE_CDMA_INTERCEPT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_INTERCEPT">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_INTERCEPT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_INTERCEPT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_KEYPAD_VOLUME_KEY_LITE_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_KEYPAD_VOLUME_KEY_LITE*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_KEYPAD_VOLUME_KEY_LITE" data-uid="Android.Media.ToneGenerator.TONE_CDMA_KEYPAD_VOLUME_KEY_LITE">
+  TONE_CDMA_KEYPAD_VOLUME_KEY_LITE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_KEYPAD_VOLUME_KEY_LITE">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_KEYPAD_VOLUME_KEY_LITE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_KEYPAD_VOLUME_KEY_LITE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_LOW_L_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_L*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_LOW_L" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_L">
+  TONE_CDMA_LOW_L
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_L">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_L</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_LOW_L { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_LOW_PBX_L_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_PBX_L*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_LOW_PBX_L" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_PBX_L">
+  TONE_CDMA_LOW_PBX_L
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_PBX_L">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_PBX_L</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_LOW_PBX_L { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_LOW_PBX_SLS_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_PBX_SLS*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_LOW_PBX_SLS" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_PBX_SLS">
+  TONE_CDMA_LOW_PBX_SLS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_PBX_SLS">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_PBX_SLS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_LOW_PBX_SLS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_LOW_PBX_SS_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_PBX_SS*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_LOW_PBX_SS" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_PBX_SS">
+  TONE_CDMA_LOW_PBX_SS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_PBX_SS">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_PBX_SS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_LOW_PBX_SS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_LOW_PBX_SSL_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_PBX_SSL*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_LOW_PBX_SSL" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_PBX_SSL">
+  TONE_CDMA_LOW_PBX_SSL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_PBX_SSL">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_PBX_SSL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_LOW_PBX_SSL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_LOW_PBX_S_X4_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_PBX_S_X4*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_LOW_PBX_S_X4" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_PBX_S_X4">
+  TONE_CDMA_LOW_PBX_S_X4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_PBX_S_X4">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_PBX_S_X4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_LOW_PBX_S_X4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_LOW_SLS_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_SLS*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_LOW_SLS" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_SLS">
+  TONE_CDMA_LOW_SLS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_SLS">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_SLS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_LOW_SLS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_LOW_SS_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_SS*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_LOW_SS" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_SS">
+  TONE_CDMA_LOW_SS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_SS">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_SS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_LOW_SS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_LOW_SSL_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_SSL*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_LOW_SSL" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_SSL">
+  TONE_CDMA_LOW_SSL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_SSL">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_SSL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_LOW_SSL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_LOW_SS_2_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_SS_2*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_LOW_SS_2" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_SS_2">
+  TONE_CDMA_LOW_SS_2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_SS_2">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_SS_2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_LOW_SS_2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_LOW_S_X4_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_S_X4*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_LOW_S_X4" data-uid="Android.Media.ToneGenerator.TONE_CDMA_LOW_S_X4">
+  TONE_CDMA_LOW_S_X4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_S_X4">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_LOW_S_X4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_LOW_S_X4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_MED_L_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_L*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_MED_L" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_L">
+  TONE_CDMA_MED_L
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_L">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_L</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_MED_L { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_MED_PBX_L_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_PBX_L*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_MED_PBX_L" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_PBX_L">
+  TONE_CDMA_MED_PBX_L
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_PBX_L">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_PBX_L</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_MED_PBX_L { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_MED_PBX_SLS_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_PBX_SLS*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_MED_PBX_SLS" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_PBX_SLS">
+  TONE_CDMA_MED_PBX_SLS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_PBX_SLS">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_PBX_SLS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_MED_PBX_SLS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_MED_PBX_SS_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_PBX_SS*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_MED_PBX_SS" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_PBX_SS">
+  TONE_CDMA_MED_PBX_SS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_PBX_SS">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_PBX_SS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_MED_PBX_SS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_MED_PBX_SSL_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_PBX_SSL*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_MED_PBX_SSL" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_PBX_SSL">
+  TONE_CDMA_MED_PBX_SSL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_PBX_SSL">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_PBX_SSL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_MED_PBX_SSL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_MED_PBX_S_X4_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_PBX_S_X4*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_MED_PBX_S_X4" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_PBX_S_X4">
+  TONE_CDMA_MED_PBX_S_X4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_PBX_S_X4">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_PBX_S_X4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_MED_PBX_S_X4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_MED_SLS_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_SLS*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_MED_SLS" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_SLS">
+  TONE_CDMA_MED_SLS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_SLS">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_SLS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_MED_SLS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_MED_SS_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_SS*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_MED_SS" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_SS">
+  TONE_CDMA_MED_SS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_SS">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_SS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_MED_SS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_MED_SSL_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_SSL*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_MED_SSL" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_SSL">
+  TONE_CDMA_MED_SSL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_SSL">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_SSL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_MED_SSL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_MED_SS_2_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_SS_2*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_MED_SS_2" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_SS_2">
+  TONE_CDMA_MED_SS_2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_SS_2">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_SS_2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_MED_SS_2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_MED_S_X4_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_S_X4*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_MED_S_X4" data-uid="Android.Media.ToneGenerator.TONE_CDMA_MED_S_X4">
+  TONE_CDMA_MED_S_X4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_S_X4">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_MED_S_X4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_MED_S_X4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_NETWORK_BUSY_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_NETWORK_BUSY*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_NETWORK_BUSY" data-uid="Android.Media.ToneGenerator.TONE_CDMA_NETWORK_BUSY">
+  TONE_CDMA_NETWORK_BUSY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_NETWORK_BUSY">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_NETWORK_BUSY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_NETWORK_BUSY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_NETWORK_BUSY_ONE_SHOT_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_NETWORK_BUSY_ONE_SHOT*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_NETWORK_BUSY_ONE_SHOT" data-uid="Android.Media.ToneGenerator.TONE_CDMA_NETWORK_BUSY_ONE_SHOT">
+  TONE_CDMA_NETWORK_BUSY_ONE_SHOT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_NETWORK_BUSY_ONE_SHOT">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_NETWORK_BUSY_ONE_SHOT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_NETWORK_BUSY_ONE_SHOT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_NETWORK_CALLWAITING_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_NETWORK_CALLWAITING*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_NETWORK_CALLWAITING" data-uid="Android.Media.ToneGenerator.TONE_CDMA_NETWORK_CALLWAITING">
+  TONE_CDMA_NETWORK_CALLWAITING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_NETWORK_CALLWAITING">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_NETWORK_CALLWAITING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_NETWORK_CALLWAITING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_NETWORK_USA_RINGBACK_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_NETWORK_USA_RINGBACK*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_NETWORK_USA_RINGBACK" data-uid="Android.Media.ToneGenerator.TONE_CDMA_NETWORK_USA_RINGBACK">
+  TONE_CDMA_NETWORK_USA_RINGBACK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_NETWORK_USA_RINGBACK">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_NETWORK_USA_RINGBACK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_NETWORK_USA_RINGBACK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_ONE_MIN_BEEP_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ONE_MIN_BEEP*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_ONE_MIN_BEEP" data-uid="Android.Media.ToneGenerator.TONE_CDMA_ONE_MIN_BEEP">
+  TONE_CDMA_ONE_MIN_BEEP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ONE_MIN_BEEP">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_ONE_MIN_BEEP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_ONE_MIN_BEEP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_PIP_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_PIP*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_PIP" data-uid="Android.Media.ToneGenerator.TONE_CDMA_PIP">
+  TONE_CDMA_PIP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L424"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_PIP">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_PIP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_PIP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_PRESSHOLDKEY_LITE_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_PRESSHOLDKEY_LITE*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_PRESSHOLDKEY_LITE" data-uid="Android.Media.ToneGenerator.TONE_CDMA_PRESSHOLDKEY_LITE">
+  TONE_CDMA_PRESSHOLDKEY_LITE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_PRESSHOLDKEY_LITE">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_PRESSHOLDKEY_LITE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_PRESSHOLDKEY_LITE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_REORDER_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_REORDER*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_REORDER" data-uid="Android.Media.ToneGenerator.TONE_CDMA_REORDER">
+  TONE_CDMA_REORDER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L436"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_REORDER">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_REORDER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_REORDER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_SIGNAL_OFF_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_SIGNAL_OFF*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_SIGNAL_OFF" data-uid="Android.Media.ToneGenerator.TONE_CDMA_SIGNAL_OFF">
+  TONE_CDMA_SIGNAL_OFF
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_SIGNAL_OFF">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_SIGNAL_OFF</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_SIGNAL_OFF { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_CDMA_SOFT_ERROR_LITE_" data-uid="Android.Media.ToneGenerator.TONE_CDMA_SOFT_ERROR_LITE*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_CDMA_SOFT_ERROR_LITE" data-uid="Android.Media.ToneGenerator.TONE_CDMA_SOFT_ERROR_LITE">
+  TONE_CDMA_SOFT_ERROR_LITE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_SOFT_ERROR_LITE">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_CDMA_SOFT_ERROR_LITE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_CDMA_SOFT_ERROR_LITE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_0_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_0*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_0" data-uid="Android.Media.ToneGenerator.TONE_DTMF_0">
+  TONE_DTMF_0
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L454"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_0">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_0</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_0 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_1_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_1*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_1" data-uid="Android.Media.ToneGenerator.TONE_DTMF_1">
+  TONE_DTMF_1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L460"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_1">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_2_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_2*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_2" data-uid="Android.Media.ToneGenerator.TONE_DTMF_2">
+  TONE_DTMF_2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_2">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_3_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_3*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_3" data-uid="Android.Media.ToneGenerator.TONE_DTMF_3">
+  TONE_DTMF_3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L472"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_3">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_4_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_4*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_4" data-uid="Android.Media.ToneGenerator.TONE_DTMF_4">
+  TONE_DTMF_4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L478"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_4">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_5_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_5*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_5" data-uid="Android.Media.ToneGenerator.TONE_DTMF_5">
+  TONE_DTMF_5
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L484"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_5">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_5</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_5 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_6_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_6*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_6" data-uid="Android.Media.ToneGenerator.TONE_DTMF_6">
+  TONE_DTMF_6
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_6">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_6</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_6 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_7_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_7*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_7" data-uid="Android.Media.ToneGenerator.TONE_DTMF_7">
+  TONE_DTMF_7
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L496"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_7">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_7</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_7 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_8_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_8*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_8" data-uid="Android.Media.ToneGenerator.TONE_DTMF_8">
+  TONE_DTMF_8
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_8">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_8</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_8 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_9_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_9*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_9" data-uid="Android.Media.ToneGenerator.TONE_DTMF_9">
+  TONE_DTMF_9
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_9">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_9</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_9 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_A_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_A*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_A" data-uid="Android.Media.ToneGenerator.TONE_DTMF_A">
+  TONE_DTMF_A
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L514"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_A">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_A</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_A { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_B_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_B*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_B" data-uid="Android.Media.ToneGenerator.TONE_DTMF_B">
+  TONE_DTMF_B
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_B">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_B</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_B { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_C_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_C*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_C" data-uid="Android.Media.ToneGenerator.TONE_DTMF_C">
+  TONE_DTMF_C
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_C">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_C</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_C { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_D_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_D*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_D" data-uid="Android.Media.ToneGenerator.TONE_DTMF_D">
+  TONE_DTMF_D
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_D">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_D</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_D { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_P_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_P*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_P" data-uid="Android.Media.ToneGenerator.TONE_DTMF_P">
+  TONE_DTMF_P
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_P">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_P</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_P { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_DTMF_S_" data-uid="Android.Media.ToneGenerator.TONE_DTMF_S*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_DTMF_S" data-uid="Android.Media.ToneGenerator.TONE_DTMF_S">
+  TONE_DTMF_S
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L544"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_S">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_DTMF_S</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_DTMF_S { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_PROP_ACK_" data-uid="Android.Media.ToneGenerator.TONE_PROP_ACK*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_PROP_ACK" data-uid="Android.Media.ToneGenerator.TONE_PROP_ACK">
+  TONE_PROP_ACK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L550"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_PROP_ACK">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_PROP_ACK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_PROP_ACK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_PROP_BEEP_" data-uid="Android.Media.ToneGenerator.TONE_PROP_BEEP*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_PROP_BEEP" data-uid="Android.Media.ToneGenerator.TONE_PROP_BEEP">
+  TONE_PROP_BEEP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_PROP_BEEP">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_PROP_BEEP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_PROP_BEEP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_PROP_BEEP2_" data-uid="Android.Media.ToneGenerator.TONE_PROP_BEEP2*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_PROP_BEEP2" data-uid="Android.Media.ToneGenerator.TONE_PROP_BEEP2">
+  TONE_PROP_BEEP2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L562"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_PROP_BEEP2">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_PROP_BEEP2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_PROP_BEEP2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_PROP_NACK_" data-uid="Android.Media.ToneGenerator.TONE_PROP_NACK*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_PROP_NACK" data-uid="Android.Media.ToneGenerator.TONE_PROP_NACK">
+  TONE_PROP_NACK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L568"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_PROP_NACK">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_PROP_NACK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_PROP_NACK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_PROP_PROMPT_" data-uid="Android.Media.ToneGenerator.TONE_PROP_PROMPT*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_PROP_PROMPT" data-uid="Android.Media.ToneGenerator.TONE_PROP_PROMPT">
+  TONE_PROP_PROMPT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L574"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_PROP_PROMPT">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_PROP_PROMPT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_PROP_PROMPT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_SUP_BUSY_" data-uid="Android.Media.ToneGenerator.TONE_SUP_BUSY*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_SUP_BUSY" data-uid="Android.Media.ToneGenerator.TONE_SUP_BUSY">
+  TONE_SUP_BUSY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_BUSY">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_BUSY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_SUP_BUSY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_SUP_CALL_WAITING_" data-uid="Android.Media.ToneGenerator.TONE_SUP_CALL_WAITING*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_SUP_CALL_WAITING" data-uid="Android.Media.ToneGenerator.TONE_SUP_CALL_WAITING">
+  TONE_SUP_CALL_WAITING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L586"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_CALL_WAITING">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_CALL_WAITING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_SUP_CALL_WAITING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_SUP_CONFIRM_" data-uid="Android.Media.ToneGenerator.TONE_SUP_CONFIRM*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_SUP_CONFIRM" data-uid="Android.Media.ToneGenerator.TONE_SUP_CONFIRM">
+  TONE_SUP_CONFIRM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_CONFIRM">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_CONFIRM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_SUP_CONFIRM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_SUP_CONGESTION_" data-uid="Android.Media.ToneGenerator.TONE_SUP_CONGESTION*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_SUP_CONGESTION" data-uid="Android.Media.ToneGenerator.TONE_SUP_CONGESTION">
+  TONE_SUP_CONGESTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L598"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_CONGESTION">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_CONGESTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_SUP_CONGESTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_SUP_CONGESTION_ABBREV_" data-uid="Android.Media.ToneGenerator.TONE_SUP_CONGESTION_ABBREV*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_SUP_CONGESTION_ABBREV" data-uid="Android.Media.ToneGenerator.TONE_SUP_CONGESTION_ABBREV">
+  TONE_SUP_CONGESTION_ABBREV
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L604"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_CONGESTION_ABBREV">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_CONGESTION_ABBREV</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_SUP_CONGESTION_ABBREV { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_SUP_DIAL_" data-uid="Android.Media.ToneGenerator.TONE_SUP_DIAL*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_SUP_DIAL" data-uid="Android.Media.ToneGenerator.TONE_SUP_DIAL">
+  TONE_SUP_DIAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_DIAL">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_DIAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_SUP_DIAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_SUP_ERROR_" data-uid="Android.Media.ToneGenerator.TONE_SUP_ERROR*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_SUP_ERROR" data-uid="Android.Media.ToneGenerator.TONE_SUP_ERROR">
+  TONE_SUP_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L616"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_ERROR">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_SUP_ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_SUP_INTERCEPT_" data-uid="Android.Media.ToneGenerator.TONE_SUP_INTERCEPT*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_SUP_INTERCEPT" data-uid="Android.Media.ToneGenerator.TONE_SUP_INTERCEPT">
+  TONE_SUP_INTERCEPT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L622"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_INTERCEPT">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_INTERCEPT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_SUP_INTERCEPT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_SUP_INTERCEPT_ABBREV_" data-uid="Android.Media.ToneGenerator.TONE_SUP_INTERCEPT_ABBREV*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_SUP_INTERCEPT_ABBREV" data-uid="Android.Media.ToneGenerator.TONE_SUP_INTERCEPT_ABBREV">
+  TONE_SUP_INTERCEPT_ABBREV
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_INTERCEPT_ABBREV">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_INTERCEPT_ABBREV</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_SUP_INTERCEPT_ABBREV { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_SUP_PIP_" data-uid="Android.Media.ToneGenerator.TONE_SUP_PIP*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_SUP_PIP" data-uid="Android.Media.ToneGenerator.TONE_SUP_PIP">
+  TONE_SUP_PIP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L634"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_PIP">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_PIP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_SUP_PIP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_SUP_RADIO_ACK_" data-uid="Android.Media.ToneGenerator.TONE_SUP_RADIO_ACK*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_SUP_RADIO_ACK" data-uid="Android.Media.ToneGenerator.TONE_SUP_RADIO_ACK">
+  TONE_SUP_RADIO_ACK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L640"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_RADIO_ACK">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_RADIO_ACK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_SUP_RADIO_ACK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_SUP_RADIO_NOTAVAIL_" data-uid="Android.Media.ToneGenerator.TONE_SUP_RADIO_NOTAVAIL*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_SUP_RADIO_NOTAVAIL" data-uid="Android.Media.ToneGenerator.TONE_SUP_RADIO_NOTAVAIL">
+  TONE_SUP_RADIO_NOTAVAIL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L646"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_RADIO_NOTAVAIL">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_RADIO_NOTAVAIL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_SUP_RADIO_NOTAVAIL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_TONE_SUP_RINGTONE_" data-uid="Android.Media.ToneGenerator.TONE_SUP_RINGTONE*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_TONE_SUP_RINGTONE" data-uid="Android.Media.ToneGenerator.TONE_SUP_RINGTONE">
+  TONE_SUP_RINGTONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L652"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_RINGTONE">https://developer.android.com/reference/android/media/ToneGenerator.html#TONE_SUP_RINGTONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TONE_SUP_RINGTONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Media_ToneGenerator_GetAudioSessionId_" data-uid="Android.Media.ToneGenerator.GetAudioSessionId*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_GetAudioSessionId" data-uid="Android.Media.ToneGenerator.GetAudioSessionId">
+  GetAudioSessionId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L676"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#getAudioSessionId()">https://developer.android.com/reference/android/media/ToneGenerator.html#getAudioSessionId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAudioSessionId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_Release_" data-uid="Android.Media.ToneGenerator.Release*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_Release" data-uid="Android.Media.ToneGenerator.Release">
+  Release()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L693"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#release()">https://developer.android.com/reference/android/media/ToneGenerator.html#release()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Release()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_StartTone_" data-uid="Android.Media.ToneGenerator.StartTone*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_StartTone_System_Int32_" data-uid="Android.Media.ToneGenerator.StartTone(System.Int32)">
+  StartTone(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L668"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#startTone(int)">https://developer.android.com/reference/android/media/ToneGenerator.html#startTone(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartTone(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_StartTone_" data-uid="Android.Media.ToneGenerator.StartTone*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_StartTone_System_Int32_System_Int32_" data-uid="Android.Media.ToneGenerator.StartTone(System.Int32,System.Int32)">
+  StartTone(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#startTone(int,int)">https://developer.android.com/reference/android/media/ToneGenerator.html#startTone(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartTone(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_ToneGenerator_StopTone_" data-uid="Android.Media.ToneGenerator.StopTone*"></a>
+
+  <h3 id="Android_Media_ToneGenerator_StopTone" data-uid="Android.Media.ToneGenerator.StopTone">
+  StopTone()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L700"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/ToneGenerator.html#stopTone()">https://developer.android.com/reference/android/media/ToneGenerator.html#stopTone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopTone()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/ToneGenerator.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

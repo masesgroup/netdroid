@@ -1,0 +1,3569 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class Settings.Secure | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Settings.Secure | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/provider/Settings.Secure.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Provider_Settings_Secure.md&amp;value=---%0Auid%3A%20Android.Provider.Settings.Secure%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Provider.Settings.Secure">
+
+
+
+  <h1 id="Android_Provider_Settings_Secure" data-uid="Android.Provider.Settings.Secure" class="text-break">
+Class Settings.Secure  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1356"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Provider.html">Provider</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html">https://developer.android.com/reference/android/provider/Settings.Secure.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Settings.Secure : Settings.NameValueTable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IBaseColumns</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Provider.BaseColumns.html">BaseColumns</a>&gt;</div>
+      <div><a class="xref" href="Android.Provider.BaseColumns.html">BaseColumns</a></div>
+      <div><a class="xref" href="Android.Provider.Settings.html">Settings</a>.<a class="xref" href="Android.Provider.Settings.NameValueTable.html">NameValueTable</a></div>
+      <div><span class="xref">Settings.Secure</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Provider.IBaseColumns.html">IBaseColumns</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Provider.Settings.NameValueTable.html#Android_Provider_Settings_NameValueTable_NAME">Settings.NameValueTable.NAME</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Provider.Settings.NameValueTable.html#Android_Provider_Settings_NameValueTable_VALUE">Settings.NameValueTable.VALUE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Provider.Settings.NameValueTable.html#Android_Provider_Settings_NameValueTable_GetUriFor_Android_Net_Uri_Java_Lang_String_">Settings.NameValueTable.GetUriFor(Uri, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Provider.BaseColumns.html#Android_Provider_BaseColumns__COUNT">BaseColumns._COUNT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Provider.BaseColumns.html#Android_Provider_BaseColumns__ID">BaseColumns._ID</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;BaseColumns&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Provider_Settings_Secure__ctor_" data-uid="Android.Provider.Settings.Secure.#ctor*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure__ctor" data-uid="Android.Provider.Settings.Secure.#ctor">
+  Secure()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L7082"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Secure()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure__ctor_" data-uid="Android.Provider.Settings.Secure.#ctor*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure__ctor_System_Object___" data-uid="Android.Provider.Settings.Secure.#ctor(System.Object[])">
+  Secure(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L7086"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Secure(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Provider_Settings_Secure_ACCESSIBILITY_DISPLAY_INVERSION_ENABLED_" data-uid="Android.Provider.Settings.Secure.ACCESSIBILITY_DISPLAY_INVERSION_ENABLED*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_ACCESSIBILITY_DISPLAY_INVERSION_ENABLED" data-uid="Android.Provider.Settings.Secure.ACCESSIBILITY_DISPLAY_INVERSION_ENABLED">
+  ACCESSIBILITY_DISPLAY_INVERSION_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#ACCESSIBILITY_DISPLAY_INVERSION_ENABLED">https://developer.android.com/reference/android/provider/Settings.Secure.html#ACCESSIBILITY_DISPLAY_INVERSION_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACCESSIBILITY_DISPLAY_INVERSION_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_ACCESSIBILITY_ENABLED_" data-uid="Android.Provider.Settings.Secure.ACCESSIBILITY_ENABLED*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_ACCESSIBILITY_ENABLED" data-uid="Android.Provider.Settings.Secure.ACCESSIBILITY_ENABLED">
+  ACCESSIBILITY_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#ACCESSIBILITY_ENABLED">https://developer.android.com/reference/android/provider/Settings.Secure.html#ACCESSIBILITY_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACCESSIBILITY_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_ACCESSIBILITY_SPEAK_PASSWORD_" data-uid="Android.Provider.Settings.Secure.ACCESSIBILITY_SPEAK_PASSWORD*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_ACCESSIBILITY_SPEAK_PASSWORD" data-uid="Android.Provider.Settings.Secure.ACCESSIBILITY_SPEAK_PASSWORD">
+  ACCESSIBILITY_SPEAK_PASSWORD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#ACCESSIBILITY_SPEAK_PASSWORD">https://developer.android.com/reference/android/provider/Settings.Secure.html#ACCESSIBILITY_SPEAK_PASSWORD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String ACCESSIBILITY_SPEAK_PASSWORD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_ADB_ENABLED_" data-uid="Android.Provider.Settings.Secure.ADB_ENABLED*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_ADB_ENABLED" data-uid="Android.Provider.Settings.Secure.ADB_ENABLED">
+  ADB_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#ADB_ENABLED">https://developer.android.com/reference/android/provider/Settings.Secure.html#ADB_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String ADB_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_ALLOWED_GEOLOCATION_ORIGINS_" data-uid="Android.Provider.Settings.Secure.ALLOWED_GEOLOCATION_ORIGINS*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_ALLOWED_GEOLOCATION_ORIGINS" data-uid="Android.Provider.Settings.Secure.ALLOWED_GEOLOCATION_ORIGINS">
+  ALLOWED_GEOLOCATION_ORIGINS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1436"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#ALLOWED_GEOLOCATION_ORIGINS">https://developer.android.com/reference/android/provider/Settings.Secure.html#ALLOWED_GEOLOCATION_ORIGINS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ALLOWED_GEOLOCATION_ORIGINS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_ALLOW_MOCK_LOCATION_" data-uid="Android.Provider.Settings.Secure.ALLOW_MOCK_LOCATION*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_ALLOW_MOCK_LOCATION" data-uid="Android.Provider.Settings.Secure.ALLOW_MOCK_LOCATION">
+  ALLOW_MOCK_LOCATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#ALLOW_MOCK_LOCATION">https://developer.android.com/reference/android/provider/Settings.Secure.html#ALLOW_MOCK_LOCATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String ALLOW_MOCK_LOCATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_ANDROID_ID_" data-uid="Android.Provider.Settings.Secure.ANDROID_ID*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_ANDROID_ID" data-uid="Android.Provider.Settings.Secure.ANDROID_ID">
+  ANDROID_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1442"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#ANDROID_ID">https://developer.android.com/reference/android/provider/Settings.Secure.html#ANDROID_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ANDROID_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_BACKGROUND_DATA_" data-uid="Android.Provider.Settings.Secure.BACKGROUND_DATA*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_BACKGROUND_DATA" data-uid="Android.Provider.Settings.Secure.BACKGROUND_DATA">
+  BACKGROUND_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#BACKGROUND_DATA">https://developer.android.com/reference/android/provider/Settings.Secure.html#BACKGROUND_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String BACKGROUND_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_BLUETOOTH_ON_" data-uid="Android.Provider.Settings.Secure.BLUETOOTH_ON*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_BLUETOOTH_ON" data-uid="Android.Provider.Settings.Secure.BLUETOOTH_ON">
+  BLUETOOTH_ON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1455"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#BLUETOOTH_ON">https://developer.android.com/reference/android/provider/Settings.Secure.html#BLUETOOTH_ON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String BLUETOOTH_ON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_BridgeClassName_" data-uid="Android.Provider.Settings.Secure.BridgeClassName*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_BridgeClassName" data-uid="Android.Provider.Settings.Secure.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L7093"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_CONTENT_URI_" data-uid="Android.Provider.Settings.Secure.CONTENT_URI*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_CONTENT_URI" data-uid="Android.Provider.Settings.Secure.CONTENT_URI">
+  CONTENT_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#CONTENT_URI">https://developer.android.com/reference/android/provider/Settings.Secure.html#CONTENT_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri CONTENT_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_DATA_ROAMING_" data-uid="Android.Provider.Settings.Secure.DATA_ROAMING*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_DATA_ROAMING" data-uid="Android.Provider.Settings.Secure.DATA_ROAMING">
+  DATA_ROAMING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#DATA_ROAMING">https://developer.android.com/reference/android/provider/Settings.Secure.html#DATA_ROAMING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String DATA_ROAMING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_DEFAULT_INPUT_METHOD_" data-uid="Android.Provider.Settings.Secure.DEFAULT_INPUT_METHOD*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_DEFAULT_INPUT_METHOD" data-uid="Android.Provider.Settings.Secure.DEFAULT_INPUT_METHOD">
+  DEFAULT_INPUT_METHOD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#DEFAULT_INPUT_METHOD">https://developer.android.com/reference/android/provider/Settings.Secure.html#DEFAULT_INPUT_METHOD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DEFAULT_INPUT_METHOD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_DEVELOPMENT_SETTINGS_ENABLED_" data-uid="Android.Provider.Settings.Secure.DEVELOPMENT_SETTINGS_ENABLED*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_DEVELOPMENT_SETTINGS_ENABLED" data-uid="Android.Provider.Settings.Secure.DEVELOPMENT_SETTINGS_ENABLED">
+  DEVELOPMENT_SETTINGS_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1475"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#DEVELOPMENT_SETTINGS_ENABLED">https://developer.android.com/reference/android/provider/Settings.Secure.html#DEVELOPMENT_SETTINGS_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String DEVELOPMENT_SETTINGS_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_DEVICE_PROVISIONED_" data-uid="Android.Provider.Settings.Secure.DEVICE_PROVISIONED*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_DEVICE_PROVISIONED" data-uid="Android.Provider.Settings.Secure.DEVICE_PROVISIONED">
+  DEVICE_PROVISIONED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1482"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#DEVICE_PROVISIONED">https://developer.android.com/reference/android/provider/Settings.Secure.html#DEVICE_PROVISIONED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String DEVICE_PROVISIONED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_ENABLED_ACCESSIBILITY_SERVICES_" data-uid="Android.Provider.Settings.Secure.ENABLED_ACCESSIBILITY_SERVICES*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_ENABLED_ACCESSIBILITY_SERVICES" data-uid="Android.Provider.Settings.Secure.ENABLED_ACCESSIBILITY_SERVICES">
+  ENABLED_ACCESSIBILITY_SERVICES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1489"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#ENABLED_ACCESSIBILITY_SERVICES">https://developer.android.com/reference/android/provider/Settings.Secure.html#ENABLED_ACCESSIBILITY_SERVICES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ENABLED_ACCESSIBILITY_SERVICES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_ENABLED_INPUT_METHODS_" data-uid="Android.Provider.Settings.Secure.ENABLED_INPUT_METHODS*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_ENABLED_INPUT_METHODS" data-uid="Android.Provider.Settings.Secure.ENABLED_INPUT_METHODS">
+  ENABLED_INPUT_METHODS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1495"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#ENABLED_INPUT_METHODS">https://developer.android.com/reference/android/provider/Settings.Secure.html#ENABLED_INPUT_METHODS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ENABLED_INPUT_METHODS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_HTTP_PROXY_" data-uid="Android.Provider.Settings.Secure.HTTP_PROXY*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_HTTP_PROXY" data-uid="Android.Provider.Settings.Secure.HTTP_PROXY">
+  HTTP_PROXY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1501"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#HTTP_PROXY">https://developer.android.com/reference/android/provider/Settings.Secure.html#HTTP_PROXY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String HTTP_PROXY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_INPUT_METHOD_SELECTOR_VISIBILITY_" data-uid="Android.Provider.Settings.Secure.INPUT_METHOD_SELECTOR_VISIBILITY*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_INPUT_METHOD_SELECTOR_VISIBILITY" data-uid="Android.Provider.Settings.Secure.INPUT_METHOD_SELECTOR_VISIBILITY">
+  INPUT_METHOD_SELECTOR_VISIBILITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1508"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#INPUT_METHOD_SELECTOR_VISIBILITY">https://developer.android.com/reference/android/provider/Settings.Secure.html#INPUT_METHOD_SELECTOR_VISIBILITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INPUT_METHOD_SELECTOR_VISIBILITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_INSTALL_NON_MARKET_APPS_" data-uid="Android.Provider.Settings.Secure.INSTALL_NON_MARKET_APPS*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_INSTALL_NON_MARKET_APPS" data-uid="Android.Provider.Settings.Secure.INSTALL_NON_MARKET_APPS">
+  INSTALL_NON_MARKET_APPS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1514"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#INSTALL_NON_MARKET_APPS">https://developer.android.com/reference/android/provider/Settings.Secure.html#INSTALL_NON_MARKET_APPS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String INSTALL_NON_MARKET_APPS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_IsBridgeAbstract_" data-uid="Android.Provider.Settings.Secure.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_IsBridgeAbstract" data-uid="Android.Provider.Settings.Secure.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L7097"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_IsBridgeCloseable_" data-uid="Android.Provider.Settings.Secure.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_IsBridgeCloseable" data-uid="Android.Provider.Settings.Secure.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L7101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_IsBridgeInterface_" data-uid="Android.Provider.Settings.Secure.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_IsBridgeInterface" data-uid="Android.Provider.Settings.Secure.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L7105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_IsBridgeStatic_" data-uid="Android.Provider.Settings.Secure.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_IsBridgeStatic" data-uid="Android.Provider.Settings.Secure.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L7109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_LOCATION_MODE_" data-uid="Android.Provider.Settings.Secure.LOCATION_MODE*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_LOCATION_MODE" data-uid="Android.Provider.Settings.Secure.LOCATION_MODE">
+  LOCATION_MODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1521"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_MODE">https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_MODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String LOCATION_MODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_LOCATION_MODE_BATTERY_SAVING_" data-uid="Android.Provider.Settings.Secure.LOCATION_MODE_BATTERY_SAVING*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_LOCATION_MODE_BATTERY_SAVING" data-uid="Android.Provider.Settings.Secure.LOCATION_MODE_BATTERY_SAVING">
+  LOCATION_MODE_BATTERY_SAVING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_MODE_BATTERY_SAVING">https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_MODE_BATTERY_SAVING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int LOCATION_MODE_BATTERY_SAVING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_LOCATION_MODE_HIGH_ACCURACY_" data-uid="Android.Provider.Settings.Secure.LOCATION_MODE_HIGH_ACCURACY*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_LOCATION_MODE_HIGH_ACCURACY" data-uid="Android.Provider.Settings.Secure.LOCATION_MODE_HIGH_ACCURACY">
+  LOCATION_MODE_HIGH_ACCURACY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_MODE_HIGH_ACCURACY">https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_MODE_HIGH_ACCURACY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int LOCATION_MODE_HIGH_ACCURACY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_LOCATION_MODE_OFF_" data-uid="Android.Provider.Settings.Secure.LOCATION_MODE_OFF*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_LOCATION_MODE_OFF" data-uid="Android.Provider.Settings.Secure.LOCATION_MODE_OFF">
+  LOCATION_MODE_OFF
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1390"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_MODE_OFF">https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_MODE_OFF</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LOCATION_MODE_OFF { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_LOCATION_MODE_SENSORS_ONLY_" data-uid="Android.Provider.Settings.Secure.LOCATION_MODE_SENSORS_ONLY*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_LOCATION_MODE_SENSORS_ONLY" data-uid="Android.Provider.Settings.Secure.LOCATION_MODE_SENSORS_ONLY">
+  LOCATION_MODE_SENSORS_ONLY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1396"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_MODE_SENSORS_ONLY">https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_MODE_SENSORS_ONLY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int LOCATION_MODE_SENSORS_ONLY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_LOCATION_PROVIDERS_ALLOWED_" data-uid="Android.Provider.Settings.Secure.LOCATION_PROVIDERS_ALLOWED*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_LOCATION_PROVIDERS_ALLOWED" data-uid="Android.Provider.Settings.Secure.LOCATION_PROVIDERS_ALLOWED">
+  LOCATION_PROVIDERS_ALLOWED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1528"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_PROVIDERS_ALLOWED">https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_PROVIDERS_ALLOWED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String LOCATION_PROVIDERS_ALLOWED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_LOCK_PATTERN_ENABLED_" data-uid="Android.Provider.Settings.Secure.LOCK_PATTERN_ENABLED*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_LOCK_PATTERN_ENABLED" data-uid="Android.Provider.Settings.Secure.LOCK_PATTERN_ENABLED">
+  LOCK_PATTERN_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCK_PATTERN_ENABLED">https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCK_PATTERN_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String LOCK_PATTERN_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED_" data-uid="Android.Provider.Settings.Secure.LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED" data-uid="Android.Provider.Settings.Secure.LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED">
+  LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1542"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED">https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_LOCK_PATTERN_VISIBLE_" data-uid="Android.Provider.Settings.Secure.LOCK_PATTERN_VISIBLE*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_LOCK_PATTERN_VISIBLE" data-uid="Android.Provider.Settings.Secure.LOCK_PATTERN_VISIBLE">
+  LOCK_PATTERN_VISIBLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1549"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCK_PATTERN_VISIBLE">https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCK_PATTERN_VISIBLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String LOCK_PATTERN_VISIBLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_LOGGING_ID_" data-uid="Android.Provider.Settings.Secure.LOGGING_ID*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_LOGGING_ID" data-uid="Android.Provider.Settings.Secure.LOGGING_ID">
+  LOGGING_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1556"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOGGING_ID">https://developer.android.com/reference/android/provider/Settings.Secure.html#LOGGING_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String LOGGING_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_NETWORK_PREFERENCE_" data-uid="Android.Provider.Settings.Secure.NETWORK_PREFERENCE*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_NETWORK_PREFERENCE" data-uid="Android.Provider.Settings.Secure.NETWORK_PREFERENCE">
+  NETWORK_PREFERENCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1563"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#NETWORK_PREFERENCE">https://developer.android.com/reference/android/provider/Settings.Secure.html#NETWORK_PREFERENCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String NETWORK_PREFERENCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_PARENTAL_CONTROL_ENABLED_" data-uid="Android.Provider.Settings.Secure.PARENTAL_CONTROL_ENABLED*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_PARENTAL_CONTROL_ENABLED" data-uid="Android.Provider.Settings.Secure.PARENTAL_CONTROL_ENABLED">
+  PARENTAL_CONTROL_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1570"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#PARENTAL_CONTROL_ENABLED">https://developer.android.com/reference/android/provider/Settings.Secure.html#PARENTAL_CONTROL_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARENTAL_CONTROL_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_PARENTAL_CONTROL_LAST_UPDATE_" data-uid="Android.Provider.Settings.Secure.PARENTAL_CONTROL_LAST_UPDATE*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_PARENTAL_CONTROL_LAST_UPDATE" data-uid="Android.Provider.Settings.Secure.PARENTAL_CONTROL_LAST_UPDATE">
+  PARENTAL_CONTROL_LAST_UPDATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1576"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#PARENTAL_CONTROL_LAST_UPDATE">https://developer.android.com/reference/android/provider/Settings.Secure.html#PARENTAL_CONTROL_LAST_UPDATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARENTAL_CONTROL_LAST_UPDATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_PARENTAL_CONTROL_REDIRECT_URL_" data-uid="Android.Provider.Settings.Secure.PARENTAL_CONTROL_REDIRECT_URL*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_PARENTAL_CONTROL_REDIRECT_URL" data-uid="Android.Provider.Settings.Secure.PARENTAL_CONTROL_REDIRECT_URL">
+  PARENTAL_CONTROL_REDIRECT_URL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1582"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#PARENTAL_CONTROL_REDIRECT_URL">https://developer.android.com/reference/android/provider/Settings.Secure.html#PARENTAL_CONTROL_REDIRECT_URL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARENTAL_CONTROL_REDIRECT_URL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_RTT_CALLING_MODE_" data-uid="Android.Provider.Settings.Secure.RTT_CALLING_MODE*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_RTT_CALLING_MODE" data-uid="Android.Provider.Settings.Secure.RTT_CALLING_MODE">
+  RTT_CALLING_MODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1588"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#RTT_CALLING_MODE">https://developer.android.com/reference/android/provider/Settings.Secure.html#RTT_CALLING_MODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String RTT_CALLING_MODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_SECURE_FRP_MODE_" data-uid="Android.Provider.Settings.Secure.SECURE_FRP_MODE*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_SECURE_FRP_MODE" data-uid="Android.Provider.Settings.Secure.SECURE_FRP_MODE">
+  SECURE_FRP_MODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1594"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#SECURE_FRP_MODE">https://developer.android.com/reference/android/provider/Settings.Secure.html#SECURE_FRP_MODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String SECURE_FRP_MODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_SELECTED_INPUT_METHOD_SUBTYPE_" data-uid="Android.Provider.Settings.Secure.SELECTED_INPUT_METHOD_SUBTYPE*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_SELECTED_INPUT_METHOD_SUBTYPE" data-uid="Android.Provider.Settings.Secure.SELECTED_INPUT_METHOD_SUBTYPE">
+  SELECTED_INPUT_METHOD_SUBTYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1601"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#SELECTED_INPUT_METHOD_SUBTYPE">https://developer.android.com/reference/android/provider/Settings.Secure.html#SELECTED_INPUT_METHOD_SUBTYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SELECTED_INPUT_METHOD_SUBTYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_SETTINGS_CLASSNAME_" data-uid="Android.Provider.Settings.Secure.SETTINGS_CLASSNAME*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_SETTINGS_CLASSNAME" data-uid="Android.Provider.Settings.Secure.SETTINGS_CLASSNAME">
+  SETTINGS_CLASSNAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1607"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#SETTINGS_CLASSNAME">https://developer.android.com/reference/android/provider/Settings.Secure.html#SETTINGS_CLASSNAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SETTINGS_CLASSNAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_SKIP_FIRST_USE_HINTS_" data-uid="Android.Provider.Settings.Secure.SKIP_FIRST_USE_HINTS*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_SKIP_FIRST_USE_HINTS" data-uid="Android.Provider.Settings.Secure.SKIP_FIRST_USE_HINTS">
+  SKIP_FIRST_USE_HINTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1613"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#SKIP_FIRST_USE_HINTS">https://developer.android.com/reference/android/provider/Settings.Secure.html#SKIP_FIRST_USE_HINTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SKIP_FIRST_USE_HINTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_TOUCH_EXPLORATION_ENABLED_" data-uid="Android.Provider.Settings.Secure.TOUCH_EXPLORATION_ENABLED*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_TOUCH_EXPLORATION_ENABLED" data-uid="Android.Provider.Settings.Secure.TOUCH_EXPLORATION_ENABLED">
+  TOUCH_EXPLORATION_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1619"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#TOUCH_EXPLORATION_ENABLED">https://developer.android.com/reference/android/provider/Settings.Secure.html#TOUCH_EXPLORATION_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TOUCH_EXPLORATION_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_TTS_DEFAULT_COUNTRY_" data-uid="Android.Provider.Settings.Secure.TTS_DEFAULT_COUNTRY*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_TTS_DEFAULT_COUNTRY" data-uid="Android.Provider.Settings.Secure.TTS_DEFAULT_COUNTRY">
+  TTS_DEFAULT_COUNTRY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1625"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_COUNTRY">https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_COUNTRY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String TTS_DEFAULT_COUNTRY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_TTS_DEFAULT_LANG_" data-uid="Android.Provider.Settings.Secure.TTS_DEFAULT_LANG*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_TTS_DEFAULT_LANG" data-uid="Android.Provider.Settings.Secure.TTS_DEFAULT_LANG">
+  TTS_DEFAULT_LANG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1632"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_LANG">https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_LANG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String TTS_DEFAULT_LANG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_TTS_DEFAULT_PITCH_" data-uid="Android.Provider.Settings.Secure.TTS_DEFAULT_PITCH*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_TTS_DEFAULT_PITCH" data-uid="Android.Provider.Settings.Secure.TTS_DEFAULT_PITCH">
+  TTS_DEFAULT_PITCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1639"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_PITCH">https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_PITCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TTS_DEFAULT_PITCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_TTS_DEFAULT_RATE_" data-uid="Android.Provider.Settings.Secure.TTS_DEFAULT_RATE*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_TTS_DEFAULT_RATE" data-uid="Android.Provider.Settings.Secure.TTS_DEFAULT_RATE">
+  TTS_DEFAULT_RATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1645"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_RATE">https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_RATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TTS_DEFAULT_RATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_TTS_DEFAULT_SYNTH_" data-uid="Android.Provider.Settings.Secure.TTS_DEFAULT_SYNTH*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_TTS_DEFAULT_SYNTH" data-uid="Android.Provider.Settings.Secure.TTS_DEFAULT_SYNTH">
+  TTS_DEFAULT_SYNTH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1651"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_SYNTH">https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_SYNTH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TTS_DEFAULT_SYNTH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_TTS_DEFAULT_VARIANT_" data-uid="Android.Provider.Settings.Secure.TTS_DEFAULT_VARIANT*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_TTS_DEFAULT_VARIANT" data-uid="Android.Provider.Settings.Secure.TTS_DEFAULT_VARIANT">
+  TTS_DEFAULT_VARIANT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1657"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_VARIANT">https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_VARIANT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String TTS_DEFAULT_VARIANT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_TTS_ENABLED_PLUGINS_" data-uid="Android.Provider.Settings.Secure.TTS_ENABLED_PLUGINS*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_TTS_ENABLED_PLUGINS" data-uid="Android.Provider.Settings.Secure.TTS_ENABLED_PLUGINS">
+  TTS_ENABLED_PLUGINS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1664"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_ENABLED_PLUGINS">https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_ENABLED_PLUGINS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TTS_ENABLED_PLUGINS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_TTS_USE_DEFAULTS_" data-uid="Android.Provider.Settings.Secure.TTS_USE_DEFAULTS*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_TTS_USE_DEFAULTS" data-uid="Android.Provider.Settings.Secure.TTS_USE_DEFAULTS">
+  TTS_USE_DEFAULTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1670"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_USE_DEFAULTS">https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_USE_DEFAULTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String TTS_USE_DEFAULTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_USB_MASS_STORAGE_ENABLED_" data-uid="Android.Provider.Settings.Secure.USB_MASS_STORAGE_ENABLED*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_USB_MASS_STORAGE_ENABLED" data-uid="Android.Provider.Settings.Secure.USB_MASS_STORAGE_ENABLED">
+  USB_MASS_STORAGE_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1677"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#USB_MASS_STORAGE_ENABLED">https://developer.android.com/reference/android/provider/Settings.Secure.html#USB_MASS_STORAGE_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String USB_MASS_STORAGE_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_USE_GOOGLE_MAIL_" data-uid="Android.Provider.Settings.Secure.USE_GOOGLE_MAIL*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_USE_GOOGLE_MAIL" data-uid="Android.Provider.Settings.Secure.USE_GOOGLE_MAIL">
+  USE_GOOGLE_MAIL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1684"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#USE_GOOGLE_MAIL">https://developer.android.com/reference/android/provider/Settings.Secure.html#USE_GOOGLE_MAIL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String USE_GOOGLE_MAIL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_MAX_DHCP_RETRY_COUNT_" data-uid="Android.Provider.Settings.Secure.WIFI_MAX_DHCP_RETRY_COUNT*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_MAX_DHCP_RETRY_COUNT" data-uid="Android.Provider.Settings.Secure.WIFI_MAX_DHCP_RETRY_COUNT">
+  WIFI_MAX_DHCP_RETRY_COUNT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1691"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_MAX_DHCP_RETRY_COUNT">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_MAX_DHCP_RETRY_COUNT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_MAX_DHCP_RETRY_COUNT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MS_" data-uid="Android.Provider.Settings.Secure.WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MS*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MS" data-uid="Android.Provider.Settings.Secure.WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MS">
+  WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1698"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MS">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON_" data-uid="Android.Provider.Settings.Secure.WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON" data-uid="Android.Provider.Settings.Secure.WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON">
+  WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1705"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY_" data-uid="Android.Provider.Settings.Secure.WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY" data-uid="Android.Provider.Settings.Secure.WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY">
+  WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1712"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_NUM_OPEN_NETWORKS_KEPT_" data-uid="Android.Provider.Settings.Secure.WIFI_NUM_OPEN_NETWORKS_KEPT*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_NUM_OPEN_NETWORKS_KEPT" data-uid="Android.Provider.Settings.Secure.WIFI_NUM_OPEN_NETWORKS_KEPT">
+  WIFI_NUM_OPEN_NETWORKS_KEPT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1719"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_NUM_OPEN_NETWORKS_KEPT">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_NUM_OPEN_NETWORKS_KEPT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_NUM_OPEN_NETWORKS_KEPT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_ON_" data-uid="Android.Provider.Settings.Secure.WIFI_ON*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_ON" data-uid="Android.Provider.Settings.Secure.WIFI_ON">
+  WIFI_ON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1726"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_ON">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_ON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_ON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGE_" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGE*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGE" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGE">
+  WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1733"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGE">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_AP_COUNT_" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_AP_COUNT*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_AP_COUNT" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_AP_COUNT">
+  WIFI_WATCHDOG_AP_COUNT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1740"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_AP_COUNT">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_AP_COUNT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_WATCHDOG_AP_COUNT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MS_" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MS*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MS" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MS">
+  WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1747"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MS">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLED_" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLED*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLED" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLED">
+  WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1754"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLED">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MS_" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MS*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MS" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MS">
+  WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1761"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MS">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNT_" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNT*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNT" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNT">
+  WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1768"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNT">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_MAX_AP_CHECKS_" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_MAX_AP_CHECKS*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_MAX_AP_CHECKS" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_MAX_AP_CHECKS">
+  WIFI_WATCHDOG_MAX_AP_CHECKS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1775"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_MAX_AP_CHECKS">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_MAX_AP_CHECKS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_WATCHDOG_MAX_AP_CHECKS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_ON_" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_ON*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_ON" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_ON">
+  WIFI_WATCHDOG_ON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1782"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_ON">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_ON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_WATCHDOG_ON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_PING_COUNT_" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_PING_COUNT*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_PING_COUNT" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_PING_COUNT">
+  WIFI_WATCHDOG_PING_COUNT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1789"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_PING_COUNT">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_PING_COUNT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_WATCHDOG_PING_COUNT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_PING_DELAY_MS_" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_PING_DELAY_MS*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_PING_DELAY_MS" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_PING_DELAY_MS">
+  WIFI_WATCHDOG_PING_DELAY_MS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1796"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_PING_DELAY_MS">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_PING_DELAY_MS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_WATCHDOG_PING_DELAY_MS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_PING_TIMEOUT_MS_" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_PING_TIMEOUT_MS*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_PING_TIMEOUT_MS" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_PING_TIMEOUT_MS">
+  WIFI_WATCHDOG_PING_TIMEOUT_MS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1803"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_PING_TIMEOUT_MS">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_PING_TIMEOUT_MS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_WATCHDOG_PING_TIMEOUT_MS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_WATCH_LIST_" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_WATCH_LIST*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_WIFI_WATCHDOG_WATCH_LIST" data-uid="Android.Provider.Settings.Secure.WIFI_WATCHDOG_WATCH_LIST">
+  WIFI_WATCHDOG_WATCH_LIST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1810"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_WATCH_LIST">https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_WATCH_LIST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String WIFI_WATCHDOG_WATCH_LIST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Provider_Settings_Secure_GetFloat_" data-uid="Android.Provider.Settings.Secure.GetFloat*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_GetFloat_Android_Content_ContentResolver_Java_Lang_String_" data-uid="Android.Provider.Settings.Secure.GetFloat(Android.Content.ContentResolver,Java.Lang.String)">
+  GetFloat(ContentResolver, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1900"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getFloat(android.content.ContentResolver,java.lang.String)">https://developer.android.com/reference/android/provider/Settings.Secure.html#getFloat(android.content.ContentResolver,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetFloat(ContentResolver arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Provider.Settings.html">Settings</a>.<a class="xref" href="Android.Provider.Settings.SettingNotFoundException.html">SettingNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_Settings_Secure_GetFloat_" data-uid="Android.Provider.Settings.Secure.GetFloat*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_GetFloat_Android_Content_ContentResolver_Java_Lang_String_System_Single_" data-uid="Android.Provider.Settings.Secure.GetFloat(Android.Content.ContentResolver,Java.Lang.String,System.Single)">
+  GetFloat(ContentResolver, String, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1889"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getFloat(android.content.ContentResolver,java.lang.String,float)">https://developer.android.com/reference/android/provider/Settings.Secure.html#getFloat(android.content.ContentResolver,java.lang.String,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetFloat(ContentResolver arg0, String arg1, float arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_GetInt_" data-uid="Android.Provider.Settings.Secure.GetInt*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_GetInt_Android_Content_ContentResolver_Java_Lang_String_" data-uid="Android.Provider.Settings.Secure.GetInt(Android.Content.ContentResolver,Java.Lang.String)">
+  GetInt(ContentResolver, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1922"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getInt(android.content.ContentResolver,java.lang.String)">https://developer.android.com/reference/android/provider/Settings.Secure.html#getInt(android.content.ContentResolver,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetInt(ContentResolver arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Provider.Settings.html">Settings</a>.<a class="xref" href="Android.Provider.Settings.SettingNotFoundException.html">SettingNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_Settings_Secure_GetInt_" data-uid="Android.Provider.Settings.Secure.GetInt*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_GetInt_Android_Content_ContentResolver_Java_Lang_String_System_Int32_" data-uid="Android.Provider.Settings.Secure.GetInt(Android.Content.ContentResolver,Java.Lang.String,System.Int32)">
+  GetInt(ContentResolver, String, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1911"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getInt(android.content.ContentResolver,java.lang.String,int)">https://developer.android.com/reference/android/provider/Settings.Secure.html#getInt(android.content.ContentResolver,java.lang.String,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetInt(ContentResolver arg0, String arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_GetLong_" data-uid="Android.Provider.Settings.Secure.GetLong*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_GetLong_Android_Content_ContentResolver_Java_Lang_String_" data-uid="Android.Provider.Settings.Secure.GetLong(Android.Content.ContentResolver,Java.Lang.String)">
+  GetLong(ContentResolver, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1954"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getLong(android.content.ContentResolver,java.lang.String)">https://developer.android.com/reference/android/provider/Settings.Secure.html#getLong(android.content.ContentResolver,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long GetLong(ContentResolver arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Provider.Settings.html">Settings</a>.<a class="xref" href="Android.Provider.Settings.SettingNotFoundException.html">SettingNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_Settings_Secure_GetLong_" data-uid="Android.Provider.Settings.Secure.GetLong*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_GetLong_Android_Content_ContentResolver_Java_Lang_String_System_Int64_" data-uid="Android.Provider.Settings.Secure.GetLong(Android.Content.ContentResolver,Java.Lang.String,System.Int64)">
+  GetLong(ContentResolver, String, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1943"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getLong(android.content.ContentResolver,java.lang.String,long)">https://developer.android.com/reference/android/provider/Settings.Secure.html#getLong(android.content.ContentResolver,java.lang.String,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long GetLong(ContentResolver arg0, String arg1, long arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_GetString_" data-uid="Android.Provider.Settings.Secure.GetString*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_GetString_Android_Content_ContentResolver_Java_Lang_String_" data-uid="Android.Provider.Settings.Secure.GetString(Android.Content.ContentResolver,Java.Lang.String)">
+  GetString(ContentResolver, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1932"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getString(android.content.ContentResolver,java.lang.String)">https://developer.android.com/reference/android/provider/Settings.Secure.html#getString(android.content.ContentResolver,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GetString(ContentResolver arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_GetUriFor_" data-uid="Android.Provider.Settings.Secure.GetUriFor*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_GetUriFor_Java_Lang_String_" data-uid="Android.Provider.Settings.Secure.GetUriFor(Java.Lang.String)">
+  GetUriFor(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1823"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getUriFor(java.lang.String)">https://developer.android.com/reference/android/provider/Settings.Secure.html#getUriFor(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri GetUriFor(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_IsLocationProviderEnabled_" data-uid="Android.Provider.Settings.Secure.IsLocationProviderEnabled*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_IsLocationProviderEnabled_Android_Content_ContentResolver_Java_Lang_String_" data-uid="Android.Provider.Settings.Secure.IsLocationProviderEnabled(Android.Content.ContentResolver,Java.Lang.String)">
+  IsLocationProviderEnabled(ContentResolver, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1833"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#isLocationProviderEnabled(android.content.ContentResolver,java.lang.String)">https://developer.android.com/reference/android/provider/Settings.Secure.html#isLocationProviderEnabled(android.content.ContentResolver,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static bool IsLocationProviderEnabled(ContentResolver arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_PutFloat_" data-uid="Android.Provider.Settings.Secure.PutFloat*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_PutFloat_Android_Content_ContentResolver_Java_Lang_String_System_Single_" data-uid="Android.Provider.Settings.Secure.PutFloat(Android.Content.ContentResolver,Java.Lang.String,System.Single)">
+  PutFloat(ContentResolver, String, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1845"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#putFloat(android.content.ContentResolver,java.lang.String,float)">https://developer.android.com/reference/android/provider/Settings.Secure.html#putFloat(android.content.ContentResolver,java.lang.String,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PutFloat(ContentResolver arg0, String arg1, float arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_PutInt_" data-uid="Android.Provider.Settings.Secure.PutInt*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_PutInt_Android_Content_ContentResolver_Java_Lang_String_System_Int32_" data-uid="Android.Provider.Settings.Secure.PutInt(Android.Content.ContentResolver,Java.Lang.String,System.Int32)">
+  PutInt(ContentResolver, String, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1856"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#putInt(android.content.ContentResolver,java.lang.String,int)">https://developer.android.com/reference/android/provider/Settings.Secure.html#putInt(android.content.ContentResolver,java.lang.String,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PutInt(ContentResolver arg0, String arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_PutLong_" data-uid="Android.Provider.Settings.Secure.PutLong*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_PutLong_Android_Content_ContentResolver_Java_Lang_String_System_Int64_" data-uid="Android.Provider.Settings.Secure.PutLong(Android.Content.ContentResolver,Java.Lang.String,System.Int64)">
+  PutLong(ContentResolver, String, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1867"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#putLong(android.content.ContentResolver,java.lang.String,long)">https://developer.android.com/reference/android/provider/Settings.Secure.html#putLong(android.content.ContentResolver,java.lang.String,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PutLong(ContentResolver arg0, String arg1, long arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_PutString_" data-uid="Android.Provider.Settings.Secure.PutString*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_PutString_Android_Content_ContentResolver_Java_Lang_String_Java_Lang_String_" data-uid="Android.Provider.Settings.Secure.PutString(Android.Content.ContentResolver,Java.Lang.String,Java.Lang.String)">
+  PutString(ContentResolver, String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1878"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#putString(android.content.ContentResolver,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/provider/Settings.Secure.html#putString(android.content.ContentResolver,java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PutString(ContentResolver arg0, String arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_Settings_Secure_SetLocationProviderEnabled_" data-uid="Android.Provider.Settings.Secure.SetLocationProviderEnabled*"></a>
+
+  <h3 id="Android_Provider_Settings_Secure_SetLocationProviderEnabled_Android_Content_ContentResolver_Java_Lang_String_System_Boolean_" data-uid="Android.Provider.Settings.Secure.SetLocationProviderEnabled(Android.Content.ContentResolver,Java.Lang.String,System.Boolean)">
+  SetLocationProviderEnabled(ContentResolver, String, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1964"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/Settings.Secure.html#setLocationProviderEnabled(android.content.ContentResolver,java.lang.String,boolean)">https://developer.android.com/reference/android/provider/Settings.Secure.html#setLocationProviderEnabled(android.content.ContentResolver,java.lang.String,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static void SetLocationProviderEnabled(ContentResolver arg0, String arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ContentResolver.html">ContentResolver</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/Settings.cs/#L1356" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

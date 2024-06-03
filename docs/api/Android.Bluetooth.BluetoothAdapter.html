@@ -1,0 +1,3137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class BluetoothAdapter | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BluetoothAdapter | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Bluetooth_BluetoothAdapter.md&amp;value=---%0Auid%3A%20Android.Bluetooth.BluetoothAdapter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Bluetooth.BluetoothAdapter">
+
+
+
+  <h1 id="Android_Bluetooth_BluetoothAdapter" data-uid="Android.Bluetooth.BluetoothAdapter" class="text-break">
+Class BluetoothAdapter  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Bluetooth.html">Bluetooth</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BluetoothAdapter : JVMBridgeBase&lt;BluetoothAdapter&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Bluetooth.BluetoothAdapter.html">BluetoothAdapter</a>&gt;</div>
+      <div><span class="xref">BluetoothAdapter</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BluetoothAdapter&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BluetoothAdapter&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;BluetoothAdapter&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BluetoothAdapter&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BluetoothAdapter&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BluetoothAdapter&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BluetoothAdapter&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter__ctor_" data-uid="Android.Bluetooth.BluetoothAdapter.#ctor*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter__ctor" data-uid="Android.Bluetooth.BluetoothAdapter.#ctor">
+  BluetoothAdapter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BluetoothAdapter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter__ctor_" data-uid="Android.Bluetooth.BluetoothAdapter.#ctor*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter__ctor_System_Object___" data-uid="Android.Bluetooth.BluetoothAdapter.#ctor(System.Object[])">
+  BluetoothAdapter(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BluetoothAdapter(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_ACTION_CONNECTION_STATE_CHANGED_" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_CONNECTION_STATE_CHANGED*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_ACTION_CONNECTION_STATE_CHANGED" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_CONNECTION_STATE_CHANGED">
+  ACTION_CONNECTION_STATE_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_CONNECTION_STATE_CHANGED">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_CONNECTION_STATE_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_CONNECTION_STATE_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_ACTION_DISCOVERY_FINISHED_" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_DISCOVERY_FINISHED*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_ACTION_DISCOVERY_FINISHED" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_DISCOVERY_FINISHED">
+  ACTION_DISCOVERY_FINISHED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_DISCOVERY_FINISHED">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_DISCOVERY_FINISHED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_DISCOVERY_FINISHED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_ACTION_DISCOVERY_STARTED_" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_DISCOVERY_STARTED*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_ACTION_DISCOVERY_STARTED" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_DISCOVERY_STARTED">
+  ACTION_DISCOVERY_STARTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_DISCOVERY_STARTED">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_DISCOVERY_STARTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_DISCOVERY_STARTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_ACTION_LOCAL_NAME_CHANGED_" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_LOCAL_NAME_CHANGED*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_ACTION_LOCAL_NAME_CHANGED" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_LOCAL_NAME_CHANGED">
+  ACTION_LOCAL_NAME_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_LOCAL_NAME_CHANGED">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_LOCAL_NAME_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_LOCAL_NAME_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_ACTION_REQUEST_DISCOVERABLE_" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_ACTION_REQUEST_DISCOVERABLE" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE">
+  ACTION_REQUEST_DISCOVERABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_REQUEST_DISCOVERABLE">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_REQUEST_DISCOVERABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_REQUEST_DISCOVERABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_ACTION_REQUEST_ENABLE_" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_REQUEST_ENABLE*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_ACTION_REQUEST_ENABLE" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_REQUEST_ENABLE">
+  ACTION_REQUEST_ENABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_REQUEST_ENABLE">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_REQUEST_ENABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_REQUEST_ENABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_ACTION_SCAN_MODE_CHANGED_" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_SCAN_MODE_CHANGED*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_ACTION_SCAN_MODE_CHANGED" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_SCAN_MODE_CHANGED">
+  ACTION_SCAN_MODE_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_SCAN_MODE_CHANGED">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_SCAN_MODE_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_SCAN_MODE_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_ACTION_STATE_CHANGED_" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_STATE_CHANGED*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_ACTION_STATE_CHANGED" data-uid="Android.Bluetooth.BluetoothAdapter.ACTION_STATE_CHANGED">
+  ACTION_STATE_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_STATE_CHANGED">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_STATE_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_STATE_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_BridgeClassName_" data-uid="Android.Bluetooth.BluetoothAdapter.BridgeClassName*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_BridgeClassName" data-uid="Android.Bluetooth.BluetoothAdapter.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_ERROR_" data-uid="Android.Bluetooth.BluetoothAdapter.ERROR*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_ERROR" data-uid="Android.Bluetooth.BluetoothAdapter.ERROR">
+  ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ERROR">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_EXTRA_CONNECTION_STATE_" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_CONNECTION_STATE*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_EXTRA_CONNECTION_STATE" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_CONNECTION_STATE">
+  EXTRA_CONNECTION_STATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_CONNECTION_STATE">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_CONNECTION_STATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_CONNECTION_STATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_EXTRA_DISCOVERABLE_DURATION_" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_EXTRA_DISCOVERABLE_DURATION" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION">
+  EXTRA_DISCOVERABLE_DURATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_DISCOVERABLE_DURATION">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_DISCOVERABLE_DURATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_DISCOVERABLE_DURATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_EXTRA_LOCAL_NAME_" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_LOCAL_NAME*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_EXTRA_LOCAL_NAME" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_LOCAL_NAME">
+  EXTRA_LOCAL_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_LOCAL_NAME">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_LOCAL_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_LOCAL_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_EXTRA_PREVIOUS_CONNECTION_STATE_" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_PREVIOUS_CONNECTION_STATE*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_EXTRA_PREVIOUS_CONNECTION_STATE" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_PREVIOUS_CONNECTION_STATE">
+  EXTRA_PREVIOUS_CONNECTION_STATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_PREVIOUS_CONNECTION_STATE">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_PREVIOUS_CONNECTION_STATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_PREVIOUS_CONNECTION_STATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_EXTRA_PREVIOUS_SCAN_MODE_" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_PREVIOUS_SCAN_MODE*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_EXTRA_PREVIOUS_SCAN_MODE" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_PREVIOUS_SCAN_MODE">
+  EXTRA_PREVIOUS_SCAN_MODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_PREVIOUS_SCAN_MODE">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_PREVIOUS_SCAN_MODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_PREVIOUS_SCAN_MODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_EXTRA_PREVIOUS_STATE_" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_PREVIOUS_STATE*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_EXTRA_PREVIOUS_STATE" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_PREVIOUS_STATE">
+  EXTRA_PREVIOUS_STATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_PREVIOUS_STATE">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_PREVIOUS_STATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_PREVIOUS_STATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_EXTRA_SCAN_MODE_" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_SCAN_MODE*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_EXTRA_SCAN_MODE" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_SCAN_MODE">
+  EXTRA_SCAN_MODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_SCAN_MODE">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_SCAN_MODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_SCAN_MODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_EXTRA_STATE_" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_STATE*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_EXTRA_STATE" data-uid="Android.Bluetooth.BluetoothAdapter.EXTRA_STATE">
+  EXTRA_STATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_STATE">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_STATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_STATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsBridgeAbstract_" data-uid="Android.Bluetooth.BluetoothAdapter.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsBridgeAbstract" data-uid="Android.Bluetooth.BluetoothAdapter.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsBridgeCloseable_" data-uid="Android.Bluetooth.BluetoothAdapter.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsBridgeCloseable" data-uid="Android.Bluetooth.BluetoothAdapter.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsBridgeInterface_" data-uid="Android.Bluetooth.BluetoothAdapter.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsBridgeInterface" data-uid="Android.Bluetooth.BluetoothAdapter.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsBridgeStatic_" data-uid="Android.Bluetooth.BluetoothAdapter.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsBridgeStatic" data-uid="Android.Bluetooth.BluetoothAdapter.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_SCAN_MODE_CONNECTABLE_" data-uid="Android.Bluetooth.BluetoothAdapter.SCAN_MODE_CONNECTABLE*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_SCAN_MODE_CONNECTABLE" data-uid="Android.Bluetooth.BluetoothAdapter.SCAN_MODE_CONNECTABLE">
+  SCAN_MODE_CONNECTABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#SCAN_MODE_CONNECTABLE">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#SCAN_MODE_CONNECTABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCAN_MODE_CONNECTABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_SCAN_MODE_CONNECTABLE_DISCOVERABLE_" data-uid="Android.Bluetooth.BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_SCAN_MODE_CONNECTABLE_DISCOVERABLE" data-uid="Android.Bluetooth.BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE">
+  SCAN_MODE_CONNECTABLE_DISCOVERABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#SCAN_MODE_CONNECTABLE_DISCOVERABLE">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#SCAN_MODE_CONNECTABLE_DISCOVERABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCAN_MODE_CONNECTABLE_DISCOVERABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_SCAN_MODE_NONE_" data-uid="Android.Bluetooth.BluetoothAdapter.SCAN_MODE_NONE*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_SCAN_MODE_NONE" data-uid="Android.Bluetooth.BluetoothAdapter.SCAN_MODE_NONE">
+  SCAN_MODE_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#SCAN_MODE_NONE">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#SCAN_MODE_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCAN_MODE_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_STATE_CONNECTED_" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_CONNECTED*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_STATE_CONNECTED" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_CONNECTED">
+  STATE_CONNECTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_CONNECTED">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_CONNECTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATE_CONNECTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_STATE_CONNECTING_" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_CONNECTING*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_STATE_CONNECTING" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_CONNECTING">
+  STATE_CONNECTING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_CONNECTING">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_CONNECTING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATE_CONNECTING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_STATE_DISCONNECTED_" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_DISCONNECTED*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_STATE_DISCONNECTED" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_DISCONNECTED">
+  STATE_DISCONNECTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_DISCONNECTED">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_DISCONNECTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATE_DISCONNECTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_STATE_DISCONNECTING_" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_DISCONNECTING*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_STATE_DISCONNECTING" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_DISCONNECTING">
+  STATE_DISCONNECTING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_DISCONNECTING">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_DISCONNECTING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATE_DISCONNECTING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_STATE_OFF_" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_OFF*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_STATE_OFF" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_OFF">
+  STATE_OFF
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_OFF">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_OFF</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATE_OFF { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_STATE_ON_" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_ON*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_STATE_ON" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_ON">
+  STATE_ON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_ON">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_ON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATE_ON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_STATE_TURNING_OFF_" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_TURNING_OFF*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_STATE_TURNING_OFF" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_TURNING_OFF">
+  STATE_TURNING_OFF
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_TURNING_OFF">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_TURNING_OFF</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATE_TURNING_OFF { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_STATE_TURNING_ON_" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_TURNING_ON*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_STATE_TURNING_ON" data-uid="Android.Bluetooth.BluetoothAdapter.STATE_TURNING_ON">
+  STATE_TURNING_ON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_TURNING_ON">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_TURNING_ON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int STATE_TURNING_ON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_CancelDiscovery_" data-uid="Android.Bluetooth.BluetoothAdapter.CancelDiscovery*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_CancelDiscovery" data-uid="Android.Bluetooth.BluetoothAdapter.CancelDiscovery">
+  CancelDiscovery()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#cancelDiscovery()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#cancelDiscovery()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CancelDiscovery()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_CheckBluetoothAddress_" data-uid="Android.Bluetooth.BluetoothAdapter.CheckBluetoothAddress*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_CheckBluetoothAddress_Java_Lang_String_" data-uid="Android.Bluetooth.BluetoothAdapter.CheckBluetoothAddress(Java.Lang.String)">
+  CheckBluetoothAddress(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#checkBluetoothAddress(java.lang.String)">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#checkBluetoothAddress(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckBluetoothAddress(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_CloseProfileProxy_" data-uid="Android.Bluetooth.BluetoothAdapter.CloseProfileProxy*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_CloseProfileProxy_System_Int32_Android_Bluetooth_BluetoothProfile_" data-uid="Android.Bluetooth.BluetoothAdapter.CloseProfileProxy(System.Int32,Android.Bluetooth.BluetoothProfile)">
+  CloseProfileProxy(int, BluetoothProfile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L567"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#closeProfileProxy(int,android.bluetooth.BluetoothProfile)">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#closeProfileProxy(int,android.bluetooth.BluetoothProfile)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CloseProfileProxy(int arg0, BluetoothProfile arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Bluetooth.BluetoothProfile.html">BluetoothProfile</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.BluetoothProfile.html">BluetoothProfile</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_Disable_" data-uid="Android.Bluetooth.BluetoothAdapter.Disable*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_Disable" data-uid="Android.Bluetooth.BluetoothAdapter.Disable">
+  Disable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#disable()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#disable()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool Disable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_Enable_" data-uid="Android.Bluetooth.BluetoothAdapter.Enable*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_Enable" data-uid="Android.Bluetooth.BluetoothAdapter.Enable">
+  Enable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#enable()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#enable()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool Enable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetAddress_" data-uid="Android.Bluetooth.BluetoothAdapter.GetAddress*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetAddress" data-uid="Android.Bluetooth.BluetoothAdapter.GetAddress">
+  GetAddress()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L534"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getAddress()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getAddress()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetAddress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetBluetoothLeAdvertiser_" data-uid="Android.Bluetooth.BluetoothAdapter.GetBluetoothLeAdvertiser*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetBluetoothLeAdvertiser" data-uid="Android.Bluetooth.BluetoothAdapter.GetBluetoothLeAdvertiser">
+  GetBluetoothLeAdvertiser()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBluetoothLeAdvertiser()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBluetoothLeAdvertiser()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BluetoothLeAdvertiser GetBluetoothLeAdvertiser()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Bluetooth.Le.BluetoothLeAdvertiser.html">BluetoothLeAdvertiser</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.Le.BluetoothLeAdvertiser.html">BluetoothLeAdvertiser</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetBluetoothLeScanner_" data-uid="Android.Bluetooth.BluetoothAdapter.GetBluetoothLeScanner*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetBluetoothLeScanner" data-uid="Android.Bluetooth.BluetoothAdapter.GetBluetoothLeScanner">
+  GetBluetoothLeScanner()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBluetoothLeScanner()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBluetoothLeScanner()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BluetoothLeScanner GetBluetoothLeScanner()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Bluetooth.Le.BluetoothLeScanner.html">BluetoothLeScanner</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.Le.BluetoothLeScanner.html">BluetoothLeScanner</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetBondedDevices_" data-uid="Android.Bluetooth.BluetoothAdapter.GetBondedDevices*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetBondedDevices" data-uid="Android.Bluetooth.BluetoothAdapter.GetBondedDevices">
+  GetBondedDevices()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L558"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBondedDevices()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBondedDevices()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Set&lt;BluetoothDevice&gt; GetBondedDevices()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Android.Bluetooth.BluetoothDevice.html">BluetoothDevice</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetDefaultAdapter_" data-uid="Android.Bluetooth.BluetoothAdapter.GetDefaultAdapter*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetDefaultAdapter" data-uid="Android.Bluetooth.BluetoothAdapter.GetDefaultAdapter">
+  GetDefaultAdapter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getDefaultAdapter()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getDefaultAdapter()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static BluetoothAdapter GetDefaultAdapter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Bluetooth.BluetoothAdapter.html">BluetoothAdapter</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.BluetoothAdapter.html">BluetoothAdapter</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetDiscoverableTimeout_" data-uid="Android.Bluetooth.BluetoothAdapter.GetDiscoverableTimeout*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetDiscoverableTimeout" data-uid="Android.Bluetooth.BluetoothAdapter.GetDiscoverableTimeout">
+  GetDiscoverableTimeout()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L550"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getDiscoverableTimeout()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getDiscoverableTimeout()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Duration GetDiscoverableTimeout()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Duration.html">Duration</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Duration.html">Duration</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetLeMaximumAdvertisingDataLength_" data-uid="Android.Bluetooth.BluetoothAdapter.GetLeMaximumAdvertisingDataLength*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetLeMaximumAdvertisingDataLength" data-uid="Android.Bluetooth.BluetoothAdapter.GetLeMaximumAdvertisingDataLength">
+  GetLeMaximumAdvertisingDataLength()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getLeMaximumAdvertisingDataLength()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getLeMaximumAdvertisingDataLength()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLeMaximumAdvertisingDataLength()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetMaxConnectedAudioDevices_" data-uid="Android.Bluetooth.BluetoothAdapter.GetMaxConnectedAudioDevices*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetMaxConnectedAudioDevices" data-uid="Android.Bluetooth.BluetoothAdapter.GetMaxConnectedAudioDevices">
+  GetMaxConnectedAudioDevices()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L477"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getMaxConnectedAudioDevices()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getMaxConnectedAudioDevices()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMaxConnectedAudioDevices()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetName_" data-uid="Android.Bluetooth.BluetoothAdapter.GetName*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetName" data-uid="Android.Bluetooth.BluetoothAdapter.GetName">
+  GetName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L542"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getName()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetProfileConnectionState_" data-uid="Android.Bluetooth.BluetoothAdapter.GetProfileConnectionState*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetProfileConnectionState_System_Int32_" data-uid="Android.Bluetooth.BluetoothAdapter.GetProfileConnectionState(System.Int32)">
+  GetProfileConnectionState(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getProfileConnectionState(int)">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getProfileConnectionState(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetProfileConnectionState(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetProfileProxy_" data-uid="Android.Bluetooth.BluetoothAdapter.GetProfileProxy*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetProfileProxy_Android_Content_Context_Android_Bluetooth_BluetoothProfile_ServiceListener_System_Int32_" data-uid="Android.Bluetooth.BluetoothAdapter.GetProfileProxy(Android.Content.Context,Android.Bluetooth.BluetoothProfile.ServiceListener,System.Int32)">
+  GetProfileProxy(Context, ServiceListener, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getProfileProxy(android.content.Context,android.bluetooth.BluetoothProfile.ServiceListener,int)">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getProfileProxy(android.content.Context,android.bluetooth.BluetoothProfile.ServiceListener,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetProfileProxy(Context arg0, BluetoothProfile.ServiceListener arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Bluetooth.BluetoothProfile.html">BluetoothProfile</a>.<a class="xref" href="Android.Bluetooth.BluetoothProfile.ServiceListener.html">ServiceListener</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.BluetoothProfile.ServiceListener.html">BluetoothProfile.ServiceListener</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetRemoteDevice_" data-uid="Android.Bluetooth.BluetoothAdapter.GetRemoteDevice*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetRemoteDevice_Java_Lang_String_" data-uid="Android.Bluetooth.BluetoothAdapter.GetRemoteDevice(Java.Lang.String)">
+  GetRemoteDevice(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteDevice(java.lang.String)">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteDevice(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BluetoothDevice GetRemoteDevice(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Bluetooth.BluetoothDevice.html">BluetoothDevice</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.BluetoothDevice.html">BluetoothDevice</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetRemoteDevice_" data-uid="Android.Bluetooth.BluetoothAdapter.GetRemoteDevice*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetRemoteDevice_System_Byte___" data-uid="Android.Bluetooth.BluetoothAdapter.GetRemoteDevice(System.Byte[])">
+  GetRemoteDevice(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteDevice(byte[])">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteDevice(byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BluetoothDevice GetRemoteDevice(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Bluetooth.BluetoothDevice.html">BluetoothDevice</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.BluetoothDevice.html">BluetoothDevice</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetRemoteLeDevice_" data-uid="Android.Bluetooth.BluetoothAdapter.GetRemoteLeDevice*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetRemoteLeDevice_Java_Lang_String_System_Int32_" data-uid="Android.Bluetooth.BluetoothAdapter.GetRemoteLeDevice(Java.Lang.String,System.Int32)">
+  GetRemoteLeDevice(String, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteLeDevice(java.lang.String,int)">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteLeDevice(java.lang.String,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BluetoothDevice GetRemoteLeDevice(String arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Bluetooth.BluetoothDevice.html">BluetoothDevice</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.BluetoothDevice.html">BluetoothDevice</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetScanMode_" data-uid="Android.Bluetooth.BluetoothAdapter.GetScanMode*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetScanMode" data-uid="Android.Bluetooth.BluetoothAdapter.GetScanMode">
+  GetScanMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getScanMode()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getScanMode()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetScanMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_GetState_" data-uid="Android.Bluetooth.BluetoothAdapter.GetState*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_GetState" data-uid="Android.Bluetooth.BluetoothAdapter.GetState">
+  GetState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getState()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getState()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsDiscovering_" data-uid="Android.Bluetooth.BluetoothAdapter.IsDiscovering*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsDiscovering" data-uid="Android.Bluetooth.BluetoothAdapter.IsDiscovering">
+  IsDiscovering()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L359"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isDiscovering()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isDiscovering()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDiscovering()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsEnabled_" data-uid="Android.Bluetooth.BluetoothAdapter.IsEnabled*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsEnabled" data-uid="Android.Bluetooth.BluetoothAdapter.IsEnabled">
+  IsEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isEnabled()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsLe2MPhySupported_" data-uid="Android.Bluetooth.BluetoothAdapter.IsLe2MPhySupported*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsLe2MPhySupported" data-uid="Android.Bluetooth.BluetoothAdapter.IsLe2MPhySupported">
+  IsLe2MPhySupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLe2MPhySupported()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLe2MPhySupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLe2MPhySupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsLeAudioBroadcastAssistantSupported_" data-uid="Android.Bluetooth.BluetoothAdapter.IsLeAudioBroadcastAssistantSupported*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsLeAudioBroadcastAssistantSupported" data-uid="Android.Bluetooth.BluetoothAdapter.IsLeAudioBroadcastAssistantSupported">
+  IsLeAudioBroadcastAssistantSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioBroadcastAssistantSupported()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioBroadcastAssistantSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IsLeAudioBroadcastAssistantSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsLeAudioBroadcastSourceSupported_" data-uid="Android.Bluetooth.BluetoothAdapter.IsLeAudioBroadcastSourceSupported*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsLeAudioBroadcastSourceSupported" data-uid="Android.Bluetooth.BluetoothAdapter.IsLeAudioBroadcastSourceSupported">
+  IsLeAudioBroadcastSourceSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioBroadcastSourceSupported()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioBroadcastSourceSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IsLeAudioBroadcastSourceSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsLeAudioSupported_" data-uid="Android.Bluetooth.BluetoothAdapter.IsLeAudioSupported*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsLeAudioSupported" data-uid="Android.Bluetooth.BluetoothAdapter.IsLeAudioSupported">
+  IsLeAudioSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioSupported()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IsLeAudioSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsLeCodedPhySupported_" data-uid="Android.Bluetooth.BluetoothAdapter.IsLeCodedPhySupported*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsLeCodedPhySupported" data-uid="Android.Bluetooth.BluetoothAdapter.IsLeCodedPhySupported">
+  IsLeCodedPhySupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeCodedPhySupported()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeCodedPhySupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLeCodedPhySupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsLeExtendedAdvertisingSupported_" data-uid="Android.Bluetooth.BluetoothAdapter.IsLeExtendedAdvertisingSupported*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsLeExtendedAdvertisingSupported" data-uid="Android.Bluetooth.BluetoothAdapter.IsLeExtendedAdvertisingSupported">
+  IsLeExtendedAdvertisingSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeExtendedAdvertisingSupported()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeExtendedAdvertisingSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLeExtendedAdvertisingSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsLePeriodicAdvertisingSupported_" data-uid="Android.Bluetooth.BluetoothAdapter.IsLePeriodicAdvertisingSupported*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsLePeriodicAdvertisingSupported" data-uid="Android.Bluetooth.BluetoothAdapter.IsLePeriodicAdvertisingSupported">
+  IsLePeriodicAdvertisingSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLePeriodicAdvertisingSupported()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLePeriodicAdvertisingSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLePeriodicAdvertisingSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsMultipleAdvertisementSupported_" data-uid="Android.Bluetooth.BluetoothAdapter.IsMultipleAdvertisementSupported*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsMultipleAdvertisementSupported" data-uid="Android.Bluetooth.BluetoothAdapter.IsMultipleAdvertisementSupported">
+  IsMultipleAdvertisementSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isMultipleAdvertisementSupported()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isMultipleAdvertisementSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMultipleAdvertisementSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsOffloadedFilteringSupported_" data-uid="Android.Bluetooth.BluetoothAdapter.IsOffloadedFilteringSupported*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsOffloadedFilteringSupported" data-uid="Android.Bluetooth.BluetoothAdapter.IsOffloadedFilteringSupported">
+  IsOffloadedFilteringSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isOffloadedFilteringSupported()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isOffloadedFilteringSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOffloadedFilteringSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_IsOffloadedScanBatchingSupported_" data-uid="Android.Bluetooth.BluetoothAdapter.IsOffloadedScanBatchingSupported*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_IsOffloadedScanBatchingSupported" data-uid="Android.Bluetooth.BluetoothAdapter.IsOffloadedScanBatchingSupported">
+  IsOffloadedScanBatchingSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isOffloadedScanBatchingSupported()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isOffloadedScanBatchingSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOffloadedScanBatchingSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_ListenUsingInsecureL2capChannel_" data-uid="Android.Bluetooth.BluetoothAdapter.ListenUsingInsecureL2capChannel*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_ListenUsingInsecureL2capChannel" data-uid="Android.Bluetooth.BluetoothAdapter.ListenUsingInsecureL2capChannel">
+  ListenUsingInsecureL2capChannel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureL2capChannel()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureL2capChannel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BluetoothServerSocket ListenUsingInsecureL2capChannel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Bluetooth.BluetoothServerSocket.html">BluetoothServerSocket</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.BluetoothServerSocket.html">BluetoothServerSocket</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_ListenUsingInsecureRfcommWithServiceRecord_" data-uid="Android.Bluetooth.BluetoothAdapter.ListenUsingInsecureRfcommWithServiceRecord*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_ListenUsingInsecureRfcommWithServiceRecord_Java_Lang_String_Java_Util_UUID_" data-uid="Android.Bluetooth.BluetoothAdapter.ListenUsingInsecureRfcommWithServiceRecord(Java.Lang.String,Java.Util.UUID)">
+  ListenUsingInsecureRfcommWithServiceRecord(String, UUID)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureRfcommWithServiceRecord(java.lang.String,java.util.UUID)">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureRfcommWithServiceRecord(java.lang.String,java.util.UUID)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BluetoothServerSocket ListenUsingInsecureRfcommWithServiceRecord(String arg0, UUID arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.UUID.html">UUID</a></dt>
+    <dd><p><a class="xref" href="Java.Util.UUID.html">UUID</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Bluetooth.BluetoothServerSocket.html">BluetoothServerSocket</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.BluetoothServerSocket.html">BluetoothServerSocket</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_ListenUsingL2capChannel_" data-uid="Android.Bluetooth.BluetoothAdapter.ListenUsingL2capChannel*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_ListenUsingL2capChannel" data-uid="Android.Bluetooth.BluetoothAdapter.ListenUsingL2capChannel">
+  ListenUsingL2capChannel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingL2capChannel()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingL2capChannel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BluetoothServerSocket ListenUsingL2capChannel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Bluetooth.BluetoothServerSocket.html">BluetoothServerSocket</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.BluetoothServerSocket.html">BluetoothServerSocket</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_ListenUsingRfcommWithServiceRecord_" data-uid="Android.Bluetooth.BluetoothAdapter.ListenUsingRfcommWithServiceRecord*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_ListenUsingRfcommWithServiceRecord_Java_Lang_String_Java_Util_UUID_" data-uid="Android.Bluetooth.BluetoothAdapter.ListenUsingRfcommWithServiceRecord(Java.Lang.String,Java.Util.UUID)">
+  ListenUsingRfcommWithServiceRecord(String, UUID)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingRfcommWithServiceRecord(java.lang.String,java.util.UUID)">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingRfcommWithServiceRecord(java.lang.String,java.util.UUID)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BluetoothServerSocket ListenUsingRfcommWithServiceRecord(String arg0, UUID arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.UUID.html">UUID</a></dt>
+    <dd><p><a class="xref" href="Java.Util.UUID.html">UUID</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Bluetooth.BluetoothServerSocket.html">BluetoothServerSocket</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.BluetoothServerSocket.html">BluetoothServerSocket</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_SetName_" data-uid="Android.Bluetooth.BluetoothAdapter.SetName*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_SetName_Java_Lang_String_" data-uid="Android.Bluetooth.BluetoothAdapter.SetName(Java.Lang.String)">
+  SetName(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L432"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#setName(java.lang.String)">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#setName(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetName(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_StartDiscovery_" data-uid="Android.Bluetooth.BluetoothAdapter.StartDiscovery*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_StartDiscovery" data-uid="Android.Bluetooth.BluetoothAdapter.StartDiscovery">
+  StartDiscovery()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startDiscovery()">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startDiscovery()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartDiscovery()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_StartLeScan_" data-uid="Android.Bluetooth.BluetoothAdapter.StartLeScan*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_StartLeScan_Android_Bluetooth_BluetoothAdapter_LeScanCallback_" data-uid="Android.Bluetooth.BluetoothAdapter.StartLeScan(Android.Bluetooth.BluetoothAdapter.LeScanCallback)">
+  StartLeScan(LeScanCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool StartLeScan(BluetoothAdapter.LeScanCallback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Bluetooth.BluetoothAdapter.html">BluetoothAdapter</a>.<a class="xref" href="Android.Bluetooth.BluetoothAdapter.LeScanCallback.html">LeScanCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.BluetoothAdapter.LeScanCallback.html">BluetoothAdapter.LeScanCallback</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_StartLeScan_" data-uid="Android.Bluetooth.BluetoothAdapter.StartLeScan*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_StartLeScan_Java_Util_UUID___Android_Bluetooth_BluetoothAdapter_LeScanCallback_" data-uid="Android.Bluetooth.BluetoothAdapter.StartLeScan(Java.Util.UUID[],Android.Bluetooth.BluetoothAdapter.LeScanCallback)">
+  StartLeScan(UUID[], LeScanCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L460"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(java.util.UUID[],android.bluetooth.BluetoothAdapter.LeScanCallback)">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(java.util.UUID[],android.bluetooth.BluetoothAdapter.LeScanCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool StartLeScan(UUID[] arg0, BluetoothAdapter.LeScanCallback arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.UUID.html">UUID</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Util.UUID.html">UUID</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Bluetooth.BluetoothAdapter.html">BluetoothAdapter</a>.<a class="xref" href="Android.Bluetooth.BluetoothAdapter.LeScanCallback.html">LeScanCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.BluetoothAdapter.LeScanCallback.html">BluetoothAdapter.LeScanCallback</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Bluetooth_BluetoothAdapter_StopLeScan_" data-uid="Android.Bluetooth.BluetoothAdapter.StopLeScan*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothAdapter_StopLeScan_Android_Bluetooth_BluetoothAdapter_LeScanCallback_" data-uid="Android.Bluetooth.BluetoothAdapter.StopLeScan(Android.Bluetooth.BluetoothAdapter.LeScanCallback)">
+  StopLeScan(LeScanCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L575"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#stopLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)">https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#stopLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void StopLeScan(BluetoothAdapter.LeScanCallback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Bluetooth.BluetoothAdapter.html">BluetoothAdapter</a>.<a class="xref" href="Android.Bluetooth.BluetoothAdapter.LeScanCallback.html">LeScanCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Bluetooth.BluetoothAdapter.LeScanCallback.html">BluetoothAdapter.LeScanCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothAdapter.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
