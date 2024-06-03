@@ -18,8 +18,8 @@ In Netdroid some callbacks are ready made. In this tutorial the **Predicate** in
 The concrete class implementing the interface is the following one:
 
 ```java
-public final class JNetPredicate extends JCListener implements Predicate {
-    public JNetPredicate(String key) throws JCNativeException {
+public final class Predicate extends JCListener implements java.util.function.Predicate {
+    public Predicate(String key) throws JCNativeException {
         super(key);
     }
 
@@ -45,7 +45,7 @@ Going on to the CLR side a possible concrete class in C# is as the following one
 ```c#
 public class Predicate<TObject> : JVMBridgeListener
 {
-	public override string ClassName => "org.mases.jnet.util.function.JNetPredicate";
+	public override string ClassName => "org.mases.netdroid.developed.java.util.function.Predicate";
 
 	Func<TObject, bool> executionFunction = null;
 	public virtual Func<TObject, bool> OnTest { get { return executionFunction; } }
