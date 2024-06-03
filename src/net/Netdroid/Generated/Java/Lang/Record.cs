@@ -23,10 +23,10 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Security.Acl
+namespace Java.Lang
 {
-    #region AclNotFoundException
-    public partial class AclNotFoundException
+    #region Record
+    public partial class Record
     {
         #region Constructors
 

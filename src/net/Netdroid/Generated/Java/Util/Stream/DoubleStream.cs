@@ -425,6 +425,15 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("dropWhile", "(Ljava/util/function/DoublePredicate;)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#mapMulti(java.util.stream.DoubleStream.DoubleMapMultiConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Stream.DoubleStream.DoubleMapMultiConsumer"/></param>
+        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        public Java.Util.Stream.DoubleStream MapMulti(Java.Util.Stream.DoubleStream.DoubleMapMultiConsumer arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("mapMulti", "(Ljava/util/stream/DoubleStream$DoubleMapMultiConsumer;)Ljava/util/stream/DoubleStream;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#takeWhile(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>

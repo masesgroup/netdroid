@@ -56,7 +56,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public static Java.Util.Collection InvokeAll(Java.Util.Collection arg0)
         {
-            return SExecute<Java.Util.Collection>(LocalBridgeClazz, "invokeAll", arg0);
+            return SExecuteWithSignature<Java.Util.Collection>(LocalBridgeClazz, "invokeAll", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable,java.lang.Object)"/>
@@ -376,7 +376,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public static Java.Util.Collection<T> InvokeAll<T>(Java.Util.Collection<T> arg0)
         {
-            return SExecute<Java.Util.Collection<T>>(LocalBridgeClazz, "invokeAll", arg0);
+            return SExecuteWithSignature<Java.Util.Collection<T>>(LocalBridgeClazz, "invokeAll", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable,java.lang.Object)"/>

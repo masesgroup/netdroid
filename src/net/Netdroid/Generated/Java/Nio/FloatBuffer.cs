@@ -195,6 +195,28 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("get", "([F)Ljava/nio/FloatBuffer;", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#get(int,float[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        public Java.Nio.FloatBuffer Get(int arg0, float[] arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.FloatBuffer>("get", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#get(int,float[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        public Java.Nio.FloatBuffer Get(int arg0, float[] arg1)
+        {
+            return IExecute<Java.Nio.FloatBuffer>("get", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(float[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -204,6 +226,40 @@ namespace Java.Nio
         public Java.Nio.FloatBuffer Put(float[] arg0, int arg1, int arg2)
         {
             return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(int,float[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        public Java.Nio.FloatBuffer Put(int arg0, float[] arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(int,float[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        public Java.Nio.FloatBuffer Put(int arg0, float[] arg1)
+        {
+            return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(int,java.nio.FloatBuffer,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.FloatBuffer"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        public Java.Nio.FloatBuffer Put(int arg0, Java.Nio.FloatBuffer arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(java.nio.FloatBuffer)"/>

@@ -101,6 +101,15 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendChronologyText", "(Ljava/time/format/TextStyle;)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendDayPeriodText(java.time.format.TextStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
+        public Java.Time.Format.DateTimeFormatterBuilder AppendDayPeriodText(Java.Time.Format.TextStyle arg0)
+        {
+            return IExecuteWithSignature<Java.Time.Format.DateTimeFormatterBuilder>("appendDayPeriodText", "(Ljava/time/format/TextStyle;)Ljava/time/format/DateTimeFormatterBuilder;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatterBuilder.html#appendFraction(java.time.temporal.TemporalField,int,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>

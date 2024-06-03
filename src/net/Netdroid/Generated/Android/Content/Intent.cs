@@ -2212,17 +2212,6 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getParcelableArrayListExtra(java.lang.String,java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.ArrayList"/></returns>
-        public Java.Util.ArrayList<T> GetParcelableArrayListExtra<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
-        {
-            return IExecute<Java.Util.ArrayList<T>>("getParcelableArrayListExtra", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getParcelableArrayListExtra(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -2231,18 +2220,7 @@ namespace Android.Content
         [global::System.Obsolete()]
         public Java.Util.ArrayList<T> GetParcelableArrayListExtra<T>(Java.Lang.String arg0) where T : Android.Os.IParcelable, new()
         {
-            return IExecute<Java.Util.ArrayList<T>>("getParcelableArrayListExtra", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getParcelableExtra(java.lang.String,java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T GetParcelableExtra<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
-        {
-            return IExecute<T>("getParcelableExtra", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.ArrayList<T>>("getParcelableArrayListExtra", "(Ljava/lang/String;)Ljava/util/ArrayList;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getParcelableExtra(java.lang.String)"/>
@@ -2253,7 +2231,7 @@ namespace Android.Content
         [global::System.Obsolete()]
         public T GetParcelableExtra<T>(Java.Lang.String arg0) where T : Android.Os.IParcelable, new()
         {
-            return IExecute<T>("getParcelableExtra", arg0);
+            return IExecuteWithSignature<T>("getParcelableExtra", "(Ljava/lang/String;)Landroid/os/Parcelable;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getSerializableExtra(java.lang.String,java.lang.Class)"/>
@@ -2265,6 +2243,28 @@ namespace Android.Content
         public T GetSerializableExtra<T>(Java.Lang.String arg0, Java.Lang.Class arg1) where T : Java.Io.ISerializable, new()
         {
             return IExecute<T>("getSerializableExtra", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getParcelableArrayListExtra(java.lang.String,java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="Java.Util.ArrayList"/></returns>
+        public Java.Util.ArrayList<T> GetParcelableArrayListExtra<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
+        {
+            return IExecute<Java.Util.ArrayList<T>>("getParcelableArrayListExtra", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#getParcelableExtra(java.lang.String,java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public T GetParcelableExtra<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
+        {
+            return IExecute<T>("getParcelableExtra", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getParcelableArrayExtra(java.lang.String,java.lang.Class)"/>

@@ -124,6 +124,7 @@ namespace Java.Security.Cert
         /// <see href="https://developer.android.com/reference/java/security/cert/X509CertSelector.html#getIssuerAsString()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
         public Java.Lang.String GetIssuerAsString()
         {
             return IExecuteWithSignature<Java.Lang.String>("getIssuerAsString", "()Ljava/lang/String;");
@@ -132,6 +133,7 @@ namespace Java.Security.Cert
         /// <see href="https://developer.android.com/reference/java/security/cert/X509CertSelector.html#getSubjectAsString()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
         public Java.Lang.String GetSubjectAsString()
         {
             return IExecuteWithSignature<Java.Lang.String>("getSubjectAsString", "()Ljava/lang/String;");
@@ -327,6 +329,7 @@ namespace Java.Security.Cert
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
+        [global::System.Obsolete()]
         public void SetIssuer(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setIssuer", "(Ljava/lang/String;)V", arg0);
@@ -412,6 +415,7 @@ namespace Java.Security.Cert
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
+        [global::System.Obsolete()]
         public void SetSubject(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setSubject", "(Ljava/lang/String;)V", arg0);

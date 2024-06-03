@@ -379,6 +379,50 @@ namespace Java.Util.Stream
             IExecuteWithSignature("forEachOrdered", "(Ljava/util/function/Consumer;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#mapMulti(java.util.function.BiConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream MapMulti(Java.Util.Function.BiConsumer arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Stream.Stream>("mapMulti", "(Ljava/util/function/BiConsumer;)Ljava/util/stream/Stream;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#toList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List ToList()
+        {
+            return IExecuteWithSignature<Java.Util.List>("toList", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#mapMultiToDouble(java.util.function.BiConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        public Java.Util.Stream.DoubleStream MapMultiToDouble(Java.Util.Function.BiConsumer arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("mapMultiToDouble", "(Ljava/util/function/BiConsumer;)Ljava/util/stream/DoubleStream;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#mapMultiToInt(java.util.function.BiConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        public Java.Util.Stream.IntStream MapMultiToInt(Java.Util.Function.BiConsumer arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Stream.IntStream>("mapMultiToInt", "(Ljava/util/function/BiConsumer;)Ljava/util/stream/IntStream;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#mapMultiToLong(java.util.function.BiConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+        public Java.Util.Stream.LongStream MapMultiToLong(Java.Util.Function.BiConsumer arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Stream.LongStream>("mapMultiToLong", "(Ljava/util/function/BiConsumer;)Ljava/util/stream/LongStream;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#dropWhile(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
@@ -816,6 +860,59 @@ namespace Java.Util.Stream
         public void ForEachOrdered<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             IExecuteWithSignature("forEachOrdered", "(Ljava/util/function/Consumer;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#mapMulti(java.util.function.BiConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <typeparam name="R"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0objectSuperJava_Util_Function_Consumer_R_"><see cref="Java.Util.Function.Consumer{R}"/></typeparam>
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream<R> MapMulti<R, Arg0objectSuperT, Arg0objectSuperJava_Util_Function_Consumer_R_>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperJava_Util_Function_Consumer_R_> arg0) where Arg0objectSuperT : T where Arg0objectSuperJava_Util_Function_Consumer_R_ : Java.Util.Function.Consumer<R>
+        {
+            return IExecuteWithSignature<Java.Util.Stream.Stream<R>>("mapMulti", "(Ljava/util/function/BiConsumer;)Ljava/util/stream/Stream;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#toList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<T> ToList()
+        {
+            return IExecuteWithSignature<Java.Util.List<T>>("toList", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#mapMultiToDouble(java.util.function.BiConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0objectSuperJava_Util_Function_DoubleConsumer"><see cref="Java.Util.Function.DoubleConsumer"/></typeparam>
+        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        public Java.Util.Stream.DoubleStream MapMultiToDouble<Arg0objectSuperT, Arg0objectSuperJava_Util_Function_DoubleConsumer>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperJava_Util_Function_DoubleConsumer> arg0) where Arg0objectSuperT : T where Arg0objectSuperJava_Util_Function_DoubleConsumer : Java.Util.Function.DoubleConsumer
+        {
+            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("mapMultiToDouble", "(Ljava/util/function/BiConsumer;)Ljava/util/stream/DoubleStream;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#mapMultiToInt(java.util.function.BiConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0objectSuperJava_Util_Function_IntConsumer"><see cref="Java.Util.Function.IntConsumer"/></typeparam>
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        public Java.Util.Stream.IntStream MapMultiToInt<Arg0objectSuperT, Arg0objectSuperJava_Util_Function_IntConsumer>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperJava_Util_Function_IntConsumer> arg0) where Arg0objectSuperT : T where Arg0objectSuperJava_Util_Function_IntConsumer : Java.Util.Function.IntConsumer
+        {
+            return IExecuteWithSignature<Java.Util.Stream.IntStream>("mapMultiToInt", "(Ljava/util/function/BiConsumer;)Ljava/util/stream/IntStream;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#mapMultiToLong(java.util.function.BiConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0objectSuperJava_Util_Function_LongConsumer"><see cref="Java.Util.Function.LongConsumer"/></typeparam>
+        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+        public Java.Util.Stream.LongStream MapMultiToLong<Arg0objectSuperT, Arg0objectSuperJava_Util_Function_LongConsumer>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperJava_Util_Function_LongConsumer> arg0) where Arg0objectSuperT : T where Arg0objectSuperJava_Util_Function_LongConsumer : Java.Util.Function.LongConsumer
+        {
+            return IExecuteWithSignature<Java.Util.Stream.LongStream>("mapMultiToLong", "(Ljava/util/function/BiConsumer;)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#dropWhile(java.util.function.Predicate)"/>

@@ -30,6 +30,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://developer.android.com/reference/java/security/AccessControlContext.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class AccessControlContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AccessControlContext>
     {
         const string _bridgeClassName = "java.security.AccessControlContext";
@@ -74,6 +75,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://developer.android.com/reference/java/security/AccessControlException.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class AccessControlException : Java.Lang.SecurityException
     {
         const string _bridgeClassName = "java.security.AccessControlException";
@@ -91,6 +93,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://developer.android.com/reference/java/security/AccessController.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class AccessController : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AccessController>
     {
         const string _bridgeClassName = "java.security.AccessController";
@@ -781,6 +784,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://developer.android.com/reference/java/security/DomainCombiner.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class DomainCombiner : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DomainCombiner>
     {
         const string _bridgeClassName = "java.security.DomainCombiner";
@@ -2380,6 +2384,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://developer.android.com/reference/java/security/Policy.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class Policy : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Policy>
     {
         const string _bridgeClassName = "java.security.Policy";
@@ -2422,6 +2427,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Policy.Parameters.html"/>
         /// </summary>
+        [global::System.Obsolete()]
         public partial class Parameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Parameters>
         {
             const string _bridgeClassName = "java.security.Policy$Parameters";
@@ -2472,6 +2478,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://developer.android.com/reference/java/security/PolicySpi.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class PolicySpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PolicySpi>
     {
         const string _bridgeClassName = "java.security.PolicySpi";

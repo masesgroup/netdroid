@@ -65,9 +65,19 @@ namespace Java.Lang.Ref
         /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#isEnqueued()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool IsEnqueued()
         {
             return IExecuteWithSignature<bool>("isEnqueued", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#refersTo(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool RefersTo(object arg0)
+        {
+            return IExecuteWithSignature<bool>("refersTo", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#get()"/>
@@ -139,9 +149,19 @@ namespace Java.Lang.Ref
         /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#isEnqueued()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool IsEnqueued()
         {
             return IExecuteWithSignature<bool>("isEnqueued", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#refersTo(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool RefersTo(T arg0)
+        {
+            return IExecuteWithSignature<bool>("refersTo", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html#get()"/>

@@ -70,12 +70,13 @@ namespace Java.Lang
         [global::System.Obsolete()]
         public bool AllowThreadSuspension(bool arg0)
         {
-            return IExecute<bool>("allowThreadSuspension", arg0);
+            return IExecuteWithSignature<bool>("allowThreadSuspension", "(Z)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/ThreadGroup.html#isDaemon()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool IsDaemon()
         {
             return IExecuteWithSignature<bool>("isDaemon", "()Z");
@@ -116,6 +117,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/ThreadGroup.html#checkAccess()"/>
         /// </summary>
+        [global::System.Obsolete()]
         public void CheckAccess()
         {
             IExecuteWithSignature("checkAccess", "()V");
@@ -123,6 +125,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/ThreadGroup.html#destroy()"/>
         /// </summary>
+        [global::System.Obsolete()]
         public void Destroy()
         {
             IExecuteWithSignature("destroy", "()V");
@@ -146,6 +149,7 @@ namespace Java.Lang
         /// <see href="https://developer.android.com/reference/java/lang/ThreadGroup.html#setDaemon(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
         public void SetDaemon(bool arg0)
         {
             IExecuteWithSignature("setDaemon", "(Z)V", arg0);
@@ -232,9 +236,10 @@ namespace Java.Lang
         /// <see href="https://developer.android.com/reference/java/lang/ThreadGroup.html#isDestroyed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool IsDestroyed()
         {
-            return IExecute<bool>("isDestroyed");
+            return IExecuteWithSignature<bool>("isDestroyed", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/ThreadGroup.html#list()"/>

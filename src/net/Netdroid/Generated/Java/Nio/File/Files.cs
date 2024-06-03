@@ -790,6 +790,17 @@ namespace Java.Nio.File
             return SExecute<long>(LocalBridgeClazz, "copy", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#mismatch(java.nio.file.Path,java.nio.file.Path)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public static long Mismatch(Java.Nio.File.Path arg0, Java.Nio.File.Path arg1)
+        {
+            return SExecute<long>(LocalBridgeClazz, "mismatch", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#size(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>

@@ -512,6 +512,15 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "abs", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Math.html#absExact(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        public static int AbsExact(int arg0)
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "absExact", "(I)I", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Math.html#addExact(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -662,6 +671,15 @@ namespace Java.Lang
         public static long Abs(long arg0)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "abs", "(J)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Math.html#absExact(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="long"/></returns>
+        public static long AbsExact(long arg0)
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "absExact", "(J)J", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Math.html#addExact(long,long)"/>

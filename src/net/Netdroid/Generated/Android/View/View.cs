@@ -2572,7 +2572,7 @@ namespace Android.View
         /// <returns><typeparamref name="T"/></returns>
         public T FindViewById<T>(int arg0) where T : Android.View.View
         {
-            return IExecute<T>("findViewById", arg0);
+            return IExecuteWithSignature<T>("findViewById", "(I)Landroid/view/View;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#findViewWithTag(java.lang.Object)"/>
@@ -2582,7 +2582,7 @@ namespace Android.View
         /// <returns><typeparamref name="T"/></returns>
         public T FindViewWithTag<T>(object arg0) where T : Android.View.View
         {
-            return IExecute<T>("findViewWithTag", arg0);
+            return IExecuteWithSignature<T>("findViewWithTag", "(Ljava/lang/Object;)Landroid/view/View;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#requireViewById(int)"/>
@@ -2592,7 +2592,7 @@ namespace Android.View
         /// <returns><typeparamref name="T"/></returns>
         public T RequireViewById<T>(int arg0) where T : Android.View.View
         {
-            return IExecute<T>("requireViewById", arg0);
+            return IExecuteWithSignature<T>("requireViewById", "(I)Landroid/view/View;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getContext()"/>

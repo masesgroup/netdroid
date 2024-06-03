@@ -416,6 +416,53 @@ namespace Java.Util.Concurrent
         {
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("whenCompleteAsync", "(Ljava/util/function/BiConsumer;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyAsync(Java.Util.Function.Function arg0, Java.Util.Concurrent.Executor arg1)
+        {
+            return IExecute<Java.Util.Concurrent.CompletionStage>("exceptionallyAsync", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyAsync(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyAsync(Java.Util.Function.Function arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyCompose(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyCompose(Java.Util.Function.Function arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyCompose", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyComposeAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyComposeAsync(Java.Util.Function.Function arg0, Java.Util.Concurrent.Executor arg1)
+        {
+            return IExecute<Java.Util.Concurrent.CompletionStage>("exceptionallyComposeAsync", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyComposeAsync(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyComposeAsync(Java.Util.Function.Function arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyComposeAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
+        }
 
         #endregion
 
@@ -921,6 +968,58 @@ namespace Java.Util.Concurrent
         public Java.Util.Concurrent.CompletionStage<T> WhenCompleteAsync<Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable> arg0) where Arg0objectSuperT : T where Arg0objectSuperJava_Lang_Throwable : Java.Lang.Throwable
         {
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<T>>("whenCompleteAsync", "(Ljava/util/function/BiConsumer;)Ljava/util/concurrent/CompletionStage;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage<T> ExceptionallyAsync<Arg0ExtendsT>(Java.Util.Function.Function<Java.Lang.Throwable, Arg0ExtendsT> arg0, Java.Util.Concurrent.Executor arg1) where Arg0ExtendsT : T
+        {
+            return IExecute<Java.Util.Concurrent.CompletionStage<T>>("exceptionallyAsync", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyAsync(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage<T> ExceptionallyAsync<Arg0ExtendsT>(Java.Util.Function.Function<Java.Lang.Throwable, Arg0ExtendsT> arg0) where Arg0ExtendsT : T
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<T>>("exceptionallyAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyCompose(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_"><see cref="Java.Util.Concurrent.CompletionStage{T}"/></typeparam>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage<T> ExceptionallyCompose<Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_>(Java.Util.Function.Function<Java.Lang.Throwable, Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_> arg0) where Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_ : Java.Util.Concurrent.CompletionStage<T>
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<T>>("exceptionallyCompose", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyComposeAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <typeparam name="Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_"><see cref="Java.Util.Concurrent.CompletionStage{T}"/></typeparam>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage<T> ExceptionallyComposeAsync<Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_>(Java.Util.Function.Function<Java.Lang.Throwable, Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_> arg0, Java.Util.Concurrent.Executor arg1) where Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_ : Java.Util.Concurrent.CompletionStage<T>
+        {
+            return IExecute<Java.Util.Concurrent.CompletionStage<T>>("exceptionallyComposeAsync", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html#exceptionallyComposeAsync(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_"><see cref="Java.Util.Concurrent.CompletionStage{T}"/></typeparam>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage<T> ExceptionallyComposeAsync<Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_>(Java.Util.Function.Function<Java.Lang.Throwable, Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_> arg0) where Arg0ExtendsJava_Util_Concurrent_CompletionStage_T_ : Java.Util.Concurrent.CompletionStage<T>
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<T>>("exceptionallyComposeAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
 
         #endregion

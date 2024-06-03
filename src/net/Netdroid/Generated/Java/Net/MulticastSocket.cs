@@ -68,6 +68,7 @@ namespace Java.Net
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
+        [global::System.Obsolete()]
         public bool GetLoopbackMode()
         {
             return IExecuteWithSignature<bool>("getLoopbackMode", "()Z");
@@ -96,6 +97,7 @@ namespace Java.Net
         /// </summary>
         /// <returns><see cref="Java.Net.InetAddress"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
+        [global::System.Obsolete()]
         public Java.Net.InetAddress GetInterface()
         {
             return IExecuteWithSignature<Java.Net.InetAddress>("getInterface", "()Ljava/net/InetAddress;");
@@ -114,38 +116,20 @@ namespace Java.Net
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <exception cref="Java.Io.IOException"/>
+        [global::System.Obsolete()]
         public void JoinGroup(Java.Net.InetAddress arg0)
         {
             IExecuteWithSignature("joinGroup", "(Ljava/net/InetAddress;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/MulticastSocket.html#joinGroup(java.net.SocketAddress,java.net.NetworkInterface)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        public void JoinGroup(Java.Net.SocketAddress arg0, Java.Net.NetworkInterface arg1)
-        {
-            IExecute("joinGroup", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/MulticastSocket.html#leaveGroup(java.net.InetAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <exception cref="Java.Io.IOException"/>
+        [global::System.Obsolete()]
         public void LeaveGroup(Java.Net.InetAddress arg0)
         {
             IExecuteWithSignature("leaveGroup", "(Ljava/net/InetAddress;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/MulticastSocket.html#leaveGroup(java.net.SocketAddress,java.net.NetworkInterface)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        public void LeaveGroup(Java.Net.SocketAddress arg0, Java.Net.NetworkInterface arg1)
-        {
-            IExecute("leaveGroup", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/MulticastSocket.html#send(java.net.DatagramPacket,byte)"/>
@@ -163,6 +147,7 @@ namespace Java.Net
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <exception cref="Java.Net.SocketException"/>
+        [global::System.Obsolete()]
         public void SetInterface(Java.Net.InetAddress arg0)
         {
             IExecuteWithSignature("setInterface", "(Ljava/net/InetAddress;)V", arg0);
@@ -172,6 +157,7 @@ namespace Java.Net
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Net.SocketException"/>
+        [global::System.Obsolete()]
         public void SetLoopbackMode(bool arg0)
         {
             IExecuteWithSignature("setLoopbackMode", "(Z)V", arg0);

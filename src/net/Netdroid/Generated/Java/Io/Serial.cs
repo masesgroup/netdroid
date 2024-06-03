@@ -23,10 +23,28 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Security.Acl
+namespace Java.Io
 {
-    #region NotOwnerException
-    public partial class NotOwnerException
+    #region ISerial
+    /// <summary>
+    /// .NET interface for TO BE DEFINED FROM USER
+    /// </summary>
+    public partial interface ISerial : Java.Lang.Annotation.IAnnotation
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region Serial
+    public partial class Serial : Java.Io.ISerial
     {
         #region Constructors
 

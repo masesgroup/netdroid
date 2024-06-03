@@ -53,7 +53,7 @@ namespace Java.Nio.File
         /// <returns><typeparamref name="V"/></returns>
         public V GetFileStoreAttributeView<V>(Java.Lang.Class arg0) where V : Java.Nio.File.Attribute.IFileStoreAttributeView, new()
         {
-            return IExecute<V>("getFileStoreAttributeView", arg0);
+            return IExecuteWithSignature<V>("getFileStoreAttributeView", "(Ljava/lang/Class;)Ljava/nio/file/attribute/FileStoreAttributeView;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/FileStore.html#isReadOnly()"/>

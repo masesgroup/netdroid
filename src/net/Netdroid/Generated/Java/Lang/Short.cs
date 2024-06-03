@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region Short
-    public partial class Short
+    public partial class Short : Java.Lang.IComparable<Java.Lang.Short>
     {
         #region Constructors
         /// <summary>

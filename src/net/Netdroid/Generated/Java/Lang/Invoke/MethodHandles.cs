@@ -53,6 +53,33 @@ namespace Java.Lang.Invoke
             return SExecute<T>(LocalBridgeClazz, "reflectAs", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#classData(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
+        public static T ClassData<T>(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Class arg2)
+        {
+            return SExecute<T>(LocalBridgeClazz, "classData", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#classDataAt(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
+        public static T ClassDataAt<T>(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Class arg2, int arg3)
+        {
+            return SExecute<T>(LocalBridgeClazz, "classDataAt", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#arrayConstructor(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -191,6 +218,15 @@ namespace Java.Lang.Invoke
         public static Java.Lang.Invoke.MethodHandle DropArgumentsToMatch(Java.Lang.Invoke.MethodHandle arg0, int arg1, Java.Util.List<Java.Lang.Class> arg2, int arg3)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "dropArgumentsToMatch", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#dropReturn(java.lang.invoke.MethodHandle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+        public static Java.Lang.Invoke.MethodHandle DropReturn(Java.Lang.Invoke.MethodHandle arg0)
+        {
+            return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "dropReturn", "(Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#empty(java.lang.invoke.MethodType)"/>
@@ -344,6 +380,16 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "spreadInvoker", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#tableSwitch(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+        public static Java.Lang.Invoke.MethodHandle TableSwitch(Java.Lang.Invoke.MethodHandle arg0, params Java.Lang.Invoke.MethodHandle[] arg1)
+        {
+            if (arg1.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "tableSwitch", arg0); else return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "tableSwitch", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#throwException(java.lang.Class,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -489,6 +535,12 @@ namespace Java.Lang.Invoke
             private static int _MODULEContent = default;
             private static bool _MODULEReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#ORIGINAL"/>
+            /// </summary>
+            public static int ORIGINAL { get { if (!_ORIGINALReady) { _ORIGINALContent = SGetField<int>(LocalBridgeClazz, "ORIGINAL"); _ORIGINALReady = true; } return _ORIGINALContent; } }
+            private static int _ORIGINALContent = default;
+            private static bool _ORIGINALReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#PACKAGE"/>
             /// </summary>
             public static int PACKAGE { get { if (!_PACKAGEReady) { _PACKAGEContent = SGetField<int>(LocalBridgeClazz, "PACKAGE"); _PACKAGEReady = true; } return _PACKAGEContent; } }
@@ -527,9 +579,18 @@ namespace Java.Lang.Invoke
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#hasFullPrivilegeAccess()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool HasFullPrivilegeAccess()
+            {
+                return IExecuteWithSignature<bool>("hasFullPrivilegeAccess", "()Z");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
+            [global::System.Obsolete()]
             public bool HasPrivateAccess()
             {
                 return IExecuteWithSignature<bool>("hasPrivateAccess", "()Z");
@@ -550,7 +611,7 @@ namespace Java.Lang.Invoke
             /// <exception cref="Java.Lang.IllegalAccessException"/>
             public Java.Lang.Class AccessClass(Java.Lang.Class arg0)
             {
-                return IExecute<Java.Lang.Class>("accessClass", arg0);
+                return IExecuteWithSignature<Java.Lang.Class>("accessClass", "(Ljava/lang/Class;)Ljava/lang/Class;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#defineClass(byte[])"/>
@@ -561,6 +622,16 @@ namespace Java.Lang.Invoke
             public Java.Lang.Class DefineClass(byte[] arg0)
             {
                 return IExecuteWithSignature<Java.Lang.Class>("defineClass", "([B)Ljava/lang/Class;", new object[] { arg0 });
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#ensureInitialized(java.lang.Class)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+            /// <returns><see cref="Java.Lang.Class"/></returns>
+            /// <exception cref="Java.Lang.IllegalAccessException"/>
+            public Java.Lang.Class EnsureInitialized(Java.Lang.Class arg0)
+            {
+                return IExecuteWithSignature<Java.Lang.Class>("ensureInitialized", "(Ljava/lang/Class;)Ljava/lang/Class;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#findClass(java.lang.String)"/>
@@ -580,6 +651,14 @@ namespace Java.Lang.Invoke
             public Java.Lang.Class LookupClass()
             {
                 return IExecuteWithSignature<Java.Lang.Class>("lookupClass", "()Ljava/lang/Class;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#previousLookupClass()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.Class"/></returns>
+            public Java.Lang.Class PreviousLookupClass()
+            {
+                return IExecuteWithSignature<Java.Lang.Class>("previousLookupClass", "()Ljava/lang/Class;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#bind(java.lang.Object,java.lang.String,java.lang.invoke.MethodType)"/>
@@ -759,6 +838,31 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Invoke.MethodHandleInfo>("revealDirect", "(Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandleInfo;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#defineHiddenClass(byte[],boolean,java.lang.invoke.MethodHandles.Lookup.ClassOption[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="byte"/></param>
+            /// <param name="arg1"><see cref="bool"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodHandles.Lookup.ClassOption"/></param>
+            /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
+            /// <exception cref="Java.Lang.IllegalAccessException"/>
+            public Java.Lang.Invoke.MethodHandles.Lookup DefineHiddenClass(byte[] arg0, bool arg1, params Java.Lang.Invoke.MethodHandles.Lookup.ClassOption[] arg2)
+            {
+                if (arg2.Length == 0) return IExecute<Java.Lang.Invoke.MethodHandles.Lookup>("defineHiddenClass", arg0, arg1); else return IExecute<Java.Lang.Invoke.MethodHandles.Lookup>("defineHiddenClass", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#defineHiddenClassWithClassData(byte[],java.lang.Object,boolean,java.lang.invoke.MethodHandles.Lookup.ClassOption[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="byte"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
+            /// <param name="arg2"><see cref="bool"/></param>
+            /// <param name="arg3"><see cref="Java.Lang.Invoke.MethodHandles.Lookup.ClassOption"/></param>
+            /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
+            /// <exception cref="Java.Lang.IllegalAccessException"/>
+            public Java.Lang.Invoke.MethodHandles.Lookup DefineHiddenClassWithClassData(byte[] arg0, object arg1, bool arg2, params Java.Lang.Invoke.MethodHandles.Lookup.ClassOption[] arg3)
+            {
+                if (arg3.Length == 0) return IExecute<Java.Lang.Invoke.MethodHandles.Lookup>("defineHiddenClassWithClassData", arg0, arg1, arg2); else return IExecute<Java.Lang.Invoke.MethodHandles.Lookup>("defineHiddenClassWithClassData", arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#dropLookupMode(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -816,7 +920,67 @@ namespace Java.Lang.Invoke
             #endregion
 
             #region Nested classes
+            #region ClassOption
+            public partial class ClassOption
+            {
+                #region Constructors
 
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.ClassOption.html#NESTMATE"/>
+                /// </summary>
+                public static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption NESTMATE { get { if (!_NESTMATEReady) { _NESTMATEContent = SGetField<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>(LocalBridgeClazz, "NESTMATE"); _NESTMATEReady = true; } return _NESTMATEContent; } }
+                private static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption _NESTMATEContent = default;
+                private static bool _NESTMATEReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.ClassOption.html#STRONG"/>
+                /// </summary>
+                public static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption STRONG { get { if (!_STRONGReady) { _STRONGContent = SGetField<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>(LocalBridgeClazz, "STRONG"); _STRONGReady = true; } return _STRONGContent; } }
+                private static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption _STRONGContent = default;
+                private static bool _STRONGReady = false; // this is used because in case of generics 
+
+                #endregion
+
+                #region Static methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.ClassOption.html#valueOf(java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup.ClassOption"/></returns>
+                public static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption ValueOf(Java.Lang.String arg0)
+                {
+                    return SExecuteWithSignature<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/invoke/MethodHandles$Lookup$ClassOption;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.ClassOption.html#values()"/>
+                /// </summary>
+                /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup.ClassOption"/></returns>
+                public static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption[] Values()
+                {
+                    return SExecuteWithSignatureArray<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>(LocalBridgeClazz, "values", "()[Ljava/lang/invoke/MethodHandles$Lookup$ClassOption;");
+                }
+
+                #endregion
+
+                #region Instance methods
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+        
             #endregion
 
             // TODO: complete the class

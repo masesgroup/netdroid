@@ -64,17 +64,6 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/sql/SQLXML.html#getSource(java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Xml.Transform.ISource"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public T GetSource<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.ISource, new()
-        {
-            return IExecute<T>("getSource", arg0);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/SQLXML.html#setResult(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -83,7 +72,18 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public T SetResult<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.IResult, new()
         {
-            return IExecute<T>("setResult", arg0);
+            return IExecuteWithSignature<T>("setResult", "(Ljava/lang/Class;)Ljavax/xml/transform/Result;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLXML.html#getSource(java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"><see cref="Javax.Xml.Transform.ISource"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public T GetSource<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.ISource, new()
+        {
+            return IExecuteWithSignature<T>("getSource", "(Ljava/lang/Class;)Ljavax/xml/transform/Source;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/SQLXML.html#getBinaryStream()"/>

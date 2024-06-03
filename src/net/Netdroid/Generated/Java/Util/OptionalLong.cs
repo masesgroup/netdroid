@@ -72,7 +72,7 @@ namespace Java.Util
         /// <exception cref="Java.Lang.Throwable"/>
         public long OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX : X
         {
-            return IExecute<long>("orElseThrow", arg0);
+            return IExecuteWithSignature<long>("orElseThrow", "(Ljava/util/function/Supplier;)J", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/OptionalLong.html#isEmpty()"/>

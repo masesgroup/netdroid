@@ -58,6 +58,12 @@ namespace Java.Time.Chrono
         private static Java.Time.Chrono.JapaneseEra _MEIJIContent = default;
         private static bool _MEIJIReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseEra.html#REIWA"/>
+        /// </summary>
+        public static Java.Time.Chrono.JapaneseEra REIWA { get { if (!_REIWAReady) { _REIWAContent = SGetField<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "REIWA"); _REIWAReady = true; } return _REIWAContent; } }
+        private static Java.Time.Chrono.JapaneseEra _REIWAContent = default;
+        private static bool _REIWAReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseEra.html#SHOWA"/>
         /// </summary>
         public static Java.Time.Chrono.JapaneseEra SHOWA { get { if (!_SHOWAReady) { _SHOWAContent = SGetField<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "SHOWA"); _SHOWAReady = true; } return _SHOWAContent; } }

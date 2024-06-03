@@ -53,7 +53,7 @@ namespace Android.Icu.Number
         /// <returns><typeparamref name="A"/></returns>
         public A AppendTo<A>(A arg0) where A : Java.Lang.IAppendable, new()
         {
-            return IExecute<A>("appendTo", arg0);
+            return IExecuteWithSignature<A>("appendTo", "(Ljava/lang/Appendable;)Ljava/lang/Appendable;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumberRange.html#getIdentityResult()"/>

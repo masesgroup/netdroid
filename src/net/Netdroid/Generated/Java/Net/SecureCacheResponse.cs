@@ -87,6 +87,14 @@ namespace Java.Net
         {
             return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.Certificate>>("getServerCertificateChain", "()Ljava/util/List;");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/SecureCacheResponse.html#getSSLSession()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional<Javax.Net.Ssl.SSLSession> GetSSLSession()
+        {
+            return IExecuteWithSignature<Java.Util.Optional<Javax.Net.Ssl.SSLSession>>("getSSLSession", "()Ljava/util/Optional;");
+        }
 
         #endregion
 

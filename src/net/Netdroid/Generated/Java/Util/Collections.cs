@@ -275,6 +275,37 @@ namespace Java.Util
             return SExecute<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "unmodifiableSortedMap", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#sort(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="T"></typeparam>
+        public static void Sort<T>(Java.Util.List<T> arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "sort", "(Ljava/util/List;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#max(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public static T Max<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
+        {
+            return SExecute<T>(LocalBridgeClazz, "max", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Collections.html#min(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public static T Min<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
+        {
+            return SExecute<T>(LocalBridgeClazz, "min", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Collections.html#addAll(java.util.Collection,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
@@ -503,28 +534,6 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.SortedSet<T>>(LocalBridgeClazz, "unmodifiableSortedSet", "(Ljava/util/SortedSet;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/Collections.html#max(java.util.Collection)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T Max<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
-        {
-            return SExecute<T>(LocalBridgeClazz, "max", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/Collections.html#min(java.util.Collection)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T Min<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
-        {
-            return SExecute<T>(LocalBridgeClazz, "min", arg0);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Collections.html#copy(java.util.List,java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
@@ -546,15 +555,6 @@ namespace Java.Util
         public static void Fill<Arg0objectSuperT, T>(Java.Util.List<Arg0objectSuperT> arg0, T arg1) where Arg0objectSuperT : T
         {
             SExecute(LocalBridgeClazz, "fill", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/Collections.html#sort(java.util.List)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="T"></typeparam>
-        public static void Sort<T>(Java.Util.List<T> arg0)
-        {
-            SExecute(LocalBridgeClazz, "sort", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Collections.html#disjoint(java.util.Collection,java.util.Collection)"/>

@@ -117,6 +117,26 @@ namespace Java.Nio.Channels.Spi
         {
             return IExecuteWithSignature<Java.Nio.Channels.Channel>("inheritedChannel", "()Ljava/nio/channels/Channel;");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/SelectorProvider.html#openServerSocketChannel(java.net.ProtocolFamily)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.ProtocolFamily"/></param>
+        /// <returns><see cref="Java.Nio.Channels.ServerSocketChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.Channels.ServerSocketChannel OpenServerSocketChannel(Java.Net.ProtocolFamily arg0)
+        {
+            return IExecuteWithSignature<Java.Nio.Channels.ServerSocketChannel>("openServerSocketChannel", "(Ljava/net/ProtocolFamily;)Ljava/nio/channels/ServerSocketChannel;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/SelectorProvider.html#openSocketChannel(java.net.ProtocolFamily)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.ProtocolFamily"/></param>
+        /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.Channels.SocketChannel OpenSocketChannel(Java.Net.ProtocolFamily arg0)
+        {
+            return IExecuteWithSignature<Java.Nio.Channels.SocketChannel>("openSocketChannel", "(Ljava/net/ProtocolFamily;)Ljava/nio/channels/SocketChannel;", arg0);
+        }
 
         #endregion
 

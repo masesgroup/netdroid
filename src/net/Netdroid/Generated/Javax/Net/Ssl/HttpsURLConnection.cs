@@ -120,6 +120,14 @@ namespace Javax.Net.Ssl
             return IExecuteWithSignature<Java.Security.Principal>("getPeerPrincipal", "()Ljava/security/Principal;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getSSLSession()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional<Javax.Net.Ssl.SSLSession> GetSSLSession()
+        {
+            return IExecuteWithSignature<Java.Util.Optional<Javax.Net.Ssl.SSLSession>>("getSSLSession", "()Ljava/util/Optional;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getHostnameVerifier()"/>
         /// </summary>
         /// <returns><see cref="Javax.Net.Ssl.HostnameVerifier"/></returns>

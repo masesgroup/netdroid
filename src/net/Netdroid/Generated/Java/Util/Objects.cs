@@ -203,6 +203,38 @@ namespace Java.Util
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#checkFromIndexSize(long,long,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <returns><see cref="long"/></returns>
+        public static long CheckFromIndexSize(long arg0, long arg1, long arg2)
+        {
+            return SExecute<long>(LocalBridgeClazz, "checkFromIndexSize", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#checkFromToIndex(long,long,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <returns><see cref="long"/></returns>
+        public static long CheckFromToIndex(long arg0, long arg1, long arg2)
+        {
+            return SExecute<long>(LocalBridgeClazz, "checkFromToIndex", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Objects.html#checkIndex(long,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <returns><see cref="long"/></returns>
+        public static long CheckIndex(long arg0, long arg1)
+        {
+            return SExecute<long>(LocalBridgeClazz, "checkIndex", arg0, arg1);
+        }
 
         #endregion
 

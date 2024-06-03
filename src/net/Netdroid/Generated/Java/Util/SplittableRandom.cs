@@ -54,74 +54,12 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#nextBoolean()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public bool NextBoolean()
-        {
-            return IExecute<bool>("nextBoolean");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#nextDouble()"/>
-        /// </summary>
-        /// <returns><see cref="double"/></returns>
-        public double NextDouble()
-        {
-            return IExecute<double>("nextDouble");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#nextDouble(double,double)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
-        public double NextDouble(double arg0, double arg1)
-        {
-            return IExecute<double>("nextDouble", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#nextDouble(double)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
-        public double NextDouble(double arg0)
-        {
-            return IExecute<double>("nextDouble", arg0);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#nextInt()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int NextInt()
         {
             return IExecuteWithSignature<int>("nextInt", "()I");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#nextInt(int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        public int NextInt(int arg0, int arg1)
-        {
-            return IExecute<int>("nextInt", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#nextInt(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        public int NextInt(int arg0)
-        {
-            return IExecute<int>("nextInt", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#split()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.SplittableRandom"/></returns>
-        public Java.Util.SplittableRandom Split()
-        {
-            return IExecuteWithSignature<Java.Util.SplittableRandom>("split", "()Ljava/util/SplittableRandom;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#doubles()"/>
@@ -244,25 +182,6 @@ namespace Java.Util
         public long NextLong()
         {
             return IExecuteWithSignature<long>("nextLong", "()J");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#nextLong(long,long)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        public long NextLong(long arg0, long arg1)
-        {
-            return IExecute<long>("nextLong", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#nextLong(long)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        public long NextLong(long arg0)
-        {
-            return IExecute<long>("nextLong", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#nextBytes(byte[])"/>

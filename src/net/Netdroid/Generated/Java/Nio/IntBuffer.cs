@@ -175,6 +175,28 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("mismatch", "(Ljava/nio/IntBuffer;)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#get(int,int[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        public Java.Nio.IntBuffer Get(int arg0, int[] arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.IntBuffer>("get", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#get(int,int[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        public Java.Nio.IntBuffer Get(int arg0, int[] arg1)
+        {
+            return IExecute<Java.Nio.IntBuffer>("get", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#get(int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -193,6 +215,40 @@ namespace Java.Nio
         public Java.Nio.IntBuffer Get(int[] arg0)
         {
             return IExecuteWithSignature<Java.Nio.IntBuffer>("get", "([I)Ljava/nio/IntBuffer;", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#put(int,int[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        public Java.Nio.IntBuffer Put(int arg0, int[] arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.IntBuffer>("put", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#put(int,int[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        public Java.Nio.IntBuffer Put(int arg0, int[] arg1)
+        {
+            return IExecute<Java.Nio.IntBuffer>("put", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#put(int,java.nio.IntBuffer,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        public Java.Nio.IntBuffer Put(int arg0, Java.Nio.IntBuffer arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.IntBuffer>("put", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#put(int[],int,int)"/>

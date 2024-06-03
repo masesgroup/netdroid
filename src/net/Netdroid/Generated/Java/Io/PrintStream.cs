@@ -384,6 +384,14 @@ namespace Java.Io
         {
             IExecuteWithSignature("println", "(J)V", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/PrintStream.html#writeBytes(byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        public void WriteBytes(byte[] arg0)
+        {
+            IExecuteWithSignature("writeBytes", "([B)V", new object[] { arg0 });
+        }
 
         #endregion
 

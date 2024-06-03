@@ -50,6 +50,14 @@ namespace Javax.Xml.Parsers
             return SExecuteWithSignature<Javax.Xml.Parsers.DocumentBuilderFactory>(LocalBridgeClazz, "newDefaultInstance", "()Ljavax/xml/parsers/DocumentBuilderFactory;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilderFactory.html#newDefaultNSInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilderFactory"/></returns>
+        public static Javax.Xml.Parsers.DocumentBuilderFactory NewDefaultNSInstance()
+        {
+            return SExecuteWithSignature<Javax.Xml.Parsers.DocumentBuilderFactory>(LocalBridgeClazz, "newDefaultNSInstance", "()Ljavax/xml/parsers/DocumentBuilderFactory;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilderFactory.html#newInstance()"/>
         /// </summary>
         /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilderFactory"/></returns>
@@ -66,6 +74,24 @@ namespace Javax.Xml.Parsers
         public static Javax.Xml.Parsers.DocumentBuilderFactory NewInstance(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecute<Javax.Xml.Parsers.DocumentBuilderFactory>(LocalBridgeClazz, "newInstance", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilderFactory.html#newNSInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilderFactory"/></returns>
+        public static Javax.Xml.Parsers.DocumentBuilderFactory NewNSInstance()
+        {
+            return SExecuteWithSignature<Javax.Xml.Parsers.DocumentBuilderFactory>(LocalBridgeClazz, "newNSInstance", "()Ljavax/xml/parsers/DocumentBuilderFactory;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilderFactory.html#newNSInstance(java.lang.String,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilderFactory"/></returns>
+        public static Javax.Xml.Parsers.DocumentBuilderFactory NewNSInstance(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
+        {
+            return SExecute<Javax.Xml.Parsers.DocumentBuilderFactory>(LocalBridgeClazz, "newNSInstance", arg0, arg1);
         }
 
         #endregion

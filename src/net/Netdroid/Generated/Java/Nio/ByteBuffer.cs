@@ -496,6 +496,28 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("get", "([B)Ljava/nio/ByteBuffer;", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#get(int,byte[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+        public Java.Nio.ByteBuffer Get(int arg0, byte[] arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.ByteBuffer>("get", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#get(int,byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+        public Java.Nio.ByteBuffer Get(int arg0, byte[] arg1)
+        {
+            return IExecute<Java.Nio.ByteBuffer>("get", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#put(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -505,6 +527,40 @@ namespace Java.Nio
         public Java.Nio.ByteBuffer Put(byte[] arg0, int arg1, int arg2)
         {
             return IExecute<Java.Nio.ByteBuffer>("put", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#put(int,byte[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+        public Java.Nio.ByteBuffer Put(int arg0, byte[] arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.ByteBuffer>("put", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#put(int,byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+        public Java.Nio.ByteBuffer Put(int arg0, byte[] arg1)
+        {
+            return IExecute<Java.Nio.ByteBuffer>("put", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#put(int,java.nio.ByteBuffer,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+        public Java.Nio.ByteBuffer Put(int arg0, Java.Nio.ByteBuffer arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.ByteBuffer>("put", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#put(java.nio.ByteBuffer)"/>

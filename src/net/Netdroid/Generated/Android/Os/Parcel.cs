@@ -97,17 +97,185 @@ namespace Android.Os
             IExecute("readMap", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createFixedArray(java.lang.Class,android.os.Parcelable.Creator,int[])"/>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createInterfaceArrayList(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Android.Os.Parcelable.Creator"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <typeparam name="S"><see cref="Android.Os.IParcelable"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T CreateFixedArray<T, S>(Java.Lang.Class arg0, Android.Os.Parcelable.Creator<S> arg1, params int[] arg2) where S : Android.Os.IParcelable, new()
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IIInterface"/></typeparam>
+        /// <returns><see cref="Java.Util.ArrayList"/></returns>
+        public Java.Util.ArrayList<T> CreateInterfaceArrayList<T>(Java.Util.Function.Function<Android.Os.IBinder, T> arg0) where T : Android.Os.IIInterface, new()
         {
-            if (arg2.Length == 0) return IExecute<T>("createFixedArray", arg0, arg1); else return IExecute<T>("createFixedArray", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.ArrayList<T>>("createInterfaceArrayList", "(Ljava/util/function/Function;)Ljava/util/ArrayList;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createInterfaceArray(java.util.function.IntFunction,java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IIInterface"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public T[] CreateInterfaceArray<T>(Java.Util.Function.IntFunction<T[]> arg0, Java.Util.Function.Function<Android.Os.IBinder, T> arg1) where T : Android.Os.IIInterface, new()
+        {
+            return IExecuteArray<T>("createInterfaceArray", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readInterfaceArray(android.os.IInterface[],java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IIInterface"/></typeparam>
+        public void ReadInterfaceArray<T>(T[] arg0, Java.Util.Function.Function<Android.Os.IBinder, T> arg1) where T : Android.Os.IIInterface, new()
+        {
+            IExecute("readInterfaceArray", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readInterfaceList(java.util.List,java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IIInterface"/></typeparam>
+        public void ReadInterfaceList<T>(Java.Util.List<T> arg0, Java.Util.Function.Function<Android.Os.IBinder, T> arg1) where T : Android.Os.IIInterface, new()
+        {
+            IExecute("readInterfaceList", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeInterfaceArray(android.os.IInterface[])"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IIInterface"/></typeparam>
+        public void WriteInterfaceArray<T>(T[] arg0) where T : Android.Os.IIInterface, new()
+        {
+            IExecuteWithSignature("writeInterfaceArray", "([Landroid/os/IInterface;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeInterfaceList(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IIInterface"/></typeparam>
+        public void WriteInterfaceList<T>(Java.Util.List<T> arg0) where T : Android.Os.IIInterface, new()
+        {
+            IExecuteWithSignature("writeInterfaceList", "(Ljava/util/List;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createTypedArrayMap(android.os.Parcelable.Creator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Parcelable.Creator"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        /// <returns><see cref="Android.Util.ArrayMap"/></returns>
+        public Android.Util.ArrayMap<Java.Lang.String, T> CreateTypedArrayMap<T>(Android.Os.Parcelable.Creator<T> arg0) where T : Android.Os.IParcelable, new()
+        {
+            return IExecuteWithSignature<Android.Util.ArrayMap<Java.Lang.String, T>>("createTypedArrayMap", "(Landroid/os/Parcelable$Creator;)Landroid/util/ArrayMap;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createTypedSparseArray(android.os.Parcelable.Creator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Parcelable.Creator"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        /// <returns><see cref="Android.Util.SparseArray"/></returns>
+        public Android.Util.SparseArray<T> CreateTypedSparseArray<T>(Android.Os.Parcelable.Creator<T> arg0) where T : Android.Os.IParcelable, new()
+        {
+            return IExecuteWithSignature<Android.Util.SparseArray<T>>("createTypedSparseArray", "(Landroid/os/Parcelable$Creator;)Landroid/util/SparseArray;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readParcelableList(java.util.List,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.List<T> ReadParcelableList<T>(Java.Util.List<T> arg0, Java.Lang.ClassLoader arg1) where T : Android.Os.IParcelable, new()
+        {
+            return IExecute<Java.Util.List<T>>("readParcelableList", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readParcelable(java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        [global::System.Obsolete()]
+        public T ReadParcelable<T>(Java.Lang.ClassLoader arg0) where T : Android.Os.IParcelable, new()
+        {
+            return IExecuteWithSignature<T>("readParcelable", "(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeParcelableArray(android.os.Parcelable[],int)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        public void WriteParcelableArray<T>(T[] arg0, int arg1) where T : Android.Os.IParcelable, new()
+        {
+            IExecute("writeParcelableArray", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeParcelableList(java.util.List,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        public void WriteParcelableList<T>(Java.Util.List<T> arg0, int arg1) where T : Android.Os.IParcelable, new()
+        {
+            IExecute("writeParcelableList", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedArray(android.os.Parcelable[],int)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        public void WriteTypedArray<T>(T[] arg0, int arg1) where T : Android.Os.IParcelable, new()
+        {
+            IExecute("writeTypedArray", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedArrayMap(android.util.ArrayMap,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Util.ArrayMap"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        public void WriteTypedArrayMap<T>(Android.Util.ArrayMap<Java.Lang.String, T> arg0, int arg1) where T : Android.Os.IParcelable, new()
+        {
+            IExecute("writeTypedArrayMap", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedList(java.util.List,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        public void WriteTypedList<T>(Java.Util.List<T> arg0, int arg1) where T : Android.Os.IParcelable, new()
+        {
+            IExecute("writeTypedList", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedList(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        public void WriteTypedList<T>(Java.Util.List<T> arg0) where T : Android.Os.IParcelable, new()
+        {
+            IExecuteWithSignature("writeTypedList", "(Ljava/util/List;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedObject(android.os.Parcelable,int)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        public void WriteTypedObject<T>(T arg0, int arg1) where T : Android.Os.IParcelable, new()
+        {
+            IExecute("writeTypedObject", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedSparseArray(android.util.SparseArray,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Util.SparseArray"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        public void WriteTypedSparseArray<T>(Android.Util.SparseArray<T> arg0, int arg1) where T : Android.Os.IParcelable, new()
+        {
+            IExecute("writeTypedSparseArray", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createFixedArray(java.lang.Class,java.util.function.Function,int[])"/>
@@ -123,17 +291,6 @@ namespace Android.Os
             if (arg2.Length == 0) return IExecute<T>("createFixedArray", arg0, arg1); else return IExecute<T>("createFixedArray", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readFixedArray(java.lang.Object,android.os.Parcelable.Creator)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Android.Os.Parcelable.Creator"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <typeparam name="S"><see cref="Android.Os.IParcelable"/></typeparam>
-        public void ReadFixedArray<T, S>(T arg0, Android.Os.Parcelable.Creator<S> arg1) where S : Android.Os.IParcelable, new()
-        {
-            IExecute("readFixedArray", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readFixedArray(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
@@ -141,6 +298,30 @@ namespace Android.Os
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="S"><see cref="Android.Os.IIInterface"/></typeparam>
         public void ReadFixedArray<T, S>(T arg0, Java.Util.Function.Function<Android.Os.IBinder, S> arg1) where S : Android.Os.IIInterface, new()
+        {
+            IExecute("readFixedArray", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createFixedArray(java.lang.Class,android.os.Parcelable.Creator,int[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Parcelable.Creator"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="S"><see cref="Android.Os.IParcelable"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public T CreateFixedArray<T, S>(Java.Lang.Class arg0, Android.Os.Parcelable.Creator<S> arg1, params int[] arg2) where S : Android.Os.IParcelable, new()
+        {
+            if (arg2.Length == 0) return IExecute<T>("createFixedArray", arg0, arg1); else return IExecute<T>("createFixedArray", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readFixedArray(java.lang.Object,android.os.Parcelable.Creator)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Parcelable.Creator"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="S"><see cref="Android.Os.IParcelable"/></typeparam>
+        public void ReadFixedArray<T, S>(T arg0, Android.Os.Parcelable.Creator<S> arg1) where S : Android.Os.IParcelable, new()
         {
             IExecute("readFixedArray", arg0, arg1);
         }
@@ -154,26 +335,6 @@ namespace Android.Os
         public Android.Os.Parcelable.Creator<T> ReadParcelableCreator<T>(Java.Lang.ClassLoader arg0, Java.Lang.Class arg1)
         {
             return IExecute<Android.Os.Parcelable.Creator<T>>("readParcelableCreator", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createTypedArrayMap(android.os.Parcelable.Creator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.Parcelable.Creator"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        /// <returns><see cref="Android.Util.ArrayMap"/></returns>
-        public Android.Util.ArrayMap<Java.Lang.String, T> CreateTypedArrayMap<T>(Android.Os.Parcelable.Creator<T> arg0) where T : Android.Os.IParcelable, new()
-        {
-            return IExecute<Android.Util.ArrayMap<Java.Lang.String, T>>("createTypedArrayMap", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createTypedSparseArray(android.os.Parcelable.Creator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.Parcelable.Creator"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        /// <returns><see cref="Android.Util.SparseArray"/></returns>
-        public Android.Util.SparseArray<T> CreateTypedSparseArray<T>(Android.Os.Parcelable.Creator<T> arg0) where T : Android.Os.IParcelable, new()
-        {
-            return IExecute<Android.Util.SparseArray<T>>("createTypedSparseArray", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readSparseArray(java.lang.ClassLoader,java.lang.Class)"/>
@@ -196,16 +357,6 @@ namespace Android.Os
         public Android.Util.SparseArray<T> ReadSparseArray<T>(Java.Lang.ClassLoader arg0)
         {
             return IExecuteWithSignature<Android.Util.SparseArray<T>>("readSparseArray", "(Ljava/lang/ClassLoader;)Landroid/util/SparseArray;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createInterfaceArrayList(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IIInterface"/></typeparam>
-        /// <returns><see cref="Java.Util.ArrayList"/></returns>
-        public Java.Util.ArrayList<T> CreateInterfaceArrayList<T>(Java.Util.Function.Function<Android.Os.IBinder, T> arg0) where T : Android.Os.IIInterface, new()
-        {
-            return IExecute<Java.Util.ArrayList<T>>("createInterfaceArrayList", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createTypedArrayList(android.os.Parcelable.Creator)"/>
@@ -241,18 +392,6 @@ namespace Android.Os
             return IExecute<Java.Util.List<T>>("readParcelableList", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readParcelableList(java.util.List,java.lang.ClassLoader)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        [global::System.Obsolete()]
-        public Java.Util.List<T> ReadParcelableList<T>(Java.Util.List<T> arg0, Java.Lang.ClassLoader arg1) where T : Android.Os.IParcelable, new()
-        {
-            return IExecute<Java.Util.List<T>>("readParcelableList", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createFixedArray(java.lang.Class,int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -275,17 +414,6 @@ namespace Android.Os
             return IExecute<T>("readParcelable", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readParcelable(java.lang.ClassLoader)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        [global::System.Obsolete()]
-        public T ReadParcelable<T>(Java.Lang.ClassLoader arg0) where T : Android.Os.IParcelable, new()
-        {
-            return IExecute<T>("readParcelable", arg0);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readSerializable(java.lang.ClassLoader,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
@@ -305,17 +433,6 @@ namespace Android.Os
         public T ReadTypedObject<T>(Android.Os.Parcelable.Creator<T> arg0)
         {
             return IExecuteWithSignature<T>("readTypedObject", "(Landroid/os/Parcelable$Creator;)Ljava/lang/Object;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createInterfaceArray(java.util.function.IntFunction,java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IIInterface"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T[] CreateInterfaceArray<T>(Java.Util.Function.IntFunction<T[]> arg0, Java.Util.Function.Function<Android.Os.IBinder, T> arg1) where T : Android.Os.IIInterface, new()
-        {
-            return IExecuteArray<T>("createInterfaceArray", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createTypedArray(android.os.Parcelable.Creator)"/>
@@ -357,26 +474,6 @@ namespace Android.Os
         public void ReadFixedArray<T>(T arg0)
         {
             IExecuteWithSignature("readFixedArray", "(Ljava/lang/Object;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readInterfaceArray(android.os.IInterface[],java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IIInterface"/></typeparam>
-        public void ReadInterfaceArray<T>(T[] arg0, Java.Util.Function.Function<Android.Os.IBinder, T> arg1) where T : Android.Os.IIInterface, new()
-        {
-            IExecute("readInterfaceArray", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readInterfaceList(java.util.List,java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IIInterface"/></typeparam>
-        public void ReadInterfaceList<T>(Java.Util.List<T> arg0, Java.Util.Function.Function<Android.Os.IBinder, T> arg1) where T : Android.Os.IIInterface, new()
-        {
-            IExecute("readInterfaceList", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readList(java.util.List,java.lang.ClassLoader,java.lang.Class)"/>
@@ -422,44 +519,6 @@ namespace Android.Os
             if (arg2.Length == 0) IExecute("writeFixedArray", arg0, arg1); else IExecute("writeFixedArray", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeInterfaceArray(android.os.IInterface[])"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IIInterface"/></typeparam>
-        public void WriteInterfaceArray<T>(T[] arg0) where T : Android.Os.IIInterface, new()
-        {
-            IExecute("writeInterfaceArray", new object[] { arg0 });
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeInterfaceList(java.util.List)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IIInterface"/></typeparam>
-        public void WriteInterfaceList<T>(Java.Util.List<T> arg0) where T : Android.Os.IIInterface, new()
-        {
-            IExecute("writeInterfaceList", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeParcelableArray(android.os.Parcelable[],int)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        public void WriteParcelableArray<T>(T[] arg0, int arg1) where T : Android.Os.IParcelable, new()
-        {
-            IExecute("writeParcelableArray", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeParcelableList(java.util.List,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        public void WriteParcelableList<T>(Java.Util.List<T> arg0, int arg1) where T : Android.Os.IParcelable, new()
-        {
-            IExecute("writeParcelableList", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeSparseArray(android.util.SparseArray)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Util.SparseArray"/></param>
@@ -467,65 +526,6 @@ namespace Android.Os
         public void WriteSparseArray<T>(Android.Util.SparseArray<T> arg0)
         {
             IExecuteWithSignature("writeSparseArray", "(Landroid/util/SparseArray;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedArray(android.os.Parcelable[],int)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        public void WriteTypedArray<T>(T[] arg0, int arg1) where T : Android.Os.IParcelable, new()
-        {
-            IExecute("writeTypedArray", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedArrayMap(android.util.ArrayMap,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Util.ArrayMap"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        public void WriteTypedArrayMap<T>(Android.Util.ArrayMap<Java.Lang.String, T> arg0, int arg1) where T : Android.Os.IParcelable, new()
-        {
-            IExecute("writeTypedArrayMap", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedList(java.util.List,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        public void WriteTypedList<T>(Java.Util.List<T> arg0, int arg1) where T : Android.Os.IParcelable, new()
-        {
-            IExecute("writeTypedList", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedList(java.util.List)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        public void WriteTypedList<T>(Java.Util.List<T> arg0) where T : Android.Os.IParcelable, new()
-        {
-            IExecute("writeTypedList", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedObject(android.os.Parcelable,int)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        public void WriteTypedObject<T>(T arg0, int arg1) where T : Android.Os.IParcelable, new()
-        {
-            IExecute("writeTypedObject", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedSparseArray(android.util.SparseArray,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Util.SparseArray"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        public void WriteTypedSparseArray<T>(Android.Util.SparseArray<T> arg0, int arg1) where T : Android.Os.IParcelable, new()
-        {
-            IExecute("writeTypedSparseArray", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readBundle()"/>

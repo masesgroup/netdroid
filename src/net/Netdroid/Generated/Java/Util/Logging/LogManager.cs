@@ -116,6 +116,7 @@ namespace Java.Util.Logging
         /// <see href="https://developer.android.com/reference/java/util/logging/LogManager.html#checkAccess()"/>
         /// </summary>
         /// <exception cref="Java.Lang.SecurityException"/>
+        [global::System.Obsolete()]
         public void CheckAccess()
         {
             IExecuteWithSignature("checkAccess", "()V");

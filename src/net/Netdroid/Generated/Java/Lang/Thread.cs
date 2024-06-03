@@ -192,14 +192,14 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.InterruptedException"/>
         public static void Sleep(long arg0)
         {
-            SExecute(LocalBridgeClazz, "sleep", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "sleep", "(J)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Thread.html#yield()"/>
         /// </summary>
         public static void Yield()
         {
-            SExecute(LocalBridgeClazz, "yield");
+            SExecuteWithSignature(LocalBridgeClazz, "yield", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Thread.html#dumpStack()"/>
@@ -238,6 +238,14 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isInterrupted", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#isAlive()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAlive()
+        {
+            return IExecuteWithSignature<bool>("isAlive", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Thread.html#isDaemon()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -270,14 +278,6 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.ThreadGroup>("getThreadGroup", "()Ljava/lang/ThreadGroup;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#isAlive()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public bool IsAlive()
-        {
-            return IExecute<bool>("isAlive");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Thread.html#join(long,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -294,7 +294,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Join(long arg0)
         {
-            IExecute("join", arg0);
+            IExecuteWithSignature("join", "(J)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Thread.html#setName(java.lang.String)"/>
@@ -307,6 +307,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Thread.html#checkAccess()"/>
         /// </summary>
+        [global::System.Obsolete()]
         public void CheckAccess()
         {
             IExecuteWithSignature("checkAccess", "()V");
@@ -360,6 +361,15 @@ namespace Java.Lang
             IExecuteWithSignature("suspend", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#countStackFrames()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int CountStackFrames()
+        {
+            return IExecuteWithSignature<int>("countStackFrames", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Thread.html#getContextClassLoader()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
@@ -392,20 +402,11 @@ namespace Java.Lang
             return IExecuteWithSignature<long>("getId", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#countStackFrames()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
-        public int CountStackFrames()
-        {
-            return IExecute<int>("countStackFrames");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Thread.html#start()"/>
         /// </summary>
         public void Start()
         {
-            IExecute("start");
+            IExecuteWithSignature("start", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Thread.html#interrupt()"/>

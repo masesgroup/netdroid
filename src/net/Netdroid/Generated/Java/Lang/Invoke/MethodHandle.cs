@@ -130,7 +130,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle AsType(Java.Lang.Invoke.MethodType arg0)
         {
-            return IExecute<Java.Lang.Invoke.MethodHandle>("asType", arg0);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("asType", "(Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandle.html#asVarargsCollector(java.lang.Class)"/>

@@ -142,6 +142,7 @@ namespace Java.Security.Cert
         /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getIssuerDN()"/>
         /// </summary>
         /// <returns><see cref="Java.Security.Principal"/></returns>
+        [global::System.Obsolete()]
         public Java.Security.Principal GetIssuerDN()
         {
             return IExecuteWithSignature<Java.Security.Principal>("getIssuerDN", "()Ljava/security/Principal;");
@@ -150,6 +151,7 @@ namespace Java.Security.Cert
         /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getSubjectDN()"/>
         /// </summary>
         /// <returns><see cref="Java.Security.Principal"/></returns>
+        [global::System.Obsolete()]
         public Java.Security.Principal GetSubjectDN()
         {
             return IExecuteWithSignature<Java.Security.Principal>("getSubjectDN", "()Ljava/security/Principal;");

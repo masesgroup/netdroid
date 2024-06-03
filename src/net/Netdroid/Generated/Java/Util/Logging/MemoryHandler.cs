@@ -68,7 +68,7 @@ namespace Java.Util.Logging
         /// </summary>
         public void Push()
         {
-            IExecute("push");
+            IExecuteWithSignature("push", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/MemoryHandler.html#setPushLevel(java.util.logging.Level)"/>
@@ -77,7 +77,7 @@ namespace Java.Util.Logging
         /// <exception cref="Java.Lang.SecurityException"/>
         public void SetPushLevel(Java.Util.Logging.Level arg0)
         {
-            IExecute("setPushLevel", arg0);
+            IExecuteWithSignature("setPushLevel", "(Ljava/util/logging/Level;)V", arg0);
         }
 
         #endregion

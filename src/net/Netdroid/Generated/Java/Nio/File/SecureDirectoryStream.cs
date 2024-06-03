@@ -52,7 +52,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Attribute.FileAttributeView"/></returns>
         public Java.Nio.File.Attribute.FileAttributeView GetFileAttributeView(Java.Lang.Class arg0)
         {
-            return IExecute<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", arg0);
+            return IExecuteWithSignature<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", "(Ljava/lang/Class;)Ljava/nio/file/attribute/FileAttributeView;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Object,java.lang.Class,java.nio.file.LinkOption[])"/>
@@ -178,7 +178,7 @@ namespace Java.Nio.File
         /// <returns><typeparamref name="V"/></returns>
         public V GetFileAttributeView<V>(Java.Lang.Class arg0) where V : Java.Nio.File.Attribute.IFileAttributeView, new()
         {
-            return IExecute<V>("getFileAttributeView", arg0);
+            return IExecuteWithSignature<V>("getFileAttributeView", "(Ljava/lang/Class;)Ljava/nio/file/attribute/FileAttributeView;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Object,java.lang.Class,java.nio.file.LinkOption[])"/>

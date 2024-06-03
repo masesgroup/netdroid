@@ -42,6 +42,15 @@ namespace Javax.Net.Ssl
 
         #region Static methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getDefault()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Net.Ssl.SSLContext"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        public static Javax.Net.Ssl.SSLContext GetDefault()
+        {
+            return SExecuteWithSignature<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getDefault", "()Ljavax/net/ssl/SSLContext;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -75,21 +84,12 @@ namespace Javax.Net.Ssl
             return SExecuteWithSignature<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getDefault()"/>
-        /// </summary>
-        /// <returns><see cref="Javax.Net.Ssl.SSLContext"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        public static Javax.Net.Ssl.SSLContext GetDefault()
-        {
-            return SExecute<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getDefault");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#setDefault(javax.net.ssl.SSLContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLContext"/></param>
         public static void SetDefault(Javax.Net.Ssl.SSLContext arg0)
         {
-            SExecute(LocalBridgeClazz, "setDefault", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljavax/net/ssl/SSLContext;)V", arg0);
         }
 
         #endregion

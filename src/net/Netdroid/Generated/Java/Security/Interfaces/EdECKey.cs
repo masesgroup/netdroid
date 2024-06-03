@@ -23,10 +23,28 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Security.Acl
+namespace Java.Security.Interfaces
 {
-    #region LastOwnerException
-    public partial class LastOwnerException
+    #region IEdECKey
+    /// <summary>
+    /// .NET interface for TO BE DEFINED FROM USER
+    /// </summary>
+    public partial interface IEdECKey
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region EdECKey
+    public partial class EdECKey : Java.Security.Interfaces.IEdECKey
     {
         #region Constructors
 
@@ -45,6 +63,14 @@ namespace Java.Security.Acl
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/EdECKey.html#getParams()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Spec.NamedParameterSpec"/></returns>
+        public Java.Security.Spec.NamedParameterSpec GetParams()
+        {
+            return IExecuteWithSignature<Java.Security.Spec.NamedParameterSpec>("getParams", "()Ljava/security/spec/NamedParameterSpec;");
+        }
 
         #endregion
 

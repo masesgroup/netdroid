@@ -73,7 +73,7 @@ namespace Android.Telephony
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<T> GetCellSignalStrengths<T>(Java.Lang.Class arg0) where T : Android.Telephony.CellSignalStrength
         {
-            return IExecute<Java.Util.List<T>>("getCellSignalStrengths", arg0);
+            return IExecuteWithSignature<Java.Util.List<T>>("getCellSignalStrengths", "(Ljava/lang/Class;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SignalStrength.html#isGsm()"/>

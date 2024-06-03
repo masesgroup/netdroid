@@ -187,16 +187,6 @@ namespace Javax.Net.Ssl
             return IExecuteWithSignature<Javax.Net.Ssl.SSLSessionContext>("getSessionContext", "()Ljavax/net/ssl/SSLSessionContext;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSession.html#getPeerCertificateChain()"/>
-        /// </summary>
-        /// <returns><see cref="Javax.Security.Cert.X509Certificate"/></returns>
-        /// <exception cref="Javax.Net.Ssl.SSLPeerUnverifiedException"/>
-        [global::System.Obsolete()]
-        public Javax.Security.Cert.X509Certificate[] GetPeerCertificateChain()
-        {
-            return IExecuteArray<Javax.Security.Cert.X509Certificate>("getPeerCertificateChain");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSession.html#getCreationTime()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
@@ -235,6 +225,16 @@ namespace Javax.Net.Ssl
         public void RemoveValue(Java.Lang.String arg0)
         {
             IExecuteWithSignature("removeValue", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSession.html#getPeerCertificateChain()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Security.Cert.X509Certificate"/></returns>
+        /// <exception cref="Javax.Net.Ssl.SSLPeerUnverifiedException"/>
+        [global::System.Obsolete()]
+        public Javax.Security.Cert.X509Certificate[] GetPeerCertificateChain()
+        {
+            return IExecuteWithSignatureArray<Javax.Security.Cert.X509Certificate>("getPeerCertificateChain", "()[Ljavax/security/cert/X509Certificate;");
         }
 
         #endregion

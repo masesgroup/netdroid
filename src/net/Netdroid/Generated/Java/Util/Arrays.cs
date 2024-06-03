@@ -42,6 +42,52 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(java.lang.Comparable[],int,int,java.lang.Comparable[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><typeparamref name="T"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="int"/></returns>
+        public static int Compare<T>(T[] arg0, int arg1, int arg2, T[] arg3, int arg4, int arg5)
+        {
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(java.lang.Comparable[],java.lang.Comparable[])"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="int"/></returns>
+        public static int Compare<T>(T[] arg0, T[] arg1)
+        {
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(java.lang.Comparable[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <typeparam name="T"></typeparam>
+        public static void ParallelSort<T>(T[] arg0, int arg1, int arg2)
+        {
+            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(java.lang.Comparable[])"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
+        public static void ParallelSort<T>(T[] arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([Ljava/lang/Comparable;)V", new object[] { arg0 });
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOf(java.lang.Object[],int,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="U"/></param>
@@ -67,32 +113,6 @@ namespace Java.Util
         public static T[] CopyOfRange<T, U>(U[] arg0, int arg1, int arg2, Java.Lang.Class arg3)
         {
             return SExecuteArray<T>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(java.lang.Comparable[],int,int,java.lang.Comparable[],int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><typeparamref name="T"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="int"/></returns>
-        public static int Compare<T>(T[] arg0, int arg1, int arg2, T[] arg3, int arg4, int arg5)
-        {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(java.lang.Comparable[],java.lang.Comparable[])"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="int"/></returns>
-        public static int Compare<T>(T[] arg0, T[] arg1)
-        {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Arrays.html#asList(java.lang.Object[])"/>
@@ -203,26 +223,6 @@ namespace Java.Util
         public static void ParallelSetAll<T, Arg1ExtendsT>(T[] arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT : T
         {
             SExecute(LocalBridgeClazz, "parallelSetAll", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(java.lang.Comparable[],int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <typeparam name="T"></typeparam>
-        public static void ParallelSort<T>(T[] arg0, int arg1, int arg2)
-        {
-            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(java.lang.Comparable[])"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <typeparam name="T"></typeparam>
-        public static void ParallelSort<T>(T[] arg0)
-        {
-            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Arrays.html#setAll(java.lang.Object[],java.util.function.IntFunction)"/>

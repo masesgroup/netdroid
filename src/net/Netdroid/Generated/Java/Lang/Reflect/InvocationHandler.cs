@@ -59,6 +59,18 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/InvocationHandler.html#invokeDefault(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Lang.Throwable"/>
+        public static object InvokeDefault(object arg0, Java.Lang.Reflect.Method arg1, params object[] arg2)
+        {
+            if (arg2.Length == 0) return SExecute(LocalBridgeClazz, "invokeDefault", arg0, arg1); else return SExecute(LocalBridgeClazz, "invokeDefault", arg0, arg1, arg2);
+        }
 
         #endregion
 

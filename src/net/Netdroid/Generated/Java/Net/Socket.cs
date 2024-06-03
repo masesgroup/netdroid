@@ -123,6 +123,7 @@ namespace Java.Net
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketImplFactory"/></param>
         /// <exception cref="Java.Io.IOException"/>
+        [global::System.Obsolete()]
         public static void SetSocketImplFactory(Java.Net.SocketImplFactory arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setSocketImplFactory", "(Ljava/net/SocketImplFactory;)V", arg0);
@@ -337,7 +338,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public int GetReceiveBufferSize()
         {
-            return IExecute<int>("getReceiveBufferSize");
+            return IExecuteWithSignature<int>("getReceiveBufferSize", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Socket.html#getSendBufferSize()"/>
@@ -346,7 +347,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public int GetSendBufferSize()
         {
-            return IExecute<int>("getSendBufferSize");
+            return IExecuteWithSignature<int>("getSendBufferSize", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Socket.html#getSoTimeout()"/>
@@ -355,7 +356,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public int GetSoTimeout()
         {
-            return IExecute<int>("getSoTimeout");
+            return IExecuteWithSignature<int>("getSoTimeout", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Socket.html#close()"/>
@@ -363,7 +364,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Socket.html#setReceiveBufferSize(int)"/>
@@ -372,7 +373,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public void SetReceiveBufferSize(int arg0)
         {
-            IExecute("setReceiveBufferSize", arg0);
+            IExecuteWithSignature("setReceiveBufferSize", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Socket.html#setSendBufferSize(int)"/>
@@ -381,7 +382,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public void SetSendBufferSize(int arg0)
         {
-            IExecute("setSendBufferSize", arg0);
+            IExecuteWithSignature("setSendBufferSize", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Socket.html#setSoTimeout(int)"/>
@@ -390,7 +391,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public void SetSoTimeout(int arg0)
         {
-            IExecute("setSoTimeout", arg0);
+            IExecuteWithSignature("setSoTimeout", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Socket.html#bind(java.net.SocketAddress)"/>

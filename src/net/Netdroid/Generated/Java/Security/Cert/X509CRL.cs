@@ -120,6 +120,7 @@ namespace Java.Security.Cert
         /// <see href="https://developer.android.com/reference/java/security/cert/X509CRL.html#getIssuerDN()"/>
         /// </summary>
         /// <returns><see cref="Java.Security.Principal"/></returns>
+        [global::System.Obsolete()]
         public Java.Security.Principal GetIssuerDN()
         {
             return IExecuteWithSignature<Java.Security.Principal>("getIssuerDN", "()Ljava/security/Principal;");

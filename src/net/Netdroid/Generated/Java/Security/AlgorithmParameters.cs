@@ -87,7 +87,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.Spec.InvalidParameterSpecException"/>
         public T GetParameterSpec<T>(Java.Lang.Class arg0) where T : Java.Security.Spec.IAlgorithmParameterSpec, new()
         {
-            return IExecute<T>("getParameterSpec", arg0);
+            return IExecuteWithSignature<T>("getParameterSpec", "(Ljava/lang/Class;)Ljava/security/spec/AlgorithmParameterSpec;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/AlgorithmParameters.html#getEncoded()"/>

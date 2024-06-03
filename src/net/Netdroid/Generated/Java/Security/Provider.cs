@@ -111,7 +111,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Security.Provider.Service> GetServices()
         {
-            return IExecute<Java.Util.Set<Java.Security.Provider.Service>>("getServices");
+            return IExecuteWithSignature<Java.Util.Set<Java.Security.Provider.Service>>("getServices", "()Ljava/util/Set;");
         }
 
         #endregion

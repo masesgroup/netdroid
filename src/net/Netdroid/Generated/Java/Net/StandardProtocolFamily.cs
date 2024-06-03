@@ -53,6 +53,12 @@ namespace Java.Net
         public static Java.Net.StandardProtocolFamily INET6 { get { if (!_INET6Ready) { _INET6Content = SGetField<Java.Net.StandardProtocolFamily>(LocalBridgeClazz, "INET6"); _INET6Ready = true; } return _INET6Content; } }
         private static Java.Net.StandardProtocolFamily _INET6Content = default;
         private static bool _INET6Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/StandardProtocolFamily.html#UNIX"/>
+        /// </summary>
+        public static Java.Net.StandardProtocolFamily UNIX { get { if (!_UNIXReady) { _UNIXContent = SGetField<Java.Net.StandardProtocolFamily>(LocalBridgeClazz, "UNIX"); _UNIXReady = true; } return _UNIXContent; } }
+        private static Java.Net.StandardProtocolFamily _UNIXContent = default;
+        private static bool _UNIXReady = false; // this is used because in case of generics 
 
         #endregion
 
