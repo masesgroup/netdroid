@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Time
 {
     #region LocalDate
-    public partial class LocalDate : Java.Time.Temporal.ITemporal, Java.Time.Temporal.ITemporalAdjuster, Java.Io.ISerializable
+    public partial class LocalDate : Java.Time.Temporal.ITemporal, Java.Time.Temporal.ITemporalAdjuster, Java.Time.Chrono.IChronoLocalDate, Java.Io.ISerializable
     {
         #region Constructors
 
@@ -41,6 +41,10 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.LocalDate"/> to <see cref="Java.Time.Temporal.TemporalAdjuster"/>
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.LocalDate t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
+        /// <summary>
+        /// Converter from <see cref="Java.Time.LocalDate"/> to <see cref="Java.Time.Chrono.ChronoLocalDate"/>
+        /// </summary>
+        public static implicit operator Java.Time.Chrono.ChronoLocalDate(Java.Time.LocalDate t) => t.Cast<Java.Time.Chrono.ChronoLocalDate>();
         /// <summary>
         /// Converter from <see cref="Java.Time.LocalDate"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
@@ -182,6 +186,33 @@ namespace Java.Time
             return IExecuteWithSignature<R>("query", "(Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/LocalDate.html#isAfter(java.time.chrono.ChronoLocalDate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAfter(Java.Time.Chrono.ChronoLocalDate arg0)
+        {
+            return IExecuteWithSignature<bool>("isAfter", "(Ljava/time/chrono/ChronoLocalDate;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/LocalDate.html#isBefore(java.time.chrono.ChronoLocalDate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsBefore(Java.Time.Chrono.ChronoLocalDate arg0)
+        {
+            return IExecuteWithSignature<bool>("isBefore", "(Ljava/time/chrono/ChronoLocalDate;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/LocalDate.html#isEqual(java.time.chrono.ChronoLocalDate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEqual(Java.Time.Chrono.ChronoLocalDate arg0)
+        {
+            return IExecuteWithSignature<bool>("isEqual", "(Ljava/time/chrono/ChronoLocalDate;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/LocalDate.html#isLeapYear()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -215,6 +246,15 @@ namespace Java.Time
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/LocalDate.html#compareTo(java.time.chrono.ChronoLocalDate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <returns><see cref="int"/></returns>
+        public int CompareTo(Java.Time.Chrono.ChronoLocalDate arg0)
+        {
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/time/chrono/ChronoLocalDate;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/LocalDate.html#get(java.time.temporal.TemporalField)"/>
@@ -298,6 +338,15 @@ namespace Java.Time
         public Java.Time.Chrono.Chronology GetChronology()
         {
             return IExecuteWithSignature<Java.Time.Chrono.Chronology>("getChronology", "()Ljava/time/chrono/Chronology;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/LocalDate.html#until(java.time.chrono.ChronoLocalDate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
+        public Java.Time.Chrono.ChronoPeriod Until(Java.Time.Chrono.ChronoLocalDate arg0)
+        {
+            return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("until", "(Ljava/time/chrono/ChronoLocalDate;)Ljava/time/chrono/ChronoPeriod;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/LocalDate.html#getEra()"/>

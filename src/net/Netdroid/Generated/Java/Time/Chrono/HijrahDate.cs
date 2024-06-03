@@ -26,13 +26,17 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Time.Chrono
 {
     #region HijrahDate
-    public partial class HijrahDate : Java.Io.ISerializable
+    public partial class HijrahDate : Java.Time.Chrono.IChronoLocalDate, Java.Io.ISerializable
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.HijrahDate"/> to <see cref="Java.Time.Chrono.ChronoLocalDate"/>
+        /// </summary>
+        public static implicit operator Java.Time.Chrono.ChronoLocalDate(Java.Time.Chrono.HijrahDate t) => t.Cast<Java.Time.Chrono.ChronoLocalDate>();
         /// <summary>
         /// Converter from <see cref="Java.Time.Chrono.HijrahDate"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
