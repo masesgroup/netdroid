@@ -74,13 +74,6 @@ namespace Android.Net.Ipsec.Ike
             IExecuteWithSignature("closeChildSession", "(Landroid/net/ipsec/ike/ChildSessionCallback;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSession.html#finalize()"/>
-        /// </summary>
-        public void Finalize()
-        {
-            IExecuteWithSignature("finalize", "()V");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSession.html#kill()"/>
         /// </summary>
         public void Kill()
