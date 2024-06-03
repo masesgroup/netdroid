@@ -107,14 +107,14 @@ jobs:
         shell: cmd
         run: |
           cd 3rdparty\JNet\binReflector\net8.0
-          MASES.JNetReflector.exe -TraceLevel 0 -DestinationRootPath ..\..\..\..\src\ -ConfigurationFile ..\..\..\..\src\configuration.json
+          MASES.JNetReflector.exe -TraceLevel 0 -OriginRootPath %ANDROID_HOME%\platforms\android-34-ext8 -DestinationRootPath %GITHUB_WORKSPACE%\src\ -ConfigurationFile %GITHUB_WORKSPACE%\src\configuration.json
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
 
       - name: Build classes
         if: ${{ inputs.UseLatestJNetReflector == false }}
         shell: cmd
-        run: jnetreflector -TraceLevel 0 -OriginRootPath %ANDROID_HOME%\platforms\android-34-ext8 -DestinationRootPath .\src\ -ConfigurationFile .\src\configuration.json
+        run: jnetreflector -TraceLevel 0 -OriginRootPath %ANDROID_HOME%\platforms\android-34-ext8 -DestinationRootPath %GITHUB_WORKSPACE%\src\ -ConfigurationFile %GITHUB_WORKSPACE%\src\configuration.json
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
           
